@@ -36,7 +36,7 @@ Equal contributions = +
 
 ## Peer-reviewed conference and workshop proceedings 
 
-1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
+1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
 
 ## Contact
 
