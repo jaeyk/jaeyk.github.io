@@ -20,5 +20,5 @@ nav:
 #   link: "/researcher/"
  - name: "CV"
    link: "CV_Jae_Yeon_Kim.pdf"
-# - name: "Contact"
-#   link: "contact"
+ - name: "GitHub"
+   link: https://github.com/jaeyk
