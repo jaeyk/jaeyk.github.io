@@ -18,15 +18,15 @@ I love learning from other people who share similar research interests and build
 
 ## Peer-reviewed journal articles 
 
-* = Equal contributions 
++ = Equal contributions 
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why.""](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
 6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, (Jae Yeon Kim and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/covid19antiasian/) 
     
-5. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power"](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers* and Jae Yeon Kim*) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/linked_fate_review/)
+5. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power"](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/linked_fate_review/)
 
-4. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim* and Aniket Kesari*) *Journal of Online Trust and Safety*, 2021, 1(1) [replication](https://github.com/jaeyk/asian_hate_misinformation)
+4. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) [replication](https://github.com/jaeyk/asian_hate_misinformation)
 
 3. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (Jae Yeon Kim), *Journal of Computational Social Science*, 2021, 4(2), 585-612 [replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances) (Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**)
 
