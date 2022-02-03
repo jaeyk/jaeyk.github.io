@@ -55,13 +55,13 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
 
 3. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
-## Public Datasets 
+## Public datasets 
 
 1. [Linked Fate Literature Review Dataset (1999-2019)](https://doi.org/10.7910/DVN/MCLH9V)
 
 2. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
     
-## Open-access Textbook 
+## Open-access textbook 
 
 * [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/)
 
