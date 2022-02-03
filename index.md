@@ -77,7 +77,7 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
     
 ## Open-access textbook 
 
-* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control via Git/GitHub, data wrangling, visualization, functional programming, data product development (Shiny and R package development), machine learning (based on tidymodels framework), and SQL.
+* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control via Git/GitHub, data wrangling, visualization, functional programming, data product development, machine learning, and SQL.
 
 ## Awards 
 
