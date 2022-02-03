@@ -22,7 +22,7 @@ Equal contributions = +
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
-6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, (Jae Yeon Kim and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/covid19antiasian/) 
+6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/covid19antiasian/) 
     
 5. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/linked_fate_review/)
 
