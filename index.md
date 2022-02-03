@@ -38,6 +38,24 @@ Equal contributions = +
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
 
+## Selected research software 
+
+1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+
+2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/: R package for turning Tweet JSON files into a cleaned and wrangled dataset
+
+3. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/: R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
+
+## Public Datasets 
+
+1. [Linked Fate Literature Review Dataset (1999-2019)](https://doi.org/10.7910/DVN/MCLH9V)
+
+2. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+    
+## Open-access Textbook 
+
+* ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+
 ## Contact
 
 * Email: [jkim@kdischool.ac.kr](mailto:jkim@kdischool.ac.kr)
