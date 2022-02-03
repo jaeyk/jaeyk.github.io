@@ -18,7 +18,7 @@ I love learning from other people who share similar research interests and build
 
 ## Peer-reviewed journal articles 
 
-+ = Equal contributions 
+Equal contributions = +
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
