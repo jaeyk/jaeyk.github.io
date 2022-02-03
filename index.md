@@ -54,7 +54,7 @@ Equal contributions = +
     
 ## Open-access Textbook 
 
-* ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/)
 
 ## Contact
 
