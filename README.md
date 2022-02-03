@@ -41,7 +41,7 @@ nav:
 * To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
 
 ```html
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="profile.jpg">
 ```
 
 * You can remove/customize the footer as you like by setting the
