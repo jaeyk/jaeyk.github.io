@@ -47,6 +47,20 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
 
 1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://osf.io/preprints/socarxiv/chvgp/) (Jae Yeon Kim) Forthcoming at *Challenges and Perspectives of Hate Speech Analysis* ([Digital Communication Research open-access book series]((https://www.digitalcommunicationresearch.de/)) by the German Communication Association)
 
+## Research briefs 
+
+1. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+
+2. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
+    
+## Public writing 
+
+1. ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020.
+
+2. ["BAY-SICSS: Bridging Computational Social Scientists and Practitioners for Social Good."](https://bids.berkeley.edu/news/bay-sicss-bridging-computational-social-scientists-and-practitioners-social-good) (Jaren Haber, Jae Yeon Kim, and Nick Camp), *Berkeley Institute of Data Science*, September 15, 2020 
+
+3. ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020.
+
 ## Selected research software 
 
 1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
@@ -64,6 +78,12 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
 ## Open-access textbook 
 
 * [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/)
+
+## Awards 
+
+1. [Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics](https://www.wpsanet.org/award/), Western Political Science Association, 2020, "for making a significant contribution to the understanding of Asian Pacific American politics."
+
+2. [Outstanding Graduate Student Instructor Award](https://gsi.berkeley.edu/programs-services/award-programs/ogsi/ogsi-2017/), Graduate Division, UC Berkeley, AY 2016-2017, received by approximately *10 percent* of Graduate Student Instructors at Berkeley
 
 ## Contact
 
