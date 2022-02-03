@@ -42,9 +42,9 @@ Equal contributions = +
 
 1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
 
-2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/: R package for turning Tweet JSON files into a cleaned and wrangled dataset
+2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
 
-3. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/: R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
+3. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
 ## Public Datasets 
 
