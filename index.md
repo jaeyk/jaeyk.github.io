@@ -20,6 +20,11 @@ I love learning from other people who share similar research interests and build
 
 Equal contributions = +
 
+9. "Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power." (Hahrie Han+
+and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political and Social Science*
+
+8. "Teaching Computational Social Science for All."" (Jae Yeon Kim and Margaret Ng) Forthcoming at *PS: Political Science & Politics*
+
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
 6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/covid19antiasian/) 
@@ -37,6 +42,10 @@ Equal contributions = +
 ## Peer-reviewed conference and workshop proceedings 
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
+
+## Edited volume book chapters
+
+1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://osf.io/preprints/socarxiv/chvgp/) (Jae Yeon Kim) Forthcoming at *Challenges and Perspectives of Hate Speech Analysis* ([Digital Communication Research open-access book series]((https://www.digitalcommunicationresearch.de/)) by the German Communication Association)
 
 ## Selected research software 
 
