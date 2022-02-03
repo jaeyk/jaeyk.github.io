@@ -16,8 +16,8 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "About"
-   link: "/researcher/"
+# - name: "About"
+#   link: "/researcher/"
  - name: "CV"
    link: "CV_Jae_Yeon_Kim.pdf"
  - name: "Contact"
