@@ -3,24 +3,12 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
+## Office 
 
-* Phone: [+91-123123](tel:+91-123123)
+S320 
 
----
+--- 
 
-## Mailing Address
+## Email 
 
-> 221B, Baker Street
->
-> London
->
-> United Kingdom
-
----
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+Email: [jkim@kdischool.ac.kr](mailto:jkim@kdischool.ac.kr)
