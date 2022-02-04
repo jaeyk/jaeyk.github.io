@@ -77,13 +77,13 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
     
 ## Open-access textbook 
 
-* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control via Git/GitHub, data wrangling, visualization, functional programming, data product development, machine learning, and SQL.
+* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control (Git/GitHub), data wrangling, visualization, functional programming, data product development (Shiny & R package), digital data collection (webscraping & API), machine learning (tidymodels framework), and SQL.
 
 ## Awards 
 
 1. [Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics](https://www.wpsanet.org/award/), Western Political Science Association, 2020, "for making a significant contribution to the understanding of Asian Pacific American politics."
 
-2. [Outstanding Graduate Student Instructor Award](https://gsi.berkeley.edu/programs-services/award-programs/ogsi/ogsi-2017/), Graduate Division, UC Berkeley, AY 2016-2017, received by approximately *10 percent* of Graduate Student Instructors at Berkeley
+2. [Outstanding Graduate Student Instructor Award](https://gsi.berkeley.edu/programs-services/award-programs/ogsi/ogsi-2017/), Graduate Division, UC Berkeley, AY 2016-2017, received by approximately 10 percent of Graduate Student Instructors at Berkeley
 
 ## Contact
 
