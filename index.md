@@ -87,6 +87,6 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
 
 ## Contact
 
-* Email: [jkim@kdischool.ac.kr](mailto:jkim@kdischool.ac.kr)
+* Email: [jaeyeonkim@kdis.ac.kr](mailto:jaeyeonkim@kdis.ac.kr)
 
 * Office: S320 (Office Hours: Friday 13:00-17:00, Appointment via [Calendly](https://calendly.com/jkim-46))
