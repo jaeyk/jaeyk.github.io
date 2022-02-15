@@ -23,7 +23,7 @@ Equal contributions = +
 9. "Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power." (Hahrie Han+
 and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political and Social Science*
 
-8. "Teaching Computational Social Science for All." (Jae Yeon Kim and Margaret Ng) Forthcoming at *PS: Political Science & Politics*
+8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, Online First in February 2022 
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
