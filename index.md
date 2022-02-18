@@ -23,7 +23,7 @@ Equal contributions = +
 9. "Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power." (Hahrie Han+
 and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political and Social Science*
 
-8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, Online First in February 2022 
+8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, Online First in February 2022
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
@@ -90,3 +90,7 @@ and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political a
 * Email: [jaeyeonkim@kdis.ac.kr](mailto:jaeyeonkim@kdis.ac.kr)
 
 * Office: S320 (Office Hours: Friday 13:00-17:00, Appointment via [Calendly](https://calendly.com/jkim-46))
+
+## Personal
+
+A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater to launch its own version of the Open Education Resource project (KU OCW), published three books on tech and society, and served on the user service advisory board of Naver, the largest Internet company in S. Korea. Upon graduation, I worked as a strategy manager at a software startup. I also was an active member of the Korean branch of Creative Commons (a digital rights advocacy organization; renamed C.O.D.E.) and published a best-selling book on how to get the best out of college. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. So that is who I am now. I listen to music and practice distance running while I don't write and code.
