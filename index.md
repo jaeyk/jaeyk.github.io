@@ -14,14 +14,14 @@ I have developed open-source software that supports data curation. Among many su
 
 I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and advising social science students on data science careers. I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) I am also currently working on a primer on civic data science (in Korean), which is tentatively titled ["Civic Data Science: How Data Transforms Government, Civil Society, and Democracy."](https://jaeyk.github.io/civic_data_science/)
 
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of collaborators across social sciences and engineering. I co-organized [the San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in 2020 with a theme of computational social science for social good. I am currently co-organizing the SICSS's first partner location in [South Korea](https://sicss.io/2022/korea/) in 2022, which KAIST and KDI School will co-host. 
+I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of collaborators across social sciences and engineering. I co-organized [the San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in 2020 with a theme of computational social science for social good. I am currently co-organizing the SICSS's first partner location in [South Korea](https://sicss.io/2022/korea/) in 2022, which KAIST and KDI School will co-host.
 
 ## Peer-reviewed journal articles
 
 Equal contributions = +
 
-9. "Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power." (Hahrie Han+
-and Jae Yeon Kim+) Forthcoming at *ANNALS of the American Academy of Political and Social Science*
+9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
+and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, Online First in March 2022
 
 8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, Online First in February 2022
 
