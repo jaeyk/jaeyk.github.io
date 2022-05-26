@@ -1,6 +1,6 @@
 if(!require(pacman)) install.packages("pacman")
 
-pacman::p_load(tidyverse, ggthemes)
+pacman::p_load(tidyverse, ggthemes, glue)
 
 df <- read.csv("coauthors_jae_yeon_kim.csv") %>%
   as_tibble() %>%
@@ -16,10 +16,11 @@ df %>%
   ggplot(aes(x = fct_reorder(institution, n), y = n, fill = fields)) +
     geom_col() +
     coord_flip() +
-    theme_clean() +
+    ggthemes::theme_fivethirtyeight() +
     labs(x = "", y = "Count", 
          title = "Coauthors' Affiliated Institutions",
          subtitle = "Including the coauthors of published and working papers",
+         caption = glue("Update: {Sys.Date()}"),
          fill = "Field") +
     theme(legend.position = "bottom")
 
