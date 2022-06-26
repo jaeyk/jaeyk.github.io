@@ -28,7 +28,7 @@ I love learning from other people who share similar research interests and build
 
 ### Open call 
 
-Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research before a mix of academics and practitioners, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). I will launch the KDIS Frontiers in Data and Policy Seminar Series, and we'd love to get to know you and your work.
+Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research before a mix of academics and practitioners, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022, and we'd love to get to know you and your work.
 
 ## Peer-reviewed journal articles
 
