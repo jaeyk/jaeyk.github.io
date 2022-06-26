@@ -16,7 +16,7 @@ I am an award-winning instructor and have taught computational social science in
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. I co-organized [the San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in 2020, with a theme of computational social science for social good (co-hosted by UC Berkeley and Stanford), and the SICSS's first partner location in [South Korea](https://sicss.io/2022/korea/) in 2022 (co-hosted by KAIST and KDI School).
 
-Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research before a mix of academics and practitioners literally around the world, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). I will launch a new seminar in data and policy at KDI School, and we'd love to get to know you and your work.
+Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research before a mix of academics and practitioners, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). I will launch the KDIS Frontiers in Data and Policy Seminar Series, and we'd love to get to know you and your work.
 
 ## Peer-reviewed journal articles
 
