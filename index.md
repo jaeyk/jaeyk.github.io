@@ -17,7 +17,7 @@ My work has been published in or forthcoming at political science (e.g., *Perspe
 ### Awards 
 
 - Best Dissertation Award, Section on Urban and Local Politics, American Political Science Association (2022)
-- Don T. Nakanishi Award for Distinguished Scholarship in Asian Pacific American Politics, Western Political Science Association (2020)
+- Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)
 
 ### Software development 
 
