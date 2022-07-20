@@ -18,8 +18,8 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 ### Awards 
 
-- Best Dissertation Award, Section on Urban and Local Politics, American Political Science Association (2022)
-- Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)
+- *Best Dissertation Award*, Section on Urban and Local Politics, American Political Science Association (2022)
+- *Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics*, Western Political Science Association (2020)
 
 ### Software development 
 
