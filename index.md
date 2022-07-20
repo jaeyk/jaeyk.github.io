@@ -84,6 +84,8 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 3. ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020
 
+4. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
+
 ## Selected research software
 
 1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
