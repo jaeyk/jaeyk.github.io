@@ -6,38 +6,24 @@ layout: default
 
 Hello! I am an Assistant Professor at the KDI School of Public Policy and Management. I teach computational social science and civic data science and co-direct the school's data science concentration program. I am also affiliated with the SNF Agora Institute at Johns Hopkins University, where I was a pre- and postdoctoral fellow. Since 2020, I have been working on the [Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. I received my Ph.D. in political science from UC Berkeley, where I was a Senior Data Science Fellow at D-Lab.
 
-### Research agenda 
+## Research agenda 
 
 I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines how policy design and communication shape social hierarchies and how disadvantaged groups resist the unequal system through organizing. I am also interested in refining measures of identity and marginalization, investigating online harms (hate speech, misinformation, privacy, and fairness violation), and using data to strengthen civic engagement and democracy. My regional focus is the US, Canada, and East Asia.
 
-### Research pipeline
+## Research pipeline
 
 My work has been published in or forthcoming at political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly*, *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*. 
 
 I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://www.proquest.com/docview/2572633754?pq-origsite=gscholar&fromopenview=true), tentatively titled "From Demography to Destiny: How Racial Groups Emerged in the United States." Second, I am also working on a primer on civic data science (in Korean). This book is forthcoming by Sejong Books in 2023.
 
-### Awards 
+## Awards 
 
 - *Best Dissertation Award*, Section on Urban and Local Politics, American Political Science Association (2022)
 - *Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics*, Western Political Science Association (2020)
 
-### Software development 
+## Publications 
 
-I have developed open-source software that supports data curation. Among many such tools, I am most proud of co-developing [MapAgora](https://snfagora.github.io/MapAgora/), an R package that helps collect, process, and combine various data on U.S. nonprofits at scale.
-
-### Teaching and advising 
-
-I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and advising social science students on data science careers. I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) 
-
-### Community building 
-
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. I co-organized [the San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in 2020, with a theme of computational social science for social good (co-hosted by UC Berkeley and Stanford), and the SICSS's first partner location in [South Korea](https://sicss.io/2022/korea/) in 2022 (co-hosted by KAIST and KDI School).
-
-### Open call 
-
-Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research before a mix of academics and practitioners, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022, and we'd love to get to know you and your work.
-
-## Peer-reviewed journal articles
+### Peer-reviewed journal articles
 
 Equal contributions = +
 
@@ -60,21 +46,26 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 1. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 [replication](https://github.com/jaeyk/analyzing-archival-data)
 
-## Peer-reviewed conference and workshop proceedings
+### Peer-reviewed conference and workshop proceedings
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
 
-## Edited volume book chapters
+### Book projects 
+
+- "From Demography to Destiny: How Racial Groups Emerged in the United States." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+- "Civic Data Science: Using Data to Mature Democracy." (in Korean; forthcoming by *Sejong Books* in 2023)
+
+### Edited volume book chapters
 
 1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://osf.io/preprints/socarxiv/chvgp/) (Jae Yeon Kim) Forthcoming at *Challenges and Perspectives of Hate Speech Analysis* ([Digital Communication Research open-access book series]((https://www.digitalcommunicationresearch.de/)) by the German Communication Association)
 
-## Research briefs
+### Research briefs
 
 1. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
 2. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
-## Public writing
+### Public writing
 
 1. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 
@@ -86,7 +77,9 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 4. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
 
-## Selected research software
+## Software development 
+
+I have developed open-source software that supports data curation.
 
 1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
 
@@ -100,9 +93,30 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 2. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
-## Open-access textbook
+## Teaching and advising 
+
+I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and advising social science students on data science careers. I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) 
+
+### Open-access textbook
 
 * [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control (Git/GitHub), data wrangling, visualization, functional programming, data product development (Shiny & R package), digital data collection (webscraping & API), machine learning (tidymodels framework), and SQL.
+
+## Community building 
+
+I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. 
+
+### Summer Institute in Computational Social Science 
+
+I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS).
+
+- In 2019, I participated in the SICSS' Princeton main location.
+- In 2020, I co-organized [the first San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/), with a theme of computational social science for social good. This event was co-hosted by UC Berkeley and Stanford.
+- In 2021, I served as an R bootcamp instructor for [the first Howard-Mathematica partner location](https://sicss.io/2021/howard-mathematica/) (the first SICSS event held at a Historically Black College and University).
+- In 2022, I co-organized [the first South Korean partner locatoin](https://sicss.io/2022/korea/). This event was co-hosted by KAIST and KDI School.
+
+### KDIS Frontiers in Data and Policy Seminar Series
+
+I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022. Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to give a talk on your research for policy-makers from Korea and elsewhere, please sign up using [this form](https://forms.gle/BC5MTG9jgAYsBzoG9). 
 
 ## Contact
 
