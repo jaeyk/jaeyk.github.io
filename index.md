@@ -116,7 +116,7 @@ I have been an active member of the [the Summer Institute in Computational Socia
 
 ### KDIS Frontiers in Data and Policy Seminar Series
 
-I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022. Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research to policy-makers and practitioners from Korea and elsewhere, please sign up using [this form](https://forms.gle/CQ64gHZX9bBYpS5A6) (as of July 21, 2022, 26 researchers signed up). 
+I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022. Fellow junior scholars in applied/quantitative/computational social science (broadly construed), if you want to present your research to policy-makers and practitioners from Korea and elsewhere, please sign up using [this form](https://docs.google.com/forms/d/e/1FAIpQLSdgAcO4Q_rCts6EfB-F-nHoZs-fII0Rt7ChRgK68WAL128Xow/viewform?usp=sf_link) (as of July 21, 2022, 26 researchers signed up). 
 
 ## Contact
 
