@@ -20,6 +20,8 @@ nav:
 #   link: "/researcher/"
  - name: "CV"
    link: "CV_Jae_Yeon_Kim.pdf"
+ - name: "resume"
+   link: "resume_Jae_Yeon_Kim.pdf"
  - name: "GitHub"
    link: https://github.com/jaeyk
  - name: "Google Scholar"
