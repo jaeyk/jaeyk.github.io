@@ -107,7 +107,7 @@ I love learning from other people who share similar research interests and build
 
 ### Summer Institute in Computational Social Science 
 
-I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS).
+I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) since 2019.
 
 - In 2019, I participated in the SICSS' Princeton main location.
 - In 2020, I co-organized [the first San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/), with a theme of computational social science for social good. This event was co-hosted by UC Berkeley and Stanford.
