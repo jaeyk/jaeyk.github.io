@@ -57,7 +57,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 ### Edited volume book chapters
 
-1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://osf.io/preprints/socarxiv/chvgp/) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis* (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
+1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://osf.io/preprints/socarxiv/chvgp/) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
 ### Research briefs
 
