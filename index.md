@@ -25,7 +25,7 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 ### Peer-reviewed journal articles
 
-* = Co-first author
+* Co-first author = +
 
 9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
 and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, Online First in March 2022
