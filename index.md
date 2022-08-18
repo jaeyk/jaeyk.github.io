@@ -122,8 +122,8 @@ I will launch the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022.
 
 * Email: 
 
-- [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
-- [jaeyeonkim@kdis.ac.kr](mailto:jaeyeonkim@kdis.ac.kr) (for KDI School teaching)
+  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
+  - [jaeyeonkim@kdis.ac.kr](mailto:jaeyeonkim@kdis.ac.kr) (for KDI School teaching)
 
 * Office: S320 (Office Hours: Friday 14:00-16:00, Please make an appointment via [Calendly](https://calendly.com/jkim-46))
 
