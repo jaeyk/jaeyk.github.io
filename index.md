@@ -50,6 +50,12 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
 
+### Preprints 
+
+2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at **Harvard Data Science Review**
+
+1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x}{``) (Jae Yeon Kim and Alan Yan) [replication](https://github.com/jaeyk/unbundling-linked-fate)
+
 ### Book projects 
 
 - "From Demography to Destiny: How New Racial Groups Emerged in the United States in the 1960s and 1970s." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
@@ -95,7 +101,7 @@ I have developed open-source software that supports data curation.
 
 ## Teaching and advising 
 
-I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and advising social science students on data science careers. I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) 
+I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [advising social science students on data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) 
 
 ### Open-access textbook
 
