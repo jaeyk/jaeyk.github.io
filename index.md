@@ -58,7 +58,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 ### Book projects 
 
-- "From Demography to Destiny: How New Racial Groups Emerged in the United States in the 1960s and 1970s." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+- "Local Origins of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 - "Civic Data Science: Using Data to Mature Democracy." (in Korean; forthcoming by *Sejong Books* in 2023)
 
 ### Edited volume book chapters
