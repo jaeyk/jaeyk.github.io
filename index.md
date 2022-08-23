@@ -14,7 +14,7 @@ I study power, inequality, and political change drawing on computational, experi
 
 My work has been published in or forthcoming at political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly*, *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*. 
 
-I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://www.proquest.com/docview/2572633754?pq-origsite=gscholar&fromopenview=true), tentatively titled "From Demography to Destiny: How New Racial Groups Emerged in the United States in the 1960s and 1970s." Second, I am also working on a primer on civic data science, titled "Civic Data Science: Using Data to Mature Democracy" (in Korean). This book is forthcoming by Sejong Books in 2023.
+I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://www.proquest.com/docview/2572633754?pq-origsite=gscholar&fromopenview=true), tentatively titled "Local Origins of Multiracial America." Second, I am also working on a primer on civic data science, titled "Civic Data Science: Using Data to Mature Democracy" (in Korean). This book is forthcoming by Sejong Books in 2023.
 
 ## Awards 
 
