@@ -109,15 +109,7 @@ I am an award-winning instructor and have taught computational social science in
 
 ## Community building 
 
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. 
-
-### Summer Institute in Computational Social Science 
-
-I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) since 2019: SICSS` Princeton participant (2019), [the first San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) (co-hosted by UC Berkeley and Stanford) co-organizer (2020), [the first Howard-Mathematica partner location](https://sicss.io/2021/howard-mathematica/) (the first SICSS event held at a Historically Black College and University) R boot camp instructor (2021), [the first South Korean partner locatoin](https://sicss.io/2022/korea/) (co-hosted by KAIST and KDI School) co-organizer (2022)
-
-### KDIS Frontiers in Data and Policy Seminar Series
-
-I launched the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022. If you want to present your research to policy-makers from Korea and elsewhere, please sign up using [this form](https://docs.google.com/forms/d/e/1FAIpQLSdgAcO4Q_rCts6EfB-F-nHoZs-fII0Rt7ChRgK68WAL128Xow/viewform?usp=sf_link) (as of August 29, 2022, 29 researchers signed up). 
+I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. I co-organized the first partner location of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in the [Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). 
 
 ## Contact
 
