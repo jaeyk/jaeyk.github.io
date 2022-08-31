@@ -113,12 +113,7 @@ I love learning from other people who share similar research interests and build
 
 ### Summer Institute in Computational Social Science 
 
-I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) since 2019.
-
-- In 2019, I participated in the SICSS' Princeton main location.
-- In 2020, I co-organized [the first San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/), with a theme of computational social science for social good. This event was co-hosted by UC Berkeley and Stanford.
-- In 2021, I served as an R bootcamp instructor for [the first Howard-Mathematica partner location](https://sicss.io/2021/howard-mathematica/) (the first SICSS event held at a Historically Black College and University).
-- In 2022, I co-organized [the first South Korean partner locatoin](https://sicss.io/2022/korea/). This event was co-hosted by KAIST and KDI School.
+I have been an active member of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) since 2019: SICSS` Princeton participant (2019), [the first San Francisco Bay Area partner location](https://sicss.io/2020/bay_area/) (co-hosted by UC Berkeley and Stanford) co-organizer (2020), [the first Howard-Mathematica partner location](https://sicss.io/2021/howard-mathematica/) (the first SICSS event held at a Historically Black College and University) R boot camp instructor (2021), [the first South Korean partner locatoin](https://sicss.io/2022/korea/) (co-hosted by KAIST and KDI School) co-organizer (2022)
 
 ### KDIS Frontiers in Data and Policy Seminar Series
 
@@ -135,4 +130,4 @@ I launched the KDIS Frontiers in Data and Policy Seminar Series in Fall 2022. If
 
 ## Personal
 
-A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first Open Education Resource project, advocated digital rights issues as an activist for the Korean branch of Creative Commons, and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I worked as a strategy manager at a software startup in Seoul. I also published a [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college, which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. I am a music enthusiast, voracious reader, foodie, and runner. I ran my first half marathon in 2021 (The San Francisco Marathon; Finish: 2:03:26).
+A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first Open Education Resource project, was an activist for the Korean branch of Creative Commons (a digital rights advocacy organization) and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I worked as a strategy manager at a software startup in Seoul. I also published a [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college, which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I don't write and code, I listen to music and enjoy reading, cooking, running, and being outdoors. I ran my first half marathon in 2021 (The San Francisco Marathon; Finish: 2:03:26).
