@@ -1,4 +1,4 @@
-I wrote the following essay a couple of years ago. I am sharing this again after I learned that I am the co-winner of the APSA's best dissertation award in urban and local politics this year. My dissertation is titled "The Politics of Solidarity in Multiracial America."
+I wrote the following essay a couple of years ago. I am sharing this again after I learned that I am the co-winner of the APSA's Best Dissertation Award in Urban and Local Politics this year. My dissertation is titled ["The Politics of Solidarity in Multiracial America."](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf)
 
 ### Speaking of Speaking English
 
