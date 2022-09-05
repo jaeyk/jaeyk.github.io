@@ -14,4 +14,6 @@ What I've learned from running has served me in life. I am applying the wisdom g
 
 The other important lesson I've learned is how to grow old. Aside from not having the time in my schedule, I became less interested in martial arts due to physical challenges. As I aged, I got injured more easily when sparring and I needed more time to recover. Though difficult, I have to be honest with myself: I'm getting old. Instead of resisting the inevitable, I am trying to adapt. Running more seriously and consciously is the start. As long as my legs can carry my body, I intend to run, work, and cherish every moment in my life. I ran my first half marathon in 2021 (The San Francisco Marathon) and plan run a full marathon race in 2023 (I couldn't do that in 2022 due to frequent international travels). Since 2020, I've run almost everywhere I lived, visited, and traveled: the San Francisco Bay Area, several cities in South Korea (including but not limited to Seoul), Lake Tahoe, Honolulu, Chicago, and soon Montreal (the location of the 2022 American Political Science Association annual meeting).
 
-![The 2021 San Francisco Marathon](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/sf_marathon_cut.jpeg =250x250)
+<img src = "https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/sf_marathon_cut.jpeg" width="200" height="400" />
+
+The 2021 San Francisco Marathon]
