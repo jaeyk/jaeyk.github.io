@@ -6,22 +6,22 @@ layout: default
 
 Hello! I am an Assistant Professor at the KDI School of Public Policy and Management. I teach computational social science and civic data science and co-direct the school's data science concentration program. I am also affiliated with the SNF Agora Institute at Johns Hopkins University, where I was a pre- and postdoctoral fellow. Since 2020, I have been working on the [Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. I received my Ph.D. in political science from UC Berkeley, where I was a Senior Data Science Fellow at D-Lab.
 
-## Research agenda 
+## Research agenda
 
 I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines when (timing), why (motivation), and how (strategies) disadvantaged groups resist social inequality through organizing and collective actions. I am also interested in refining measures of identity and marginalization, investigating online harms, and using data and computing to strengthen civic engagement and democracy. My regional focus is the US, Canada, and East Asia.
 
 ## Research pipeline
 
-My work has been published in or forthcoming at political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly*, *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*. 
+My work has been published in or forthcoming at political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly*, *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "How Other Minorities Organized: Local Origins of Multiracial America." Second, I am also working on a primer on civic data science, titled "Civic Data Science: Using Data to Mature Democracy" (in Korean). This book is forthcoming by Sejong Books in 2023.
+I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Racism Is Not Enough: Policy Origins of Multiracial America." Second, I am also working on a primer on civic data science, titled "Civic Data Science: Using Data to Mature Democracy" (in Korean). This book is forthcoming by Sejong Books in 2023.
 
-## Awards 
+## Awards
 
 - *Best Dissertation Award in Urban and Local Politics*, American Political Science Association (2022), "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
 - *Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics*, Western Political Science Association (2020), "for making a significant contribution to the understanding of Asian Pacific American politics."
 
-## Publications 
+## Publications
 
 ### Peer-reviewed journal articles
 
@@ -50,15 +50,15 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [replication](https://github.com/jaeyk/intersectional-bias-in-ml)
 
-### Preprints 
+### Preprints
 
 2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at *Harvard Data Science Review*
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [replication](https://github.com/jaeyk/unbundling-linked-fate)
 
-### Book projects 
+### Book projects
 
-- "How Other Minorities Organized: Local Origins of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+- "Racism Is Not Enough: Policy Origins of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 - "Civic Data Science: Using Data to Mature Democracy." (in Korean; forthcoming by *Sejong Books* in 2023)
 
 ### Edited volume book chapters
@@ -83,7 +83,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 4. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
 
-## Software development 
+## Software development
 
 I have developed open-source software that supports data curation.
 
@@ -99,21 +99,21 @@ I have developed open-source software that supports data curation.
 
 2. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
-## Teaching and advising 
+## Teaching and advising
 
-I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [advising social science students on data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/) 
+I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [advising social science students on data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
 
 ### Open-access textbook
 
 * [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control (Git/GitHub), data wrangling, visualization, functional programming, data product development (Shiny & R package), digital data collection (webscraping & API), machine learning (tidymodels framework), and SQL.
 
-## Community building 
+## Community building
 
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in the [Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). 
+I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in the [Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School).
 
 ## Contact
 
-* Email: 
+* Email:
 
   - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
   - [jaeyeonkim@kdis.ac.kr](mailto:jaeyeonkim@kdis.ac.kr) (for KDI School teaching)
