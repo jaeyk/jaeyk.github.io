@@ -52,6 +52,8 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 ### Preprints
 
+3. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://osf.io/preprints/socarxiv/2nefr/) (Jae Yeon Kim and Taeku Lee) Revise and Resubmit at *Political Research Quarterly*
+
 2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at *Harvard Data Science Review*
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [replication](https://github.com/jaeyk/unbundling-linked-fate)
