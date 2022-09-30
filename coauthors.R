@@ -29,4 +29,4 @@ df %>%
          fill = "Field") +
     theme(legend.position = "bottom")
 
-ggsave("coauthors.png")
+ggsave("coauthors.png", width = 10, height= 10)
