@@ -8,7 +8,7 @@ Hello! I am an Assistant Professor at the KDI School of Public Policy and Manage
 
 ## Research agenda
 
-I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines when (timing), why (motivation), and how (strategies) disadvantaged groups resist social inequality through organizing and collective actions. I am also interested in refining measures of identity and marginalization, investigating online harms, and using data and computing to strengthen civic engagement and democracy. My regional focus is the US, Canada, and East Asia.
+I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines when (timing), why (motivation), and how (strategies) disadvantaged groups resist social inequality through organizing and collective actions. I am also interested in refining measures of identity and marginalization, investigating online harms, and using data and computing to solve public problems and strengthen civic engagement. My regional focus is the US, Canada, and East Asia.
 
 ## Research pipeline
 
