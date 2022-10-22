@@ -128,5 +128,6 @@ A summary of who I am. I was born and raised in South Korea, but I lived in Hong
 
 I've written some essays on my life journeys.
 
+- [Four Tips on How to Approach Job Interviews](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/job_interviews.md)
 - [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md)
 - [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md)
