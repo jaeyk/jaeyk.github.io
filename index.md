@@ -54,7 +54,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 3. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://osf.io/preprints/socarxiv/2nefr/) (Jae Yeon Kim and Taeku Lee) Revise and Resubmit at *Political Research Quarterly*
 
-2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at *Harvard Data Science Review*
+2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+)
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [replication](https://github.com/jaeyk/unbundling-linked-fate)
 
@@ -124,7 +124,7 @@ I love learning from other people who share similar research interests and build
 
 ## Personal
 
-A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first massive open online course project (KU OCW), was an activist for the Korean branch of Creative Commons (a digital rights advocacy organization), and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I got involved in the Korean tech industry as a strategy manager at a software startup. I also published a [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college, which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I don't write and code, I listen to music and enjoy reading, cooking, and distance running. 
+A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first massive open online course project (KU OCW), was an activist for the Korean branch of Creative Commons (a digital rights advocacy organization), and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I got involved in the Korean tech industry as a strategy manager at a software startup. I also published a [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college, which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I don't write and code, I listen to music and enjoy reading, cooking, drawing, singing, hiking, and distance running. 
 
 I've written some essays on my life journeys and professional development.
 
