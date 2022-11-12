@@ -124,11 +124,20 @@ I love learning from other people who share similar research interests and build
 
 ## Personal
 
-A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first massive open online course project (KU OCW), was an activist for the Korean branch of Creative Commons (a digital rights advocacy organization), and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I got involved in the Korean tech industry as a strategy manager at a software startup. I also published a [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college, which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I don't write and code, I listen to music and enjoy reading, cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), singing, hiking, and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
+A summary of who I am. I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped my alma mater launch its first massive open online course project (KU OCW), was an activist for the Korean branch of Creative Commons (a digital rights advocacy organization), and served on the user service advisory board of Naver---the largest Internet company in S. Korea. Upon graduation, I got involved in the Korean tech industry as a strategy manager at a software startup. I also published a Korean [book](http://www.yes24.com/Product/Goods/13765542) on how to get the best out of college (대학사용법), which sold more than 10,000 copies. I moved to the San Francisco Bay Area in 2014 for my graduate study and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I don't write and code, I listen to music and enjoy reading, cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), singing, hiking, and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
 
-I've written some essays on my life journeys and professional development.
+In addition, I'm a Christian and my immigrant life has transformed the ways in which I read and practice the bible. Despite its myriad problems and issues, the Christian faith has taught me to be resilient against all fears, commit to social justice, and build strong and inclusive communities wherever I live.
+
+I've written some personal essays (in English) and poems (in Korean).
+
+**English essays**
 
 - [How to Write a Statement of Purpose for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
 - [Four Tips on How to Approach Job Interviews](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/job_interviews.md)
 - [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md)
 - [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md)
+
+**Korean poems**
+
+- [Love Is Like A Nail (사랑은 손톱같다)](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/nail.md)
+- [Life Is Like A Sea Wave (인생은 파도같다)](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/wave.md)
