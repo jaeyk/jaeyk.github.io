@@ -18,8 +18,8 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 ## Awards
 
-- *Best Dissertation Award in Urban and Local Politics*, American Political Science Association (2022), "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
-- *Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics*, Western Political Science Association (2020), "for making a significant contribution to the understanding of Asian Pacific American politics."
+- **Best Dissertation Award in Urban and Local Politics, American Political Science Association (2022)**, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
+- **Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)**, "for making a significant contribution to the understanding of Asian Pacific American politics."
 
 ## Publications
 
