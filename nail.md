@@ -1,4 +1,4 @@
-### 사랑은 손톱같다 Love Is Like A Nail
+### 사랑은 손톱같다 Love Is Like A Fingernail
 
 사랑은 손톱같다  
 

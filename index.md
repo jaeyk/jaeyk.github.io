@@ -137,5 +137,5 @@ To reflect on my life journeys, I've written some personal essays (in English) a
 
 **Korean poems**
 
-- [Love Is Like A Nail (사랑은 손톱같다)](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/nail.md)
+- [Love Is Like A Fingernail (사랑은 손톱같다)](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/nail.md)
 - [Life Is Like A Sea Wave (인생은 파도같다)](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/wave.md)
