@@ -115,9 +115,7 @@ I love learning from other people who share similar research interests and build
 
 ## Contact
 
-* Email:
-
-  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) 
+* Email: [jkim638@jhu.edu](mailto:jkim638@jhu.edu) 
   
 ## Personal
 
