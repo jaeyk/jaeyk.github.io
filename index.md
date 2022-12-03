@@ -27,12 +27,12 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 * Co-first author = +
 
-10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://osf.io/preprints/socarxiv/2nefr/) (Jae Yeon Kim and Taeku Lee) Accepted at *Political Research Quarterly*
+10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://osf.io/preprints/socarxiv/2nefr/) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
 
 9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
-and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, Online First in March 2022
+and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185
 
-8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, Online First in February 2022
+8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
 
 7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
 
