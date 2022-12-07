@@ -27,7 +27,7 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 * Co-first author = +
 
-10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://osf.io/preprints/socarxiv/2nefr/) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
+10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
 
 9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
 and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185
