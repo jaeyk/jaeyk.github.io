@@ -27,7 +27,7 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 * Co-first author = +
 
-11. "Validated Names for Experimental Studies on Ethnicity and Race." (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) [replication](https://github.com/jaeyk/validated_names) Accepted at *Nature Scientific Data*
+11. "Validated Names for Experimental Studies on Ethnicity and Race." (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) Accepted at *Nature Scientific Data* [[replication](https://github.com/jaeyk/validated_names)]
 
 10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
 
@@ -36,19 +36,19 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 8. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
 
-7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)
+7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)]
 
-6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/covid19antiasian/)
+6. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [[replication](https://github.com/jaeyk/covid19antiasian/)]
 
-5. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 [replication](https://github.com/jaeyk/linked_fate_review/)
+5. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 [[replication](https://github.com/jaeyk/linked_fate_review/)]
 
-4. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) [replication](https://github.com/jaeyk/asian_hate_misinformation)
+4. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) [[replication](https://github.com/jaeyk/asian_hate_misinformation)]
 
-3. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (Jae Yeon Kim), *Journal of Computational Social Science*, 2021, 4(2), 585-612 [replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances) (Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**)
+3. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (Jae Yeon Kim), *Journal of Computational Social Science*, 2021, 4(2), 585-612 [[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)] (Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**)
 
-2. ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (Jae Yeon Kim), *Political Research Quarterly*, Online First in December 2020 [replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)
+2. ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (Jae Yeon Kim), *Political Research Quarterly*, Online First in December 2020 [[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)]
 
-1. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 [replication](https://github.com/jaeyk/analyzing-archival-data)
+1. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 [[replication](https://github.com/jaeyk/analyzing-archival-data)]
 
 ### Peer-reviewed conference and workshop proceedings
 
