@@ -71,37 +71,41 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 ### Research briefs
 
-1. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+2. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
-2. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
+1. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
 ### Public writing
 
-1. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
+5. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 
-1. ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020
+4. ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020
 
-2. ["BAY-SICSS: Bridging Computational Social Scientists and Practitioners for Social Good."](https://bids.berkeley.edu/news/bay-sicss-bridging-computational-social-scientists-and-practitioners-social-good) (Jaren Haber, Jae Yeon Kim, and Nick Camp), *Berkeley Institute of Data Science*, September 15, 2020
+3. ["BAY-SICSS: Bridging Computational Social Scientists and Practitioners for Social Good."](https://bids.berkeley.edu/news/bay-sicss-bridging-computational-social-scientists-and-practitioners-social-good) (Jaren Haber, Jae Yeon Kim, and Nick Camp), *Berkeley Institute of Data Science*, September 15, 2020
 
-3. ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020
+2. ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020
 
-4. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
+1. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
 
 ## Software development
 
 I have developed open-source software that supports data curation.
 
-1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+4. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+
+3. [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the Validated Names for Experimental Studies on Race and Ethnicity datasets (with Charles Crabtree)
 
 2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
 
-3. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
+1. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
 ## Public datasets
 
-1. [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
+3. [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
 
-2. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+2. [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
+
+1. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
 ## Teaching and advising
 
