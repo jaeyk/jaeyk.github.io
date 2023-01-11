@@ -121,7 +121,9 @@ I love learning from other people who share similar research interests and build
 
 ## Contact
 
-* Email: [jkim638@jhu.edu](mailto:jkim638@jhu.edu) 
+* Email: 
+  - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
+  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for my academic research)
   
 ## Personal
 
