@@ -4,3 +4,4 @@ _site
 .DS_Store
 .jekyll-cache
 .Rproj.user
+copy_cv.sh
