@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 ## Research agenda
 
-I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines when (timing), why (motivation), and how (strategies) disadvantaged groups resist social inequality through organizing and collective actions. I am also interested in refining measures of identity and marginalization, investigating online harms, and using data and computing to solve public problems and strengthen civic engagement. My regional focus is the US, Canada, and East Asia.
+I study power, inequality, and political change drawing on computational, experimental, and archival methods. My research examines how disadvantaged groups navigate the power structure (e.g., bureaucracy and political parties) and resist social inequality through organizing and collective actions. I am also interested in refining measures of identity and marginalization, investigating online harms, and using data to solve public problems and strengthen civic engagement. My regional focus is the US, Canada, and East Asia.
 
 ## Research pipeline
 
