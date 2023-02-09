@@ -111,10 +111,6 @@ I have developed open-source software that supports data curation.
 
 I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [helping social science Ph.D. students to be prepared for academic and non-academic data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
 
-### Open-access textbook
-
-* [Computational Thinking for Social Scientists](https://jaeyk.github.io/comp_thinking_social_science/): The open-access textbook covers UNIX command-line tools, version control (Git/GitHub), data wrangling, visualization, functional programming, data product development (Shiny & R package), digital data collection (webscraping & API), machine learning (tidymodels framework), and SQL.
-
 ## Community building
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of the [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in the [Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School).
