@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="profile.jpg">
 
-Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/), where our team works with partner states to improve safety net experiences and outcomes. I am also affiliated with the SNF Agora Institute at Johns Hopkins University, where I was a pre- and postdoctoral fellow. Since 2020, I have been working on the [Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. I received my Ph.D. in political science from UC Berkeley, where I was a Senior Data Science Fellow at D-Lab. Before joining Code for America, I was an assistant professor at the KDI School of Public Policy and Management in South Korea.
+Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/), where our team works with partner states to improve safety net experiences and outcomes. I am also affiliated with the SNF Agora Institute at Johns Hopkins University, where I was a pre- and postdoctoral fellow. Since 2020, I have been working on the [Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. I received my Ph.D. in political science from UC Berkeley, where I was a Senior Data Science Fellow at D-Lab. Before joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
 
 ## Research agenda
 
