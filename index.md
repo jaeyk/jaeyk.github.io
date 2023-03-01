@@ -14,7 +14,7 @@ I study power, inequality, and political change drawing on computational, experi
 
 My work has been published in or forthcoming at general science (e.g., *Nature Scientific Data*), political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, I am also working on a primer on civic data science, titled "Civic Data Science: Data Science for All People" (in Korean). This book is forthcoming by Sejong Books in 2023.
+I have two ongoing book projects. First, I am currently preparing the book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, I am also working on a primer on civic data science, titled "Civic Data: Data Science for All People" (in Korean). This book is forthcoming by Sejong Books in 2023.
 
 ## Awards
 
@@ -63,7 +63,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 ### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
-- Civic Data Science: Data Science for All People." (in Korean; forthcoming by *Sejong Books* in 2023)
+- Civic Data: Data Science for All People." (in Korean; forthcoming by *Sejong Books* in 2023)
 
 ### Edited volume book chapters
 
