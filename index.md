@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 ## Research agenda
 
-My research agenda lies at the intersection of political science, public policy, and data science. I study how marginalized people build power, resist social inequality, and access public benefits using computational, experimental, survey, and archival methods. I also investigate how anti-immigrant politics and its resistance varies across places, refine identity and marginalization measurements, and explore the political patterns of online harms. I am deeply interested in using data for civic engagement and public policy problems, and my regional focus is the US, Canada, and East Asia.
+My research agenda lies at the intersection of political science, public policy, and data science. I study how marginalized people build power, resist social inequality, and access public benefits using computational, experimental, survey, and archival methods. I also investigate how anti-immigrant politics and its resistance varies across places, refine identity and marginalization measurements, and identify the political patterns of online harms. I am interested in using data to strengthen civic engagement and improve public policy processes and outcomes. My regional focus is the US, Canada, and East Asia.
 
 ## Research pipeline
 
