@@ -27,7 +27,7 @@ I have two ongoing book projects. First, I am currently preparing the book versi
 
 * Co-first author = +
 
-11. "Validated Names for Experimental Studies on Ethnicity and Race." (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) Accepted at *Nature Scientific Data* [[replication](https://github.com/jaeyk/validated_names)]
+11. ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 [[replication](https://github.com/jaeyk/validated_names)]
 
 10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
 
