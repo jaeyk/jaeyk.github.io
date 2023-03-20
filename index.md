@@ -127,6 +127,7 @@ A summary of who I am. I was born and raised in South Korea, but I lived in Hong
 
 To reflect on my life journeys, I've written some personal essays.
 
+- [The Desire to Learn and the Desire to Serve](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/two_desires.md)
 - [How to Write a Statement of Purpose for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
 - [Four Tips on How to Approach Job Interviews](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/job_interviews.md)
 - [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md)
