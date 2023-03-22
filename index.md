@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="profile.jpg">
 
-Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/) and affiliated with [the SNF Agora Institute at Johns Hopkins University](https://snfagora.jhu.edu/person/jae-yeon-kim/). I have a Ph.D. in Political Science from UC Berkeley, where I was a senior data science fellow. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
+Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/) and affiliated with [the SNF Agora Institute at Johns Hopkins University](https://snfagora.jhu.edu/person/jae-yeon-kim/). I have a Ph.D. in Political Science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
 
 ## Research agenda
 
