@@ -1,11 +1,10 @@
 first_name,last_name,department,institution,country,n_papers,region
-Taeku,Lee,Government,Harvard,USA,4,East
+Taeku,Lee,Government,Harvard,USA,5,East
 Christina,Mora,Sociology,UC Berkeley,USA,1,West
 Dina,Okamoto,Sociology,Indiana,USA,1,Midwest
-Aniket,Kesari,Information Law Institute,New York University,USA,3,East
+Aniket,Kesari,Law,Fordham,USA,3,East
 Charles,Crabtree,Government,Dartmouth,USA,1,East
-Kevin,Esterling,Political Science,UCR,USA,1,West
-Nathan,Chan,Political Science,UCR,USA,1,West
+Nathan,Chan,Political Science,Loyola Marymount University,USA,1,West
 Vivien,Leung,Political Science,Bucknell University,USA,2,East
 Jennifer,Wu,Political Science,Yale,USA,1,East
 Natalie,Masuoka,Political Science,UCLA,USA,1,West
@@ -21,14 +20,14 @@ Sarah,Santiago,Applied Mathematics,UC Berkeley,USA,1,West
 Vivek,Datta,Computer Science and Data Science,UC Berkeley,USA,1,West
 Michael,Gaddis,Sociology,UCLA,USA,1,West
 John,Holbein,Public Policy,Virginia,USA,1,South
-Aram,Hur,Political Science,Missouri,USA,1,Midwest
+Aram,Hur,"International Studies",Tufts,USA,1,East
 Cameron,Guage,Government,Dartmouth,USA,1,East
 William,Marx,Government,Dartmouth,USA,1,East
-Gwen,Prowse,"Political Science, Africana Studies",Yale,USA,1,East
+Gwen,Prowse,"Political Science, Africana Studies",Tulane,USA,1,East
 Sono,Shah,Computational Social Science,Phew Research Center,USA,1,East
 Taylor,Brown,Computational Social Science,Meta,USA,1,West
-Tiago,Ventura,Computational Social Science,Twitter,USA,1,West
-Tina,Law,Sociology,Northwestern,USA,1,Midwest
+Tiago,Ventura,Public Policy,Georgetown,USA,1,East
+Tina,Law,Sociology,UC Davis,USA,1,Midwest
 Alan,Yan,Political Science,UC Berkeley,USA,1,West
 Andrew,Thompson,Political Science,George Washington,USA,1,East
 Joan,Cho,"East Asian Studies, Government",Wesleyan,USA,1,East
@@ -36,6 +35,12 @@ DG,Kim,Inequality in America Initiative,Harvard,USA,1,East
 Liz,McKeena,Kennedy School of Government,Harvard,USA,1,East
 Nick,Camp,Organizatioinal Studies,Michigan,USA,1,Midwest
 Jaren,Habers,Public Policy,Georgetown,USA,1,East
+Rebecca,Johnson,Public Policy,Georgetown,USA,1,East
 Justin,Ho,Computational Social Science,Academia Sinica,Taiwan,1,NA
 AJ,Alvero,Education,Stanford,USA,1,West
 Efrén,Pérez,"Political Science, Psychology",UCLA,USA,1,West
+Rob,Willer,Sociology,Stanford,USA,1,West
+Joe,Mernyk,Sociology,Stanford,USA,1,West
+Don,Moynihan,Public Policy,Georgetown,USA,1,East
+Pam,Herd,Public Policy,Georgetown,USA,1,East
+Seb,Jilke,Public Policy,Georgetown,USA,1,East
