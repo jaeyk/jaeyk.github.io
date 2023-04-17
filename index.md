@@ -109,7 +109,7 @@ I have developed open-source software that supports data curation.
 
 ## Teaching and advising
 
-I am an award-winning instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [helping social science Ph.D. students prepare for academic and non-academic data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+I am an award-winning certified instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [helping social science Ph.D. students prepare for academic and non-academic data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
 
 ## Community building
 
@@ -125,12 +125,12 @@ I love learning from other people who share similar research interests and build
 
 Here's a summary of who I am: I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped launch my alma mater's first massive open online course project (KU OCW). I was also an activist for the Korean branch of Creative Commons, a digital rights advocacy organization, and served on the user service advisory board of Naver, South Korea's largest internet company. After graduation, I worked as a strategy manager at a software startup in the Korean tech industry. I also authored [a Korean book](http://www.yes24.com/Product/Goods/13765542) on how to make the most out of college, which sold more than 10,000 copies. 
 
-In 2014, I moved to the San Francisco Bay Area for my graduate studies and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I'm not writing or coding, I enjoy listening to music, podcasts, and public radio, [reading](https://www.goodreads.com/review/list/41727126-jae-yeon-kim?shelf=%23ALL%23), cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
+In 2014, I moved to the San Francisco Bay Area for my graduate studies and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I'm not writing or coding, I enjoy listening to music, [reading](https://www.goodreads.com/review/list/41727126-jae-yeon-kim?shelf=%23ALL%23), cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
 
 To reflect on my life journeys, I've written several personal essays:
 
 - [The Desire to Learn and the Desire to Serve](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/two_desires.md)
-- [How to Write a Statement of Purpose for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
+- [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md)
 - [Four Tips on How to Approach Job Interviews](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/job_interviews.md)
 - [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md)
-- [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md)
+- [How to Write a SOP for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
