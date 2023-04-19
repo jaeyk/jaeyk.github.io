@@ -95,7 +95,7 @@ I have developed open-source software that supports data curation.
 
 4. [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
 
-3. [https://github.com/snfagora/autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
+3. [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
 
 2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
 
