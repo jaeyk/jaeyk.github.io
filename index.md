@@ -136,3 +136,5 @@ To reflect on my life journeys, I've written several personal essays:
 - [Four Tips on How to Approach Job Interviews](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/job_interviews.md)
 - [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md)
 - [How to Write a SOP for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
+
+I also have a [blog](https://jaeyeonkim5.wordpress.com/) where I write about data science, social science, running, and self-management in Korean.
