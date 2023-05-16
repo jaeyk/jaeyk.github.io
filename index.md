@@ -6,30 +6,24 @@ layout: default
 
 Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
 
-### Research agenda
+## Research agenda
 
 My research agenda lies at the intersection of political science, public policy, and data science. I use quantitative and mixed methods to examine what makes civic engagement, political participation, and policy implementation efficient and equitable. I investigate how these factors interact and shape the structure of policy governance. Additionally, I refine the measurements of identity and marginalization and study the variation of anti-immigrant politics and their resistance, as well as the political patterns of online harm and digital inequality. My regional focus is the United States, Canada, and East Asia.
 
-### Research pipeline
+## Research pipeline
 
 My work has been published in general science (e.g., *Nature Scientific Data*), political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
 I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, I am also working on a primer on civic data science, titled "Civic Data: Data Science for All People" (in Korean). This book will be published by Sejong Books in 2023.
 
-### Contact
-
-* Email: 
-  - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
-  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for my academic research)
-
-<details closed><summary> Awards </summary>
+## Awards
 
 - **Best Dissertation Award in Urban and Local Politics, American Political Science Association (2022)**, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
 - **Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)**, "for making a significant contribution to the understanding of Asian Pacific American politics."
 
-</details>
+## Publications
 
-<details closed><summary> Peer-reviewed journal articles </summary>
+### Peer-reviewed journal articles
 
 * Co-first author = +
 
@@ -56,44 +50,32 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 1. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 [[replication](https://github.com/jaeyk/analyzing-archival-data)]
 
-</details>
-
-<details closed><summary> Peer-reviewed conference and workshop proceedings </summary>
+### Peer-reviewed conference and workshop proceedings
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [[replication](https://github.com/jaeyk/intersectional-bias-in-ml)]
 
-</details>
-
-<details closed><summary> Preprints </summary>
+### Preprints
 
 2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at **PS: Political Science & Politics**
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [[replication](https://github.com/jaeyk/unbundling-linked-fate)]
 
-</details>
-
-<details closed><summary> Book projects </summary>
+### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 - Civic Data: Data Science for All People." (in Korean; forthcoming by *Sejong Books* in 2023)
 
-</details>
-
-<details closed><summary> Edited volume book chapters </summary>
+### Edited volume book chapters
 
 1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
-</details>
-
-<details closed><summary> Research briefs </summary>
+### Research briefs
 
 2. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
 1. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
-</details>
-
-<details closed><summary> Public writing </summary>
+### Public writing
 
 5. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 
@@ -105,9 +87,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 
 1. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
 
-</details>
-
-<details closed><summary> Software development </summary>
+## Software development
 
 I have developed open-source software that supports data curation.
 
@@ -121,9 +101,7 @@ I have developed open-source software that supports data curation.
 
 1. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
-</details>
-
-<details closed><summary> Public datasets </summary>
+## Public datasets
 
 3. [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
 
@@ -131,21 +109,21 @@ I have developed open-source software that supports data curation.
 
 1. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
-</details>
-
-<details closed><summary> Teaching and advising </summary>
+## Teaching and advising
 
 I am an award-winning certified instructor and have taught computational social science in semester-long courses and short workshops. I have co-authored articles on [making computational methods accessible to social scientists](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) and [helping social science Ph.D. students prepare for academic and non-academic data science careers](https://osf.io/preprints/socarxiv/kgjn2/). I wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
 
-</details> 
-
-<details closed><summary> Community building </summary>
+## Community building
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School).
 
-</details> 
+## Contact
 
-<details closed><summary> Personal </summary>
+* Email: 
+  - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
+  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for my academic research)
+  
+## Personal
 
 Here's a summary of who I am: I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped launch my alma mater's first massive open online course project (KU OCW). I was also an activist for the Korean branch of Creative Commons, a digital rights advocacy organization, and served on the user service advisory board of Naver, South Korea's largest internet company. After graduation, I worked as a strategy manager at a software startup in the Korean tech industry. I also authored [a Korean book](http://www.yes24.com/Product/Goods/13765542) on how to make the most out of college, which sold more than 10,000 copies. 
 
@@ -160,5 +138,3 @@ To reflect on my life journeys, I've written several personal essays:
 - [How to Write a SOP for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md)
 
 I also have a [blog](https://jaeyeonkim5.wordpress.com/) where I write about data science, social science, running, and self-management in Korean.
-
-</details>
