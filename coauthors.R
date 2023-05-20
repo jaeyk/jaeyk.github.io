@@ -1,4 +1,4 @@
-if(!require(pacman)) install.packages("pacman")
+if (!require(pacman)) install.packages("pacman")
 
 pacman::p_load(tidyverse, ggthemes, glue, patchwork, ggpmisc)
 
@@ -23,7 +23,8 @@ affil_plot <- df %>%
          subtitle = glue("Including the coauthors of published, \n working papers, and research proposals"),
          caption = glue("Update: {Sys.Date()}"),
          fill = "Year") +
-    theme(legend.position = "bottom")
+    theme(legend.position = "bottom") +
+    theme_minimal()
 
 year_plot <- df %>%
   group_by(year) %>%
@@ -32,7 +33,8 @@ year_plot <- df %>%
   geom_point() +
   stat_poly_line() +
   stat_poly_eq(aes(label = paste(after_stat(eq.label)))) +
-  labs(x = "Year", y = "# of the new coauthors")
+  labs(x = "Year", y = "# of the new coauthors") +
+  theme_minimal()
 
 affil_plot + year_plot + plot_annotation(tag_levels = "A")
 
