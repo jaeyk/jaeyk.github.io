@@ -63,7 +63,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 ### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
-- Civic Data: Data Science for All People." (in Korean; forthcoming by *Sejong Books* in 2023)
+- "Civic Data Handbook: 7 Ways to Reduce Discrimination and Increase Opportunities Using Data." (in Korean; forthcoming by *Sejong Books* in 2023)
 
 ### Edited volume book chapters
 
