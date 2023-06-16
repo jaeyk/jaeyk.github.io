@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 ## Research agenda
 
-My research focuses on civic engagement, political participation, and policy implementation. Specifically, I investigate how the political process excludes and marginalizes certain groups, and how these disadvantaged groups resist through civic engagement and political participation. Additionally, I analyze the barriers that historically disadvantaged groups face in accessing government benefits, and identify strategies to reduce them. I use quantitative, computational, and mixed methods to study these topics in the United States, Canada, and East Asia.
+My research focuses on civic engagement, political participation, and policy implementation. Specifically, I investigate how the political process excludes and marginalizes certain groups, and how these disadvantaged groups resist through civic engagement and political participation. Additionally, I identify the barriers that historically disadvantaged groups face in accessing government benefits, and provide strategies to reduce them. I use quantitative, computational, and mixed methods to study these topics in the United States, Canada, and East Asia.
 
 ## Research pipeline
 
