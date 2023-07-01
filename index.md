@@ -10,7 +10,6 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 My research agenda lies at the intersection of political science, public policy, and data science. My research focuses on civic engagement, political participation, and policy implementation. Specifically, I investigate how political and administrative process excludes and marginalizes certain groups and how these disadvantaged groups resist through civic engagement and political participation. Additionally, I identify and reduce the barriers that historically disadvantaged groups face in accessing government benefits and civic opportunities. I use quantitative, computational, and mixed methods to study these topics in the United States, Canada, and East Asia.
 
-
 ## Research pipeline
 
 My work has been published in general science (e.g., *Nature Scientific Data*), political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
