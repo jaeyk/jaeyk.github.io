@@ -21,7 +21,7 @@ My research projects are roughly divided into the following four areas:
 
 My work has been published in general science (e.g., *Nature Scientific Data*), political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on using data for social good (in Korean), titled "Public Interest Data Science: Data for Discrimination, Data for Opportunities," will be published by Sejong Books in August/September 2023.
+I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on using data for social good (in Korean), titled "Public Interest Data Science: Using Data to Reduce Discrimination and Expand Opportunities," will be published by Sejong Books in August/September 2023.
 
 ## Awards
 
