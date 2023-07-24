@@ -10,7 +10,7 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 My research agenda lies at the intersection of political science, public policy, and data science. My research focuses on civic engagement, political participation, and policy implementation. I use quantitative, computational, and mixed methods to study these topics in the United States, Canada, and East Asia.
 
-My research topics are roughly divided into the following four areas:
+My research projects are roughly divided into the following four areas:
 
 1. How political and administrative process excludes and marginalizes certain groups (**systemic inequality**).
 2. How these disadvantaged groups resist inequality and social injustice through civic engagement and political participation (**resistance and organizing**).
@@ -21,7 +21,7 @@ My research topics are roughly divided into the following four areas:
 
 My work has been published in general science (e.g., *Nature Scientific Data*), political science (e.g., *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Studies in American Political Development*, The *ANNALS*, and *PS: Political Science and Politics*) and computational social science journals and proceedings (e.g., *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*). My research has also appeared in popular outlets such as the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, I am also working on a primer on civic data science, titled "Civic Data Handbook: 3 Ways to Reduce Discrimination and Increase Opportunities Using Data" (in Korean). This book will be published by Sejong Books in 2023.
+I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on citizen-centered data science (in Korean), titled "Public Interest Data Science: Using Data to Reduce Discrimination and Expand Opportunities," will be published by Sejong Books in August/September 2023.
 
 ## Awards
 
@@ -70,7 +70,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 ### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
-- "Civic Data Handbook: 3 Ways to Reduce Discrimination and Increase Opportunities Using Data." (in Korean; forthcoming by *Sejong Books* in 2023)
+- "Public Interest Data Science: Using Data to Reduce Discrimination and Expand Opportunities." (in Korean; forthcoming by *Sejong Books* in August/September 2023)
 
 ### Edited volume book chapters
 
