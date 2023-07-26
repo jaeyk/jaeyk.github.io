@@ -21,7 +21,7 @@ My research projects are roughly divided into the following four areas:
 
 My work has been published or is forthcoming in leading journals across various fields. These include general science journals such as *Nature Human Behaviour* and *Nature Scientific Data*, political science journals such as *Perspectives on Politics*, *Political Research Quarterly*, *Studies in American Political Development*, *The ANNALS*, and *PS: Political Science and Politics*, and computational social science journals and proceedings such as *Journal of Online Trust and Safety*, *Information Systems Frontiers*, *Journal of Computational Social Science*, and *ICWSM*. In addition, my research has been featured in popular outlets like the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on citizen-centered data science (in Korean), titled "Public Interest Data Science: Using Data to Reduce Discrimination and Expand Opportunities," will be published by Sejong Books in August/September 2023.
+I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on citizen-centered data science (in Korean), titled "Public Interest Data Science: Harnessing Data for Good," will be published by Sejong Books in August/September 2023.
 
 ## Awards
 
@@ -70,7 +70,7 @@ and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Scien
 ### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
-- "Public Interest Data Science: Using Data to Reduce Discrimination and Expand Opportunities." (in Korean; forthcoming by *Sejong Books* in August/September 2023)
+- "Public Interest Data Science: Harnessing Data for Good." (in Korean; forthcoming by *Sejong Books* in August/September 2023)
 
 ### Edited volume book chapters
 
