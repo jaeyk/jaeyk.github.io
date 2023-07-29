@@ -1,3 +1,9 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
 ### The Desire to Learn and the Desire to Serve
 
 Late last year, I left my tenure-track position to work as a professional data scientist. When someone asked me how it feels to move to the "other side" and what led me to make that decision, I realized that even though I've left academia in some sense, I haven't left research. I still conduct research, design surveys and experiments, check data quality, analyze various kinds of data, and disseminate findings. My data science team also collaborates with academics from time to time. In addition, Code for America is a policy-focused organization. Basically, I am doing (social) data science for disadvantaged people in the US. I also maintain my academic affiliation and have a group of researchers with whom I have collaborated for many years. We continue to work on shared projects.

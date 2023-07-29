@@ -1,3 +1,9 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
 ### Four Tips on How to Approach Job Interviews 
 
 I’ve had a non-linear career path, so I’ve done job interviews for private firms, nonprofits, and academic positions. I’ve also been on the other side, getting involved in hiring at various places.
