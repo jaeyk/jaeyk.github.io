@@ -3,6 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
+
 ### How to write a statement of purpose for graduate school applications in political science
 
 I am a lazy person, and I hate repeating myself. So whenever I need to provide the same advice more than three times, I prefer writing these thoughts down and sharing them. For many years now, I’ve helped students to prepare their statement of purpose (SOP) for graduate school applications in political science. I have provided this service especially for students from marginalized populations and non-traditional backgrounds, to make the field more accessible to these students. The following tips are based on my experience and observations. Some usual cautions are warranted. These tips don’t represent everyone’s perspectives; you should take them as food for thought.
