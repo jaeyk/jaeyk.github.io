@@ -19,7 +19,7 @@ My research projects are roughly divided into the following four areas:
 
 ## Research pipeline
 
-My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Studies in American Political Development*, *The ANNALS*, and among others. In addition, my research has been featured in popular outlets like the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
+My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, *Studies in American Political Development*, *The ANNALS*, and among others. In addition, my research has been featured in popular outlets like the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
 I have two book projects. First, I am preparing a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Other Minorities Became Racial Groups." Second, my book on citizen-centered data science (in Korean), titled "Public Interest Data Science: Harnessing Data for Good," will be published by Sejong Books in August/September 2023.
 
