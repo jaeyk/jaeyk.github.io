@@ -36,7 +36,7 @@ I have two book projects. First, I am preparing a book version of [my award-winn
 
 11. ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 [[replication](https://github.com/jaeyk/validated_names)]
 
-10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, Online First in December 2022
+10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433–1444
 
 9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
 and Jae Yeon Kim+) *ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185
