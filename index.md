@@ -63,7 +63,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Preprints
 
-2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at **PS: Political Science & Politics**
+2. ["A Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://osf.io/preprints/socarxiv/kgjn2/) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) Revise and Resubmit at *PS: Political Science & Politics*
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [[replication](https://github.com/jaeyk/unbundling-linked-fate)]
 
