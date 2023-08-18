@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img class="profile-picture" src="profile.jpg">
+<img class="profile-picture" src="profile.png">
 
 Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I serve on the advisory council of [the Summer Institute in Computational Social Science](https://sicss.io/people). I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
 
@@ -36,7 +36,7 @@ I am currently working on two book projects.The first is a book version of [my a
 
 11. ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 [[replication](https://github.com/jaeyk/validated_names)]
 
-10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433–1444 [[replication](https://github.com/jaeyk/contested-identity)]
+10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433???1444 [[replication](https://github.com/jaeyk/contested-identity)]
 
 9. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
 and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185
