@@ -4,6 +4,10 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
 
+<a href="https://hits.seeyoufarm.com">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjaeyk.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" width="80" height="20" alt="Hit Counter">
+</a>
+
 Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I serve on the advisory council of [the Summer Institute in Computational Social Science](https://sicss.io/people). I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea.
 
 ## Research agenda
