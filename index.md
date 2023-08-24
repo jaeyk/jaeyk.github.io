@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [Code for America](https://codeforamerica
 
 ## Research agenda
 
-I am a scholar specializing in race, poverty, and immigration. My research centers around civic engagement, political participation, and policy implementation, with a specific focus on marginalized populations. To understand how these individuals and groups learn and adopt politics and policies, I combine behavioral and data sciences with historical, institutional, and organizational contexts. My regional focuses include the United States, Canada, and East Asia.
+I study race, poverty, and immigration in the United States, Canada, and East Asia. My research centers around civic engagement, political participation, and policy implementation, with a specific focus on marginalized populations. To understand how these individuals and groups learn and adopt politics and policies, I combine behavioral and data sciences with historical, institutional, and organizational contexts.
 
 My research projects focus on four main areas:
 
