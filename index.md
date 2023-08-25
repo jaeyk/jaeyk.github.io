@@ -4,11 +4,11 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
 
-Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I serve on the advisory council of [the Summer Institute in Computational Social Science](https://sicss.io/people). I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Before joining Code for America, I was an assistant professor of data science at the KDI School of Public Policy and Management in South Korea. During my tenure, I co-developed the country's first public policy-focused data science program.
+Hello! I am a senior data scientist at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I serve on the advisory council of [the Summer Institute in Computational Social Science](https://sicss.io/people). I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Before joining Code for America, I was an assistant professor of data science at the KDI School in South Korea. I helped to create the country's first public policy data science program.
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. My research centers around civic engagement, political participation, and policy implementation, with a specific focus on marginalized populations. To understand how these individuals and groups learn and adopt politics and policies, I combine behavioral and data sciences with historical, institutional, and organizational contexts.
+I study race, poverty, and immigration in the United States, Canada, and East Asia. My research revolves around civic engagement, political participation, and policy implementation, with a focus on marginalized populations. I use behavioral and data sciences to understand how people learn and adopt politics and policies, within the historical, institutional, and organizational contexts.
 
 My research projects focus on four main areas:
 
