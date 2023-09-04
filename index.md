@@ -21,7 +21,7 @@ My research projects focus on four main areas:
 
 My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, *Studies in American Political Development*, *The ANNALS*, and among others. In addition, my research has been featured in popular outlets like the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I am currently working on two book projects.The first is a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Others Became Race." The second is a Korean book on citizen-centered data science, titled "Public Interest Data Science: Harnessing Data for Good," which will be published by Sejong Books in August/September 2023. 
+I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Others Became Race." 
 
 ## Awards
 
@@ -67,10 +67,15 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [[replication](https://github.com/jaeyk/unbundling-linked-fate)]
 
+### Books 
+
+- ["Public Interest Data Science: Harnessing Data for Good."](https://search.shopping.naver.com/book/catalog/42424903622?cat_id=50005859&frm=PBOKMOD&query=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94+%EB%8B%A4%EB%A5%B8+%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80+%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4&NaPm=ct%3Dlm4z50t4%7Cci%3Dcddfc2e4086201141e05c73408e03e332943c84a%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D6e15fe9e1413d34735e09af79da803e9099f33dc) (in Korean, Sejong Books 2023)
+
+    - Recommended by Samsung Global Research's executive education program (SERICEO)
+
 ### Book projects
 
 - "Demography Is Not Destiny: How Other Minorities Became Racial Groups." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
-- "Public Interest Data Science: Harnessing Data for Good." (in Korean; forthcoming by *Sejong Books* in August/September 2023)
 
 ### Edited volume book chapters
 
