@@ -72,7 +72,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 - ["Public Interest Data Science: Harnessing Data for Good."](http://www.sejongbooks.co.kr/?act=board&bbs_code=sub2_1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023)
 
     - Recommended by *Samsung Global Research*'s executive education program (SERICEO)
-    - Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005), [*The Asia Business Daily*](https://view.asiae.co.kr/article/2023090716460476996)
+    - Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*Hankook Ilbo*](https://www.hankookilbo.com/News/Read/A2023090711580005930?did=NA), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005)
     - Contributed four op-eds (in Korean) to *Weekly Kyunghyang* [(1)](https://lnkd.in/g-XU7Wde), [(2)](https://lnkd.in/grvd8qXz), [(3)](https://lnkd.in/g6nivu5X), [(4)](https://lnkd.in/g85JT2kj)
 
 ### Book projects
