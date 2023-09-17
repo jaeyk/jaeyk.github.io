@@ -151,6 +151,7 @@ In 2014, I moved to the San Francisco Bay Area for my graduate studies and happi
 
 To reflect on my life journeys, I've written several personal essays:
 
+- [Hard But Good](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/motivation.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/motivation.pdf)]
 - [Researching and Doing Policy Science as a Political Scientist](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/policy_science.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/policy_science.pdf)]
 - [The Desire to Learn and the Desire to Serve](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/two_desires.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/two_desires.pdf)]
 - [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.pdf)]
