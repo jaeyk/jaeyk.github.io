@@ -4,7 +4,7 @@ output:
   html_document: default
 ---
 
-### Hard but Good
+### Hard But Good
 
 I'm getting old. It's not great in many areas, but there's one silver lining. I began to get to know more about myself and to understand and embrace my strengths and weaknesses.
 
