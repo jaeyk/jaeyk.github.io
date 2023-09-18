@@ -16,6 +16,8 @@ Simply doing challenging work alone, however, is not enough for me. I find great
 
 I come from a working-class family. My dad worked as a factory worker for 32 years, and unfortunately, my mom was left alone after my dad passed away from cancer. Financial stress was a constant part of my life. I was fortunate to receive both departmental and external fellowships during my graduate studies. However, due to my family background and the fact that my wife was unable to work during my early years of graduate studies due to visa restrictions, I had to take on side gigs to make ends meet in the Bay Area, one of the most expensive places in the United States. 
 
-Like many immigrants in this country, I hustled to obtain a better education, develop my skills, and secure a place for myself and my family. I will never forget that arduous journey. The past is also a part of who I am. I want to do hard but good work for people struggling to do better for themselves and their loved ones. I want to help us find terms under which we can all work and live together. That’s why I have become a social scientist and conduct both basic and applied research.
+Like many immigrants in this country, I hustled to obtain a better education, develop my skills, and secure a place for myself and my family. I will never forget that arduous journey. The past is also a part of who I am. 
+
+I want to do hard but good work for people struggling to do better for themselves and their loved ones. I want to help us find terms under which we can all work and live together. That’s why I have become a social scientist and conduct both basic and applied research.
 
 Doing hard but meaningful work encapsulates my motivation strategies. It reflects what fires me up when I wake up in the morning and the relentless passion that continues to guide my life and career decisions.
