@@ -69,7 +69,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Books 
 
-- ["Public Interest Data Science: Harnessing Data for Good."](https://civicdatascience.wordpress.com/) (in Korean, Sejong Books 2023)
+- ["Public Interest Data Science: Harnessing Data for Good."](https://search.shopping.naver.com/book/catalog/42424903622?cat_id=50005859&frm=PBOKMOD&query=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94+%EB%8B%A4%EB%A5%B8+%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80+%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4&NaPm=ct%3Dlndgjz80%7Cci%3D9b89e0d1754e73e10c02271f6511ecb924dceed8%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D8398d67973b9a0074615c77b0a93cf67c66a1417) (in Korean, Sejong Books 2023)
 
     - Recommended by *Samsung Global Research*'s executive education program (SERICEO)
     - Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i), [*Hankook Ilbo*](https://www.hankookilbo.com/News/Read/A2023090711580005930?did=NA), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005), [*Hankyoreh 21*](https://h21.hani.co.kr/arti/world/world_general/54378.html)
