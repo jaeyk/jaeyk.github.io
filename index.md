@@ -34,7 +34,7 @@ I am currently working on a book version of [my award-winning dissertation](http
 
 * Co-first author = +
 
-13. "The Unequal Landscape of Civic Opportunity in America." (Milan de Vries, Jae Yeon, and Hahrie Han) *Nature Human Behaviour*, Forthcoming 
+13. "The Unequal Landscape of Civic Opportunity in America." (Milan de Vries, Jae Yeon, and Hahrie Han) *Nature Human Behaviour*, Forthcoming [[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)]
 
 12. ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023
 
