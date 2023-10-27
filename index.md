@@ -12,9 +12,9 @@ I study race, poverty, and immigration in the United States, Canada, and East As
 
 My research projects focus on three main areas:
 
-- 1. Empowering Civil Society and Democracy
-- 2. Innovating Local and State Policy Delivery
-- 3. Understanding the Role of Discrimination in Identity Politics
+1. Empowering Civil Society and Democracy
+2. Innovating Local and State Policy Delivery
+3. Understanding the Role of Discrimination in Identity Politics
 
 ## Research pipeline
 
