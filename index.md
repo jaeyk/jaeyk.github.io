@@ -20,7 +20,7 @@ My research projects focus on three main areas:
 
 My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, *Studies in American Political Development*, *The ANNALS*, and among others. In addition, my research has been featured in popular outlets like the *Washington Post's Monkey Cage* and *FiveThirtyEight*.
 
-I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Demography Is Not Destiny: How Others Became Race." 
+I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Discrimination and the Politics of Solidarity in Multiracial America." 
 
 ## Awards
 
