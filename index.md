@@ -12,7 +12,7 @@ I am a member of the advisory council for [the Summer Institute in Computational
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. My research revolves around civic engagement, political participation, and policy implementation, with a focus on marginalized populations. I use behavioral and data sciences to understand how people learn and adopt politics and policies, within the historical, institutional, and organizational contexts.
+I study race, poverty, and immigration in the United States, Canada, and East Asia. My research focuses on civic engagement, political participation, and policy implementation, particularly among marginalized populations. I utilize behavioral and data sciences to gain insights into how people learn and adopt politics and policies within historical, institutional, and organizational contexts.
 
 My research projects focus on three main areas:
 
@@ -151,7 +151,6 @@ I love learning from other people who share similar research interests and build
 ## Personal
 
 Here's a summary of who I am: I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped launch my alma mater's first massive open online course project (KU OCW). I was also an activist for the Korean branch of Creative Commons, a digital rights advocacy organization, and served on the user service advisory board of Naver, South Korea's largest internet company. After graduation, I worked as a strategy manager at a software startup in the Korean tech industry. I also authored [a Korean book](http://www.yes24.com/Product/Goods/13765542) on how to make the most out of college, which sold more than 10,000 copies. 
-
 In 2014, I moved to the San Francisco Bay Area for my graduate studies and happily merged my four sides: an academic, a nerd, an entrepreneur, and an activist. When I'm not writing or coding, I enjoy listening to music, [reading](https://www.goodreads.com/review/list/41727126-jae-yeon-kim?shelf=%23ALL%23), cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
 
 To reflect on my life journeys, I've written several personal essays:
