@@ -4,7 +4,11 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
 
-Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University. I serve on the advisory council of [the Summer Institute in Computational Social Science](https://sicss.io/people). I have a Ph.D. in political science from UC Berkeley, where I was a senior data science fellow at D-Lab. Since 2020, I have been working on the Mapping Modern Agora project (incubated at the SNF Agora) that utilizes big data and machine learning to map the U.S. civil society at scale. Before joining Code for America, I was an assistant professor of data science at the KDI School in South Korea. I helped to create the country's first public policy data science program. 
+Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
+
+I have a Ph.D. in political science from UC Berkeley. During my time there, I was a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home) and a data science education fellow for the [Data Science Discovery Program](https://data.berkeley.edu/discovery). Since 2020, I have been part of [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora Institute) that utilizes big data and machine learning to map the U.S. civil society at scale. Prior to joining Code for America, I was an assistant professor of data science at the KDI School in South Korea, where I helped create the country's first public policy data science program. 
+
+I am a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton and co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
 
 ## Research agenda
 
