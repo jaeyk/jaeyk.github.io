@@ -8,8 +8,8 @@ markdown: kramdown
 tracking_id: UA-127195649-1
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+footer_url: ""
+footer_text: ""
 
 sass:
     style: compressed
