@@ -91,6 +91,8 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Research briefs
 
+4. [**Behind the Paper: The Unequal Landscape of Civic Opportunity in America.**](https://go.nature.com/45qrXpz) (*Jae Yeon Kim*), *Springer Nature: Social Sciences Community*, November 13, 2023
+
 3. ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (Jae Yeon Kim), *Scope Conditions*, June 14, 2023
 
 2. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
