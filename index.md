@@ -12,7 +12,7 @@ I am a member of the advisory council for [the Summer Institute in Computational
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. My research focuses on civic engagement, political participation, and policy implementation, particularly among marginalized populations. I utilize behavioral and data sciences to gain insights into how people learn and adopt politics and policies within historical, institutional, and organizational contexts.
+I study race, poverty, and immigration in the United States, Canada, and East Asia. My research focuses on civic engagement, political participation, and policy implementation, particularly among marginalized populations. I utilize behavioral and data sciences to gain insights into how people learn politics and adopt policies within historical, institutional, and organizational contexts.
 
 My research projects focus on three main areas:
 
@@ -101,7 +101,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Public writing
 
-5. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
+5. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 
 4. ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020
 
