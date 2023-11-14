@@ -6,19 +6,19 @@ layout: default
 
 Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
 
-I have a Ph.D. in political science from UC Berkeley. During my time there, I was a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home) and a data science education fellow for the [Data Science Discovery Program](https://data.berkeley.edu/discovery) (hosted by the Division of Computing, Data Science, and Society). Since 2020, I have been part of [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/) (incubated at the SNF Agora Institute) that utilizes big data and machine learning to map the U.S. civil society at scale. 
+I hold a Ph.D. in political science from UC Berkeley, where I also served as a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home) and a data science education fellow for the [Data Science Discovery Program](https://data.berkeley.edu/discovery), hosted by the Division of Computing, Data Science, and Society. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
-I am a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton and co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
+Additionally, I am a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton, and I co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. My research focuses on civic engagement, political participation, and policy implementation, particularly among marginalized populations. I utilize behavioral and data sciences to gain insights into how people learn politics and adopt policies within historical, institutional, and organizational contexts.
+I study race, poverty, and immigration in East Asia, Canada, and the United States. Specifically, I am interested in investigating political participation, civic engagement, and policy implementation among marginalized populations. I apply behavioral and data sciences to examine how political and administrative systems marginalize certain groups of people. Additionally, I analyze how these marginalized groups can adapt to and resist such dynamics within their historical, institutional, and organizational contexts. I frequently collaborate with government agencies, such as Colorado and New York states, and non-profit partners like Asian American Advancing Justice--Atlanta and Asian American Advocacy Fund to conduct my research.
 
 My research projects focus on three main areas:
 
 1. Empowering Civil Society and Democracy
 2. Enhancing Social Policy Implementation
-3. Understanding the Role of Discrimination in Identity Politics
+3. Understanding the Role of Discrimination in Identity Politics 
 
 ## Research pipeline
 
