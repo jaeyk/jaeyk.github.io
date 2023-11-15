@@ -12,7 +12,7 @@ Additionally, I am a member of the advisory council for [the Summer Institute in
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. Specifically, I am interested in investigating political participation, civic engagement, and policy implementation among marginalized populations. I apply behavioral and data sciences to examine how political and administrative systems marginalize certain groups of people. Additionally, I analyze how these marginalized groups adapt to and resist such dynamics within their historical, institutional, and organizational contexts. To conduct research, I frequently collaborate with government agencies, such as Colorado and New York states, and non-profit organizations, such as Asian American Advancing Justice–Atlanta and Asian American Advocacy Fund.
+I study race, poverty, and immigration in the United States, Canada, and East Asia. Specifically, I am interested in investigating political participation, civic engagement, and policy implementation among marginalized populations. I apply behavioral and data sciences to examine how political and administrative systems marginalize certain groups of people. Additionally, I analyze how these marginalized groups adapt to and resist such dynamics within their historical, institutional, and organizational contexts. To conduct research, I frequently collaborate with government agencies, such as New York, Colorado, and New Mexico states, and non-profit organizations, such as Asian American Advancing Justice–Atlanta and Asian American Advocacy Fund.
 
 My research projects focus on three main areas:
 
