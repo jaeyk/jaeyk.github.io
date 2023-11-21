@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for A
 
 I hold a Ph.D. in political science from UC Berkeley, where I also served as a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home) and a data science education fellow for the [Data Science Discovery Program](https://data.berkeley.edu/discovery), hosted by the Division of Computing, Data Science, and Society. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
-Additionally, I am a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton, and I co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
+I am also a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton, and I co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
 
 ## Research agenda
 
