@@ -16,9 +16,9 @@ My research focuses on identity politics, civic engagement, and policy implement
 
 My research projects focus on three main areas:
 
-1. Understanding the Role of Discrimination in Identity Politics (dissertation work) 
-2. Empowering Civil Society and Democracy (postdoctoral work)
-3. Enhancing Social Policy Implementation (applied work)
+1. Understanding the Role of Discrimination in Identity Politics
+2. Empowering Civil Society and Democracy 
+3. Enhancing Social Policy Implementation 
 
 ## Research pipeline
 
