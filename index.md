@@ -12,7 +12,7 @@ I am also a member of the advisory council for [the Summer Institute in Computat
 
 ## Research agenda
 
-My research focuses on identity politics, civic engagement, and policy implementation across the United States, Canada, and East Asia. I investigate how political and administrative systems frequently exclude certain groups of people and how these marginalized groups react to such dynamics. Furthermore, I am interested in developing and utilizing computational methods for social science research. To conduct my research, I frequently collaborate with government agencies and non-profits.
+My research focuses on identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how political and administrative systems frequently exclude certain groups of people and how these marginalized groups react to such dynamics. Furthermore, I am interested in developing and utilizing computational methods for social science research. To conduct my research, I frequently collaborate with government agencies and non-profits.
 
 My research projects focus on three main areas:
 
