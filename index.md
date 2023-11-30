@@ -6,19 +6,19 @@ layout: default
 
 Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
 
-I hold a Ph.D. in political science from UC Berkeley, where I also served as a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home) and a data science education fellow for the [Data Science Discovery Program](https://data.berkeley.edu/discovery), hosted by the Division of Computing, Data Science, and Society. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
+I hold a Ph.D. in political science from UC Berkeley, where I also served as a senior data science fellow at [D-Lab](https://dlab.berkeley.edu/home). Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
 I am also a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton, and I co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
 
 ## Research agenda
 
-I study race, poverty, and immigration in the United States, Canada, and East Asia. Specifically, I am interested in investigating political participation, civic engagement, and policy implementation among marginalized populations. I apply behavioral and data sciences to examine how political and administrative systems marginalize certain groups of people. Additionally, I analyze how these marginalized groups adapt to and resist such dynamics within their historical, institutional, and organizational contexts. To conduct research, I frequently collaborate with government agencies, such as New York, Colorado, and New Mexico states, and non-profit organizations, such as Students Learn Students Vote Coalition, Asian American Advancing Justice–Atlanta, and Asian American Advocacy Fund.
+My research focuses on identity politics, civic engagement, and policy implementation across the United States, Canada, and East Asia. I investigate how political and administrative systems frequently exclude certain groups of people and how these marginalized groups react to such dynamics. Furthermore, I am interested in developing and utilizing computational methods for social science research. To conduct my research, I frequently collaborate with government agencies and non-profits.
 
 My research projects focus on three main areas:
 
-1. Empowering Civil Society and Democracy
-2. Enhancing Social Policy Implementation
-3. Understanding the Role of Discrimination in Identity Politics 
+1. Understanding the Role of Discrimination in Identity Politics (dissertation work) 
+2. Empowering Civil Society and Democracy (postdoctoral work)
+3. Enhancing Social Policy Implementation (applied work)
 
 ## Research pipeline
 
