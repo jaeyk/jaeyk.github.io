@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
 
-Hello! I am a senior data scientist at Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
+Hello! I am a senior data scientist at the Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
 
 I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
