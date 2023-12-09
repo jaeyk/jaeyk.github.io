@@ -6,7 +6,7 @@ layout: default
 
 Hello! I am a senior data scientist at the Safety Net Innovations Lab at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
 
-I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
+I received my Ph.D. and MA degrees in political science from UC Berkeley. Since 2020, I have been actively involved in [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
 I am also a member of the advisory council for [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people). I participated in the 2019 SICSS-Princeton, and I co-organized the first SICSS events in the Bay Area (co-hosted by UC Berkeley and Stanford) and South Korea (co-hosted by KAIST and KDI School).
 
