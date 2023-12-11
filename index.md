@@ -146,13 +146,3 @@ I love learning from other people who share similar research interests and build
 * Email: 
   - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
   - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for my academic research)
-  
-## Personal
-
-Here's a summary of who I am: I was born and raised in South Korea, but I lived in Hong Kong and Taiwan by the time I finished college. While in college, I helped launch my alma mater's first massive open online course project (KU OCW). I was also an activist for the Korean branch of Creative Commons, a digital rights advocacy organization, and served on the user service advisory board of Naver, South Korea's largest internet company. After graduation, I worked as a strategy manager at a software startup in the Korean tech industry. In 2014, I moved to the San Francisco Bay Area for graduate studies and eventually became an immigrant while raising a family. When I'm not writing or coding, I enjoy [reading](https://www.goodreads.com/review/list/41727126-jae-yeon-kim?shelf=%23ALL%23), cooking, [drawing](https://photos.app.goo.gl/QCSi2QFRuwuXSrDx5), and [distance running](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md). 
-
-To reflect on my life journeys, I've written several personal essays:
-
-- [What Running Taught Me: How to Fail and How to Grow Old](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/running.pdf)]
-- [Speaking of Speaking English](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/speaking_english.pdf)]
-- [How to Write a SOP for Graduate School Applications in Political Science](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.md) [[PDF](https://github.com/jaeyk/jaeyk.github.io/blob/gh-pages/sop.pdf)]
