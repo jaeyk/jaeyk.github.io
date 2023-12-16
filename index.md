@@ -66,10 +66,6 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [[replication](https://github.com/jaeyk/intersectional-bias-in-ml)]
 
-### Preprints
-
-1. ["Unbundling Linked Fate: How Survey Respondents Interpret Linked Fate Question."](https://osf.io/preprints/socarxiv/k6c9x) (Jae Yeon Kim and Alan Yan) [[replication](https://github.com/jaeyk/unbundling-linked-fate)]
-
 ### Books 
 
 - ["Public Interest Data Science: Harnessing Data for Good."](https://search.shopping.naver.com/book/catalog/42424903622?cat_id=50005859&frm=PBOKMOD&query=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94+%EB%8B%A4%EB%A5%B8+%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80+%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4&NaPm=ct%3Dlndgjz80%7Cci%3D9b89e0d1754e73e10c02271f6511ecb924dceed8%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D8398d67973b9a0074615c77b0a93cf67c66a1417) (in Korean, Sejong Books 2023) [[Book website](https://civicdatascience.wordpress.com/)]
