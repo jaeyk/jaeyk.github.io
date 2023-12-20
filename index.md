@@ -10,10 +10,10 @@ I hold a Ph.D. in political science from UC Berkeley. My dissertation received t
 
 ## Travel & Talks (2024-)
 
-* January, Data Science Seminar, University of Washington
-* March, Western Political Science Association annual meeting, Vancouver
-* June, Summer Institute in Migration Research Methods, UC Berkeley 
-* June, Public Management Research Conference, Seattle
+* January, Data Science Seminar, University of Washington. Invited speaker. 
+* March, Western Political Science Association (WPSA) annual meeting, Vancouver
+* June, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
+* June, Public Management Research Conference (PMRC), Seattle
 
 ## Research agenda
 
