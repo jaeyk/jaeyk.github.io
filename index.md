@@ -8,6 +8,13 @@ Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://
 
 I hold a Ph.D. in political science from UC Berkeley. My dissertation received the *Best Dissertation Award in Urban and Local Politics* from the American Political Science Association in 2022. Since 2020, I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
+## Travel & Talks (2024-)
+
+* January 2024, Data Science Seminar, University of Washington
+* March 2024, 2024 Western Political Science Association annual meeting, Vancouver
+* June 2024, Summer Institute in Migration Research Methods, UC Berkeley 
+* June 2024, 2024 Public Management Research Conference, Seattle
+
 ## Research agenda
 
 My research focuses on identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how political and administrative processes systematically exclude certain groups of people and how these marginalized groups respond to such barriers. Additionally, I am interested in developing new applications of computational methods, such as natural language processing, big data, and machine learning, to social scientific questions. To conduct my research, I frequently collaborate with government agencies and non-profit organizations.
