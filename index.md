@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://
 
 I hold a Ph.D. in political science from UC Berkeley. My dissertation received the *Best Dissertation Award in Urban and Local Politics* from the American Political Science Association in 2022. Since 2020, I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
-## Travel & Talks (2024)
+### Travel & Talks (2024)
 
 * January 11, Data Science Seminar, University of Washington. Invited speaker. 
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver
