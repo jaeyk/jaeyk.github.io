@@ -17,7 +17,7 @@ I hold a Ph.D. in political science from UC Berkeley. My dissertation received t
 
 ## Research agenda
 
-My research focuses on urban and local politics, identity politics, civic engagement, and social policy implementation in the United States, Canada, and East Asia. I investigate how political and administrative processes systematically exclude certain groups of people and how these marginalized groups respond to such barriers. Additionally, I am interested in developing new applications of computational methods, such as natural language processing, big data, and machine learning, to social scientific questions. To conduct my research, I frequently collaborate with government agencies and non-profit organizations.
+My research focuses on urban and local politics, identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how political and administrative processes systematically exclude certain groups of people and how these marginalized groups respond to such barriers. Additionally, I am interested in developing new applications of computational methods, such as natural language processing, big data, and machine learning, to social scientific questions. To conduct my research, I frequently collaborate with government agencies and non-profit organizations.
 
 My research projects focus on three main areas:
 
