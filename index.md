@@ -17,7 +17,7 @@ I hold a Ph.D. in political science from UC Berkeley. My dissertation received t
 
 ## Research agenda
 
-My research focuses on urban and local politics, identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how political institutions, historical legacies, and social geography shape the lived experience of marginalized people and how members of these groups collectively respond to such barriers. Additionally, I am interested in using big data and machine learning to map the geography of civic inequality in the US and other countries. I frequently collaborate with government agencies, such as the state governments of California, New York, Colorado, and New Mexico, to design human-centered technology interventions that reduce the administrative burdens in safety net programs.
+My research focuses on urban and local politics, identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how public policy, historical legacies, and social geography shape marginalized people's lived experiences and how members of these groups collectively respond to such barriers. Additionally, I am interested in using big data and machine learning to map the geography of civic inequality in the US and other countries. I frequently collaborate with government agencies, such as the state governments of California, New York, Colorado, and New Mexico, to design human-centered technology interventions that reduce the administrative burdens in safety net programs.
 
 My research projects focus on three main areas:
 
