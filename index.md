@@ -21,7 +21,7 @@ My research focuses on urban and local politics, identity politics, civic engage
 
 My research projects focus on three main areas:
 
-1. Understanding the Role of Discrimination in Identity Politics
+1. Understanding the Role of Space and Discrimination in Solidarity Politics
 2. Empowering Civil Society and Democracy 
 3. Enhancing Social Policy Implementation 
 
@@ -29,7 +29,7 @@ My research projects focus on three main areas:
 
 My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, and *Studies in American Political Development*, among others. 
 
-I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Discrimination and the Politics of Solidarity in Multiracial America." 
+I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Space, Discrimination, and the Politics of Solidarity in Multiracial America." 
 
 ## Awards
 
@@ -82,7 +82,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Book projects
 
-- "Discrimination and the Politics of Solidarity in Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+- "Space, Discrimination, and the Politics of Solidarity in Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
     - Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
