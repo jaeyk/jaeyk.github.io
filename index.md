@@ -91,7 +91,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
-### Research briefs
+### Research brief
 
 4. ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (Jae Yeon Kim), *Springer Nature: Social Sciences Community*, November 13, 2023
 
