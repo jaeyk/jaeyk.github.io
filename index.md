@@ -22,7 +22,7 @@ My research focuses on urban and local politics, identity politics, civic engage
 I study the following topics within specific **urban and local contexts**:
 
 1. **Identity politics**: Understanding the Boundaries of Solidarity in Identity Politics
-2. **Civic engagement**: Mapping Civil Society and Empowering Democracy
+2. **Civic engagement**: Mapping Civic Inequality and Empowering Democracy
 3. **Policy implementation**: Designing Interventions to Improve Safety Net Experience 
 
 ## Research pipeline
