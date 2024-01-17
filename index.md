@@ -19,7 +19,7 @@ I hold a Ph.D. in political science from UC Berkeley. My dissertation received t
 
 My research focuses on urban and local politics, identity politics, civic engagement, and policy implementation in the United States, Canada, and East Asia. I investigate how public policy, historical legacies, and social geography shape the lived experience of marginalized people and how these disadvantaged groups collectively respond to discrimination and injustice. Additionally, I am interested in using big data and machine learning to map the geography of civic inequality in the US and other countries. I frequently collaborate with government agencies, such as the state governments of California, New York, Colorado, and New Mexico and the federal Office of Evaluation Sciences (OES), to design human-centered technology interventions that reduce the administrative burdens in safety net programs.
 
-I study the following topics within specific urban and local contexts:
+I study the following topics within specific **urban and local contexts**:
 
 1. **Identity politics**: Understanding the Boundaries of Solidarity in Identity Politics
 2. **Civic engagement**: Mapping Civil Society and Empowering Democracy
@@ -29,7 +29,7 @@ I study the following topics within specific urban and local contexts:
 
 My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, and *Studies in American Political Development*, among others. 
 
-I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Space, Discrimination, and the Politics of Solidarity in Multiracial America." 
+I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Contingent Solidarity in Multiracial America." 
 
 ## Awards
 
@@ -83,7 +83,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Book projects
 
-- "Space, Discrimination, and the Politics of Solidarity in Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+- "Contingent Solidarity in Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
     - Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
