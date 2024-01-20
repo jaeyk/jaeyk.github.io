@@ -11,6 +11,7 @@ I hold a Ph.D. in political science from UC Berkeley. My dissertation received t
 ### Travel & Talks (2024)
 
 * January 11, Data Science Seminar, University of Washington. Invited speaker. 
+* February 15. Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA. Invited speaker.
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver
 * June 11, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
 * June 26-29, Public Management Research Conference (PMRC), Seattle
