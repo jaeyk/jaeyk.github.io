@@ -29,7 +29,7 @@ I study the following topics within specific **urban and local contexts**:
 
 ## Research pipeline
 
-My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, and *Studies in American Political Development*, among others. 
+My work has been published or is forthcoming in leading journals across various fields, including *Nature Human Behaviour*, *Nature Scientific Data*, *Perspectives on Politics*, *Political Research Quarterly*, *Public Opinion Quarterly*, and *Studies in American Political Development*, among others. My research has won several awards, including the best dissertation award in urban and local politics from APSA and the best paper award in Asian Pacific American politics from WPSA.
 
 I am currently working on a book version of [my award-winning dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf), tentatively titled "Contingent Solidarity in Multiracial America." 
 
