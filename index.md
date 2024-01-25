@@ -121,15 +121,13 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 I have developed open-source software that supports data curation.
 
-6. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+5. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
 
-5. [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
+4. [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
 
-4. [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
+3. [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
 
-3. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
-
-2. [rnytapi](https://github.com/jaeyk/rnytapi): R package for collecting data via the New York Times API
+2. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
 
 1. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
