@@ -95,7 +95,7 @@ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social S
 
 ### Research brief
 
-5. ["The Uneven Landscape Of Civic Opportunity In The United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (Jae Yeon Kim), *HistPhil*, January 24, 2024 
+5. ["The Uneven Landscape Of Civic Opportunity In The United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (Jae Yeon Kim), *HistPhil*, January 25, 2024 
 
 4. ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (Jae Yeon Kim), *Springer Nature: Social Sciences Community*, November 13, 2023
 
