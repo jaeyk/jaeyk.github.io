@@ -13,6 +13,7 @@ I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have co-deve
 * January 11, Data Science Seminar, University of Washington. Invited speaker. 
 * February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA. Invited speaker.
 * February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside.
+* March 26, Government Department Seminar, Wesleyan University. Invited speaker.
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 * June 11, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
 * June 26-29, Public Management Research Conference (PMRC), Seattle.
