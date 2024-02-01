@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
   
-Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at the Center for Public Leadership at Harvard Kennedy School and [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University.
+Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/) and a research fellow at  [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University and the Center for Public Leadership at Harvard Kennedy School.
 
 I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute at Johns Hopkins University, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
@@ -151,6 +151,5 @@ I love learning from other people who share similar research interests and build
 ## Contact
 
 * Email: 
-  - [jaeyeonkim@hks.harvard.edu](mailto:jaeyeonkim@hks.harvard.edu) (for my academic research)
-  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
+  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for my academic research)
   - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
