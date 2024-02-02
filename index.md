@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="profile.png">
   
-Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/), and a research fellow at  [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University, as well as the Center for Public Leadership and [Civic Power Lab](https://cities.harvard.edu/initiatives/civic-power-lab/) at Harvard Kennedy School. I also serve on the advisory board of [the Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people).
+Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/), and a research fellow at  [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University, as well as the Center for Public Leadership and [Civic Power Lab](https://cities.harvard.edu/initiatives/civic-power-lab/) at Harvard Kennedy School. 
 
 I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute at Johns Hopkins University, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
@@ -147,7 +147,7 @@ I am an award-winning certified instructor and have taught computational social 
 
 ## Community building
 
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School).
+I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I also currently serve on [the advisory board of SICSS](https://sicss.io/people).
 
 ## Contact
 
