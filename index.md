@@ -17,7 +17,7 @@ I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have co-deve
 * March 26, Government Department Seminar, Wesleyan University. Invited speaker.
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 * April 23, P3 Lab Seminar, Johns Hopkins. Invited speaker.
-* June 11, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
+* June 11-12, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
 * June 26-29, Public Management Research Conference (PMRC), Seattle.
 
 ## Research agenda
