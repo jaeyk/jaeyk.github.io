@@ -8,7 +8,7 @@ Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://
 
 I hold a Ph.D. in political science from UC Berkeley. Since 2020, I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute at Johns Hopkins University, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
-I currently serve on the advisory board of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS).
+I currently serve on the advisory board of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS). In 2022, as a tenure-track assistant professor, I helped build South Korea's first public policy-focused data science program at the KDI School of Public Policy and Management. 
 
 ### Travel & Talks (2024)
 
