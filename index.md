@@ -151,7 +151,7 @@ I love learning from other people who share similar research interests and build
 
 ## Personal
 
-I am defined by living between boundaries. These formative experiences have shaped my academic pursuits, advising, and public service. I was born and raised in South Korea but lived in Hong Kong and Taiwan by the time I finished college. I moved to the US for my graduate studies and became an immigrant. Despite having a PhD and living a professional life, I come from a working-class family where my late father worked in a factory. My experience with poverty has influenced my lifelong pursuit of understanding and serving the marginalized.
+I am defined by living between boundaries. These formative experiences have shaped my academic pursuits, advising, and public service. I was born and raised in South Korea but lived in Hong Kong and Taiwan by the time I finished college. I moved to the US for my graduate studies and became an immigrant. Despite having a PhD and living a professional life, I come from a working-class family. My late father worked in a paper mill for 32 years. My experience with poverty has influenced my lifelong pursuit of understanding and serving the marginalized.
 
 Outside work, I enjoy cooking, distance running, and reading for pleasure. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
 
