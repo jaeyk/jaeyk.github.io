@@ -155,6 +155,8 @@ I am defined by living between boundaries. These formative experiences have shap
 
 Outside work, I enjoy cooking, distance running, and reading for pleasure. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
 
+I am married to a semiconductor (chip) engineer and have a daughter who loves drawing.
+
 ## Contact
 
 * Email: 
