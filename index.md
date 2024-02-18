@@ -151,11 +151,11 @@ I love learning from other people who share similar research interests and build
 
 ## Personal
 
-I have lived between two worlds: culturally, socioeconomically, and professionally. I was born and raised in South Korea but lived in Hong Kong and Taiwan by the time I finished college. I moved to the U.S. (the San Francisco Bay Area) for my graduate studies and eventually became an immigrant. Despite having a PhD and living a professional life, I come from a working-class family. My late father worked in a paper mill for 32 years. My experience with poverty has influenced my lifelong pursuit of understanding and serving the marginalized. I am an accidental academic since my first job after college was as a product manager at a software startup. I have worked in the private, public, and nonprofit sectors. While my true passion is academic research, I am also interested in narrowing the gap between research and practice. 
+I have lived between two worlds: culturally, socioeconomically, and professionally. I was born and raised in South Korea but had lived in Hong Kong and Taiwan by the time I finished college. I moved to the U.S. (the San Francisco Bay Area) for my graduate studies and became an immigrant. Despite having a Ph.D. and living a professional life, I come from a working-class family. Growing up in a family struggling with financial stress made me interested in understanding and serving the poor. I am an accidental academic. My first job was as a product manager at a software startup. I have worked in the private, public, and nonprofit sectors. As time passed, I discovered my true passion lies in conducting research that narrows the gap between research and practice.
 
 Outside work, I enjoy cooking, distance running, reading for pleasure, and listening to music. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
 
-My partner in crime is a semiconductor (chip) engineer, and we have a daughter who loves drawing and painting.
+My partner in crime is a semiconductor (chip) engineer, and we have a daughter who loves drawing.
 
 ## Contact
 
