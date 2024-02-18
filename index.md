@@ -149,6 +149,12 @@ I am an award-winning certified instructor and have taught computational social 
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering and co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I also currently serve on [the advisory board of SICSS](https://sicss.io/people).
 
+## Personal
+
+I am defined by living between boundaries. These formative experiences have shaped my academic pursuits, advising, and public service. I was born and raised in South Korea but lived in Hong Kong and Taiwan by the time I finished college. I moved to the US for my graduate studies and became an immigrant. Despite having a PhD and living a professional life, I come from a working-class family where my late father worked in a factory. My experience with poverty has influenced my lifelong pursuit of understanding and serving the marginalized.
+
+Outside work, I enjoy cooking, distance running, and reading for pleasure. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
+
 ## Contact
 
 * Email: 
