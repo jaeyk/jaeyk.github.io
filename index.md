@@ -155,8 +155,6 @@ I have lived between two worlds: culturally, socioeconomically, and professional
 
 Outside work, I enjoy cooking, distance running, reading for pleasure, and listening to music. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
 
-My partner in crime is a semiconductor (chip) engineer, and we have a daughter who loves drawing.
-
 ## Contact
 
 * Email: 
