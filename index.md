@@ -153,7 +153,7 @@ I love learning from other people who share similar research interests and build
 
 I have lived between two worlds: culturally, socioeconomically, and professionally. I was born and raised in South Korea but had lived in Hong Kong and Taiwan by the time I finished college. I moved to the U.S. (the San Francisco Bay Area) for my graduate studies and became an immigrant. Despite having a Ph.D. and living a professional life, I come from a working-class family. Growing up in a family struggling with financial stress made me interested in understanding and serving the poor. I am an accidental academic. My first job was as a product manager at a software startup. I have worked in the private, public, and nonprofit sectors. As time passed, I realized my true passion lies in pursuing scientific frontiers and conducting research that bridges the gap between evidence and practice.
 
-Outside work, I enjoy cooking, distance running, reading for pleasure, and listening to music. I used to practice martial arts and was a former UC Berkeley Taekwondo and Wushu team member.
+"I can live with doubt and uncertainty and not knowing. I think it's much more interesting to live not knowing than to have answers which might be wrong." - Richard Feynman (1918-1988)
 
 ## Contact
 
