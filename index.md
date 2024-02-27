@@ -6,6 +6,8 @@ layout: default
   
 Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/), and a research fellow at  [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University, as well as the Center for Public Leadership and [Civic Power Lab](https://cities.harvard.edu/initiatives/civic-power-lab/) at Harvard Kennedy School. I hold a Ph.D. in political science from UC Berkeley. I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
+* Pronunciation tip: ""Jae Yeon" (my first name) sounds like "Jason" without the "s" in the middle.
+
 * Here is a [link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf) to my CV.
 
 * Email: 
