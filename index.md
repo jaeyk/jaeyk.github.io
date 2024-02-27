@@ -6,8 +6,13 @@ layout: default
   
 Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://codeforamerica.org/programs/social-safety-net/) at [Code for America](https://codeforamerica.org/people/jae-yeon-kim/), and a research fellow at  [the SNF Agora Institute](https://snfagora.jhu.edu/person/jae-yeon-kim/) and [P3 Lab](https://www.p3researchlab.org/our_team) at Johns Hopkins University, as well as the Center for Public Leadership and [Civic Power Lab](https://cities.harvard.edu/initiatives/civic-power-lab/) at Harvard Kennedy School. I hold a Ph.D. in political science from UC Berkeley. I have co-developed [the Mapping Modern Agora project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/), incubated at the SNF Agora Institute, which utilizes big data and machine learning to map the U.S. civil society at scale. 
 
-Here is a link to [my CV](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf).
+Here is a [link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf) to my CV.
 
+* Email: 
+  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
+  - [jaeyeonkim@hks.harvard.edu](mailto:jaeyeonkim@hks.harvard.edu) (for the civic data project)
+  - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
+  
 ### Travel & Talks (2024)
 
 * January 11, Data Science Seminar, University of Washington. Invited speaker. 
@@ -154,10 +159,3 @@ I love learning from other people who share similar research interests and build
 I have lived between two worlds: culturally, socioeconomically, and professionally. I was born and raised in South Korea but had lived in Hong Kong and Taiwan by the time I finished college. I moved to the U.S. (the San Francisco Bay Area) for my graduate studies and became an immigrant. Despite having a Ph.D. and living a professional life, I come from a working-class family. Growing up in a family struggling with financial stress made me interested in understanding and serving the poor. I am an accidental academic. My first job was as a product manager at a software startup. I have worked in the private, public, and nonprofit sectors. As time passed, I realized my true passion lies in pursuing scientific frontiers and conducting research that bridges the gap between evidence and practice.
 
 "I can live with doubt and uncertainty and not knowing. I think it's much more interesting to live not knowing than to have answers which might be wrong." - Richard Feynman (1918-1988)
-
-## Contact
-
-* Email: 
-  - [jkim638@jhu.edu](mailto:jkim638@jhu.edu) (for the Mapping Modern Agora project)
-  - [jaeyeonkim@hks.harvard.edu](mailto:jaeyeonkim@hks.harvard.edu) (for the civic data project)
-  - [jykim@codeforamerica.org](mailto:jykim@codeforamerica.org) (for Code for America work)
