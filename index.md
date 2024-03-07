@@ -26,6 +26,7 @@ Hello! I am a senior data scientist at [the Safety Net Innovations Lab](https://
 * June 11-12, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
 * June 26-29, Public Management Research Conference (PMRC), University of Washington, Seattle.
 * July 17, The International Conference for Computational Social Science (IC2S2) tutorial, University of Pennsylvania, Philadelphia. 
+* September 5-8, American Political Science Association (APSA) annual meeting, Philadelphia.
 
 ## Research agenda
 
