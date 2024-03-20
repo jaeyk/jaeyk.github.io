@@ -24,6 +24,7 @@ Please don't hesitate to contact me with any questions or comments.
 * February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside.
 * March 14, Data Science Across Industries Panel, PhD Pathways Event, Stanford. Invited speaker.
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
+* April 19, Minnesota Political Methodology Colloquium (MPMC), University of Minnesota. Invited speaker.
 * April 23, P3 Lab Seminar, Johns Hopkins. Invited speaker.
 * June 11-12, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
 * June 26-29, Public Management Research Conference (PMRC), University of Washington, Seattle.
