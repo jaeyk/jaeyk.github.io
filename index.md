@@ -27,7 +27,7 @@ Please don't hesitate to contact me with any questions or comments.
 * April 19, Minnesota Political Methodology Colloquium (MPMC), University of Minnesota. Invited speaker.
 * April 23, P3 Lab Seminar, Johns Hopkins. Invited speaker.
 * May 20-23, The Consortium on the American Political Economy (APE) Summer Academy, UC Berkeley. Invited participant.
-* June 11-12, Summer Institute in Migration Research Methods, UC Berkeley. Invited speaker. 
+* June 11-12, Summer Institute in Migration Research Methods, UC Berkeley. Invited instructor. 
 * June 26-29, Public Management Research Conference (PMRC), University of Washington, Seattle.
 * July 17, The International Conference for Computational Social Science (IC2S2) tutorial, University of Pennsylvania, Philadelphia. 
 * September 5-8, American Political Science Association (APSA) annual meeting, Philadelphia.
