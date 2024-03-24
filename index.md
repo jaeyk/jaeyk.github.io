@@ -162,10 +162,6 @@ I am an award-winning certified instructor and have taught computational social 
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/gh-pages/coauthors.png) across social sciences and engineering. Below is a list of my key collaborators.
 
-1. Identity politics: Taeku Lee (Harvard), Efrén Pérez (UCLA), Reuel Rogers (Northwestern), Charles Crabtree (Dartmouth)
-2. Civic Engagement: Hahrie Han and Milan de Vries (Johns Hopkins), Liz McKenna (Harvard)
-3. Policy Implementation: Don Moynihan, Pam Herd, Seb Jilke, and Eric Giannella (Georgetown)
-
 I co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I currently serve on [the advisory board of SICSS](https://sicss.io/people).
 
 ## Personal
