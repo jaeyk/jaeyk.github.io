@@ -74,3 +74,7 @@ I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/cer
 - 2021: 
   - KAIST (Data Analysis for Green Business and Policy)
   - Dartmouth (Experiments in Politics)
+  
+::: center
+![Lightening talk on teaching computational social science at the Summer Institute in Computational Social Science (Princeton 2019)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.jpg)
+:::
