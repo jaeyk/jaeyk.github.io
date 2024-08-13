@@ -27,40 +27,35 @@ about:
 ---
 
 ::: {#hero-heading}
-
-I am an assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. 
-
-Previously, I worked as a senior data scientist at [Code for America](https://codeforamerica.org/programs/), where I collaborated with all levels of the U.S. government to improve access to safety net programs. 
-
-I completed my PhD in Political Science from the University of California, Berkeley in 2021. My research has been published in top outlets such as *Nature Human Behaviour* and received multiple awards from the American Political Science Association.
+I am an assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, I worked as a senior data scientist at [Code for America](https://codeforamerica.org/programs/), where I collaborated with all levels of the U.S. government to improve access to safety net programs. I completed my PhD in Political Science from the University of California, Berkeley in 2021. My research has been published in top outlets such as *Nature Human Behaviour* and received multiple awards from the American Political Science Association.
 
 I study how the state and marginalized populations interact in American politics and policy, with a focus on policy implementation (**state capacity**) and community organizing and collective action (**civic capacity**). My research agenda bridges the social and behavioral sciences and data science and is grounded in people’s everyday experiences accessing public services and solving collective problems. I specialize in use-inspired research based on partnerships with government agencies. In addition, I have extensive experience building original, large-scale, and multi-purpose databases using big data and machine learning/AI. One example is [the Mapping the Modern Agora project](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/), which maps the U.S. civil society at scale utilizing more than 1.8 million IRS tax returns, 1.1 million websites, and other digital trace data of nonprofit organizations.
 
-In addition to my substantive interests, through my work on **computational social science** and **data science pedagogy**, I am actively engaged in bridging social sciences and data science and making computational methods accessible. 
+In addition to my substantive interests, through my work on **computational social science** and **data science pedagogy**, I am actively engaged in bridging social sciences and data science and making computational methods accessible.
 
 I am currently working on a book version of my award-winning dissertation, tentatively titled "Negotiating Identity in the American Welfare State: The Organizational Origin of Multiracial America."
 
 I am <u>on the job market</u> in the 2024-2025 academic year.
 
-You can reach me at [jkim638@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](misc/CV_Jae_Yeon_Kim.pdf) to my CV.
+You can reach me at [jkim638\@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](misc/CV_Jae_Yeon_Kim.pdf) to my CV.
 
 ### Travel & Talks (2024)
 
-1. October, American Politics and Public Policy Workshop, Yale University. Invited speaker (scheduling).
-2. September/October, Identity and Politics Workshop, UC Berkeley. Invited speaker (scheduling).
-3. September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia (scheduled).
-4. August 28, Information Science Seminar, University of Colorado, Boulder. Invited speaker (scheduled).
-5. July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference). Invited speaker. [[paper]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [[slides]](slides/administrative_checkpoints_CAPE_kim.pdf)
-6. July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. Invited instructor. [[website]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
-7. June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
-    - [[slides]](slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
-    - [[slides]](slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
-8. June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. Invited speaker.
-9. June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/). Invited speaker. [[slides]](slides/field_experiments_safety_nets.pdf) [[talk]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
+1.  October, American Politics and Public Policy Workshop, Yale University. Invited speaker (scheduling).
+2.  September/October, Identity and Politics Workshop, UC Berkeley. Invited speaker (scheduling).
+3.  September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia (scheduled).
+4.  August 28, Information Science Seminar, University of Colorado, Boulder. Invited speaker (scheduled).
+5.  July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference). Invited speaker. [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](slides/administrative_checkpoints_CAPE_kim.pdf)
+6.  July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. Invited instructor. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
+7.  June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
+    -   [\[slides\]](slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
+    -   [\[slides\]](slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
+8.  June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. Invited speaker.
+9.  June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/). Invited speaker. [\[slides\]](slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
 10. June 9-13, [Summer Institute in Migration Research Methods](https://www.canva.com/design/DAF7k6nkfyE/HNs0MQf_ApxuzOI2x4os5Q/view?utm_content=DAF7k6nkfyE&utm_campaign=designshare&utm_medium=link&utm_source=editor&fbclid=IwZXh0bgNhZW0CMTAAAR35zr37ckUsJ9JvpIWOeF0dyoI_JAauCLwu1qZARzvNr1hMiMsYeF0dgg8_aem_ZmFrZWR1bW15MTZieXRlcw), UC Berkeley. Invited instructor.
 11. May 20-23, The Consortium on the American Political Economy (CAPE) Summer Academy, UC Berkeley. Invited participant.
 12. April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins. Invited speaker.
-13. April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. Invited speaker. [[slides]](slides/training_css_phd.pdf)
+13. April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. Invited speaker. [\[slides\]](slides/training_css_phd.pdf)
 14. March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 15. March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. Invited speaker.
 16. February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. Invited speaker.
@@ -69,125 +64,124 @@ You can reach me at [jkim638@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](
 
 ### Awards
 
-#### Research 
+#### Research
 
-1. **Emerging Scholar Award in Civic Engagement, American Political Science Association (2024)**, "recognizes an individual who is making notable contributions in the research of civic engagement within five years of earning their terminal degree and whose career to date demonstrates significant promise in this area."
+1.  **Emerging Scholar Award in Civic Engagement, American Political Science Association (2024)**, "recognizes an individual who is making notable contributions in the research of civic engagement within five years of earning their terminal degree and whose career to date demonstrates significant promise in this area."
 
-2. **Best Dissertation Award in Urban and Local Politics, American Political Science Association (2022)**, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
+2.  **Best Dissertation Award in Urban and Local Politics, American Political Science Association (2022)**, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
 
-3. **Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)**, "for making a significant contribution to the understanding of Asian Pacific American politics."
+3.  **Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)**, "for making a significant contribution to the understanding of Asian Pacific American politics."
 
-#### Teaching 
+#### Teaching
 
-1. **Outstanding Graduate Student Instructor Award**, Graduate Division, UC Berkeley, AY 2016-2017
+1.  **Outstanding Graduate Student Instructor Award**, Graduate Division, UC Berkeley, AY 2016-2017
 
 ### Publications
 
 #### Peer-reviewed journal articles
 
-1. ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, Jae Yeon Kim, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 [[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)] [[supplementary materials]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)
+1.  ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, Jae Yeon Kim, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 \[[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)\] [\[supplementary materials\]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)
 
-2. ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023 (+ = co-lead authors.)  [[slides](slides/training_css_phd.pdf)] [[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)] (created for the 2024 International Conference for Computational Social Science tutorial)
+2.  ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, Jae Yeon Kim+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023 (+ = co-lead authors.) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)
 
-3. ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 [[replication](https://github.com/jaeyk/validated_names)] [[supplementary materials]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf) [[R package]](https://github.com/jaeyk/validatednamesr)
+3.  ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 \[[replication](https://github.com/jaeyk/validated_names)\] [\[supplementary materials\]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf) [\[R package\]](https://github.com/jaeyk/validatednamesr)
 
-4. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433-1444 [[replication](https://github.com/jaeyk/contested-identity)]
+4.  ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (Jae Yeon Kim and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433-1444 \[[replication](https://github.com/jaeyk/contested-identity)\]
 
-5. ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+
-and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185 (+ = co-lead authors.)
+5.  ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+ and Jae Yeon Kim+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185 (+ = co-lead authors.)
 
-6. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
+6.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (Jae Yeon Kim and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
 
-7. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 [[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)]
+7.  ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (Jae Yeon Kim, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 \[[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)\]
 
-8. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 [[replication](https://github.com/jaeyk/covid19antiasian/)]
+8.  ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, Jae Yeon Kim, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/covid19antiasian/)\]
 
-9. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 [[replication](https://github.com/jaeyk/linked_fate_review/)] (+ = co-lead authors.)
+9.  ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and Jae Yeon Kim+) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/linked_fate_review/)\] (+ = co-lead authors.)
 
-10. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) [[replication](https://github.com/jaeyk/asian_hate_misinformation)] (+ = co-lead authors.)
+10. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (Jae Yeon Kim+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) \[[replication](https://github.com/jaeyk/asian_hate_misinformation)\] (+ = co-lead authors.)
 
-11. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (Jae Yeon Kim), *Journal of Computational Social Science*, 2021, 4(2), 585-612 [[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)] 
-  - Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
+11. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (Jae Yeon Kim), *Journal of Computational Social Science*, 2021, 4(2), 585-612 \[[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)\]
 
-12. ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (Jae Yeon Kim), *Political Research Quarterly*, Online First in December 2020 [[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)]
+-   Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
 
-13. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 [[replication](https://github.com/jaeyk/analyzing-archival-data)]
+12. ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (Jae Yeon Kim), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
+
+13. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
 
 #### Peer-reviewed conference and workshop proceedings
 
-1. ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) [[replication](https://github.com/jaeyk/intersectional-bias-in-ml)]
+1.  ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\]
 
-#### Books 
+#### Books
 
-1. ["Public Interest Data Science: Harnessing Data for Good."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) [[book website](https://civicdatascience.wordpress.com/)]
+1.  ["Public Interest Data Science: Harnessing Data for Good."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
 
-    - Recommended by [the *National Assembly Library*](https://shorturl.at/7Oc1Z), *Samsung Global Research*'s executive education program (SERICEO), [the *Korea Institute of Science and Technology* (KIST)](https://library.kist.re.kr/search/recommend.do)
-    - Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005), [*Hankyoreh*](https://h21.hani.co.kr/arti/world/world_general/54378.html) (major Korean newspapers across the ideological spectrum)
+    -   Recommended by [the *National Assembly Library*](https://shorturl.at/7Oc1Z), *Samsung Global Research*'s executive education program (SERICEO), [the *Korea Institute of Science and Technology* (KIST)](https://library.kist.re.kr/search/recommend.do)
+    -   Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005), [*Hankyoreh*](https://h21.hani.co.kr/arti/world/world_general/54378.html) (major Korean newspapers across the ideological spectrum)
 
 #### Book projects
 
-1. "Negotiating Identity in the American Welfare State: The Organizational Origin of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+1.  "Negotiating Identity in the American Welfare State: The Organizational Origin of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
-    - Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (co-hosted by Alan Jacobs (UBC) and Yang-Yang Zhou (Dartmouth))
-    
-    - Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
-    
-    - Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+    -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (co-hosted by Alan Jacobs (UBC) and Yang-Yang Zhou (Dartmouth))
 
-    - Interactive maps: [Asian American CBO](https://felt.com/map/Asian-American-CBO-SbkRl0sGTVWpp0FYYCXngC?loc=35.51,-114.14,3.89z), [Latino CBO](https://felt.com/map/Latino-CBO-A9ClV2KloSPeopHhGNnHtsB?loc=35.38,-96.98,4.64z)
-    
-    - Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
-    
+    -   Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
+
+    -   Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+
+    -   Interactive maps: [Asian American CBO](https://felt.com/map/Asian-American-CBO-SbkRl0sGTVWpp0FYYCXngC?loc=35.51,-114.14,3.89z), [Latino CBO](https://felt.com/map/Latino-CBO-A9ClV2KloSPeopHhGNnHtsB?loc=35.38,-96.98,4.64z)
+
+    -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+
 America is a racially hierarchical society. However, ethnic groups with shared experiences of racial discrimination have not always joined forces politically. This book identifies the conditions under which ethnic elites decided to join forces as racial groups by leveraging the case of Asian Americans and Latinos. Before the late 1960s, national origin groups from Asia and Latin America did not come together as Asian Americans and Latinos. Their mobilization strategy shifted during this historical juncture because of the policy changes. Lyndon B. Johnson's War on Poverty programs expanded the American welfare state; however, these new safety net programs were implemented within the existing biracial framework. Street-level bureaucrats faced difficulty in classifying disadvantaged ethnic groups that did not fit into this prevalent image of the minority group. In response, non-target groups solved this collective problem by reinventing and organizing themselves in racial terms. This book traces this origin story by examining the parallel emergence of Asian American and Latino community organizing, which preceded their electoral politics. It also assesses the argument's scope conditions by comparing the variations in interethnic coalition formation in Chinatowns across the U.S. and Canadian border. Finally, it identifies the limitations of this contingent and relational identity formation theory in the contemporary period of racial threats, awakenings, and underlying demographic changes. The American multiracial framework we take for granted today has historical and organizational roots. Managing diversity from the top down is deeply intertwined with mobilizing diversity from the bottom up.
 
 #### Edited volume book chapters
 
-1. ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
+1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and perspectives of hate speech analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
 #### Research brief
 
-1. ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (Jae Yeon Kim), *HistPhil*, January 25, 2024 
+1.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (Jae Yeon Kim), *HistPhil*, January 25, 2024
 
-2. ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (Jae Yeon Kim), *Springer Nature: Social Sciences Community*, November 13, 2023
+2.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (Jae Yeon Kim), *Springer Nature: Social Sciences Community*, November 13, 2023
 
-3. ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (Jae Yeon Kim), *Scope Conditions*, June 14, 2023
+3.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (Jae Yeon Kim), *Scope Conditions*, June 14, 2023
 
-4. ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+4.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, Jae Yeon Kim, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
-5. ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
+5.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
 #### Public writing
 
-1. ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
+1.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 
-2. ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020
+2.  ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (Jae Yeon Kim), *UC Berkeley D-Lab*, September 23, 2020
 
-3. ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020
+3.  ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (Jae Yeon Kim), *SAGE Ocean*, June 24, 2020
 
-4. ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
+4.  ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (Jae Yeon Kim), *UC Berkeley D-Lab*, February 24, 2020
 
 ### Software development
 
-I have developed open-source software that supports data curation. All of the software is availalbe on GitHub: [[link]](
-https://github.com/jaeyk)
+I have developed open-source software that supports data curation. All of the software is availalbe on GitHub: [\[link\]](https://github.com/jaeyk)
 
-1. [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+1.  [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
 
-2. [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
+2.  [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
 
-3. [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
+3.  [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
 
-4. [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
+4.  [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
 
-5. [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
+5.  [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
 
 ### Public datasets
 
-1. [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
+1.  [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
 
-2. [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
+2.  [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
 
-3. [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+3.  [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
 ### Teaching and advising
 
@@ -195,17 +189,17 @@ My teaching style is effective because it combines my academic expertise with pr
 
 1.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (with Margaret Ng)
 
-2. ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (with Aniket Kesari, Sono Shah, Taylor Brown, Tiago Ventura, and Tina Law) [[slides](slides/training_css_phd.pdf)] [[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)] (created for the 2024 International Conference for Computational Social Science tutorial)
+2.  ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (with Aniket Kesari, Sono Shah, Taylor Brown, Tiago Ventura, and Tina Law) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)
 
 ### Community building
 
 I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](coauthors.md) across social sciences, data science, engineering, and design. I also have close relationships with several research labs across institutions: Johns Hopkins SNF Agora Institute's P3 Lab (PI: Hahrie Han), Harvard Kennedy School's Civic Power Lab (PI: Liz McKenna), UCLA's Race, Ethnicity, Politics, & Society (REPS) Lab (PI: Efrén Pérez), and Georgetown McCourt School's Better Government Lab (PI: Donald Moynihan, Pamela Herd, Sebastian Jilke, and Eric Giannella).
 
-I have contributed to expanding the field of computational social science in both the U.S. and South Korea. I co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I currently serve on [the advisory board of SICSS](https://sicss.io/people). 
+I have contributed to expanding the field of computational social science in both the U.S. and South Korea. I co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I currently serve on [the advisory board of SICSS](https://sicss.io/people).
 
 I have also served on panels on data science career paths at Stanford, UC Berkeley, and the International Conference on Computational Social Science (IC2S2).
 
-:::{.center}
+::: center
 ![Civic tech pre-conference at 2024 PMRC. Photo credit: Donald Moynihan](misc/civic_tech_preconference.jpg)
 :::
 
@@ -214,6 +208,4 @@ I have also served on panels on data science career paths at Stanford, UC Berkel
 My career path has been non-linear, spanning academia, public, and private sectors, but my focus has always been on increasing public access to resources. When I was still an undergraduate, I helped Korea University, my alma mater, launch one of the first Massive Open Online Courses in South Korea. Additionally, I was an activist for the Korean branch of Creative Commons, which initiated the Korean open government movement. I also served on the user service advisory board of Naver, the largest internet company in Korea, as its youngest and only college student member. After college, I took my first job as a product manager at a software startup in Seoul. In 2014, I moved to the U.S. for my graduate studies. After earning my Ph.D. from UC Berkeley, I did my postdoc training at Johns Hopkins, worked as a tenure-track assistant professor at a policy school in South Korea, and served as a data scientist in the U.S. public sector. I returned to academia to pursue my own intellectual agenda.
 
 As a first-generation immigrant and college student from a working-class family, I am where I am today because of the generous support of my advisors and other mentors. I am committed to giving back by teaching and mentoring students from underserved populations.
-
 :::
-
