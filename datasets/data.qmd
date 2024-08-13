@@ -1,0 +1,9 @@
+---
+title: "Public datasets"
+---
+
+1.  [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
+
+2.  [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
+
+3.  [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)

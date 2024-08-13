@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jaeyk.github.io/index.html</loc>
-    <lastmod>2024-08-13T21:52:43.937Z</lastmod>
+    <lastmod>2024-08-13T22:26:35.426Z</lastmod>
   </url>
   <url>
     <loc>https://jaeyk.github.io/contacts.html</loc>
@@ -35,5 +35,41 @@
   <url>
     <loc>https://jaeyk.github.io/essays/speaking_english.html</loc>
     <lastmod>2024-05-02T12:13:30.763Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/talks/talks.html</loc>
+    <lastmod>2024-08-13T22:30:53.693Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/awards/awards.html</loc>
+    <lastmod>2024-08-13T22:11:54.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/publications/pubs.html</loc>
+    <lastmod>2024-08-13T22:19:09.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/book_projects/books.html</loc>
+    <lastmod>2024-08-13T22:18:24.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/software/software.html</loc>
+    <lastmod>2024-08-13T22:22:49.294Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/datasets/data.html</loc>
+    <lastmod>2024-08-13T22:23:50.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/teaching/teaching.html</loc>
+    <lastmod>2024-08-13T22:24:50.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/community_building/community.html</loc>
+    <lastmod>2024-08-13T22:29:22.811Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jaeyk.github.io/personal/personal.html</loc>
+    <lastmod>2024-08-13T22:26:27.979Z</lastmod>
   </url>
 </urlset>

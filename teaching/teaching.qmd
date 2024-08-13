@@ -1,0 +1,9 @@
+---
+title: "Teaching and advising"
+---
+
+My teaching style is effective because it combines my academic expertise with professional experience. I am an award-winning certified instructor and have taught computational social science in semester-long courses and short workshops. In addition, I have co-authored two articles published in PS: Political Science & Politics on computational social science pedagogy and training. I also wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+
+1.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (with Margaret Ng)
+
+2.  ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (with Aniket Kesari, Sono Shah, Taylor Brown, Tiago Ventura, and Tina Law) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)

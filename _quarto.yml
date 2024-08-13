@@ -24,11 +24,34 @@ website:
         
       - text: "CV"
         href: CV_Jae_Yeon_Kim.pdf
-      
+        
+      - text: "Talks"
+        href: talks/talks.qmd 
+        
+      - text: "Awards"
+        href: awards/awards.qmd
+        
+      - text: "Publications"
+        href: publications/pubs.qmd
+        
+      - text: "Book projects"
+        href: book_projects/books.qmd
+        
+      - text: "Software"
+        href: software/software.qmd
+        
+      - text: "Data"
+        href: datasets/data.qmd
+        
+      - text: "Teaching"
+        href: teaching/teaching.qmd
+        
+      - text: "Community"
+        href: community_building/community.qmd
+        
+      - text: "Personal"
+        href: personal/personal.qmd
+        
 format:
   html:
-    theme: cosmo 
-    css: styles.scss
-    toc: true
-
-
+    theme: styles.scss
