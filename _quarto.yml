@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "Hello, I'm Jae"
+  site-url: https://jaeyk.github.io/
+  repo-url: https://github.com/jaeyk/jaeyk.github.io
+  repo-actions: [edit, issue]
+  
+  page-footer:
+    left: "&copy; Copyright 2024, Jae Yeon Kim"
+    right: 
+      - icon: github
+        href: https://github.com/jaeyk/jaeyk.github.io
+
+  navbar:
+    background: "#A9CCE3"
+    search: true
+    right:
+      - text: "Home"
+        href: index.qmd
+        
+      - text: "CV"
+        href: CV_Jae_Yeon_Kim.pdf
+      
+format:
+  html:
+    theme: styles.scss
+
+
+

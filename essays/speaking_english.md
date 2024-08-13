@@ -1,0 +1,19 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+I wrote the following essay a couple of years ago. I am sharing this again after I learned that I am the co-winner of the APSA's Best Dissertation Award in Urban and Local Politics this year. My dissertation is titled ["The Politics of Solidarity in Multiracial America."](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf)
+
+### Speaking of Speaking English
+
+I switched my main subfield from comparative to American politics by the end of my second year. The motivation was simple: so many Americans are experts on non-US politics, but I wanted to show that the field should be a two-way street. International graduate students also have something to say about American politics, and that contribution could be invaluable. After I made that transition, I inadvertently became one of the very few minority students—and likely the only non-native speaker—whenever I attended seminars, workshops, and conferences on American politics.
+
+Articulating complex ideas in a second or even third language is traumatizing. This does not stem from the difficulty involved in communicating ideas because that is a technical issue. The stigma comes more from knowing that someone in the audience will make a snap judgment on my intellect due to my accent. I didn't need my training in social psychology to anticipate that this would happen. Over the past couple years, I've received such judgments from a number of highly intellectual and well-respected people in and outside Berkeley. When it happened for the first time, it was like being punched in the stomach. It was difficult to swallow my feelings and erase the experience from my memory. Those moments still haunt me like a ghost and make me simultaneously sad, angry, and frustrated. I don't think these people were racist, they were just insensitive and unaware that their careless words can hurt. Each word may weigh little, but when combined, they become a thousand papercuts.
+
+I presume someone who moved to the States when they were a child might have gone through a similar experience—classmates made fun of you because you sounded different. My colleagues were more respectful but perhaps more judgmental. More importantly, what they thought, said, and wrote about me and my work were consequential to my career.
+
+For this and other reasons, in recent years, I've moved from political science to computational social science, which sits at the intersection between social science and data science. I still work on some traditional political science problems, but it's clear that I no longer want to feel isolated and marginalized because I don't look or sound like most of the others. Computational social science also has serious inclusion and diversity issues, yet my experience tells me that there I am no longer the only non-native English speaker sitting in a vast seminar room constantly worrying about what people think of my accent. This personal experience also motivated me to spend substantial time and energy teaching statistics and data science tools to students from non-traditional backgrounds. 
+
+If you've read this far and if you are one of my political scientist colleagues, I sincerely express my gratitude and have one simple request: if you think that the US-centric world view is problematic and the field needs to diversify, never make a condescending comment like "the author is not a native speaker." Such comments serve no constructive goals. What they do is amplifying bias and signify your privilege when the field already has so many problems. Let’s make the world a better place by being nice. Each one of you has an underappreciated superpower: you can make an enormous difference just by being kind to someone who is struggling to find their place in a strange new world.
