@@ -23,10 +23,11 @@ $theme-orange: #f9af11;
 $theme-pumpkin: #d05808;
 $theme-darkgreen1: #80a074;
 $theme-darkgreen2: #445740;
+$theme-crimson: #A41034;
 
 $body-bg: $theme-white;
-$body-color: $theme-darkcoffee1; // text color
-$headings-color: $theme-milkcoffee2; // applies to all 
+$body-color: $theme-black; // text color
+$headings-color: $theme-black; // applies to all 
 $link-color: $theme-pumpkin;
 
 // code
@@ -39,7 +40,7 @@ $code-block-bg-alpha: -0.8;
 $background-color: $theme-milkcoffee0;
 
 // navigation
-$navbar-bg: $theme-darkgreen2;
+$navbar-bg: $theme-crimson;
 
 // callout block
 $callout-color-note: $theme-darkgreen2;
