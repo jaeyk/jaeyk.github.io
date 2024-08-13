@@ -43,25 +43,25 @@ $background-color: $theme-milkcoffee0;
 $navbar-bg: $theme-crimson;
 
 // callout block
-$callout-color-note: $theme-darkgreen2;
-$callout-color-tip: $theme-darkgreen1;
-
+$callout-color-note: $theme-black;
+$callout-color-tip: $theme-black;
 
 // font
-
 
 @import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 $font-family-sans-serif: 'Poppins', sans-serif;
@@ -73,35 +73,38 @@ $font-cabin: 'Cabin', sans-serif;
 $font-montserrat: 'Montserrat', sans-serif;
 $font-prompt: 'Prompt', sans-serif;
 
-//$font-family-sans-serif: 'Yanone Kaffeesatz', Tahoma, sans-serif;
-//$font-family-sans-serif: 'Signika Negative';
+// Increase font weight for boldness
+$font-weight-bold: 700;
 
 $font-size-root: 16px;
 
 /*-- scss:rules --*/
 h1 {
-  color: $theme-darkcoffee3;
+  color: $theme-black;
   font-family: $font-pt;
   font-size: 40px;
+  font-weight: $font-weight-bold; // Make headings bolder
   //padding: 0.2em;
 }
 
 h2 {
-  color: $theme-darkcoffee3;
+  color: $theme-black;
   font-family: $font-pt;
   font-size: 30px;
+  font-weight: $font-weight-bold; // Make headings bolder
   //padding: 0.3em;
 }
 
 h3, h4 {
-  color: $theme-mocha1;
+  color: $theme-black;
   font-family: $font-pt;
+  font-weight: $font-weight-bold; // Make headings bolder
   //padding: 0.3em;
 }
 
-
 h4 {
-  color: $theme-darkgreen1;
+  color: $theme-black;
+  font-weight: $font-weight-bold; // Make headings bolder
 }
 
 .render-commit-push {
