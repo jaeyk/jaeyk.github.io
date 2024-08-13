@@ -9,5 +9,5 @@ I have contributed to expanding the field of computational social science in bot
 I have also served on panels on data science career paths at Stanford, UC Berkeley, and the International Conference on Computational Social Science (IC2S2).
 
 ::: center
-![Civic tech pre-conference at 2024 PMRC. Photo credit: Donald Moynihan](https://jaeyk.github.io/misc/civic_tech_preconference.jpg)
+![Civic tech pre-conference at 2024 PMRC. Photo credit: Donald Moynihan](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg)
 :::
