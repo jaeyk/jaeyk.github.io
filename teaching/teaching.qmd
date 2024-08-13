@@ -2,7 +2,50 @@
 title: "Teaching and advising"
 ---
 
-My teaching style is effective because it combines my academic expertise with professional experience. I am an award-winning certified instructor and have taught computational social science in semester-long courses and short workshops. In addition, I have co-authored two articles published in PS: Political Science & Politics on computational social science pedagogy and training. I also wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+My teaching style is effective because it combines my academic expertise with professional experience. I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/certificate-program/) instructor and have taught computational social science in semester-long courses and short workshops. In addition, I have co-authored two articles published in PS: Political Science & Politics on computational social science pedagogy and training. 
+
+## Potential Future Teaching 
+
+- American Politics
+- Public Policy and Organizations
+- Political Behavior and Psychology 
+- Racial and Ethnic Politics
+- Urban and Local Politics
+- Quantitative Methods
+- Computational Social Science
+
+## Courses Taught 
+
+- Graduate seminars
+  - KDI School:
+    - [R Fundamentals for Public Policy](https://github.com/KDIS-DSPPM/r-fundamentals) (Spring 2022, Fall 2022 [2x])
+    - [Data Visualization and Communication](https://github.com/KDIS-DSPPM/data-visualization) (Summer 2022)
+  - UC Berkeley:
+    - [An Introduction to Computational Tools and Techniques for Social Science Research](https://github.com/PS239T/spring_2021) (Instructor of record: Spring 2019, Spring 2021 [2x], Graduate student instructor with Rachel Bernhard: Fall 2016)
+    - [Research Workshop on Computational Tools for Digital Data Collection](https://github.com/jaeyk/digital_data_collection_workshop) (with Nick Kuipers: Fall 2020)
+
+- Undergraduate lectures 
+  - UC Berkeley: Introduction to Empirical Analysis and Quantitative Methods (with Laura Stoker: Fall 2016)
+
+- Pre-conference tutorials 
+  - [International Conference for Computational Social Science Science](https://ic2s2-2024.org/tutorials) (IC2S2 '24, July 2024): Training Computational Social Science PhDs for Academic and Non-academic Careers
+  - [Summer Institute in Computational Social Science-Howard R Bootcamp](https://github.com/jaeyk/sicss-howard-r-boot-camp) (SICSS-Howard, June 2021). *Invited instructor*
+
+- Workshops 
+  - Berkeley Interdisciplinary Migration Initiative: Summer Institute in Migration Research Methods (Summer 2024). *Invited instructor*
+  - Korea University Institute of Politics: [Digital Data Collection](https://github.com/jaeyk/summer_digital_data_collection) (Summer 2022). *Invited instructor*
+  - [UC Berkeley D-Lab](https://github.com/dlab-berkeley) (Summer 2020-Summer 2020): Fairness and Bias in Machine Learning, Machine Learning in R, SQL for R Users, R Package Development, Functional Programming in R, Advanced Data Wrangling in R, Reproducible Project Management in R, R fundamentals
+
+- Guest lectures 
+  - 2023: Wesleyan (Challenges to Democracy in East Asia)
+  - 2022: National University of Singapore (Digital Communications and Analytics), KAIST (Data Analysis for Green Business and Policy, Science, Technology, and Society), Korea University (Introduction to Political Science), Sungkyunkwan University (Methods of Economic Data Analysis)
+  - 2021: KAIST (Data Analysis for Green Business and Policy), Dartmouth (Experiments in Politics)
+
+## Teaching materials 
+
+* Original textbook: ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+
+## Pedagogical articles 
 
 1.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (with Margaret Ng)
 
