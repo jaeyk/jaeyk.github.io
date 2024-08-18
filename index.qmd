@@ -9,33 +9,34 @@ format:
     linestretch: 1.7
 about:
   id: hero-heading
-  template: jolla
-  image-shape: round
+  template: trestles
+  #image-shape: round
+  image-width: 12em
   links:
     - icon: mailbox
       text: jkim638@jhu.edu
       href: mailto:jkim638@jhu.edu
+    - icon: CV
+      text: CV
+      href: https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf
     - icon: google
       text: Google scholar
       href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en     
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/jaeyk
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
 ---
 
 ::: {#hero-heading}
 I am an assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, I worked as a senior data scientist at [Code for America](https://codeforamerica.org/programs/), where I collaborated with all levels of the U.S. government to improve access to safety net programs. I completed my PhD in Political Science from the University of California, Berkeley in 2021. My research has been published in top outlets such as *Nature Human Behaviour* and received multiple awards from the American Political Science Association.
 
-I study how the state and marginalized populations interact in American politics and policy, with a focus on policy implementation (**state capacity**) and community organizing and collective action (**civic capacity**). My research agenda bridges the social and behavioral sciences and data science and is grounded in people’s everyday experiences accessing public services and solving collective problems. I specialize in use-inspired research based on partnerships with government agencies. In addition, I have extensive experience building original, large-scale, and multi-purpose databases using big data and machine learning/AI. One example is [the Mapping the Modern Agora project](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/), which maps the U.S. civil society at scale utilizing more than 1.8 million IRS tax returns, 1.1 million websites, and other digital trace data of nonprofit organizations.
+I study how the state and marginalized populations interact in American politics and policy, with a focus on policy implementation (**state capacity**) and community organizing and collective action (**civic capacity**). My research agenda is interdisciplinary and grounded in people’s everyday experiences accessing public services and solving collective problems. I specialize in use-inspired research based on partnerships with government agencies. In addition, I have extensive experience building original, large-scale, and multi-purpose databases using big data and machine learning/AI. One example is [the Mapping the Modern Agora project](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/), which maps the U.S. civil society at scale utilizing more than 1.8 million IRS tax returns, 1.1 million websites, and other digital trace data of nonprofit organizations.
 
 In addition to my substantive interests, through my work on **computational social science** and **data science pedagogy**, I am actively engaged in bridging social sciences and data science and making computational methods accessible.
 
-I am currently working on a book version of my award-winning dissertation, tentatively titled "Negotiating Identity in the American Welfare State: The Organizational Origin of Multiracial America."
+I am currently working on a book version of my award-winning dissertation, tentatively titled "Demography Is Not Destiny: The Origin and Evolution of Multiracial America."
 
 I am <u>on the job market</u> in the 2024-2025 academic year.
 
-You can reach me at [jkim638\@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](misc/CV_Jae_Yeon_Kim.pdf) to my CV.
+You can reach me at [jkim638\@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf) to my CV.
 :::

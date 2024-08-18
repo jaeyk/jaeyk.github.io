@@ -1,14 +1,22 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 5896
+    browser: true
 
 website:
   page-navigation: true
   title: "Hello, I'm Jae"
+  description: "The personal website of Dr. Jae Yeon Kim"
   site-url: https://jaeyk.github.io/
+  favicon: images/favicon/favicon.ico
   repo-url: https://github.com/jaeyk/jaeyk.github.io
-  repo-actions: [edit, issue]
-  
+  search:
+    location: navbar
+    type: overlay
+  back-to-top-navigation: true
+  google-analytics: G-Q5LW45FBCB
   page-footer:
     left: "&copy; Copyright 2024, Jae Yeon Kim"
     right: 
@@ -16,8 +24,8 @@ website:
         href: https://github.com/jaeyk/jaeyk.github.io
 
   navbar:
-    background: "#A9CCE3"
-    search: true
+    background: dark
+    foreground: light
     right:
       - text: "Home"
         href: index.qmd
@@ -34,7 +42,7 @@ website:
       - text: "Publications"
         href: publications/pubs.qmd
         
-      - text: "Book projects"
+      - text: "Book"
         href: book_projects/books.qmd
         
       - text: "Software"
@@ -55,3 +63,10 @@ website:
 format:
   html:
     theme: styles.css
+    toc: true
+    toc-depth: 4
+    toc-title: "Contents"
+    html-math-method: katex
+    highlight-style: tango
+    anchor-sections: true
+    smooth-scroll: true

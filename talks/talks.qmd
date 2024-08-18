@@ -4,40 +4,43 @@ title: "Travel & Talks"
 
 ### 2024
 
-* October, American Politics and Public Policy Workshop, Yale University. Invited speaker (scheduling).
+#### Invited talks 
 
-* September/October, Identity and Politics Workshop, UC Berkeley. Invited speaker (scheduling).
+* October, American Politics and Public Policy Workshop, Yale University. (scheduling).
+
+* September/October, Identity and Politics Workshop, UC Berkeley. (scheduling).
+
+* August 28, Information Science Seminar, University of Colorado, Boulder. (scheduled).
+
+* June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. 
+
+* June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/).  [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
+
+* June 9-13, [Summer Institute in Migration Research Methods](https://www.canva.com/design/DAF7k6nkfyE/HNs0MQf_ApxuzOI2x4os5Q/view?utm_content=DAF7k6nkfyE&utm_campaign=designshare&utm_medium=link&utm_source=editor&fbclid=IwZXh0bgNhZW0CMTAAAR35zr37ckUsJ9JvpIWOeF0dyoI_JAauCLwu1qZARzvNr1hMiMsYeF0dgg8_aem_ZmFrZWR1bW15MTZieXRlcw), UC Berkeley. 
+
+* April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins.
+
+* April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)
+
+* March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. 
+
+* February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA.
+
+* January 11, [Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), University of Washington. 
+
+#### Conference presentations 
 
 * September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia (scheduled).
 
-* August 28, Information Science Seminar, University of Colorado, Boulder. Invited speaker (scheduled).
+* July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference).  [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf)
 
-* July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference). Invited speaker. [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](https://jaeyk.github.io/slides/administrative_checkpoints_CAPE_kim.pdf)
-
-* July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. Invited instructor. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
-
-* June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
-    -   [\[slides\]](https://jaeyk.github.io/slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
-    -   [\[slides\]](https://jaeyk.github.io/slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
+* July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
     
-* June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. Invited speaker.
-
-* June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/). Invited speaker. [\[slides\]](https://jaeyk.github.io/slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
-
-* June 9-13, [Summer Institute in Migration Research Methods](https://www.canva.com/design/DAF7k6nkfyE/HNs0MQf_ApxuzOI2x4os5Q/view?utm_content=DAF7k6nkfyE&utm_campaign=designshare&utm_medium=link&utm_source=editor&fbclid=IwZXh0bgNhZW0CMTAAAR35zr37ckUsJ9JvpIWOeF0dyoI_JAauCLwu1qZARzvNr1hMiMsYeF0dgg8_aem_ZmFrZWR1bW15MTZieXRlcw), UC Berkeley. Invited instructor.
-
-* May 20-23, The Consortium on the American Political Economy (CAPE) Summer Academy, UC Berkeley. Invited participant.
-
-* April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins. Invited speaker.
-
-* April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. Invited speaker. [\[slides\]](https://jaeyk.github.io/slides/training_css_phd.pdf)
+* June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
+    -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
+    -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
 
 * March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 
-* March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. Invited speaker.
+* February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. 
 
-* February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. Invited speaker.
-
-* February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA. Invited speaker.
-
-* January 11, [Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), University of Washington. Invited speaker.

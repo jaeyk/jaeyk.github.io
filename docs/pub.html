@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hello, I’m Jae - Jae Yeon Kim</title>
+<title>Hello, I’m Jae - Listing Example</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,9 +31,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/favicon/favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -65,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q5LW45FBCB"></script>
 
 <script type="text/javascript">
@@ -76,10 +108,53 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,7 +172,7 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -151,58 +226,86 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="profile_alt.png" class="about-image
-  rounded " style="width: 12em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Jae Yeon Kim</h1>
+<h1 class="title">Listing Example</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="mailto:jkim638@jhu.edu" class="about-link" rel="" target="">
-    <i class="bi bi-mailbox"></i>
-     <span class="about-link-text">jkim638@jhu.edu</span>
-  </a>
-  <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-CV"></i>
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&amp;hl=en" class="about-link" rel="" target="">
-    <i class="bi bi-google"></i>
-     <span class="about-link-text">Google scholar</span>
-  </a>
-  <a href="https://github.com/jaeyk" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1723956522003" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail">
+<p><a href="./publications/pub.html" class="no-external"></a></p><a href="./publications/pub.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publications/pub.html" class="no-external"></a></p>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>I am an assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, I worked as a senior data scientist at <a href="https://codeforamerica.org/programs/">Code for America</a>, where I collaborated with all levels of the U.S. government to improve access to safety net programs. I completed my PhD in Political Science from the University of California, Berkeley in 2021. My research has been published in top outlets such as <em>Nature Human Behaviour</em> and received multiple awards from the American Political Science Association.</p>
-<p>I study how the state and marginalized populations interact in American politics and policy, with a focus on policy implementation (<strong>state capacity</strong>) and community organizing and collective action (<strong>civic capacity</strong>). My research agenda is interdisciplinary and grounded in people’s everyday experiences accessing public services and solving collective problems. I specialize in use-inspired research based on partnerships with government agencies. In addition, I have extensive experience building original, large-scale, and multi-purpose databases using big data and machine learning/AI. One example is <a href="https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/">the Mapping the Modern Agora project</a>, which maps the U.S. civil society at scale utilizing more than 1.8 million IRS tax returns, 1.1 million websites, and other digital trace data of nonprofit organizations.</p>
-<p>In addition to my substantive interests, through my work on <strong>computational social science</strong> and <strong>data science pedagogy</strong>, I am actively engaged in bridging social sciences and data science and making computational methods accessible.</p>
-<p>I am currently working on a book version of my award-winning dissertation, tentatively titled “Demography Is Not Destiny: The Origin and Evolution of Multiracial America.”</p>
-<p>I am <u>on the job market</u> in the 2024-2025 academic year.</p>
-<p>You can reach me at <a href="mailto:jkim638@jhu.edu">jkim638@jhu.edu</a>. Here is a <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">link</a> to my CV.</p>
-</div></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/pub.html" class="no-external">Listing Example</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/pub.html" class="no-external"></a>
 </div>
-
-
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div class="listing-description">
+<a href="./publications/pub.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./publications/pub.html" class="no-external"></a></p><a href="./publications/pub.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1723646146436" data-listing-reading-time-sort="6" data-listing-word-count-sort="1003">
+<div class="thumbnail">
+<p><a href="./publications/pubs.html" class="no-external"></a></p><a href="./publications/pubs.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./publications/pubs.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/pubs.html" class="no-external">Publications</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/pubs.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./publications/pubs.html" class="no-external">“The Unequal Landscape of Civic Opportunity in America.” (Milan de Vries, Jae Yeon Kim, and Hahrie Han) <em>Nature Human Behaviour</em>, Online First in November 2023 [replication] [s…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./publications/pubs.html" class="no-external"></a></p><a href="./publications/pubs.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -223,6 +326,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

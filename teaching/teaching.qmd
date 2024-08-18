@@ -4,15 +4,17 @@ title: "Teaching and advising"
 
 My teaching style is effective because it combines my academic expertise with professional experience. 
 
-I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/certificate-program/) instructor and have taught computational social science in semester-long courses and short workshops. In addition, I have co-authored two articles published in PS: Political Science & Politics on computational social science pedagogy and training. I also wrote an open-access textbook for computational methods titled ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/certificate-program/) instructor and have taught computational social science in semester-long courses and short workshops. 
 
-1. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (with Margaret Ng)
+## Pedagogical resources 
 
-2. ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (with Aniket Kesari, Sono Shah, Taylor Brown, Tiago Ventura, and Tina Law) 
-   - [Slides](https://jaeyk.github.io/slides/training_css_phd.pdf)
+- Original textbook:  ["Computational Thinking for Social Scientists."](https://jaeyk.github.io/comp_thinking_social_science/)
+- ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (with Margaret Ng)
+- ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (with Aniket Kesari, Sono Shah, Taylor Brown, Tiago Ventura, and Tina Law) 
+   - [Slides](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)
    - [Website](https://github.com/jaeyk/ic2s2-training-css-tutorial) (created for the 2024 International Conference for Computational Social Science tutorial)
 
-## Potential Future Teaching
+## Potential future teaching
 
 - American Politics
 - Public Policy and Organizations
@@ -22,7 +24,7 @@ I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/cer
 - Quantitative Methods
 - Computational Social Science
 
-## Courses Taught
+## Courses taught
 
 ### Graduate seminars
 
@@ -43,7 +45,8 @@ I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/cer
 #### UC Berkeley
 
 - Introduction to Empirical Analysis and Quantitative Methods (with Laura Stoker: Fall 2016)
-
+   - Received the Outstanding Graduate Student Instructor Award
+   
 ### Pre-conference tutorials
 
 - [International Conference for Computational Social Science](https://ic2s2-2024.org/tutorials) (IC2S2 '24, July 2024): Training Computational Social Science PhDs for Academic and Non-academic Careers
@@ -76,5 +79,5 @@ I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/cer
   - Dartmouth (Experiments in Politics)
   
 ::: center
-![Lightening talk on teaching computational social science at the Summer Institute in Computational Social Science (Princeton 2019)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.jpg)
+![Lightening talk on teaching computational social science. Summer Institute in Computational Social Science (2019 Princeton)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.png){fig-align="center" width=70%}
 :::
