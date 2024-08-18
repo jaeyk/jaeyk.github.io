@@ -9,5 +9,5 @@ As a first-generation immigrant and college student from a working-class family,
 I grew up in a place without a library until age 11, which is probably why I have a deep appreciation for public libraries and, especially, independent bookstores.
 
 ::: center
-![Public libraries and independent book stores. Powell's Books (Portland 2017). Photo credit: me](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/bookstore.jpg){fig-align="center" width=70%}
+![Public libraries and independent book stores. Powell's Books (Portland 2017). Photo credit: me](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/bookstore.jpg){fig-align="center" width=100%}
 :::

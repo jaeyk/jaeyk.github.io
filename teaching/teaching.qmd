@@ -79,5 +79,5 @@ I am an award-winning [certified](https://gsi.berkeley.edu/programs-services/cer
   - Dartmouth (Experiments in Politics)
   
 ::: center
-![Lightening talk on teaching computational social science. Summer Institute in Computational Social Science (2019 Princeton)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.png){fig-align="center" width=70%}
+![Lightening talk on teaching computational social science. Summer Institute in Computational Social Science (2019 Princeton)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.png){fig-align="center" width=100%}
 :::
