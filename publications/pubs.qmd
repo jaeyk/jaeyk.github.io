@@ -82,7 +82,7 @@ format: html
 
 1. Navigating the Thicket: Metrics Management in U.S. Civic Life (with Liz McKenna)
 
-2. Historical Legacies and Civic Inequality in America (with Milan de Vries, and Hahrie Han)  
+2. Historical Legacies and Civic Inequality in America (with Milan de Vries and Hahrie Han)  
     - Presented at 2024 WPSA; Scheduled to present at 2024 APSA
 
 3. American Civic Opportunity Datasets (with Milan de Vries)
