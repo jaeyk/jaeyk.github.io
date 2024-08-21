@@ -4,7 +4,7 @@ title: "Book"
 
 ### Book projects
 
-1.  "Demography Is Not Destiny: The Origin and Evolution of Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+1.  "Demography Is Not Destiny: Discrimination, Solidarity, and Multiracial Democracy in America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
     -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (co-hosted by Alan Jacobs (UBC) and Yang-Yang Zhou (Dartmouth))
 
@@ -16,11 +16,9 @@ title: "Book"
 
     -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
-The United States is becoming more diverse and will soon have a population where no single racial or ethnic group is in the majority. The growing numbers of Asian Americans and Latinos are driving this change. However, the growth of these groups' populations turns into politics only if there is unity among their members. 
+The United States is becoming increasingly diverse and will soon have a population where no single racial or ethnic group is in the majority. The rising numbers of Asian Americans and Latinos are the main drivers of this change. However, the political power of these groups will only grow if there is unity among their members.
 
-Contrary to conventional wisdom, the book argues that racial discrimination is not sufficient to explain when in-group solidarity emerges among minoritized populations. Despite the racial hierarchy in the United States, ethnic groups who have experienced discrimination have not always united politically. 
-
-Before the late 1960s, national origin groups from Asia and Latin America did not come together as Asian Americans and Latinos. Their mobilization strategy shifted during this historical juncture because of the policy changes. Lyndon B. Johnson's War on Poverty programs expanded the American welfare state; however, these new safety net programs were implemented within the existing biracial framework. Street-level bureaucrats faced difficulty in classifying disadvantaged ethnic groups that did not fit into this prevalent image of the minority group. In response, non-target groups solved this collective problem by reinventing and organizing themselves in racial terms. 
+Contrary to conventional wisdom, the book argues that racial discrimination is not sufficient to explain when in-group solidarity emerges among minoritized populations. Despite the racial hierarchy in the United States, ethnic groups who have experienced discrimination have not always united politically. Before the late 1960s, national origin groups from Asia and Latin America did not come together as Asian Americans and Latinos. Their political strategy shifted during this historical juncture because of the policy changes. Lyndon B. Johnson's War on Poverty programs expanded the American welfare state; however, these new safety net programs were implemented within the existing biracial framework. Street-level bureaucrats faced difficulty in classifying disadvantaged ethnic groups that did not fit into this prevalent image of the minority group. In response, non-target groups solved this collective problem by reinventing and organizing themselves in racial terms. 
 
 This book traces this origin story by examining the parallel emergence of Asian American and Latino community organizing, which preceded their electoral politics. It also assesses the argument's scope conditions by comparing the variations in interethnic coalition formation in Chinatowns across the U.S. and Canadian border. Finally, it identifies the limitations of this contingent solidarity theory in the contemporary period of racial threats, awakenings, and underlying demographic changes. 
 
