@@ -12,8 +12,6 @@ title: "Book"
 
     -   Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
 
-    -   Interactive maps: [Asian American CBO](https://felt.com/map/Asian-American-CBO-SbkRl0sGTVWpp0FYYCXngC?loc=35.51,-114.14,3.89z), [Latino CBO](https://felt.com/map/Latino-CBO-A9ClV2KloSPeopHhGNnHtsB?loc=35.38,-96.98,4.64z)
-
     -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
 The United States is becoming increasingly diverse and will soon have a population where no single racial or ethnic group is in the majority. The rising numbers of Asian Americans and Latinos are the main drivers of this change. However, the political power of these groups will only grow if there is unity among their members.
