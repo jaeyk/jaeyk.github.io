@@ -10,7 +10,7 @@ title: "Travel & Talks"
 
 * September/October, Identity and Politics Workshop, UC Berkeley. (scheduling).
 
-* August 28, Information Science Seminar, University of Colorado, Boulder. (scheduled).
+* August 28, Information Science Seminar, University of Colorado, Boulder.
 
 * June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. 
 
