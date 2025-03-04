@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jaeyk.github.io/community_building/coauthors.html</loc>
-    <lastmod>2025-03-04T19:06:43.905Z</lastmod>
+    <loc>https://jaeyk.github.io/community_building/partners.html</loc>
+    <lastmod>2025-03-04T19:06:38.529Z</lastmod>
   </url>
   <url>
-    <loc>https://jaeyk.github.io/awards/awards.html</loc>
-    <lastmod>2024-11-02T03:45:28.583Z</lastmod>
+    <loc>https://jaeyk.github.io/community_building/community.html</loc>
+    <lastmod>2025-03-04T19:08:03.630Z</lastmod>
   </url>
   <url>
     <loc>https://jaeyk.github.io/teaching/advisees.html</loc>
@@ -49,11 +49,11 @@
     <lastmod>2025-02-21T12:51:48.427Z</lastmod>
   </url>
   <url>
-    <loc>https://jaeyk.github.io/partners.html</loc>
-    <lastmod>2025-03-04T19:06:38.529Z</lastmod>
+    <loc>https://jaeyk.github.io/awards/awards.html</loc>
+    <lastmod>2024-11-02T03:45:28.583Z</lastmod>
   </url>
   <url>
-    <loc>https://jaeyk.github.io/community_building/community.html</loc>
-    <lastmod>2025-03-04T19:08:03.630Z</lastmod>
+    <loc>https://jaeyk.github.io/community_building/coauthors.html</loc>
+    <lastmod>2025-03-04T19:06:43.905Z</lastmod>
   </url>
 </urlset>
