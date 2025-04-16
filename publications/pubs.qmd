@@ -51,7 +51,7 @@ format: html
 
 #### Big data and civic engagement 
 
-1. "MapAgora, civic opportunity datasets for the study of American local politics and public policy." (**Jae Yeon Kim**, Milan de Vries) [[replication]](https://github.com/snfagora/american_civic_opportunity_datasets)
+1. "MapAgora, civic opportunity datasets for the study of American local politics and public policy." (**Jae Yeon Kim**, Milan de Vries, and Hahrie Han) [[replication]](https://github.com/snfagora/american_civic_opportunity_datasets)
 
     - Revise & resubmit at *Nature Scientific Data*
 
