@@ -2,12 +2,55 @@
 title: "Community building"
 ---
 
-I love learning from other people who share similar research interests and building interdisciplinary communities. I have developed a large and growing network of [collaborators](coauthors.md) across social sciences, data science, engineering, and design in the academic, public, and private institutions. I also have close relationships with several research labs across institutions: Johns Hopkins SNF Agora Institute's P3 Lab (PI: Hahrie Han), Harvard Kennedy School's Civic Power Lab (PI: Liz McKenna), UCLA's Race, Ethnicity, Politics, & Society (REPS) Lab (PI: Efrén Pérez), and Georgetown McCourt School's Better Government Lab (PI: Donald Moynihan, Pamela Herd, Sebastian Jilke, and Eric Giannella).
+<p style="display: flex; gap: 3em; flex-wrap: wrap; align-items: flex-start;">
 
-I have contributed to expanding the field of computational social science in both the U.S. and South Korea. I co-organized the first partner location of [the Summer Institute in Computational Social Science](https://sicss.io/) (SICSS) in [the Bay Area](https://sicss.io/2020/bay_area/) (2020, co-hosted by UC Berkeley and Stanford) and [South Korea](https://sicss.io/2022/korea/) (2022, co-hosted by KAIST and KDI School). I currently serve on [the advisory board of SICSS](https://sicss.io/people).
+<!-- Column 1 -->
+<div style="flex: 1; min-width: 300px;">
 
-I have also served on panels on data science career paths at Stanford, UC Berkeley, and the International Conference on Computational Social Science (IC2S2).
+#### Bridging Research and Practice
+
+- **Co-founder**, [*Data for Good Roundtables*](https://sites.google.com/view/d4g-roundtables?usp=sharing) (2025– )  
+  A  safe space where academics and practitioners come together to discuss using data for good.
+
+#### Collaborators and Lab Affiliations
+
+I maintain an active network of [collaborators](coauthors.md) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
+
+- **P3 Lab**, Johns Hopkins SNF Agora Institute  
+  (PI: Hahrie Han)  
+- **Civic Power Lab**, Harvard Kennedy School  
+  (PI: Liz McKenna)  
+- **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
+  (PIs: Donald Moynihan, Pamela Herd, Sebastian Jilke)  
+- **REPS Lab**, UCLA  
+  (PI: Efrén Pérez)
+
+</div>
+
+<!-- Column 2 -->
+<div style="flex: 1; min-width: 300px;">
+
+#### Field-Building in Computational Social Science
+
+- **Advisory Council Member**, [Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people)  
+- **Co-organizer**, [SICSS Bay Area (2020)](https://sicss.io/2020/bay_area/)  
+  Co-hosted by UC Berkeley and Stanford  
+- **Co-organizer**, [SICSS Korea (2022)](https://sicss.io/2022/korea/)  
+  Co-hosted by KAIST and KDI School  
+
+#### Community Engagement & Mentorship
+
+- **Panelist on Civic Tech**  
+  *Public Management Research Conference (PMRC), University of Washington, 2024*
+
+- **Panelist on Data Science Career Paths**  
+  *Stanford University, 2024*  
+  *UC Berkeley, 2023*  
+  *[International Conference on Computational Social Science (IC2S2)](https://ic2s2.org/), 2024*
+  
+</div>
+</p>
 
 ::: center
-![Civic tech pre-conference at 2024 Public Management Research Conference (UW Seattle). Photo credit: Donald Moynihan](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg){fig-align="center" width=100%}
+![Civic tech pre-conference at the 2024 Public Management Research Conference (University of Washington, Seattle). Photo credit: Donald Moynihan. I am actively involved in building interdisciplinary communities and bridging the gap between research and practice.](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg){fig-align="center" width=100%}
 :::

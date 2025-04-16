@@ -10,33 +10,45 @@ format:
 about:
   id: hero-heading
   template: trestles
-  #image-shape: round
+  image-shape: round
   image-width: 12em
   links:
     - icon: mailbox
       text: jkim638@jhu.edu
       href: mailto:jkim638@jhu.edu
-    - icon: CV
+    - icon: mailbox
+      text: jaeyeonkim@hks.harvard.edu
+      href: mailto:jaeyeonkim@hks.harvard.edu
+    - icon: cv
       text: CV
       href: https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf
     - icon: google
       text: Google scholar
-      href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en     
+      href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jae-yeon-kim-694764229/
     - icon: github
       text: GitHub
       href: https://github.com/jaeyk
 ---
 
 ::: {#hero-heading}
-I am an assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, I worked as a senior data scientist at [Code for America](https://codeforamerica.org/programs/), where I collaborated with all levels of the U.S. government to improve access to safety net programs. I completed my PhD in Political Science from the University of California, Berkeley in 2021. My research has been published in top outlets such as *Nature Human Behaviour* and received multiple awards from the American Political Science Association.
 
-I study how the state and marginalized populations interact in American politics and policy, with a focus on policy implementation (**state capacity**) and community organizing and collective action (**civic capacity**). My research agenda is interdisciplinary and grounded in people’s everyday experiences accessing public services and solving collective problems. I specialize in use-inspired research based on partnerships with government agencies. In addition, I have extensive experience building original, large-scale, and multi-purpose databases using big data and machine learning/AI. One example is [the Mapping the Modern Agora project](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/), which maps the U.S. civil society at scale utilizing more than 1.8 million IRS tax returns, 1.1 million websites, and other digital trace data of nonprofit organizations.
+I am an Assistant Research Scientist at the [SNF Agora Institute at Johns Hopkins University](https://snfagora.jhu.edu/), where I co-developed the [Mapping the Modern Agora Project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/). I am also a Research Fellow at the Harvard Kennedy School and a Fellow at the [Better Government Lab](https://www.bettergovernmentlab.org/our-team), based at Georgetown’s McCourt School and Michigan’s Ford School. Starting in January 2026, I will join the University of North Carolina–Chapel Hill as an Assistant Professor of Public Policy.
 
-In addition to my substantive interests, through my work on **computational social science** and **data science pedagogy**, I am actively engaged in bridging social sciences and data science and making computational methods accessible.
+My research examines how governments and communities build the capacity to implement public policy effectively. I focus on urban, social, and technology policy in the United States—studying how public institutions reduce administrative burdens in safety net programs and how civic infrastructure supports democratic governance. I use computational and multi-method approaches, including field experiments, surveys, big data analytics, and machine learning. I collaborate closely with government and nonprofit partners to produce research that directly informs policy and improves practice.
 
-I am currently working on a book version of my award-winning dissertation, tentatively titled "Demography Is Not Destiny: Discrimination, Solidarity, and Representation in Multiracial America."
+Previously, I worked as a Senior Data Scientist at [Code for America](https://codeforamerica.org/programs/), where I partnered with federal, state, and local agencies to expand access to safety net programs. I earned my Ph.D. in Political Science from UC Berkeley.
 
-I am <u>on the job market</u> in the 2024-2025 academic year.
+I am also a co-founder of the [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing), a safe space where academics and practitioners come together to discuss using data for good.
 
-You can reach me at [jkim638\@jhu.edu](mailto:jkim638@jhu.edu). Here is a [link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf) to my CV.
+My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature Scientific Data*, *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
+
+I am the recipient of the APSA Emerging Scholar Award in Civic Engagement (2024), the APSA Best Dissertation Award in Urban and Local Politics (2022), and the WPSA Best Paper Award in Asian Pacific American Politics (2020).
+
+You can reach me at [jkim638@jhu.edu](mailto:jkim638@jhu.edu) or [jaeyeonkim@hks.harvard.edu](mailto:jaeyeonkim@hks.harvard.edu).
+
+My most recent CV is available at [this link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf).
+
 :::

@@ -4,9 +4,9 @@ title: "Book"
 
 ### Book projects
 
-1.  "Demography Is Not Destiny: Discrimination, Solidarity, and Representation in Multiracial America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+1.  "Unseen and Uncounted: Bureaucracy, Identity, and the Birth of Panethnic Politics." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
-    -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (co-hosted by Alan Jacobs (UBC) and Yang-Yang Zhou (Dartmouth))
+    -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
     -   Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
 
@@ -14,13 +14,15 @@ title: "Book"
 
     -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
-The United States is becoming increasingly diverse and will soon have a population where no single racial or ethnic group is in the majority. The rising numbers of Asian Americans and Latinos are the main drivers of this change. However, the political power of these groups will only grow if there is unity among their members.
+*Unseen and Uncounted: Bureaucracy, Identity, and the Birth of Panethnic Politics* develops a new theory of racial group formation by examining how immigrant-origin communities responded to their exclusion from federal classification systems—particularly during the War on Poverty. These exclusionary practices were not merely symbolic; they had material consequences, shaping access to public resources and political recognition. While classification decisions were made at the federal level, they were felt most acutely at the local level—through everyday interactions with street-level bureaucrats who implemented social policy. These encounters often determined whether individuals and communities were seen, counted, and served.
 
-Contrary to conventional wisdom, the book argues that racial discrimination is not sufficient to explain when in-group solidarity emerges among minoritized populations. Despite the racial hierarchy in the United States, ethnic groups who have experienced discrimination have not always united politically. Before the late 1960s, national origin groups from Asia and Latin America did not come together as Asian Americans and Latinos. Their political strategy shifted during this historical juncture because of the policy changes. Lyndon B. Johnson's War on Poverty programs expanded the American welfare state; however, these new safety net programs were implemented within the existing biracial framework. Street-level bureaucrats faced difficulty in classifying disadvantaged ethnic groups that did not fit into this prevalent image of the minority group. In response, non-target groups solved this collective problem by reinventing and organizing themselves in racial terms. 
+In response, ethnic elites engaged in political innovation: they coined new panethnic labels, formed cross-ethnic coalitions, and founded civic organizations to make their communities legible to the state. Though these efforts were locally grounded, they scaled upward. Over time, the categories and claims forged in neighborhoods and community institutions began to influence how government agencies enumerated populations and administered benefits. These bottom-up innovations ultimately helped reshape the very bureaucratic systems that had once excluded them.
 
-This book traces this origin story by examining the parallel emergence of Asian American and Latino community organizing, which preceded their electoral politics. It also assesses the argument's scope conditions by comparing the variations in interethnic coalition formation in Chinatowns across the U.S. and Canadian border. Finally, it identifies the limitations of this contingent solidarity theory in the contemporary period of racial threats, awakenings, and underlying demographic changes. 
+The book draws on original archival research, a dataset of over 800 ethnic organizations, and computational analysis of 78,000 articles from ethnic newspapers. Through comparative analysis across cities, racial groups, and national contexts—including U.S.–Canada, Asian–Latino, and Asian–Black comparisons—it demonstrates that panethnic identities did not emerge from shared culture or inherent solidarity. Instead, they were the product of strategic adaptation to the bureaucratic logics and incentive structures of the modern state.
 
-The book connects scholarship on racial and ethnic politics, urban and local politics, policy implementation, community organizing, and political behavior from historical and comparative perspectives. The mix of original archival, organizational, survey, and experimental data deepens our understanding of how groups form and acquire political power in American politics and public policy.
+By foregrounding the politics of classification and the local implementation of federal policy, Unseen and Uncounted reframes panethnic formation as a historically contingent, politically driven process. The book contributes to ongoing debates in political science, sociology, public administration, and history, offering new insight into how racial categories are constructed, contested, and institutionalized in American political development.
+
+<span style="color:blue;">University presses specializing in American politics and public policy are warmly encouraged to reach out to discuss this book project further. I look forward to engaging with publishers committed to rigorous, interdisciplinary scholarship in these areas.</span>
 
 ::: center
 ![Asian American Advocacy, Service, and Hybrid Organizations. Source: Kim (2022)](aapi.png){fig-align="center" width=100%}
@@ -32,10 +34,28 @@ The book connects scholarship on racial and ethnic politics, urban and local pol
 
 ### Books
 
-1.  ["Public Interest Data Science: Harnessing Data for Good."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
+1.  ["We Need Civic Data: How Public Data Can Fail Us — and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
 
-    -   Recommended by [the *National Assembly Library*](https://shorturl.at/7Oc1Z), *Samsung Global Research*'s executive education program (SERICEO), [the *Korea Institute of Science and Technology* (KIST)](https://library.kist.re.kr/search/recommend.do)
-    -   Featured in [*The Chosun Ilbo*](https://futurechosun.com/archives/80334), [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533), [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i), [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005), [*Hankyoreh*](https://h21.hani.co.kr/arti/world/world_general/54378.html) (major Korean newspapers across the ideological spectrum)
+Why can we shop with one click but still struggle to access basic public services?
+
+*We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data—data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, citizen-centered digital state. From improving public service interfaces to training the next generation of civic data scientists, this book reimagines public data not just as infrastructure, but as a foundation for stronger democracy and better government.
+
+#### Impact & Recognition
+
+- Selected as one of **70 finalists by the Korean Government** in the popular social science category for 2024; the government purchased approximately **500 copies** and distributed them to public libraries nationwide
+
+- Recommended by [the *National Assembly Library*](https://shorturl.at/7Oc1Z), *Samsung Global Research*'s executive education program (*SERICEO*), and [the *Korea Institute of Science and Technology* (KIST)](https://library.kist.re.kr/search/recommend.do)
+
+- Featured in major Korean newspapers across the ideological spectrum:  
+  [*The Chosun Ilbo*](https://futurechosun.com/archives/80334),  
+  [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533),  
+  [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i),  
+  [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005),  
+  [*Hankyoreh*](https://h21.hani.co.kr/arti/world/world_general/54378.html)
+
+- Regular op-eds based on the book published in:  
+  [*Chosun Ilbo*'s Civic Section](https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA) *(a major conservative newspaper)* and  
+  [*Weekly Kyunghang*](https://weekly.khan.co.kr/khnm.html?mode=list&s_code=ne039) *(a major liberal magazine)*
     
 ::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}

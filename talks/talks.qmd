@@ -2,45 +2,90 @@
 title: "Travel & Talks"
 ---
 
+If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [the form here](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you! 
+
+---
+
+### 2025 
+
+#### Invited talks 
+
+1. June 20, Peace & Democracy Institute, Korea University *(scheduling)*.
+
+1. June 19, KIXLAB, KAIST *(scheduled)*. 
+
+1. June 17, Entangled with Books *(locally owned independent bookstore in Seoul, scheduled)*.
+
+1. June 13, Department of Political Science and International Relations, Yonsei University *(scheduling)*.
+
+1. June 10, Graduate School of International Studies, Korea University *(scheduled)*.
+
+1. April, [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast, APSA Civic Engagement Section *(scheduling)*.
+
+1. April 7, NLP for Computational Social Science, Johns Hopkins. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf)
+
+1. February 26, [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern.
+
+#### Conference presentations 
+
+1. September 11-14, American Political Science Association (APSA) annual meeting, Vancouver *(scheduling)*.
+
+1. June 27-28, Knowledge Festival for All Seasons, SKMS, *(scheduled)*.
+
+1. June 26, Public Management Research Conference (PMRC), Seoul National University *(scheduled)*.
+
+1. May 29-30, [Code for America Summit](https://summit.codeforamerica.org/), Washington DC *(scheduling)*.
+
 ### 2024
 
 #### Invited talks 
 
-* October, American Politics and Public Policy Workshop, Yale University (scheduling).
+1. November 19, Democracy by the Numbers, Johns Hopkins.
 
-* September 17, Identity and Politics Workshop, UC Berkeley (scheduled).
+1. October 24, Better Government Lab Research Retreat, Michigan.
 
-* August 28, Information Science Seminar, University of Colorado, Boulder.
+1. October 23, [American Politics and Public Policy Workshop](https://csap.yale.edu/american-politics-public-policy-workshop), Yale University.
 
-* June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. 
+1. October 15, Data-driven Public Administration and Management, Korea Foundation for Advanced Studies.
 
-* June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/).  [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
+1. October 9, [American Politics Workshop](https://polisci.msu.edu/news-events/events/kim-lecture.html), Michigan State University.
 
-* June 9-13, [Summer Institute in Migration Research Methods](https://www.canva.com/design/DAF7k6nkfyE/HNs0MQf_ApxuzOI2x4os5Q/view?utm_content=DAF7k6nkfyE&utm_campaign=designshare&utm_medium=link&utm_source=editor&fbclid=IwZXh0bgNhZW0CMTAAAR35zr37ckUsJ9JvpIWOeF0dyoI_JAauCLwu1qZARzvNr1hMiMsYeF0dgg8_aem_ZmFrZWR1bW15MTZieXRlcw), UC Berkeley. 
+1. September 26, Data Science Special Lecture, KDI School of Public Policy and Management.
 
-* April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins.
+1. September 17, Identity and Politics Workshop, UC Berkeley.
 
-* April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)
+1. August 28, Information Science Seminar, University of Colorado, Boulder.
 
-* March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. 
+1. June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. 
 
-* February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA.
+1. June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/).  [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
 
-* January 11, [Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), University of Washington. 
+1. June 9-13, [Summer Institute in Migration Research Methods](https://bimi.berkeley.edu/summer-institute/2024-summer-institute-migration-research-methods), UC Berkeley. 
+
+1. April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins.
+
+1. April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)
+
+1. March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. 
+
+1. February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA.
+
+1. January 11, [Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), University of Washington. 
 
 #### Conference presentations 
 
-* September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia (scheduled).
+1. November 20-23, Association for Public Policy Analysis and Management (APPAM) annual meeting, National Harbor, Maryland.
 
-* July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference).  [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf)
+1. September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia.
 
-* July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
+1. July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference).  [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf)
+
+1. July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
     
-* June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
+1. June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
     -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
     -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
 
-* March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
+1. March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 
-* February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. 
-
+1. February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. 
