@@ -118,6 +118,8 @@ a {
     text-underline-offset: 4px;
 }
 
+/*-- scss:rules --*/
+
 .carolina-blue {
   color: #4B9CD3 !important;
 }
@@ -136,4 +138,19 @@ a {
 
 .michigan-maize {
   color: #FFCB05 !important;
+}
+
+.michigan-blue {
+  color: #00274C !important;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  color: #205493 !important;
+  font-weight: 600;
+}
+
+.berkeley-blue {
+  color: #003262 !important;
+  font-weight: 600;
 }
