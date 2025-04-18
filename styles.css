@@ -119,26 +119,21 @@ a {
 }
 
 .carolina-blue {
-  color: #4B9CD3;
-  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  color: #4B9CD3 !important;
 }
 
 .jhu-blue {
-  color: #002D72; /* Official Johns Hopkins Blue */
+  color: #002D72 !important;
 }
 
 .harvard-crimson {
-  color: #A51C30; /* Harvard Crimson */
+  color: #A51C30 !important;
 }
 
 .georgetown-blue {
-  color: #041E42; /* Georgetown official dark blue */
+  color: #041E42 !important;
 }
 
 .michigan-maize {
-  color: #FFCB05; /* Michigan Maize */
-  background-color: #00274C; /* Optional contrast bg */
-  padding: 0 0.2em;
-  border-radius: 0.15em;
+  color: #FFCB05 !important;
 }
