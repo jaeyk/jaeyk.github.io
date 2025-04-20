@@ -1,0 +1,42 @@
+---
+title: "I Didn't Think I’d Return to Academia — Until I Saw What Was Missing"
+author: "Jae Yeon Kim"
+date: "April 20, 2025"
+format: html
+toc: true
+number-sections: false
+---
+
+A little over a year into my data science role outside academia, in spring 2024, I spoke on the “Data Science Across Industries” panel at the PhD Pathways event at Stanford. Ironically, the panel was designed to help PhD students and postdocs explore careers outside the academy—but for me, it triggered a return. I had spent the past year applying my research skills to public problems—designing field experiments with government partners, analyzing administrative data, and learning from people who navigated public systems every day. I believed in the work. I still do. But listening to early-career scholars talk about their hopes for impact, I felt something shift.
+
+I wasn’t done with academia. 
+
+I just hadn’t found the version of it I believed in yet.
+
+In 2022, I had left a tenure-track job to join Code for America, a civic tech nonprofit focused on improving access to public services through technology, design, and data. It was a leap. I didn’t fully know what to expect. But I wanted to learn how research could serve real people. Over the next two years, I helped build experiments with U.S. state and local governments, sat in on user interviews, and saw how broken public systems were—and how much potential there was for research to do more than describe and analyze problems. It could help fix them.
+
+At the time, I thought I was stepping away from academia for good. In reality, I was becoming a different kind of researcher—one more attuned to practical constraints, lived experience, and the institutional frictions that shape how policy is delivered.
+
+I learned new technical skills, yes, but I also learned how to work in multidisciplinary teams, how to frame questions that mattered beyond the academy, and how to generate evidence that was timely, usable, and grounded in context. The experience rewired how I think about rigor, relevance, and responsibility.
+
+Still, the decision to return wasn’t easy. That moment at Stanford made me confront it. Did I still belong in academia? Could I reconcile the intellectual freedom I valued with the applied, collaborative work I had grown to love?
+
+Rather than returning to where I left off, I chose to carry what I’d learned with me. I began to imagine a different kind of academic life—one that connects rigorous scholarship with real-world impact, and that bridges research and practice to improve public institutions and better serve communities. In 2026, I’ll begin a position as an assistant professor of public policy at the University of North Carolina–Chapel Hill. The opportunity to return wasn’t a reset—it was a reinvention.
+
+Too often, we present academic and non-academic paths as a binary. But that framing misses what’s happening at the intersections. Some of the most exciting work today—both intellectually and practically—is happening across sectors: in government, nonprofits, and industry, where researchers are advancing theory *and* solving problems at the same time.
+
+Rather than asking where research happens, I’ve learned to ask what kind of research I want to do—and why it matters.
+
+PhD programs rarely teach us that stepping outside academia can strengthen our scholarship. In graduate school, I was trained to run a Michelin-starred kitchen: refined, precise, and optimized for a narrow audience. Outside academia, I learned to run a healthy fast-food franchise: fast, responsive, and designed to meet people where they are. Both forms of work require creativity and care—but the tools, audiences, and stakes are different.
+
+For early-career researchers, the message too often is: once you leave, you can’t come back. But that’s not true. Some of the most meaningful research I’ve done happened outside the university—without the academic title, but with a clear research purpose. Leaving academia doesn’t mean leaving research. It can deepen it, offering a different vantage point shaped by institutional constraints, real-world complexity, and the lived experiences of the people your work is meant to serve. If anything, stepping outside can sharpen your sense of what questions matter, who they matter to, and how evidence can contribute to lasting change.
+
+**What I’ve Learned**
+
+1. **You don’t have to choose once and for all.** Careers are nonlinear. The skills you build across domains can make you a better scholar, collaborator, and teacher.
+
+2. **Seek alignment, not just prestige, and define success on your own terms.** The right environment—whether inside or outside academia—should reflect your values and help you reconnect with why you became a researcher in the first place. Success might be a paper, a public dashboard, a field experiment, or a policy shift. If it helps people and moves your mission forward, it counts.
+
+3. **Research is portable.** Stepping outside of academia doesn’t mean abandoning your identity as a researcher. It can sharpen your questions, broaden your perspective, and deepen your sense of what knowledge is for.
+
+**Here’s the bigger lesson.** In a time of rising skepticism toward research and higher education, the best way to defend scholarship is to make it matter—to connect it to the people and problems it’s meant to serve. We do that not by standing apart, but by stepping in.
