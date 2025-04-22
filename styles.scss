@@ -224,3 +224,10 @@ dl.auto-numbered dd::before {
   margin-bottom: 0.4em;
   line-height: 1.4;
 }
+
+/* Hide default disclosure triangle on summary */
+.timeline-section summary::-webkit-details-marker,
+.timeline-section summary::marker {
+  display: none;
+}
+
