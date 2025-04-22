@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jae Yeon Kim – Hello, I’m Jae.</title>
+<title>Jae Yeon Kim – Hello, I'm Jae.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -155,6 +155,31 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 
 
 
+<script>
+  function toggleAllTimelines() {
+    const sections = document.querySelectorAll(".timeline-section");
+    const allOpen = [...sections].every(s => s.open);
+    const btn = document.getElementById("toggle-btn");
+
+    sections.forEach(s => s.open = !allOpen);
+    btn.innerText = allOpen ? "Expand All" : "Collapse All";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".timeline-section summary").forEach(summary => {
+      const icon = document.createElement("span");
+      icon.classList.add("arrow-icon");
+      icon.innerText = summary.parentElement.open ? "▾ " : "▸ ";
+      summary.prepend(icon);
+
+      summary.addEventListener("click", () => {
+        const isOpen = summary.parentElement.open;
+        summary.querySelector(".arrow-icon").innerText = isOpen ? "▾ " : "▸ ";
+      });
+    });
+  });
+</script>
+<hr>
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="profile_alt.png" class="about-image
@@ -193,17 +218,26 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
   </a>
   <a href="" class="about-link" rel="" target="">
      <span class="about-link-text"><div class="career-timeline">
-  <h3>Post PhD Career Timeline</h3>
-  <div class="career-items">
-    <div><strong>2026–</strong> Assistant Professor, Public Policy, UNC–Chapel Hill</div>
-    <div><strong>2024–25</strong> Assistant Research Scientist, SNF Agora Institute, Johns Hopkins</div>
-    <div><strong>2024–</strong> Fellow, Better Government Lab (Georgetown &amp; Michigan)</div>
-    <div><strong>2024–</strong> Research Fellow, Center for Public Leadership, Harvard Kennedy School</div>
-    <div><strong>2023–24</strong> Senior Data Scientist, Code for America</div>
-    <div><strong>2022</strong> Assistant Professor of Data Science, KDI School (South Korea)</div>
-    <div><strong>2020–21</strong> Pre/Postdoc Fellow, SNF Agora Institute, Johns Hopkins</div>
-    <div><strong>2021</strong> Ph.D., Political Science, UC Berkeley</div>
-  </div>
+  <h3 style="margin-bottom: 0.75em;">Post PhD Career Timeline</h3>
+  <details class="timeline-section">
+    <summary>🎓 Academic Roles</summary>
+    <div class="career-items">
+      <div><strong>2026–</strong> Assistant Professor, Public Policy, UNC–Chapel Hill</div>
+      <div><strong>2024–</strong> Fellow, Better Government Lab (Georgetown &amp; Michigan)</div>
+      <div><strong>2024–25</strong> Assistant Research Scientist, SNF Agora Institute, Johns Hopkins</div>
+      <div><strong>2024–</strong> Research Fellow, Center for Public Leadership, Harvard Kennedy School</div>
+      <div><strong>2022</strong> Assistant Professor of Data Science, KDI School (South Korea)</div>
+      <div><strong>2020–21</strong> Pre/Postdoc Fellow, SNF Agora Institute, Johns Hopkins</div>
+      <div><strong>2021</strong> Ph.D., Political Science, UC Berkeley</div>
+    </div>
+  </details>
+  <details class="timeline-section">
+    <summary>🧑‍💻 Civic Tech Roles</summary>
+    <div class="career-items">
+      <div><strong>2024-25</strong> Contracting Data Scientist, Code for America</div>
+      <div><strong>2023–24</strong> Senior Data Scientist, Code for America</div>
+    </div>
+  </details>
 </div>
 </span>
   </a>
@@ -269,9 +303,12 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 
 
 
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -685,7 +722,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
