@@ -231,3 +231,7 @@ dl.auto-numbered dd::before {
   display: none;
 }
 
+.sidebar nav#TOC {
+  display: none !important;
+}
+
