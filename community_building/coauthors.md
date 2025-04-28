@@ -52,6 +52,7 @@ The following list includes the coauthors of ongoing projects. * Indicates under
 1. Taylor Brown (Meta)
 1. Tiago Ventura (Georgetown)
 1. Tina Law (UC Davis)
+1. Tyler Simko (Michigan)
 1. Vivek Datta (UC Berkeley)*
 1. Vivien Leung (Santa Clara University)
 1. William Marx (Dartmouth)*
