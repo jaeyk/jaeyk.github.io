@@ -59,5 +59,5 @@ The following list includes the coauthors of ongoing projects. * Indicates under
 1. Zhaowen Guo (Georgetown)
 
 ::: center
-![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/community_building/coauthors.png){fig-align="left" width=60%}
+![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/community_building/coauthors.png){fig-align="left" width=100%}
 :::

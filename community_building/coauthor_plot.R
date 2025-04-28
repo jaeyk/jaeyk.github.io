@@ -48,20 +48,22 @@ inst_counts <- collaborators |>
   )
 
 bar_plot <- ggplot(inst_counts,
-                   aes(institution, n, fill = ra_label, label = n)) +
+                   aes(institution, n, 
+                       #fill = ra_label, 
+                       label = n)) +
   
   # stacked bars coloured by RA status
   geom_col(width = 0.8) +
   
   # put count labels inside each segment
   geom_text(position = position_stack(vjust = 0.5),
-            colour   = "white", size = 4) +
+            colour   = "white", size = 5) +
   
-  scale_fill_manual(
-    values = c("Co-author"   = "#2c7fb8",
-               "Undergrad RA" = "#a1dab4"),
-    name   = NULL
-  ) +
+  #scale_fill_manual(
+   # values = c("Co-author"   = "#2c7fb8",
+    #           "Undergrad RA" = "#a1dab4"),
+    #name   = NULL
+  #) +
   
   coord_flip(clip = "off") +
   scale_y_continuous(expand = expansion(mult = c(0, .1))) +
