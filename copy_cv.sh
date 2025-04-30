@@ -15,13 +15,6 @@ echo "Changing to the GitHub.io directory..."
 cd ~/Documents/jaeyk.github.io/
 echo "Now in the GitHub.io directory."
 
-# **Render your essays before publishing**
-echo "Rendering essays..."
-cd essays/
-quarto render .
-cd ..
-echo "Essays rendered."
-
 # Publish the Quarto website to GitHub Pages
 echo "Publishing the Quarto website to GitHub Pages..."
 quarto publish gh-pages --no-prompt  # This will render the site (again) and push to the gh-pages branch
