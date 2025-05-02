@@ -383,5 +383,13 @@ div.quarto-about-trestles .about-entity {
   margin-left: 1em;
 }
 
+/* Allow long links (like emails) to wrap in the about section */
+div.quarto-about-trestles .about-link {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  display: inline-block; /* ensures wrapping respects width */
+  max-width: 100%;
+}
 
 
