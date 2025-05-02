@@ -40,17 +40,16 @@ a {
 }
 
 /* navbar */
-.navbar {
+.navbar-dark {
   background-color: #4B9CD3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: #FFFFFF;
 }
 
-.navbar .nav-link {
-  color: #FFFFFF;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
   color: #E0E0E0;
 }
 
