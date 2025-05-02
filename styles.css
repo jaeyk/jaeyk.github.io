@@ -184,4 +184,20 @@ dl.auto-numbered dd::before {
   display: none !important;
 }
 
+/* UNC color styling for about section links */
+div.quarto-about-trestles .about-entity .about-link {
+  background-color: #4B9CD3;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: solid 1.5px #4B9CD3;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  color: #4c4c4c;
+}
+
 /*# sourceMappingURL=styles.css.map */

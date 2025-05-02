@@ -247,3 +247,19 @@ dl.auto-numbered dd::before {
 .sidebar nav#TOC {
   display: none !important;
 }
+
+/* UNC color styling for about section links */
+div.quarto-about-trestles .about-entity .about-link {
+  background-color: $primary-color;  // UNC blue
+  color: $theme-white;
+  font-weight: 600;
+  border: solid 1.5px $primary-color;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+  background-color: $secondary-color;  // e.g., UNC gray
+  border-color: $secondary-color;
+  color: $theme-black;
+}
