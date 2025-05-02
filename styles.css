@@ -262,4 +262,43 @@ div.metadata a:hover,
   border-color: #13294B;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.content a,
+main a,
+p a,
+li a,
+strong a,
+em a,
+blockquote a,
+.card a,
+.nav-item a,
+.about-link {
+  color: #13294B !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.card a:hover,
+.about-link:hover {
+  color: #4B9CD3 !important;
+}
+
+/* Light UNC blue for about links only */
+div.quarto-about-trestles .about-link {
+  color: #4B9CD3 !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: #4B9CD3 !important;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -249,3 +249,43 @@ div.metadata a:hover,
   color: $theme-white;
   border-color: $unc-dark-blue;
 }
+
+// Override green link color from flatly
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.content a,
+main a,
+p a,
+li a,
+strong a,
+em a,
+blockquote a,
+.card a,
+.nav-item a,
+.about-link {
+  color: $unc-dark-blue !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.card a:hover,
+.about-link:hover {
+  color: $unc-blue !important;
+}
+
+/* Light UNC blue for about links only */
+div.quarto-about-trestles .about-link {
+  color: $unc-blue !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: $unc-blue !important;
+  text-decoration: underline;
+}
