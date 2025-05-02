@@ -383,33 +383,5 @@ div.quarto-about-trestles .about-entity {
   margin-left: 1em;
 }
 
-/* Set UNC blue as the page background */
-body,
-main,
-.page-columns {
-  background-color: $unc-blue !important;
-}
-
-/* Keep the right content column white */
-.page-columns .content {
-  background-color: white !important;
-  padding: 2em;
-  border-radius: 0 0 8px 8px; /* optional rounding */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-/* Optional: match text in left column to white */
-.quarto-about-trestles .about-entity {
-  color: white !important;
-}
-
-/* Optional: improve spacing when content is boxed */
-.page-columns .content h1,
-.page-columns .content p,
-.page-columns .content ul,
-.page-columns .content table {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
