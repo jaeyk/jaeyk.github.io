@@ -52,6 +52,18 @@ $navbar-bg: $theme-berkeley;
 $callout-color-note: $theme-black;
 $callout-color-tip: $theme-black;
 
+// UNC Carolina Theme Colors
+$unc-blue: #4B9CD3;
+$unc-dark-blue: #13294B;
+$unc-white: #FFFFFF;
+$unc-gray: #E0E0E0;
+
+// Assigning new colors to theme variables
+$primary-color: $unc-blue;
+$primary-color-dark: $unc-dark-blue;
+$secondary-color: $unc-gray;
+$theme-white: $unc-white;
+
 // font imports
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789');
@@ -96,19 +108,24 @@ a {
 
 /* navbar */
 
-.nav-link {
-  font-weight: 700;
+.navbar {
+    background-color: $primary-color; // UNC Blue
+    color: $theme-white; // White text
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: $secondary-color;
+.navbar .nav-link {
+    color: $theme-white; // White text
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: $secondary-color; // Gray for hover effect
 }
 
 .nav-link.active {
-  color: $secondary-color !important;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+    color: $theme-white !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* School colors */

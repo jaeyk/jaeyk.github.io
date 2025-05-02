@@ -23,16 +23,16 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 div.quarto-about-trestles .about-entity .about-link {
-  background-color: #5480a7;
+  background-color: #4B9CD3;
   color: white;
   text-decoration: none;
   font-weight: 600;
-  border: solid 1.5px #5480a7;
+  border: solid 1.5px #4B9CD3;
 }
 
 div.quarto-about-trestles .about-entity .about-link:hover {
-  background-color: #56A754;
-  border-color: #56A754;
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
 }
 
 a {
@@ -40,17 +40,22 @@ a {
 }
 
 /* navbar */
-.nav-link {
-  font-weight: 700;
+.navbar {
+  background-color: #4B9CD3;
+  color: #FFFFFF;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #56A754;
+.navbar .nav-link {
+  color: #FFFFFF;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #E0E0E0;
 }
 
 .nav-link.active {
-  color: #56A754 !important;
+  color: #FFFFFF !important;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -160,7 +165,7 @@ dl.auto-numbered dd::before {
   left: 0;
   top: 0.1em;
   font-size: 0.9em;
-  color: #2c3f51;
+  color: #13294B;
   transition: transform 0.2s ease;
 }
 
