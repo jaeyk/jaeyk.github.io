@@ -22,12 +22,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 800;
 }
 
-a {
-  text-decoration: underline;
-}
-
-/* navbar */
-/* Override dark navbar default */
+/* Navbar */
 .navbar,
 .navbar-dark {
   background-color: rgb(54.5089285714, 144.7299107143, 205.9910714286) !important;
@@ -79,13 +74,21 @@ a {
   font-weight: 600;
 }
 
-/* Optional layout adjustments */
+/* Layout */
 .sidebar, .nav-page {
   max-width: 250px;
 }
 
 .page-columns {
   gap: 2rem;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+}
+
+.content {
+  flex: 1 1 80%;
 }
 
 dl.auto-numbered {
@@ -97,7 +100,6 @@ dl.auto-numbered dt::before {
   counter-increment: number;
   content: counter(number) ". ";
   font-weight: bold;
-  display: inline;
 }
 
 dl.auto-numbered dt,
@@ -109,16 +111,7 @@ dl.auto-numbered dd::before {
   content: " ";
 }
 
-/* Override trestles layout columns */
-.sidebar {
-  flex: 0 0 20%;
-}
-
-.content {
-  flex: 1 1 80%;
-}
-
-/* Career timeline block */
+/* Career timeline */
 .career-timeline {
   background-color: white;
   padding: 1em;
@@ -131,7 +124,16 @@ dl.auto-numbered dd::before {
   text-align: left;
 }
 
-/* Pure CSS toggle icon for <summary> */
+.career-timeline a {
+  color: #13294B !important;
+  text-decoration: underline;
+}
+
+.career-timeline a:hover {
+  color: #4B9CD3 !important;
+}
+
+/* Timeline toggle */
 .timeline-section summary {
   position: relative;
   padding-left: 1.2em;
@@ -161,30 +163,103 @@ dl.auto-numbered dd::before {
   display: none;
 }
 
-.career-items div {
-  margin-bottom: 0.4em;
-  line-height: 1.4;
-}
-
-/* Hide TOC in sidebar if using inline TOC */
+/* Hide TOC in sidebar */
 .sidebar nav#TOC {
   display: none !important;
 }
 
-/* UNC color styling for about section links */
-div.quarto-about-trestles .about-entity .about-link {
-  background-color: #4B9CD3;
-  color: #FFFFFF;
-  font-weight: 600;
-  border: solid 1.5px #4B9CD3;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
+/* Global link styles */
+a,
+.content a,
+main a,
+.callout a,
+.sidebar a,
+div.metadata a,
+.callout-note a,
+.callout-tip a {
+  color: #13294B !important;
+  text-decoration: underline;
 }
 
-div.quarto-about-trestles .about-entity .about-link:hover {
-  background-color: #E0E0E0;
-  border-color: #E0E0E0;
-  color: #4c4c4c;
+a:hover,
+.content a:hover,
+main a:hover,
+.callout a:hover,
+.sidebar a:hover,
+div.metadata a:hover,
+.callout-note a:hover,
+.callout-tip a:hover {
+  color: #4B9CD3 !important;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn, .about-link {
+  background-color: #13294B;
+  border: 1.5px solid #13294B;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover, .about-link:hover {
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
+}
+
+.btn-outline, .btn-outline-primary {
+  background-color: transparent;
+  border: 1.5px solid #13294B;
+  color: #13294B;
+  font-weight: 600;
+}
+
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: #13294B;
+  color: #FFFFFF;
+}
+
+/* UNC button utility classes */
+.btn-unc--solid {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: #13294B;
+  color: #FFFFFF;
+  border: 1.5px solid #13294B;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-unc--solid:hover {
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
+}
+
+.btn-unc--outline {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: transparent;
+  color: #13294B;
+  border: 1.5px solid #13294B;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-unc--outline:hover {
+  background-color: #13294B;
+  color: #FFFFFF;
+  border-color: #13294B;
 }
 
 /*# sourceMappingURL=styles.css.map */

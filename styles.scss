@@ -11,32 +11,7 @@ $theme-black: #4c4c4c;
 $theme-white: white;
 $theme-grey: #e9ecef;
 
-$theme-purple3: #88398A;
-$theme-purple4: #9d709e;
-$theme-purple5: #562457;
-$theme-purplebrown1: #b996a4;
-$theme-purplebrown2: #7c6c84;
-$theme-darkcoffee1: #570e06;
-$theme-darkcoffee2: #78504b;
-$theme-darkcoffee3: #632e0d;
-$theme-milkcoffee0: #f2ece3;
-$theme-milkcoffee3: #cca79f;
-$theme-milkcoffee2: #b98f68;
-$theme-milkcoffee1: #9e736a;
-$theme-mocha1: #7f2606;
-$theme-mocha2: #9a4c28;
-$theme-mocha3: #b46939;
-$theme-orange: #f9af11;
 $theme-berkeley: #003262;
-
-$body-bg: $theme-white;
-$body-color: $theme-black;
-$headings-color: $theme-black;
-$link-color: $theme-berkeley;
-
-$navbar-font-family: "Ubuntu";
-$headings-font-family: "Ubuntu";
-$font-family-base: "Ubuntu";
 
 // UNC Carolina Theme Colors
 $unc-blue: #4B9CD3;
@@ -44,11 +19,20 @@ $unc-dark-blue: #13294B;
 $unc-white: #FFFFFF;
 $unc-gray: #E0E0E0;
 
-// Assigning new colors to theme variables
+// Assigning UNC colors
 $primary-color: $unc-blue;
 $primary-color-dark: $unc-dark-blue;
 $secondary-color: $unc-gray;
 $theme-white: $unc-white;
+$link-color: $unc-dark-blue;
+
+$body-bg: $theme-white;
+$body-color: $theme-black;
+$headings-color: $theme-black;
+
+$navbar-font-family: "Ubuntu";
+$headings-font-family: "Ubuntu";
+$font-family-base: "Ubuntu";
 
 // font imports
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
@@ -75,7 +59,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 800;
 }
 
-/* navbar */
+/* Navbar */
 .navbar,
 .navbar-dark {
   background-color: darken($primary-color, 5%) !important;
@@ -92,7 +76,6 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 /* School colors */
-
 .carolina-blue { color: #4B9CD3 !important; }
 .jhu-blue { color: #002D72 !important; }
 .harvard-crimson { color: #A51C30 !important; }
@@ -103,11 +86,12 @@ h1, .h1, h2, .h2, h3, .h3 {
 .berkeley-blue { color: #003262 !important; font-weight: 600; }
 
 /* Layout */
-
 .sidebar, .nav-page { max-width: 250px; }
 .page-columns { gap: 2rem; }
 
-/* Numbered lists */
+.sidebar { flex: 0 0 20%; }
+.content { flex: 1 1 80%; }
+
 dl.auto-numbered {
   counter-reset: number;
   margin-left: 1em;
@@ -116,15 +100,14 @@ dl.auto-numbered dt::before {
   counter-increment: number;
   content: counter(number) ". ";
   font-weight: bold;
-  display: inline;
 }
 dl.auto-numbered dt,
-dl.auto-numbered dd { display: inline; }
-dl.auto-numbered dd::before { content: " "; }
-
-/* Columns */
-.sidebar { flex: 0 0 20%; }
-.content { flex: 1 1 80%; }
+dl.auto-numbered dd {
+  display: inline;
+}
+dl.auto-numbered dd::before {
+  content: " ";
+}
 
 /* Career timeline */
 .career-timeline {
@@ -139,11 +122,11 @@ dl.auto-numbered dd::before { content: " "; }
   text-align: left;
 }
 .career-timeline a {
-  color: $unc-dark-blue;
+  color: $unc-dark-blue !important;
   text-decoration: underline;
 }
 .career-timeline a:hover {
-  color: $unc-blue;
+  color: $unc-blue !important;
 }
 
 /* Timeline toggle */
@@ -173,24 +156,37 @@ dl.auto-numbered dd::before { content: " "; }
   display: none;
 }
 
-/* TOC visibility */
+/* Hide TOC in sidebar */
 .sidebar nav#TOC {
   display: none !important;
 }
 
-/* Link styling */
-a, .callout a, .sidebar a, div.metadata a,
-.callout-note a, .callout-tip a {
-  color: $unc-dark-blue;
+/* Global link styles */
+a,
+.content a,
+main a,
+.callout a,
+.sidebar a,
+div.metadata a,
+.callout-note a,
+.callout-tip a {
+  color: $unc-dark-blue !important;
   text-decoration: underline;
 }
-a:hover, .callout a:hover, .sidebar a:hover,
-div.metadata a:hover, .callout-note a:hover,
+
+a:hover,
+.content a:hover,
+main a:hover,
+.callout a:hover,
+.sidebar a:hover,
+div.metadata a:hover,
+.callout-note a:hover,
 .callout-tip a:hover {
-  color: $unc-blue;
+  color: $unc-blue !important;
+  text-decoration: underline;
 }
 
-/* Buttons and about section */
+/* Buttons */
 .btn, .about-link {
   background-color: $unc-dark-blue;
   border: 1.5px solid $unc-dark-blue;
@@ -215,7 +211,7 @@ div.metadata a:hover, .callout-note a:hover,
   color: $theme-white;
 }
 
-/* UNC button utilities */
+/* UNC button utility classes */
 .btn-unc--solid {
   display: inline-block;
   padding: 0.4em 0.85em;
