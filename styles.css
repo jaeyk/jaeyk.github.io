@@ -22,19 +22,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 800;
 }
 
-div.quarto-about-trestles .about-entity .about-link {
-  background-color: #4B9CD3;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border: solid 1.5px #4B9CD3;
-}
-
-div.quarto-about-trestles .about-entity .about-link:hover {
-  background-color: #E0E0E0;
-  border-color: #E0E0E0;
-}
-
 a {
   text-decoration: underline;
 }
@@ -43,7 +30,7 @@ a {
 /* Override dark navbar default */
 .navbar,
 .navbar-dark {
-  background-color: #4B9CD3 !important;
+  background-color: rgb(54.5089285714, 144.7299107143, 205.9910714286) !important;
 }
 
 .navbar .navbar-nav .nav-link,

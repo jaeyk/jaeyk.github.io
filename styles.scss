@@ -1,5 +1,7 @@
 /*-- scss:defaults --*/
 
+@use "sass:color";
+
 $primary-color: #5480a7;
 $blue: #5480a7;
 $primary-color-dark: #2c3f51;
@@ -89,18 +91,18 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 800;
 }
 
-div.quarto-about-trestles .about-entity .about-link {
-  background-color: $primary-color;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border: solid 1.5px $primary-color;
-}
+//div.quarto-about-trestles .about-entity .about-link {
+//  background-color: $primary-color;
+  //color: white;
+  //text-decoration: none;
+  //font-weight: 600;
+  //border: solid 1.5px $primary-color;
+//}
 
-div.quarto-about-trestles .about-entity .about-link:hover {
-  background-color: $secondary-color;
-  border-color: $secondary-color;
-}
+//div.quarto-about-trestles .about-entity .about-link:hover {
+//  background-color: $secondary-color;
+//  border-color: $secondary-color;
+//}
 
 a {
   text-decoration: underline;
@@ -111,7 +113,7 @@ a {
 /* Override dark navbar default */
 .navbar,
 .navbar-dark {
-  background-color: $primary-color !important;  // UNC blue
+  background-color: color.adjust($primary-color, $lightness: -5%) !important;
 }
 
 .navbar .navbar-nav .nav-link,
@@ -123,6 +125,7 @@ a {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: $secondary-color !important;  // Light gray
 }
+
 
 /* School colors */
 
