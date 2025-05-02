@@ -1,26 +1,30 @@
 ---
 title: "Travel & Talks"
+format: html
 ---
 
 If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [the form here](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you! 
 
----
-
-### 2025 
+<details open>
+<summary><strong>2025</strong></summary>
 
 #### Invited talks 
 
-1. June 20, Peace & Democracy Institute, Korea University *(scheduling)*.
+1. June 27-28, AI & Humanity: Where We Are, and Where We Are Heading, Korea Foundation for Advanced Studies *(scheduling)*.
+
+1. June 26, Department of Political Science and International Relations, Seoul National University *(scheduling)*.
+
+1. June 20, Department of Political Science and International Relations, Korea University *(scheduling)*.
 
 1. June 19, KIXLAB, KAIST *(scheduled)*. 
 
 1. June 17, Entangled with Books *(locally owned independent bookstore in Seoul, scheduled)*.
 
-1. June 13, Department of Political Science and International Relations, Yonsei University *(scheduling)*.
+1. June 13, Department of Political Science and International Relations, Yonsei University *(scheduled)*.
 
 1. June 10, Graduate School of International Studies, Korea University *(scheduled)*.
 
-1. April, [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast, APSA Civic Engagement Section *(scheduling)*.
+1. May, [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast, APSA Civic Engagement Section *(scheduling)*.
 
 1. April 7, NLP for Computational Social Science, Johns Hopkins. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf)
 
@@ -30,13 +34,14 @@ If I’m visiting your area and you’d like to connect—whether for collaborat
 
 1. September 11-14, American Political Science Association (APSA) annual meeting, Vancouver *(scheduling)*.
 
-1. June 27-28, Knowledge Festival for All Seasons, SKMS, *(scheduled)*.
-
 1. June 26, Public Management Research Conference (PMRC), Seoul National University *(scheduled)*.
 
 1. May 29-30, [Code for America Summit](https://summit.codeforamerica.org/), Washington DC *(scheduling)*.
 
-### 2024
+</details>
+
+<details>
+<summary><strong>2024</strong></summary>
 
 #### Invited talks 
 
@@ -88,4 +93,7 @@ If I’m visiting your area and you’d like to connect—whether for collaborat
 
 1. March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
 
-1. February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside. 
+1. February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside.  
+
+</details>
+

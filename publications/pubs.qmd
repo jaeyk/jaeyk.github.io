@@ -3,7 +3,8 @@ title: "Publications"
 format: html
 ---
 
-### Peer-reviewed journal articles
+<details open>
+<summary><strong>Peer-reviewed journal articles</strong></summary>
 
 1. ["Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation."](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw) (**Jae Yeon Kim**, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) *Journal of Policy Analysis and Management*, Online First in April 2025 [[replication](https://osf.io/w87h2/?view_only=None)]
  
@@ -37,11 +38,14 @@ format: html
 
 1.  ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (Jae Yeon Kim), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
 
-### Manuscripts under review
+</details>
+
+<details>
+<summary><strong>Manuscripts under review</strong></summary>
 
 #### Race and solidarity politics 
 
-1. ["Unlinking Linked Fate: The Push and Pull Factors of Group Consciousness."](https://preprints.apsanet.org/engage/apsa/article-details/66a0e31b01103d79c57b3824) (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee) [[pre-registration](https://osf.io/vgau7/?view_only=802a2e1a7c344231ac1588a54a6df8fa)] 
+1. "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
 
     - Presented at 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
@@ -55,11 +59,14 @@ format: html
 
     - Revise & resubmit at *Nature Scientific Data*
 
-### Working papers
+</details>
+
+<details>
+<summary><strong>Working papers</strong></summary>
 
 #### Civic tech and social policy implementation
 
-1. "The Politics of Policy Implementation." (with Akshay Mangla) 
+1. "The Politics of Implementation: Administrative Burden, Institutional Architecture, and the Democratic State." (with Akshay Mangla) 
 
     - Scheduled to present at 2025 APSA
 
@@ -71,7 +78,7 @@ format: html
 
 1. "Messaging to Encourage Submission of SNAP Applications." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
-1. "Place Matters: WIC Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan) 
+1. "Place, Access, and Redemption Cost: WIC Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan) 
 
     - Scheduled to present at 2025 National WIC Association annual conference
 
@@ -109,15 +116,24 @@ format: html
 
 1. "Everyday Experiences and Asian American Identity." (with Taeku Lee)
 
-### Peer-reviewed conference and workshop proceedings
+</details>
+
+<details>
+<summary><strong>Peer-reviewed conference and workshop proceedings</strong></summary>
 
 1.  ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (Jae Yeon Kim, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\]
 
-### Edited volume book chapters
+</details>
+
+<details>
+<summary><strong>Edited volume book chapters</strong></summary>
 
 1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (Jae Yeon Kim) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
-### Research brief
+</details>
+
+<details>
+<summary><strong>Research brief</strong></summary>
 
 1.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, Jae Yeon Kim, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
 
@@ -131,7 +147,10 @@ format: html
 
 1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (Jae Yeon Kim), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
-### Public writing
+</details>
+
+<details>
+<summary><strong>Public writing</strong></summary>
 
 1.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (Jae Yeon Kim), *Korea Pro*, May 16, 2022.
 

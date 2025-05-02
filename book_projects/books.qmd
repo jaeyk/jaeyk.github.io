@@ -1,8 +1,10 @@
 ---
 title: "Book"
+format: html
 ---
 
-### Book projects
+<details open>
+<summary><strong>In progress</strong></summary>
 
 1.  "Unseen and Uncounted: Bureaucracy, Identity, and the Birth of Panethnic Politics." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
@@ -32,7 +34,10 @@ By foregrounding the politics of classification and the local implementation of 
 ![Latino Advocacy, Service, and Hybrid Organizations. Source: Kim (2022)](latino.png){fig-align="center" width=100%}
 :::
 
-### Books
+</details>
+
+<details>
+<summary><strong>Books</strong></summary>
 
 1.  ["We Need Civic Data: How Public Data Can Fail Us — and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
 
@@ -40,7 +45,7 @@ Why can we shop with one click but still struggle to access basic public service
 
 *We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data—data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, citizen-centered digital state. From improving public service interfaces to training the next generation of civic data scientists, this book reimagines public data not just as infrastructure, but as a foundation for stronger democracy and better government.
 
-#### Impact & Recognition
+**Impact & Recognition**
 
 - Selected as one of **70 finalists by the Korean Government** in the popular social science category for 2024; the government purchased approximately **500 copies** and distributed them to public libraries nationwide
 
@@ -59,4 +64,25 @@ Why can we shop with one click but still struggle to access basic public service
     
 ::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}
+
+2.  ["How to Use University: A Practical Guide for College Students (in Korean)"](https://ebook-product.kyobobook.co.kr/dig/epd/sam/E000003198821) (Sejong Books, 2014)
+
+Why do so many students enter college full of ambition—only to graduate with more confusion than clarity?
+
+*How to Use University* is a practical, student-centered guide to navigating college with purpose, curiosity, and intention. Organized around four core themes—exploring college, learning, career, and life—it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a **launchpad**—not a system to passively endure—for discovering interests, initiating projects, and building momentum. It emphasizes a key idea: unlocking even one small opportunity—especially a self-initiated project—can set off a **cycle of opportunities** that grows over time. With its structured framework, practical strategies, and ethos of civic-minded entrepreneurship, this book has become a trusted companion for Korean college students seeking clarity, growth, and public impact.
+
+**Impact & Recognition**
+
+- The first edition sold over **10,000 copies** and has been widely recommended by educators, university counselors, and mentoring programs across South Korea
+
+- Featured in major Korean media outlets including *Maeil Business Newspaper* and *Chosun Biz*
+
+- Frequently used in student development seminars and campus book clubs
+
+- A fully revised **second edition is coming soon**
+
+::: center
+![](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788984074392.jpg){fig-align="center" width="30%"}
 :::
+
+</details>

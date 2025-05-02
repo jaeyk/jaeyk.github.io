@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Software – Hello, I’m Jae</title>
+<title>Software – Hello, I’m Jae.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,6 +78,7 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="../styles.scss">
 </head>
 
 <body class="nav-fixed">
@@ -88,7 +89,7 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hello, I’m Jae</span>
+    <span class="navbar-title">Hello, I’m Jae.</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -137,6 +138,10 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
     <a class="nav-link" href="../community_building/community.html"> 
 <span class="menu-text">Community</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../essays/essays.html"> 
+<span class="menu-text">Personal</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -173,13 +178,43 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 </header>
 
 
-<p>I have developed open-source software that supports data curation. All of the software is availalbe on GitHub: <a href="https://github.com/jaeyk">link</a></p>
+<p>I develop open-source software to support data curation and computational research in the social sciences. All packages are freely available on GitHub: <a href="https://github.com/jaeyk">github.com/jaeyk</a></p>
 <ol type="1">
-<li><p><a href="https://snfagora.github.io/MapAgora/">MapAgora</a>: R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)</p></li>
-<li><p><a href="https://github.com/jaeyk/validatednamesr">validatednamesr</a>: R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)</p></li>
-<li><p><a href="https://github.com/snfagora/autotextclassifier">autotextclassifier</a>: R package for automatically classifying texts based on tidymodels (with Milan de Vries)</p></li>
-<li><p><a href="https://jaeyk.github.io/tidytweetjson/">tidytweetjson</a>: R package for turning Tweet JSON files into a cleaned and wrangled dataset</p></li>
-<li><p><a href="https://jaeyk.github.io/tidyethnicnews/">tidyethnicnews</a>: R package for turning search results from the largest database on ethnic newspapers published in the United States (“Ethnic NewsWatch”) into a cleaned and wrangled dataset</p></li>
+<li><a href="https://snfagora.github.io/MapAgora/"><strong>MapAgora</strong></a>
+<ul>
+<li><strong>Summary:</strong> An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.<br>
+</li>
+<li><strong>Use case:</strong> Used in <a href="https://www.nature.com/articles/s41562-023-01743-1">“The Unequal Landscape of Civic Opportunity in America”</a>, <em>Nature Human Behaviour</em> (2023), with Milan de Vries and Hahrie Han.<br>
+</li>
+<li><strong>Collaborator:</strong> Milan de Vries</li>
+</ul></li>
+<li><a href="https://github.com/snfagora/autotextclassifier"><strong>autotextclassifier</strong></a>
+<ul>
+<li><strong>Summary:</strong> An R package for automated text classification using the tidymodels framework. Supports supervised learning pipelines with minimal setup for civic tech and policy research applications.<br>
+</li>
+<li><strong>Use case:</strong> Also used in <a href="https://www.nature.com/articles/s41562-023-01743-1">“The Unequal Landscape of Civic Opportunity in America”</a>, <em>Nature Human Behaviour</em> (2023), with Milan de Vries and Hahrie Han.<br>
+</li>
+<li><strong>Collaborator:</strong> Milan de Vries</li>
+</ul></li>
+<li><a href="https://github.com/jaeyk/validatednamesr"><strong>validatednamesr</strong></a>
+<ul>
+<li><strong>Summary:</strong> An R package for accessing and analyzing the validated names dataset used in race and ethnicity experiments. Includes utilities for name filtering, trait inspection, and integration with survey tools.<br>
+</li>
+<li><strong>Use case:</strong> Featured in <a href="https://www.nature.com/articles/s41597-023-01947-0">“Validated Names for Experimental Studies on Ethnicity and Race”</a> (<em>Nature Scientific Data</em>, 2023) with by Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.</li>
+<li><strong>Collaborator:</strong> Charles Crabtree</li>
+</ul></li>
+<li><a href="https://jaeyk.github.io/tidytweetjson/"><strong>tidytweetjson</strong></a>
+<ul>
+<li><strong>Summary:</strong> An R package that transforms raw Twitter JSON files into clean, analysis-ready datasets. Useful for studying political discourse, social movements, and real-time reactions to events.<br>
+</li>
+<li><strong>Use case:</strong> Used in <a href="https://t.co/4Axd0gEQns">“COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes”</a> <em>Perspectives on Politics</em> (2021), with Nathan Chan and Vivien Leung.</li>
+</ul></li>
+<li><a href="https://jaeyk.github.io/tidyethnicnews/"><strong>tidyethnicnews</strong></a>
+<ul>
+<li><strong>Summary:</strong> An R package for scraping, cleaning, and organizing ethnic newspaper articles from the Ethnic NewsWatch database. Designed to support media analysis and political communication research.<br>
+</li>
+<li><strong>Use case:</strong> Used in <a href="https://link.springer.com/article/10.1007/s42001-020-00097-2">“Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles”</a> (<em>Journal of Computational Social Science</em> (2021)</li>
+</ul></li>
 </ol>
 
 
@@ -609,7 +644,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2024, Jae Yeon Kim</p>
+<p>© Copyright 2025, Jae Yeon Kim</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

@@ -1,0 +1,66 @@
+---
+title: "Researching and Doing Policy Science as a Political Scientist"
+author: "Jae Yeon Kim"
+date: "April 23, 2025"
+format: html
+toc: true
+number-sections: false
+---
+
+**A Dual Life**
+
+In 2023, I was living a kind of dual life. I was a data scientist at Code for America, working on digital access to safety net programs. At the same time, I held an academic affiliation with the SNF Agora Institute at Johns Hopkins, continuing to write and collaborate on political science research. My day job was deeply practical and policy-oriented. My evenings and weekends were devoted to research, writing, and academic seminars.
+
+This duality wasn’t just about time management—it was about navigating two institutional worlds. But it also reflected the deeper structure of my work. Even at Code for America, my projects had an academic-facing element. I worked on field experiments and policy evaluations in partnership with the Better Government Lab at Georgetown University’s McCourt School of Public Policy and the University of Michigan’s Ford School of Public Policy. These collaborations helped bridge the line between implementation and research, between public service and public knowledge.
+
+Balancing both roles was demanding. But I chose this path because I believe scholarship shouldn’t just describe the world—it should help improve it. I want my research to be rigorous, but also relevant. And that belief has shaped how I think of myself today.
+
+**A Question of Identity**
+
+At the 2023 American Political Science Association (APSA) annual meeting, a colleague asked me a simple question: “So, are you a political scientist or a data scientist now?”
+
+I paused. Then I said, “I think of myself as a policy scientist.”
+
+It’s not a title that appears on business cards. But it captures what I do—and what I care about. I study how public policies are created, delivered, and experienced. And I work to make government more responsive, equitable, and effective—not in theory, but in practice.
+
+That goal led me into political science. And it’s the same goal that, for a time, led me outside of it.
+
+**Why Political Science Still Matters**
+
+Policy doesn’t exist in a vacuum. Even the best-designed solutions can fail if they don’t survive the political process. That’s why I chose political science over economics. Economics offers sharp tools, but often narrows its focus to efficiency. Political science brings power, institutions, and values into the frame. It reminds us that a “good” policy must also be a just one—and a legitimate one.
+
+But I’ve come to believe that political science, as practiced, has two persistent gaps.
+
+The first is access. Most academics don’t have access to the internal data or conversations that drive government decision-making. As a result, we often rely on incomplete or surface-level information.
+
+The second is experience. Many political scientists haven’t worked inside government. So we miss the incentives, constraints, and organizational realities that shape what actually gets implemented.
+
+These aren’t fatal flaws. But they do limit how much impact research can have. I stepped into the practitioner world to better understand those gaps—and to begin bridging them.
+
+**What I Learned in the Field**
+
+Within nine months at Code for America, I had learned more about public administration than in any single seminar I had taken in graduate school. I learned how eligibility flows are built into backend systems, how frontline staff manage tradeoffs under pressure, and what kinds of interventions agencies are actually willing to pilot.
+
+None of this came from reading theory. It came from co-designing projects with county and state governments, launching field experiments, and troubleshooting implementation problems in real time.
+
+And yet, the more I engaged with practice, the more I rediscovered the value of research.
+
+Practitioners are deep in the weeds. Researchers step back. Both perspectives are incomplete on their own—but powerful when combined. Research makes sense of patterns, names concepts, and connects cases. Practice reminds us what’s feasible, what’s urgent, and what actually matters to those doing the work.
+
+**Why Politics Still Shapes Policy**
+
+Good ideas fail all the time. Not because they’re unworkable, but because they’re politically inconvenient. Policy decisions are filtered through institutions, norms, and power dynamics. They reflect not just evidence, but relationships.
+
+That’s where political science has something essential to offer. It reminds us that implementation is not just technical—it’s political. It’s about who has discretion, what rules are enforced, and whose interests are prioritized.
+
+Sometimes policies fail because senior officials don’t understand frontline needs. Other times, staff lack access to insights held by clients. These breakdowns aren’t just process failures—they’re symptoms of deeper misalignments in authority, communication, and design.
+
+Political science once played a central role in studying these dynamics. *Implementation* (1973) by Pressman and Wildavsky helped define a generation of policy research. But over time, much of that work shifted to public administration. I believe political science still has a vital role to play—especially if it returns to the front lines of how policy is experienced.
+
+**What I Carry Forward**
+
+Working outside academia didn’t make me less of a political scientist. If anything, it helped me become a more grounded one. It taught me where the real points of friction are—between ideals and incentives, between design and delivery.
+
+I still care about theory. I still care about publication. But I also care about building the kind of research that public institutions can actually use. Research that informs, illuminates, and sometimes even shapes the choices governments make.
+
+I didn’t stop being a political scientist when I left campus. If anything, I became a better one. And I believe that those of us who move between research and practice have a role to play—not just in translating ideas, but in shaping a future where scholarship and service are no longer separate paths.

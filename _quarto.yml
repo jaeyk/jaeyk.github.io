@@ -1,3 +1,4 @@
+
 project:
   type: website
   output-dir: docs
@@ -57,6 +58,9 @@ website:
       - text: "Community"
         href: community_building/community.qmd
         
+      - text: "Personal"
+        href: essays/essays.qmd
+        
 format:
   html:
     css: styles.scss
@@ -64,6 +68,6 @@ format:
     toc-depth: 4
     toc-title: "Contents"
     html-math-method: katex
-    highlight-style: tango
+    highlight-style: github
     anchor-sections: true
     smooth-scroll: true

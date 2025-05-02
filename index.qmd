@@ -4,14 +4,17 @@ image: profile_alt.png
 page-layout: article
 format: 
   html:
-    toc: true
+    theme: 
+      light
+    css: styles.scss
+    toc: false
     html-math-method: katex
-    linestretch: 1.7
+    linestretch: 1.5
 about:
   id: hero-heading
   template: trestles
   image-shape: round
-  image-width: 12em
+  image-width: 10em
   links:
     - icon: mailbox
       text: jkim638@jhu.edu
@@ -31,24 +34,77 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/jaeyk
+
+    - text: >
+        <div class="career-timeline">
+          <h5 style="margin-bottom: 0.75em;">Post PhD Career Timeline</h5>
+
+          <details class="timeline-section">
+            <summary>🎓 Academic Roles</summary>
+            <div class="career-items">
+              <div><strong>2026–</strong> Assistant Professor, Public Policy, UNC–Chapel Hill</div>
+              <div><strong>2024–</strong> Fellow, Better Government Lab, Georgetown & Michigan</div>
+              <div><strong>2024–25</strong> Assistant Research Scientist, SNF Agora Institute, Johns Hopkins</div>
+              <div><strong>2024–</strong> Research Fellow, Center for Public Leadership, Harvard Kennedy School</div>
+              <div><strong>2022</strong> Assistant Professor of Data Science, KDI School (South Korea)</div>
+              <div><strong>2020–21</strong> Pre/Postdoc Fellow, SNF Agora Institute, Johns Hopkins</div>
+              <div><strong>2021</strong> Ph.D., Political Science, UC Berkeley</div>
+            </div>
+          </details>
+
+          <details class="timeline-section">
+            <summary>🧑‍💻 Civic Tech Roles</summary>
+            <div class="career-items">
+              <div><strong>2024–</strong> Fellow, Better Government Lab, Georgetown & Michigan</div>
+              <div><strong>2024–25</strong> Contracting Data Scientist, Code for America</div>
+              <div><strong>2023–24</strong> Senior Data Scientist, Code for America</div>
+            </div>
+          </details>
+
+          <details class="timeline-section">
+            <summary>🗳️ Leadership & Advisory Roles</summary>
+            <div class="career-items">
+              <div><strong>2025–</strong> Co-Founder, Data for Good Roundtables</div>
+              <div><strong>2023–</strong> Advisory Board Member, Summer Institutes in Computational Social Science (SICSS)</div>
+            </div>
+          </details>
+        </div>
 ---
 
 ::: {#hero-heading}
 
-I am an Assistant Research Scientist at the [SNF Agora Institute at Johns Hopkins University](https://snfagora.jhu.edu/), where I co-developed the [Mapping the Modern Agora Project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/). I am also a Research Fellow at the Harvard Kennedy School and a Fellow at the [Better Government Lab](https://www.bettergovernmentlab.org/our-team), based at Georgetown’s McCourt School and Michigan’s Ford School. Starting in January 2026, I will join the University of North Carolina–Chapel Hill as an Assistant Professor of Public Policy.
+> *“The scientist is a communicator as well as a discoverer—sometimes even a missionary.”*  
+> —Herbert A. Simon
 
-My research examines how governments and communities build the capacity to implement public policy effectively. I focus on urban, social, and technology policy in the United States—studying how public institutions reduce administrative burdens in safety net programs and how civic infrastructure supports democratic governance. I use computational and multi-method approaches, including field experiments, surveys, big data analytics, and machine learning. I collaborate closely with government and nonprofit partners to produce research that directly informs policy and improves practice.
+Hello! I am an Assistant Research Scientist at the SNF Agora Institute at Johns Hopkins University, where I co-developed the [Mapping the Modern Agora Project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/). I am also a Research Fellow at the Harvard Kennedy School and a Fellow at the Better Government Lab, based at Georgetown University’s McCourt School and University of Michigan’s Ford School. I will join <span class="carolina-blue">the University of North Carolina–Chapel Hill</span> as an Assistant Professor of Public Policy in January 2026.
 
-Previously, I worked as a Senior Data Scientist at [Code for America](https://codeforamerica.org/programs/), where I partnered with federal, state, and local agencies to expand access to safety net programs. I earned my Ph.D. in Political Science from UC Berkeley.
+My research examines how governments and communities build the capacity to implement public policy effectively. I focus on urban, social, and technology policy in the United States—studying how public institutions reduce administrative burdens in safety net programs and how civic infrastructure supports democratic governance. I use computational and multi-method approaches, including in-depth interviews, archival research, field experiments, surveys, big data analysis, machine learning, and generative AI. I often collaborate with government and nonprofit partners to produce research that directly informs policy and improves practice.
 
-I am also a co-founder of the [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing), a safe space where academics and practitioners come together to discuss using data for good.
+Previously, I worked as a Senior Data Scientist at [Code for America](https://codeforamerica.org/programs/), where I collaborated with the U.S. government to improve access to safety net programs. I earned my Ph.D. in Political Science from UC Berkeley.
+
+I am also a co-founder of the [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing), a safe and brave space where academics and practitioners come together to discuss using data for good.
 
 My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature Scientific Data*, *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
 
-I am the recipient of the APSA Emerging Scholar Award in Civic Engagement (2024), the APSA Best Dissertation Award in Urban and Local Politics (2022), and the WPSA Best Paper Award in Asian Pacific American Politics (2020).
+I am the recipient of the Emerging Scholar Award in Civic Engagement (2024) and the Best Dissertation Award in Urban and Local Politics (2022) from the American Political Science Association, as well as the Best Paper Award in Asian Pacific American Politics from the Western Political Science Association (2020).
 
 You can reach me at [jkim638@jhu.edu](mailto:jkim638@jhu.edu) or [jaeyeonkim@hks.harvard.edu](mailto:jaeyeonkim@hks.harvard.edu).
 
 My most recent CV is available at [this link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf).
+
+I’ve written [several personal essays](https://jaeyk.github.io/essays/essays.html) reflecting on my career, research, and life—often shaped by questions of purpose, identity, and belonging.
+
+#### 📅 2025 News
+
+| Date       | Event |
+|------------|-------|
+| May 29–30  | Speaking at Code for America Summit, Washington, DC |
+| May 15–16  | Attending Annual Conference Organizing Forum, hosted by USC's Equity Research Institute, LA |
+| April 10   | Moderated the inaugural Data for Good Roundtables featuring Donald Moynihan, Ray Block, Jr., Chris Bail, Ilana Ventura |
+| April 7    | Gave invited lecture at Johns Hopkins University's NLP for Computational Social Science, hosted by Anjalie Field |
+| April 1    | Published in [*Journal of Policy Analysis and Management*](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007) |
+| March 18   | Moderated fireside chat with Marshall Ganz, hosted by the Korean Association of Political Parties |
+| March 17   | Published in [*Journal of Experimental Political Science*](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) |
+| Feb 26     | Invited talk at American Politics Workshop at Northwestern University |
 
 :::

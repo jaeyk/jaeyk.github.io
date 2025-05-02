@@ -2,8 +2,17 @@
 title: "Public datasets"
 ---
 
-1.  [Validated Names for Experimental Studies on Ethnicity and Race](https://doi.org/10.7910/DVN/LP4EAR) (with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx)
+I develop and share public datasets to strengthen the empirical foundations of social science and expand access to knowledge for the public good.
 
-2.  [Linked Fate Literature Review Dataset (1999-2019)](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
+1. [**Validated Names for Experimental Studies on Ethnicity and Race**](https://doi.org/10.7910/DVN/LP4EAR)  
+   - **Summary:** A large and fast-growing number of studies across the social sciences use names in experiments to signal race. However, names may also convey other perceived attributes such as socioeconomic status and citizenship. This dataset provides the largest collection of validated name perceptions to date, based on three U.S. surveys. It includes 44,170 evaluations from 4,026 respondents for 600 names, with ratings of perceived race, income, education, and citizenship, along with respondent characteristics. These data are designed to help researchers isolate the causal effects of race in experimental research.  
+   - **Use case:** Featured in ["Validated names for experimental studies on race and ethnicity"](https://www.nature.com/articles/s41597-023-01947-0), *Nature Scientific Data* (2023), with Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.
+   - **Collaborator:** Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx
 
-3.  [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+1. [**Linked Fate Literature Review Dataset (1999–2019)**](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)  
+   - **Summary:** A hand-coded dataset of 160 studies on linked fate published between 1999 and 2019. It captures definitions, measurement strategies, theoretical framings, and the populations studied in political science and related disciplines.  
+   - **Use case:** Used in [“Rewiring Linked Fate: Bringing Back History, Agency, and Power”](https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7), *Perspectives on Politics* (2023), with Reuel Rogers.
+
+1. [**Asian American and Latino Advocacy and Community Service Organizations Dataset (1868–2016)**](https://doi.org/10.7910/DVN/FLUPBJ)  
+   - **Summary:** A historical dataset documenting over 600 nonprofit organizations serving Asian American and Latino communities in the U.S. from 1868 to 2016. It includes founding years, organizational types (advocacy, service, hybrid), and panethnic status. The dataset captures both early ethnic organizations and those that evolved into panethnic entities, such as the National Council of La Raza (NCLR). Validation relied on websites, news archives, and outreach, with founding dates confirmed for 77% of Asian and 71% of Latino organizations.  
+   - **Use case:** Used in [“How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing”](https://journals.sagepub.com/doi/10.1177/1065912920983456), *Political Research Quarterly* (2021).

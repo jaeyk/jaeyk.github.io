@@ -1,0 +1,61 @@
+---
+title: "How to Build a Dissertation Committee"
+author: "Jae Yeon Kim"
+date: "May 1, 2025"
+format: html
+toc: true
+number-sections: false
+---
+
+Forming a dissertation committee is one of the most important—and stressful—tasks in a PhD program. From a faculty member’s perspective, especially at research-intensive institutions, research is the main responsibility, teaching is secondary, and advising is often optional. Supervising doctoral students takes time and care, but institutional incentives for doing so are usually limited. Professors take on advising roles not out of obligation, but because they see potential in a student and take personal interest in supporting their growth.
+
+For students, however, the stakes are high. You can’t complete your doctorate without a dissertation committee—and you’ll likely need strong letters from its members to get a job. People often say you “choose” your committee, but that doesn’t quite capture what’s really happening. It’s not simply about selecting names; it’s a matching process. You’re building a team of faculty members whose interests, expertise, and working styles align with your research needs. This requires mutual agreement, not just your own decision. Because advisors and students often enter the process with different expectations, committee formation can feel delicate, uncertain, and high-stakes all at once.
+
+So what is a dissertation committee for? And how do you build a good one?
+
+Here are three insights I often share with doctoral students, especially in the social sciences.
+
+**It’s your dissertation—you should lead it**
+
+One common challenge—especially for students trained in more hierarchical academic systems like mine in South Korea—is shifting from a mindset of deference to one of ownership.
+
+Your dissertation is your project. You should be the one leading it. If your research were a startup, you’d be the founder. Your advisor would be a board member—experienced, invested, and available for strategic guidance. But the core vision and key decisions are yours to make.
+
+Here’s what that looked like in my case:
+
+- **Setting meeting cadence:** I took the lead in scheduling meetings with my committee. During the proposal stage, I proposed biweekly meetings. Later, when collecting data and writing, I spaced them out—monthly, bimonthly, or by chapter—based on the work that was ready for review.
+
+- **Efficient communication:** A week before each meeting, I shared relevant materials. A day before, I sent a focused agenda. After the meeting, I sent a short summary. All of this was done to respect their time and make the most of each interaction.
+
+- **Running the meeting:** I framed the problem I was working on, explained my proposed solution (Plan A), and discussed its strengths and weaknesses. If my advisor had a different take, I presented Plan B. Sometimes we found a new Plan C together.
+
+Why go to this length?
+
+Two reasons:
+
+1. It was my project—taking initiative was part of the job.  
+2. My advisors were extremely busy, and I saw their time as my most valuable resource.
+
+You don’t earn your committee’s respect by proving how smart you are. Everyone makes mistakes, and no one knows everything. What makes a real impression is how professionally you show up: being prepared, open to feedback, willing to be wrong, and committed to doing the hard work to improve your research. That’s how trust is built—and that trust matters most with your chair.
+
+**Your chair is your most important ally**
+
+Your dissertation chair is the most important member of your committee. This person should be someone who truly understands and appreciates your work—and who can challenge you and support you at the same time. A good chair knows when to push and when to wait, when to offer critique and when to stand behind you. A strong working relationship with your chair is essential—especially because they will likely write your most important letter of recommendation when you go on the job market.
+
+Strong letters don’t just praise—they translate your work and potential to others in your field. Your chair is typically best positioned to do this, especially if your dissertation is your primary research output at the time. That’s why it matters that your chair not only has expertise in your area, but also sees the value in what you’re doing and is invested in your growth.
+
+**Form a lean committee that complements each other**
+
+Beyond your chair, the role of other committee members can vary depending on your needs and how you work with them. Some may be strong in theory, others in methods. Some may be in your department and deeply familiar with program expectations; others may come from outside and bring a broader disciplinary or interdisciplinary perspective. Ideally, your committee members complement each other, offering a range of insights and support that strengthen your work from multiple angles.
+
+You don’t need every expert in your field to sit on your formal committee. You can (and should) seek informal feedback from a wider group of scholars. Many successful dissertations are shaped by a small, cohesive committee and a broader network of mentors.
+
+That’s why I often recommend building the smallest formal committee allowed by your program. A lean committee minimizes logistical complexity and the risk of internal conflict. It also gives you more freedom to shape your research network beyond the formal structure.
+
+Of course, you still need all committee members to approve your dissertation in the end. If you anticipate tensions or major disagreements between members, think carefully about how to manage or avoid those dynamics. In some cases, professors themselves will decline to serve together if they anticipate friction.
+
+**Final Thought: Treat your committee as professional collaborators**
+
+Once you begin your dissertation, you’re not just a student—you’re a member of the research community. That means your advisors are not your bosses; they’re your most important collaborators.
+
+This shift in mindset—taking ownership of your work and leading your own project—won’t make the dissertation process easy. It’s still a huge undertaking, full of uncertainty, and often very stressful. But approaching your committee professionally and proactively can make the challenges more manageable—and help you build the kind of relationships that support your growth far beyond the dissertation.

@@ -1,0 +1,40 @@
+---
+title: ""
+format: html
+---
+
+I was born and raised in South Korea, lived in Hong Kong and Taiwan, and have taken a non-linear path through academia, public service, and civic technology. As a first-generation college student from a working-class family, I've written several personal essays reflecting on my career, research, and life—often shaped by questions of purpose, identity, and belonging.
+
+*Professional Reflections*
+
+- [*The Ruth Collier Method: Teaching Scholarship with Courage and Clarity*](ruth_collier.html)
+
+- [*The Pipeline Is the Point: Making Civic Tech Work Globally*](the_pipeline.html)
+
+- [*I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing*](return2academia.html)
+
+- [*Researching and Doing Policy Science as a Political Scientist*](policy_science.html)
+
+- [*Speaking of Speaking English*](speaking_of_speaking_english.html)
+
+*Personal Reflections*
+
+- [*Raising a Good Trouble-Maker*](parenting.html)
+
+- [*Paths Denied, Paths Created*](memorial_day.html)
+
+- [*What Running Taught Me: How to Fail and How to Grow Old*](running.html)
+
+*Career Advice*
+
+- [*How Opportunities Travel: A Guide to Academic Networking*](networking.html)
+
+- [*Academic Job Talks as Storytelling: Why Character Matters as Much as Plot*](academic_job_talk.html)
+
+- [*What I Wish I Knew Before the Academic Job Market*](job_market.html)
+
+- [*Four Tips on How to Approach Job Interviews*](interview_tips.html)
+
+- [*How to Build a Dissertation Committee*](the_committee.html)
+
+- [*How to Write a Statement of Purpose for Graduate School in Political Science*](sop.html)

@@ -1,30 +1,37 @@
 ---
 title: "Teaching"
+format: html 
 ---
-   
-### Scheduled Teaching in Public Policy (UNC-CH)
 
-**The Politics of Public Policy**  
+<details open>
+<summary><strong>Scheduled Teaching in Public Policy (UNC-CH)</strong></summary>
 
-Public policy does not end with the passage of legislation. While policy design often attracts the most attention, the implementation phase—where political decisions are translated into administrative action—frequently unfolds in relative silence. This course seeks to unveil that curtain. It examines how power, institutions, and political behavior shape the ways policies are interpreted, delivered, and experienced in practice.
+**The Politics of Public Policy**
 
-  Students analyze three interrelated dimensions of policy implementation:  
+Public policy does not end with the passage of legislation. While policy design often attracts the most attention, the implementation phase—where political decisions are translated into administrative action—frequently unfolds in relative silence. This course seeks to unveil that curtain. It examines how **political institutions**, **political behavior**, and **bureaucratic politics** shape the ways policies are interpreted, delivered, and experienced in practice.
 
-  - **Institutional structures**, including federalism, separation of powers, and administrative procedures 
-  - **Political behavior**, such as public opinion and media frames  
-  - **Organizational influences**, including bureaucratic discretion, frontline decision-making, and administrative capacity  
+Building on both classical and recent scholarship in political science and public administration, the course re-centers implementation as a political process. Rather than treating it as a technical afterthought, we explore how administrative burdens—the learning, compliance, and psychological costs of interacting with the state—are produced through a layered architecture of policy design, bureaucratic discretion, and frontline decision-making. This perspective highlights how implementation failures are not merely managerial breakdowns but reflect broader institutional and political dynamics.
 
-  The course also explores how policies generate *feedback effects*—altering patterns of political participation, reinforcing or challenging institutional arrangements, and shaping future implementation practices.
+Students analyze three interrelated dimensions of policy implementation:
 
-  The course adapts to different levels of study:  
-  
-  - For **undergraduates**, it introduces key concepts and real-world cases that reveal the political significance of implementation.  
-  - For **Master of Public Policy (MPP) students**, it emphasizes applied analysis and equips students with conceptual tools to assess and navigate implementation challenges.  
-  - For **PhD students**, the course engages with theoretical and empirical literature on policy feedback, institutional development, and street-level governance. Doctoral students are expected to develop original research questions and contribute to scholarly debates on the politics of implementation.
+- **Political institutions**, including federalism, separation of powers, and administrative procedures  
+- **Political behavior**, such as public opinion, policy framing, and participation  
+- **Bureaucratic politics**, including agency discretion, frontline decision-making, and administrative capacity  
 
-### Potential Future Courses at the Intersection of Public Policy and Data Science (UNC-CH)
+Special attention is paid to how inequality is reproduced or contested through everyday encounters with the state, and how implementation challenges can be addressed through better design, coordination, and accountability mechanisms.
 
-These three courses form an integrated sequence in **public policy data science**, preparing students to critically and creatively engage with the expanding role of data, computation, and artificial intelligence in the policy process. Each course explores a distinct but complementary dimension of data-informed governance—from causal inference and algorithmic decision-making to digital service delivery and practitioner collaboration. Together, they equip students with the analytical skills, institutional understanding, and ethical grounding needed to design, implement, and evaluate data- and AI-driven solutions to public problems.
+The course adapts to different levels of study:
+
+- For **undergraduates**, it introduces foundational concepts and real-world cases that reveal the political significance of implementation. Case studies will draw on contemporary issues in health, welfare, education, and digital service delivery.
+- For **Master of Public Policy (MPP) students**, it emphasizes applied analysis and equips students with conceptual and diagnostic tools to assess and navigate implementation challenges across government systems.
+- For **PhD students**, the course engages deeply with theoretical and empirical literature on administrative burden, political institutions, and street-level governance. Doctoral students will use a macro–meso–micro framework to develop original research questions and contribute to scholarly debates on the politics of implementation.
+
+</details>
+
+<details>
+<summary><strong>Potential Future Courses at the Intersection of Public Policy and Data Science (UNC-CH)</strong></summary>
+
+The following three courses form an integrated sequence in public policy data science, grounded in a **domain-first** approach. Rather than treating data science as a purely technical endeavor, the sequence begins with the policy problems themselves—emphasizing how data, computation, and artificial intelligence can be used *in context* to advance the public good. Each course explores a distinct but complementary dimension of data-informed governance—from **algorithmic decision-making** to **digital service delivery** and **researcher-practitioner collaboration**. Together, they prepare students to critically and creatively engage with the expanding role of data and AI in the policy process, equipping them with the analytical skills, institutional understanding, and ethical grounding needed to design, implement, and evaluate data- and AI-driven solutions to public problems.
 
 - **Data, Algorithms, and AI for Public Policy**  
 
@@ -36,9 +43,12 @@ This course examines how public agencies use technology, data, artificial intell
 
 - **Evidence in Action: Partnering for Public Impact**
 
-This course examines how data scientists and policy researchers can work in partnership with public sector organizations to build actionable evidence and improve service delivery. Students learn to scope policy-relevant questions, design and implement applied analyses—including field experiments and operational evaluations—and communicate results to diverse audiences and stakeholders. The course introduces the SIMC framework (Scoping, Implementation, Measurement, and Communication) as a practical guide for navigating the tensions between research rigor and institutional constraints. Through case studies in safety net programs and other public systems, students explore how political, organizational, and ethical factors shape the collaborative production and use of evidence for public impact.
+This course examines how data scientists and policy researchers can work in partnership with public sector organizations to build actionable evidence and improve service delivery. Students learn to scope policy-relevant questions, design and implement applied analyses, and communicate results to diverse audiences and stakeholders. The course introduces the SIMC framework (Scoping, Implementation, Measurement, and Communication) as a practical guide for navigating the tensions between research rigor and institutional constraints. Through case studies in safety net programs and other public systems, students explore how political, organizational, and ethical factors shape the collaborative process and use of evidence for public impact.
 
-### Courses Taught (UC Berkeley, KDI School, etc)
+</details>
+
+<details> 
+<summary><strong> Courses Taught (UC Berkeley, KDI School, etc)</strong></summary>
 
 #### Graduate Seminars
 
@@ -61,12 +71,18 @@ This course examines how data scientists and policy researchers can work in part
   - GSI for Laura Stoker  
   - *Outstanding Graduate Student Instructor Award*
 
-### Pre-conference Tutorials
+</details>
+
+<details>
+<summary><strong>Pre-conference Tutorials</strong></summary>
 
 - [**IC2S2 (2024): Training CSS PhDs for Academic & Non-Academic Careers**](https://ic2s2-2024.org/tutorials)
 - [**SICSS-Howard (2021): R Bootcamp**](https://github.com/jaeyk/sicss-howard-r-boot-camp) – *Invited Instructor*
 
-### Workshops (Selected)
+</details>
+
+<details>
+<summary><strong>Workshops (Selected)</strong></summary>
 
 - **Summer Institute in Migration Research Methods**, UC Berkeley (2024) – *Invited Instructor*  
 - **Digital Data Collection**, Korea University (2022) – *Invited Instructor*  
@@ -80,7 +96,10 @@ This course examines how data scientists and policy researchers can work in part
   - Project Management in R  
   - R Fundamentals
 
-### Guest Lectures (Selected)
+</details>
+
+<details>
+<summary><strong>Guest Lectures (Selected)</strong></summary>
 
 - **2025** – Johns Hopkins: NLP for CSS  
 - **2024** – Johns Hopkins: Democracy by the Numbers  
@@ -88,18 +107,25 @@ This course examines how data scientists and policy researchers can work in part
 - **2022** – National University of Singapore, KAIST, Korea University, Sungkyunkwan University  
 - **2021** – KAIST, Dartmouth
 
-### Pedagogical Publications and Resources
+</details>
+
+<details>
+<summary><strong>Pedagogical Publications and Resources</strong></summary>
 
 - **Textbook:** [*Computational Thinking for Social Scientists*](https://jaeyk.github.io/comp_thinking_social_science/)  
-- **Article:** [*Teaching Computational Social Science for All*](https://doi.org/10.1017/S1049096522000244), *PS: Political Science & Politics* (2022)  
-  - *PDF views:* 911 | *HTML views:* 1,204 (as of October 31, 2024)  
-  - Co-authored with Margaret Ng
+An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with modern computational skills: reproducible workflows (Git, Bash, tidy data), functional programming in R, data product development, semi-structured data collection, computational text analysis, predictive modeling, and database management with SQL. Each modular chapter features live code, interactive exercises, and practical examples—all freely available for adaptation, classroom use, and self-learning.
 
-- **Article:** [*Training CSS PhDs for Academic and Non-Academic Careers*](https://doi.org/10.1017/S1049096523001127), *PS: Political Science & Politics* (2024)  
+- **Article:** [*Training CSS PhDs for Academic and Non-Academic Careers*](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23), *PS: Political Science & Politics* (2024)  
   - *PDF views:* 1,471 | *HTML views:* 5,140 (as of October 31, 2024)  
   - [IC2S2 2024 Slides](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)  
   - [IC2S2 2024 Tutorial site](https://github.com/jaeyk/ic2s2-training-css-tutorial)
+  
+- **Article:** [*Teaching Computational Social Science for All*](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF), *PS: Political Science & Politics* (2022)  
+  - *PDF views:* 911 | *HTML views:* 1,204 (as of October 31, 2024)  
+  - Co-authored with Margaret Ng
    
-::: center
-![Lightening talk on teaching computational social science. Summer Institute in Computational Social Science (2019 Princeton)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/teaching_css.png){fig-align="center" width=100%}
-:::
+![](https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20240115022931608-0277:S1049096523000732:S1049096523000732_tab1.png)
+
+Computational Social Science Professionalization Process (Kesari, Kim, Shah, Brown, Ventura, and Law 2024: 102).
+
+</details>

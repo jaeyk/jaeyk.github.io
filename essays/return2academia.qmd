@@ -9,9 +9,7 @@ number-sections: false
 
 A little over a year into my data science role outside academia, in spring 2024, I spoke on the “Data Science Across Industries” panel at the PhD Pathways event at Stanford. Ironically, the panel was designed to help PhD students and postdocs explore careers outside the academy—but for me, it triggered a return. I had spent the past year applying my research skills to public problems—designing field experiments with government partners, analyzing administrative data, and learning from people who navigated public systems every day. I believed in the work. I still do. But listening to early-career scholars talk about their hopes for impact, I felt something shift.
 
-I wasn’t done with academia. 
-
-I just hadn’t found the version of it I believed in yet.
+I wasn’t done with academia. I just hadn’t found the version of it I believed in yet.
 
 In 2022, I had left a tenure-track job to join Code for America, a civic tech nonprofit focused on improving access to public services through technology, design, and data. It was a leap. I didn’t fully know what to expect. But I wanted to learn how research could serve real people. Over the next two years, I helped build experiments with U.S. state and local governments, sat in on user interviews, and saw how broken public systems were—and how much potential there was for research to do more than describe and analyze problems. It could help fix them.
 

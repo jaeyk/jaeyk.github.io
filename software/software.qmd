@@ -2,14 +2,27 @@
 title: "Software"
 ---
 
-I have developed open-source software that supports data curation. All of the software is availalbe on GitHub: [link](https://github.com/jaeyk)
+I develop open-source software to support data curation and computational research in the social sciences. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
 
-1.  [MapAgora](https://snfagora.github.io/MapAgora/): R package for getting tax reports, websites, and social media handles related to nonprofit organizations in the United States (with Milan de Vries)
+1. [**MapAgora**](https://snfagora.github.io/MapAgora/)  
+   - **Summary:** An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.  
+   - **Use case:** Used in ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han.  
+   - **Collaborator:** Milan de Vries
 
-2.  [validatednamesr](https://github.com/jaeyk/validatednamesr): R package for viewing, loading, and extracting the validated names for experimental studies on race and ethnicity datasets (with Charles Crabtree)
+1. [**autotextclassifier**](https://github.com/snfagora/autotextclassifier)  
+   - **Summary:** An R package for automated text classification using the tidymodels framework. Supports supervised learning pipelines with minimal setup for civic tech and policy research applications.  
+   - **Use case:** Also used in ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han.  
+   - **Collaborator:** Milan de Vries
 
-3.  [autotextclassifier](https://github.com/snfagora/autotextclassifier): R package for automatically classifying texts based on tidymodels (with Milan de Vries)
+1. [**validatednamesr**](https://github.com/jaeyk/validatednamesr)  
+   - **Summary:** An R package for accessing and analyzing the validated names dataset used in race and ethnicity experiments. Includes utilities for name filtering, trait inspection, and integration with survey tools.  
+   - **Use case:** Featured in ["Validated Names for Experimental Studies on Ethnicity and Race"](https://www.nature.com/articles/s41597-023-01947-0) (*Nature Scientific Data*, 2023) with by Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.
+   - **Collaborator:** Charles Crabtree
 
-4.  [tidytweetjson](https://jaeyk.github.io/tidytweetjson/): R package for turning Tweet JSON files into a cleaned and wrangled dataset
+1. [**tidytweetjson**](https://jaeyk.github.io/tidytweetjson/)  
+   - **Summary:** An R package that transforms raw Twitter JSON files into clean, analysis-ready datasets. Useful for studying political discourse, social movements, and real-time reactions to events.  
+   - **Use case:** Used in ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes"](https://t.co/4Axd0gEQns) *Perspectives on Politics* (2021), with Nathan Chan and Vivien Leung.
 
-5.  [tidyethnicnews](https://jaeyk.github.io/tidyethnicnews/): R package for turning search results from the largest database on ethnic newspapers published in the United States ("Ethnic NewsWatch") into a cleaned and wrangled dataset
+1. [**tidyethnicnews**](https://jaeyk.github.io/tidyethnicnews/)  
+   - **Summary:** An R package for scraping, cleaning, and organizing ethnic newspaper articles from the Ethnic NewsWatch database. Designed to support media analysis and political communication research.  
+   - **Use case:** Used in ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles"](https://link.springer.com/article/10.1007/s42001-020-00097-2) (*Journal of Computational Social Science* (2021)
