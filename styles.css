@@ -296,9 +296,20 @@ div.quarto-about-trestles .about-link {
   text-decoration: none;
 }
 
+/* Fix low contrast on hover for about links */
 div.quarto-about-trestles .about-link:hover {
-  color: #4B9CD3 !important;
+  color: #13294B !important;
   text-decoration: underline;
+}
+
+/* Remove all underlines from navbar links */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
