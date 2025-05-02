@@ -1,7 +1,5 @@
 /*-- scss:defaults --*/
 
-@use "sass:color";
-
 $primary-color: #5480a7;
 $blue: #5480a7;
 $primary-color-dark: #2c3f51;
@@ -40,20 +38,6 @@ $navbar-font-family: "Ubuntu";
 $headings-font-family: "Ubuntu";
 $font-family-base: "Ubuntu";
 
-// code
-// $code-color: $theme-mocha2;
-// $code-bg: $theme-milkcoffee0;
-// $code-block-bg-alpha: -0.8;
-
-$background-color: $theme-milkcoffee0;
-
-// navigation
-// $navbar-bg: $theme-berkeley;
-
-// callout block
-$callout-color-note: $theme-black;
-$callout-color-tip: $theme-black;
-
 // UNC Carolina Theme Colors
 $unc-blue: #4B9CD3;
 $unc-dark-blue: #13294B;
@@ -91,29 +75,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 800;
 }
 
-//div.quarto-about-trestles .about-entity .about-link {
-//  background-color: $primary-color;
-  //color: white;
-  //text-decoration: none;
-  //font-weight: 600;
-  //border: solid 1.5px $primary-color;
-//}
-
-//div.quarto-about-trestles .about-entity .about-link:hover {
-//  background-color: $secondary-color;
-//  border-color: $secondary-color;
-//}
-
-a {
-  text-decoration: underline;
-}
-
 /* navbar */
-
-/* Override dark navbar default */
 .navbar,
 .navbar-dark {
-  background-color: color.adjust($primary-color, $lightness: -5%) !important;
+  background-color: darken($primary-color, 5%) !important;
 }
 
 .navbar .navbar-nav .nav-link,
@@ -123,81 +88,45 @@ a {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: $secondary-color !important;  // Light gray
+  color: $secondary-color !important;
 }
-
 
 /* School colors */
 
-.carolina-blue {
-  color: #4B9CD3 !important;
-}
-.jhu-blue {
-  color: #002D72 !important;
-}
-.harvard-crimson {
-  color: #A51C30 !important;
-}
-.georgetown-blue {
-  color: #041E42 !important;
-}
-.michigan-maize {
-  color: #FFCB05 !important;
-}
-.michigan-blue {
-  color: #00274C !important;
-  font-weight: 600;
-}
-.cfa-blue {
-  color: #205493 !important;
-  font-weight: 600;
-}
-.berkeley-blue {
-  color: #003262 !important;
-  font-weight: 600;
-}
+.carolina-blue { color: #4B9CD3 !important; }
+.jhu-blue { color: #002D72 !important; }
+.harvard-crimson { color: #A51C30 !important; }
+.georgetown-blue { color: #041E42 !important; }
+.michigan-maize { color: #FFCB05 !important; }
+.michigan-blue { color: #00274C !important; font-weight: 600; }
+.cfa-blue { color: #205493 !important; font-weight: 600; }
+.berkeley-blue { color: #003262 !important; font-weight: 600; }
 
-/* Optional layout adjustments */
+/* Layout */
 
-.sidebar, .nav-page {
-  max-width: 250px;
-}
+.sidebar, .nav-page { max-width: 250px; }
+.page-columns { gap: 2rem; }
 
-.page-columns {
-  gap: 2rem;
-}
-
+/* Numbered lists */
 dl.auto-numbered {
   counter-reset: number;
   margin-left: 1em;
 }
-
 dl.auto-numbered dt::before {
   counter-increment: number;
   content: counter(number) ". ";
   font-weight: bold;
   display: inline;
 }
-
 dl.auto-numbered dt,
-dl.auto-numbered dd {
-  display: inline;
-}
+dl.auto-numbered dd { display: inline; }
+dl.auto-numbered dd::before { content: " "; }
 
-dl.auto-numbered dd::before {
-  content: " ";
-}
+/* Columns */
+.sidebar { flex: 0 0 20%; }
+.content { flex: 1 1 80%; }
 
-/* Override trestles layout columns */
-.sidebar {
-  flex: 0 0 20%;
-}
-.content {
-  flex: 1 1 80%;
-}
-
-/* Career timeline block */
-
+/* Career timeline */
 .career-timeline {
   background-color: white;
   padding: 1em;
@@ -209,9 +138,15 @@ dl.auto-numbered dd::before {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
+.career-timeline a {
+  color: $unc-dark-blue;
+  text-decoration: underline;
+}
+.career-timeline a:hover {
+  color: $unc-blue;
+}
 
-/* Pure CSS toggle icon for <summary> */
-
+/* Timeline toggle */
 .timeline-section summary {
   position: relative;
   padding-left: 1.2em;
@@ -221,7 +156,6 @@ dl.auto-numbered dd::before {
   margin-bottom: 0.5em;
   display: block;
 }
-
 .timeline-section summary::before {
   content: "▶";
   position: absolute;
@@ -231,38 +165,91 @@ dl.auto-numbered dd::before {
   color: $primary-color-dark;
   transition: transform 0.2s ease;
 }
-
 .timeline-section[open] summary::before {
   transform: rotate(90deg);
 }
-
 .timeline-section summary::-webkit-details-marker,
 .timeline-section summary::marker {
   display: none;
 }
 
-.career-items div {
-  margin-bottom: 0.4em;
-  line-height: 1.4;
-}
-
-/* Hide TOC in sidebar if using inline TOC */
+/* TOC visibility */
 .sidebar nav#TOC {
   display: none !important;
 }
 
-/* UNC color styling for about section links */
-div.quarto-about-trestles .about-entity .about-link {
-  background-color: $primary-color;  // UNC blue
-  color: $theme-white;
-  font-weight: 600;
-  border: solid 1.5px $primary-color;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
+/* Link styling */
+a, .callout a, .sidebar a, div.metadata a,
+.callout-note a, .callout-tip a {
+  color: $unc-dark-blue;
+  text-decoration: underline;
+}
+a:hover, .callout a:hover, .sidebar a:hover,
+div.metadata a:hover, .callout-note a:hover,
+.callout-tip a:hover {
+  color: $unc-blue;
 }
 
-div.quarto-about-trestles .about-entity .about-link:hover {
-  background-color: $secondary-color;  // e.g., UNC gray
-  border-color: $secondary-color;
-  color: $theme-black;
+/* Buttons and about section */
+.btn, .about-link {
+  background-color: $unc-dark-blue;
+  border: 1.5px solid $unc-dark-blue;
+  color: $theme-white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.btn:hover, .about-link:hover {
+  background-color: $unc-blue;
+  border-color: $unc-blue;
+  color: $theme-white;
+}
+.btn-outline, .btn-outline-primary {
+  background-color: transparent;
+  border: 1.5px solid $unc-dark-blue;
+  color: $unc-dark-blue;
+  font-weight: 600;
+}
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+}
+
+/* UNC button utilities */
+.btn-unc--solid {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+  border: 1.5px solid $unc-dark-blue;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+.btn-unc--solid:hover {
+  background-color: $unc-blue;
+  border-color: $unc-blue;
+  color: $theme-white;
+}
+
+.btn-unc--outline {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: transparent;
+  color: $unc-dark-blue;
+  border: 1.5px solid $unc-dark-blue;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+.btn-unc--outline:hover {
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+  border-color: $unc-dark-blue;
 }
