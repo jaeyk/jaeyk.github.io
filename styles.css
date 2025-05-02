@@ -384,16 +384,12 @@ li a:hover,
   color: #4B9CD3 !important;
 }
 
-/* Exception: no underline on career timeline links */
-/* Completely suppress underline in career timeline */
-.quarto-about-trestles .career-timeline a,
-.quarto-about-trestles .career-timeline a:hover,
-.quarto-about-trestles .career-timeline a:focus,
-.quarto-about-trestles .career-timeline a:visited,
-.quarto-about-trestles .career-timeline a:active {
+/* Fully remove underline from all links in the career timeline, including hover */
+.about-entity .career-timeline *,
+.about-entity .career-timeline *:hover {
   text-decoration: none !important;
-  color: #4B9CD3 !important;
-  font-weight: 600;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
