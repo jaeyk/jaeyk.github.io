@@ -378,46 +378,4 @@ div.quarto-about-trestles .about-link:hover {
   text-decoration: underline;
 }
 
-/* Optional: Make name/title (Jae Yeon Kim) stand out */
-div.quarto-about-trestles .about-title {
-  color: white !important;
-  font-weight: 700;
-}
-
-div.quarto-about-trestles .about-entity {
-  max-width: 280px;
-  margin-left: 1em;
-}
-
-/* Allow long links (like emails) to wrap in the about section */
-div.quarto-about-trestles .about-link {
-  white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  display: inline-block; /* ensures wrapping respects width */
-  max-width: 100%;
-}
-
-/* Ensure long links (e.g., emails) wrap correctly even on mobile */
-div.quarto-about-trestles .about-link {
-  display: block !important;
-  font-size: 0.9em;
-  line-height: 1.3;
-  margin-bottom: 0.4em;
-  white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-}
-
-/* Add space between fixed navbar and top of page */
-main {
-  margin-top: 1.5rem;
-}
-
-/* Optional: more space if needed */
-.page-columns .content {
-  padding-top: 1.5rem;
-}
-
 /*# sourceMappingURL=styles.css.map */
