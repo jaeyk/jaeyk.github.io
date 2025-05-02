@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+/*-- scss:rules --*/
+body {
+  font-family: "Ubuntu", "Ubuntu", sans-serif;
+}
+
+div.quarto-post .metadata {
+  font-family: "Ubuntu", "Ubuntu", sans-serif;
+}
+
+#title-block-header {
+  margin-block-end: 2rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: "Ubuntu", "Ubuntu", sans-serif;
+  font-weight: 800;
+}
+
+div.quarto-about-trestles .about-entity .about-link {
+  background-color: #5480a7;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: solid 1.5px #5480a7;
+}
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+  background-color: #56A754;
+  border-color: #56A754;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/* navbar */
+.nav-link {
+  font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #56A754;
+}
+
+.nav-link.active {
+  color: #56A754 !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* School colors */
+.carolina-blue {
+  color: #4B9CD3 !important;
+}
+
+.jhu-blue {
+  color: #002D72 !important;
+}
+
+.harvard-crimson {
+  color: #A51C30 !important;
+}
+
+.georgetown-blue {
+  color: #041E42 !important;
+}
+
+.michigan-maize {
+  color: #FFCB05 !important;
+}
+
+.michigan-blue {
+  color: #00274C !important;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  color: #205493 !important;
+  font-weight: 600;
+}
+
+.berkeley-blue {
+  color: #003262 !important;
+  font-weight: 600;
+}
+
+/* Optional layout adjustments */
+.sidebar, .nav-page {
+  max-width: 250px;
+}
+
+.page-columns {
+  gap: 2rem;
+}
+
+dl.auto-numbered {
+  counter-reset: number;
+  margin-left: 1em;
+}
+
+dl.auto-numbered dt::before {
+  counter-increment: number;
+  content: counter(number) ". ";
+  font-weight: bold;
+  display: inline;
+}
+
+dl.auto-numbered dt,
+dl.auto-numbered dd {
+  display: inline;
+}
+
+dl.auto-numbered dd::before {
+  content: " ";
+}
+
+/* Override trestles layout columns */
+.sidebar {
+  flex: 0 0 20%;
+}
+
+.content {
+  flex: 1 1 80%;
+}
+
+/* Career timeline block */
+.career-timeline {
+  background-color: white;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 6px;
+  font-family: var(--bs-body-font-family);
+  font-size: 0.9em;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+/* Pure CSS toggle icon for <summary> */
+.timeline-section summary {
+  position: relative;
+  padding-left: 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.timeline-section summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 0.9em;
+  color: #2c3f51;
+  transition: transform 0.2s ease;
+}
+
+.timeline-section[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.timeline-section summary::-webkit-details-marker,
+.timeline-section summary::marker {
+  display: none;
+}
+
+.career-items div {
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+}
+
+/* Hide TOC in sidebar if using inline TOC */
+.sidebar nav#TOC {
+  display: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
