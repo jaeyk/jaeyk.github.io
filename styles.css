@@ -123,11 +123,6 @@ dl.auto-numbered dd::before {
   text-align: left;
 }
 
-.career-timeline a {
-  color: #4B9CD3 !important;
-  text-decoration: underline;
-}
-
 .career-timeline a:hover {
   color: #4B9CD3 !important;
 }
@@ -376,6 +371,29 @@ div.quarto-about-trestles .about-link {
 div.quarto-about-trestles .about-link:hover {
   color: #13294B !important;
   text-decoration: underline;
+}
+
+/* Default: underline on hover for most links */
+a:hover,
+.content a:hover,
+main a:hover,
+p a:hover,
+li a:hover,
+.card a:hover {
+  text-decoration: underline !important;
+  color: #4B9CD3 !important;
+}
+
+/* Exception: no underline on career timeline links */
+/* Completely suppress underline in career timeline */
+.career-timeline a,
+.career-timeline a:hover,
+.career-timeline a:focus,
+.career-timeline a:active,
+.career-timeline a:visited {
+  text-decoration: none !important;
+  color: #4B9CD3 !important;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
