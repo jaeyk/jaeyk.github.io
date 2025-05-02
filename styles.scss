@@ -1,3 +1,4 @@
+
 /*-- scss:defaults --*/
 
 $primary-color: #5480a7;
@@ -11,93 +12,146 @@ $theme-black: #4c4c4c;
 $theme-white: white;
 $theme-grey: #e9ecef;
 
+$theme-purple3: #88398A;
+$theme-purple4: #9d709e;
+$theme-purple5: #562457;
+$theme-purplebrown1: #b996a4;
+$theme-purplebrown2: #7c6c84;
+$theme-darkcoffee1: #570e06;
+$theme-darkcoffee2: #78504b;
+$theme-darkcoffee3: #632e0d;
+$theme-milkcoffee0: #f2ece3;
+$theme-milkcoffee3: #cca79f;
+$theme-milkcoffee2: #b98f68;
+$theme-milkcoffee1: #9e736a;
+$theme-mocha1: #7f2606;
+$theme-mocha2: #9a4c28;
+$theme-mocha3: #b46939;
+$theme-orange: #f9af11;
+$theme-berkeley: #003262;
+
 $body-bg: $theme-white;
 $body-color: $theme-black; // text color
 $headings-color: $theme-black; // applies to all 
-$link-color: $primary-color;
+$link-color: $theme-berkeley;
 
-$font-family-latex: 'Linux Libertine', 'Times New Roman', serif; // Libertine font for LaTeX-like styling
+$navbar-font-family: "Ubuntu";
+$headings-font-family: "Ubuntu";
+$font-family-base: "Ubuntu";
 
-/* Import Libertine Font */
-@import url('https://cdn.jsdelivr.net/npm/@fontsource/libertine/index.css');
+// code
+$code-color: $theme-mocha2;
+$code-bg: $theme-milkcoffee0;
+$code-block-bg-alpha: -0.8;
+//$code-block-border-left: TRUE;
+//$code-block-border-left-style: solid;
+
+$background-color: $theme-milkcoffee0;
+
+// navigation
+$navbar-bg: $theme-berkeley;
+
+// callout block
+$callout-color-note: $theme-black;
+$callout-color-tip: $theme-black;
+
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 /*-- scss:rules --*/
 
 body {
-  font-family: $font-family-latex;
-  font-size: 16px;
-  line-height: 1.5; // Increase line spacing for readability
-  text-align: justify; // LaTeX-style text alignment
-  background-color: $body-bg;
-  color: $body-color;
+  font-family: "Ubuntu", $font-family-base, sans-serif;
+}
+div.quarto-post .metadata {
+  font-family: "Ubuntu", $font-family-base, sans-serif;
+}
+
+#title-block-header {
+  margin-block-end: 2rem;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  font-family: $font-family-latex;
-  font-weight: bold; // Bold headings
-  margin-top: 2rem; // Add spacing above headings
-  color: $headings-color;
+  font-family: "Ubuntu", $font-family-base, sans-serif;
+  font-weight: 800;
 }
 
-.container {
-  max-width: 60%; // Narrower width for a LaTeX-like feel
-  margin: auto;
+div.quarto-about-trestles .about-entity .about-link {
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: solid 1.5px;
+    border-color: $primary-color;
+}
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+    background-color: $secondary-color;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: solid 1.5px;
+    border-color: $secondary-color;
 }
 
 a {
   text-decoration: none;
-  color: $link-color;
-}
-
-a:hover {
   text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
-/* Code blocks */
-code {
-  font-family: "Courier New", monospace; // Monospaced font for code
-  background-color: $theme-grey;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px; // Rounded edges for a modern look
+/* navbar */
+
+.nav-link {
+  font-weight: 700;
 }
 
-pre {
-  font-family: "Courier New", monospace;
-  background-color: $theme-grey;
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto; // Horizontal scroll for long code lines
-}
-
-/* Navigation */
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: $secondary-color;
+    color: $secondary-color;
 }
 
 .nav-link.active {
-  color: $secondary-color !important;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+    color: $secondary-color !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
-/* Custom Classes for LaTeX Styling */
-.latex-section {
-  font-family: $font-family-latex;
-  margin-bottom: 1.5rem;
+/*-- scss:rules --*/
+
+.carolina-blue {
+  color: #4B9CD3 !important;
 }
 
-.latex-quote {
-  font-family: $font-family-latex;
-  font-size: 1.25rem;
-  font-style: italic;
-  margin: 2rem 0;
-  padding-left: 1.5rem;
-  border-left: 4px solid $secondary-color;
+.jhu-blue {
+  color: #002D72 !important;
 }
 
-.latex-equation {
-  font-family: "Courier New", monospace;
-  text-align: center;
-  margin: 1rem 0;
+.harvard-crimson {
+  color: #A51C30 !important;
+}
+
+.georgetown-blue {
+  color: #041E42 !important;
+}
+
+.michigan-maize {
+  color: #FFCB05 !important;
+}
+
+.michigan-blue {
+  color: #00274C !important;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  color: #205493 !important;
+  font-weight: 600;
+}
+
+.berkeley-blue {
+  color: #003262 !important;
+  font-weight: 600;
 }
