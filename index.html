@@ -159,31 +159,6 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 
 
 
-<script>
-  function toggleAllTimelines() {
-    const sections = document.querySelectorAll(".timeline-section");
-    const allOpen = [...sections].every(s => s.open);
-    const btn = document.getElementById("toggle-btn");
-
-    sections.forEach(s => s.open = !allOpen);
-    btn.innerText = allOpen ? "Expand All" : "Collapse All";
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".timeline-section summary").forEach(summary => {
-      const icon = document.createElement("span");
-      icon.classList.add("arrow-icon");
-      icon.innerText = summary.parentElement.open ? "▾ " : "▸ ";
-      summary.prepend(icon);
-
-      summary.addEventListener("click", () => {
-        const isOpen = summary.parentElement.open;
-        summary.querySelector(".arrow-icon").innerText = isOpen ? "▾ " : "▸ ";
-      });
-    });
-  });
-</script>
-<hr>
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="profile_alt.png" class="about-image
