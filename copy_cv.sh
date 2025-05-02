@@ -15,8 +15,13 @@ echo "Changing to the GitHub.io directory..."
 cd ~/Documents/jaeyk.github.io/
 echo "Now in the GitHub.io directory."
 
+# Compile SCSS to CSS
+echo "Compiling SCSS to CSS..."
+sass styles.scss styles.css
+echo "SCSS compilation complete."
+
 # Publish the Quarto website to GitHub Pages
 echo "Publishing the Quarto website to GitHub Pages..."
-quarto publish gh-pages --no-prompt  # This will render the site (again) and push to the gh-pages branch
+quarto publish gh-pages --no-prompt
 
-echo "All files copied, essays rendered, website rendered, and changes pushed to GitHub Pages."
+echo "All files copied, SCSS compiled, website rendered, and changes pushed to GitHub Pages."
