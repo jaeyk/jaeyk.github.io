@@ -30,8 +30,8 @@ $theme-orange: #f9af11;
 $theme-berkeley: #003262;
 
 $body-bg: $theme-white;
-$body-color: $theme-black; // text color
-$headings-color: $theme-black; // applies to all 
+$body-color: $theme-black;
+$headings-color: $theme-black;
 $link-color: $theme-berkeley;
 
 $navbar-font-family: "Ubuntu";
@@ -42,8 +42,6 @@ $font-family-base: "Ubuntu";
 $code-color: $theme-mocha2;
 $code-bg: $theme-milkcoffee0;
 $code-block-bg-alpha: -0.8;
-//$code-block-border-left: TRUE;
-//$code-block-border-left-style: solid;
 
 $background-color: $theme-milkcoffee0;
 
@@ -54,8 +52,7 @@ $navbar-bg: $theme-berkeley;
 $callout-color-note: $theme-black;
 $callout-color-tip: $theme-black;
 
-// font
-
+// font imports
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
@@ -66,6 +63,7 @@ $callout-color-tip: $theme-black;
 body {
   font-family: "Ubuntu", $font-family-base, sans-serif;
 }
+
 div.quarto-post .metadata {
   font-family: "Ubuntu", $font-family-base, sans-serif;
 }
@@ -80,25 +78,19 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 div.quarto-about-trestles .about-entity .about-link {
-    background-color: $primary-color;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border: solid 1.5px;
-    border-color: $primary-color;
+  background-color: $primary-color;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: solid 1.5px $primary-color;
 }
 
 div.quarto-about-trestles .about-entity .about-link:hover {
-    background-color: $secondary-color;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border: solid 1.5px;
-    border-color: $secondary-color;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 }
 
 a {
-  text-decoration: none;
   text-decoration: underline;
 }
 
@@ -108,48 +100,42 @@ a {
   font-weight: 700;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: $secondary-color;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: $secondary-color;
 }
 
 .nav-link.active {
-    color: $secondary-color !important;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  color: $secondary-color !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-/*-- scss:rules --*/
+/* School colors */
 
 .carolina-blue {
   color: #4B9CD3 !important;
 }
-
 .jhu-blue {
   color: #002D72 !important;
 }
-
 .harvard-crimson {
   color: #A51C30 !important;
 }
-
 .georgetown-blue {
   color: #041E42 !important;
 }
-
 .michigan-maize {
   color: #FFCB05 !important;
 }
-
 .michigan-blue {
   color: #00274C !important;
   font-weight: 600;
 }
-
 .cfa-blue {
   color: #205493 !important;
   font-weight: 600;
 }
-
 .berkeley-blue {
   color: #003262 !important;
   font-weight: 600;
@@ -158,11 +144,11 @@ a {
 /* Optional layout adjustments */
 
 .sidebar, .nav-page {
-  max-width: 250px;  // or wider if needed
+  max-width: 250px;
 }
 
 .page-columns {
-  gap: 2rem;  // increases spacing between sidebar and content
+  gap: 2rem;
 }
 
 dl.auto-numbered {
@@ -188,12 +174,13 @@ dl.auto-numbered dd::before {
 
 /* Override trestles layout columns */
 .sidebar {
-  flex: 0 0 20%; /* reduce sidebar width */
+  flex: 0 0 20%;
+}
+.content {
+  flex: 1 1 80%;
 }
 
-.content {
-  flex: 1 1 80%; /* expand main content area */
-}
+/* Career timeline block */
 
 .career-timeline {
   background-color: white;
@@ -207,35 +194,7 @@ dl.auto-numbered dd::before {
   text-align: left;
 }
 
-.timeline-section summary {
-  font-size: 0.95em;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 0.5em;
-  display: flex;
-  align-items: center;
-}
-
-.timeline-section summary .arrow-icon {
-  margin-right: 0.4em;
-}
-
-.career-items div {
-  margin-bottom: 0.4em;
-  line-height: 1.4;
-}
-
-/* Hide default disclosure triangle on summary */
-.timeline-section summary::-webkit-details-marker,
-.timeline-section summary::marker {
-  display: none;
-}
-
-.sidebar nav#TOC {
-  display: none !important;
-}
-
-/* Timeline toggle icon (pure CSS) */
+/* Pure CSS toggle icon for <summary> */
 
 .timeline-section summary {
   position: relative;
@@ -261,3 +220,17 @@ dl.auto-numbered dd::before {
   transform: rotate(90deg);
 }
 
+.timeline-section summary::-webkit-details-marker,
+.timeline-section summary::marker {
+  display: none;
+}
+
+.career-items div {
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+}
+
+/* Hide TOC in sidebar if using inline TOC */
+.sidebar nav#TOC {
+  display: none !important;
+}
