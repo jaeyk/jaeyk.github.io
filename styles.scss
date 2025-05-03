@@ -367,27 +367,31 @@ div.quarto-about-trestles .about-link {
   margin-bottom: 0.4em;
 }
 
+/* Remove all underlines from navbar links */
 div.quarto-about-trestles .about-link:hover {
   color: $unc-dark-blue !important;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* Default: underline on hover for most links */
-a:hover,
-.content a:hover,
-main a:hover,
-p a:hover,
-li a:hover,
-.card a:hover {
-  text-decoration: underline !important;
-  color: $unc-blue !important;
+/* Career timeline items */
+.career-items div {
+  line-height: 1.5;
+  margin-bottom: 0.4em;
 }
 
 /* Fully remove underline from all links in the career timeline, including hover */
-.about-entity .career-timeline *,
-.about-entity .career-timeline *:hover {
+.career-timeline a,
+.career-timeline a:hover,
+.career-timeline a:link,
+.career-timeline a:visited,
+.career-timeline a:active,
+.career-timeline * a,
+.career-timeline * a:hover {
+  all: unset !important; /* nukes all default/link styles */
+  color: inherit !important;
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
+  cursor: text; /* optional: or 'default' to avoid pointer */
 }
 
