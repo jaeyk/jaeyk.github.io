@@ -437,4 +437,39 @@ div.quarto-about-trestles .about-link:hover {
   border-radius: 4px;
 }
 
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-profile img {
+  width: 160px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-contacts {
+  flex: 1 1 280px;
+  min-width: 220px;
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-contacts i {
+    margin-right: 0.5em;
+    color: #13294B;
+    font-size: 1em;
+    vertical-align: middle;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
