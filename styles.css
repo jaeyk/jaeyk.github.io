@@ -483,9 +483,10 @@ div.quarto-about-trestles .about-link:hover {
 }
 
 .hero-profile img.hero-img {
-  width: 150px;
-  height: auto;
+  width: auto;
+  max-height: 180px;
   border-radius: 50%;
+  display: block;
 }
 
 .hero-contacts {

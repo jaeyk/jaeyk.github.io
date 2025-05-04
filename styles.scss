@@ -508,9 +508,10 @@ div.quarto-about-trestles .about-link:hover {
 }
 
 .hero-profile img.hero-img {
-  width: 150px;  // increased from 130px
-  height: auto;
+  width: auto;
+  max-height: 180px;  // Adjust this value until the image height visually aligns with the link block
   border-radius: 50%;
+  display: block;
 }
 
 .hero-contacts {
