@@ -1,0 +1,636 @@
+@charset "UTF-8";
+/*-- scss:defaults --*/
+/*-- scss:rules --*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+div.quarto-post .metadata {
+  font-family: "Ubuntu", "Lato", sans-serif, sans-serif;
+}
+
+#title-block-header {
+  margin-block-end: 2rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+/* Navbar */
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+  background-color: #4B9CD3 !important;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFFFFF !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #E0E0E0 !important;
+}
+
+/* School colors */
+.carolina-blue {
+  color: #4B9CD3 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.carolina-dark {
+  color: #13294B !important;
+  font-weight: 600;
+}
+
+.harvard-crimson {
+  color: #A51C30 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.jhu-blue {
+  color: #002D72 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.georgetown-blue {
+  color: #041E42 !important;
+  background-color: #e6eaf2;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.michigan-maize {
+  color: #00274C !important;
+  background-color: #fff9e0;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.michigan-blue {
+  color: #00274C !important;
+  background-color: #e5ecf6;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.berkeley-blue {
+  color: #003262 !important;
+  background-color: #eaf1f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  background-color: #e7f0fa !important;
+}
+.cfa-blue a {
+  color: #1a73e8 !important;
+  text-decoration: none;
+}
+.cfa-blue a:hover {
+  text-decoration: underline;
+}
+
+.d4g-roundtables {
+  background-color: #ffe066;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* Layout */
+.sidebar, .nav-page {
+  max-width: 250px;
+}
+
+.page-columns {
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+}
+
+.content {
+  flex: 1 1 80%;
+}
+
+dl.auto-numbered {
+  counter-reset: number;
+  margin-left: 1em;
+}
+
+dl.auto-numbered dt::before {
+  counter-increment: number;
+  content: counter(number) ". ";
+  font-weight: bold;
+}
+
+dl.auto-numbered dt,
+dl.auto-numbered dd {
+  display: inline;
+}
+
+dl.auto-numbered dd::before {
+  content: " ";
+}
+
+/* Career timeline */
+.career-timeline {
+  background-color: white;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 6px;
+  font-family: var(--bs-body-font-family);
+  font-size: 0.9em;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.career-timeline a:hover {
+  color: #4B9CD3 !important;
+}
+
+/* Timeline toggle */
+.timeline-section summary {
+  position: relative;
+  padding-left: 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.timeline-section summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 0.9em;
+  color: #13294B;
+  transition: transform 0.2s ease;
+}
+
+.timeline-section[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.timeline-section summary::-webkit-details-marker,
+.timeline-section summary::marker {
+  display: none;
+}
+
+/* Hide TOC in sidebar */
+.sidebar nav#TOC {
+  display: none !important;
+}
+
+/* Global link styles */
+a,
+.content a,
+main a,
+.callout a,
+.sidebar a,
+div.metadata a,
+.callout-note a,
+.callout-tip a {
+  color: #13294B !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.callout a:hover,
+.sidebar a:hover,
+div.metadata a:hover,
+.callout-note a:hover,
+.callout-tip a:hover {
+  color: #4B9CD3 !important;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn, .about-link {
+  background-color: #13294B;
+  border: 1.5px solid #13294B;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover, .about-link:hover {
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
+}
+
+.btn-outline, .btn-outline-primary {
+  background-color: transparent;
+  border: 1.5px solid #13294B;
+  color: #13294B;
+  font-weight: 600;
+}
+
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: #13294B;
+  color: #FFFFFF;
+}
+
+/* UNC button utility classes */
+.btn-unc--solid {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: #13294B;
+  color: #FFFFFF;
+  border: 1.5px solid #13294B;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-unc--solid:hover {
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
+}
+
+.btn-unc--outline {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: transparent;
+  color: #13294B;
+  border: 1.5px solid #13294B;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-unc--outline:hover {
+  background-color: #13294B;
+  color: #FFFFFF;
+  border-color: #13294B;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.content a,
+main a,
+p a,
+li a,
+strong a,
+em a,
+blockquote a,
+.card a,
+.nav-item a,
+.about-link {
+  color: #13294B !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.card a:hover,
+.about-link:hover {
+  color: #4B9CD3 !important;
+}
+
+/* Better contrast and visibility for about links */
+div.quarto-about-trestles .about-link {
+  color: #4B9CD3 !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: #13294B !important;
+  text-decoration: underline;
+}
+
+/* Remove all underlines from navbar links */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Fix low-contrast hover on navbar brand */
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #13294B !important;
+  text-decoration: none;
+}
+
+/* Navbar brand (site title): visible by default and on hover */
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #13294B !important;
+  text-decoration: none;
+}
+
+/* Navbar menu items: same hover contrast and style */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #13294B !important;
+  text-decoration: none;
+}
+
+/* FORCE the navbar background to UNC blue, overriding Flatly */
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+  background-color: #4B9CD3 !important;
+}
+
+/* ONLY affect the left column of the landing page */
+div.quarto-about-trestles .about-entity {
+  background-color: #4B9CD3 !important;
+  color: white !important;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+/* Ensure contact links are visible */
+div.quarto-about-trestles .about-link {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+/* Remove all underlines from navbar links */
+div.quarto-about-trestles .about-link:hover {
+  color: #13294B !important;
+  text-decoration: none;
+}
+
+/* Career timeline items */
+.career-items div {
+  line-height: 1.5;
+  margin-bottom: 0.4em;
+}
+
+/* Fully remove underline from all links in the career timeline, including hover */
+.career-timeline a,
+.career-timeline a:hover,
+.career-timeline a:link,
+.career-timeline a:visited,
+.career-timeline a:active,
+.career-timeline * a,
+.career-timeline * a:hover {
+  all: unset !important; /* nukes all default/link styles */
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  cursor: text; /* optional: or 'default' to avoid pointer */
+}
+
+/* Highlighting utility classes */
+.highlight-affiliation {
+  color: #13294B;
+  font-weight: 600;
+}
+
+.highlight-role {
+  color: #13294B;
+  font-weight: bold;
+}
+
+.highlight-award {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.highlight-pub {
+  font-style: italic;
+  color: #1a237e;
+  background-color: #f3f4fd;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-project {
+  background-color: #f0f7ff;
+  color: #0b3d91;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-profile img.hero-img {
+  width: auto;
+  max-height: 180px;
+  border-radius: 50%;
+  display: block;
+}
+
+.hero-contacts {
+  flex: 1 1 250px;
+  font-size: 0.95em;
+  margin-top: 0.25rem;
+}
+
+.hero-contacts ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hero-contacts li {
+  margin-bottom: 0.4em;
+}
+
+.hero-contacts i {
+  margin-right: 0.5em;
+  color: #13294B;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95em;
+  }
+  h1, .h1 {
+    font-size: 1.6em;
+  }
+  h2, .h2 {
+    font-size: 1.3em;
+  }
+  h3, .h3 {
+    font-size: 1.1em;
+  }
+  .hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dbe9f6;
+  }
+  .hero-profile img.hero-img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+  .hero-contacts {
+    margin: 0 !important;
+    padding: 0.6rem 0.8rem;
+    background-color: #eaf4fb;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 0.9em;
+    display: block;
+  }
+  .hero-contacts p {
+    margin: 0;
+    padding: 0;
+  }
+  blockquote {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95em;
+  }
+}
+/* Fix visibility for Quarto about links in trestles layout */
+div.quarto-about-trestles .about-link {
+  color: #13294B !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: #4B9CD3 !important;
+  text-decoration: underline;
+}
+
+/* Optional: Style icons too */
+div.quarto-about-trestles .about-link i,
+div.quarto-about-trestles .about-link svg {
+  color: #13294B !important;
+}
+
+.custom-about-block {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.custom-about-image img {
+  border-radius: 50%;
+  max-width: 140px;
+  height: auto;
+}
+
+.custom-about-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-about-links li {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.custom-about-links i {
+  margin-right: 0.5em;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85em;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Event Type Colors */
+.badge-panel {
+  background-color: #4682B4;
+} /* Steel Blue */
+.badge-talk {
+  background-color: #32CD32;
+} /* Lime Green */
+.badge-workshop {
+  background-color: #DAA520;
+} /* Goldenrod */
+.badge-lecture {
+  background-color: #8A2BE2;
+} /* Purple */
+.badge-podcast {
+  background-color: #FF69B4;
+} /* Hot Pink */
+.badge-moderator {
+  background-color: #FF8C00;
+} /* Dark Orange */
+.badge-participant {
+  background-color: #A0522D;
+} /* Sienna */
+.badge-publication {
+  background-color: #555555;
+} /* Gray */
+
+/*# sourceMappingURL=styles.css.map */
