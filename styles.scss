@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 /*-- scss:defaults --*/
 
 $primary-color: #5480a7;
@@ -142,19 +141,22 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .cfa-blue {
-  color: #205493 !important;
-  background-color: #e6eef5;
-  padding: 1px 5px;
-  border-radius: 4px;
-  font-weight: 600;
+  background-color: #e7f0fa !important;
+
+  a {
+    color: #1a73e8 !important; // Google blue-ish
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .d4g-roundtables {
-  color: #1a3c5a !important;               // dark slate blue
-  background-color: #eaf4fb;              // very light blue tint
-  padding: 1px 5px;
+  background-color: #ffe066; // soft yellow example
+  padding: 0 4px;
   border-radius: 4px;
-  font-weight: 600;
 }
 
 /* Layout */
@@ -589,3 +591,51 @@ div.quarto-about-trestles .about-link:hover {
     font-size: 0.95em;
   }
 }
+
+/* Fix visibility for Quarto about links in trestles layout */
+
+div.quarto-about-trestles .about-link {
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: $unc-blue !important;
+  text-decoration: underline;
+}
+
+/* Optional: Style icons too */
+div.quarto-about-trestles .about-link i,
+div.quarto-about-trestles .about-link svg {
+  color: $unc-dark-blue !important;
+}
+
+.custom-about-block {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.custom-about-image img {
+  border-radius: 50%;
+  max-width: 140px;
+  height: auto;
+}
+
+.custom-about-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-about-links li {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.custom-about-links i {
+  margin-right: 0.5em;
+}
+
