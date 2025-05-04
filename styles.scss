@@ -81,6 +81,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 /* School colors */
 .carolina-blue { color: #4B9CD3 !important; }
+.carolina-dark {
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+}
 .jhu-blue { color: #002D72 !important; }
 .harvard-crimson { color: #A51C30 !important; }
 .georgetown-blue { color: #041E42 !important; }
@@ -393,5 +397,42 @@ div.quarto-about-trestles .about-link:hover {
   border-bottom: none !important;
   box-shadow: none !important;
   cursor: text; /* optional: or 'default' to avoid pointer */
+}
+
+/* Highlighting utility classes */
+
+.highlight-affiliation {
+  color: $primary-color-dark;
+  font-weight: 600;
+}
+
+.highlight-role {
+  color: $unc-dark-blue;
+  font-weight: bold;
+}
+
+.highlight-award {
+  background-color: #e8eaf6; // very soft indigo/lavender
+  color: #1a237e;            // strong indigo text
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.highlight-pub {
+  font-style: italic;
+  color: #1a237e;                  // same indigo text as award for visual coherence
+  background-color: #f3f4fd;       // very soft lavender-tinted blue
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-project {
+  background-color: #f0f7ff; // very light blue
+  color: #0b3d91;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
 }
 

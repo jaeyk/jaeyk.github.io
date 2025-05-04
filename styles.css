@@ -42,6 +42,11 @@ h1, .h1, h2, .h2, h3, .h3 {
   color: #4B9CD3 !important;
 }
 
+.carolina-dark {
+  color: #13294B !important;
+  font-weight: 600;
+}
+
 .jhu-blue {
   color: #002D72 !important;
 }
@@ -394,6 +399,42 @@ div.quarto-about-trestles .about-link:hover {
   border-bottom: none !important;
   box-shadow: none !important;
   cursor: text; /* optional: or 'default' to avoid pointer */
+}
+
+/* Highlighting utility classes */
+.highlight-affiliation {
+  color: #13294B;
+  font-weight: 600;
+}
+
+.highlight-role {
+  color: #13294B;
+  font-weight: bold;
+}
+
+.highlight-award {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.highlight-pub {
+  font-style: italic;
+  color: #1a237e;
+  background-color: #f3f4fd;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-project {
+  background-color: #f0f7ff;
+  color: #0b3d91;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
