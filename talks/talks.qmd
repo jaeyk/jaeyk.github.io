@@ -3,97 +3,58 @@ title: "Travel & Talks"
 format: html
 ---
 
-If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [the form here](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you! 
+If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you!
+
+:::{.cell}
 
 <details open>
 <summary><strong>2025</strong></summary>
 
-#### Invited talks 
-
-1. June 27-28, AI & Humanity: Where We Are, and Where We Are Heading, Korea Foundation for Advanced Studies *(scheduling)*.
-
-1. June 26, Department of Political Science and International Relations, Seoul National University *(scheduling)*.
-
-1. June 20, Department of Political Science and International Relations, Korea University *(scheduling)*.
-
-1. June 19, KIXLAB, KAIST *(scheduled)*. 
-
-1. June 17, Entangled with Books *(locally owned independent bookstore in Seoul, scheduled)*.
-
-1. June 13, Department of Political Science and International Relations, Yonsei University *(scheduled)*.
-
-1. June 10, Graduate School of International Studies, Korea University *(scheduled)*.
-
-1. May, [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast, APSA Civic Engagement Section *(scheduling)*.
-
-1. April 7, NLP for Computational Social Science, Johns Hopkins. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf)
-
-1. February 26, [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern.
-
-#### Conference presentations 
-
-1. September 11-14, American Political Science Association (APSA) annual meeting, Vancouver *(scheduling)*.
-
-1. June 26, Public Management Research Conference (PMRC), Seoul National University *(scheduled)*.
-
-1. May 29-30, [Code for America Summit](https://summit.codeforamerica.org/), Washington DC *(scheduling)*.
+| Date       | Type         | Event                                                                 | Place                |
+|------------|--------------|------------------------------------------------------------------------|----------------------|
+| Sep 11–14  | Panel   | American Political Science Association (APSA) *(scheduling)*                                     | Vancouver, Canada    |
+| Jun 27–28  | Panel        | AI & Humanity, Korea Foundation for Advanced Studies *(scheduling)*    | Seoul, South Korea   |
+| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National Univ *(scheduling)*     | Seoul, South Korea   |
+| Jun 26     | Panel   | Public Management Research Conference (PMRC), Seoul National University *(scheduled)*                          | Seoul, South Korea   |
+| Jun 20     | Workshop         | Dept of Political Science & IR, Korea University *(scheduling)*                                       | Seoul, South Korea   |
+| Jun 19     | Talk         | KIXLAB, KAIST *(scheduled)*                                           | Daejeon, South Korea |
+| Jun 17     | Talk         | Entangled with Books *(locally owned independent bookstore in Seoul, scheduled)*                                    | Seoul, South Korea   |
+| Jun 13     | Talk         | Dept of Political Science & IR, Yonsei University *(scheduled)*                                       | Seoul, South Korea   |
+| Jun 10     | Talk         | Graduate School of International Studies, Korea University *(scheduled)*                                        | Seoul, South Korea   |
+| May 29–30  | Panel  | [Code for America Summit](https://summit.codeforamerica.org/) *(scheduling)* | Washington, DC, USA  |
+| May (TBD)  | Podcast      | [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast *(scheduling)* | Virtual               |
+| Apr 7      | Guest Lecture| NLP for CSS, Johns Hopkins [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf) | Virtual |
+| Feb 26     | Talk         | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern | Evanston, IL, USA    |
 
 </details>
 
 <details>
 <summary><strong>2024</strong></summary>
 
-#### Invited talks 
-
-1. November 19, Democracy by the Numbers, Johns Hopkins.
-
-1. October 24, Better Government Lab Research Retreat, Michigan.
-
-1. October 23, [American Politics and Public Policy Workshop](https://csap.yale.edu/american-politics-public-policy-workshop), Yale University.
-
-1. October 15, Data-driven Public Administration and Management, Korea Foundation for Advanced Studies.
-
-1. October 9, [American Politics Workshop](https://polisci.msu.edu/news-events/events/kim-lecture.html), Michigan State University.
-
-1. September 26, Data Science Special Lecture, KDI School of Public Policy and Management.
-
-1. September 17, Identity and Politics Workshop, UC Berkeley.
-
-1. August 28, Information Science Seminar, University of Colorado, Boulder.
-
-1. June 19, Korean Summer Workshop on Causal Inference: Causal Inference in Practice. 
-
-1. June 14, [Toronto Data Workshop, University of Toronto](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/).  [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [\[talk\]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ)
-
-1. June 9-13, [Summer Institute in Migration Research Methods](https://bimi.berkeley.edu/summer-institute/2024-summer-institute-migration-research-methods), UC Berkeley. 
-
-1. April 23, P3 Lab Seminar, SNF Agora Institute, Johns Hopkins.
-
-1. April 19, [Minnesota Political Methodology Colloquium](https://sites.google.com/umn.edu/mpmc/schedule) (MPMC), University of Minnesota. [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf)
-
-1. March 14, Data Science Across Industries Panel, PhD Pathways, Stanford. 
-
-1. February 15, Race, Ethnicity, Politics, & Society (REPS) Lab, UCLA.
-
-1. January 11, [Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), University of Washington. 
-
-#### Conference presentations 
-
-1. November 20-23, Association for Public Policy Analysis and Management (APPAM) annual meeting, National Harbor, Maryland.
-
-1. September 3-7, American Political Science Association (APSA) annual meeting, Philadelphia.
-
-1. July 29, [The 4th Annual Research Conference on American Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference).  [\[paper\]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf)
-
-1. July 16-19, [The International Conference for Computational Social Science (IC2S2) tutorial](https://ic2s2-2024.org/tutorials), University of Pennsylvania, Philadelphia. [\[website\]](https://github.com/jaeyk/ic2s2-training-css-tutorial)
-    
-1. June 25-28, Public Management Research Conference (PMRC), University of Washington, Seattle.
-    -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets_PMRC_kim.pdf) for pre-conference on civic tech
-    -   [\[slides\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_PMRC_kim.pdf) for plenary session on the politics of administrative burden
-
-1. March 28-30, Western Political Science Association (WPSA) annual meeting, Vancouver.
-
-1. February 16, Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate University & UC Riverside.  
+| Date       | Type         | Event                                                                 | Place                |
+|------------|--------------|------------------------------------------------------------------------|----------------------|
+| Nov 20–23  | Panel   | Association for Public Policy Analysis and Management (APPAM)                                                  | National Harbor, MD  |
+| Nov 19     | Guest lecture         | Democracy by the Numbers, Johns Hopkins                               | Virtual   |
+| Oct 24     | Talk         | Better Government Lab Retreat, Ford School of Public Policy, University of Michigan                                         | Ann Arbor, MI, USA   |
+| Oct 23     | Talk         | [American Politics & Public Policy Workshop](https://csap.yale.edu/american-politics-public-policy-workshop), Yale | New Haven, CT, USA   |
+| Oct 15     | Talk         | Data-driven Public Administration and Management, Korea Foundation for Advanced Studies                                 | Virtual   |
+| Oct 9      | Talk         | [American Politics Workshop](https://polisci.msu.edu/news-events/events/kim-lecture.html), Michigan State University | East Lansing, MI, USA|
+| Sep 26     | Talk         | Data Science Lecture, KDI School                                       | Virtual  |
+| Sep 17     | Talk         | Identity and Politics Workshop, UC Berkeley                           | Berkeley, CA, USA    |
+| Sep 3–7    | Panel   | American Political Science Association (APSA)                                                    | Philadelphia, PA, USA|
+| Aug 28     | Talk         | Information Science Seminar, CU Boulder                         | Virtual     |
+| Jul 29     | Panel   | [Conference on Americana Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference) [[paper]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf) | Virtual  |
+| Jul 16–19  | Panel  | The International Conference for Computational Social Science (IC2S2) [[website]](https://github.com/jaeyk/ic2s2-training-css-tutorial) | Philadelphia, PA, USA|
+| Jun 25–28  | Panel  | Public Management Research Conference (PMRC), UW [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets_PMRC_kim.pdf) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_PMRC_kim.pdf) | Seattle, WA, USA     |
+| Jun 19     | Talk         | Korean Summer Workshop on Causal Inference                            | Virtual   |
+| Jun 14     | Talk         | [Toronto Data Workshop](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [[talk]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ) | Virtual      |
+| Jun 9–13   | Workshop   | [Summer Institute in Migration Research Methods](https://bimi.berkeley.edu/summer-institute/2024-summer-institute-migration-research-methods) | Berkeley, CA, USA    |
+| Apr 23     | Talk         | P3 Lab Seminar, SNF Agora Institute, Johns Hopkins                    | Virtual  |
+| Apr 19     | Talk         |  Minnesota Political Methodology Colloquium [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf) | Virtual |
+| Mar 28–30  | Panel   | Western Political Science Association                                                    | Vancouver, Canada    |
+| Mar 14     | Panel     | Data Science Across Industries, PhD Pathways, Stanford                                                | Stanford, CA, USA    |
+| Feb 16     | Panel   |  Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate School & UC Riverside                            | Claremont, CA, USA   |
+| Feb 15     | Talk         | REPS Lab, UCLA                                                        | Virtual |
+| Jan 11     | Talk         | [UW Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), UW | Virtual    |
 
 </details>
-

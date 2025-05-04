@@ -1,27 +1,21 @@
-#!/bin/sh  # Specifies that this script should be executed using the shell
+#!/bin/sh
 
-# Change to the parent directory
 echo "Changing to the parent directory..."
-cd .. 
-echo "Now in the parent directory."
+cd ..
 
-# Copy the CV file from the Downloads folder to the GitHub.io directory
-echo "Copying CV from Downloads to the GitHub.io directory..."
+echo "Copying CV..."
 cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ~/Documents/jaeyk.github.io/.
-echo "CV successfully copied."
 
-# Change to the GitHub.io directory
-echo "Changing to the GitHub.io directory..."
+echo "Switching to the website directory..."
 cd ~/Documents/jaeyk.github.io/
-echo "Now in the GitHub.io directory."
 
-# Compile SCSS to CSS
-echo "Compiling SCSS to CSS..."
+echo "Compiling SCSS..."
 sass styles.scss styles.css
-echo "SCSS compilation complete."
 
-# Publish the Quarto website to GitHub Pages
-echo "Publishing the Quarto website to GitHub Pages..."
+echo "Rendering the Quarto site..."
+quarto render
+
+echo "Publishing to GitHub Pages..."
 quarto publish gh-pages --no-prompt
 
-echo "All files copied, SCSS compiled, website rendered, and changes pushed to GitHub Pages."
+echo "Done!"

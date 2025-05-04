@@ -1,50 +1,12 @@
+@charset "UTF-8";
 /*-- scss:defaults --*/
-
-$primary-color: #5480a7;
-$blue: #5480a7;
-$primary-color-dark: #2c3f51;
-$secondary-color: #56A754;
-$secondary-color-trans: rgba(86, 167, 84, 0.2);
-$tertiary-color: #A77B54;
-
-$theme-black: #4c4c4c;
-$theme-white: white;
-$theme-grey: #e9ecef;
-
-$theme-berkeley: #003262;
-
-// UNC Carolina Theme Colors
-$unc-blue: #4B9CD3;
-$unc-dark-blue: #13294B;
-$unc-white: #FFFFFF;
-$unc-gray: #E0E0E0;
-
-// Assigning UNC colors
-$primary-color: $unc-blue;
-$primary-color-dark: $unc-dark-blue;
-$secondary-color: $unc-gray;
-$theme-white: $unc-white;
-$link-color: $unc-dark-blue;
-
-$body-bg: $theme-white;
-$body-color: $theme-black;
-$headings-color: $theme-black;
-
-$navbar-font-family: "Ubuntu";
-$headings-font-family: 'Montserrat', sans-serif;
-$font-family-base: 'Lato', sans-serif;
-
-// font imports
-
-
 /*-- scss:rules --*/
-
 body {
-  font-family: $font-family-base;
+  font-family: "Lato", sans-serif;
 }
 
 div.quarto-post .metadata {
-  font-family: "Ubuntu", $font-family-base, sans-serif;
+  font-family: "Ubuntu", "Lato", sans-serif, sans-serif;
 }
 
 #title-block-header {
@@ -52,40 +14,36 @@ div.quarto-post .metadata {
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  font-family: $headings-font-family;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
 /* Navbar */
-//.navbar,
-//.navbar-dark {
-//  background-color: darken($primary-color, 5%) !important;
-//}
-
 .navbar.navbar-expand-lg.navbar-dark.bg-primary {
   background-color: #4B9CD3 !important;
 }
 
 .navbar .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link {
-  color: $theme-white !important;
+  color: #FFFFFF !important;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: $secondary-color !important;
+  color: #E0E0E0 !important;
 }
 
 /* School colors */
-.carolina-blue { 
-  color: #4B9CD3 !important; 
+.carolina-blue {
+  color: #4B9CD3 !important;
   background-color: #e8edf7;
   padding: 1px 5px;
   border-radius: 4px;
   font-weight: 600;
 }
+
 .carolina-dark {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   font-weight: 600;
 }
 
@@ -139,43 +97,54 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 .cfa-blue {
   background-color: #e7f0fa !important;
-
-  a {
-    color: #1a73e8 !important; // Google blue-ish
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
+}
+.cfa-blue a {
+  color: #1a73e8 !important;
+  text-decoration: none;
+}
+.cfa-blue a:hover {
+  text-decoration: underline;
 }
 
 .d4g-roundtables {
-  background-color: #ffe066; // soft yellow example
+  background-color: #ffe066;
   padding: 0 4px;
   border-radius: 4px;
 }
 
 /* Layout */
-.sidebar, .nav-page { max-width: 250px; }
-.page-columns { gap: 2rem; }
+.sidebar, .nav-page {
+  max-width: 250px;
+}
 
-.sidebar { flex: 0 0 20%; }
-.content { flex: 1 1 80%; }
+.page-columns {
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+}
+
+.content {
+  flex: 1 1 80%;
+}
 
 dl.auto-numbered {
   counter-reset: number;
   margin-left: 1em;
 }
+
 dl.auto-numbered dt::before {
   counter-increment: number;
   content: counter(number) ". ";
   font-weight: bold;
 }
+
 dl.auto-numbered dt,
 dl.auto-numbered dd {
   display: inline;
 }
+
 dl.auto-numbered dd::before {
   content: " ";
 }
@@ -192,12 +161,9 @@ dl.auto-numbered dd::before {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
-//.career-timeline a {
-//  color: $unc-blue !important;
-//  text-decoration: underline;
-//}
+
 .career-timeline a:hover {
-  color: $unc-blue !important;
+  color: #4B9CD3 !important;
 }
 
 /* Timeline toggle */
@@ -210,18 +176,21 @@ dl.auto-numbered dd::before {
   margin-bottom: 0.5em;
   display: block;
 }
+
 .timeline-section summary::before {
   content: "▶";
   position: absolute;
   left: 0;
   top: 0.1em;
   font-size: 0.9em;
-  color: $primary-color-dark;
+  color: #13294B;
   transition: transform 0.2s ease;
 }
+
 .timeline-section[open] summary::before {
   transform: rotate(90deg);
 }
+
 .timeline-section summary::-webkit-details-marker,
 .timeline-section summary::marker {
   display: none;
@@ -241,7 +210,7 @@ main a,
 div.metadata a,
 .callout-note a,
 .callout-tip a {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: underline;
 }
 
@@ -253,33 +222,36 @@ main a:hover,
 div.metadata a:hover,
 .callout-note a:hover,
 .callout-tip a:hover {
-  color: $unc-blue !important;
+  color: #4B9CD3 !important;
   text-decoration: underline;
 }
 
 /* Buttons */
 .btn, .about-link {
-  background-color: $unc-dark-blue;
-  border: 1.5px solid $unc-dark-blue;
-  color: $theme-white;
+  background-color: #13294B;
+  border: 1.5px solid #13294B;
+  color: #FFFFFF;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
+
 .btn:hover, .about-link:hover {
-  background-color: $unc-blue;
-  border-color: $unc-blue;
-  color: $theme-white;
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
 }
+
 .btn-outline, .btn-outline-primary {
   background-color: transparent;
-  border: 1.5px solid $unc-dark-blue;
-  color: $unc-dark-blue;
+  border: 1.5px solid #13294B;
+  color: #13294B;
   font-weight: 600;
 }
+
 .btn-outline:hover, .btn-outline-primary:hover {
-  background-color: $unc-dark-blue;
-  color: $theme-white;
+  background-color: #13294B;
+  color: #FFFFFF;
 }
 
 /* UNC button utility classes */
@@ -288,18 +260,19 @@ div.metadata a:hover,
   padding: 0.4em 0.85em;
   font-size: 0.95em;
   font-weight: 600;
-  background-color: $unc-dark-blue;
-  color: $theme-white;
-  border: 1.5px solid $unc-dark-blue;
+  background-color: #13294B;
+  color: #FFFFFF;
+  border: 1.5px solid #13294B;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
 }
+
 .btn-unc--solid:hover {
-  background-color: $unc-blue;
-  border-color: $unc-blue;
-  color: $theme-white;
+  background-color: #4B9CD3;
+  border-color: #4B9CD3;
+  color: #FFFFFF;
 }
 
 .btn-unc--outline {
@@ -308,20 +281,20 @@ div.metadata a:hover,
   font-size: 0.95em;
   font-weight: 600;
   background-color: transparent;
-  color: $unc-dark-blue;
-  border: 1.5px solid $unc-dark-blue;
+  color: #13294B;
+  border: 1.5px solid #13294B;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
 }
+
 .btn-unc--outline:hover {
-  background-color: $unc-dark-blue;
-  color: $theme-white;
-  border-color: $unc-dark-blue;
+  background-color: #13294B;
+  color: #FFFFFF;
+  border-color: #13294B;
 }
 
-// Override green link color from flatly
 a,
 a:link,
 a:visited,
@@ -337,7 +310,7 @@ blockquote a,
 .card a,
 .nav-item a,
 .about-link {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: underline;
 }
 
@@ -346,19 +319,19 @@ a:hover,
 main a:hover,
 .card a:hover,
 .about-link:hover {
-  color: $unc-blue !important;
+  color: #4B9CD3 !important;
 }
 
 /* Better contrast and visibility for about links */
 div.quarto-about-trestles .about-link {
-  color: $unc-blue !important;
+  color: #4B9CD3 !important;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 div.quarto-about-trestles .about-link:hover {
-  color: $unc-dark-blue !important;  // improves contrast on hover
+  color: #13294B !important;
   text-decoration: underline;
 }
 
@@ -381,7 +354,7 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: none;
 }
 
@@ -394,7 +367,7 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: none;
 }
 
@@ -408,7 +381,7 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: none;
 }
 
@@ -419,7 +392,7 @@ div.quarto-about-trestles .about-link:hover {
 
 /* ONLY affect the left column of the landing page */
 div.quarto-about-trestles .about-entity {
-  background-color: $unc-blue !important;
+  background-color: #4B9CD3 !important;
   color: white !important;
   padding: 1.5em;
   border-radius: 8px;
@@ -436,7 +409,7 @@ div.quarto-about-trestles .about-link {
 
 /* Remove all underlines from navbar links */
 div.quarto-about-trestles .about-link:hover {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   text-decoration: none;
 }
 
@@ -463,20 +436,19 @@ div.quarto-about-trestles .about-link:hover {
 }
 
 /* Highlighting utility classes */
-
 .highlight-affiliation {
-  color: $primary-color-dark;
+  color: #13294B;
   font-weight: 600;
 }
 
 .highlight-role {
-  color: $unc-dark-blue;
+  color: #13294B;
   font-weight: bold;
 }
 
 .highlight-award {
-  background-color: #e8eaf6; // very soft indigo/lavender
-  color: #1a237e;            // strong indigo text
+  background-color: #e8eaf6;
+  color: #1a237e;
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 600;
@@ -485,14 +457,14 @@ div.quarto-about-trestles .about-link:hover {
 
 .highlight-pub {
   font-style: italic;
-  color: #1a237e;                  // same indigo text as award for visual coherence
-  background-color: #f3f4fd;       // very soft lavender-tinted blue
+  color: #1a237e;
+  background-color: #f3f4fd;
   padding: 1px 5px;
   border-radius: 4px;
 }
 
 .highlight-project {
-  background-color: #f0f7ff; // very light blue
+  background-color: #f0f7ff;
   color: #0b3d91;
   font-weight: 600;
   padding: 1px 4px;
@@ -509,7 +481,7 @@ div.quarto-about-trestles .about-link:hover {
 
 .hero-profile img.hero-img {
   width: auto;
-  max-height: 180px;  // Adjust this value until the image height visually aligns with the link block
+  max-height: 180px;
   border-radius: 50%;
   display: block;
 }
@@ -532,7 +504,7 @@ div.quarto-about-trestles .about-link:hover {
 
 .hero-contacts i {
   margin-right: 0.5em;
-  color: $unc-dark-blue;
+  color: #13294B;
   font-size: 1em;
   vertical-align: middle;
 }
@@ -541,19 +513,15 @@ div.quarto-about-trestles .about-link:hover {
   body {
     font-size: 0.95em;
   }
-
   h1, .h1 {
     font-size: 1.6em;
   }
-
   h2, .h2 {
     font-size: 1.3em;
   }
-
   h3, .h3 {
     font-size: 1.1em;
   }
-
   .hero-flex {
     flex-direction: column;
     align-items: flex-start;
@@ -561,51 +529,45 @@ div.quarto-about-trestles .about-link:hover {
     padding-bottom: 1rem;
     border-bottom: 1px solid #dbe9f6;
   }
-
   .hero-profile img.hero-img {
     width: 100px;
     margin-bottom: 0.5rem;
   }
-
   .hero-contacts {
-    margin: 0 !important;                          // Remove all margin
+    margin: 0 !important;
     padding: 0.6rem 0.8rem;
     background-color: #eaf4fb;
     border-radius: 6px;
     width: 100%;
     font-size: 0.9em;
-    display: block;                     // Ensure block formatting
+    display: block;
   }
-
   .hero-contacts p {
     margin: 0;
-    padding: 0;                         // Remove internal spacing
+    padding: 0;
   }
-
   blockquote {
-    margin-top: 0.5rem;                // Adjust spacing here
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 0.95em;
   }
 }
-
 /* Fix visibility for Quarto about links in trestles layout */
-
 div.quarto-about-trestles .about-link {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
   font-weight: 600;
   text-decoration: none;
 }
 
 div.quarto-about-trestles .about-link:hover {
-  color: $unc-blue !important;
+  color: #4B9CD3 !important;
   text-decoration: underline;
 }
 
 /* Optional: Style icons too */
 div.quarto-about-trestles .about-link i,
 div.quarto-about-trestles .about-link svg {
-  color: $unc-dark-blue !important;
+  color: #13294B !important;
 }
 
 .custom-about-block {
@@ -646,13 +608,29 @@ div.quarto-about-trestles .about-link svg {
 }
 
 /* Event Type Colors */
-.badge-panel       { background-color: #4682B4; }  /* Steel Blue */
-.badge-talk        { background-color: #32CD32; }  /* Lime Green */
-.badge-workshop    { background-color: #DAA520; }  /* Goldenrod */
-.badge-lecture     { background-color: #8A2BE2; }  /* Purple */
-.badge-podcast     { background-color: #FF69B4; }  /* Hot Pink */
-.badge-moderator   { background-color: #FF8C00; }  /* Dark Orange */
-.badge-participant { background-color: #A0522D; }  /* Sienna */
-.badge-publication { background-color: #555555; }  /* Gray */
+.badge-panel {
+  background-color: #4682B4;
+} /* Steel Blue */
+.badge-talk {
+  background-color: #32CD32;
+} /* Lime Green */
+.badge-workshop {
+  background-color: #DAA520;
+} /* Goldenrod */
+.badge-lecture {
+  background-color: #8A2BE2;
+} /* Purple */
+.badge-podcast {
+  background-color: #FF69B4;
+} /* Hot Pink */
+.badge-moderator {
+  background-color: #FF8C00;
+} /* Dark Orange */
+.badge-participant {
+  background-color: #A0522D;
+} /* Sienna */
+.badge-publication {
+  background-color: #555555;
+} /* Gray */
 
-
+/*# sourceMappingURL=styles.css.map */
