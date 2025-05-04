@@ -478,12 +478,27 @@ div.quarto-about-trestles .about-link:hover {
   .hero-flex {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dbe9f6;
   }
   .hero-profile img.hero-img {
     width: 100px;
+    margin-bottom: 0.5rem;
   }
   .hero-contacts {
-    margin-top: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    background-color: #eaf4fb;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .hero-contacts p {
+    margin: 0;
+  }
+  blockquote {
+    margin-top: 0.75rem;
   }
 }
 
