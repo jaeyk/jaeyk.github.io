@@ -534,7 +534,7 @@ div.quarto-about-trestles .about-link:hover {
     margin-bottom: 0.5rem;
   }
   .hero-contacts {
-    margin: 0;
+    margin: 0 !important;
     padding: 0.6rem 0.8rem;
     background-color: #eaf4fb;
     border-radius: 6px;
