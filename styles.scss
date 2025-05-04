@@ -569,22 +569,23 @@ div.quarto-about-trestles .about-link:hover {
   }
 
   .hero-contacts {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    background-color: #eaf4fb;
+    margin: 0;                          // Remove all margin
     padding: 0.6rem 0.8rem;
+    background-color: #eaf4fb;
     border-radius: 6px;
     width: 100%;
     font-size: 0.9em;
+    display: block;                     // Ensure block formatting
   }
 
   .hero-contacts p {
     margin: 0;
+    padding: 0;                         // Remove internal spacing
   }
 
   blockquote {
-    margin-top: 0.75rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;                // Adjust spacing here
+    margin-bottom: 0.5rem;
     font-size: 0.95em;
   }
 }
