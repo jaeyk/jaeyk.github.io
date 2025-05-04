@@ -40,6 +40,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 /* School colors */
 .carolina-blue {
   color: #4B9CD3 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .carolina-dark {
@@ -47,34 +51,67 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-weight: 600;
 }
 
-.jhu-blue {
-  color: #002D72 !important;
-}
-
 .harvard-crimson {
   color: #A51C30 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.jhu-blue {
+  color: #002D72 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .georgetown-blue {
   color: #041E42 !important;
+  background-color: #e6eaf2;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .michigan-maize {
-  color: #FFCB05 !important;
+  color: #00274C !important;
+  background-color: #fff9e0;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .michigan-blue {
   color: #00274C !important;
-  font-weight: 600;
-}
-
-.cfa-blue {
-  color: #205493 !important;
+  background-color: #e5ecf6;
+  padding: 1px 5px;
+  border-radius: 4px;
   font-weight: 600;
 }
 
 .berkeley-blue {
   color: #003262 !important;
+  background-color: #eaf1f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  color: #205493 !important;
+  background-color: #e6eef5;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.d4g-roundtables {
+  color: #1a3c5a !important;
+  background-color: #eaf4fb;
+  padding: 1px 5px;
+  border-radius: 4px;
   font-weight: 600;
 }
 
