@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 /*-- scss:defaults --*/
 
 $primary-color: #5480a7;
@@ -31,19 +32,19 @@ $body-color: $theme-black;
 $headings-color: $theme-black;
 
 $navbar-font-family: "Ubuntu";
-$headings-font-family: "Ubuntu";
-$font-family-base: "Ubuntu";
+$headings-font-family: 'Montserrat', sans-serif;
+$font-family-base: 'Lato', sans-serif;
 
 // font imports
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+
+
 
 /*-- scss:rules --*/
 
 body {
-  font-family: "Ubuntu", $font-family-base, sans-serif;
+  font-family: $font-family-base;
 }
 
 div.quarto-post .metadata {
@@ -55,7 +56,7 @@ div.quarto-post .metadata {
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  font-family: "Ubuntu", $font-family-base, sans-serif;
+  font-family: $headings-font-family;
   font-weight: 800;
 }
 
@@ -570,3 +571,26 @@ div.quarto-about-trestles .about-link:hover {
     font-size: 0.95em;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95em; // or 0.9em if you want it smaller
+  }
+
+  h1, .h1 {
+    font-size: 1.6em;
+  }
+
+  h2, .h2 {
+    font-size: 1.3em;
+  }
+
+  h3, .h3 {
+    font-size: 1.1em;
+  }
+
+  .hero-contacts {
+    font-size: 0.9em; // scale down sidebar info too
+  }
+}
+
