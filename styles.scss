@@ -653,6 +653,14 @@ div.quarto-about-trestles .about-link svg {
 .badge-podcast     { background-color: #FF69B4; }  /* Hot Pink */
 .badge-moderator   { background-color: #FF8C00; }  /* Dark Orange */
 .badge-participant { background-color: #A0522D; }  /* Sienna */
-.badge-publication { background-color: #555555; }  /* Gray */
 
+.badge-publication {
+  background-color: #1a237e;          // Deep indigo for strong contrast
+  color: #ffffff;                     // White text
+  border: 1px solid #c5cae9;          // Soft indigo border
+  font-style: italic;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.3);  // Subtle glow
+  letter-spacing: 0.3px;
+}
 
