@@ -30,9 +30,11 @@ $body-bg: $theme-white;
 $body-color: $theme-black;
 $headings-color: $theme-black;
 
-$navbar-font-family: "Ubuntu";
-$headings-font-family: 'Montserrat', sans-serif;
-$font-family-base: 'Lato', sans-serif;
+//Tiempos-Text,Georgia,Times,Times New Roman,serif
+
+$headings-font-family: Georgia, Times, 'Times New Roman', serif;
+$navbar-font-family: Georgia, Times, 'Times New Roman', serif;
+$font-family-base: Georgia, Times, 'Times New Roman', serif;
 
 // font imports
 
@@ -44,7 +46,7 @@ body {
 }
 
 div.quarto-post .metadata {
-  font-family: "Ubuntu", $font-family-base, sans-serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 #title-block-header {
