@@ -33,9 +33,15 @@ format:
 #       href: https://github.com/jaeyk
 ---
 
-<div class="custom-about" style="text-align: left;">
-  <img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="140" style="border-radius: 50%; margin-bottom: 0.5em;">
+::: {.custom-about style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap; text-align: left;"}
+
+<div style="flex: 0 0 auto;">
+  <img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="140" style="border-radius: 50%;" />
+</div>
+
+<div style="flex: 1 1 auto;">
   <h2 style="margin-top: 0; margin-bottom: 1em;">Jae Yeon Kim</h2>
+
   <ul style="list-style: none; padding: 0;">
     <li><i class="bi bi-envelope"></i> <a href="mailto:jkim638@jhu.edu">jkim638@jhu.edu</a></li>
     <li><i class="bi bi-envelope"></i> <a href="mailto:jaeyeonkim@hks.harvard.edu">jaeyeonkim@hks.harvard.edu</a></li>
@@ -46,7 +52,9 @@ format:
   </ul>
 </div>
 
-> *“The scientist is a communicator as well as a discoverer—sometimes even a missionary.”*  
+:::
+
+> *“The scientist is a communicator as well as a discoverer—sometimes even a missionary.”*\
 > —Herbert A. Simon
 
 Hello! I am Jae. I am a political scientist by training, a data scientist in practice, and a civic tech nerd at heart.
@@ -61,72 +69,112 @@ Previously, I worked as a Senior Data Scientist at [Code for America](https://co
 
 I am also a co-founder of the [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing), a safe and brave space where academics and practitioners come together to discuss using data for good.
 
-My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature Scientific Data*, *Perspectives on Politics* (2x), *Political Research Quarterly* (2x), *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
+My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature Scientific Data*, *Perspectives on Politics* \[2x\], *Political Research Quarterly* \[2x\], *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
 
 I am the recipient of the Emerging Scholar Award in Civic Engagement (2024) and the Best Dissertation Award in Urban and Local Politics (2022) from the American Political Science Association, as well as the Best Paper Award in Asian Pacific American Politics (2020) from the Western Political Science Association.
 
-📧 You can reach me at <a href="mailto:jkim638@jhu.edu">jkim638@jhu.edu</a> or <a href="mailto:jaeyeonkim@hks.harvard.edu">jaeyeonkim@hks.harvard.edu</a>.
+📧 You can reach me at <a href="mailto:jkim638@jhu.edu">jkim638\@jhu.edu</a> or <a href="mailto:jaeyeonkim@hks.harvard.edu">jaeyeonkim\@hks.harvard.edu</a>.
 
 📄 My most recent CV is available at <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">this link</a>.
 
---- 
+------------------------------------------------------------------------
 
-:::{.cell}
+```{=html}
+<style>
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85em;
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: 600;
+}
 
+/* Event Type Colors */
+.badge-panel       { background-color: #4682B4; }
+.badge-talk        { background-color: #32CD32; }
+.badge-workshop    { background-color: #DAA520; }
+.badge-lecture     { background-color: #8A2BE2; }
+.badge-podcast     { background-color: #FF69B4; }
+.badge-moderator   { background-color: #FF8C00; }
+.badge-participant { background-color: #A0522D; }
+
+/* Highlight publication more */
+.badge-publication {
+  background-color: #1a237e;      /* deep indigo */
+  font-style: italic;
+  border: 1px solid #c5cae9;      /* soft indigo border */
+}
+</style>
+```
+
+::::::: cell
 #### 📅 2025 News
 
-<div style="margin-top: 1.5em;"></div>
+::: {style="margin-top: 1.5em;"}
+:::
 
-If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [the form here](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you! 
+If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [the form here](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you!
 
-| Date       | Type                                                                 | Event                                                                 | Place                          |
-|------------|----------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------|
-| June 27–28 | <span class="badge badge-panel">Panel</span>                        | Knowledge Festival for All Seasons (*AI & Humanity*), Korea Foundation for Advanced Studies *(scheduling)* | Seoul, South Korea             |
-| June 26    | <span class="badge badge-panel">Panel</span>                        | Dept. of Political Science & IR, Seoul National Univ *(scheduling)*, hosted by Seo-young Silvia Kim | Seoul, South Korea             |
-| June 26    | <span class="badge badge-panel">Panel</span>                        | Public Management Research Conference (PMRC), Seoul National Univ *(scheduled)* | Seoul, South Korea             |
-| June 20    | <span class="badge badge-workshop">Workshop</span>                 | Dept. of Political Science & IR, Korea Univ *(scheduling)*, hosted by Woo Chang Kang | Seoul, South Korea             |
-| June 19    | <span class="badge badge-talk">Talk</span>                         | KIXLAB, KAIST *(scheduled)*, hosted by Juho Kim                        | Daejeon, South Korea           |
-| June 17    | <span class="badge badge-talk">Talk</span>                         | *Entangled with Books* (independent bookstore) *(scheduled)*           | Seoul, South Korea             |
-| June 13    | <span class="badge badge-talk">Talk</span>                         | Dept. of Political Science & IR, Yonsei Univ *(scheduled)*, hosted by Inbok Rhee | Seoul, South Korea             |
-| June 10    | <span class="badge badge-talk">Talk</span>                         | Graduate School of International Studies, Korea Univ *(scheduled)*, hosted by Sunkyoung Park | Seoul, South Korea             |
-| May 29–30  | <span class="badge badge-panel">Panel</span>                        | [Code for America Summit](https://summit.codeforamerica.org/agenda/) *(scheduled)* | Washington, DC, USA            |
-| May 15–16  | <span class="badge badge-participant">Participant</span>           | [Organizing Forum](https://organizing.substack.com/), USC ERI *(scheduled)* | Los Angeles, CA, USA           |
-| April 10   | <span class="badge badge-moderator">Moderator</span>               | [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables/schedule) feat. Moynihan, Block Jr., Bail, Ventura | Virtual                        |
-| April 7    | <span class="badge badge-lecture">Guest Lecture</span>             | [Johns Hopkins NLP for CSS](https://nlp-css-601-672.cs.jhu.edu/sp2025/index.html), hosted by Anjalie Field | Virtual                        |
-| April 1    | <span class="badge badge-publication">Publication</span>           | [*Journal of Policy Analysis and Management*](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007) |                                |
-| March 18   | <span class="badge badge-moderator">Moderator</span>               | [Fireside chat](https://x.com/inbok_rhee/status/1900355293432995933/photo/1) with Marshall Ganz, hosted by Korean Association of Political Parties | Virtual                        |
-| March 17   | <span class="badge badge-publication">Publication</span>           | [*Journal of Experimental Political Science*](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) |                                |
-| Feb 26     | <span class="badge badge-talk">Talk</span>                         | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern Univ | Evanston, IL, USA              |
+| Date | Type | Event | Place |
+|------------------|------------------|------------------|------------------|
+| Sep 11–14 | [Panel]{.badge .badge-panel} | American Political Science Association (APSA) *(scheduling)* | Vancouver, Canada |
+| June 27–28 | [Talk]{.badge .badge-talk} | Korea Foundation for Advanced Studies *(scheduling)* | Seoul, South Korea |
+| June 26 | [Panel]{.badge .badge-panel} | Seoul National University *(scheduling)*, hosted by Seo-young Silvia Kim | Seoul, South Korea |
+| June 26 | [Panel]{.badge .badge-panel} | Public Management Research Conference (PMRC) *(scheduled)* | Seoul, South Korea |
+| June 20 | [Workshop]{.badge .badge-workshop} | Dept. of Political Science & IR, Korea University *(scheduling)*, hosted by Woo Chang Kang | Seoul, South Korea |
+| June 19 | [Talk]{.badge .badge-talk} | KIXLAB, KAIST *(scheduled)*, hosted by Juho Kim | Daejeon, South Korea |
+| June 17 | [Talk]{.badge .badge-talk} | *Entangled with Books* (independent bookstore) *(scheduled)* | Seoul, South Korea |
+| June 13 | [Talk]{.badge .badge-talk} | Dept. of Political Science & IR, Yonsei University *(scheduled)*, hosted by Inbok Rhee | Seoul, South Korea |
+| June 10 | [Talk]{.badge .badge-talk} | Graduate School of International Studies, Korea University *(scheduled)*, hosted by Sunkyoung Park | Seoul, South Korea |
+| May 29–30 | [Panel]{.badge .badge-panel} | [Code for America Summit](https://summit.codeforamerica.org/agenda/) *(scheduled)* | Washington, DC, USA |
+| May 23 | [Participant]{.badge .badge-participant} | [Conference on Experimentation](https://datascience.stanford.edu/events/causal-science-center/stanford-causal-science-center-conference-experimentation), hosted by Stanford Causal Science Center | Palo Alto, CA, USA |
+| May 15–16 | [Participant]{.badge .badge-participant} | [Organizing Forum](https://organizing.substack.com/), hosted by USC Equity Research Institute | Los Angeles, CA, USA |
+| May 6 | [Publication]{.badge .badge-publication} | *Group Processes & Intergroup Relations* | <span class="indigo-text">Accepted</span> |
+| April 10 | [Moderator]{.badge .badge-moderator} | [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables/schedule) feat. Don Moynihan, Ray Block Jr., Chris Bail, Ilana Ventura | Virtual |
+| April 7 | [Guest Lecture]{.badge .badge-lecture} | [Johns Hopkins NLP for CSS](https://nlp-css-601-672.cs.jhu.edu/sp2025/index.html), hosted by Anjalie Field | Virtual |
+| April 1 | [Publication]{.badge .badge-publication} | [*Journal of Policy Analysis and Management*](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007) | <span class="indigo-text">Online First</span> |
+| March 18 | [Moderator]{.badge .badge-moderator} | [Fireside chat](https://x.com/inbok_rhee/status/1900355293432995933/photo/1) with Marshall Ganz, hosted by Korean Association of Political Parties | Virtual |
+| March 17 | [Publication]{.badge .badge-publication} | [*Journal of Experimental Political Science*](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) | <span class="indigo-text">Online First</span> |
+| Feb 26 | [Talk]{.badge .badge-talk} | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern University | Evanston, IL, USA |
 
-<div style="margin-top: 1.5em;"></div>
+::: {style="margin-top: 1.5em;"}
+:::
 
----
+------------------------------------------------------------------------
 
-:::{.cell}
-
+:::: cell
 This section is for those curious about my non-linear career path—it offers a simple timeline of what I’ve done since finishing my PhD.
 
 <details>
+
 <summary><strong>📘 Post-PhD Career Timeline</strong></summary>
 
-<div style="margin-top: 1.5em;"></div>
+::: {style="margin-top: 1.5em;"}
+:::
 
 ##### 🎓 Academic Roles
-- **2026–** Assistant Professor, Public Policy, UNC–Chapel Hill  
-- **2024–** Fellow, Better Government Lab, Georgetown & Michigan  
-- **2024–25** Assistant Research Scientist, SNF Agora Institute, Johns Hopkins  
-- **2024–** Research Fellow, Center for Public Leadership, Harvard Kennedy School  
-- **2022** Assistant Professor of Data Science, KDI School (South Korea)  
-- **2020–21** Pre/Postdoc Fellow, SNF Agora Institute, Johns Hopkins  
-- **2021** Ph.D., Political Science, UC Berkeley  
+
+-   **2026–** Assistant Professor, Public Policy, UNC–Chapel Hill\
+-   **2024–** Fellow, Better Government Lab, Georgetown & Michigan\
+-   **2024–25** Assistant Research Scientist, SNF Agora Institute, Johns Hopkins\
+-   **2024–** Research Fellow, Center for Public Leadership, Harvard Kennedy School\
+-   **2022** Assistant Professor of Data Science, KDI School (South Korea)\
+-   **2020–21** Pre/Postdoc Fellow, SNF Agora Institute, Johns Hopkins\
+-   **2021** Ph.D., Political Science, UC Berkeley
 
 ##### 🧑‍💻 Civic Tech Roles
-- **2024–** Fellow, Better Government Lab, Georgetown & Michigan  
-- **2024–25** Contracting Data Scientist, Code for America  
-- **2023–24** Senior Data Scientist, Code for America  
+
+-   **2024–** Fellow, Better Government Lab, Georgetown & Michigan\
+-   **2024–25** Contracting Data Scientist, Code for America\
+-   **2023–24** Senior Data Scientist, Code for America
 
 ##### 🗳️ Leadership & Advisory Roles
-- **2025–** Co-Founder, Data for Good Roundtables  
-- **2023–** Advisory Board Member, SICSS  
+
+-   **2025–** Co-Founder, Data for Good Roundtables\
+-   **2023–** Advisory Board Member, Summer Institute in Computational Social Science
 
 </details>
+::::
+:::::::

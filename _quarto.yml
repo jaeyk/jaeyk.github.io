@@ -25,8 +25,8 @@ website:
         href: https://github.com/jaeyk/jaeyk.github.io
 
   navbar:
-    background: dark
-    foreground: light
+    #background: dark
+    #foreground: light
     right:
       - text: "Home"
         href: index.qmd
@@ -63,7 +63,7 @@ website:
         
 format:
   html:
-    theme: united
+    #theme: default
     css: styles.scss
     toc: true
     toc-depth: 4

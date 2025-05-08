@@ -5,6 +5,8 @@ format: html
 
 If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you!
 
+I’ve worked across academic and applied settings and enjoy meeting people working on public problem-solving in any capacity.
+
 :::{.cell}
 
 <details open>
@@ -14,7 +16,7 @@ If I’m visiting your area and you’d like to connect—whether for collaborat
 |------------|--------------|------------------------------------------------------------------------|----------------------|
 | Sep 11–14  | Panel   | American Political Science Association (APSA) *(scheduling)*                                     | Vancouver, Canada    |
 | Jun 27–28  | Panel        | AI & Humanity, Korea Foundation for Advanced Studies *(scheduling)*    | Seoul, South Korea   |
-| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National Univ *(scheduling)*     | Seoul, South Korea   |
+| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National University *(scheduling)*     | Seoul, South Korea   |
 | Jun 26     | Panel   | Public Management Research Conference (PMRC), Seoul National University *(scheduled)*                          | Seoul, South Korea   |
 | Jun 20     | Workshop         | Dept of Political Science & IR, Korea University *(scheduling)*                                       | Seoul, South Korea   |
 | Jun 19     | Talk         | KIXLAB, KAIST *(scheduled)*                                           | Daejeon, South Korea |

@@ -19,6 +19,8 @@ I was born and raised in South Korea, lived in Hong Kong and Taiwan, and have ta
 
 *Personal Reflections*
 
+- [*Digging the Well: What I Learned from Haruki Murakami’s Everyday Discipline*](haruki.html)
+
 - [*Raising a Good Trouble-Maker*](parenting.html)
 
 - [*Paths Denied, Paths Created*](memorial_day.html)
@@ -38,3 +40,7 @@ I was born and raised in South Korea, lived in Hong Kong and Taiwan, and have ta
 - [*How to Build a Dissertation Committee*](the_committee.html)
 
 - [*How to Write a Statement of Purpose for Graduate School in Political Science*](sop.html)
+
+*Others (in Korean)*
+
+- [한국인 대학원생들을 위한 미국 아카데믹 커리어 조언](https://jaeyk.github.io/us_ac_career_for_korean_students/)

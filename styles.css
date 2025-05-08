@@ -2,11 +2,11 @@
 /*-- scss:defaults --*/
 /*-- scss:rules --*/
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 div.quarto-post .metadata {
-  font-family: "Ubuntu", "Lato", sans-serif, sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 #title-block-header {
@@ -14,7 +14,7 @@ div.quarto-post .metadata {
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 800;
 }
 
@@ -630,7 +630,17 @@ div.quarto-about-trestles .about-link svg {
   background-color: #A0522D;
 } /* Sienna */
 .badge-publication {
-  background-color: #555555;
-} /* Gray */
+  background-color: #1a237e;
+  color: #ffffff;
+  border: 1px solid #c5cae9;
+  font-style: italic;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.indigo-text {
+  color: #1a237e;
+}
 
 /*# sourceMappingURL=styles.css.map */

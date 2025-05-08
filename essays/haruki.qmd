@@ -1,0 +1,48 @@
+---
+title: "Digging the Well: What I Learned from Haruki Murakami’s Everyday Discipline"
+author: "Jae Yeon Kim"
+date: "May 5, 2025"
+format: html
+toc: true
+number-sections: false
+---
+
+My tastes have changed a lot over the years. There are many things I used to like that I don’t anymore. But one thing has remained constant: I’m still a devoted fan of Haruki Murakami, the prolific Japanese novelist whose work blends myth and realism to capture the quiet rhythms—and alienation—of modern life.
+
+In *Norwegian Wood*, Murakami writes through the voice of Nagasawa to Watanabe, “Well, any friend of Gatsby is a friend of mine.” In the original Japanese, the line is: 『グレート・ギャツビイ』を 三回読む男なら、俺と友だちになれそうだな (Anyone who read *The Great Gatsby* three times—I feel like I could be friends with him).
+
+::: {.callout-note collapse=true}
+This line marks the beginning of an unlikely friendship. Watanabe first read *The Great Gatsby* at eighteen, but no one around him shared the same interest—until he meets Nagasawa, the only person he knows who’s read it. They couldn’t be more different: Watanabe is quiet and solitary; Nagasawa is confident and headed for the elite world. Still, they find common ground in Fitzgerald. Murakami himself has a deep appreciation for Fitzgerald’s work and has translated several of his novels into Japanese.
+:::
+
+I feel the same way about Murakami’s running memoir *What I Talk About When I Talk About Running*—a title that playfully nods to Raymond Carver’s *What We Talk About When We Talk About Love*. Anyone who has read this particular Haruki book three times—I have a feeling we’d get along.
+
+In the memoir, Murakami reflects on two central aspects of his life: writing and running. For him, the two are deeply connected. He explains how becoming a professional writer meant completely reinventing his lifestyle—when he wakes up, how he works, what hobbies he enjoys, where he lives, and who he spends time with. After returning to this book again and again, I’ve come to hold onto three lessons that continue to shape how I think about talent, focus, and everyday discipline.
+
+> **1. “I stop every day right at the point where I feel I can write more.” —Haruki Murakami**
+
+This principle runs counter to how many of us are tempted to work. When things are going well, it’s easy to keep going—to chase the short-term satisfaction of crossing something off the list. But Murakami urges the opposite: stop while you’re still in flow. That way, you preserve energy and motivation for the next day.
+
+Trying to do too much, too fast, is a surefire path to burnout. As Murakami puts it, “To keep on going, you have to keep up the rhythm. That is the important thing for long-term projects.” And in academia, every project is a long-term project. Early in my career, I used to believe some ideas could be wrapped up in a few months. I no longer believe that. What I’ve learned instead is that finishing well requires knowing when to pause, how to conserve energy, and how to stay steady over time.
+
+> **2. “I'm struck by how, except when you're young, you really need to prioritize in life, figuring out in what order you should divide up your time and energy. If you don't get that sort of system set by a certain age, you'll lack focus and your life will be out of balance.” —Haruki Murakami**
+
+Murakami writes that talent is the most important quality for a novelist—but it’s also unreliable: “Talent has a mind of its own and wells up when it wants to, and once it dries up, that’s it.” Not only is talent unevenly distributed—it can also disappear.
+
+That’s why, he says, the second most important quality is “focus—the ability to concentrate all your limited talents on whatever’s critical at the moment.” For Murakami, that means waking up early and writing for three or four hours each morning. “I don’t see anything else. I don’t think about anything else.” Without that kind of focus, nothing meaningful gets done.
+
+But focus, as Murakami describes it, isn’t just about maintaining distraction-free work hours. It’s also about knowing what not to pursue. He reminds us that you can’t please everyone. When he ran a bar—where he wrote his first novel at the kitchen table—he realized that if one out of ten customers liked the place enough to come back, that was enough. “It didn’t matter if nine out of ten didn’t like my bar. This realization lifted a weight off my shoulders.” What mattered was being clear about his stance—and sticking to it.
+
+The same applies to creative pursuits—including academic ones. What matters is knowing what you want to focus on, working on it consistently, and reaching the people who matter to you. You can’t do everything or reach everyone. Focus doesn’t come from grinding harder—it comes from letting go of what’s not essential. You need to know where to invest your time, how to channel your abilities, and what goals are truly worth pursuing.
+
+> **3. “If concentration is the process of just holding your breath, endurance is the art of slowly, quietly breathing at the same time you’re storing air in your lungs.” —Haruki Murakami**
+
+This third lesson is about rhythm—about knowing when to push and when to pause. Murakami continues, “Unless you can find a balance between both, it’s difficult to write novels professionally over a long time. Continuing to breathe while you hold your breath.” To endure as a writer—or any kind of creative—means learning to resist extremes. That’s what makes you a good contrarian.
+
+Sometimes, you need to push through discomfort. Other times, you need to slow down, listen to your body, and adjust. The goal isn’t balance in the abstract—it’s rhythm: a pace that isn’t too fast or too slow, one that adapts to your needs over time.
+
+And finding that rhythm often requires building routines or rituals—ways to remind yourself how to return to it.
+
+For me, that means running, hiking, and cooking. Running helps me sync my mind and body. Hiking reminds me I’m part of nature. Cooking connects me with the seasons I observed and experienced when I was young—and brings back childhood memories of a home that is, quite literally, an ocean away.
+
+There’s no single right way to recover—but we all need one. There’s a quiet kind of pain in how we face uncertainty and rejection in academia. Sometimes, even doing well can be harmful if we don’t know how to stop and take care of ourselves. Pain is inevitable. Suffering is optional. And to make that suffering optional, we need to know when to push—but also when to pause, reflect, and recharge so that we can keep going.

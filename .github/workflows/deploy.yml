@@ -1,0 +1,40 @@
+name: Deploy Quarto Website
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # allow pushing to gh-pages
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "latest"
+
+      - name: Install SASS (for SCSS compilation)
+        run: sudo apt-get install -y sassc
+
+      - name: Compile SCSS to CSS
+        run: sass styles.scss styles.css
+
+      - name: Render site
+        run: quarto render
+
+      - name: Disable Jekyll
+        run: touch _site/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
