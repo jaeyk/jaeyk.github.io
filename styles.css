@@ -626,6 +626,10 @@ div.quarto-about-trestles .about-link svg {
 .badge-moderator {
   background-color: #FF8C00;
 } /* Dark Orange */
+.badge-award, .badge.badge-award {
+  background-color: #FFC300 !important;
+}
+
 .badge-participant {
   background-color: #A0522D;
 } /* Sienna */

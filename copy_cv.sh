@@ -1,13 +1,10 @@
 #!/bin/sh
 
-echo "Changing to the parent directory..."
-cd ..
+echo "Switching to the website directory..."
+cd ~/Documents/jaeyk.github.io/ || { echo "Directory not found. Aborting."; exit 1; }
 
 echo "Copying CV..."
-cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ~/Documents/jaeyk.github.io/.
-
-echo "Switching to the website directory..."
-cd ~/Documents/jaeyk.github.io/
+cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf
 
 echo "Compiling SCSS..."
 sass styles.scss styles.css
