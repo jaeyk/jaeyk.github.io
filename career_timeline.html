@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Career Timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .timeline-column {
+            position: relative;
+            flex: 1;
+            padding: 0 16px;
+        }
+        .timeline-column::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #d1d5db;
+            top: 0;
+            bottom: 0;
+            left: 16px; /* Position the line on the left side */
+            margin-left: -2px;
+        }
+        .timeline-item {
+            padding: 10px 10px 10px 30px; /* Adjust padding for new line position */
+            position: relative;
+            background-color: inherit;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 8px; /* Position the dot on the line */
+            background-color: #60a5fa;
+            border: 4px solid #3b82f6;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            transform: translateX(-50%);
+        }
+        /* Style for overlapping roles */
+        .timeline-item.is-overlap::after {
+            background-color: #38bdf8;
+            border: 4px solid #06b6d4;
+        }
+        .content {
+            padding: 20px 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .content:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="container mx-auto max-w-7xl p-4">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-2">My Career Timeline</h1>
+        <p class="text-center text-gray-500 mb-10">A visual journey through roles and experiences.</p>
+
+        <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Academic Roles Timeline -->
+            <div class="timeline-column">
+                <h2 class="text-xl font-bold mb-6 text-gray-700">🎓 Academic Roles</h2>
+                <div id="academic-timeline"></div>
+            </div>
+            
+            <!-- Civic Tech Roles Timeline -->
+            <div class="timeline-column">
+                <h2 class="text-xl font-bold mb-6 text-gray-700">🧑‍💻 Civic Tech Roles</h2>
+                <div id="civic-tech-timeline"></div>
+            </div>
+            
+            <!-- Leadership & Advisory Roles Timeline -->
+            <div class="timeline-column">
+                <h2 class="text-xl font-bold mb-6 text-gray-700">🗳️ Leadership & Advisory Roles</h2>
+                <div id="leadership-timeline"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const timelineData = [
+            { title: "Assistant Professor", organization: "UNC–Chapel Hill", category: "Academic Roles", years: "2026–" },
+            { title: "Better Government Lab Fellow", organization: "University of Michigan", category: "Academic Roles", years: "2024–" },
+            { title: "Research Fellow", organization: "Harvard Kennedy School", category: "Academic Roles", years: "2024–" },
+            { title: "Assistant Research Scientist", organization: "Johns Hopkins", category: "Academic Roles", years: "2024–25" },
+            { title: "Contracting Data Scientist", organization: "Code for America", category: "Civic Tech Roles", years: "2024–25" },
+            { title: "Senior Data Scientist", organization: "Code for America", category: "Civic Tech Roles", years: "2023–24" },
+            { title: "Advisory Board Member", organization: "Summer Institute in Computational Social Science", category: "Leadership & Advisory Roles", years: "2023–" },
+            { title: "Assistant Professor of Data Science", organization: "KDI School (South Korea)", category: "Academic Roles", years: "2022" },
+            { title: "Ph.D., Political Science", organization: "UC Berkeley", category: "Academic Roles", years: "2021" },
+            { title: "Pre/Postdoc Fellow", organization: "Johns Hopkins", category: "Academic Roles", years: "2020–21" },
+            { title: "Co-Founder", organization: "Data for Good Roundtables", category: "Leadership & Advisory Roles", years: "2025–" },
+            { title: "Member, Procurement Committee", organization: "GovAI Coalition", category: "Leadership & Advisory Roles", years: "2025–" },
+            { title: "Better Government Lab Fellow", organization: "University of Michigan’s Ford School of Public Policy", category: "Civic Tech Roles", years: "2024–" }
+        ];
+
+        // Create a map to identify which roles are in multiple categories
+        const roleCounts = timelineData.reduce((acc, item) => {
+            acc[item.title] = (acc[item.title] || 0) + 1;
+            return acc;
+        }, {});
+
+        const timelines = {
+            "Academic Roles": document.getElementById('academic-timeline'),
+            "Civic Tech Roles": document.getElementById('civic-tech-timeline'),
+            "Leadership & Advisory Roles": document.getElementById('leadership-timeline')
+        };
+
+        const categories = ["Academic Roles", "Civic Tech Roles", "Leadership & Advisory Roles"];
+
+        categories.forEach(category => {
+            const container = timelines[category];
+            const filteredData = timelineData.filter(item => item.category === category);
+            
+            // Sort data chronologically (descending) within each category
+            const sortedData = filteredData.sort((a, b) => {
+                const getStartYear = (str) => parseInt(str.split('–')[0], 10);
+                return getStartYear(b.years) - getStartYear(a.years);
+            });
+
+            sortedData.forEach((item, index) => {
+                const timelineItem = document.createElement('div');
+                timelineItem.classList.add('timeline-item');
+                
+                // Check if the role is an overlap and add a class
+                if (roleCounts[item.title] > 1) {
+                    timelineItem.classList.add('is-overlap');
+                }
+
+                const content = document.createElement('div');
+                content.classList.add('content');
+                
+                const title = document.createElement('h3');
+                title.classList.add('font-semibold', 'text-lg', 'mb-1');
+                title.textContent = item.title;
+    
+                const organization = document.createElement('p');
+                organization.classList.add('text-gray-700', 'text-sm');
+                organization.textContent = item.organization;
+    
+                const years = document.createElement('p');
+                years.classList.add('text-sm', 'font-medium', 'text-gray-500', 'mt-1');
+                years.textContent = item.years;
+    
+                content.appendChild(title);
+                content.appendChild(organization);
+                content.appendChild(years);
+    
+                timelineItem.appendChild(content);
+                container.appendChild(timelineItem);
+            });
+        });
+        
+    </script>
+</body>
+</html>
