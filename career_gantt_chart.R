@@ -11,7 +11,7 @@ library(stringr)
 career_data <- tibble::tribble(
   ~role, ~category, ~start_year, ~end_year, ~sort_order,
   "Assistant Professor of Public Policy, UNC–Chapel Hill", "Academic", 2026, 2027, 10,
-  "Better Government Lab Fellow, Michigan Ford School", "Academic", 2024, 2026, 20,
+  "Better Government Lab Fellow, Michigan Ford School", "Academic", 2024, 2027, 20,
   "Research Fellow, Harvard Kennedy School", "Academic", 2024, 2026, 30,
   "Senior Data Scientist, Contracting Data Scientist, Code for America", "Civic Tech", 2023, 2026, 40,
   "Co-Founder, Data for Good Roundtables", "Leadership", 2025, 2027, 50,
