@@ -1,0 +1,40 @@
+---
+title: "Office Hour"
+format: html
+---
+
+## Virtual Civic Tech Office Hour
+
+I host a weekly 30-minute Zoom office hour (except when I’m traveling)
+to answer questions about civic tech. Below are some examples of topics
+I'm happy to discuss:
+
+-   How to get involved in civic tech as a quant/mixed-method researcher
+    (if you're graduate students, postdocs, and other early-stage
+    researchers)
+
+-   How to build collaborations (whether you're an academic looking to
+    work with civic tech practitioners or a practitioner looking to work
+    with academics)
+
+-   How to build civic tech capacity (if you're a government agency or
+    nonprofit)
+
+-   How to develop a civic tech agenda or portfolio (if you're a think
+    tank or foundation)
+
+I'm also happy to chat about related topics, including the
+administrative state, state capacity, policy implementation, public
+procurement, human-centered design, service design, applied policy data
+science, artificial intelligence in the public sector, and more.
+
+The office hour is *open to all*. You can sign up for a slot using [this
+link](https://calendly.com/d/cwfm-zsp-94v/virtual-civic-tech-office-hour).
+
+<span style="color:blue;">
+<ul>
+  <li>For everyone’s benefit, please sign up for <strong>only one slot</strong> unless multiple meetings are clearly necessary.</li>
+  <li>Please <strong><u>email me in advance</u></strong> with a brief explanation of why you’d like to connect. If I don’t receive an email beforehand, I may cancel the meeting.</li>
+</ul>
+</span>
+

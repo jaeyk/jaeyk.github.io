@@ -1,0 +1,79 @@
+---
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    theme: cosmo
+    css: ../styles.scss
+    smooth-scroll: true
+    df-print: paged  # Required only for R-based data frames
+---
+
+## Coauthors in alphabetical order
+
+The following table includes the coauthors of ongoing and finished projects. *Indicates undergraduate RA coauthors.*
+
+:::: {.table .table-hover .table-striped .table-filter}
+| Name                   | Affiliation                             | Note               |
+|------------------------|-----------------------------------------|--------------------|
+| Akshay Mangla          | Oxford                                  |                    |
+| Alan Yan               | UC Berkeley                             |                    |
+| Andrew Thompson        | UPenn                                   |                    |
+| Aniket Kesari          | Fordham Law                             |                    |
+| Aram Hur               | Tufts                                   |                    |
+| Baobao Zhang           | Syracuse                                |                    |
+| Cameron Guage          | Dartmouth                               | Undergraduate RA   |
+| Carlos Ortiz           | UC Berkeley                             | Undergraduate RA   |
+| Charles Crabtree       | Dartmouth                               |                    |
+| Daegon Cho             | Yonsei University                       |                    |
+| Diane Coyle            | Cambridge                               |                    |
+| DG Kim                 | Harvard                                 |                    |
+| Donald Moynihan        | Michigan                                |                    |
+| Devorah Manekin        | Hebrew University of Jerusalem          |                    |
+| Efrén Pérez            | UCLA                                    |                    |
+| Eric Giannella         | Georgetown                              |                    |
+| Emily Lin              | Harvard                                 |                    |
+| Florian Keppeler       | Aarhus University                       |                    |
+| Hahrie Han             | Johns Hopkins                           |                    |
+| Kasheena Rogbeer       | UCLA                                    |                    |
+| Kerry Rodden           | Code for America                        |                    |
+| Jaeung Sim             | University of Connecticut               |                    |
+| James Druckman         | Rochester                               |                    |
+| Jaren Habers           | US Government Accountability Office     |                    |
+| Jennifer Oser          | Ben-Gurion University                   |                    |
+| Jennifer Wu            | SUNY Binghamton                         |                    |
+| Joan Cho               | Wesleyan                                |                    |
+| John Holbein           | Virginia                                |                    |
+| Johannes Himmelreich   | Syracuse                                |                    |
+| Lior Sheffer           | Tel Aviv University                     |                    |
+| Liz McKenna            | Harvard                                 |                    |
+| Maggie Hughes          | MIT                                     |                    |
+| Margaret Ng            | UIUC                                    |                    |
+| Marshall Ganz          | Harvard                                 |                    |
+| Michael Gaddis         | UCLA                                    |                    |
+| Michael Shepherd       | Michigan                                |                    |
+| Milan de Vries         | Johns Hopkins                           |                    |
+| Mila Gascó-Hernandez   | SUNY Albany                             |                    |
+| Nathan Chan            | Loyola Marymount University             |                    |
+| Nicholas Camp          | Michigan                                |                    |
+| Nathaniel Olin         | Code for America                        |                    |
+| Pamela Herd            | Michigan                                |                    |
+| Rebecca Johnson        | Georgetown                              |                    |
+| Reuel Rogers           | Northwestern                            |                    |
+| Sarah Nam              | UC Berkeley                             | Undergraduate RA   |
+| Sarah Santiago         | UC Berkeley                             | Undergraduate RA   |
+| Sebastian Jilke        | Georgetown                              |                    |
+| Sono Shah              | Pew Research                            |                    |
+| Sophie Jacobson        | Columbia                                |                    |
+| Taeku Lee              | Harvard                                 |                    |
+| Tamar Mitts            | Columbia                                |                    |
+| Taylor Brown           | Meta                                    |                    |
+| Tiago Ventura          | Georgetown                              |                    |
+| Tina Law               | UC Davis                                |                    |
+| Tyler Simko            | Michigan                                |                    |
+| Vivek Datta            | UC Berkeley                             | Undergraduate RA   |
+| Vivien Leung           | Santa Clara University                  |                    |
+| William Marx           | Dartmouth                               | Undergraduate RA   |
+| Woo Chang Kang         | Korea University                        |                    |
+| Zhaowen Guo            | Georgetown                              |                    |
+::::

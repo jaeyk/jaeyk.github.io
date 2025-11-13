@@ -61,9 +61,11 @@ website:
       - text: "Personal"
         href: essays/essays.qmd
         
+      - text: "Office Hour"
+        href: office_hour/office_hour.qmd
+        
 format:
   html:
-    #theme: default
     css: styles.scss
     toc: true
     toc-depth: 4

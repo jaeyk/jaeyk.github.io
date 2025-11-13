@@ -14,18 +14,27 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 
 | Date       | Type         | Event                                                                 | Place                |
 |------------|--------------|------------------------------------------------------------------------|----------------------|
-| Sep 11–14  | Panel   | American Political Science Association (APSA) *(scheduling)*                                     | Vancouver, Canada    |
-| Jun 27–28  | Panel        | AI & Humanity, Korea Foundation for Advanced Studies *(scheduling)*    | Seoul, South Korea   |
-| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National University *(scheduling)*     | Seoul, South Korea   |
-| Jun 26     | Panel   | Public Management Research Conference (PMRC), Seoul National University *(scheduled)*                          | Seoul, South Korea   |
-| Jun 20     | Workshop         | Dept of Political Science & IR, Korea University *(scheduling)*                                       | Seoul, South Korea   |
-| Jun 19     | Talk         | KIXLAB, KAIST *(scheduled)*                                           | Daejeon, South Korea |
-| Jun 17     | Talk         | Entangled with Books *(locally owned independent bookstore in Seoul, scheduled)*                                    | Seoul, South Korea   |
-| Jun 13     | Talk         | Dept of Political Science & IR, Yonsei University *(scheduled)*                                       | Seoul, South Korea   |
-| Jun 10     | Talk         | Graduate School of International Studies, Korea University *(scheduled)*                                        | Seoul, South Korea   |
-| May 29–30  | Panel  | [Code for America Summit](https://summit.codeforamerica.org/) *(scheduling)* | Washington, DC, USA  |
-| May (TBD)  | Podcast      | [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast *(scheduling)* | Virtual               |
-| Apr 7      | Guest Lecture| NLP for CSS, Johns Hopkins [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf) | Virtual |
+| November 19 | Talk | Institute of Governmental Studies, Korea University *(scheduled)* | Virtual |
+| November 12–16 | Panel | Association for Public Policy Analysis and Management (APPAM) *(scheduled)* | Seattle, WA, USA  |
+| October 30 | Talk | New York City Mayor's Office of Economic Opportunity (NYC Opportunity) | Virtual | 
+| October 22 | Talk | [PRIISM Seminar Series](https://steinhardt.nyu.edu/priism/events/upcoming-events), NYU | Virtual |
+| October 15 | Talk | Tech and Innovation Speaker Series, Johns Hopkins University SAIS | Washington, DC, USA |
+| Sep 30     | Talk | Inequality Working Group Seminar, [EAAMO (Equity and Access in Algorithms, Mechanisms, and Optimization)](https://bridges.eaamo.org/working_groups/inequality/) | Virtual |
+| Sep 9–14  | Panel   | American Political Science Association (APSA)                                    | Vancouver, Canada    |
+| Jun 29     | Panel        | [Annual Research Conference on the American Political Economy](https://www.americanpoliticaleconomy.org/events/annual-conference)     | Virtual   |
+| Jun 27–28  | Talk        | AI & Humanity, Korea Foundation for Advanced Studies    | Seoul, South Korea   |
+| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National University     | Seoul, South Korea   |
+| Jun 26     | Panel   | Public Management Research Conference (PMRC), Seoul National University                         | Seoul, South Korea   |
+| June 25 | Panel | Innovating the AI Age: Technologies and Societies, Korea-Finland Innovation Forum | Seoul, South Korea |
+| Jun 20     | Workshop         | Dept of Political Science & IR, Korea University                                      | Seoul, South Korea   |
+| Jun 19     | Talk         | KIXLAB, KAIST  | Daejeon, South Korea |
+| Jun 17     | Talk         | Entangled with Books *(locally owned independent bookstore in Seoul)*                                    | Seoul, South Korea   |
+| Jun 13     | Talk         | Dept of Political Science & IR, Yonsei University                                      | Seoul, South Korea   |
+| Jun 10     | Talk         | Graduate School of International Studies, Korea University                                        | Seoul, South Korea   |
+| May 29–30  | Panel  | [Code for America Summit](https://summit.codeforamerica.org/) | Washington, DC, USA  |
+| May 22 | Guest Lecture |[GPD Module](https://home.watson.brown.edu/opportunity/pre-dissertation-fellowship), Brown University Watson Institute | Virtual |
+| May 20  | Podcast      | [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast | Virtual               |
+| Apr 7      | Guest Lecture| [NLP for CSS](https://nlp-css-601-672.cs.jhu.edu/sp2025/index.html), Johns Hopkins CS [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf) | Virtual |
 | Feb 26     | Talk         | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern | Evanston, IL, USA    |
 
 </details>

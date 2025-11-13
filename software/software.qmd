@@ -6,17 +6,17 @@ I develop open-source software to support data curation and computational resear
 
 1. [**MapAgora**](https://snfagora.github.io/MapAgora/)  
    - **Summary:** An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.  
-   - **Use case:** Used in ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han.  
+   - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han 
    - **Collaborator:** Milan de Vries
 
 1. [**autotextclassifier**](https://github.com/snfagora/autotextclassifier)  
    - **Summary:** An R package for automated text classification using the tidymodels framework. Supports supervised learning pipelines with minimal setup for civic tech and policy research applications.  
-   - **Use case:** Also used in ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han.  
+   - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han 
    - **Collaborator:** Milan de Vries
 
 1. [**validatednamesr**](https://github.com/jaeyk/validatednamesr)  
    - **Summary:** An R package for accessing and analyzing the validated names dataset used in race and ethnicity experiments. Includes utilities for name filtering, trait inspection, and integration with survey tools.  
-   - **Use case:** Featured in ["Validated Names for Experimental Studies on Ethnicity and Race"](https://www.nature.com/articles/s41597-023-01947-0) (*Nature Scientific Data*, 2023) with by Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.
+   - **Use case:** Featured in ["Validated Names for Experimental Studies on Ethnicity and Race"](https://www.nature.com/articles/s41597-023-01947-0) (*Nature: Scientific Data*, 2023) with by Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.
    - **Collaborator:** Charles Crabtree
 
 1. [**tidytweetjson**](https://jaeyk.github.io/tidytweetjson/)  

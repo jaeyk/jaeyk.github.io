@@ -7,68 +7,130 @@ toc: true
 number-sections: false
 ---
 
-Networking isn’t optional in academia—it’s essential. I didn’t come to this realization naturally. I’m not someone who thrives on large social events or group dinners. In fact, I avoided most school functions as an undergraduate in Korea. I preferred spending time alone—running outdoors during the day, listening to music, cooking, or reading at home in the evenings.
+Networking isn’t optional in academia—it’s essential.
 
-In the course of building my career, though, I learned that opportunities don’t come from effort and talent alone. They come when your work is known—and remembered—by people who can open doors. That only happens if you’re willing to show up, ask questions, and build relationships. Not once, but again and again.
+I didn’t come to this realization naturally. I’m not someone who thrives
+on large social events or group dinners. In fact, I avoided most school
+functions as an undergraduate in Korea. I preferred spending time alone:
+running outdoors during the day, listening to music, cooking, or reading
+at home in the evenings.
 
-This isn’t always intuitive, especially for international students or first-generation scholars. But networking is a skill. It can be learned, practiced, and improved.
+In the course of building my career, though, I learned that
+opportunities don’t come from effort and talent alone. They come when
+your work is known and remembered by people who can open doors. That
+only happens if you’re willing to show up, ask questions, and build
+relationships. Not once, but again and again.
 
-Here are five lessons that helped me—and may help you too.
+This isn’t always intuitive, especially for international students or
+first-generation scholars. But networking is a skill. It can be learned,
+practiced, and improved.
+
+Here are five lessons that helped me, and may help you too.
 
 **1. Define your value**
 
-Academic networking starts before you reach out to anyone. It begins with understanding what you have to offer—and what you’re genuinely curious about. Before writing to someone, ask: If I were in their position, why would I want to meet me?
+Academic networking starts before you reach out to anyone. It begins
+with understanding what you have to offer and what you’re genuinely
+curious about. Before writing to someone, ask: If I were in their
+position, why would I want to meet me?
 
-That reflection shapes everything: your message, your tone, even your questions.
+That reflection shapes everything: your message, your tone, even your
+questions.
 
-When I email someone I admire, I try to connect my interests to theirs in a way that’s specific and sincere. Sometimes I point to an overlap in topics or methods. Sometimes I reference a paper or book of theirs I found particularly useful. Either way, I do my homework—and I make it easy for them to see why a short meeting could be worthwhile.
+When I email someone I admire, I try to connect my interests to theirs
+in a way that’s specific and sincere. Sometimes I point to an overlap in
+topics or methods. Sometimes I reference a paper or book of theirs I
+found particularly useful. Either way, I do my homework and I make it
+easy for them to see why a short meeting could be worthwhile.
 
-A message that shows you’ve engaged with their work—and have something meaningful to discuss—is far more compelling than a list of accomplishments.
+A message that shows you’ve engaged with their work, and have something
+meaningful to discuss, is far more compelling than a list of
+accomplishments.
 
-People are busy. But most are also generous—especially when they can tell you’ve made the effort to reach out thoughtfully.
+People are busy. But most are also generous, especially when they can
+tell you’ve made the effort to reach out thoughtfully.
 
 **2. Lower the stakes**
 
-Professors are busy. Postdocs and grad students are too, but faculty often carry additional institutional responsibilities—advising students, writing recommendation letters, serving on committees, and helping lead their departments.
+Professors are busy. Postdocs and graduate students are too, but faculty
+often carry additional institutional responsibilities—advising students,
+writing recommendation letters, and serving on committees.
 
 So keep your messages short. Really short.
 
-Start with one short paragraph explaining why you appreciate their work. Be specific—a paper you found helpful, a talk that stayed with you, a project you admire.
+Start with one short paragraph explaining why you appreciate their work.
+Be specific: a paper you found helpful, a talk that stayed with you, a
+project you admire.
 
-Follow with a second paragraph briefly introducing yourself and what you’re working on, especially if it connects to their interests.
+Follow with a second paragraph briefly introducing yourself and what
+you’re working on, especially if it connects to their interests.
 
-Then close with a third paragraph politely asking if they might have 30 minutes to meet. Keep the tone low-pressure, and frame it as a conversation rather than a favor.
+Then close with a third paragraph politely asking if they might have 30
+minutes to meet. Keep the tone low-pressure, and frame it as a
+conversation rather than a favor.
 
-If they offer a few time slots, try your best to accommodate. Don’t ask them to rearrange their day around yours. And once you agree on a time, send a calendar invite to help keep things smooth. These small gestures go a long way toward making a good impression before you’ve even spoken.
-
-And if you don’t hear back? That’s normal. Don’t take it personally. Sometimes I follow up the next year by saying, "I reached out last time but didn’t get a chance to connect—I’d still love to talk if you’re open." That approach has led to some of my most valuable conversations.
+If they don't respond to you, that's fine. Don’t take it personally.
+Sometimes I follow up the next year by saying, "I reached out last time
+but didn’t get a chance to connect: I’d still love to talk if you’re
+open." That approach has led to some of my most valuable conversations.
 
 **3. Be a service to others**
 
-Networking doesn’t begin or end with asking for advice. Often, the most durable academic relationships begin when you create value for others.
+Networking doesn’t begin or end with asking for advice. Often, the most
+durable academic relationships begin when you create value for others.
 
-In 2019, during my Ph.D. at UC Berkeley, I attended the Summer Institute in Computational Social Science at Princeton. The organizers encouraged participants to help expand the program’s reach. So the following year, I volunteered to co-organize a new site in the Bay Area, hosted by Berkeley and Stanford.
+In 2019, during my Ph.D. at UC Berkeley, I attended the Summer Institute
+in Computational Social Science at Princeton. The organizers encouraged
+participants to help expand the program’s reach. So the following year,
+I volunteered to co-organize a new site in the Bay Area, hosted by
+Berkeley and Stanford.
 
-That small act—organizing something for others—connected me with dozens of faculty, postdocs, and graduate students across disciplines. Many of them have since become coauthors, collaborators, and close colleagues. It also brought me into contact with Code for America, a civic tech nonprofit we invited to collaborate. That one encounter eventually led to a full-time job as a data scientist there.
+That small act—organizing something for others—connected me with dozens
+of faculty, postdocs, and graduate students across disciplines. Many of
+them have since become coauthors, collaborators, and close colleagues.
+It also brought me into contact with Code for America, a civic tech
+nonprofit we invited to collaborate. That one encounter eventually led
+to a full-time job as a data scientist there. I have so many experiences
+like this.
 
-I didn’t think of networking as a way to advance my career. I thought of it as a way to contribute. Being useful—without expecting anything back—often does more to build lasting relationships than any self-serving approach ever could. And usefulness tends to be remembered.
+I didn’t think of networking as a way to advance my career. I thought of
+it as a way to contribute. Being useful, without expecting anything
+back, often does more to build lasting relationships than any
+self-serving approach ever could. And usefulness tends to be remembered.
 
-You don’t have to organize a conference to do this. You can offer feedback on a draft, amplify someone’s work online, or help coordinate a small reading group. Small contributions often lead to deeper connections.
+You don’t have to organize a conference to do this. You can offer
+feedback on a draft, amplify someone’s work online, or help coordinate a
+small reading group. Small contributions often lead to deeper
+connections.
 
 **4. Build your board of advisors**
 
-Networking isn’t a one-time push—it’s a lifelong process of relationship-building. Some people become mentors. Others become mentees. Some become friends, coauthors, or informal sounding boards.
+Networking isn’t a one-time push. It’s a lifelong process of
+relationship-building. Some people become mentors. Others become
+mentees. Some become friends, coauthors, or informal sounding boards.
 
-In the course of building my career, I’ve come to think of this as building a "personal advisory board." It’s not just about your dissertation committee. You need different kinds of support at different stages: people who understand the job market, others who can give feedback on early-stage ideas, and others who can help you navigate big career transitions.
+In the course of building my career, I’ve come to think of this as
+building a "personal advisory board." It’s not just about your
+dissertation committee. You need different kinds of support at different
+stages: people who understand the job market, others who can give
+feedback on early-stage ideas, and others who can help you navigate big
+career transitions.
 
-And it’s not just reciprocal. You rise higher when you lift others along the way. The strongest networks are built on shared success, not competition.
+And it’s not just reciprocal. You rise higher when you lift others along
+the way. The strongest networks are built on shared success, not
+competition.
 
-**5. Treat it as a skill—not a trait**
+**5. Treat it as a skill, not a trait**
 
-I didn’t grow up thinking I was good at networking. I still don’t love big receptions or happy hours. But I’ve learned how to build relationships in ways that feel authentic to me. And that’s the point—there’s no single right way to do this.
+I didn’t grow up thinking I was good at networking. I still don’t love
+big receptions or happy hours. But I’ve learned how to build
+relationships in ways that feel authentic to me. And that’s the
+point—there’s no single right way to do this.
 
-What matters is that you keep showing up, keep learning, and stay open to connection.
+What matters is that you keep showing up, keep learning, and stay open
+to connection.
 
-Networking is how opportunities travel. Talent matters. So does timing. But often, it’s a conversation that turns effort into momentum.
+Networking is how opportunities travel. Talent matters. So does timing.
+But often, it’s a conversation that turns effort into momentum.
 
 And like any skill, the more you practice, the more natural it becomes.

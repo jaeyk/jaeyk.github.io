@@ -2,33 +2,26 @@
 title: "Community building"
 ---
 
-<p style="display: flex; gap: 3em; flex-wrap: wrap; align-items: flex-start;">
-
-<!-- Column 1 -->
-<div style="flex: 1; min-width: 300px;">
-
 #### Bridging Research and Practice
 
 - **Co-founder**, [*Data for Good Roundtables*](https://sites.google.com/view/d4g-roundtables?usp=sharing) (2025– )  
-  A  safe space where academics and practitioners come together to discuss using data for good.
+  A safe and brave space where academics and practitioners come together to discuss using data for good.
 
-#### Collaborators and Lab Affiliations
+#### Collaborators, Project Partners, and Lab Affiliations
 
-I maintain an active network of [collaborators](coauthors.md) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
+![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/coauthor_map.png){fig-align="center" out-width="80%"}
+![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/partner_map.png){fig-align="center" out-width="80%"}
+
+I maintain an active network of [collaborators](coauthors.qmd) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
 
 - **P3 Lab**, Johns Hopkins SNF Agora Institute  
-  (PI: Hahrie Han)  
+  (Director: Hahrie Han)  
 - **Civic Power Lab**, Harvard Kennedy School  
-  (PI: Liz McKenna)  
+  (Director: Liz McKenna)  
 - **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
-  (PIs: Donald Moynihan, Pamela Herd, Sebastian Jilke)  
+  (Co-directors: Donald Moynihan, Pamela Herd, Sebastian Jilke)  
 - **REPS Lab**, UCLA  
-  (PI: Efrén Pérez)
-
-</div>
-
-<!-- Column 2 -->
-<div style="flex: 1; min-width: 300px;">
+  (Director: Efrén Pérez)
 
 #### Field-Building in Computational Social Science
 
@@ -47,10 +40,5 @@ I maintain an active network of [collaborators](coauthors.md) and [project partn
   *Stanford University, 2024*  
   *UC Berkeley, 2023*  
   *[International Conference on Computational Social Science (IC2S2)](https://ic2s2.org/), 2024*
-  
-</div>
-</p>
 
-::: center
-![Civic tech pre-conference at the 2024 Public Management Research Conference (University of Washington, Seattle). Photo credit: Donald Moynihan. I am actively involved in building interdisciplinary communities and bridging the gap between research and practice.](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg){fig-align="center" width=100%}
-:::
+![Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg){fig-align="center" out-width="70%"}

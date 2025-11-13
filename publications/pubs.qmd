@@ -4,119 +4,142 @@ format: html
 ---
 
 <details open>
+
 <summary><strong>Peer-reviewed journal articles</strong></summary>
 
-1. "Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans." (Kasheena Rogbeer, **Jae Yeon Kim**, and Efrén Pérez) Accepted at *Group Processes and Intergroup Relations*
+1.  ["Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans."](https://journals.sagepub.com/doi/10.1177/13684302251346402) (Kasheena Rogbeer, **Jae Yeon Kim**, and Efrén Pérez) *Group Processes and Intergroup Relations*, Online First in July 2025 [[replication](https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009)]
 
-1. ["Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation."](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw) (**Jae Yeon Kim**, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) *Journal of Policy Analysis and Management*, Online First in April 2025 [[replication](https://osf.io/w87h2/?view_only=None)]
- 
-1. ["Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Casual and Resistant to Divisive Threats."](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) (**Jae Yeon Kim**, Efrén Pérez, and Kasheena Rogbeer) *Journal of Experimental Political Science*, Online First in March 2025 \[[replication](https://doi.org/10.7910/DVN/UWJYCB)\]
+    -   Rogbeer received the Bertram Raven Award from UCLA’s Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
 
-1.  ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, **Jae Yeon Kim**, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 \[[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)\] [\[supplementary materials\]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)
+2.  ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy."](https://www.nature.com/articles/s41597-025-05353-6.epdf?sharing_token=4HNrMMO7VOt9eQU42u5HrtRgN0jAjWel9jnR3ZoTv0Mpc6G86FwIcTyoYmFsd3Uahts-NrsxWU-Q0gVeUk6vtZN_k8pGamsuixpoqi1fOhudhtavd6jX7U8p5I4FQf1oJKpcfff8nLXFvlsgow1agfORM7KYSpMi13jgivdJVAs%3D) (**Jae Yeon Kim**, Milan de Vries, and Hahrie Han). *Nature: Scientific Data*, 2025, 12, Article number: 1162 \[[replication](https://github.com/snfagora/american_civic_opportunity_datasets)\] \[[supplementary materials](https://www.readcube.com/articles/supplement?doi=10.1038%2Fs41597-025-05353-6&index=0)\] \[[dashboard](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)\]
 
-1.  ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, **Jae Yeon Kim**+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023 (+ = co-lead authors.) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)
+3.  ["Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation."](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw) (**Jae Yeon Kim**, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) *Journal of Policy Analysis and Management*, Online First in April 2025 \[[replication](https://osf.io/w87h2/?view_only=None)\]
 
-1.  ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature Scientific Data*, Online First in March 2023 \[[replication](https://github.com/jaeyk/validated_names)\] [\[supplementary materials\]](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf) [\[R package\]](https://github.com/jaeyk/validatednamesr)
+4.  ["Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Casual and Resistant to Divisive Threats."](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) (**Jae Yeon Kim**, Efrén Pérez, and Kasheena Rogbeer) *Journal of Experimental Political Science*, Online First in March 2025 \[[replication](https://doi.org/10.7910/DVN/UWJYCB)\]
 
-1.  ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (**Jae Yeon Kim** and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433-1444 \[[replication](https://github.com/jaeyk/contested-identity)\]
+5.  ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, **Jae Yeon Kim**, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 \[[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)\] \[[supplementary materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)\]
 
-1.  ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+ and **Jae Yeon Kim**+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185 (+ = co-lead authors.)
+6.  ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, **Jae Yeon Kim**+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023 (+ = co-lead authors.) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)
 
-1.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (**Jae Yeon Kim** and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
+7.  ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature: Scientific Data*, 2023, 10, Article number: 130 \[[replication](https://github.com/jaeyk/validated_names)\] \[[supplementary materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf)\] [\[R package\]](https://github.com/jaeyk/validatednamesr)
 
-1.  ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (**Jae Yeon Kim**, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 \[[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)\]
+8.  ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (**Jae Yeon Kim** and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433-1444 \[[replication](https://github.com/jaeyk/contested-identity)\]
 
-1.  ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and **Jae Yeon Kim**+) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/linked_fate_review/)\] (+ = co-lead authors.)
+9.  ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+ and **Jae Yeon Kim**+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185 (+ = co-lead authors.)
 
-1.  ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/covid19antiasian/)\]
+10. ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (**Jae Yeon Kim** and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
 
-1.  ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (**Jae Yeon Kim**+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) \[[replication](https://github.com/jaeyk/asian_hate_misinformation)\] (+ = co-lead authors.)
+11. ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (**Jae Yeon Kim**, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 \[[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)\]
 
-1.  ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (**Jae Yeon Kim**), *Journal of Computational Social Science*, 2021, 4(2), 585-612 \[[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)\]
+12. ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and **Jae Yeon Kim**+) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/linked_fate_review/)\] (+ = co-lead authors.)
 
-    - Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
-    
-1.  ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (**Jae Yeon Kim**), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
+13. ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/covid19antiasian/)\]
 
-1.  ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (**Jae Yeon Kim**), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
+14. ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (**Jae Yeon Kim**+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) \[[replication](https://github.com/jaeyk/asian_hate_misinformation)\] (+ = co-lead authors.)
+
+15. ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (**Jae Yeon Kim**), *Journal of Computational Social Science*, 2021, 4(2), 585-612 \[[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)\]
+
+    -   Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
+
+16. ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (**Jae Yeon Kim**), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
+
+17. ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (**Jae Yeon Kim**), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
 
 </details>
 
 <details>
+
 <summary><strong>Manuscripts under review</strong></summary>
 
-#### Race and solidarity politics 
+**Civic tech and social policy implementation**
 
-1. "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+1.  "Mission Driven Evaluations." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
 
-    - Presented at 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
+2.  "Scaling Human-Centered Government: Why Better Interfaces Aren’t Enough." (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)
 
-#### Big data and civic engagement 
+    -   Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity
 
-1. "MapAgora, civic opportunity datasets for the study of American local politics and public policy." (**Jae Yeon Kim**, Milan de Vries, and Hahrie Han) [[replication]](https://github.com/snfagora/american_civic_opportunity_datasets)
+**Big data, civic engagement, and public policy**
+    
+1.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
 
-    - Revise & resubmit at *Nature Scientific Data*
+    -   Presented at the 2025 APSA    
+    
+**Race and solidarity politics**
+
+1.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+
+    -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
 </details>
 
 <details>
+
 <summary><strong>Working papers</strong></summary>
 
-#### Civic tech and social policy implementation
+**Civic tech and social policy implementation**
 
-1. "The Politics of Implementation: Administrative Burden, Institutional Architecture, and the Democratic State." (with Akshay Mangla) 
+1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
-    - Scheduled to present at 2025 APSA
+    -   Presented at the 2025 APSA
 
-1. "Evaluating the Impacts of Answering Sensitive Questions on SNAP Application Completion: Evidence of Fear Among Immigrant Communities." (with Nathaniel Olin, Pamela Herd, Eric Gianella, Donald Moynihan, and Sebastian Jilke) [[pre-registration](https://aspredicted.org/D6P_BDS)] 
+2.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.'' (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
 
-    - Scheduled to present at 2025 APSA
+    -   Scheduled to present at the 2025 APPAM and Korea University; presented at the 2025 APSA, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO)
 
-1. "Evaluating Form Modifications to Make It Easier to Report Income on Benefits Applications." (with Blair Read, Stephanie Tepper, and Mary Clair Turner) [[pre-registration](https://www.socialscienceregistry.org/trials/13183)]  
+3.  "Bringing Attention Back to the Finish Line: Attention Cost, Reminder, and Online SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
-1. "Messaging to Encourage Submission of SNAP Applications." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
+    -   Scheduled to present at the 2025 APPAM
+    
+4.  "Space and Place in WIC: Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
-1. "Place, Access, and Redemption Cost: WIC Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan) 
+    -   Presented at the 2025 National WIC Association annual conference
 
-    - Scheduled to present at 2025 National WIC Association annual conference
+[5.  "How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field." (with Eric Giannella and Yixin Crystal Luo)]: #
 
-1. "Civic Tech in the U.S. Safety Net: Why Its Success Is Also Its Limitations." (with Eric Giannella and Maximilian Hell) 
+**Tech policy adoption and implementation**
 
-    - Scheduled to present at 2025 PMRC
+1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
-1. "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler) 
+2.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
 
-    - Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
+    -   Scheduled to presented at the 2025 APPAM, Presented at Johns Hopkins SAIS
 
-#### Tech policy adoption and implementation
+<!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
-1. "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+**Applied policy research methodologies**
 
-1. "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
+1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
-1. "Contested Efficiency: How Framing Shapes Public Support for AI in the Safety Net." (with Sophie Jacobson)
+    -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
-#### Big data and civic engagement
+2.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)
 
-1. "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
+    -   Presented at Korea University, Yonsei University, KAIST
 
-1. "Protests and Policy: How Violent Tactics and Protestor Race Shape Outcomes." (with James Druckman, Jennifer Oser,  Lior Sheffer, Devorah Manekin, Tamar Mitts and Liz McKenna) 
+**Big data, civic engagement, and public policy**
 
-   - Scheduled to present at 2025 APSA 
+1.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
-1. "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han)  
+2.  "Higher Education as Safety Net Infrastructure: Evidence from 1.7 Million Nonprofit Organizations." (with Milan de Vries and Tyler Simko)
 
-    - Presented at 2024 APSA and 2024 WPSA
+<!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
+    -   Presented at the 2024 APSA, WPSA
+-->
 
-#### Immigration policy and politics 
 
-1. "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
+**Immigration policy and politics**
 
-1. "Everyday Experiences and Asian American Identity." (with Taeku Lee)
+1.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
+
+[2.  "Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration." (with Woo Chang Kang)]: #
+
+2.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)
 
 </details>
 
 <details>
+
 <summary><strong>Peer-reviewed conference and workshop proceedings</strong></summary>
 
 1.  ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (**Jae Yeon Kim**, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\]
@@ -124,6 +147,7 @@ format: html
 </details>
 
 <details>
+
 <summary><strong>Edited volume book chapters</strong></summary>
 
 1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (**Jae Yeon Kim**) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
@@ -131,29 +155,33 @@ format: html
 </details>
 
 <details>
-<summary><strong>Research brief</strong></summary>
 
-1.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
+<summary><strong>Media and public writing</strong></summary>
 
-1.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
+1.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
 
-1.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
+2.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
 
-1.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
+3.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
 
-1.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+4.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
 
-1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
+5.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
+
+6.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+
+7.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
 </details>
 
 <details>
+
 <summary><strong>Public writing</strong></summary>
 
 1.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022.
 
-1.  ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, September 23, 2020
+2.  ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, September 23, 2020
 
-1.  ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (**Jae Yeon Kim**), *SAGE Ocean*, June 24, 2020
+3.  ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (**Jae Yeon Kim**), *SAGE Ocean*, June 24, 2020
 
-1.  ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020
+4.  ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020
