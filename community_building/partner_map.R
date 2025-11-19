@@ -16,11 +16,13 @@ library(maps)
 library(dplyr)
 library(ggrepel)
 library(stringr)
+library(here)
 
 partners <- tibble::tribble(
   ~org, ~category, ~city, ~state, ~lat,     ~lon,
   "Office of Evaluation Sciences",           "Federal government", "Washington", "DC", 38.9072, -77.0369,
   "California Department of Social Services",      "State & local government", "Sacramento", "CA", 38.5816, -121.4944,
+  "City of San Jose, Communications Office",       "State & local government", "San Jose", "CA", 37.3382, -121.8863,
   "Colorado Department of Health Care Policy and Financing", "State & local government", "Denver", "CO", 39.7392, -104.9903,
   "Boulder County Housing and Human Services",     "State & local government", "Boulder", "CO", 40.0150, -105.2705,
   "Government AI Coalition (San José)",            "State & local government", "San Jose", "CA", 37.3382, -121.8863,
