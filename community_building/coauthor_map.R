@@ -15,7 +15,7 @@ all_affiliations <- c(
   "US Government Accountability Office", "Ben-Gurion University", "SUNY Binghamton", "SUNY Albany", "Wesleyan",
   "Virginia", "Tel Aviv University", "MIT", "UIUC", "Northwestern", "Pew Research", "Columbia",
   "Meta", "UC Davis", "Santa Clara University", "Korea University",
-  "UC Berkeley", "UC Berkeley", "Dartmouth", "Dartmouth", "Harvard", "Harvard", "Johns Hopkins",
+  "UC Berkeley", "UC Berkeley", "Dartmouth", "Dartmouth", "Harvard", "Harvard", "Johns Hopkins", "Michigan",
   "Michigan", "Michigan", "Michigan", "Georgetown", "Georgetown", "Georgetown", "UCLA", "Syracuse", "Syracuse"
 )
 

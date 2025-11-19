@@ -55,6 +55,7 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Milan de Vries         | Johns Hopkins                           |                    |
 | Mila Gascó-Hernandez   | SUNY Albany                             |                    |
 | Nathan Chan            | Loyola Marymount University             |                    |
+| Nari Yoo               | Michigan                                |                    |
 | Nicholas Camp          | Michigan                                |                    |
 | Nathaniel Olin         | Code for America                        |                    |
 | Pamela Herd            | Michigan                                |                    |
