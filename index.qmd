@@ -209,17 +209,34 @@ link](https://calendly.com/jaeyeonkim-hks/30min) to sign up for a slot.
 </style>
 ```
 
+<details open>
+<summary>📅 <strong> 2026 News</strong> </summary>
+
+::: {style="margin-top: 1.5em;"}
+:::
+
+| Date | Type | Event | Place |
+|---|---|---|---|
+| June 16-18 | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah |
+
+::: {style="margin-top: 1.5em;"}
+:::
+
+</details>
+ 
+<details>
+<summary>📅 <strong>2025 News</strong> (click to expand)</summary>
+
 ::::::: cell
-#### 📅 2025 News
 
 ::: {style="margin-top: 1.5em;"}
 :::
 
 | Date | Type | Event | Place |
 |------------------|------------------|------------------|------------------|
-| November 19 | [Talk]{.badge .badge-talk} | Institute of Governmental Studies, Korea University, hosted by Jun Koo *(scheduled)* | Virtual |
-| November 18 | [Panel]{.badge .badge-panel} | Virtual Job Market Event, hosted by Dept. of Political Science & IR, University of Southern California *(scheduled)* | Virtual |
-| November 12-16 | [Panel]{.badge .badge-panel} | [Association for Public Policy Analysis and Management](https://convention2.allacademic.com/one/appam/appam25/index.php?PHPSESSID=e5dt3n10fmreghdqs05jjdnik2&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim) (APPAM, *scheduled*) | Seattle, WA, USA |
+| November 19 | [Talk]{.badge .badge-talk} | Institute of Governmental Studies, Korea University, hosted by Jun Koo | Virtual |
+| November 18 | [Panel]{.badge .badge-panel} | Virtual Job Market Event, hosted by Dept. of Political Science & IR, University of Southern California | Virtual |
+| November 12-16 | [Panel]{.badge .badge-panel} | [Association for Public Policy Analysis and Management](https://convention2.allacademic.com/one/appam/appam25/index.php?PHPSESSID=e5dt3n10fmreghdqs05jjdnik2&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim) (APPAM) | Seattle, WA, USA |
 | November 5-7 | [Participant]{.badge .badge-participant} | [The Gov AI Coalition Summit](https://events.govtech.com/GovAI-Coalition-Summit), hosted by GovAI Coalition and the City of San José | San José Convention Center, CA, USA |
 | October 30 | [Talk]{.badge .badge-talk} | New York City Mayor's Office of Economic Opportunity (NYC Opportunity), hosted by Sophia Tareen | Virtual |
 | October 30 | [Panel]{.badge .badge-panel} | Virtual Job Market Event, hosted by Dept. of Political Science, UC Berkeley, feat. Natalia Garbiras-Díaz | Virtual |
@@ -261,6 +278,8 @@ link](https://calendly.com/jaeyeonkim-hks/30min) to sign up for a slot.
 
 ::: {style="margin-top: 1.5em;"}
 :::
+
+</details>
 
 ------------------------------------------------------------------------
 
