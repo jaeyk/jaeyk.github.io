@@ -2,7 +2,9 @@
 title: "Software"
 ---
 
-I develop open-source software to support data curation and computational research in the social sciences. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
+I develop open-source software to support data curation and computational research in the social sciences and teaching. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
+
+1. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
 
 1. [**MapAgora**](https://snfagora.github.io/MapAgora/)  
    - **Summary:** An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.  
