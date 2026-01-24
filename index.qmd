@@ -254,7 +254,6 @@ Use the chatbot below to quickly find information across the site without hoppin
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
 const siteChatbotData = [
   {
     title: "Publications",
@@ -329,10 +328,6 @@ const chatbotButton = document.getElementById("site-chatbot-submit");
 const chatbotResults = document.querySelector(".site-chatbot__results");
 const promptButtons = document.querySelectorAll(".site-chatbot__quicklinks button");
 
-if (!chatbotInput || !chatbotButton || !chatbotResults) {
-  return;
-}
-
 const renderResults = (matches, query) => {
   if (matches.length === 0) {
     chatbotResults.innerHTML = `<div class="site-chatbot__result">
@@ -393,7 +388,6 @@ promptButtons.forEach(button => {
 });
 
 handleSearch("publications");
-});
 </script>
 ```
 
