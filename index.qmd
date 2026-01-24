@@ -229,23 +229,6 @@ Use the chatbot below to quickly find information across the site without hoppin
   padding: 0.9rem 1rem;
   border: 1px solid #e6e8f5;
 }
-.site-chatbot__result-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-}
-.site-chatbot__tag {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
-  background: #e8eaf6;
-  color: #283593;
-  white-space: nowrap;
-}
 .site-chatbot__result h4 {
   margin: 0 0 0.25rem;
 }
@@ -271,140 +254,79 @@ Use the chatbot below to quickly find information across the site without hoppin
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-const staticHighlights = [
+const siteChatbotData = [
   {
     title: "Publications",
     url: "publications/pubs.html",
     description: "Peer-reviewed articles, journals, and research outputs.",
-    type: "Tab",
     keywords: ["publications", "papers", "journals", "articles", "research"]
   },
   {
     title: "Talks & Lectures",
     url: "talks/talks.html",
     description: "Invited talks, panels, workshops, and lectures.",
-    type: "Tab",
     keywords: ["talks", "lectures", "panels", "workshops", "speaking"]
   },
   {
     title: "Datasets & Data",
     url: "datasets/data.html",
     description: "Open datasets, data resources, and reproducible research assets.",
-    type: "Tab",
     keywords: ["datasets", "data", "open data", "resources", "download"]
   },
   {
     title: "Teaching",
     url: "teaching/teaching.html",
     description: "Courses, syllabi, teaching materials, and mentorship.",
-    type: "Tab",
     keywords: ["teaching", "courses", "syllabi", "class", "students"]
   },
   {
     title: "Software",
     url: "software/software.html",
     description: "Open-source tools, packages, and civic tech projects.",
-    type: "Tab",
     keywords: ["software", "tools", "packages", "code", "civic tech"]
   },
   {
     title: "Community Building",
     url: "community_building/community.html",
     description: "Community initiatives, convenings, and public engagement.",
-    type: "Tab",
     keywords: ["community", "engagement", "roundtables", "networks"]
   },
   {
     title: "Book Project",
     url: "book_projects/books.html",
     description: "Updates and chapters from the book project Unseen and Uncounted.",
-    type: "Tab",
     keywords: ["book", "unseen and uncounted", "chapters", "project"]
   },
   {
     title: "Awards",
     url: "awards/awards.html",
     description: "Awards and honors recognizing research and public service.",
-    type: "Tab",
     keywords: ["awards", "honors", "recognition"]
   },
   {
     title: "Office Hours",
     url: "office_hour/office_hour.html",
     description: "Weekly office hour schedule and how to book a slot.",
-    type: "Tab",
     keywords: ["office hours", "meeting", "calendar", "schedule"]
   },
   {
     title: "Personal Essays",
     url: "essays/essays.html",
     description: "Personal writing, reflections, and essays.",
-    type: "Tab",
     keywords: ["personal", "essays", "writing", "reflections"]
   },
   {
     title: "Contact & Collaboration",
     url: "index.html#get-in-touch--collaborate",
     description: "Reach out for collaboration, chat, or speaking opportunities.",
-    type: "Highlight",
     keywords: ["contact", "email", "collaborate", "reach out"]
-  },
-  {
-    title: "Email Jae directly",
-    url: "mailto:jaeyeonkim@hks.harvard.edu",
-    description: "Send a note about speaking, collaboration, or research.",
-    type: "Highlight",
-    keywords: ["email", "contact", "reach out", "collaboration", "speaking"]
-  },
-  {
-    title: "Book the weekly office hour",
-    url: "https://calendly.com/jaeyeonkim-hks/30min",
-    description: "Grab a 30-minute slot to discuss civic tech.",
-    type: "Highlight",
-    keywords: ["office hours", "calendly", "meeting", "chat", "office hour"]
-  },
-  {
-    title: "Download the CV",
-    url: "CV_Jae_Yeon_Kim.pdf",
-    description: "Latest curriculum vitae (PDF).",
-    type: "Highlight",
-    keywords: ["cv", "resume", "vita", "curriculum vitae"]
-  },
-  {
-    title: "Better Government Lab",
-    url: "https://www.bettergovernmentlab.org/our-team",
-    description: "Learn about Jae's affiliation with the Better Government Lab.",
-    type: "Highlight",
-    keywords: ["better government lab", "bgl", "affiliation", "team"]
-  },
-  {
-    title: "Data for Good Roundtables",
-    url: "https://sites.google.com/view/d4g-roundtables?usp=sharing",
-    description: "A safe and brave space for academics and practitioners.",
-    type: "Highlight",
-    keywords: ["data for good", "roundtables", "community", "events"]
-  },
-  {
-    title: "GovAI Coalition",
-    url: "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition",
-    description: "Learn about the GovAI Coalition advisory role.",
-    type: "Highlight",
-    keywords: ["govai", "coalition", "ai", "advisory"]
   }
 ];
-
-let dynamicIndex = [];
-const SEARCH_INDEX_URL = "search.json";
 
 const chatbotInput = document.getElementById("site-chatbot-input");
 const chatbotButton = document.getElementById("site-chatbot-submit");
 const chatbotResults = document.querySelector(".site-chatbot__results");
 const promptButtons = document.querySelectorAll(".site-chatbot__quicklinks button");
-
-if (!chatbotInput || !chatbotButton || !chatbotResults) {
-  return;
-}
 
 const renderResults = (matches, query) => {
   if (matches.length === 0) {
@@ -417,57 +339,26 @@ const renderResults = (matches, query) => {
 
   chatbotResults.innerHTML = matches.map(match => `
     <div class="site-chatbot__result">
-      <div class="site-chatbot__result-header">
-        <h4>${match.title}</h4>
-        <span class="site-chatbot__tag">${match.type}</span>
-      </div>
+      <h4>${match.title}</h4>
       <p>${match.description}</p>
       <a href="${match.url}">Go to ${match.title}</a>
     </div>
   `).join("");
 };
 
-const scoreEntry = (entry, tokens) => {
-  const title = entry.title.toLowerCase();
-  const description = (entry.description || "").toLowerCase();
-  const content = (entry.content || "").toLowerCase();
-  const matches = tokens.filter(token =>
-    title.includes(token) || description.includes(token) || content.includes(token)
-  );
-  return matches.length;
-};
-
 const findMatches = (query) => {
   const normalized = query.toLowerCase();
   const tokens = normalized.split(/[\s,]+/).filter(Boolean);
-  const merged = [...dynamicIndex, ...staticHighlights];
-  return merged
+  return siteChatbotData
     .map(item => {
-      const score = scoreEntry(item, tokens);
+      const keywordHits = item.keywords.filter(keyword => normalized.includes(keyword)).length;
+      const tokenHits = tokens.filter(token => item.title.toLowerCase().includes(token) || item.description.toLowerCase().includes(token)).length;
+      const score = keywordHits * 2 + tokenHits;
       return { ...item, score };
     })
     .filter(item => item.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 6);
-};
-
-const loadSearchIndex = async () => {
-  try {
-    const response = await fetch(SEARCH_INDEX_URL, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error("Search index unavailable");
-    }
-    const data = await response.json();
-    dynamicIndex = data.map(entry => ({
-      title: entry.title || "Untitled page",
-      url: entry.location || entry.url || "#",
-      description: entry.description || entry.summary || "Site content",
-      content: entry.text || entry.content || "",
-      type: entry.section ? "Result" : "Tab"
-    }));
-  } catch (error) {
-    dynamicIndex = [];
-  }
+    .slice(0, 5);
 };
 
 const handleSearch = (query) => {
@@ -496,10 +387,7 @@ promptButtons.forEach(button => {
   });
 });
 
-loadSearchIndex().then(() => {
-  handleSearch("publications");
-});
-});
+handleSearch("publications");
 </script>
 ```
 
