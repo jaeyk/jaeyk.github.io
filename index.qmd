@@ -48,7 +48,7 @@ Jae Yeon Kim
 <ul style="list-style: none; padding: 0;">
 
 <li><i class="bi bi-envelope"></i>
-<a href="mailto:jaeyeonkim@hks.harvard.edu">jaeyeonkim\@hks.harvard.edu</a></li>
+<a href="mailto:jaekim@unc.edu">jaekim\@unc.edu</a></li>
 
 <li><i class="bi bi-file-earmark-text"></i>
 <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">CV</a></li>
@@ -71,110 +71,50 @@ Scholar</a></li>
 > even a missionary.”*\
 > —Herbert A. Simon (1916-2001)
 
-Hello! I am Jae. I am a political scientist by training, a data
-scientist in practice, and a civic tech nerd at heart. I like turning practical policy problems into theoretical frameworks and testing them empirically.
+Hello! I am Jae. I am a political scientist by training, a data scientist in practice, and a civic tech nerd at heart.
 
-I am a Research Fellow at the Harvard Kennedy School and a [Better
-Government Lab](https://www.bettergovernmentlab.org/our-team) Fellow at
-the University of Michigan's Ford School of Public Policy. In January
-2026, I will join [the University of North Carolina–Chapel
-Hill](https://publicpolicy.unc.edu/person/jae-yeon-kim/) as an Assistant
-Professor of Public Policy.
+I am an Assistant Professor of Public Policy at the University of North Carolina at Chapel Hill, and a non-resident Research Fellow at the Harvard Kennedy School and a [Better Government Lab](https://www.bettergovernmentlab.org/) Fellow at the University of Michigan’s Ford School of Public Policy. I am also a co-founder of the [Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing) and serve on the Advisory Council of [the Summer Institute in Computational Social Science](https://sicss.io/people), the Procurement Committee at [the GovAI Coalition](https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition), and the APSA Task Force on Artificial Intelligence.
 
-My research investigates how governments and communities build the
-capacity to implement public policy effectively. I focus on urban,
-social, and technology policy in the United States, examining how public
-institutions reduce administrative burdens in safety net programs, how
-civic infrastructure strengthens democratic governance, and how state
-and local governments use artificial intelligence to enhance public
-service delivery.
+Previously, I worked as a Senior Data Scientist at Code for America, where I collaborated with the U.S. government to improve access to safety net programs. I also served as an Assistant Research Scientist at the SNF Agora Institute at Johns Hopkins University, where I co-developed [the Mapping the Modern Agora Project.](https://snfagora.jhu.edu/our-work/research-projects/mapping-the-modern-agora/) I earned my Ph.D. in Political Science from the University of California, Berkeley.
 
-I’m currently working on a book project titled [*Unseen and
-Uncounted*](https://jaeyk.github.io/book_projects/books.html), which
-examines how interactions between street-level bureaucrats and non-Black
-minority community organizers during the War on Poverty gave rise to new
-racial group formations—what we know today as Asian Americans and
-Latinos.
+My research investigates how governments and communities build the capacity to implement public policy effectively. I focus on urban, social, and technology policy in the United States, examining how public institutions reduce administrative burdens in safety net programs, how civic infrastructure strengthens democratic governance, and how state and local governments use artificial intelligence to enhance public service delivery. 
 
-I use computational and multi-method approaches, including in-depth
-interviews, archival research, field experiments, surveys, big data
-analysis, machine learning, and generative AI. I often collaborate with
-government and nonprofit partners to produce research that directly
-informs policy and improves practice.
+I’m currently working on a book project titled [*Unseen and Uncounted*](https://jaeyk.github.io/book_projects/books.html), which examines how interactions between street-level bureaucrats and non-Black minority community organizers during the War on Poverty gave rise to new racial group formations—what we know today as Asian Americans and Latinos.
 
-Previously, I worked as a Senior Data Scientist at [Code for
-America](https://codeforamerica.org/programs/), where I collaborated
-with the U.S. government to improve access to safety net programs. I
-also held a position as an Assistant Research Scientist at the [SNF
-Agora Institute at Johns Hopkins University](https://snfagora.jhu.edu/),
-where I co-developed the [Mapping the Modern Agora
-Project](https://snfagora.jhu.edu/project/mapping-the-modern-agora/). I
-earned my Ph.D. in Political Science from UC Berkeley.
+I use a wide range of methods, including big data and AI, field experiments, archival research, and human-centered design. I often collaborate with government and nonprofit partners to produce research that directly informs policy and improves practice.
 
-I am a co-founder of the [Data for Good
-Roundtables](https://sites.google.com/view/d4g-roundtables?usp=sharing),
-a safe and brave space where academics and practitioners come together
-to discuss using data for good. I also serve on the Advisory Council of
-[the Summer Institute in Computational Social
-Science](https://sicss.io/people), the Procurement Committee at [the
-GovAI
-Coalition](https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition),
-and the APSA Task Force on Artificial Intelligence.
+My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature: Scientific Data* [2x], *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
 
-My research has been published in *Nature Human Behaviour*, *Journal of
-Policy Analysis and Management*, *Nature: Scientific Data* \[2x\],
-*Perspectives on Politics* \[2x\], *Political Research Quarterly*
-\[2x\], *Journal of Experimental Political Science*, and *Studies in
-American Political Development*, among others.
+I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Public Administration (2025), Emerging Scholar Award in Civic Engagement (2024), and the Best Dissertation Award in Urban and Local Politics (2022) from the American Political Science Association, as well as the Best Paper Award in Asian Pacific American Politics (2020) from the Western Political Science Association.
 
-I am the recipient of the Paul Volcker Junior Scholar Research Grant
-Award in Public Administration (2025), Emerging Scholar Award in Civic
-Engagement (2024) and the Best Dissertation Award in Urban and Local
-Politics (2022) from the American Political Science Association, as well
-as the Best Paper Award in Asian Pacific American Politics (2020) from
-the Western Political Science Association.
+My research has been supported by the Carnegie Corporation of New York, the Walmart Foundation, the Gates Foundation, the Russell Sage Foundation, the Federation of American Scientists, the Kapor Foundation, the American Political Science Association, the National Research Foundation of Korea, the Korea Foundation for Advanced Studies, the College of Arts and Sciences at UNC Chapel Hill, the Weatherhead Center for International Affairs at Harvard, the SNF Agora Institute at Johns Hopkins University, the Center for the Study of American Democracy, the Canadian Studies Program, the Institute of East Asian Studies at UC Berkeley, and the Blum Initiative for Global and Regional Poverty Studies.
 
-My research has been supported by the Carnegie Corporation of New York,
-Walmart Foundation, Gates Foundation, Russell Sage Foundation, the
-American Political Science Association, the National Research Foundation
-of Korea, the Korea Foundation for Advanced Studies, and various centers
-at Harvard, Johns Hopkins University, UC Berkeley, and the Blum
-Initiative for Global and Regional Poverty Studies.
+📄 My most recent CV is available at [this link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf).
 
-<details>
+📬 You can reach me at [jaekim@unc.edu](mailto:jaekim@unc.edu)
 
-<summary>📧 <strong>Get in Touch / Collaborate</strong></summary>
+🏢 **Office**  
+Abernethy Hall, Room 216A  
+131 S. Columbia Street  
+Chapel Hill, NC 27599-3435
 
-📬 You can reach me at
-<a href="mailto:jaeyeonkim@hks.harvard.edu">jaeyeonkim\@hks.harvard.edu</a>.
+<div style="margin-top: 0.75rem;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4506609728687!2d-79.05687062404371!3d35.911467672513766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e7c92a4ebf%3A0x96e51db242dd6c93!2sAbernethy%20Hall%2C%20131%20S%20Columbia%20St%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1768307453720!5m2!1sen!2sus"
+    width="300"
+    height="200"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
-🤝 Interested in collaborating or chatting? Use [this
-form](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform).
+🕒 **Office Hours**: By appointment only. Please review the office hour policy [here](https://jaeyk.github.io/office_hour/office_hour.html) before scheduling. In-person appointments are limited to UNC Chapel Hill students; virtual civic tech office hours are open to all.
 
-🗓️ I also host a weekly 30-minute Zoom office hour (except when I’m
-traveling) to answer questions about civic tech. Use [this
-link](https://calendly.com/jaeyeonkim-hks/30min) to sign up for a slot.
+🎓 **Prospective PhD Students**: I’m accepting students this cycle (to start in Fall 2026)
 
-</details>
-
-📄 My most recent CV is available at
-<a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">this link</a>.
-
-<details>
-  <summary><strong>Prospective PhD Students</strong></summary>
-  <p>
-    I am accepting students for the 2026 application cycle. Admissions and funding for the 
-    <a href="https://publicpolicy.unc.edu/admissions/">UNC Public Policy PhD program</a> 
-    are decided at the department level. Applicants are encouraged to contact faculty with shared interests 
-    to help with <a href="https://publicpolicy.unc.edu/ph-d/ph-d-faqs/">advisor matching</a>. 
-  </p>
-  <p>
-    I’m especially interested in applicants studying urban, social, or technology policy; administrative burden; 
-    or data science and AI in the public sector. When emailing me, please mention 
-    (1) which of my works you’ve read, (2) how it connects to your interests, and 
-    (3) what research you plan to pursue. Attach your CV and your best writing sample (for example, a solo- or first-authored research paper). I only respond to emails that include these materials and clearly demonstrate strong alignment with my research interests. I care about theory, methods, and domain knowledge. This trifecta is essential for doing good research.
-  </p>
-</details>
+🐏 **UNC Chapel Hill undergrads and graduate students**: If you are interested in working with me, please stay tuned. I will post a rolling application form here if and when I have RA openings.
 
 ------------------------------------------------------------------------
 
@@ -215,9 +155,12 @@ link](https://calendly.com/jaeyeonkim-hks/30min) to sign up for a slot.
 ::: {style="margin-top: 1.5em;"}
 :::
 
-| Date | Type | Event | Place |
-|---|---|---|---|
-| June 16-18 | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah |
+| Date          | Type        | Event                                                                 | Place                   |
+|---------------|-------------|-----------------------------------------------------------------------|-------------------------|
+| June 16–18    | Participant | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah, USA    |
+| March 4       | Participant | [Federation of American Scientists](https://fas.org/) AI Policy Sprint Co-Creation Forum (*scheduled*) | Washington, DC, USA     |
+| February 14   | Talk        | [Duke Conference on Society-Centered AI](https://sites.duke.edu/scai/) (*scheduled*) | Durham, NC, USA         |
+
 
 ::: {style="margin-top: 1.5em;"}
 :::
