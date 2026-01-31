@@ -644,6 +644,31 @@ div.quarto-about-trestles .about-link:hover {
   }
 }
 
+/* Fix mobile header buttons - remove dark background */
+.quarto-secondary-nav {
+  background-color: white !important;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle,
+.quarto-secondary-nav .btn,
+.quarto-secondary-nav button {
+  background-color: transparent !important;
+  color: $unc-dark-blue !important;
+  border: none !important;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle:hover,
+.quarto-secondary-nav .btn:hover,
+.quarto-secondary-nav button:hover {
+  background-color: rgba(75, 156, 211, 0.1) !important;
+  color: $unc-blue !important;
+}
+
+.quarto-secondary-nav .breadcrumb-item a {
+  color: $unc-dark-blue !important;
+}
+
 /* Fix visibility for Quarto about links in trestles layout */
 
 div.quarto-about-trestles .about-link {
