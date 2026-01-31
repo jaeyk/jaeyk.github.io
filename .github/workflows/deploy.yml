@@ -19,7 +19,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install SASS (for SCSS compilation)
-        run: sudo apt-get install -y sassc
+        run: npm install -g sass
 
       - name: Compile SCSS to CSS
         run: sass styles.scss styles.css
