@@ -17,8 +17,6 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: "latest"
 
       - name: Install SASS (for SCSS compilation)
         run: sudo apt-get install -y sassc
