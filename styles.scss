@@ -674,6 +674,80 @@ div.quarto-about-trestles .about-link svg {
   color: #1a237e;
 }
 
+/* Wider content area for landing page - A4-like width */
+body.quarto-article main.content,
+body.quarto-article .page-columns .content {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Sticky sidebar for profile/contact info */
+.sticky-sidebar {
+  position: fixed;
+  left: 2em;
+  top: 120px;
+  width: 140px;
+  text-align: left;
+  z-index: 100;
+}
+
+.sticky-sidebar a {
+  display: block;
+  margin: 0.4em 0;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+
+.sticky-sidebar a:hover {
+  color: $unc-blue !important;
+}
+
+.sticky-sidebar p {
+  margin: 0.3em 0;
+}
+
+.sticky-sidebar strong {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Hide sticky sidebar on smaller screens */
+@media (max-width: 1400px) {
+  .sticky-sidebar {
+    position: static;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .sticky-sidebar img {
+    width: 80px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .sticky-sidebar a {
+    display: inline;
+    margin: 0;
+  }
+
+  .sticky-sidebar strong {
+    display: inline;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+}
+
 /* Text selection - UNC colors */
 ::selection {
   background-color: $unc-blue;
