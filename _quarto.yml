@@ -28,13 +28,15 @@ website:
     style: docked
     search: true
     background: light
+    tools:
+      - icon: envelope
+        href: mailto:jaekim@unc.edu
+        text: Email
     contents:
       - text: "Home"
         href: index.qmd
       - text: "CV"
         href: CV_Jae_Yeon_Kim.pdf
-      - text: "Email"
-        href: mailto:jaekim@unc.edu
       - text: "---"
       - section: "Research"
         contents:
