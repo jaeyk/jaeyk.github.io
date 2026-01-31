@@ -39,13 +39,9 @@ format:
 :::
 
 ::: {style="flex: 1 1 auto;"}
-<h2 style="margin-top: 0; margin-bottom: 0em;">
+<h2 style="margin-top: 0; margin-bottom: 0.3em;">Jae Yeon Kim</h2>
 
-Jae Yeon Kim
-
-</h2>
-
-<ul style="list-style: none; padding: 0;">
+<ul style="list-style: none; padding: 0; margin-top: 0;">
 
 <li><i class="bi bi-envelope"></i>
 <a href="mailto:jaekim@unc.edu">jaekim\@unc.edu</a></li>
@@ -67,7 +63,7 @@ Scholar</a></li>
 :::
 :::::
 
-> *“The scientist is a communicator as well as a discoverer—sometimes
+> *"The scientist is a communicator as well as a discoverer—sometimes
 > even a missionary.”*\
 > —Herbert A. Simon (1916-2001)
 
@@ -86,8 +82,6 @@ I use a wide range of methods, including big data and AI, field experiments, arc
 My research has been published in *Nature Human Behaviour*, *Journal of Policy Analysis and Management*, *Nature: Scientific Data* [2x], *Perspectives on Politics* [2x], *Political Research Quarterly* [2x], *Journal of Experimental Political Science*, and *Studies in American Political Development*, among others.
 
 I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Public Administration (2025), Emerging Scholar Award in Civic Engagement (2024), and the Best Dissertation Award in Urban and Local Politics (2022) from the American Political Science Association, as well as the Best Paper Award in Asian Pacific American Politics (2020) from the Western Political Science Association.
-
-My research has been supported by the Carnegie Corporation of New York, the Walmart Foundation, the Gates Foundation, the Russell Sage Foundation, the Federation of American Scientists, the Kapor Foundation, the American Political Science Association, the National Research Foundation of Korea, the Korea Foundation for Advanced Studies, the College of Arts and Sciences at UNC Chapel Hill, the Weatherhead Center for International Affairs at Harvard, the SNF Agora Institute at Johns Hopkins University, the Center for the Study of American Democracy, the Canadian Studies Program, the Institute of East Asian Studies at UC Berkeley, and the Blum Initiative for Global and Regional Poverty Studies.
 
 📄 My most recent CV is available at [this link](https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf).
 
@@ -110,7 +104,7 @@ Chapel Hill, NC 27599-3435
   </iframe>
 </div>
 
-🕒 **Office Hours**: By appointment only. Please review the office hour policy [here](https://jaeyk.github.io/office_hour/office_hour.html) before scheduling. In-person appointments are limited to UNC Chapel Hill students; virtual civic tech office hours are open to all.
+🕒 **Office Hours**: By appointment only. Please review the office hour policy [here](https://jaeyk.github.io/office_hour/office_hour.html) before scheduling. 
 
 🎓 **Prospective PhD Students**: I’m accepting students this cycle (to start in Fall 2026)
 

@@ -383,7 +383,8 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: $unc-dark-blue !important;
+  color: white !important;
+  opacity: 0.85;
   text-decoration: none;
 }
 
@@ -396,7 +397,8 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: $unc-dark-blue !important;
+  color: white !important;
+  opacity: 0.85;
   text-decoration: none;
 }
 
@@ -410,8 +412,9 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: $unc-dark-blue !important;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* FORCE the navbar background to UNC blue, overriding Flatly */
@@ -669,5 +672,68 @@ div.quarto-about-trestles .about-link svg {
 
 .indigo-text {
   color: #1a237e;
+}
+
+/* Text selection - UNC colors */
+::selection {
+  background-color: $unc-blue;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: $unc-blue;
+  color: white;
+}
+
+/* News tables - zebra striping and better spacing */
+details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+details table th,
+details table td {
+  padding: 0.6em 0.8em;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+details table tr:nth-child(even) {
+  background-color: #f8fbfd;
+}
+
+details table tr:hover {
+  background-color: #eaf4fb;
+}
+
+details table th {
+  background-color: $unc-dark-blue;
+  color: white;
+  font-weight: 600;
+}
+
+/* Smooth transitions globally */
+a,
+.btn,
+.navbar .nav-link,
+.navbar .navbar-brand,
+details summary,
+.badge {
+  transition: all 0.2s ease;
+}
+
+/* Smoother details/summary toggle */
+details summary {
+  cursor: pointer;
+  padding: 0.5em 0;
+}
+
+details summary:hover {
+  color: $unc-blue;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
 }
 

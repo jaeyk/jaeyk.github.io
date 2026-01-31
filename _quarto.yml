@@ -11,7 +11,7 @@ website:
   title: "Hello, I'm Jae."
   description: "The personal website of Dr. Jae Yeon Kim"
   site-url: https://jaeyk.github.io/
-  favicon: images/favicon/favicon.ico
+  favicon: images/favicon/favicon-32x32.png
   repo-url: https://github.com/jaeyk/jaeyk.github.io
   search:
     location: navbar
@@ -19,7 +19,7 @@ website:
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
   page-footer:
-    left: "&copy; Copyright 2025, Jae Yeon Kim"
+    left: "&copy; Copyright 2026, Jae Yeon Kim"
     right: 
       - icon: github
         href: https://github.com/jaeyk/jaeyk.github.io
@@ -77,4 +77,8 @@ format:
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+          <link rel="manifest" href="/images/favicon/site.webmanifest">
 
