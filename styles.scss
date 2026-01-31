@@ -566,11 +566,14 @@ div.quarto-about-trestles .about-link:hover {
 
   /* Mobile hero header layout */
   .hero-header {
+    display: flex !important;
+    flex-wrap: wrap !important;
     gap: 1em !important;
   }
 
-  /* Row 1: Profile image + contact info side by side */
+  /* Row 1: Profile image (left) + contact info (right) */
   .hero-profile {
+    flex: 0 0 auto !important;
     max-width: 100px !important;
   }
 
@@ -579,7 +582,11 @@ div.quarto-about-trestles .about-link:hover {
   }
 
   .hero-caption {
-    display: none !important; /* Hide caption on mobile */
+    display: none !important;
+  }
+
+  .hero-contact {
+    flex: 1 1 0 !important;
   }
 
   .hero-contact h2 {
@@ -590,12 +597,11 @@ div.quarto-about-trestles .about-link:hover {
     font-size: 0.9em;
   }
 
-  /* Row 2: Quote goes below, full width */
+  /* Row 2: Quote full width below */
   .hero-quote {
-    flex: 1 1 100% !important;
-    margin-top: 2em !important;
-    border-left: none !important;
-    padding-left: 0 !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    margin-top: 1.5em !important;
   }
 
   .hero-flex {
