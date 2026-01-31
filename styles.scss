@@ -509,44 +509,6 @@ div.quarto-about-trestles .about-link:hover {
   border-radius: 4px;
 }
 
-/* Hero header - three column layout */
-.hero-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 2em;
-  flex-wrap: wrap;
-  text-align: left;
-  margin-bottom: 1.5em;
-}
-
-.hero-profile {
-  flex: 0 0 auto;
-  text-align: center;
-  max-width: 160px;
-}
-
-.hero-caption {
-  font-size: 0.8em;
-  color: #555;
-  margin-top: 0.5em;
-  line-height: 1.4;
-  font-style: italic;
-}
-
-.hero-contact {
-  flex: 0 0 auto;
-}
-
-.hero-quote {
-  flex: 1 1 200px;
-  border-left: 3px solid transparent;
-  padding-left: 1em;
-  font-size: 0.95em;
-  color: #555;
-  font-style: italic;
-  align-self: center;
-}
-
 .hero-flex {
   display: flex;
   align-items: flex-start;
@@ -604,27 +566,20 @@ div.quarto-about-trestles .about-link:hover {
 
   /* Mobile hero header layout */
   .hero-header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    gap: 1em !important;
   }
 
   /* Row 1: Profile image + contact info side by side */
   .hero-profile {
-    flex: 0 0 auto;
-    max-width: 100px;
+    max-width: 100px !important;
   }
 
   .hero-profile img {
-    width: 80px;
+    width: 80px !important;
   }
 
   .hero-caption {
-    display: none; /* Hide caption on mobile */
-  }
-
-  .hero-contact {
-    flex: 1 1 auto;
+    display: none !important; /* Hide caption on mobile */
   }
 
   .hero-contact h2 {
@@ -637,13 +592,10 @@ div.quarto-about-trestles .about-link:hover {
 
   /* Row 2: Quote goes below, full width */
   .hero-quote {
-    flex: 1 1 100%;
-    border-left: none;
-    border-top: 1px solid #e0e8f0;
-    padding-left: 0;
-    padding-top: 0.8em;
-    margin-top: 0.5em;
-    font-size: 0.9em;
+    flex: 1 1 100% !important;
+    margin-top: 2em !important;
+    border-left: none !important;
+    padding-left: 0 !important;
   }
 
   .hero-flex {
