@@ -27,18 +27,18 @@ jobs:
         run: sass styles.scss styles.css
 
       - name: Clean previous build
-        run: rm -rf _site
+        run: rm -rf docs
 
       - name: Render site
         run: quarto render
 
       - name: Disable Jekyll
-        run: touch _site/.nojekyll
+        run: touch docs/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./docs
           publish_branch: gh-pages
           force_orphan: true
