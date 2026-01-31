@@ -8,20 +8,12 @@ if ! cmp -s ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf 2>/dev/null; t
     cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf
 fi
 
-# Only compile SCSS if source is newer than output
-if [ styles.scss -nt styles.css ]; then
-    echo "Compiling SCSS..."
-    sass styles.scss styles.css
-fi
-
-# Render the site
-echo "Rendering site..."
-quarto render
-
 # Stage, commit, and push changes
+# GitHub Actions will handle SCSS compilation and site rendering
 echo "Committing and pushing changes..."
 git add .
 git commit -m "Update site $(date '+%Y-%m-%d %H:%M')" || echo "No changes to commit"
 git push
 
-echo "Done!"
+echo "GitHub Actions will now build and deploy the site."
+echo "Check status at: https://github.com/jaeyk/jaeyk.github.io/actions"
