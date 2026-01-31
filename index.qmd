@@ -2,7 +2,7 @@
 #title: "Jae Yeon Kim"
 image: profile_alt.png
 page-layout: article
-format:
+format: 
   html:
     toc: false
     html-math-method: katex
@@ -33,21 +33,35 @@ format:
 #       href: https://github.com/jaeyk
 ---
 
-::: {.sticky-sidebar}
-<img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="120" style="border-radius: 4px; margin-bottom: 0.75em;"/>
-
-**Jae Yeon Kim**
-
-<a href="mailto:jaekim@unc.edu" style="color: #4c4c4c !important;"><i class="bi bi-envelope"></i> Email</a>
-
-<a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf" style="color: #4c4c4c !important;"><i class="bi bi-file-earmark-text"></i> CV</a>
-
-<a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en" style="color: #4c4c4c !important;"><i class="bi bi-google"></i> Google Scholar</a>
-
-<a href="https://www.linkedin.com/in/jae-yeon-kim-694764229/" style="color: #4c4c4c !important;"><i class="bi bi-linkedin"></i> LinkedIn</a>
-
-<a href="https://github.com/jaeyk" style="color: #4c4c4c !important;"><i class="bi bi-github"></i> GitHub</a>
+::::: {.custom-about style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap; text-align: left;"}
+::: {style="flex: 0 0 auto;"}
+<img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="140" style="border-radius: 50%;"/>
 :::
+
+::: {style="flex: 1 1 auto;"}
+<h2 style="margin-top: 0; margin-bottom: 0.3em;">Jae Yeon Kim</h2>
+
+<ul style="list-style: none; padding: 0; margin-top: 0;">
+
+<li><i class="bi bi-envelope"></i>
+<a href="mailto:jaekim@unc.edu">jaekim\@unc.edu</a></li>
+
+<li><i class="bi bi-file-earmark-text"></i>
+<a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">CV</a></li>
+
+<li><i class="bi bi-google"></i>
+<a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en">Google
+Scholar</a></li>
+
+<li><i class="bi bi-linkedin"></i>
+<a href="https://www.linkedin.com/in/jae-yeon-kim-694764229/">LinkedIn</a></li>
+
+<li><i class="bi bi-github"></i>
+<a href="https://github.com/jaeyk">GitHub</a></li>
+
+</ul>
+:::
+:::::
 
 > *"The scientist is a communicator as well as a discoverer—sometimes
 > even a missionary.”*\
