@@ -33,6 +33,8 @@ website:
         href: index.qmd
       - text: "CV"
         href: CV_Jae_Yeon_Kim.pdf
+      - text: "Email"
+        href: mailto:jaekim@unc.edu
       - text: "---"
       - section: "Research"
         contents:
