@@ -3,38 +3,25 @@ title: "Office Hour"
 format: html
 ---
 
-## Virtual Civic Tech Office Hour
+## UNC Student Office Hour
 
-I host a weekly 30-minute Zoom office hour (except when I’m traveling)
-to answer questions about civic tech. Below are some examples of topics
-I'm happy to discuss:
+I host weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A).  
+If you are interested, [please feel free to make an appointment](https://calendly.com/jaekim-unc/30min?month=2026-01).
 
--   How to get involved in civic tech as a quant/mixed-method researcher
-    (if you're graduate students, postdocs, and other early-stage
-    researchers)
+<div style="margin-top: 0.75rem;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4506609728687!2d-79.05687062404371!3d35.911467672513766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e7c92a4ebf%3A0x96e51db242dd6c93!2sAbernethy%20Hall%2C%20131%20S%20Columbia%20St%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1768307453720!5m2!1sen!2sus"
+    width="300"
+    height="200"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
--   How to build collaborations (whether you're an academic looking to
-    work with civic tech practitioners or a practitioner looking to work
-    with academics)
+**Possible topics:**
 
--   How to build civic tech capacity (if you're a government agency or
-    nonprofit)
-
--   How to develop a civic tech agenda or portfolio (if you're a think
-    tank or foundation)
-
-I'm also happy to chat about related topics, including the
-administrative state, state capacity, policy implementation, public
-procurement, human-centered design, service design, applied policy data
-science, artificial intelligence in the public sector, and more.
-
-The office hour is *open to all*. You can sign up for a slot using [this
-link](https://calendly.com/d/cwfm-zsp-94v/virtual-civic-tech-office-hour).
-
-<span style="color:blue;">
-<ul>
-  <li>For everyone’s benefit, please sign up for <strong>only one slot</strong> unless multiple meetings are clearly necessary.</li>
-  <li>Please <strong><u>email me in advance</u></strong> with a brief explanation of why you’d like to connect. If I don’t receive an email beforehand, I may cancel the meeting.</li>
-</ul>
-</span>
-
+- Course questions  
+- Paper and research ideas  
+- Graduate school and careers

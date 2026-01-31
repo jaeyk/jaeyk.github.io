@@ -14,12 +14,12 @@ title: "Community building"
 
 I maintain an active network of [collaborators](coauthors.qmd) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
 
+- **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
+  (Co-directors: Donald Moynihan, Pamela Herd, Sebastian Jilke) 
 - **P3 Lab**, Johns Hopkins SNF Agora Institute  
   (Director: Hahrie Han)  
 - **Civic Power Lab**, Harvard Kennedy School  
   (Director: Liz McKenna)  
-- **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
-  (Co-directors: Donald Moynihan, Pamela Herd, Sebastian Jilke)  
 - **REPS Lab**, UCLA  
   (Director: Efrén Pérez)
 

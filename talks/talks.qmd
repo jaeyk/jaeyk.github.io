@@ -10,12 +10,21 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 :::{.cell}
 
 <details open>
+<summary><strong>2026</strong></summary>
+
+| Date   | Type | Event                                           | Place              |
+|--------|------|--------------------------------------------------|--------------------|
+| Feb 14 | Talk | Duke Conference on Society-Centered AI (*scheduled*) | Durham, NC, USA    |
+
+</details>
+
+<details>
 <summary><strong>2025</strong></summary>
 
 | Date       | Type         | Event                                                                 | Place                |
 |------------|--------------|------------------------------------------------------------------------|----------------------|
-| November 19 | Talk | Institute of Governmental Studies, Korea University *(scheduled)* | Virtual |
-| November 12–16 | Panel | Association for Public Policy Analysis and Management (APPAM) *(scheduled)* | Seattle, WA, USA  |
+| November 19 | Talk | Institute of Governmental Studies, Korea University | Virtual |
+| November 12–16 | Panel | Association for Public Policy Analysis and Management (APPAM) | Seattle, WA, USA  |
 | October 30 | Talk | New York City Mayor's Office of Economic Opportunity (NYC Opportunity) | Virtual | 
 | October 22 | Talk | [PRIISM Seminar Series](https://steinhardt.nyu.edu/priism/events/upcoming-events), NYU | Virtual |
 | October 15 | Talk | Tech and Innovation Speaker Series, Johns Hopkins University SAIS | Washington, DC, USA |

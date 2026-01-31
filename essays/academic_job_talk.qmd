@@ -1,66 +1,58 @@
 ---
 title: "Academic Job Talks as Storytelling: Why Character Matters as Much as Plot"
 author: "Jae Yeon Kim"
-date: "April 29, 2025"
+date: "January 30, 2026"
 format: html
 toc: true
 number-sections: false
 ---
 
-After delivering my practice job talk, a colleague gave me an important piece of feedback: “This is a good research talk, but it’s not enough for a job talk.” At the time, I was not sure what that meant. I had worked hard to organize the research clearly, present the methods carefully, and explain the findings in detail. Wasn’t that what a job talk was supposed to do?
+Years ago, after delivering my first practice job talk, a colleague offered a piece of feedback that stayed with me: “This is a good research talk, but it’s not enough for a job talk.” At the time, I was unsure what that meant. I had worked hard to organize the research clearly, present the methods carefully, and explain the findings in detail. Wasn’t that what a job talk was supposed to do?
 
-Over time, I came to understand. A research talk is about communicating results. A job talk is about something more. It is about convincing a group of future colleagues that you are someone they want to invest in, work with, and build a department around. A good job talk does not simply tell a story about the research; it reveals something about the person behind the research. Departments are not only hiring a project. They are hiring a person.
+Over time, I came to understand the distinction. A research talk is primarily about communicating results. A job talk asks for something more. It is about persuading a group of future colleagues that you are someone they want to invest in, work with, and build a department around. A strong job talk does not only present a research project. It also conveys something about the person behind the work. Departments are not just hiring a project. They are hiring a colleague.
 
-Thinking this way helped me see the job talk differently. It is not only about the plot—the data, the models, the results. It is about the character: the decisions you made in designing the research, the curiosity that drove your inquiry, the way you deliver your ideas, and the potential for future work. A job talk is storytelling, and you are at the center of that story.
+Seen this way, the job talk looks different. It is not only about the plot of the research, meaning the data, models, and results. It is also about character: the choices you made in designing the study, the questions that motivated you, the way you communicate ideas, and the direction your work is headed. A job talk is a form of storytelling, and you are part of the story you are telling.
 
-Based on this experience, I found it helpful to keep six principles in mind as I prepared my job talks.
+Based on this experience, I found it helpful to keep six principles in mind while preparing my job talks.
 
-**1. It’s Not About You**
+## 1. It’s Not About You
 
-It is easy to fixate on your own anxieties—whether about your slide design, the complexity of your methods, or the depth of your technical explanations. But what you worry about is often not what the audience cares about. Departments are asking different questions: Is this person good at what they do? Do they show potential for future growth? Are they a good fit for our department and students? A strong job talk addresses these questions.
+It is easy to fixate on your own anxieties, whether about slide design, methodological complexity, or technical detail. But these concerns are often different from what the audience is evaluating. Departments tend to focus on broader questions: Is this person good at what they do? Do they show promise for future work? Would they be a good colleague and teacher in our department? A strong job talk helps the audience answer these questions.
 
-It is important to remember that many faculty members will only encounter you through your job talk, either live or recorded. Even if the search committee recommends you, the wider faculty vote determines the final outcome. In that vote, the impression you make during the talk matters enormously. You cannot assume detailed familiarity with your field or topic. You must meet them where they are: curious, distracted, and busy.
+Many faculty members will only encounter you through the job talk, either live or recorded. Even if a search committee is enthusiastic, the final decision often depends on a wider faculty vote. In that context, the impression created during the talk carries significant weight. You cannot assume deep familiarity with your field or topic. You need to meet the audience where they are: busy, curious, and often distracted.
 
-There is no such thing as a perfect job talk. Perfection is neither possible nor the standard by which talks are judged. Evaluations are subjective, shaped by departmental needs, interests, and individual perspectives. What matters is not achieving perfection, but delivering a clear, compelling story that leaves colleagues curious and confident about you.
+There is no such thing as a perfect job talk. Perfection is neither possible nor expected. Evaluations are subjective and shaped by departmental needs, intellectual interests, and individual perspectives. What matters is not flawlessness, but whether you deliver a clear and engaging talk that leaves colleagues interested in your work and confident about you as a scholar.
 
-**2. Your Character Matters as Much as Your Plot**
+## 2. Your Character Matters as Much as Your Plot
 
-Your research project is important, but it is only part of the story. Departments are evaluating the person behind the project. They want to see intellectual curiosity, creativity, resilience, and collaborative potential. A brilliant paper will not carry a job talk if the audience cannot imagine you thriving as a colleague. Think of your talk as showing, not just telling, who you are as a scholar.
+Your research project is central, but it is not the whole story. Departments are also evaluating the researcher behind the project. They are looking for signs of intellectual curiosity, good judgment, resilience, and the ability to collaborate. Even an excellent paper may not carry a job talk if the audience cannot imagine you thriving as a colleague. Think of the talk as an opportunity to show, rather than simply state, who you are as a scholar.
 
-**3. Tell One Clear Story**
+## 3. Tell One Clear Story
 
-In a room of busy, easily distracted audience members, you need both clarity and substance—enough detail to inform, but never so much that you lose their attention. From the very beginning, frame why your research matters. Help the audience understand what is at stake and why they should care. Once they are invested, walk them through the key challenges and choices with focus. Return often to your central message so even latecomers and distracted listeners can stay with you.
+Job talks take place in rooms full of busy people. Clarity matters as much as substance. From the opening minutes, you need to explain why your research matters and why the audience should care. Once you have their attention, guide them through the key challenges and choices in a focused way. Return regularly to your central message so that even late arrivals or momentarily distracted listeners can follow the argument.
 
-A good job talk is not a data dump. It is a focused narrative built around one clear takeaway: why this work matters, why it matters now, and why you are the one to do it.
+A strong job talk is not a data dump. It is a tightly structured narrative built around one main takeaway: why this work matters, why it matters now, and why you are the right person to do it. Since most people will retain only one core idea, you should decide in advance what that idea is and reinforce it throughout the talk.
 
-Because most people will only retain one idea, you must decide what that one idea should be—and repeat it throughout the talk.
+## 4. Show, Don’t Tell
 
-**4. Show, Don’t Tell**
+Slides should support the story rather than compete with it. When possible, rely on figures or visuals instead of dense text. Keep words to a minimum and use fonts large enough to be read from the back of the room. Avoid unnecessary clutter, including labels or captions that do not add meaning.
 
-Slides should support the story, not overwhelm it. Whenever possible, show with images or figures instead of long text. Keep words minimal and fonts large enough to be read from the back of the room. Avoid clutter: even small labels like "Figure 1" or "Table 2" should be trimmed when possible.
+Never read directly from your slides. Doing so can give the impression of unpreparedness, and that impression is difficult to undo. Slides should highlight what is hard to convey verbally, not serve as a script. Trying to cover too much material often leads to rushing, and rushing almost always weakens the talk.
 
-Never read your slides. A presenter who reads appears unprepared, and once that impression forms, it is difficult to reverse. Use slides to highlight what is hard to say in words, not as a script.
+## 5. Practice Until the Talk Feels Natural
 
-Trying to cover too much often leads to rushing, and rushing almost always weakens the talk.
+Aim to do at least three full practice talks before your first flyout. The first practice usually reveals structural issues. The second helps refine the narrative and pacing. The third allows you to focus on delivery. Once flyouts begin, it becomes much harder to find time and space to rehearse.
 
-**5. Practice Until You Become the Story**
+Before each practice, be clear about the kind of feedback you want and how you want to receive it. Recording practice talks can also be helpful for tracking recurring questions and improving transitions. Not every issue needs to be resolved during the talk itself. Some points can be left for the Q&A, where you can steer discussion toward your strengths. Preparing appendix slides for anticipated questions is often useful.
 
-Do at least three full practice talks before your first flyout. Once you hit the road, it’s much harder to find opportunities to rehearse. The first run surfaces structural gaps, the second refines your narrative, and the third perfects your delivery.
+With enough practice, you develop a sense of ease with the material: the key message, the flow of the narrative, the transitions between slides, and your strategy for handling questions.
 
-Before each practice, tell your audience what kind of feedback you want and how you prefer to receive it—email, shared documents, or live comments. Recording your practice talks can also help you track which questions arise and how you handle them.
+## 6. Feeling nervous is normal
 
-You don’t need to answer every possible question during the talk itself. Some can be reserved for Q&A, where you can guide the discussion toward your strengths. Preparing appendix slides for anticipated questions is a good strategy. If the host allows it, it’s often better to let questions come during the talk. Being able to engage flexibly without losing your thread leaves a strong impression.
+Feeling nervous is normal. Mild anxiety can sharpen focus and improve performance. Problems arise only when anxiety becomes overwhelming.
 
-Practice until your delivery feels second nature—knowing your key message, your narrative flow, your slide transitions, and your plan for handling expected questions with ease.
+I found it helpful to build small pre-talk routines, such as controlled breathing, simple grounding exercises, bringing warm tea, and preparing backups of my slides on multiple devices. I even traveled with two suits in case something went wrong. These strategies worked for me, though others may have different preferences. Anticipating small risks helped keep my nerves manageable.
 
-**6. Managing Nerves: Anxiety Is Your Friend Until It Becomes Toxic**
+The goal is not to eliminate anxiety, but to keep it at a level where it becomes a source of energy rather than a burden. Preparation is what makes that possible.
 
-Feeling nervous is normal. In fact, mild anxiety sharpens focus and prepares you for performance. But if anxiety becomes overwhelming, it can hurt your delivery.
-
-I found it helpful to build small rituals before speaking: deep breathing, counting backwards from ten, bringing warm tea in a spill-proof tumbler, and preparing backups of my slides on multiple devices. I brought two suits with me in case something happened to one. That was what worked for me, though I know others will have different preferences when it comes to professional attire. Predicting and managing small risks helped keep nerves under control.
-
-The point is not to eliminate nervousness, but to keep it manageable. With enough preparation, your nerves become energy, not a burden.
-
-------------------------------------------------------------------------
-
-Looking back, I am grateful for the colleague who pushed me to see the difference between a research talk and a job talk. Understanding that difference changed not only how I prepared but also how I presented myself. Strong research is necessary. But in the end, it is the story of who you are, and who you are becoming, that leaves the lasting impression.
+Looking back, I am grateful to the colleague who pushed me to think more carefully about the difference between a research talk and a job talk. That shift changed not only how I prepared, but also how I presented myself. Strong research is essential. But ultimately, it is the story of who you are, and who you are becoming as a scholar, that leaves the most lasting impression.

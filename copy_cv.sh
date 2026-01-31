@@ -14,8 +14,14 @@ if [ styles.scss -nt styles.css ]; then
     sass styles.scss styles.css
 fi
 
-# quarto publish already renders, so no separate render needed
-echo "Publishing to GitHub Pages..."
-quarto publish gh-pages --no-prompt
+# Render the site
+echo "Rendering site..."
+quarto render
+
+# Stage, commit, and push changes
+echo "Committing and pushing changes..."
+git add .
+git commit -m "Update site $(date '+%Y-%m-%d %H:%M')" || echo "No changes to commit"
+git push
 
 echo "Done!"

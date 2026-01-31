@@ -7,7 +7,7 @@ I develop and share public datasets to strengthen the empirical
 foundations of social science and expand access to knowledge for the
 public good.
 
-![Civic opportunity provider type map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"} 
+![Civic opportunity map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"} 
 
 1.  [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
