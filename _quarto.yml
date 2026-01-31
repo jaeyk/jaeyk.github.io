@@ -14,7 +14,7 @@ website:
   favicon: images/favicon/favicon-32x32.png
   repo-url: https://github.com/jaeyk/jaeyk.github.io
   search:
-    location: navbar
+    location: sidebar
     type: overlay
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
@@ -24,45 +24,44 @@ website:
       - icon: github
         href: https://github.com/jaeyk/jaeyk.github.io
 
-  navbar:
-    #background: dark
-    #foreground: light
-    right:
+  sidebar:
+    style: docked
+    search: true
+    background: light
+    contents:
       - text: "Home"
         href: index.qmd
-        
       - text: "CV"
         href: CV_Jae_Yeon_Kim.pdf
-        
-      - text: "Talks"
-        href: talks/talks.qmd 
-        
-      - text: "Awards"
-        href: awards/awards.qmd
-        
-      - text: "Publications"
-        href: publications/pubs.qmd
-        
-      - text: "Book"
-        href: book_projects/books.qmd
-        
-      - text: "Software"
-        href: software/software.qmd
-        
-      - text: "Data"
-        href: datasets/data.qmd
-        
-      - text: "Teaching"
-        href: teaching/teaching.qmd
-        
-      - text: "Community"
-        href: community_building/community.qmd
-        
-      - text: "Personal"
-        href: essays/essays.qmd
-        
-      - text: "Office Hour"
-        href: office_hour/office_hour.qmd
+      - text: "---"
+      - section: "Research"
+        contents:
+          - text: "Publications"
+            href: publications/pubs.qmd
+          - text: "Book"
+            href: book_projects/books.qmd
+          - text: "Talks"
+            href: talks/talks.qmd
+          - text: "Awards"
+            href: awards/awards.qmd
+      - text: "---"
+      - section: "Resources"
+        contents:
+          - text: "Software"
+            href: software/software.qmd
+          - text: "Data"
+            href: datasets/data.qmd
+      - text: "---"
+      - section: "More"
+        contents:
+          - text: "Teaching"
+            href: teaching/teaching.qmd
+          - text: "Community"
+            href: community_building/community.qmd
+          - text: "Personal"
+            href: essays/essays.qmd
+          - text: "Office Hour"
+            href: office_hour/office_hour.qmd
         
 format:
   html:
@@ -76,9 +75,20 @@ format:
     smooth-scroll: true
     include-in-header:
       - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
           <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
           <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
           <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
           <link rel="manifest" href="/images/favicon/site.webmanifest">
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var searchInput = document.querySelector('#quarto-search input[type="text"], .aa-Input');
+            if (searchInput) {
+              searchInput.setAttribute('placeholder', 'Search this site...');
+            }
+          });
+          </script>
 

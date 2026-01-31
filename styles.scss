@@ -32,9 +32,14 @@ $headings-color: $theme-black;
 
 //Tiempos-Text,Georgia,Times,Times New Roman,serif
 
-$headings-font-family: Georgia, Times, 'Times New Roman', serif;
-$navbar-font-family: Georgia, Times, 'Times New Roman', serif;
-$font-family-base: Georgia, Times, 'Times New Roman', serif;
+// Web fonts
+$font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+$headings-font-family: $font-serif;
+$navbar-font-family: $font-sans;
+$font-family-base: $font-serif;
+$sidebar-font-family: $font-sans;
 
 // font imports
 
@@ -55,7 +60,7 @@ div.quarto-post .metadata {
 
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: $headings-font-family;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* Navbar */
@@ -735,5 +740,183 @@ details summary:hover {
 
 details[open] summary {
   margin-bottom: 0.5em;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+
+/* Sidebar container */
+.sidebar.sidebar-navigation,
+.sidebar-navigation {
+  background-color: #f8fbfd;
+  border-right: 1px solid #e0e8f0;
+  padding-top: 0.5rem;
+  font-family: $sidebar-font-family;
+}
+
+/* Tighten sidebar menu spacing */
+.sidebar-navigation .sidebar-menu-container {
+  padding: 0;
+}
+
+.sidebar-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-navigation li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* Section headers (Research, Resources, More) */
+.sidebar .sidebar-section .sidebar-section-header,
+.sidebar-navigation .sidebar-section .sidebar-item-text {
+  font-family: $sidebar-font-family;
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4em 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  background: linear-gradient(90deg, rgba(75, 156, 211, 0.15) 0%, transparent 100%);
+  border-left: 3px solid $unc-blue;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Sidebar navigation items */
+.sidebar .sidebar-item .sidebar-item-text,
+.sidebar .sidebar-item a,
+.sidebar .sidebar-navigation .sidebar-item-text,
+.sidebar-navigation .sidebar-item a {
+  color: $unc-dark-blue !important;
+  font-weight: 500;
+  padding: 0.3em 1em;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.sidebar .sidebar-item:hover .sidebar-item-text,
+.sidebar .sidebar-item a:hover,
+.sidebar-navigation .sidebar-item:hover a {
+  background-color: rgba(75, 156, 211, 0.12);
+  color: $unc-blue !important;
+  text-decoration: none !important;
+}
+
+
+/* Force ALL sidebar text to be visible */
+#quarto-sidebar *,
+.sidebar-navigation *,
+nav[role="navigation"] * {
+  color: $unc-dark-blue !important;
+}
+
+#quarto-sidebar a,
+.sidebar-navigation a,
+.sidebar a {
+  color: $unc-dark-blue !important;
+  text-decoration: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Active page - blue background with white text */
+.sidebar .active > a,
+.sidebar .active > .sidebar-item-text,
+.sidebar .current > a,
+.sidebar-item.active a,
+.sidebar-navigation .active a,
+#quarto-sidebar .active a {
+  background-color: $unc-blue !important;
+  color: white !important;
+}
+
+.sidebar .active > a *,
+.sidebar .active .sidebar-item-text,
+.sidebar-item.active a,
+.sidebar-item.active * {
+  color: white !important;
+}
+
+/* Separator lines */
+.sidebar hr,
+.sidebar .sidebar-section hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d0dce8, transparent);
+  margin: 0.4em 1em;
+}
+
+/* Search box styling */
+.sidebar #quarto-search {
+  margin: 0.4em 1em 0.6em 1em;
+}
+
+.sidebar #quarto-search input[type="text"],
+.sidebar .aa-Form,
+.sidebar .aa-Input {
+  border: 1px solid #c5d8e8 !important;
+  border-radius: 20px !important;
+  padding: 0.5em 1em 0.5em 2.5em !important;
+  background-color: white !important;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar #quarto-search input[type="text"]:focus,
+.sidebar .aa-Form:focus-within {
+  border-color: $unc-blue !important;
+  box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.2) !important;
+  outline: none;
+}
+
+/* Search icon styling */
+.sidebar .aa-SubmitIcon,
+.sidebar #quarto-search .search-icon {
+  color: $unc-blue !important;
+}
+
+/* Site title in sidebar */
+.sidebar .sidebar-title,
+.sidebar-navigation .sidebar-title {
+  font-family: $sidebar-font-family;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: $unc-dark-blue !important;
+  padding: 0.6em 1em 0.4em 1em;
+  border-bottom: 2px solid $unc-blue;
+  margin-bottom: 0.3em;
+}
+
+
+/* Home and CV links - make them slightly more prominent */
+.sidebar .sidebar-item:first-child .sidebar-item-text,
+.sidebar .sidebar-item:nth-child(2) .sidebar-item-text {
+  font-weight: 600;
+}
+
+
+/* Sidebar footer/bottom area */
+.sidebar .sidebar-footer {
+  padding: 1em;
+  margin-top: auto;
+  border-top: 1px solid #e0e8f0;
+  font-size: 0.85em;
+  color: #6c757d;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 991px) {
+  .sidebar.sidebar-navigation {
+    background-color: white;
+    border-right: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
