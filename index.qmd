@@ -33,14 +33,14 @@ format:
 #       href: https://github.com/jaeyk
 ---
 
-<div style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap; text-align: left; margin-bottom: 1.5em;">
+<div class="hero-header">
 
-<div style="flex: 0 0 auto; text-align: center; max-width: 160px;">
+<div class="hero-profile">
 <img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="140" style="border-radius: 50%;"/>
-<p style="font-size: 0.8em; color: #555; margin-top: 0.5em; line-height: 1.4; font-style: italic;">A political scientist by training, a data scientist in practice, and a civic tech nerd at heart.</p>
+<p class="hero-caption">A political scientist by training, a data scientist in practice, and a civic tech nerd at heart.</p>
 </div>
 
-<div style="flex: 0 0 auto;">
+<div class="hero-contact">
 <h2 style="margin-top: 0; margin-bottom: 0.3em;">Jae Yeon Kim</h2>
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li><i class="bi bi-envelope"></i> <a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a></li>
@@ -51,7 +51,7 @@ format:
 </ul>
 </div>
 
-<div style="flex: 1 1 200px; border-left: 3px solid transparent; padding-left: 1em; font-size: 0.95em; color: #555; font-style: italic; align-self: center;">
+<div class="hero-quote">
 "The scientist is a communicator as well as a discoverer—sometimes even a missionary."<br/>
 <span style="font-style: normal;">—Herbert A. Simon (1916-2001)</span>
 </div>
