@@ -7,9 +7,9 @@ I develop and share public datasets to strengthen the empirical
 foundations of social science and expand access to knowledge for the
 public good.
 
-![Civic opportunity map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"} 
+![Civic opportunity map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"}
 
-1.  [**MapAgora, Civic Opportunity Datasets for the Study of American
+4.  [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
     [**\[Dashboard\]**](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)
@@ -30,17 +30,17 @@ public good.
         align with traditional measures of socioeconomic inequality.
         These datasets offer new tools for understanding civic
         infrastructure, local democracy, and public policy.\
-    -   **Use case:** Featured in [*“MapAgora, Civic Opportunity
+    -   **Use case:** Featured in [*"MapAgora, Civic Opportunity
         Datasets for the Study of American Local Politics and Public
-        Policy”*](https://www.nature.com/articles/s41597-025-05353-6),
-        *Nature: Scientific Data* (2025), and [*“The Unequal Landscape
+        Policy"*](https://www.nature.com/articles/s41597-025-05353-6),
+        *Nature: Scientific Data* (2025), and [*"The Unequal Landscape
         of Civic Opportunity in
-        America”*](https://www.nature.com/articles/s41562-023-01743-1),
+        America"*](https://www.nature.com/articles/s41562-023-01743-1),
         *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie
         Han\
     -   **Collaborator:** Milan de Vries and Hahrie Han
 
-2.  [**Validated Names for Experimental Studies on Ethnicity and
+3.  [**Validated Names for Experimental Studies on Ethnicity and
     Race**](https://doi.org/10.7910/DVN/LP4EAR)
 
     -   **Summary:** A large and fast-growing number of studies across the social sciences use names in experiments to signal race.
@@ -52,16 +52,16 @@ public good.
         income, education, and citizenship, along with respondent
         characteristics. These data are designed to help researchers
         isolate the causal effects of race in experimental research.\
-    -   **Use case:** Featured in [*“Validated names for experimental
+    -   **Use case:** Featured in [*"Validated names for experimental
         studies on race and
-        ethnicity”*](https://www.nature.com/articles/s41597-023-01947-0),
+        ethnicity"*](https://www.nature.com/articles/s41597-023-01947-0),
         *Nature: Scientific Data* (2023), with Charles Crabtree, S.
         Michael Gaddis, John B. Holbein, Cameron Guage, and William
         Marx.\
     -   **Collaborator:** Charles Crabtree, S. Michael Gaddis, John B.
         Holbein, Cameron Guage, and William Marx
 
-3.  [**Linked Fate Literature Review Dataset
+2.  [**Linked Fate Literature Review Dataset
     (1999–2019)**](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
 
     -   **Summary:** A hand-coded dataset of 160 studies on linked fate
@@ -69,12 +69,12 @@ public good.
         measurement strategies, theoretical framings, and the
         populations studied in political science and related
         disciplines.\
-    -   **Use case:** Used in [*“Rewiring Linked Fate: Bringing Back
+    -   **Use case:** Used in [*"Rewiring Linked Fate: Bringing Back
         History, Agency, and
-        Power”*](https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7),
+        Power"*](https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7),
         *Perspectives on Politics* (2023), with Reuel Rogers.
 
-4.  [**Asian American and Latino Advocacy and Community Service
+1.  [**Asian American and Latino Advocacy and Community Service
     Organizations Dataset
     (1868–2016)**](https://doi.org/10.7910/DVN/FLUPBJ)
 
@@ -83,9 +83,9 @@ public good.
         Council of La Raza (NCLR). Validation relied on websites, news
         archives, and outreach, with founding dates confirmed for 77% of
         Asian and 71% of Latino organizations.\
-    -   **Use case:** Used in [*“How Other Minorities Gained Access: The
+    -   **Use case:** Used in [*"How Other Minorities Gained Access: The
         War on Poverty and Asian American and Latino Community
-        Organizing”*](https://journals.sagepub.com/doi/10.1177/1065912920983456),
+        Organizing"*](https://journals.sagepub.com/doi/10.1177/1065912920983456),
         *Political Research Quarterly* (2021).
 
 <br>

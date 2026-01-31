@@ -46,7 +46,7 @@ By centering policy implementation, local political economy, and classification 
 <details>
 <summary><strong>Books</strong></summary>
 
-1.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
+2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
 
 Why can we shop with one click but still struggle to access basic public services?
 
@@ -58,21 +58,21 @@ Why can we shop with one click but still struggle to access basic public service
 
 - Recommended by [the *National Assembly Library*](https://shorturl.at/7Oc1Z), *Samsung Global Research*'s executive education program (*SERICEO*), and [the *Korea Institute of Science and Technology* (KIST)](https://library.kist.re.kr/search/recommend.do)
 
-- Featured in major Korean newspapers across the ideological spectrum:  
-  [*The Chosun Ilbo*](https://futurechosun.com/archives/80334),  
-  [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533),  
-  [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i),  
-  [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005),  
+- Featured in major Korean newspapers across the ideological spectrum:
+  [*The Chosun Ilbo*](https://futurechosun.com/archives/80334),
+  [*Maeil Business Newspaper*](https://www.mk.co.kr/news/culture/10825533),
+  [*The Korea Economic Daily*](https://www.hankyung.com/article/202309136820i),
+  [*Kyunghyang Shinmun*](https://www.khan.co.kr/culture/book/article/202309082034005),
   [*Hankyoreh*](https://h21.hani.co.kr/arti/world/world_general/54378.html)
 
-- Regular op-eds based on the book published in:  
-  [*Chosun Ilbo*'s Civic Section](https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA) *(a major conservative newspaper)* and  
+- Regular op-eds based on the book published in:
+  [*Chosun Ilbo*'s Civic Section](https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA) *(a major conservative newspaper)* and
   [*Weekly Kyunghang*](https://weekly.khan.co.kr/khnm.html?mode=list&s_code=ne039) *(a major liberal magazine)*
-    
+
 ::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}
 
-2.  ["How to Use University: A Practical Guide for College Students (in Korean)"](https://ebook-product.kyobobook.co.kr/dig/epd/sam/E000003198821) (Sejong Books, 2014) \[[book website](https://jaeyk.github.io/college_success2.0/)\]
+1.  ["How to Use University: A Practical Guide for College Students (in Korean)"](https://ebook-product.kyobobook.co.kr/dig/epd/sam/E000003198821) (Sejong Books, 2014) \[[book website](https://jaeyk.github.io/college_success2.0/)\]
 
 Why do so many students enter college full of ambition—only to graduate with more confusion than clarity?
 
