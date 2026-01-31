@@ -686,12 +686,16 @@ body.quarto-article .page-columns .content {
 
 /* Sticky sidebar for profile/contact info */
 .sticky-sidebar {
-  position: fixed;
+  position: fixed !important;
   left: 2em;
   top: 120px;
   width: 140px;
   text-align: left;
-  z-index: 100;
+  z-index: 1000;
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .sticky-sidebar a {
@@ -715,10 +719,10 @@ body.quarto-article .page-columns .content {
   margin-bottom: 0.5em;
 }
 
-/* Hide sticky sidebar on smaller screens */
-@media (max-width: 1400px) {
+/* Responsive: collapse sidebar on mobile only */
+@media (max-width: 768px) {
   .sticky-sidebar {
-    position: static;
+    position: static !important;
     width: 100%;
     text-align: left;
     display: flex;
@@ -728,7 +732,7 @@ body.quarto-article .page-columns .content {
     margin-bottom: 1.5em;
     padding: 1em;
     background: #f9f9f9;
-    border-radius: 8px;
+    box-shadow: none;
   }
 
   .sticky-sidebar img {
