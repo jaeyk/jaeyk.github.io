@@ -265,7 +265,7 @@ div.metadata a:hover,
 }
 
 /* Buttons */
-.btn, .about-link {
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button), .about-link {
   background-color: $unc-dark-blue;
   border: 1.5px solid $unc-dark-blue;
   color: $theme-white;
@@ -273,7 +273,7 @@ div.metadata a:hover,
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
-.btn:hover, .about-link:hover {
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button):hover, .about-link:hover {
   background-color: $unc-blue;
   border-color: $unc-blue;
   color: $theme-white;
