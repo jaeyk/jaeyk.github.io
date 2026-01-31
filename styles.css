@@ -227,7 +227,7 @@ div.metadata a:hover,
 }
 
 /* Buttons */
-.btn, .about-link {
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button), .about-link {
   background-color: #13294B;
   border: 1.5px solid #13294B;
   color: #FFFFFF;
@@ -236,7 +236,7 @@ div.metadata a:hover,
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.btn:hover, .about-link:hover {
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button):hover, .about-link:hover {
   background-color: #4B9CD3;
   border-color: #4B9CD3;
   color: #FFFFFF;
@@ -512,7 +512,7 @@ div.quarto-about-trestles .about-link:hover {
   vertical-align: middle;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     font-size: 0.95em;
   }
@@ -530,11 +530,13 @@ div.quarto-about-trestles .about-link:hover {
     display: flex !important;
     flex-wrap: wrap !important;
     gap: 1em !important;
+    align-items: flex-start !important;
   }
-  /* Row 1: Profile image (left) + contact info (right) */
+  /* Row 1: Profile image (left) */
   .hero-profile {
-    flex: 0 0 auto !important;
-    max-width: 100px !important;
+    flex: 0 0 80px !important;
+    max-width: 80px !important;
+    order: 1 !important;
   }
   .hero-profile img {
     width: 80px !important;
@@ -542,8 +544,10 @@ div.quarto-about-trestles .about-link:hover {
   .hero-caption {
     display: none !important;
   }
+  /* Row 1: Contact info (right) */
   .hero-contact {
-    flex: 1 1 0 !important;
+    flex: 1 1 calc(100% - 100px) !important;
+    order: 2 !important;
   }
   .hero-contact h2 {
     font-size: 1.2em;
@@ -555,7 +559,8 @@ div.quarto-about-trestles .about-link:hover {
   .hero-quote {
     flex: 0 0 100% !important;
     width: 100% !important;
-    margin-top: 1.5em !important;
+    margin-top: 1em !important;
+    order: 3 !important;
   }
   .hero-flex {
     flex-direction: column;
@@ -587,6 +592,47 @@ div.quarto-about-trestles .about-link:hover {
     font-size: 0.95em;
   }
 }
+/* Fix mobile header buttons - remove dark background */
+.quarto-secondary-nav {
+  background-color: white !important;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle,
+.quarto-secondary-nav .btn,
+.quarto-secondary-nav button,
+.quarto-secondary-nav .quarto-search-button,
+button.quarto-btn-toggle,
+button.quarto-search-button,
+.btn.quarto-btn-toggle,
+.btn.quarto-search-button {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: #13294B !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle:hover,
+.quarto-secondary-nav .btn:hover,
+.quarto-secondary-nav button:hover,
+.quarto-secondary-nav .quarto-search-button:hover,
+button.quarto-btn-toggle:hover,
+button.quarto-search-button:hover {
+  background-color: rgba(75, 156, 211, 0.1) !important;
+  background: rgba(75, 156, 211, 0.1) !important;
+  color: #4B9CD3 !important;
+}
+
+.quarto-secondary-nav .breadcrumb-item a {
+  color: #13294B !important;
+}
+
+/* Fix header fixed-top background */
+#quarto-header.headroom {
+  background-color: white !important;
+}
+
 /* Fix visibility for Quarto about links in trestles layout */
 div.quarto-about-trestles .about-link {
   color: #13294B !important;
