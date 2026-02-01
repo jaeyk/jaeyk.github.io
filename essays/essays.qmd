@@ -11,17 +11,31 @@ At the same time, my perspective and career path have been shaped by where I beg
 
 These experiences continue to guide the research questions I pursue and the problems I choose to engage with.
 
-Below is a collection of essays I’ve written over the years. You can also find my writing on [Substack](https://jaeyeonkim.substack.com/).
+Below is a collection of essays I’ve written over the years, organized into three categories: professional reflections, personal reflections, and career advice. You can also find my writing on [Substack](https://jaeyeonkim.substack.com/).
+
+**Professional Reflections**
 
 - [*I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing*](return2academia.html)
 
+- [*Researching and Doing Policy Science as a Political Scientist*](policy_science.html)
+
+- [*Speaking of Speaking English*](speaking_of_speaking_english.html)
+
+**Personal Reflections**
+
 - [*Paths Denied, Paths Created*](memorial_day.html)
 
-- [*How Opportunities Travel: A Guide to Academic Networking*](networking.html)
+- [*In Praise of Small-Town Childhood*](the_small_town.html)
+
+- [*Digging the Well: What I Learned from Haruki Murakami’s Everyday Discipline*](haruki.html)
+
+**Career Advice**
 
 - [*Academic Job Talks as Storytelling: Why Character Matters as Much as Plot*](academic_job_talk.html)
 
 - [*What I Wish I Knew Before the Academic Job Market*](job_market.html)
+
+- [*How to Write a Statement of Purpose for Graduate School in Political Science / Public Policy*](sop.html)
 
 **Korean essays**
 
