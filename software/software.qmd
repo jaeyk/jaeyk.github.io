@@ -4,6 +4,8 @@ title: "Software"
 
 I develop open-source software to support data curation and computational research in the social sciences and teaching. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
 
+::: {.reversed-list-6}
+
 6. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
 
 5. [**MapAgora**](https://snfagora.github.io/MapAgora/)
@@ -28,3 +30,4 @@ I develop open-source software to support data curation and computational resear
 1. [**tidyethnicnews**](https://jaeyk.github.io/tidyethnicnews/)
    - **Summary:** An R package for scraping, cleaning, and organizing ethnic newspaper articles from the Ethnic NewsWatch database. Designed to support media analysis and political communication research.
    - **Use case:** Used in ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles"](https://link.springer.com/article/10.1007/s42001-020-00097-2) (*Journal of Computational Social Science* (2021)
+:::

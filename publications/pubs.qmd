@@ -7,6 +7,8 @@ format: html
 
 <summary><strong>Peer-reviewed journal articles</strong></summary>
 
+::: {.reversed-list-17}
+
 17. ["Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans."](https://journals.sagepub.com/doi/10.1177/13684302251346402) (Kasheena Rogbeer, **Jae Yeon Kim**, and Efrén Pérez) *Group Processes and Intergroup Relations*, Online First in July 2025 [[replication](https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009)]
 
     -   Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
@@ -44,6 +46,8 @@ format: html
 2.  ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (**Jae Yeon Kim**), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
 
 1.  ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (**Jae Yeon Kim**), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
+
+:::
 
 </details>
 
@@ -150,15 +154,21 @@ format: html
 
 <summary><strong>Edited volume book chapters</strong></summary>
 
+::: {.reversed-list-2}
+
 2. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)
 
 1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (**Jae Yeon Kim**) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
+
+:::
 
 </details>
 
 <details>
 
 <summary><strong>Media and public writing</strong></summary>
+
+::: {.reversed-list-7}
 
 7.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
 
@@ -174,11 +184,15 @@ format: html
 
 1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
+:::
+
 </details>
 
 <details>
 
 <summary><strong>Public writing</strong></summary>
+
+::: {.reversed-list-4}
 
 4.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022.
 
@@ -187,3 +201,7 @@ format: html
 2.  ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (**Jae Yeon Kim**), *SAGE Ocean*, June 24, 2020
 
 1.  ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020
+
+:::
+
+</details>
