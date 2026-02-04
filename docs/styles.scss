@@ -1,0 +1,1099 @@
+/*-- scss:defaults --*/
+
+$primary-color: #5480a7;
+$blue: #5480a7;
+$primary-color-dark: #2c3f51;
+$secondary-color: #56A754;
+$secondary-color-trans: rgba(86, 167, 84, 0.2);
+$tertiary-color: #A77B54;
+
+$theme-black: #4c4c4c;
+$theme-white: white;
+$theme-grey: #e9ecef;
+
+$theme-berkeley: #003262;
+
+// UNC Carolina Theme Colors
+$unc-blue: #4B9CD3;
+$unc-dark-blue: #13294B;
+$unc-white: #FFFFFF;
+$unc-gray: #E0E0E0;
+
+// Assigning UNC colors
+$primary-color: $unc-blue;
+$primary-color-dark: $unc-dark-blue;
+$secondary-color: $unc-gray;
+$theme-white: $unc-white;
+$link-color: $unc-dark-blue;
+
+$body-bg: $theme-white;
+$body-color: $theme-black;
+$headings-color: $theme-black;
+
+//Tiempos-Text,Georgia,Times,Times New Roman,serif
+
+// Web fonts
+$font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+$headings-font-family: $font-serif;
+$navbar-font-family: $font-sans;
+$font-family-base: $font-serif;
+$sidebar-font-family: $font-sans;
+
+// font imports
+
+
+/*-- scss:rules --*/
+
+body {
+  font-family: $font-family-base;
+}
+
+div.quarto-post .metadata {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+#title-block-header {
+  margin-block-end: 2rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: $headings-font-family;
+  font-weight: 600;
+}
+
+/* Navbar */
+//.navbar,
+//.navbar-dark {
+//  background-color: darken($primary-color, 5%) !important;
+//}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+  background-color: #4B9CD3 !important;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+  color: $theme-white !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $secondary-color !important;
+}
+
+/* School colors */
+.carolina-blue { 
+  color: #4B9CD3 !important; 
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.carolina-dark {
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+}
+
+.harvard-crimson {
+  color: #A51C30 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.jhu-blue {
+  color: #002D72 !important;
+  background-color: #e8edf7;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.georgetown-blue {
+  color: #041E42 !important;
+  background-color: #e6eaf2;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.michigan-maize {
+  color: #00274C !important;
+  background-color: #fff9e0;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.michigan-blue {
+  color: #00274C !important;
+  background-color: #e5ecf6;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.berkeley-blue {
+  color: #003262 !important;
+  background-color: #eaf1f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.cfa-blue {
+  background-color: #e7f0fa !important;
+
+  a {
+    color: #1a73e8 !important; // Google blue-ish
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.d4g-roundtables {
+  background-color: #ffe066; // soft yellow example
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* Layout */
+.sidebar, .nav-page { max-width: 250px; }
+.page-columns { gap: 2rem; }
+
+.sidebar { flex: 0 0 20%; }
+.content { flex: 1 1 80%; }
+
+dl.auto-numbered {
+  counter-reset: number;
+  margin-left: 1em;
+}
+dl.auto-numbered dt::before {
+  counter-increment: number;
+  content: counter(number) ". ";
+  font-weight: bold;
+}
+dl.auto-numbered dt,
+dl.auto-numbered dd {
+  display: inline;
+}
+dl.auto-numbered dd::before {
+  content: " ";
+}
+
+/* Career timeline */
+.career-timeline {
+  background-color: white;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 6px;
+  font-family: var(--bs-body-font-family);
+  font-size: 0.9em;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+//.career-timeline a {
+//  color: $unc-blue !important;
+//  text-decoration: underline;
+//}
+.career-timeline a:hover {
+  color: $unc-blue !important;
+}
+
+/* Timeline toggle */
+.timeline-section summary {
+  position: relative;
+  padding-left: 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  display: block;
+}
+.timeline-section summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 0.9em;
+  color: $primary-color-dark;
+  transition: transform 0.2s ease;
+}
+.timeline-section[open] summary::before {
+  transform: rotate(90deg);
+}
+.timeline-section summary::-webkit-details-marker,
+.timeline-section summary::marker {
+  display: none;
+}
+
+/* Hide TOC in sidebar */
+.sidebar nav#TOC {
+  display: none !important;
+}
+
+/* Global link styles */
+a,
+.content a,
+main a,
+.callout a,
+.sidebar a,
+div.metadata a,
+.callout-note a,
+.callout-tip a {
+  color: $unc-dark-blue !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.callout a:hover,
+.sidebar a:hover,
+div.metadata a:hover,
+.callout-note a:hover,
+.callout-tip a:hover {
+  color: $unc-blue !important;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button), .about-link {
+  background-color: $unc-dark-blue;
+  border: 1.5px solid $unc-dark-blue;
+  color: $theme-white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.btn:not(.quarto-btn-toggle):not(.quarto-search-button):hover, .about-link:hover {
+  background-color: $unc-blue;
+  border-color: $unc-blue;
+  color: $theme-white;
+}
+.btn-outline, .btn-outline-primary {
+  background-color: transparent;
+  border: 1.5px solid $unc-dark-blue;
+  color: $unc-dark-blue;
+  font-weight: 600;
+}
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+}
+
+/* UNC button utility classes */
+.btn-unc--solid {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+  border: 1.5px solid $unc-dark-blue;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+.btn-unc--solid:hover {
+  background-color: $unc-blue;
+  border-color: $unc-blue;
+  color: $theme-white;
+}
+
+.btn-unc--outline {
+  display: inline-block;
+  padding: 0.4em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: transparent;
+  color: $unc-dark-blue;
+  border: 1.5px solid $unc-dark-blue;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+.btn-unc--outline:hover {
+  background-color: $unc-dark-blue;
+  color: $theme-white;
+  border-color: $unc-dark-blue;
+}
+
+// Override green link color from flatly
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.content a,
+main a,
+p a,
+li a,
+strong a,
+em a,
+blockquote a,
+.card a,
+.nav-item a,
+.about-link {
+  color: $unc-dark-blue !important;
+  text-decoration: underline;
+}
+
+a:hover,
+.content a:hover,
+main a:hover,
+.card a:hover,
+.about-link:hover {
+  color: $unc-blue !important;
+}
+
+/* Better contrast and visibility for about links */
+div.quarto-about-trestles .about-link {
+  color: $unc-blue !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: $unc-dark-blue !important;  // improves contrast on hover
+  text-decoration: underline;
+}
+
+/* Remove all underlines from navbar links */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Fix low-contrast hover on navbar brand */
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: white !important;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* Navbar brand (site title): visible by default and on hover */
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: white !important;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* Navbar menu items: same hover contrast and style */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: white !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* FORCE the navbar background to UNC blue, overriding Flatly */
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+  background-color: #4B9CD3 !important;
+}
+
+/* ONLY affect the left column of the landing page */
+div.quarto-about-trestles .about-entity {
+  background-color: $unc-blue !important;
+  color: white !important;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+/* Ensure contact links are visible */
+div.quarto-about-trestles .about-link {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+/* Remove all underlines from navbar links */
+div.quarto-about-trestles .about-link:hover {
+  color: $unc-dark-blue !important;
+  text-decoration: none;
+}
+
+/* Career timeline items */
+.career-items div {
+  line-height: 1.5;
+  margin-bottom: 0.4em;
+}
+
+/* Fully remove underline from all links in the career timeline, including hover */
+.career-timeline a,
+.career-timeline a:hover,
+.career-timeline a:link,
+.career-timeline a:visited,
+.career-timeline a:active,
+.career-timeline * a,
+.career-timeline * a:hover {
+  all: unset !important; /* nukes all default/link styles */
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  cursor: text; /* optional: or 'default' to avoid pointer */
+}
+
+/* Highlighting utility classes */
+
+.highlight-affiliation {
+  color: $primary-color-dark;
+  font-weight: 600;
+}
+
+.highlight-role {
+  color: $unc-dark-blue;
+  font-weight: bold;
+}
+
+.highlight-award {
+  background-color: #e8eaf6; // very soft indigo/lavender
+  color: #1a237e;            // strong indigo text
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.highlight-pub {
+  font-style: italic;
+  color: #1a237e;                  // same indigo text as award for visual coherence
+  background-color: #f3f4fd;       // very soft lavender-tinted blue
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.highlight-project {
+  background-color: #f0f7ff; // very light blue
+  color: #0b3d91;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-profile img.hero-img {
+  width: auto;
+  max-height: 180px;  // Adjust this value until the image height visually aligns with the link block
+  border-radius: 50%;
+  display: block;
+}
+
+.hero-contacts {
+  flex: 1 1 250px;
+  font-size: 0.95em;
+  margin-top: 0.25rem;
+}
+
+.hero-contacts ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hero-contacts li {
+  margin-bottom: 0.4em;
+}
+
+.hero-contacts i {
+  margin-right: 0.5em;
+  color: $unc-dark-blue;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95em;
+  }
+
+  h1, .h1 {
+    font-size: 1.6em;
+  }
+
+  h2, .h2 {
+    font-size: 1.3em;
+  }
+
+  h3, .h3 {
+    font-size: 1.1em;
+  }
+
+  /* Mobile hero header layout */
+  .hero-header {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1em !important;
+    align-items: flex-start !important;
+  }
+
+  /* Row 1: Profile image (left) */
+  .hero-profile {
+    flex: 0 0 80px !important;
+    max-width: 80px !important;
+    order: 1 !important;
+  }
+
+  .hero-profile img {
+    width: 80px !important;
+  }
+
+  .hero-caption {
+    display: none !important;
+  }
+
+  /* Row 1: Contact info (right) */
+  .hero-contact {
+    flex: 1 1 calc(100% - 100px) !important;
+    order: 2 !important;
+  }
+
+  .hero-contact h2 {
+    font-size: 1.2em;
+  }
+
+  .hero-contact ul {
+    font-size: 0.9em;
+  }
+
+  /* Row 2: Quote full width below */
+  .hero-quote {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    margin-top: 1em !important;
+    order: 3 !important;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dbe9f6;
+  }
+
+  .hero-profile img.hero-img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-contacts {
+    margin: 0 !important;
+    padding: 0.6rem 0.8rem;
+    background-color: #eaf4fb;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 0.9em;
+    display: block;
+  }
+
+  .hero-contacts p {
+    margin: 0;
+    padding: 0;
+  }
+
+  blockquote {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95em;
+  }
+}
+
+/* Fix mobile header buttons - remove dark background */
+.quarto-secondary-nav {
+  background-color: white !important;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle,
+.quarto-secondary-nav .btn,
+.quarto-secondary-nav button,
+.quarto-secondary-nav .quarto-search-button,
+button.quarto-btn-toggle,
+button.quarto-search-button,
+.btn.quarto-btn-toggle,
+.btn.quarto-search-button {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: $unc-dark-blue !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.quarto-secondary-nav .quarto-btn-toggle:hover,
+.quarto-secondary-nav .btn:hover,
+.quarto-secondary-nav button:hover,
+.quarto-secondary-nav .quarto-search-button:hover,
+button.quarto-btn-toggle:hover,
+button.quarto-search-button:hover {
+  background-color: rgba(75, 156, 211, 0.1) !important;
+  background: rgba(75, 156, 211, 0.1) !important;
+  color: $unc-blue !important;
+}
+
+.quarto-secondary-nav .breadcrumb-item a {
+  color: $unc-dark-blue !important;
+}
+
+/* Fix header fixed-top background */
+#quarto-header.headroom {
+  background-color: white !important;
+}
+
+/* Fix visibility for Quarto about links in trestles layout */
+
+div.quarto-about-trestles .about-link {
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.quarto-about-trestles .about-link:hover {
+  color: $unc-blue !important;
+  text-decoration: underline;
+}
+
+/* Optional: Style icons too */
+div.quarto-about-trestles .about-link i,
+div.quarto-about-trestles .about-link svg {
+  color: $unc-dark-blue !important;
+}
+
+.custom-about-block {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.custom-about-image img {
+  border-radius: 50%;
+  max-width: 140px;
+  height: auto;
+}
+
+.custom-about-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-about-links li {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.custom-about-links i {
+  margin-right: 0.5em;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85em;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Event Type Colors */
+.badge-panel       { background-color: #4682B4; }  /* Steel Blue */
+.badge-talk        { background-color: #32CD32; }  /* Lime Green */
+.badge-workshop    { background-color: #DAA520; }  /* Goldenrod */
+.badge-lecture     { background-color: #8A2BE2; }  /* Purple */
+.badge-podcast     { background-color: #FF69B4; }  /* Hot Pink */
+.badge-moderator   { background-color: #FF8C00; }  /* Dark Orange */
+.badge-award       { background-color: #FFC300; }
+.badge-participant { background-color: #A0522D; }  /* Sienna */
+
+.badge-publication {
+  background-color: #1a237e;          // Deep indigo for strong contrast
+  color: #ffffff;                     // White text
+  border: 1px solid #c5cae9;          // Soft indigo border
+  font-style: italic;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.3);  // Subtle glow
+  letter-spacing: 0.3px;
+}
+
+.indigo-text {
+  color: #1a237e;
+}
+
+/* Text selection - UNC colors */
+::selection {
+  background-color: $unc-blue;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: $unc-blue;
+  color: white;
+}
+
+/* News tables - zebra striping and better spacing */
+details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+details table th,
+details table td {
+  padding: 0.6em 0.8em;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+details table tr:nth-child(even) {
+  background-color: #f8fbfd;
+}
+
+details table tr:hover {
+  background-color: #eaf4fb;
+}
+
+details table th {
+  background-color: $unc-dark-blue;
+  color: white;
+  font-weight: 600;
+}
+
+/* Smooth transitions globally */
+a,
+.btn,
+.navbar .nav-link,
+.navbar .navbar-brand,
+details summary,
+.badge {
+  transition: all 0.2s ease;
+}
+
+/* Smoother details/summary toggle */
+details summary {
+  cursor: pointer;
+  padding: 0.5em 0;
+}
+
+details summary:hover {
+  color: $unc-blue;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+
+/* Sidebar container */
+.sidebar.sidebar-navigation,
+.sidebar-navigation {
+  background-color: #f8fbfd;
+  border-right: 1px solid #e0e8f0;
+  padding-top: 0.5rem;
+  font-family: $sidebar-font-family;
+}
+
+/* Tighten sidebar menu spacing */
+.sidebar-navigation .sidebar-menu-container {
+  padding: 0;
+}
+
+.sidebar-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-navigation li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* Section headers (Research, Resources, More) */
+.sidebar .sidebar-section .sidebar-section-header,
+.sidebar-navigation .sidebar-section .sidebar-item-text {
+  font-family: $sidebar-font-family;
+  color: $unc-dark-blue !important;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4em 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  background: linear-gradient(90deg, rgba(75, 156, 211, 0.15) 0%, transparent 100%);
+  border-left: 3px solid $unc-blue;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Sidebar navigation items */
+.sidebar .sidebar-item .sidebar-item-text,
+.sidebar .sidebar-item a,
+.sidebar .sidebar-navigation .sidebar-item-text,
+.sidebar-navigation .sidebar-item a {
+  color: $unc-dark-blue !important;
+  font-weight: 500;
+  padding: 0.3em 1em;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.sidebar .sidebar-item:hover .sidebar-item-text,
+.sidebar .sidebar-item a:hover,
+.sidebar-navigation .sidebar-item:hover a {
+  background-color: rgba(75, 156, 211, 0.12);
+  color: $unc-blue !important;
+  text-decoration: none !important;
+}
+
+
+/* Force ALL sidebar text to be visible */
+#quarto-sidebar *,
+.sidebar-navigation *,
+nav[role="navigation"] * {
+  color: $unc-dark-blue !important;
+}
+
+#quarto-sidebar a,
+.sidebar-navigation a,
+.sidebar a {
+  color: $unc-dark-blue !important;
+  text-decoration: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Active page - blue background with white text */
+.sidebar .active > a,
+.sidebar .active > .sidebar-item-text,
+.sidebar .current > a,
+.sidebar-item.active a,
+.sidebar-navigation .active a,
+#quarto-sidebar .active a {
+  background-color: $unc-blue !important;
+  color: white !important;
+}
+
+.sidebar .active > a *,
+.sidebar .active .sidebar-item-text,
+.sidebar-item.active a,
+.sidebar-item.active * {
+  color: white !important;
+}
+
+/* Separator lines */
+.sidebar hr,
+.sidebar .sidebar-section hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d0dce8, transparent);
+  margin: 0.4em 1em;
+}
+
+/* Search box styling */
+.sidebar #quarto-search {
+  margin: 0.4em 1em 0.6em 1em;
+}
+
+.sidebar #quarto-search input[type="text"],
+.sidebar .aa-Form,
+.sidebar .aa-Input {
+  border: 1px solid #c5d8e8 !important;
+  border-radius: 20px !important;
+  padding: 0.5em 1em 0.5em 2.5em !important;
+  background-color: white !important;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar #quarto-search input[type="text"]:focus,
+.sidebar .aa-Form:focus-within {
+  border-color: $unc-blue !important;
+  box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.2) !important;
+  outline: none;
+}
+
+/* Search icon styling */
+.sidebar .aa-SubmitIcon,
+.sidebar #quarto-search .search-icon {
+  color: $unc-blue !important;
+}
+
+/* Site title in sidebar */
+.sidebar .sidebar-title,
+.sidebar-navigation .sidebar-title {
+  font-family: $sidebar-font-family;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: $unc-dark-blue !important;
+  padding: 0.6em 1em 0.4em 1em;
+  border-bottom: 2px solid $unc-blue;
+  margin-bottom: 0.3em;
+}
+
+
+/* Home and CV links - make them slightly more prominent */
+.sidebar .sidebar-item:first-child .sidebar-item-text,
+.sidebar .sidebar-item:nth-child(2) .sidebar-item-text {
+  font-weight: 600;
+}
+
+
+/* Sidebar footer/bottom area */
+.sidebar .sidebar-footer {
+  padding: 1em;
+  margin-top: auto;
+  border-top: 1px solid #e0e8f0;
+  font-size: 0.85em;
+  color: #6c757d;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 991px) {
+  .sidebar.sidebar-navigation {
+    background-color: white;
+    border-right: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Reversed numbered lists - for publications, software, data pages */
+.reversed-list-17 ol {
+  list-style-type: none;
+  padding-left: 2em;
+  counter-reset: rev-counter 18;
+}
+
+.reversed-list-17 ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list-17 ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
+.reversed-list-6 ol {
+  list-style-type: none;
+  padding-left: 2em;
+  counter-reset: rev-counter 7;
+}
+
+.reversed-list-6 ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list-6 ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
+.reversed-list-4 ol {
+  list-style-type: none;
+  padding-left: 2em;
+  counter-reset: rev-counter 5;
+}
+
+.reversed-list-4 ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list-4 ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
+.reversed-list-7 ol {
+  list-style-type: none;
+  padding-left: 2em;
+  counter-reset: rev-counter 8;
+}
+
+.reversed-list-7 ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list-7 ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
+.reversed-list-2 ol {
+  list-style-type: none;
+  padding-left: 2em;
+  counter-reset: rev-counter 3;
+}
+
+.reversed-list-2 ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list-2 ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
