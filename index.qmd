@@ -128,7 +128,7 @@ I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Pu
 | Date          | Type        | Event                                                                 | Place                   |
 |---------------|-------------|-----------------------------------------------------------------------|-------------------------|
 | June 16–18    | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah, USA    |
-| March 9       | [Talk]{.badge .badge-talk}        | Data-driven EnviroLab (*scheduled*) | Chapel Hill, NC, USA         |
+| March 9       | [Talk]{.badge .badge-talk}        | Data-Driven EnviroLab (*scheduled*) | Chapel Hill, NC, USA         |
 | March 4       | [Participant]{.badge .badge-participant} | [Federation of American Scientists](https://fas.org/) AI Policy Sprint Co-Creation Forum (*scheduled*) | Washington, DC, USA     |
 | February 14   | [Talk]{.badge .badge-talk}        | [Duke Conference on Society-Centered AI](https://sites.duke.edu/scai/) (*scheduled*) | Durham, NC, USA         |
 
