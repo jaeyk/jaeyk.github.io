@@ -6,7 +6,7 @@ format: html
 ## UNC Student Office Hour
 
 I host weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A).  
-If you are interested, [please feel free to make an appointment](https://calendly.com/jaekim-unc/30min?month=2026-01).
+If you are interested, [please feel free to make an appointment](https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&ismsaljsauthenabled&ep=plink).
 
 <div style="margin-top: 0.75rem;">
   <iframe
