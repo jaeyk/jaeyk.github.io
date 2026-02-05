@@ -14,8 +14,8 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 
 | Date   | Type | Event                                           | Place              |
 |--------|------|--------------------------------------------------|--------------------|
-| Mar 9 | Talk | UNC's Data-Driven EnviroLab (*scheduled*) | UNC Chapel Hill, NC, USA |
-| Feb 14 | Talk | Duke Conference on Society-Centered AI (*scheduled*) | Durham, NC, USA    |
+| Mar 9 | Talk | [UNC's Data-Driven EnviroLab](https://datadrivenlab.org/) (*scheduled*) | UNC Chapel Hill, NC, USA |
+| Feb 14 | Talk | [Duke Conference on Society-Centered AI](https://sites.duke.edu/scai/) (*scheduled*) | Durham, NC, USA    |
 
 </details>
 
