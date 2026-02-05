@@ -22,7 +22,7 @@ This course introduces students to the promises and risks of data-driven, algori
 
 - **Civic Tech and Digital Public Service**  
 
-This course examines how public agencies use technology, data, artificial intelligence, and human-centered design to deliver more accessible, efficient, and equitable services. Students explore the role of digital platforms—such as websites, mobile applications, chatbots, and AI-powered tools—in shaping citizen experiences with government. The course highlights civic technology approaches rooted in participatory design and administrative burden reduction, while also addressing emerging questions about the use of AI in service delivery, including transparency, user autonomy, and algorithmic accountability. Emphasis is placed on how digital and AI-enabled tools can be designed to enhance—not replace—human judgment, trust, and inclusion in public programs.
+This course examines how public agencies use technology, data, artificial intelligence, and human-centered design to deliver more accessible, efficient, and equitable services. Students explore the role of digital platforms such as websites, mobile applications, chatbots, and AI agents in shaping citizen experiences with government. The course highlights civic technology approaches rooted in participatory design and administrative burden reduction, while also addressing emerging questions about the use of AI in service delivery. Emphasis is placed on how digital and AI-enabled tools can be designed to incorporate the lived experiences of people who rely on government services and are often underserved by them.
 
 - **Evidence in Action: Partnering for Public Impact**
 
