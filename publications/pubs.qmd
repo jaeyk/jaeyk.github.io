@@ -89,11 +89,11 @@ format: html
 
 2.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.'' (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
 
-    -   Scheduled to present at the 2025 APPAM and Korea University; presented at the 2025 APSA, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO)
+    -   Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University 
 
-3.  "Bringing Attention Back to the Finish Line: Attention Cost, Reminder, and Online SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
+3.  "Crossing the Finish Line: The Role of Attention and Reminders in SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
-    -   Scheduled to present at the 2025 APPAM
+    -   Presented at the 2025 APPAM
     
 4.  "Space and Place in WIC: Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
@@ -107,8 +107,7 @@ format: html
 
 2.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
 
-    -   Scheduled to presented at the 2025 APPAM, Presented at Johns Hopkins SAIS
-
+    -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
 **Applied policy research methodologies**
