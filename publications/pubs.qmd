@@ -124,7 +124,7 @@ format: html
 
 1.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
-2.  "Higher Education as Safety Net Infrastructure: Evidence from 1.7 Million Nonprofit Organizations." (with Milan de Vries and Tyler Simko)
+2.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
 
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
