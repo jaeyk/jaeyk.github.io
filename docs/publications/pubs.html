@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,8 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Hello, I’m Jae.</a> 
+    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -342,11 +342,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul></li>
 <li><p>“Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.’’ (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)</p>
 <ul>
-<li>Scheduled to present at the 2025 APPAM and Korea University; presented at the 2025 APSA, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO)</li>
+<li>Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University</li>
 </ul></li>
-<li><p>“Bringing Attention Back to the Finish Line: Attention Cost, Reminder, and Online SNAP Application Completion.” (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)</p>
+<li><p>“Crossing the Finish Line: The Role of Attention and Reminders in SNAP Application Completion.” (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)</p>
 <ul>
-<li>Scheduled to present at the 2025 APPAM</li>
+<li>Presented at the 2025 APPAM</li>
 </ul></li>
 <li><p>“Space and Place in WIC: Vendor Accessibility and Administrative Burden.” (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)</p>
 <ul>
@@ -358,10 +358,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
 <li><p>“Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts.” (with Aniket Kesari)</p>
 <ul>
-<li>Scheduled to presented at the 2025 APPAM, Presented at Johns Hopkins SAIS</li>
+<li>Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled) <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) --></li>
 </ul></li>
 </ol>
-<!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 <p><strong>Applied policy research methodologies</strong></p>
 <ol type="1">
 <li><p>“Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments.” (with Florian Keppeler)</p>
@@ -376,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><strong>Big data, civic engagement, and public policy</strong></p>
 <ol type="1">
 <li><p>“Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.” (with Liz McKenna)</p></li>
-<li><p>“Higher Education as Safety Net Infrastructure: Evidence from 1.7 Million Nonprofit Organizations.” (with Milan de Vries and Tyler Simko)</p></li>
+<li><p>“Higher Education as Safety Net Infrastructure.” (with Milan de Vries and Tyler Simko)</p></li>
 </ol>
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
@@ -492,14 +491,13 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,8 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Hello, I’m Jae.</a> 
+    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -292,11 +292,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul>
 <li><strong>Data, Algorithms, and AI for Public Policy</strong></li>
 </ul>
-<p>This course introduces students to the promises and risks of data-driven, algorithmic, and AI-enabled decision-making in the public sector. Through cases in social policy, criminal justice, and public health, students critically assess how algorithms and machine learning models are used to allocate resources, automate decisions, and influence policy outcomes. Particular attention is given to the unique challenges posed by artificial intelligence, including issues of opacity, bias, and institutional accountability. The course emphasizes frameworks for evaluating and designing algorithmic and AI systems that are fair, transparent, and aligned with the goals and constraints of public governance.</p>
+<p>This course introduces students to the promises and risks of data-driven, algorithmic, and AI-enabled decision-making in the public sector. Through cases in social policy, criminal justice, and public health, students critically assess how algorithms and AI systems are used to allocate resources, automate decisions, and influence policy outcomes. The topics span multiple stages of governance, from lawmaking and adjudication to implementation, mainly in the U.S. with comparative perspectives. Particular attention is given to the challenges of balancing efficiency gains (promised by algorithmic systems) with the protection of public values in machine-mediated decision-making embedded in existing institutional and organizational contexts. The course emphasizes frameworks for evaluating and designing algorithmic and AI systems in ways that advance public values and align with the goals and constraints of public governance.</p>
 <ul>
 <li><strong>Civic Tech and Digital Public Service</strong></li>
 </ul>
-<p>This course examines how public agencies use technology, data, artificial intelligence, and human-centered design to deliver more accessible, efficient, and equitable services. Students explore the role of digital platforms—such as websites, mobile applications, chatbots, and AI-powered tools—in shaping citizen experiences with government. The course highlights civic technology approaches rooted in participatory design and administrative burden reduction, while also addressing emerging questions about the use of AI in service delivery, including transparency, user autonomy, and algorithmic accountability. Emphasis is placed on how digital and AI-enabled tools can be designed to enhance—not replace—human judgment, trust, and inclusion in public programs.</p>
+<p>This course examines how public agencies use technology, data, artificial intelligence, and human-centered design to deliver more accessible, efficient, and equitable services. Students explore the role of digital platforms such as websites, mobile applications, chatbots, and AI agents in shaping citizen experiences with government. The course highlights civic technology approaches rooted in participatory design and administrative burden reduction, while also addressing emerging questions about the use of AI in service delivery. Emphasis is placed on how digital and AI-enabled tools can be designed to incorporate the lived experiences of people who rely on government services and are often underserved by them.</p>
 <ul>
 <li><strong>Evidence in Action: Partnering for Public Impact</strong></li>
 </ul>
@@ -415,6 +415,8 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
 </li>
 <li>Co-authored with Margaret Ng (UIUC)</li>
 </ul></li>
+<li><p><strong>Article:</strong> <a href="https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects">“Five Principles to Get Undergraduates Involved in Real-world Data Science Projects.”</a> <em>SAGE Ocean</em> (2020)</p></li>
+<li><p><strong>Op-ed:</strong> <a href="https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important">“Why Teaching Social Scientists How To Code Like A Professional Is Important.”</a>, <em>UC Berkeley D-Lab</em> (2020)</p></li>
 </ul>
 </details>
 
@@ -473,14 +475,13 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

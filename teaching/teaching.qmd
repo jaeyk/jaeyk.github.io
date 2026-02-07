@@ -109,4 +109,8 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
   - *PDF views:* 1,085 | *HTML views:* 1,369 (as of September 18, 2025)  
   - Co-authored with Margaret Ng (UIUC)
 
+- **Article:** ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) *SAGE Ocean* (2020)
+
+- **Op-ed:** ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important), *UC Berkeley D-Lab* (2020)
+
 </details>
