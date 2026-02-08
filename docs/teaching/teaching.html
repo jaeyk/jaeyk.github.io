@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -278,7 +279,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </header>
 
 
-<p>I am committed to providing excellent and accessible learning experiences for students at both the undergraduate and graduate levels. In 2021, I earned a Certificate in Teaching and Learning in Higher Education from UC Berkeley. In 2017, I received the <em>Outstanding Graduate Student Instructor Award</em> for my instruction in undergraduate quantitative methods and research design. Given to fewer than ten percent of graduate student instructors, the award recognized the quality of my teaching even in my first semester in the classroom. My teaching in public policy and data science emphasizes engagement with big ideas and cutting-edge scholarship, while also giving strong attention to practical applications and ethical implications.</p>
+<p>I am committed to providing excellent and accessible learning experiences for students at both the undergraduate and graduate levels. In 2021, I earned a Certificate in Teaching and Learning in Higher Education from UC Berkeley. In 2017, I received the <em>Outstanding Graduate Student Instructor Award</em> for my instruction in undergraduate quantitative methods and research design. Given to fewer than ten percent of graduate student instructors, the award recognized the quality of my teaching even in my first semester in the classroom.</p>
+<p>My pedagogical approach combines liberal arts–style broad intellectual foundations with design school–style hands-on experiences. As Herbert Simon noted in his memoir, “education cannot go on satisfactorily without intellectual challenge and excitement” (1980). He also emphasized that we cannot train engineers to design safe bridges or airplanes by giving them physics and math alone. My strength as an instructor comes from interdisciplinary training and extensive applied experience. My objective is to help students build strong intellectual foundations while simultaneously developing the habits of mind that allow them to tackle new problems. Guided by these principles, my teaching in public policy and data science emphasizes engagement with big ideas and cutting-edge scholarship, alongside sustained attention to practical applications and ethical implications.</p>
 <p><strong>Current Teaching in Public Policy (UNC-CH)</strong></p>
 <ul>
 <li><strong>The Politics of Public Policy</strong> [<a href="https://jaeyk.github.io/politics_of_public_policy/">course website</a>]</li>
@@ -475,13 +477,14 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
