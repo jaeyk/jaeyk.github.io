@@ -77,8 +77,8 @@ p <- ggplot() +
   ) +
   scale_shape_discrete(name = "Category") +
   labs(
-    title = paste("Applied Project Partners", "(Updated:", Sys.Date(), ")"),
-    subtitle = "Ongoing and finished projects"
+    title = "Applied Project Partners",
+    subtitle = paste0("Updated: ", Sys.Date(), " | Ongoing and finished projects")
   ) +
   theme_minimal(base_size = 12) +
   theme(
@@ -95,7 +95,8 @@ p <- ggplot() +
     axis.text = element_blank(),
     axis.ticks = element_blank(),
     axis.title = element_blank(),
-    plot.title = element_text(face = "bold")
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 10.5, color = "grey30")
   ) +
   guides(shape = guide_legend(nrow = 2, byrow = TRUE))
 

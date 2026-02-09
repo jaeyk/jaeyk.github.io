@@ -9,7 +9,11 @@ title: "Community building"
 
 #### Collaborators, Project Partners, and Lab Affiliations
 
+##### Collaborator Locations
+
 <iframe src="../misc/coauthor_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
+
+##### Applied Project Partners
 
 <iframe src="../misc/partner_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
 
