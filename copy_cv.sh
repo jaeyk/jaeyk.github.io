@@ -1,11 +1,30 @@
 #!/bin/sh
 
+set -eu
+
 cd ~/Documents/jaeyk.github.io/ || { echo "Directory not found. Aborting."; exit 1; }
 
 # Only copy CV if it changed
 if ! cmp -s ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf 2>/dev/null; then
     echo "Copying CV..."
     cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf
+fi
+
+# Regenerate interactive map assets used in community page if scripts exist
+if [ -f ./community_building/coauthor_map.R ] && [ -f ./community_building/partner_map.R ]; then
+    echo "Updating map HTML assets..."
+    Rscript ./community_building/coauthor_map.R
+    Rscript ./community_building/partner_map.R
+fi
+
+# Render community page so docs and local links stay in sync
+echo "Rendering community page..."
+quarto render ./community_building/community.qmd
+
+# Prevent pushing a build with missing map assets (which causes iframe 404s)
+if [ ! -f ./misc/coauthor_map.html ] || [ ! -f ./misc/partner_map.html ]; then
+    echo "Map HTML assets missing in ./misc. Aborting push to avoid 404s."
+    exit 1
 fi
 
 # Stage, commit, and push changes
