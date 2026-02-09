@@ -74,13 +74,6 @@ coauthor_map <- ggplot(data = world) +
     ),
     color = "blue", linewidth = 0.5
   ) +
-  labs(
-    title = "Collaborator Locations",
-    subtitle = paste0(
-      "Updated: ", Sys.Date(),
-      " | Point size reflects collaborator count. Total collaborators: ", total_collaborators
-    )
-  ) +
   coord_sf(xlim = c(-150, 150), ylim = c(-60, 90)) +
   theme_minimal(base_size = 12) +
   theme(
@@ -88,25 +81,30 @@ coauthor_map <- ggplot(data = world) +
     panel.grid.major = element_blank(),
     axis.text = element_blank(),
     axis.title = element_blank(),
-    axis.ticks = element_blank(),
-    plot.title = element_text(face = "bold", size = 14),
-    plot.subtitle = element_text(size = 10.5, color = "grey30")
+    axis.ticks = element_blank()
   )
 
 # Convert to interactive plotly map
 interactive_map <- ggplotly(coauthor_map, tooltip = "text") %>%
   layout(
+    title = NULL,
     hoverlabel = list(bgcolor = "white", font = list(size = 12)),
     margin = list(l = 0, r = 0, t = 50, b = 0)
   )
+interactive_map$x$layout$title <- NULL
 
 # Remove default "trace n" labels in hover tooltips
 for (i in seq_along(interactive_map$x$data)) {
   tr <- interactive_map$x$data[[i]]
-  if (!is.null(tr$text)) {
+  text_vals <- if (is.null(tr$text)) character(0) else as.character(tr$text)
+  has_nonempty_text <- length(text_vals) > 0 && any(nzchar(text_vals))
+
+  if (has_nonempty_text) {
     interactive_map$x$data[[i]]$hovertemplate <- "%{text}<extra></extra>"
+    interactive_map$x$data[[i]]$hoverinfo <- "text"
   } else {
     interactive_map$x$data[[i]]$hoverinfo <- "skip"
+    interactive_map$x$data[[i]]$hovertemplate <- NULL
   }
 }
 

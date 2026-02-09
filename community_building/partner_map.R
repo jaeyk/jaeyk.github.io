@@ -76,10 +76,6 @@ p <- ggplot() +
     show.legend = FALSE
   ) +
   scale_shape_discrete(name = "Category") +
-  labs(
-    title = "Applied Project Partners",
-    subtitle = paste0("Updated: ", Sys.Date(), " | Ongoing and finished projects")
-  ) +
   theme_minimal(base_size = 12) +
   theme(
     legend.position = "bottom",
@@ -94,15 +90,14 @@ p <- ggplot() +
     panel.grid = element_blank(),
     axis.text = element_blank(),
     axis.ticks = element_blank(),
-    axis.title = element_blank(),
-    plot.title = element_text(face = "bold", size = 14),
-    plot.subtitle = element_text(size = 10.5, color = "grey30")
+    axis.title = element_blank()
   ) +
   guides(shape = guide_legend(nrow = 2, byrow = TRUE))
 
 # Convert to interactive plotly map
 interactive_map <- ggplotly(p, tooltip = "text") %>%
   layout(
+    title = NULL,
     hoverlabel = list(bgcolor = "white", font = list(size = 12)),
     margin = list(l = 0, r = 0, t = 50, b = 20),
     legend = list(
@@ -130,14 +125,21 @@ interactive_map <- ggplotly(p, tooltip = "text") %>%
   ) %>%
   # Configure plotly display options
   config(displayModeBar = TRUE, displaylogo = FALSE)
+interactive_map$x$layout$title <- NULL
 
 # Remove default "trace n" labels in hover while keeping legend labels
 for (i in seq_along(interactive_map$x$data)) {
   tr <- interactive_map$x$data[[i]]
-  if (!is.null(tr$text)) {
+  text_vals <- if (is.null(tr$text)) character(0) else as.character(tr$text)
+  has_nonempty_text <- length(text_vals) > 0 && any(nzchar(text_vals))
+  is_fill_trace <- identical(tr$hoveron, "fills")
+
+  if (has_nonempty_text && !is_fill_trace) {
     interactive_map$x$data[[i]]$hovertemplate <- "%{text}<extra></extra>"
+    interactive_map$x$data[[i]]$hoverinfo <- "text"
   } else {
     interactive_map$x$data[[i]]$hoverinfo <- "skip"
+    interactive_map$x$data[[i]]$hovertemplate <- NULL
   }
 }
 
