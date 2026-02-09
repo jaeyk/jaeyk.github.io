@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -290,7 +291,10 @@ A safe and brave space where academics and practitioners come together to discus
 </section>
 <section id="collaborators-project-partners-and-lab-affiliations" class="level4">
 <h4 class="anchored" data-anchor-id="collaborators-project-partners-and-lab-affiliations">Collaborators, Project Partners, and Lab Affiliations</h4>
-<p><img src="https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/coauthor_map.png" class="img-fluid quarto-figure quarto-figure-center" data-out-width="80%"> <img src="https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/partner_map.png" class="img-fluid quarto-figure quarto-figure-center" data-out-width="80%"></p>
+<iframe src="../misc/coauthor_map.html" width="100%" height="600px" frameborder="0" style="border:0">
+</iframe>
+<iframe src="../misc/partner_map.html" width="100%" height="600px" frameborder="0" style="border:0">
+</iframe>
 <p>I maintain an active network of <a href="../community_building/coauthors.html">collaborators</a> and <a href="../community_building/partners.html">project partner organizations</a>, and work closely with several research labs across institutions:</p>
 <ul>
 <li><strong>Better Government Lab</strong>, Georgetown McCourt &amp; Michigan Ford School<br>
@@ -389,13 +393,14 @@ Co-hosted by KAIST and KDI School</li>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
