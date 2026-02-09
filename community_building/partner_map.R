@@ -77,10 +77,7 @@ p <- ggplot() +
   ) +
   scale_shape_discrete(name = "Category") +
   labs(
-    title = paste(
-      "Applied Project Partners",
-      "(Updated:", Sys.Date(), ")"
-    ),
+    title = paste("Applied Project Partners", "(Updated:", Sys.Date(), ")"),
     subtitle = "Ongoing and finished projects"
   ) +
   theme_minimal(base_size = 12) +
@@ -115,7 +112,7 @@ interactive_map <- ggplotly(p, tooltip = "text") %>%
       yanchor = "top"
     ),
     # Add annotations for organization names
-    annotations = lapply(1:nrow(partners), function(i) {
+    annotations = lapply(seq_len(nrow(partners)), function(i) {
       list(
         x = partners$lon[i],
         y = partners$lat[i],
@@ -129,7 +126,21 @@ interactive_map <- ggplotly(p, tooltip = "text") %>%
         yshift = 10
       )
     })
-  )
+  ) %>%
+  # Configure plotly display options
+  config(displayModeBar = TRUE, displaylogo = FALSE)
+
+# Remove trace names from hover tooltips only (preserve legend labels)
+for (i in seq_along(interactive_map$x$data)) {
+  # Only modify hovertemplate if it exists
+  if (!is.null(interactive_map$x$data[[i]]$hovertemplate)) {
+    # Remove the trace name line from hover template
+    interactive_map$x$data[[i]]$hovertemplate <- gsub("<b>%{fullData.name}</b><br>", "",
+      interactive_map$x$data[[i]]$hovertemplate,
+      fixed = TRUE
+    )
+  }
+}
 
 # Save as HTML widget
 saveWidget(

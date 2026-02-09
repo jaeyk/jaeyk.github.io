@@ -2,16 +2,16 @@
 title: "Community building"
 ---
 
-<iframe src="../misc/coauthor_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
-
-<iframe src="../misc/partner_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
-
 #### Bridging Research and Practice
 
 - **Co-founder**, [*Data for Good Roundtables*](https://sites.google.com/view/d4g-roundtables?usp=sharing) (2025– )  
   A safe and brave space where academics and practitioners come together to discuss using data for good.
 
 #### Collaborators, Project Partners, and Lab Affiliations
+
+<iframe src="../misc/coauthor_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
+
+<iframe src="../misc/partner_map.html" width="100%" height="600px" frameborder="0" style="border:0"></iframe>
 
 I maintain an active network of [collaborators](coauthors.qmd) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
 
