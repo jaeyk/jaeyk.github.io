@@ -6,6 +6,8 @@ library(rnaturalearthdata)
 library(tidyverse)
 library(ggrepel)
 library(here) # Load the 'here' package
+library(plotly)
+library(htmlwidgets)
 
 # Combine your location with your collaborators' list
 all_affiliations <- c(
@@ -49,18 +51,29 @@ collaborators_sf <- st_as_sf(full_collaborators_data, coords = c("longitude", "l
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 # Find the coordinates for your location
-unc_chapel_hill <- collaborators_sf[collaborators_sf$affiliation == "UNC Chapel Hill",]
+unc_chapel_hill <- collaborators_sf[collaborators_sf$affiliation == "UNC Chapel Hill", ]
+
+# Add hover text for interactivity
+full_collaborators_data <- full_collaborators_data %>%
+  mutate(hover_text = paste0(affiliation, "\nCollaborators: ", n))
+
+# Update sf object with hover text
+collaborators_sf <- st_as_sf(full_collaborators_data, coords = c("longitude", "latitude"), crs = 4326)
 
 # Create the plot object and assign it to a variable
 coauthor_map <- ggplot(data = world) +
   geom_sf(fill = "lightgrey", color = "black") +
-  geom_sf(data = collaborators_sf, aes(size = n), shape = 21, fill = "red", show.legend = FALSE) +
-  geom_sf(data = unc_chapel_hill, aes(size = n), shape = 8, color = "gold", show.legend = FALSE) +
-  geom_segment(data = full_collaborators_data[full_collaborators_data$affiliation != "UNC Chapel Hill",], 
-               aes(x = longitude, y = latitude, 
-                   xend = unc_chapel_hill$geometry[[1]][1], 
-                   yend = unc_chapel_hill$geometry[[1]][2]), 
-               color = "blue", linewidth = 0.5) +
+  geom_sf(data = collaborators_sf, aes(size = n, text = hover_text), shape = 21, fill = "red", show.legend = FALSE) +
+  geom_sf(data = unc_chapel_hill, aes(size = n, text = "UNC Chapel Hill\n(My Location)"), shape = 8, color = "gold", show.legend = FALSE) +
+  geom_segment(
+    data = full_collaborators_data[full_collaborators_data$affiliation != "UNC Chapel Hill", ],
+    aes(
+      x = longitude, y = latitude,
+      xend = unc_chapel_hill$geometry[[1]][1],
+      yend = unc_chapel_hill$geometry[[1]][2]
+    ),
+    color = "blue", linewidth = 0.5
+  ) +
   labs(
     title = paste("Collaborator Locations", "(Updated:", Sys.Date(), ")"),
     subtitle = paste("Point size reflects collaborator count. Total collaborators:", total_collaborators)
@@ -75,7 +88,21 @@ coauthor_map <- ggplot(data = world) +
     axis.ticks = element_blank()
   )
 
-# Use png() to save the plot as a file
+# Convert to interactive plotly map
+interactive_map <- ggplotly(coauthor_map, tooltip = "text") %>%
+  layout(
+    hoverlabel = list(bgcolor = "white", font = list(size = 12)),
+    margin = list(l = 0, r = 0, t = 50, b = 0)
+  )
+
+# Save as HTML widget
+saveWidget(
+  interactive_map,
+  file = here("misc", "coauthor_map.html"),
+  selfcontained = TRUE
+)
+
+# Also keep PNG version for backward compatibility
 png(filename = here("misc", "coauthor_map.png"), width = 10, height = 6, units = "in", res = 300)
 print(coauthor_map)
 dev.off()
