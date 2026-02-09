@@ -10,10 +10,10 @@ The following list includes the partners of ongoing and finished projects.
 
 #### State and local government (alphabetical order)
 
-1. California Department of Social Services (CDSS)
-1. Colorado Department of Health Care Policy and Financing (HCPF)
-1. City of San José, Office of Communications
 1. Boulder County, Housing and Human Services
+1. California Department of Social Services (CDSS)
+1. City of San José, Office of Communications
+1. Colorado Department of Health Care Policy and Financing (HCPF)
 1. [Government AI Coalition](https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition)
 1. Massachusetts Department of Early Education and Care (EEC)
 1. New Mexico Human Services Department (NMHSD)
