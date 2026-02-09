@@ -130,15 +130,13 @@ interactive_map <- ggplotly(p, tooltip = "text") %>%
   # Configure plotly display options
   config(displayModeBar = TRUE, displaylogo = FALSE)
 
-# Remove trace names from hover tooltips only (preserve legend labels)
+# Remove default "trace n" labels in hover while keeping legend labels
 for (i in seq_along(interactive_map$x$data)) {
-  # Only modify hovertemplate if it exists
-  if (!is.null(interactive_map$x$data[[i]]$hovertemplate)) {
-    # Remove the trace name line from hover template
-    interactive_map$x$data[[i]]$hovertemplate <- gsub("<b>%{fullData.name}</b><br>", "",
-      interactive_map$x$data[[i]]$hovertemplate,
-      fixed = TRUE
-    )
+  tr <- interactive_map$x$data[[i]]
+  if (!is.null(tr$text)) {
+    interactive_map$x$data[[i]]$hovertemplate <- "%{text}<extra></extra>"
+  } else {
+    interactive_map$x$data[[i]]$hoverinfo <- "skip"
   }
 }
 
