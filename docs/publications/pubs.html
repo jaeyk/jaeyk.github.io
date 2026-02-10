@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="pub-search-controls">
-<p><label for="pub-search-input"><strong>Search publications</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <button id="pub-search-clear" type="button">Clear</button> <span id="pub-search-status" aria-live="polite"></span> <span id="pub-count-summary" aria-live="polite"></span></p>
+<p><label for="pub-search-input"><strong>Search publications</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <span id="pub-search-status" aria-live="polite"></span> <span id="pub-count-summary" aria-live="polite"></span></p>
 </div>
 <style>
 .pub-search-controls {
@@ -286,11 +286,6 @@ document.addEventListener('DOMContentLoaded', function() {
   width: 100%;
   margin: 0.35rem 0.5rem 0 0;
   padding: 0.45rem 0.55rem;
-}
-
-#pub-search-clear {
-  margin-top: 0.35rem;
-  padding: 0.45rem 0.6rem;
 }
 
 #pub-search-status {
@@ -316,7 +311,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var input = document.getElementById("pub-search-input");
-  var clearBtn = document.getElementById("pub-search-clear");
   var status = document.getElementById("pub-search-status");
   var countSummary = document.getElementById("pub-count-summary");
   var listContainer = document.getElementById("published-journal-list");
@@ -324,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("details.published-papers-search-static")
   );
 
-  if (!input || !clearBtn || !status || !countSummary || !listContainer) {
+  if (!input || !status || !countSummary || !listContainer) {
     return;
   }
 
@@ -474,11 +468,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   input.addEventListener("input", runFilter);
-  clearBtn.addEventListener("click", function () {
-    input.value = "";
-    runFilter();
-    input.focus();
-  });
 
   fetch("data/published-papers.yml")
     .then(function (response) {
