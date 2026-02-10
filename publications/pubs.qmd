@@ -3,21 +3,134 @@ title: "Publications"
 format: html
 ---
 
-<details open>
+<div class="pub-search-controls">
+<label for="pub-search-input"><strong>Search published papers</strong></label><br>
+<input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, keyword, or link">
+<button id="pub-search-clear" type="button">Clear</button>
+<span id="pub-search-status" aria-live="polite"></span>
+</div>
+
+<style>
+.pub-search-controls {
+  margin: 1rem 0 1.25rem;
+}
+
+#pub-search-input {
+  min-width: 18rem;
+  max-width: 42rem;
+  width: 100%;
+  margin: 0.35rem 0.5rem 0 0;
+  padding: 0.45rem 0.55rem;
+}
+
+#pub-search-clear {
+  margin-top: 0.35rem;
+  padding: 0.45rem 0.6rem;
+}
+
+#pub-search-status {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var input = document.getElementById("pub-search-input");
+  var clearBtn = document.getElementById("pub-search-clear");
+  var status = document.getElementById("pub-search-status");
+  var scopes = Array.prototype.slice.call(
+    document.querySelectorAll("details.published-papers-search")
+  );
+
+  if (!input || !clearBtn || !status || scopes.length === 0) {
+    return;
+  }
+
+  // Ensure reversed-numbered lists render in descending order.
+  Array.prototype.slice.call(document.querySelectorAll("[class*='reversed-list-'] > ol")).forEach(function (ol) {
+    ol.setAttribute("reversed", "");
+  });
+
+  var scopeEntries = scopes.map(function (scope) {
+    return {
+      scope: scope,
+      entries: Array.prototype.slice
+        .call(scope.querySelectorAll("ol > li"))
+        .filter(function (entry) {
+          return entry.querySelector("a[href]") !== null;
+        })
+    };
+  });
+
+  var totalEntries = scopeEntries.reduce(function (sum, block) {
+    return sum + block.entries.length;
+  }, 0);
+
+  function normalized(text) {
+    return (text || "").toLowerCase().trim();
+  }
+
+  function runFilter() {
+    var query = normalized(input.value);
+    var matches = 0;
+
+    scopeEntries.forEach(function (block) {
+      var visibleInScope = 0;
+
+      block.entries.forEach(function (entry) {
+        var text = normalized(entry.textContent);
+        var links = Array.prototype.slice
+          .call(entry.querySelectorAll("a"))
+          .map(function (a) {
+            return a.getAttribute("href") || "";
+          })
+          .join(" ");
+        var isMatch = query.length === 0 || text.indexOf(query) !== -1 || normalized(links).indexOf(query) !== -1;
+
+        entry.style.display = isMatch ? "" : "none";
+        if (isMatch) {
+          matches += 1;
+          visibleInScope += 1;
+        }
+      });
+
+      if (query.length > 0 && visibleInScope === 0) {
+        block.scope.open = false;
+      }
+    });
+
+    status.textContent = query.length === 0
+      ? totalEntries + " total entries"
+      : matches + (matches === 1 ? " match" : " matches");
+  }
+
+  input.addEventListener("input", runFilter);
+  clearBtn.addEventListener("click", function () {
+    input.value = "";
+    runFilter();
+    input.focus();
+  });
+
+  runFilter();
+});
+</script>
+
+<details open class="published-papers-search">
 
 <summary><strong>Peer-reviewed journal articles</strong></summary>
 
 ::: {.reversed-list-17}
 
 17. ["Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans."](https://journals.sagepub.com/doi/10.1177/13684302251346402) (Kasheena Rogbeer, **Jae Yeon Kim**, and Efrén Pérez) *Group Processes and Intergroup Relations*, Online First in July 2025 [[replication](https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009)]
-
-    -   Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
+        - Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
 
 16. ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy."](https://www.nature.com/articles/s41597-025-05353-6.epdf?sharing_token=4HNrMMO7VOt9eQU42u5HrtRgN0jAjWel9jnR3ZoTv0Mpc6G86FwIcTyoYmFsd3Uahts-NrsxWU-Q0gVeUk6vtZN_k8pGamsuixpoqi1fOhudhtavd6jX7U8p5I4FQf1oJKpcfff8nLXFvlsgow1agfORM7KYSpMi13jgivdJVAs%3D) (**Jae Yeon Kim**, Milan de Vries, and Hahrie Han). *Nature: Scientific Data*, 2025, 12, Article number: 1162 \[[replication](https://github.com/snfagora/american_civic_opportunity_datasets)\] \[[supplementary materials](https://www.readcube.com/articles/supplement?doi=10.1038%2Fs41597-025-05353-6&index=0)\] \[[dashboard](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)\]
 
 15. ["Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation."](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw) (**Jae Yeon Kim**, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) *Journal of Policy Analysis and Management*, Online First in April 2025 \[[replication](https://osf.io/w87h2/?view_only=None)\]
 
-14. ["Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Casual and Resistant to Divisive Threats."](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) (**Jae Yeon Kim**, Efrén Pérez, and Kasheena Rogbeer) *Journal of Experimental Political Science*, Online First in March 2025 \[[replication](https://doi.org/10.7910/DVN/UWJYCB)\]
+14. ["Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Causal and Resistant to Divisive Threats."](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) (**Jae Yeon Kim**, Efrén Pérez, and Kasheena Rogbeer) *Journal of Experimental Political Science*, Online First in March 2025 \[[replication](https://doi.org/10.7910/DVN/UWJYCB)\]
 
 13. ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, **Jae Yeon Kim**, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 \[[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)\] \[[supplementary materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)\]
 
@@ -40,8 +153,7 @@ format: html
 4.  ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (**Jae Yeon Kim**+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) \[[replication](https://github.com/jaeyk/asian_hate_misinformation)\] (+ = co-lead authors.)
 
 3.  ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (**Jae Yeon Kim**), *Journal of Computational Social Science*, 2021, 4(2), 585-612 \[[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)\]
-
-    -   Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
+        - Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
 
 2.  ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (**Jae Yeon Kim**), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
 
@@ -87,7 +199,7 @@ format: html
 
     -   Presented at the 2025 APSA
 
-2.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.'' (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
+2.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants." (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
 
     -   Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University 
 
@@ -141,7 +253,7 @@ format: html
 
 </details>
 
-<details>
+<details class="published-papers">
 
 <summary><strong>Peer-reviewed conference and workshop proceedings</strong></summary>
 
@@ -149,7 +261,7 @@ format: html
 
 </details>
 
-<details>
+<details class="published-papers">
 
 <summary><strong>Edited volume book chapters</strong></summary>
 

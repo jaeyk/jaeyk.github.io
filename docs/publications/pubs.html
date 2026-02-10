@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -271,19 +272,124 @@ document.addEventListener('DOMContentLoaded', function() {
 </header>
 
 
-<details open="">
+<div class="pub-search-controls">
+<p><label for="pub-search-input"><strong>Search published papers</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, keyword, or link"> <button id="pub-search-clear" type="button">Clear</button> <span id="pub-search-status" aria-live="polite"></span></p>
+</div>
+<style>
+.pub-search-controls {
+  margin: 1rem 0 1.25rem;
+}
+
+#pub-search-input {
+  min-width: 18rem;
+  max-width: 42rem;
+  width: 100%;
+  margin: 0.35rem 0.5rem 0 0;
+  padding: 0.45rem 0.55rem;
+}
+
+#pub-search-clear {
+  margin-top: 0.35rem;
+  padding: 0.45rem 0.6rem;
+}
+
+#pub-search-status {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var input = document.getElementById("pub-search-input");
+  var clearBtn = document.getElementById("pub-search-clear");
+  var status = document.getElementById("pub-search-status");
+  var scopes = Array.prototype.slice.call(
+    document.querySelectorAll("details.published-papers-search")
+  );
+
+  if (!input || !clearBtn || !status || scopes.length === 0) {
+    return;
+  }
+
+  // Ensure reversed-numbered lists render in descending order.
+  Array.prototype.slice.call(document.querySelectorAll("[class*='reversed-list-'] > ol")).forEach(function (ol) {
+    ol.setAttribute("reversed", "");
+  });
+
+  var scopeEntries = scopes.map(function (scope) {
+    return {
+      scope: scope,
+      entries: Array.prototype.slice
+        .call(scope.querySelectorAll("ol > li"))
+        .filter(function (entry) {
+          return entry.querySelector("a[href]") !== null;
+        })
+    };
+  });
+
+  var totalEntries = scopeEntries.reduce(function (sum, block) {
+    return sum + block.entries.length;
+  }, 0);
+
+  function normalized(text) {
+    return (text || "").toLowerCase().trim();
+  }
+
+  function runFilter() {
+    var query = normalized(input.value);
+    var matches = 0;
+
+    scopeEntries.forEach(function (block) {
+      var visibleInScope = 0;
+
+      block.entries.forEach(function (entry) {
+        var text = normalized(entry.textContent);
+        var links = Array.prototype.slice
+          .call(entry.querySelectorAll("a"))
+          .map(function (a) {
+            return a.getAttribute("href") || "";
+          })
+          .join(" ");
+        var isMatch = query.length === 0 || text.indexOf(query) !== -1 || normalized(links).indexOf(query) !== -1;
+
+        entry.style.display = isMatch ? "" : "none";
+        if (isMatch) {
+          matches += 1;
+          visibleInScope += 1;
+        }
+      });
+
+      if (query.length > 0 && visibleInScope === 0) {
+        block.scope.open = false;
+      }
+    });
+
+    status.textContent = query.length === 0
+      ? totalEntries + " total entries"
+      : matches + (matches === 1 ? " match" : " matches");
+  }
+
+  input.addEventListener("input", runFilter);
+  clearBtn.addEventListener("click", function () {
+    input.value = "";
+    runFilter();
+    input.focus();
+  });
+
+  runFilter();
+});
+</script>
+<details open="" class="published-papers-search">
 <summary>
 <strong>Peer-reviewed journal articles</strong>
 </summary>
 <div class="reversed-list-17">
 <ol start="17" type="1">
-<li><p><a href="https://journals.sagepub.com/doi/10.1177/13684302251346402">“Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.”</a> (Kasheena Rogbeer, <strong>Jae Yeon Kim</strong>, and Efrén Pérez) <em>Group Processes and Intergroup Relations</em>, Online First in July 2025 [<a href="https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009">replication</a>]</p>
-<ul>
-<li>Rogbeer received the Bertram Raven Award from UCLA’s Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.</li>
-</ul></li>
+<li><p><a href="https://journals.sagepub.com/doi/10.1177/13684302251346402">“Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.”</a> (Kasheena Rogbeer, <strong>Jae Yeon Kim</strong>, and Efrén Pérez) <em>Group Processes and Intergroup Relations</em>, Online First in July 2025 [<a href="https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009">replication</a>] - Rogbeer received the Bertram Raven Award from UCLA’s Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.</p></li>
 <li><p><a href="https://www.nature.com/articles/s41597-025-05353-6.epdf?sharing_token=4HNrMMO7VOt9eQU42u5HrtRgN0jAjWel9jnR3ZoTv0Mpc6G86FwIcTyoYmFsd3Uahts-NrsxWU-Q0gVeUk6vtZN_k8pGamsuixpoqi1fOhudhtavd6jX7U8p5I4FQf1oJKpcfff8nLXFvlsgow1agfORM7KYSpMi13jgivdJVAs%3D">“MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy.”</a> (<strong>Jae Yeon Kim</strong>, Milan de Vries, and Hahrie Han). <em>Nature: Scientific Data</em>, 2025, 12, Article number: 1162 [<a href="https://github.com/snfagora/american_civic_opportunity_datasets">replication</a>] [<a href="https://www.readcube.com/articles/supplement?doi=10.1038%2Fs41597-025-05353-6&amp;index=0">supplementary materials</a>] [<a href="https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw">dashboard</a>]</p></li>
 <li><p><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw">“Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation.”</a> (<strong>Jae Yeon Kim</strong>, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) <em>Journal of Policy Analysis and Management</em>, Online First in April 2025 [<a href="https://osf.io/w87h2/?view_only=None">replication</a>]</p></li>
-<li><p><a href="https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51">“Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Casual and Resistant to Divisive Threats.”</a> (<strong>Jae Yeon Kim</strong>, Efrén Pérez, and Kasheena Rogbeer) <em>Journal of Experimental Political Science</em>, Online First in March 2025 [<a href="https://doi.org/10.7910/DVN/UWJYCB">replication</a>]</p></li>
+<li><p><a href="https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51">“Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Causal and Resistant to Divisive Threats.”</a> (<strong>Jae Yeon Kim</strong>, Efrén Pérez, and Kasheena Rogbeer) <em>Journal of Experimental Political Science</em>, Online First in March 2025 [<a href="https://doi.org/10.7910/DVN/UWJYCB">replication</a>]</p></li>
 <li><p><a href="https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&amp;utm_source=SOCIAL&amp;utm_medium=communities">“The Unequal Landscape of Civic Opportunity in America.”</a> (Milan de Vries, <strong>Jae Yeon Kim</strong>, and Hahrie Han) <em>Nature Human Behaviour</em>, Online First in November 2023 [<a href="https://github.com/snfagora/map_civic_opportunity/tree/main">replication</a>] [<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf">supplementary materials</a>]</p></li>
 <li><p><a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&amp;utm_medium=twitter&amp;utm_campaign=PSC_Sep23">“Training Computational Social Science Ph.D.&nbsp;Students for Academic and Non-Academic Careers.”</a> (Aniket Kesari+, <strong>Jae Yeon Kim</strong>+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) <em>PS: Political Science &amp; Politics</em>, Online First in September 2023 (+ = co-lead authors.) [<a href="slides/training_css_phd.pdf">slides</a>] [<a href="https://github.com/jaeyk/ic2s2-training-css-tutorial">website</a>] (created for the 2024 International Conference for Computational Social Science tutorial)</p></li>
 <li><p><a href="https://www.nature.com/articles/s41597-023-01947-0#Sec10">“Validated Names for Experimental Studies on Ethnicity and Race.”</a> (Charles Crabtree, <strong>Jae Yeon Kim</strong>, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) <em>Nature: Scientific Data</em>, 2023, 10, Article number: 130 [<a href="https://github.com/jaeyk/validated_names">replication</a>] [<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf">supplementary materials</a>] <a href="https://github.com/jaeyk/validatednamesr">[R package]</a></p></li>
@@ -294,10 +400,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p><a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7">“Rewiring Linked Fate: Bringing Back History, Agency, and Power.”</a> (Reuel Rogers+ and <strong>Jae Yeon Kim</strong>+) <em>Perspectives on Politics</em>, Online First in December 2021 [<a href="https://github.com/jaeyk/linked_fate_review/">replication</a>] (+ = co-lead authors.)</p></li>
 <li><p><a href="https://t.co/4Axd0gEQns">“COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes.”</a> (Nathan Chan, <strong>Jae Yeon Kim</strong>, and Vivien Leung) <em>Perspectives on Politics</em>, Online First in December 2021 [<a href="https://github.com/jaeyk/covid19antiasian/">replication</a>]</p></li>
 <li><p><a href="https://tsjournal.org/index.php/jots/article/view/13/5">“Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic.”</a> (<strong>Jae Yeon Kim</strong>+ and Aniket Kesari+) <em>Journal of Online Trust and Safety</em>, 2021, 1(1) [<a href="https://github.com/jaeyk/asian_hate_misinformation">replication</a>] (+ = co-lead authors.)</p></li>
-<li><p><a href="https://link.springer.com/article/10.1007/s42001-020-00097-2">“Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles.”</a> (<strong>Jae Yeon Kim</strong>), <em>Journal of Computational Social Science</em>, 2021, 4(2), 585-612 [<a href="https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances">replication</a>]</p>
-<ul>
-<li>Winner of the <strong>2020 Western Political Science Association Don T. Nakanishi Award</strong></li>
-</ul></li>
+<li><p><a href="https://link.springer.com/article/10.1007/s42001-020-00097-2">“Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles.”</a> (<strong>Jae Yeon Kim</strong>), <em>Journal of Computational Social Science</em>, 2021, 4(2), 585-612 [<a href="https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances">replication</a>] - Winner of the <strong>2020 Western Political Science Association Don T. Nakanishi Award</strong></p></li>
 <li><p><a href="https://journals.sagepub.com/doi/10.1177/1065912920983456">“How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing.”</a> (<strong>Jae Yeon Kim</strong>), <em>Political Research Quarterly</em>, Online First in December 2020 [<a href="https://github.com/jaeyk/regression-analysis-with-time-series-data">replication</a>]</p></li>
 <li><p><a href="https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E">“Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver.”</a> (<strong>Jae Yeon Kim</strong>), <em>Studies in American Political Development</em>, 2020, 34(2), 195-215 [<a href="https://github.com/jaeyk/analyzing-archival-data">replication</a>]</p></li>
 </ol>
@@ -340,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul>
 <li>Presented at the 2025 APSA</li>
 </ul></li>
-<li><p>“Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.’’ (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)</p>
+<li><p>“Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.” (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)</p>
 <ul>
 <li>Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University</li>
 </ul></li>
@@ -388,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>“Everyday Experiences and Asian American Identity.” (with Taeku Lee)</li>
 </ol>
 </details>
-<details>
+<details class="published-papers">
 <summary>
 <strong>Peer-reviewed conference and workshop proceedings</strong>
 </summary>
@@ -396,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><a href="https://arxiv.org/abs/2005.05921">“Intersectional Bias in Hate Speech and Abusive Language Datasets.”</a> (<strong>Jae Yeon Kim</strong>, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, <a href="https://sites.google.com/view/icwsm2020datachallenge/home"><em>Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop</em></a> [<a href="https://github.com/jaeyk/intersectional-bias-in-ml">replication</a>]</li>
 </ol>
 </details>
-<details>
+<details class="published-papers">
 <summary>
 <strong>Edited volume book chapters</strong>
 </summary>
@@ -491,13 +594,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
