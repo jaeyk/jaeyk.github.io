@@ -14,9 +14,9 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 
 | Date   | Type | Event                                           | Place              |
 |--------|------|--------------------------------------------------|--------------------|
-| Mar 25 | Talk | Yonsei University (Institute for AI and Social Innovation) (*scheduled*) | Virtual |
-| Mar 9 | Talk | UNC ([UNC's Data-Driven EnviroLab](https://datadrivenlab.org/)) (*scheduled*) | UNC Chapel Hill, NC, USA |
-| Feb 14 | Talk | [Duke Conference on Society-Centered AI](https://sites.duke.edu/scai/) (*scheduled*) | Durham, NC, USA    |
+| Mar 25 | Talk | Institute for AI and Social Innovation, Yonsei University (*scheduled*) | Virtual |
+| Mar 9 | Talk | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill (*scheduled*) | Chapel Hill, NC, USA |
+| Feb 14 | Talk | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University (*scheduled*) | Durham, NC, USA    |
 
 </details>
 
