@@ -72,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
   staticEntries.forEach(function (item) {
     staticCounts[item.key] = item.entries.length;
   });
+  var initialSectionOpen = {};
+  staticEntries.forEach(function (item) {
+    initialSectionOpen[item.key] = item.section.open;
+  });
 
   // Ensure reversed lists display in descending order.
   Array.prototype.slice.call(
@@ -164,19 +168,27 @@ document.addEventListener("DOMContentLoaded", function () {
           matchCount += 1;
         }
       });
-      if (query.length > 0 && sectionMatches === 0) {
-        item.section.open = false;
+      if (query.length > 0) {
+        item.section.open = sectionMatches > 0;
+      } else if (Object.prototype.hasOwnProperty.call(initialSectionOpen, item.key)) {
+        item.section.open = initialSectionOpen[item.key];
       }
     });
     return matchCount;
   }
 
   function updateCountSummary() {
-    countSummary.textContent =
+    var underReviewCount = staticCounts.under_review || 0;
+    var workingPapersCount = staticCounts.working_papers || 0;
+    var pipelineCount = underReviewCount + workingPapersCount;
+    countSummary.innerHTML =
       "Published papers: " + allPapers.length +
       " | Proceedings: " + (staticCounts.proceedings || 0) +
       " | Book chapters: " + (staticCounts.book_chapters || 0) +
-      " | Media and public writing: " + (staticCounts.media_public_writing || 0);
+      " | Media and public writing: " + (staticCounts.media_public_writing || 0) +
+      "<br>Pipeline: " + pipelineCount +
+      " (Under review: " + underReviewCount +
+      ", Working papers: " + workingPapersCount + ")";
   }
 
   function runFilter() {
@@ -195,6 +207,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
+      (staticCounts.under_review || 0) +
+      (staticCounts.working_papers || 0) +
       (staticCounts.proceedings || 0) +
       (staticCounts.book_chapters || 0) +
       (staticCounts.media_public_writing || 0);
@@ -236,37 +250,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </details>
 
-<details>
+<details class="published-papers-search-static" data-count-key="under_review">
 
 <summary><strong>Manuscripts under review</strong></summary>
 
-**Civic tech and social policy implementation**
 
 1.  "Mission Driven Evaluations." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
-
-2.  "The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net." (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)
-
-    -   Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity
-
-**Big data, civic engagement, and public policy**
     
-1.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
+2.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
 
     -   Presented at the 2025 APSA    
     
-**Race and solidarity politics**
-
-1.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+3.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
 
     -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
 </details>
 
-<details>
+<details class="published-papers-search-static" data-count-key="working_papers">
 
 <summary><strong>Working papers</strong></summary>
-
-**Civic tech and social policy implementation**
 
 1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
@@ -284,45 +287,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 National WIC Association annual conference
 
+5.  "The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net." (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)
+
+    -   Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity
+
 [5.  "How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field." (with Eric Giannella and Yixin Crystal Luo)]: #
 
-**Tech policy adoption and implementation**
-
-1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
-
-2.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
+6.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
 
     -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)
+
+7.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
-**Applied policy research methodologies**
-
-1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
+8.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
-2.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)
+9.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)
 
     -   Presented at Korea University, Yonsei University, KAIST
 
-**Big data, civic engagement, and public policy**
+10.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
-1.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
-
-2.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
+11.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
 
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
 -->
 
-
-**Immigration policy and politics**
-
-1.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
+12.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
 
 [2.  "Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration." (with Woo Chang Kang)]: #
 
-2.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)
+13.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)
 
 </details>
 

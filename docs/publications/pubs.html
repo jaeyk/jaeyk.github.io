@@ -334,6 +334,10 @@ document.addEventListener("DOMContentLoaded", function () {
   staticEntries.forEach(function (item) {
     staticCounts[item.key] = item.entries.length;
   });
+  var initialSectionOpen = {};
+  staticEntries.forEach(function (item) {
+    initialSectionOpen[item.key] = item.section.open;
+  });
 
   // Ensure reversed lists display in descending order.
   Array.prototype.slice.call(
@@ -426,19 +430,27 @@ document.addEventListener("DOMContentLoaded", function () {
           matchCount += 1;
         }
       });
-      if (query.length > 0 && sectionMatches === 0) {
-        item.section.open = false;
+      if (query.length > 0) {
+        item.section.open = sectionMatches > 0;
+      } else if (Object.prototype.hasOwnProperty.call(initialSectionOpen, item.key)) {
+        item.section.open = initialSectionOpen[item.key];
       }
     });
     return matchCount;
   }
 
   function updateCountSummary() {
-    countSummary.textContent =
+    var underReviewCount = staticCounts.under_review || 0;
+    var workingPapersCount = staticCounts.working_papers || 0;
+    var pipelineCount = underReviewCount + workingPapersCount;
+    countSummary.innerHTML =
       "Published papers: " + allPapers.length +
       " | Proceedings: " + (staticCounts.proceedings || 0) +
       " | Book chapters: " + (staticCounts.book_chapters || 0) +
-      " | Media and public writing: " + (staticCounts.media_public_writing || 0);
+      " | Media and public writing: " + (staticCounts.media_public_writing || 0) +
+      "<br>Pipeline: " + pipelineCount +
+      " (Under review: " + underReviewCount +
+      ", Working papers: " + workingPapersCount + ")";
   }
 
   function runFilter() {
@@ -457,6 +469,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
+      (staticCounts.under_review || 0) +
+      (staticCounts.working_papers || 0) +
       (staticCounts.proceedings || 0) +
       (staticCounts.book_chapters || 0) +
       (staticCounts.media_public_writing || 0);
@@ -498,38 +512,26 @@ Loading publications…
 </p>
 </div>
 </details>
-<details>
+<details class="published-papers-search-static" data-count-key="under_review">
 <summary>
 <strong>Manuscripts under review</strong>
 </summary>
-<p><strong>Civic tech and social policy implementation</strong></p>
 <ol type="1">
 <li><p>“Mission Driven Evaluations.” (Eric Giannella, <strong>Jae Yeon Kim</strong>, and Maximilian Hell)</p></li>
-<li><p>“The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net.” (<strong>Jae Yeon Kim</strong>, Eric Giannella, and Maximilian Hell)</p>
-<ul>
-<li>Presented at the 2025 PMRC, New York City Mayor’s Office of Economic Opportunity</li>
-</ul></li>
-</ol>
-<p><strong>Big data, civic engagement, and public policy</strong></p>
-<ol type="1">
 <li><p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242">“Race, Violence, and the Effectiveness of Protest.”</a> (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, <strong>Jae Yeon Kim</strong>, and Liz McKenna)</p>
 <ul>
 <li>Presented at the 2025 APSA</li>
 </ul></li>
-</ol>
-<p><strong>Race and solidarity politics</strong></p>
-<ol type="1">
 <li><p>“Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination.” (<strong>Jae Yeon Kim</strong>, Joan Cho, DG Kim, and Taeku Lee)</p>
 <ul>
 <li>Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan</li>
 </ul></li>
 </ol>
 </details>
-<details>
+<details class="published-papers-search-static" data-count-key="working_papers">
 <summary>
 <strong>Working papers</strong>
 </summary>
-<p><strong>Civic tech and social policy implementation</strong></p>
 <ol type="1">
 <li><p>“Reconstructing Implementation as Politics.” (with Akshay Mangla)</p>
 <ul>
@@ -547,17 +549,20 @@ Loading publications…
 <ul>
 <li>Presented at the 2025 National WIC Association annual conference</li>
 </ul></li>
-</ol>
-<p><strong>Tech policy adoption and implementation</strong></p>
-<ol type="1">
-<li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
-<li><p>“Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts.” (with Aniket Kesari)</p>
+<li><p>“The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net.” (<strong>Jae Yeon Kim</strong>, Eric Giannella, and Maximilian Hell)</p>
 <ul>
-<li>Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled) <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) --></li>
+<li>Presented at the 2025 PMRC, New York City Mayor’s Office of Economic Opportunity</li>
 </ul></li>
 </ol>
-<p><strong>Applied policy research methodologies</strong></p>
-<ol type="1">
+<ol start="6" type="1">
+<li><p>“Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts.” (with Aniket Kesari)</p>
+<ul>
+<li>Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)</li>
+</ul></li>
+<li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
+</ol>
+<!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
+<ol start="8" type="1">
 <li><p>“Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments.” (with Florian Keppeler)</p>
 <ul>
 <li>Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference</li>
@@ -566,20 +571,16 @@ Loading publications…
 <ul>
 <li>Presented at Korea University, Yonsei University, KAIST</li>
 </ul></li>
-</ol>
-<p><strong>Big data, civic engagement, and public policy</strong></p>
-<ol type="1">
 <li><p>“Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.” (with Liz McKenna)</p></li>
 <li><p>“Higher Education as Safety Net Infrastructure.” (with Milan de Vries and Tyler Simko)</p></li>
 </ol>
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
 -->
-<p><strong>Immigration policy and politics</strong></p>
-<ol type="1">
+<ol start="12" type="1">
 <li>“Democratic Exclusion: Understanding Nativist Backlash in East Asia.” (with Aram Hur and Taeku Lee)</li>
 </ol>
-<ol start="2" type="1">
+<ol start="13" type="1">
 <li>“Everyday Experiences and Asian American Identity.” (with Taeku Lee)</li>
 </ol>
 </details>
@@ -607,7 +608,7 @@ Loading publications…
 <strong>Media and public writing</strong>
 </summary>
 <div class="reversed-list-11">
-<ol start="11" type="1">
+<ol start="8" type="1">
 <li><p><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">“Building Civic Muscle.”</a> (<strong>Jae Yeon Kim</strong>), APSA’s Civic Engagement Section Podcast (Civic Café), June 17, 2025</p></li>
 <li><p><a href="https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf">“Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status.”</a> (Charles Crabtree, <strong>Jae Yeon Kim</strong>, S. Michael Gaddis, and John B. Holbein), <em>Berkeley Interdisciplinary Migration Initiative</em>, November 5, 2024</p></li>
 <li><p><a href="https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/">“The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora.”</a> (<strong>Jae Yeon Kim</strong>), <em>HistPhil</em>, January 25, 2024</p></li>
@@ -616,9 +617,6 @@ Loading publications…
 <li><p><a href="https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387">“Good Troublemakers Are the Key to Fixing Democracy in South Korea.”</a> (<strong>Jae Yeon Kim</strong>), <em>Korea Pro</em>, May 16, 2022</p></li>
 <li><p><a href="https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&amp;utm_medium=social&amp;utm_source=twitter&amp;tid=sm_tw_monkeycage">“Thanks to Trump’s Rhetoric, Asian Americans Are Moving Toward the Democratic Party.”</a> (Nathan Chan, <strong>Jae Yeon Kim</strong>, and Vivien Leung), <em>Washington Post’s Monkey Cage</em>, March 30, 2021</p></li>
 <li><p><a href="https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups">“The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley Canadian Studies Program</em>, March 29, 2021</p></li>
-<li><p><a href="https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important">“Why Teaching Social Scientists How To Code Like A Professional Is Important.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley D-Lab</em>, September 23, 2020</p></li>
-<li><p><a href="https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects">“Five Principles to Get Undergraduates Involved in Real-world Data Science Projects.”</a> (<strong>Jae Yeon Kim</strong>), <em>SAGE Ocean</em>, June 24, 2020</p></li>
-<li><p><a href="https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science">“How I Accidentally Became Interested in Data Science.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley D-Lab</em>, February 24, 2020</p></li>
 </ol>
 </div>
 </details>
