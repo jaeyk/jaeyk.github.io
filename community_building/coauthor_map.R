@@ -63,8 +63,8 @@ collaborators_sf <- st_as_sf(full_collaborators_data, coords = c("longitude", "l
 # Create the plot object and assign it to a variable
 coauthor_map <- ggplot(data = world) +
   geom_sf(fill = "lightgrey", color = "black") +
-  geom_sf(data = collaborators_sf, aes(size = n, text = hover_text), shape = 21, fill = "red", show.legend = FALSE) +
-  geom_sf(data = unc_chapel_hill, aes(size = n, text = "UNC Chapel Hill\n(My Location)"), shape = 8, color = "gold", show.legend = FALSE) +
+  geom_sf(data = collaborators_sf, aes(size = n), shape = 21, fill = "red", show.legend = FALSE) +
+  geom_sf(data = unc_chapel_hill, aes(size = n), shape = 8, color = "gold", show.legend = FALSE) +
   geom_segment(
     data = full_collaborators_data[full_collaborators_data$affiliation != "UNC Chapel Hill", ],
     aes(
@@ -85,7 +85,7 @@ coauthor_map <- ggplot(data = world) +
   )
 
 # Convert to interactive plotly map
-interactive_map <- ggplotly(coauthor_map, tooltip = "text") %>%
+interactive_map <- ggplotly(coauthor_map) %>%
   layout(
     title = NULL,
     hoverlabel = list(bgcolor = "white", font = list(size = 12)),
@@ -96,16 +96,8 @@ interactive_map$x$layout$title <- NULL
 # Remove default "trace n" labels in hover tooltips
 for (i in seq_along(interactive_map$x$data)) {
   tr <- interactive_map$x$data[[i]]
-  text_vals <- if (is.null(tr$text)) character(0) else as.character(tr$text)
-  has_nonempty_text <- length(text_vals) > 0 && any(nzchar(text_vals))
-
-  if (has_nonempty_text) {
-    interactive_map$x$data[[i]]$hovertemplate <- "%{text}<extra></extra>"
-    interactive_map$x$data[[i]]$hoverinfo <- "text"
-  } else {
-    interactive_map$x$data[[i]]$hoverinfo <- "skip"
-    interactive_map$x$data[[i]]$hovertemplate <- NULL
-  }
+  interactive_map$x$data[[i]]$hoverinfo <- "skip"
+  interactive_map$x$data[[i]]$hovertemplate <- NULL
 }
 
 # Save as HTML widget

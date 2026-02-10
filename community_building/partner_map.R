@@ -64,7 +64,7 @@ p <- ggplot() +
   coord_quickmap(xlim = c(-125, -66), ylim = c(24, 50), expand = FALSE) +
   geom_point(
     data = partners,
-    aes(x = lon, y = lat, shape = category, text = hover_text),
+    aes(x = lon, y = lat, shape = category),
     size = 3, alpha = 0.9
   ) +
   geom_label_repel(
@@ -94,8 +94,40 @@ p <- ggplot() +
   ) +
   guides(shape = guide_legend(nrow = 2, byrow = TRUE))
 
+# Build a plotly-compatible version without geom_label_repel.
+p_interactive <- ggplot() +
+  geom_polygon(
+    data = us_map,
+    aes(long, lat, group = group),
+    fill = "grey95", color = "grey70", linewidth = 0.3
+  ) +
+  coord_quickmap(xlim = c(-125, -66), ylim = c(24, 50), expand = FALSE) +
+  geom_point(
+    data = partners,
+    aes(x = lon, y = lat, shape = category),
+    size = 3, alpha = 0.9
+  ) +
+  scale_shape_discrete(name = "Category") +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "bottom",
+    legend.box = "horizontal",
+    legend.text = element_text(size = 10),
+    legend.title = element_text(face = "bold"),
+    legend.key.size = unit(0.6, "cm"),
+    legend.spacing.x = unit(0.5, "cm"),
+    legend.spacing.y = unit(0.2, "cm"),
+    legend.box.just = "center",
+    legend.justification = "center",
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank()
+  ) +
+  guides(shape = guide_legend(nrow = 2, byrow = TRUE))
+
 # Convert to interactive plotly map
-interactive_map <- ggplotly(p, tooltip = "text") %>%
+interactive_map <- ggplotly(p_interactive) %>%
   layout(
     title = NULL,
     hoverlabel = list(bgcolor = "white", font = list(size = 12)),
@@ -127,19 +159,29 @@ interactive_map <- ggplotly(p, tooltip = "text") %>%
   config(displayModeBar = TRUE, displaylogo = FALSE)
 interactive_map$x$layout$title <- NULL
 
-# Remove default "trace n" labels in hover while keeping legend labels
+# Add hover text to marker traces by category and hide default hover for map polygon.
+category_levels <- levels(partners$category)
+category_text <- lapply(category_levels, function(cat) {
+  partners %>%
+    filter(as.character(category) == cat) %>%
+    pull(hover_text)
+})
+
 for (i in seq_along(interactive_map$x$data)) {
   tr <- interactive_map$x$data[[i]]
-  text_vals <- if (is.null(tr$text)) character(0) else as.character(tr$text)
-  has_nonempty_text <- length(text_vals) > 0 && any(nzchar(text_vals))
-  is_fill_trace <- identical(tr$hoveron, "fills")
+  trace_name <- if (is.null(tr$name)) "" else as.character(tr$name)
+  cat_index <- match(trace_name, category_levels)
+  is_fill_trace <- identical(tr$hoveron, "fills") || identical(tr$mode, "lines")
 
-  if (has_nonempty_text && !is_fill_trace) {
+  if (!is.na(cat_index)) {
+    interactive_map$x$data[[i]]$text <- category_text[[cat_index]]
     interactive_map$x$data[[i]]$hovertemplate <- "%{text}<extra></extra>"
     interactive_map$x$data[[i]]$hoverinfo <- "text"
-  } else {
+  } else if (is_fill_trace) {
     interactive_map$x$data[[i]]$hoverinfo <- "skip"
     interactive_map$x$data[[i]]$hovertemplate <- NULL
+  } else {
+    interactive_map$x$data[[i]]$hovertemplate <- "%{x}, %{y}<extra></extra>"
   }
 }
 

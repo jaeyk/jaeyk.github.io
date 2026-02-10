@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="pub-search-controls">
-<p><label for="pub-search-input"><strong>Search published papers</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <button id="pub-search-clear" type="button">Clear</button> <span id="pub-search-status" aria-live="polite"></span></p>
+<p><label for="pub-search-input"><strong>Search publications</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <button id="pub-search-clear" type="button">Clear</button> <span id="pub-search-status" aria-live="polite"></span> <span id="pub-count-summary" aria-live="polite"></span></p>
 </div>
 <style>
 .pub-search-controls {
@@ -301,6 +301,13 @@ document.addEventListener('DOMContentLoaded', function() {
   color: #444;
 }
 
+#pub-count-summary {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
 #published-journal-list ul {
   margin-top: 0.25rem;
 }
@@ -311,13 +318,35 @@ document.addEventListener("DOMContentLoaded", function () {
   var input = document.getElementById("pub-search-input");
   var clearBtn = document.getElementById("pub-search-clear");
   var status = document.getElementById("pub-search-status");
+  var countSummary = document.getElementById("pub-count-summary");
   var listContainer = document.getElementById("published-journal-list");
+  var staticSections = Array.prototype.slice.call(
+    document.querySelectorAll("details.published-papers-search-static")
+  );
 
-  if (!input || !clearBtn || !status || !listContainer) {
+  if (!input || !clearBtn || !status || !countSummary || !listContainer) {
     return;
   }
 
   var allPapers = [];
+  var staticEntries = staticSections.map(function (section) {
+    return {
+      section: section,
+      key: section.getAttribute("data-count-key"),
+      entries: Array.prototype.slice.call(section.querySelectorAll("ol > li"))
+    };
+  });
+  var staticCounts = {};
+  staticEntries.forEach(function (item) {
+    staticCounts[item.key] = item.entries.length;
+  });
+
+  // Ensure reversed lists display in descending order.
+  Array.prototype.slice.call(
+    document.querySelectorAll("[class*='reversed-list-'] > ol")
+  ).forEach(function (ol) {
+    ol.setAttribute("reversed", "");
+  });
 
   function normalized(text) {
     return (text || "").toLowerCase().trim();
@@ -377,6 +406,47 @@ document.addEventListener("DOMContentLoaded", function () {
     listContainer.innerHTML = html;
   }
 
+  function entryMatches(entry, query) {
+    if (query.length === 0) {
+      return true;
+    }
+    var text = normalized(entry.textContent);
+    var links = Array.prototype.slice
+      .call(entry.querySelectorAll("a"))
+      .map(function (a) {
+        return a.getAttribute("href") || "";
+      })
+      .join(" ");
+    return text.indexOf(query) !== -1 || normalized(links).indexOf(query) !== -1;
+  }
+
+  function runStaticFilter(query) {
+    var matchCount = 0;
+    staticEntries.forEach(function (item) {
+      var sectionMatches = 0;
+      item.entries.forEach(function (entry) {
+        var isMatch = entryMatches(entry, query);
+        entry.style.display = isMatch ? "" : "none";
+        if (isMatch) {
+          sectionMatches += 1;
+          matchCount += 1;
+        }
+      });
+      if (query.length > 0 && sectionMatches === 0) {
+        item.section.open = false;
+      }
+    });
+    return matchCount;
+  }
+
+  function updateCountSummary() {
+    countSummary.textContent =
+      "Published papers: " + allPapers.length +
+      " | Proceedings: " + (staticCounts.proceedings || 0) +
+      " | Book chapters: " + (staticCounts.book_chapters || 0) +
+      " | Media and public writing: " + (staticCounts.media_public_writing || 0);
+  }
+
   function runFilter() {
     var query = normalized(input.value);
 
@@ -391,10 +461,16 @@ document.addEventListener("DOMContentLoaded", function () {
       ].join(" "));
       return query.length === 0 || blob.indexOf(query) !== -1;
     });
+    var staticMatchCount = runStaticFilter(query);
+    var totalSearchable = allPapers.length +
+      (staticCounts.proceedings || 0) +
+      (staticCounts.book_chapters || 0) +
+      (staticCounts.media_public_writing || 0);
 
     renderList(matches);
-    status.textContent = matches.length + (matches.length === 1 ? " match" : " matches") +
-      " of " + allPapers.length + " total";
+    status.textContent = (matches.length + staticMatchCount) +
+      ((matches.length + staticMatchCount) === 1 ? " match" : " matches") +
+      " of " + totalSearchable + " total";
   }
 
   input.addEventListener("input", runFilter);
@@ -414,6 +490,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (yamlText) {
       allPapers = jsyaml.load(yamlText) || [];
       allPapers.sort(function (a, b) { return Number(b.order) - Number(a.order); });
+      updateCountSummary();
       runFilter();
     })
     .catch(function () {
@@ -517,7 +594,7 @@ Loading publications…
 <li>“Everyday Experiences and Asian American Identity.” (with Taeku Lee)</li>
 </ol>
 </details>
-<details class="published-papers">
+<details class="published-papers-search-static" data-count-key="proceedings">
 <summary>
 <strong>Peer-reviewed conference and workshop proceedings</strong>
 </summary>
@@ -525,7 +602,7 @@ Loading publications…
 <li><a href="https://arxiv.org/abs/2005.05921">“Intersectional Bias in Hate Speech and Abusive Language Datasets.”</a> (<strong>Jae Yeon Kim</strong>, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, <a href="https://sites.google.com/view/icwsm2020datachallenge/home"><em>Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop</em></a> [<a href="https://github.com/jaeyk/intersectional-bias-in-ml">replication</a>]</li>
 </ol>
 </details>
-<details class="published-papers">
+<details class="published-papers-search-static" data-count-key="book_chapters">
 <summary>
 <strong>Edited volume book chapters</strong>
 </summary>
@@ -536,29 +613,20 @@ Loading publications…
 </ol>
 </div>
 </details>
-<details>
+<details class="published-papers-search-static" data-count-key="media_public_writing">
 <summary>
 <strong>Media and public writing</strong>
 </summary>
-<div class="reversed-list-7">
-<ol start="7" type="1">
+<div class="reversed-list-11">
+<ol start="11" type="1">
 <li><p><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">“Building Civic Muscle.”</a> (<strong>Jae Yeon Kim</strong>), APSA’s Civic Engagement Section Podcast (Civic Café), June 17, 2025</p></li>
 <li><p><a href="https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf">“Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status.”</a> (Charles Crabtree, <strong>Jae Yeon Kim</strong>, S. Michael Gaddis, and John B. Holbein), <em>Berkeley Interdisciplinary Migration Initiative</em>, November 5, 2024</p></li>
 <li><p><a href="https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/">“The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora.”</a> (<strong>Jae Yeon Kim</strong>), <em>HistPhil</em>, January 25, 2024</p></li>
 <li><p><a href="https://go.nature.com/45qrXpz">“Behind the Paper: The Unequal Landscape of Civic Opportunity in America.”</a> (<strong>Jae Yeon Kim</strong>), <em>Springer Nature: Social Sciences Community</em>, November 13, 2023</p></li>
 <li><p><a href="https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM">“Episode 3.4: Race-based Coalitions in Three Chinatowns.”</a> (<strong>Jae Yeon Kim</strong>), <em>Scope Conditions</em>, June 14, 2023</p></li>
+<li><p><a href="https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387">“Good Troublemakers Are the Key to Fixing Democracy in South Korea.”</a> (<strong>Jae Yeon Kim</strong>), <em>Korea Pro</em>, May 16, 2022</p></li>
 <li><p><a href="https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&amp;utm_medium=social&amp;utm_source=twitter&amp;tid=sm_tw_monkeycage">“Thanks to Trump’s Rhetoric, Asian Americans Are Moving Toward the Democratic Party.”</a> (Nathan Chan, <strong>Jae Yeon Kim</strong>, and Vivien Leung), <em>Washington Post’s Monkey Cage</em>, March 30, 2021</p></li>
 <li><p><a href="https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups">“The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley Canadian Studies Program</em>, March 29, 2021</p></li>
-</ol>
-</div>
-</details>
-<details>
-<summary>
-<strong>Public writing</strong>
-</summary>
-<div class="reversed-list-4">
-<ol start="4" type="1">
-<li><p><a href="https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387">“Good Troublemakers Are the Key to Fixing Democracy in South Korea.”</a> (<strong>Jae Yeon Kim</strong>), <em>Korea Pro</em>, May 16, 2022.</p></li>
 <li><p><a href="https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important">“Why Teaching Social Scientists How To Code Like A Professional Is Important.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley D-Lab</em>, September 23, 2020</p></li>
 <li><p><a href="https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects">“Five Principles to Get Undergraduates Involved in Real-world Data Science Projects.”</a> (<strong>Jae Yeon Kim</strong>), <em>SAGE Ocean</em>, June 24, 2020</p></li>
 <li><p><a href="https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science">“How I Accidentally Became Interested in Data Science.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley D-Lab</em>, February 24, 2020</p></li>
