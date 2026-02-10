@@ -1,6 +1,8 @@
 ---
 title: "Publications"
 format: html
+resources:
+  - data/published-papers.yml
 ---
 
 <div class="pub-search-controls">
@@ -17,7 +19,7 @@ format: html
 
 #pub-search-input {
   min-width: 18rem;
-  max-width: 42rem;
+  max-width: 36rem;
   width: 100%;
   margin: 0.35rem 0.5rem 0 0;
   padding: 0.45rem 0.55rem;
@@ -29,81 +31,108 @@ format: html
 }
 
 #pub-search-status {
-  margin-left: 0.5rem;
+  display: block;
+  margin-top: 0.4rem;
+  margin-left: 0;
   font-size: 0.95rem;
   color: #444;
 }
+
+#published-journal-list ul {
+  margin-top: 0.25rem;
+}
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var input = document.getElementById("pub-search-input");
   var clearBtn = document.getElementById("pub-search-clear");
   var status = document.getElementById("pub-search-status");
-  var scopes = Array.prototype.slice.call(
-    document.querySelectorAll("details.published-papers-search")
-  );
+  var listContainer = document.getElementById("published-journal-list");
 
-  if (!input || !clearBtn || !status || scopes.length === 0) {
+  if (!input || !clearBtn || !status || !listContainer) {
     return;
   }
 
-  // Ensure reversed-numbered lists render in descending order.
-  Array.prototype.slice.call(document.querySelectorAll("[class*='reversed-list-'] > ol")).forEach(function (ol) {
-    ol.setAttribute("reversed", "");
-  });
-
-  var scopeEntries = scopes.map(function (scope) {
-    return {
-      scope: scope,
-      entries: Array.prototype.slice
-        .call(scope.querySelectorAll("ol > li"))
-        .filter(function (entry) {
-          return entry.querySelector("a[href]") !== null;
-        })
-    };
-  });
-
-  var totalEntries = scopeEntries.reduce(function (sum, block) {
-    return sum + block.entries.length;
-  }, 0);
+  var allPapers = [];
 
   function normalized(text) {
     return (text || "").toLowerCase().trim();
   }
 
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function formatAuthors(authors, equalCoauthors) {
+    var equalLookup = (equalCoauthors || []).map(function (name) {
+      return normalized(name);
+    });
+    var items = (authors || []).map(function (name) {
+      var cleanName = String(name || "");
+      var markedName = escapeHtml(cleanName) +
+        (equalLookup.indexOf(normalized(cleanName)) !== -1 ? "+" : "");
+      return normalized(cleanName).indexOf("jae yeon kim") !== -1
+        ? "<strong>" + markedName + "</strong>"
+        : markedName;
+    });
+    if (items.length <= 1) {
+      return items[0] || "";
+    }
+    if (items.length === 2) {
+      return items[0] + " and " + items[1];
+    }
+    return items.slice(0, -1).join(", ") + ", and " + items[items.length - 1];
+  }
+
+  function buildPaperMarkup(paper) {
+    var links = (paper.links || []).map(function (item) {
+      return '[<a href="' + escapeHtml(item.url) + '">' + escapeHtml(item.label) + "</a>]";
+    }).join(" ");
+    var equalNote = (paper.equal_coauthors || []).length > 0 ? " (+ = co-lead authors.)" : "";
+    var note = paper.note ? "<ul><li>" + escapeHtml(paper.note) + "</li></ul>" : "";
+    return '<li><p><a href="' + escapeHtml(paper.url) + '">"' + escapeHtml(paper.title) + '"</a> (' +
+      formatAuthors(paper.authors, paper.equal_coauthors) + ") <em>" + escapeHtml(paper.venue) + "</em>, " +
+      escapeHtml(paper.citation) + equalNote + (links ? " " + links : "") + "</p>" + note + "</li>";
+  }
+
+  function renderList(items) {
+    if (!items.length) {
+      listContainer.innerHTML = "<p>No matching papers found.</p>";
+      return;
+    }
+    var html = '<ol start="' + items.length + '" reversed type="1">';
+    items.forEach(function (paper) {
+      html += buildPaperMarkup(paper);
+    });
+    html += "</ol>";
+    listContainer.innerHTML = html;
+  }
+
   function runFilter() {
     var query = normalized(input.value);
-    var matches = 0;
 
-    scopeEntries.forEach(function (block) {
-      var visibleInScope = 0;
-
-      block.entries.forEach(function (entry) {
-        var text = normalized(entry.textContent);
-        var links = Array.prototype.slice
-          .call(entry.querySelectorAll("a"))
-          .map(function (a) {
-            return a.getAttribute("href") || "";
-          })
-          .join(" ");
-        var isMatch = query.length === 0 || text.indexOf(query) !== -1 || normalized(links).indexOf(query) !== -1;
-
-        entry.style.display = isMatch ? "" : "none";
-        if (isMatch) {
-          matches += 1;
-          visibleInScope += 1;
-        }
-      });
-
-      if (query.length > 0 && visibleInScope === 0) {
-        block.scope.open = false;
-      }
+    var matches = allPapers.filter(function (paper) {
+      var blob = normalized([
+        paper.title,
+        (paper.authors || []).join(" "),
+        paper.venue,
+        paper.citation,
+        paper.year,
+        (paper.links || []).map(function (item) { return item.label + " " + item.url; }).join(" ")
+      ].join(" "));
+      return query.length === 0 || blob.indexOf(query) !== -1;
     });
 
-    status.textContent = query.length === 0
-      ? totalEntries + " total entries"
-      : matches + (matches === 1 ? " match" : " matches");
+    renderList(matches);
+    status.textContent = matches.length + (matches.length === 1 ? " match" : " matches") +
+      " of " + allPapers.length + " total";
   }
 
   input.addEventListener("input", runFilter);
@@ -113,53 +142,31 @@ document.addEventListener("DOMContentLoaded", function () {
     input.focus();
   });
 
-  runFilter();
+  fetch("data/published-papers.yml")
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Failed to load publication data.");
+      }
+      return response.text();
+    })
+    .then(function (yamlText) {
+      allPapers = jsyaml.load(yamlText) || [];
+      allPapers.sort(function (a, b) { return Number(b.order) - Number(a.order); });
+      runFilter();
+    })
+    .catch(function () {
+      listContainer.innerHTML = "<p>Unable to load publication data right now.</p>";
+      status.textContent = "";
+    });
 });
 </script>
 
 <details open class="published-papers-search">
 
 <summary><strong>Peer-reviewed journal articles</strong></summary>
-
-::: {.reversed-list-17}
-
-17. ["Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans."](https://journals.sagepub.com/doi/10.1177/13684302251346402) (Kasheena Rogbeer, **Jae Yeon Kim**, and Efrén Pérez) *Group Processes and Intergroup Relations*, Online First in July 2025 [[replication](https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009)]
-        - Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
-
-16. ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy."](https://www.nature.com/articles/s41597-025-05353-6.epdf?sharing_token=4HNrMMO7VOt9eQU42u5HrtRgN0jAjWel9jnR3ZoTv0Mpc6G86FwIcTyoYmFsd3Uahts-NrsxWU-Q0gVeUk6vtZN_k8pGamsuixpoqi1fOhudhtavd6jX7U8p5I4FQf1oJKpcfff8nLXFvlsgow1agfORM7KYSpMi13jgivdJVAs%3D) (**Jae Yeon Kim**, Milan de Vries, and Hahrie Han). *Nature: Scientific Data*, 2025, 12, Article number: 1162 \[[replication](https://github.com/snfagora/american_civic_opportunity_datasets)\] \[[supplementary materials](https://www.readcube.com/articles/supplement?doi=10.1038%2Fs41597-025-05353-6&index=0)\] \[[dashboard](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)\]
-
-15. ["Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation."](https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw) (**Jae Yeon Kim**, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden) *Journal of Policy Analysis and Management*, Online First in April 2025 \[[replication](https://osf.io/w87h2/?view_only=None)\]
-
-14. ["Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Causal and Resistant to Divisive Threats."](https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51) (**Jae Yeon Kim**, Efrén Pérez, and Kasheena Rogbeer) *Journal of Experimental Political Science*, Online First in March 2025 \[[replication](https://doi.org/10.7910/DVN/UWJYCB)\]
-
-13. ["The Unequal Landscape of Civic Opportunity in America."](https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities) (Milan de Vries, **Jae Yeon Kim**, and Hahrie Han) *Nature Human Behaviour*, Online First in November 2023 \[[replication](https://github.com/snfagora/map_civic_opportunity/tree/main)\] \[[supplementary materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf)\]
-
-12. ["Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23) (Aniket Kesari+, **Jae Yeon Kim**+, Sono Shah+, Taylor Brown+, Tiago Ventura+, and Tina Law+) *PS: Political Science & Politics*, Online First in September 2023 (+ = co-lead authors.) \[[slides](slides/training_css_phd.pdf)\] \[[website](https://github.com/jaeyk/ic2s2-training-css-tutorial)\] (created for the 2024 International Conference for Computational Social Science tutorial)
-
-11. ["Validated Names for Experimental Studies on Ethnicity and Race."](https://www.nature.com/articles/s41597-023-01947-0#Sec10) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) *Nature: Scientific Data*, 2023, 10, Article number: 130 \[[replication](https://github.com/jaeyk/validated_names)\] \[[supplementary materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-023-01947-0/MediaObjects/41597_2023_1947_MOESM1_ESM.pdf)\] [\[R package\]](https://github.com/jaeyk/validatednamesr)
-
-10. ["Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea."](https://journals.sagepub.com/doi/10.1177/10659129221144248) (**Jae Yeon Kim** and Taeku Lee) *Political Research Quarterly*, 2023, 76(3), 1433-1444 \[[replication](https://github.com/jaeyk/contested-identity)\]
-
-9.  ["Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power."](https://journals.sagepub.com/doi/full/10.1177/00027162221077471) (Hahrie Han+ and **Jae Yeon Kim**+) *The ANNALS of the American Academy of Political and Social Science*, 2022, 699(1), 175-185 (+ = co-lead authors.)
-
-8.  ["Teaching Computational Social Science for All."](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF) (**Jae Yeon Kim** and Margaret Ng) *PS: Political Science & Politics*, 2022, 55(3), 605-609
-
-7.  ["Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why."](https://link.springer.com/article/10.1007/s10796-021-10229-2) (**Jae Yeon Kim**, Jaeung Sim, and Daegon Cho) *Information Systems Frontiers*, Online First in January 2022 \[[replication](https://github.com/jaeyk/status_identity_hate_speech_reporting)\]
-
-6.  ["Rewiring Linked Fate: Bringing Back History, Agency, and Power."](https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7) (Reuel Rogers+ and **Jae Yeon Kim**+) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/linked_fate_review/)\] (+ = co-lead authors.)
-
-5.  ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes."](https://t.co/4Axd0gEQns) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung) *Perspectives on Politics*, Online First in December 2021 \[[replication](https://github.com/jaeyk/covid19antiasian/)\]
-
-4.  ["Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."](https://tsjournal.org/index.php/jots/article/view/13/5) (**Jae Yeon Kim**+ and Aniket Kesari+) *Journal of Online Trust and Safety*, 2021, 1(1) \[[replication](https://github.com/jaeyk/asian_hate_misinformation)\] (+ = co-lead authors.)
-
-3.  ["Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles."](https://link.springer.com/article/10.1007/s42001-020-00097-2) (**Jae Yeon Kim**), *Journal of Computational Social Science*, 2021, 4(2), 585-612 \[[replication](https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances)\]
-        - Winner of the **2020 Western Political Science Association Don T. Nakanishi Award**
-
-2.  ["How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing."](https://journals.sagepub.com/doi/10.1177/1065912920983456) (**Jae Yeon Kim**), *Political Research Quarterly*, Online First in December 2020 \[[replication](https://github.com/jaeyk/regression-analysis-with-time-series-data)\]
-
-1.  ["Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver."](https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E) (**Jae Yeon Kim**), *Studies in American Political Development*, 2020, 34(2), 195-215 \[[replication](https://github.com/jaeyk/analyzing-archival-data)\]
-
-:::
+<div id="published-journal-list">
+<p>Loading publications...</p>
+</div>
 
 </details>
 
