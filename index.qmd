@@ -130,6 +130,7 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 | Date          | Type        | Event                                                                 | Place                   |
 |---------------|-------------|-----------------------------------------------------------------------|-------------------------|
 | June 16–18    | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah, USA    |
+| April 10    | [Talk]{.badge .badge-talk}        | MPP Social, hosted by Douglas MacKay (*scheduled*) | Chapel Hill, NC |
 | March 25     | [Talk]{.badge .badge-talk}        | Institute for AI and Social Innovation, Yonsei University, hosted by Wha Sun Jho (*scheduled*) | Virtual         |
 | March 9       | [Talk]{.badge .badge-talk}        | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill, hosted by Angel Hsu (*scheduled*) | Chapel Hill, NC, USA         |
 | March 4       | [Participant]{.badge .badge-participant} | [Federation of American Scientists](https://fas.org/) AI Policy Sprint Co-Creation Forum (*scheduled*) | Washington, DC, USA     |

@@ -38,7 +38,8 @@ I maintain an active network of [collaborators](coauthors.qmd) and [project part
 
 #### Community Engagement & Mentorship
 
-- **Panelist on Civic Tech**  
+- **Speaker / Panelist on Civic Tech**
+  *MPP Social, University of North Carolina at Chapel Hill, 2026*
   *Public Management Research Conference (PMRC), University of Washington, 2024*
 
 - **Panelist on Data Science Career Paths**  
