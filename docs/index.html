@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a162a8f0a0eccc193be1a9d41d8ae3f2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3c2fe6571b1d8f2c33346fc54dbae523.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -292,7 +293,7 @@ Jae Yeon Kim
 <p>Hello! I am Jae.</p>
 <p>I am an Assistant Professor of Public Policy at <a href="https://publicpolicy.unc.edu/person/jae-yeon-kim/">the University of North Carolina at Chapel Hill</a>, and a non-resident Research Fellow at the Harvard Kennedy School and a <a href="https://www.bettergovernmentlab.org/">Better Government Lab</a> Fellow at the University of Michigan’s Ford School of Public Policy. I co-founded the <a href="https://sites.google.com/view/d4g-roundtables?usp=sharing">Data for Good Roundtables</a> and serve on the Advisory Council of <a href="https://sicss.io/people">the Summer Institute in Computational Social Science</a>, the Procurement Committee at <a href="https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition">the GovAI Coalition</a>, and the APSA Task Force on Artificial Intelligence.</p>
 <p>Previously, I worked as a Senior Data Scientist at Code for America, where I collaborated with the U.S. government to improve access to safety net programs. I also served as an Assistant Research Scientist at the SNF Agora Institute at Johns Hopkins University, where I co-developed <a href="https://snfagora.jhu.edu/our-work/research-projects/mapping-the-modern-agora/">the Mapping the Modern Agora Project.</a> I earned my Ph.D.&nbsp;in Political Science from the University of California, Berkeley.</p>
-<p>My current research focuses on how to make policy implementation work. I study administrative burden in safety net programs, the relationship between civic infrastructure and democratic governance, and how state and local governments procure AI technologies to deliver public services. Across these research agendas, the common thread is an American political economy framework that treats policy as a central site of political contestation.</p>
+<p>My research focuses on making policy implementation work. I study administrative burden in safety net programs, the relationship between civic infrastructure and democratic governance, and how state and local governments procure AI technologies to deliver public services. Across these research agendas, the common thread is an <a href="https://www.americanpoliticaleconomy.org/">American political economy (APE)</a> framework that treats policy as a central site of political contestation.</p>
 <p>I’m currently working on a book project titled <a href="https://jaeyk.github.io/book_projects/books.html"><em>Unseen and Uncounted</em></a>, which examines how interactions between street-level bureaucrats and non-Black minority community organizers during the War on Poverty gave rise to new racial group formations—what we know today as Asian Americans and Latinos.</p>
 <p>I use a wide range of methods, including big data and AI, field experiments, archival research, and human-centered design. I often collaborate with government and nonprofit partners to produce research that directly informs policy and improves practice.</p>
 <p>My research has been published in <em>Nature Human Behaviour</em>, <em>Journal of Policy Analysis and Management</em>, <em>Nature: Scientific Data</em> [2x], <em>Perspectives on Politics</em> [2x], <em>Political Research Quarterly</em> [2x], <em>Journal of Experimental Political Science</em>, and <em>Studies in American Political Development</em>, among others.</p>
@@ -359,18 +360,24 @@ Jae Yeon Kim
 <td>Park City, Utah, USA</td>
 </tr>
 <tr class="even">
+<td>March 25</td>
+<td><span class="badge badge-talk">Talk</span></td>
+<td>Yonsei University (Institute for AI and Social Innovation) (<em>scheduled</em>)</td>
+<td>Virtual</td>
+</tr>
+<tr class="odd">
 <td>March 9</td>
 <td><span class="badge badge-talk">Talk</span></td>
 <td><a href="https://datadrivenlab.org/">UNC’s Data-Driven EnviroLab</a> (<em>scheduled</em>)</td>
 <td>Chapel Hill, NC, USA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>March 4</td>
 <td><span class="badge badge-participant">Participant</span></td>
 <td><a href="https://fas.org/">Federation of American Scientists</a> AI Policy Sprint Co-Creation Forum (<em>scheduled</em>)</td>
 <td>Washington, DC, USA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>February 14</td>
 <td><span class="badge badge-talk">Talk</span></td>
 <td><a href="https://sites.duke.edu/scai/">Duke Conference on Society-Centered AI</a> (<em>scheduled</em>)</td>
@@ -722,13 +729,14 @@ Jae Yeon Kim
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
