@@ -5,7 +5,7 @@ format: html
 
 <div class="pub-search-controls">
 <label for="pub-search-input"><strong>Search published papers</strong></label><br>
-<input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, keyword, or link">
+<input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link">
 <button id="pub-search-clear" type="button">Clear</button>
 <span id="pub-search-status" aria-live="polite"></span>
 </div>
