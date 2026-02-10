@@ -354,27 +354,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list-11}
 
-11.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
+8.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
 
-10.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
+7.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
 
-9.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
+6.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
 
-8.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
+5.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
 
-7.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
+4.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
 
-6.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022
+3.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022
 
-5.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+2.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
-4.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
-
-3.  ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, September 23, 2020
-
-2.  ["Five Principles to Get Undergraduates Involved in Real-world Data Science Projects."](https://ocean.sagepub.com/blog/skills/5-principles-to-get-undergraduates-involved-in-real-world-data-science-projects) (**Jae Yeon Kim**), *SAGE Ocean*, June 24, 2020
-
-1.  ["How I Accidentally Became Interested in Data Science."](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020
+1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
 :::
 
