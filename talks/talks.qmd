@@ -14,6 +14,7 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 
 | Date   | Type | Event                                           | Place              |
 |--------|------|--------------------------------------------------|--------------------|
+| May 1 | Talk | The Future of Quantitative Social Science in an Age of Artificial Intelligence, University of Toronto (*scheduled*) | Toronto, Canada |
 | Mar 25 | Talk | Institute for AI and Social Innovation, Yonsei University (*scheduled*) | Virtual |
 | Mar 9 | Talk | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill (*scheduled*) | Chapel Hill, NC, USA |
 | Feb 14 | Talk | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University (*scheduled*) | Durham, NC, USA    |
