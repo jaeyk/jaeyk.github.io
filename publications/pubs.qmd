@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list style="--reversed-counter-reset: 4;"}
 
-1.  "Mission Driven Evaluations." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
+1.  "Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
     
 2.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
 
