@@ -9,9 +9,7 @@ public good.
 
 ![Civic opportunity map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"}
 
-::: {.reversed-list-4}
-
-4.  [**MapAgora, Civic Opportunity Datasets for the Study of American
+3.  [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
     [**\[Dashboard\]**](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)
@@ -42,7 +40,7 @@ public good.
         Han\
     -   **Collaborator:** Milan de Vries and Hahrie Han
 
-3.  [**Validated Names for Experimental Studies on Ethnicity and
+2.  [**Validated Names for Experimental Studies on Ethnicity and
     Race**](https://doi.org/10.7910/DVN/LP4EAR) [**\[Dashboard\]**](https://jaeyk.github.io/select_validated_names/?fbclid=IwY2xjawP0TOlleHRuA2FlbQIxMABicmlkETFIdVoxek4zU0p0SFhzZXZJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHm5a4tquUfrPydahJ1v3TX_HaLK7plqgT8aORGfWqVaYnyGDFhm4VdK0zE_h_aem_KusnJygN3w44M1hksHeycw)
 
     -   **Summary:** A large and fast-growing number of studies across the social sciences use names in experiments to signal race.
@@ -63,19 +61,6 @@ public good.
     -   **Collaborator:** Charles Crabtree, S. Michael Gaddis, John B.
         Holbein, Cameron Guage, and William Marx
 
-2.  [**Linked Fate Literature Review Dataset
-    (1999–2019)**](https://dataverse.harvard.edu/file.xhtml?fileId=5194002&version=1.0)
-
-    -   **Summary:** A hand-coded dataset of 160 studies on linked fate
-        published between 1999 and 2019. It captures definitions,
-        measurement strategies, theoretical framings, and the
-        populations studied in political science and related
-        disciplines.\
-    -   **Use case:** Used in [*"Rewiring Linked Fate: Bringing Back
-        History, Agency, and
-        Power"*](https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7),
-        *Perspectives on Politics* (2023), with Reuel Rogers.
-
 1.  [**Asian American and Latino Advocacy and Community Service
     Organizations Dataset
     (1868–2016)**](https://doi.org/10.7910/DVN/FLUPBJ)
@@ -89,8 +74,7 @@ public good.
         War on Poverty and Asian American and Latino Community
         Organizing"*](https://journals.sagepub.com/doi/10.1177/1065912920983456),
         *Political Research Quarterly* (2021).
-
-:::
+        
 
 <br>
 
