@@ -965,4 +965,26 @@ nav[role=navigation] * {
   }
 }
 
+/* Reversed numbered lists - for publications, software, data pages */
+.reversed-list ol {
+  list-style-type: none;
+  padding-left: 2em;
+}
+
+.reversed-list {
+  counter-reset: rev-counter var(--reversed-counter-reset, 1);
+}
+
+.reversed-list ol > li {
+  counter-increment: rev-counter -1;
+  position: relative;
+}
+
+.reversed-list ol > li::before {
+  content: counter(rev-counter) ".";
+  position: absolute;
+  left: -2em;
+  font-weight: normal;
+}
+
 /*# sourceMappingURL=styles.css.map */
