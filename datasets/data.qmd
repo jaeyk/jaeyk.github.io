@@ -62,8 +62,7 @@ public good.
         Holbein, Cameron Guage, and William Marx
 
 1.  [**Asian American and Latino Advocacy and Community Service
-    Organizations Dataset
-    (1868–2016)**](https://doi.org/10.7910/DVN/FLUPBJ)
+    Organizations Dataset**](https://doi.org/10.7910/DVN/FLUPBJ) [**\[Dashboard\]**](https://jaeyk.github.io/aa_latino_organizations_map/)
 
     -   **Summary:** A historical dataset documenting over 800 nonprofit organizations serving Asian American and Latino communities in the U.S. from 1868 to 2016. It includes founding years, organizational types (advocacy, service, hybrid), and panethnic status. The dataset captures both early ethnic organizations and
         those that evolved into panethnic entities, such as the National

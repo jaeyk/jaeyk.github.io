@@ -16,7 +16,7 @@ format: html
 
     -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
     
-    -   Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations (1868-2016)](https://www.google.com/maps/d/viewer?mid=1W0tTWI589Yk9ekBQ7GSdCYphUbNYRUg&ll=35.29702258888104%2C-91.95725102610297&z=5)
+    -   Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
 
 **Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America** introduces the concept of *classification cost* to explain how the administrative challenges of identifying and categorizing marginalized communities shaped the rise of new racial group formations. Federal agencies set official racial classifications, but their consequences were most acutely felt in local encounters between street-level bureaucrats and community members. These dynamics became especially salient during the War on Poverty, when expanding social programs created new incentives and constraints for accessing public resources. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state defaulted to residual labels like “Other.”
 
