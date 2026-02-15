@@ -341,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Ensure reversed lists display in descending order.
   Array.prototype.slice.call(
-    document.querySelectorAll("[class*='reversed-list-'] > ol")
+    document.querySelectorAll(".reversed-list > ol, [class*='reversed-list-'] > ol")
   ).forEach(function (ol) {
     ol.setAttribute("reversed", "");
   });
@@ -516,6 +516,7 @@ Loading publications…
 <summary>
 <strong>Manuscripts under review</strong>
 </summary>
+<div class="reversed-list" style="--reversed-counter-reset: 4;">
 <ol type="1">
 <li><p>“Mission Driven Evaluations.” (Eric Giannella, <strong>Jae Yeon Kim</strong>, and Maximilian Hell)</p></li>
 <li><p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242">“Race, Violence, and the Effectiveness of Protest.”</a> (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, <strong>Jae Yeon Kim</strong>, and Liz McKenna)</p>
@@ -527,11 +528,13 @@ Loading publications…
 <li>Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan</li>
 </ul></li>
 </ol>
+</div>
 </details>
 <details class="published-papers-search-static" data-count-key="working_papers">
 <summary>
 <strong>Working papers</strong>
 </summary>
+<div class="reversed-list" style="--reversed-counter-reset: 14;">
 <ol type="1">
 <li><p>“Reconstructing Implementation as Politics.” (with Akshay Mangla)</p>
 <ul>
@@ -583,20 +586,23 @@ Loading publications…
 <ol start="13" type="1">
 <li>“Everyday Experiences and Asian American Identity.” (with Taeku Lee)</li>
 </ol>
+</div>
 </details>
 <details class="published-papers-search-static" data-count-key="proceedings">
 <summary>
 <strong>Peer-reviewed conference and workshop proceedings</strong>
 </summary>
+<div class="reversed-list" style="--reversed-counter-reset: 2;">
 <ol type="1">
 <li><a href="https://arxiv.org/abs/2005.05921">“Intersectional Bias in Hate Speech and Abusive Language Datasets.”</a> (<strong>Jae Yeon Kim</strong>, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, <a href="https://sites.google.com/view/icwsm2020datachallenge/home"><em>Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop</em></a> [<a href="https://github.com/jaeyk/intersectional-bias-in-ml">replication</a>]</li>
 </ol>
+</div>
 </details>
 <details class="published-papers-search-static" data-count-key="book_chapters">
 <summary>
 <strong>Edited volume book chapters</strong>
 </summary>
-<div class="reversed-list-2">
+<div class="reversed-list" style="--reversed-counter-reset: 3;">
 <ol start="2" type="1">
 <li><p>APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)</p></li>
 <li><p><a href="https://www.ssoar.info/ssoar/handle/document/86424">“Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach.”</a> (<strong>Jae Yeon Kim</strong>) In C. Strippel, S. Paasch-Colberg, M. Emmer &amp; J. Trebbe (Eds.), <em>Challenges and Perspectives of Hate Speech Analysis</em>, 2022, (pp.&nbsp;261-275). Digital Communication Research (open-access book series by the German Communication Association)</p></li>
@@ -607,7 +613,7 @@ Loading publications…
 <summary>
 <strong>Media and public writing</strong>
 </summary>
-<div class="reversed-list-11">
+<div class="reversed-list" style="--reversed-counter-reset: 12;">
 <ol start="8" type="1">
 <li><p><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">“Building Civic Muscle.”</a> (<strong>Jae Yeon Kim</strong>), APSA’s Civic Engagement Section Podcast (Civic Café), June 17, 2025</p></li>
 <li><p><a href="https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf">“Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status.”</a> (Charles Crabtree, <strong>Jae Yeon Kim</strong>, S. Michael Gaddis, and John B. Holbein), <em>Berkeley Interdisciplinary Migration Initiative</em>, November 5, 2024</p></li>

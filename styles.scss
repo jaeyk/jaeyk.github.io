@@ -1007,93 +1007,23 @@ nav[role="navigation"] * {
 }
 
 /* Reversed numbered lists - for publications, software, data pages */
-.reversed-list-17 ol {
+.reversed-list ol {
   list-style-type: none;
   padding-left: 2em;
-  counter-reset: rev-counter 18;
 }
 
-.reversed-list-17 ol > li {
+.reversed-list {
+  counter-reset: rev-counter var(--reversed-counter-reset, 1);
+}
+
+.reversed-list ol > li {
   counter-increment: rev-counter -1;
   position: relative;
 }
 
-.reversed-list-17 ol > li::before {
+.reversed-list ol > li::before {
   content: counter(rev-counter) ".";
   position: absolute;
   left: -2em;
   font-weight: normal;
 }
-
-.reversed-list-6 ol {
-  list-style-type: none;
-  padding-left: 2em;
-  counter-reset: rev-counter 7;
-}
-
-.reversed-list-6 ol > li {
-  counter-increment: rev-counter -1;
-  position: relative;
-}
-
-.reversed-list-6 ol > li::before {
-  content: counter(rev-counter) ".";
-  position: absolute;
-  left: -2em;
-  font-weight: normal;
-}
-
-.reversed-list-4 ol {
-  list-style-type: none;
-  padding-left: 2em;
-  counter-reset: rev-counter 5;
-}
-
-.reversed-list-4 ol > li {
-  counter-increment: rev-counter -1;
-  position: relative;
-}
-
-.reversed-list-4 ol > li::before {
-  content: counter(rev-counter) ".";
-  position: absolute;
-  left: -2em;
-  font-weight: normal;
-}
-
-.reversed-list-7 ol {
-  list-style-type: none;
-  padding-left: 2em;
-  counter-reset: rev-counter 8;
-}
-
-.reversed-list-7 ol > li {
-  counter-increment: rev-counter -1;
-  position: relative;
-}
-
-.reversed-list-7 ol > li::before {
-  content: counter(rev-counter) ".";
-  position: absolute;
-  left: -2em;
-  font-weight: normal;
-}
-
-.reversed-list-2 ol {
-  list-style-type: none;
-  padding-left: 2em;
-  counter-reset: rev-counter 3;
-}
-
-.reversed-list-2 ol > li {
-  counter-increment: rev-counter -1;
-  position: relative;
-}
-
-.reversed-list-2 ol > li::before {
-  content: counter(rev-counter) ".";
-  position: absolute;
-  left: -2em;
-  font-weight: normal;
-}
-

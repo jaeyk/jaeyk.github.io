@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Ensure reversed lists display in descending order.
   Array.prototype.slice.call(
-    document.querySelectorAll("[class*='reversed-list-'] > ol")
+    document.querySelectorAll(".reversed-list > ol, [class*='reversed-list-'] > ol")
   ).forEach(function (ol) {
     ol.setAttribute("reversed", "");
   });
@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Manuscripts under review</strong></summary>
 
+::: {.reversed-list style="--reversed-counter-reset: 4;"}
 
 1.  "Mission Driven Evaluations." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
     
@@ -265,11 +266,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
+:::
+
 </details>
 
 <details class="published-papers-search-static" data-count-key="working_papers">
 
 <summary><strong>Working papers</strong></summary>
+
+::: {.reversed-list style="--reversed-counter-reset: 14;"}
 
 1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
@@ -323,13 +328,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 13.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)
 
+:::
+
 </details>
 
 <details class="published-papers-search-static" data-count-key="proceedings">
 
 <summary><strong>Peer-reviewed conference and workshop proceedings</strong></summary>
 
+::: {.reversed-list style="--reversed-counter-reset: 2;"}
+
 1.  ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (**Jae Yeon Kim**, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\]
+
+:::
 
 </details>
 
@@ -337,7 +348,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Edited volume book chapters</strong></summary>
 
-::: {.reversed-list-2}
+::: {.reversed-list style="--reversed-counter-reset: 3;"}
 
 2. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)
 
@@ -351,7 +362,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Media and public writing</strong></summary>
 
-::: {.reversed-list-11}
+::: {.reversed-list style="--reversed-counter-reset: 12;"}
 
 8.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
 

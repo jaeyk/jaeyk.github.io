@@ -9,6 +9,8 @@ public good.
 
 ![Civic opportunity map. Source: Kim, de Vries, and Han 2025](../misc/civic_opportunity.png){fig-align="center" width="100%"}
 
+::: {.reversed-list style="--reversed-counter-reset: 4;"}
+
 3.  [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
@@ -73,7 +75,9 @@ public good.
         War on Poverty and Asian American and Latino Community
         Organizing"*](https://journals.sagepub.com/doi/10.1177/1065912920983456),
         *Political Research Quarterly* (2021).
-        
+
+:::
+
 
 <br>
 
