@@ -2,9 +2,11 @@
 title: "Software"
 ---
 
-I develop open-source software to support data curation and computational research in the social sciences and teaching. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
+I develop open-source software to support data curation, computational social science research, and teaching. I also build lightweight tools for instructional and practical use. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
 
 ::: {.reversed-list-6}
+
+7. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
 
 6. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
 
