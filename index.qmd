@@ -135,7 +135,7 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 | March 25     | [Talk]{.badge .badge-talk}        | Institute for AI and Social Innovation, Yonsei University, hosted by Wha Sun Jho (*scheduled*) | Virtual         |
 | March 9       | [Talk]{.badge .badge-talk}        | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill, hosted by Angel Hsu (*scheduled*) | Chapel Hill, NC, USA         |
 | March 4       | [Participant]{.badge .badge-participant} | [Federation of American Scientists](https://fas.org/) AI Policy Sprint Co-Creation Forum (*scheduled*) | Washington, DC, USA     |
-| February 14   | [Talk]{.badge .badge-talk}        | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University (*scheduled*) | Durham, NC, USA         |
+| February 14   | [Talk]{.badge .badge-talk}        | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University | Durham, NC, USA         |
 
 
 ::: {style="margin-top: 1.5em;"}
