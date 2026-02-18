@@ -256,13 +256,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list style="--reversed-counter-reset: 4;"}
 
-1.  "Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)
+[1.  "Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)]: #
     
-2.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
+1.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
 
     -   Presented at the 2025 APSA    
     
-3.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+2.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
 
     -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
@@ -292,27 +292,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 National WIC Association annual conference
 
-5.  "The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net." (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)
+[5.  "The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net." (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)]: #
 
     -   Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity
 
 [5.  "How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field." (with Eric Giannella and Yixin Crystal Luo)]: #
 
-6.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
+5.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
 
     -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)
 
-7.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+6.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
-8.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
+7.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
-9.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)
+[9.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)]: #
 
-    -   Presented at Korea University, Yonsei University, KAIST
+[    -   Presented at Korea University, Yonsei University, KAIST]: #
 
 10.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [2.  "Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration." (with Woo Chang Kang)]: #
 
-13.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)
+[13.  "Everyday Experiences and Asian American Identity." (with Taeku Lee)]: #
 
 :::
 
