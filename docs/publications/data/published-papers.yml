@@ -102,7 +102,7 @@
       url: "slides/training_css_phd.pdf"
     - label: "website"
       url: "https://github.com/jaeyk/ic2s2-training-css-tutorial"
-  note: "Created for the 2024 International Conference for Computational Social Science tutorial."
+  #note: "Created for the 2024 International Conference for Computational Social Science tutorial."
 
 - order: 11
   year: 2023
