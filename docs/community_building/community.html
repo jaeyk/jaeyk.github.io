@@ -94,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
