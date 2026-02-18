@@ -7,7 +7,7 @@ toc: true
 number-sections: false
 ---
 
-Networking isn’t optional in academia—it’s essential.
+Networking isn’t optional in academia; it’s essential.
 
 I didn’t come to this realization naturally. I’m not someone who thrives
 on large social events or group dinners. In fact, I avoided most school
@@ -53,7 +53,7 @@ tell you’ve made the effort to reach out thoughtfully.
 **2. Lower the stakes**
 
 Professors are busy. Postdocs and graduate students are too, but faculty
-often carry additional institutional responsibilities—advising students,
+often carry additional institutional responsibilities: advising students,
 writing recommendation letters, and serving on committees.
 
 So keep your messages short. Really short.
@@ -85,7 +85,7 @@ participants to help expand the program’s reach. So the following year,
 I volunteered to co-organize a new site in the Bay Area, hosted by
 Berkeley and Stanford.
 
-That small act—organizing something for others—connected me with dozens
+That small act, organizing something for others, connected me with dozens
 of faculty, postdocs, and graduate students across disciplines. Many of
 them have since become coauthors, collaborators, and close colleagues.
 It also brought me into contact with Code for America, a civic tech
@@ -125,7 +125,7 @@ competition.
 I didn’t grow up thinking I was good at networking. I still don’t love
 big receptions or happy hours. But I’ve learned how to build
 relationships in ways that feel authentic to me. And that’s the
-point—there’s no single right way to do this.
+point: there’s no single right way to do this.
 
 What matters is that you keep showing up, keep learning, and stay open
 to connection.

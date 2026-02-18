@@ -1,5 +1,5 @@
 ---
-title: "I Didn't Think I’d Return to Academia — Until I Saw What Was Missing"
+title: "I Didn't Think I’d Return to Academia Until I Saw What Was Missing"
 author: "Jae Yeon Kim"
 date: "April 20, 2025"
 format: html
@@ -31,7 +31,7 @@ systems were. I also saw how much potential there was for research to do
 more than describe and analyze problems. It could help fix them.
 
 At the time, I thought I was stepping away from academia for good. In
-reality, I was becoming a different kind of researcher—one more attuned
+reality, I was becoming a different kind of researcher, one more attuned
 to practical constraints, lived experience, and the institutional
 frictions that shape how policy is delivered.
 
@@ -56,7 +56,7 @@ Hill. The opportunity to return wasn’t a reset. It was a reinvention.
 
 Too often, we present academic and non-academic paths as a binary. But
 that framing misses what’s happening at the intersections. Some of the
-most exciting work today—both intellectually and practically—is
+most exciting work today, both intellectually and practically, is
 happening across sectors: in government, nonprofits, and industry, where
 researchers are advancing theory *and* solving problems at the same
 time.
@@ -90,8 +90,8 @@ change.
     scholar, collaborator, and teacher.
 
 2.  **Seek alignment, not just prestige, and define success on your own
-    terms.** The right environment—whether inside or outside
-    academia—should reflect your values and help you reconnect with why
+    terms.** The right environment, whether inside or outside
+    academia, should reflect your values and help you reconnect with why
     you became a researcher in the first place. Success might be a
     paper, a public dashboard, a field experiment, or a policy shift. If
     it helps people and moves your mission forward, it counts.
@@ -103,5 +103,5 @@ change.
 
 **Here's the bigger lesson.** In a time of rising skepticism toward
 research and higher education, the best way to defend scholarship is to
-make it matter—to connect it to the people and problems it’s meant to
+make it matter: connect it to the people and problems it’s meant to
 serve. We do that not by standing apart, but by stepping in.

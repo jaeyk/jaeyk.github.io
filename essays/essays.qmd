@@ -5,7 +5,7 @@ format: html
 
 ![](../misc/life_story_map.png){width=800px}
 
-So far, I’ve lived in more than ten cities across five countries on two continents. I was born and raised in South Korea (Jeonju, Daejeon, Seoul, Changwon, and Dongducheon) and have also lived in Hong Kong (Kowloon Tong), Taiwan (Muzha District, Taipei City), Canada (Vancouver), and across the United States, including the San Francisco Bay Area (CA), Ann Arbor (MI), Cambridge (MA), and the Research Triangle (NC). My path has been non-linear, spanning academia, industry, public service, and civic technology. These experiences have shaped my identity as a bridge builder and translator—someone who works across boundaries of scholarship and practice, discipline and sector, and place and community. 
+So far, I’ve lived in more than ten cities across five countries on two continents. I was born and raised in South Korea (Jeonju, Daejeon, Seoul, Changwon, and Dongducheon) and have also lived in Hong Kong (Kowloon Tong), Taiwan (Muzha District, Taipei City), Canada (Vancouver), and across the United States, including the San Francisco Bay Area (CA), Ann Arbor (MI), Cambridge (MA), and the Research Triangle (NC). My path has been non-linear, spanning academia, industry, public service, and civic technology. These experiences have shaped my identity as a bridge builder and translator, someone who works across boundaries of scholarship and practice, discipline and sector, and place and community. 
 
 At the same time, my perspective and career path have been shaped by where I began. I’m a first-generation college student from a working-class family. 
 
@@ -15,7 +15,7 @@ Below is a collection of essays I’ve written over the years, organized into th
 
 **Professional Reflections**
 
-- [*I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing*](return2academia.html)
+- [*I Didn’t Think I’d Return to Academia Until I Saw What Was Missing*](return2academia.html)
 
 - [*Researching and Doing Policy Science as a Political Scientist*](policy_science.html)
 

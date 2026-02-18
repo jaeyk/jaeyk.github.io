@@ -13,7 +13,7 @@ In 2023, I was living a kind of dual life. I was a data scientist at Code for Am
 
 This duality wasn't just about time management; it was about navigating two institutional worlds. But it also reflected the deeper structure of my work. Even at Code for America, my projects had an academic-facing element. I worked on field experiments and policy evaluations in partnership with the Better Government Lab at Georgetown University’s McCourt School of Public Policy and the University of Michigan’s Ford School of Public Policy. These collaborations helped bridge the line between implementation and research, between public service and public knowledge.
 
-Balancing both roles was demanding. But I chose this path because I believe scholarship shouldn’t just describe the world—it should help improve it. I want my research to be rigorous, but also relevant. And that belief has shaped how I think of myself today.
+Balancing both roles was demanding. But I chose this path because I believe scholarship shouldn’t just describe the world; it should help improve it. I want my research to be rigorous, but also relevant. And that belief has shaped how I think of myself today.
 
 **A Question of Identity**
 
@@ -21,7 +21,7 @@ At the 2023 American Political Science Association (APSA) annual meeting, a coll
 
 I paused. Then I said, "I think of myself as a policy scientist."
 
-It’s not a title that appears on business cards. But it captures what I do and what I care about. I study how public policies are created, delivered, and experienced. And I work to make government more responsive, equitable, and effective—not in theory, but in practice.
+It’s not a title that appears on business cards. But it captures what I do and what I care about. I study how public policies are created, delivered, and experienced. And I work to make government more responsive, equitable, and effective, not in theory, but in practice.
 
 That goal led me into political science. And it’s the same goal that, for a time, led me outside of it.
 
@@ -45,13 +45,13 @@ None of this came from reading theory. It came from co-designing projects with c
 
 And yet, the more I engaged with practice, the more I rediscovered the value of research.
 
-Practitioners are deep in the weeds. Researchers step back. Both perspectives are incomplete on their own—but powerful when combined. Research makes sense of patterns, names concepts, and connects cases. Practice reminds us what’s feasible, what’s urgent, and what actually matters to those doing the work.
+Practitioners are deep in the weeds. Researchers step back. Both perspectives are incomplete on their own, but powerful when combined. Research makes sense of patterns, names concepts, and connects cases. Practice reminds us what’s feasible, what’s urgent, and what actually matters to those doing the work.
 
 **How Politics Shapes Policy**
 
 Good ideas fail all the time. Not because they’re unworkable, but because they’re politically inconvenient. Policy decisions are filtered through institutions, norms, and power dynamics.
 
-That’s where political science has something essential to offer. It reminds us that implementation is not just technical—it’s political. It’s about who has discretion, what rules are enforced, and whose interests are prioritized.
+That’s where political science has something essential to offer. It reminds us that implementation is not just technical; it’s political. It’s about who has discretion, what rules are enforced, and whose interests are prioritized.
 
 Sometimes policies fail because senior officials don’t understand frontline needs. Other times, staff lack access to insights held by clients. These breakdowns aren’t just process failures. They’re symptoms of deeper misalignments in authority, communication, and design.
 
@@ -61,6 +61,6 @@ Political science once played a central role in studying these dynamics. *Implem
 
 Working outside academia didn’t make me less of a political scientist. If anything, it helped me become a more grounded one. It taught me where the real points of friction are: between ideals and incentives, between design and delivery.
 
-I still care about theory. I still care about publication. But I also care about building the kind of research that public institutions can actually use—research that informs, illuminates, and sometimes even shapes the choices governments make.
+I still care about theory. I still care about publication. But I also care about building the kind of research that public institutions can actually use: research that informs, illuminates, and sometimes even shapes the choices governments make.
 
-I didn’t stop being a political scientist when I left campus. If anything, I became a better one. And I believe that those of us who move between research and practice have a role to play—not just in translating ideas, but in shaping a future where scholarship and service are no longer separate paths.
+I didn’t stop being a political scientist when I left campus. If anything, I became a better one. And I believe that those of us who move between research and practice have a role to play, not just in translating ideas, but in shaping a future where scholarship and service are no longer separate paths.

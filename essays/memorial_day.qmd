@@ -13,7 +13,7 @@ crystal clear: the one I had with him on my wedding day.
 
 It was a few hours before the ceremony. We were sitting side by side in
 a hair salon, the stylist adding a final touch to my hair while rain
-slid down the window, when he began to speak. He told me—again—how my
+slid down the window, when he began to speak. He told me, again, how my
 grandfather had forbidden him to attend college because, as the youngest
 son, he was expected to stay close to home. My father had been so frail
 that my grandfather even renamed him *Myungryul*, meaning “long life,”
@@ -25,7 +25,7 @@ It was one of the few outlets for his talent. In doing so, he escaped
 the rural life he was born into, but not the hardships etched into his
 path. Factory floors in Korea then were unforgiving: the pounding
 machines slowly stole hearing in one ear, and decades of dust and
-chemical haze—his likely suspects, since he neither smoked nor drank—may
+chemical haze, his likely suspects since he neither smoked nor drank, may
 have seeded the cancer that would eventually take his life.
 
 When we talked that rainy morning, I had graduated from college and was
@@ -34,7 +34,7 @@ working at a software start-up. Tech circles claimed they would
 extra ad clicks. The louder the talk grew, the more skeptical I became.
 I wanted to answer even a single question properly, and that meant
 learning how to do research. Graduate school felt remote to someone from
-a working-class family, yet I applied for—and received—the Korea
+a working-class family, yet I applied for and received the Korea
 Foundation for Advanced Studies scholarship, one of the most prestigious
 and competitive fellowships in Korea, awarded that year to only two
 political science students to support their PhD studies abroad.
@@ -47,7 +47,7 @@ floor; in her, a career shaped by mathematical skill and a passion for
 engineering.
 
 He often said his greatest regret was letting his dream slip away and
-that he had no fixed plan for my career—only the hope I would follow my
+that he had no fixed plan for my career, only the hope I would follow my
 own path. I remember that conversation not just because of the rain’s
 hush, but because it was almost our last real talk. A few months later,
 cancer took him.
@@ -70,7 +70,7 @@ shapes the work I do.
 Research is powered by curiosity, theory, and data, but for me it is
 also anchored in mission. That mission is personal: to stay with the
 hard, determined work of adding even a small measure of dignity for
-people like my father—people who rarely set foot on a college campus,
+people like my father: people who rarely set foot on a college campus,
 who celebrated their children’s chances while quietly carrying the
 weight of doors closed to them.
 
@@ -80,12 +80,12 @@ their stories, and learned from them, each one a reminder of my father.
 
 Not everyone will sit in university lecture halls, but everyone deserves
 research that begins with their lives, listens to their stories,
-and—above all—serves them.
+and, above all, serves them.
 
 <figure>
 
 <img src="../misc/father_site.jpg" alt="Memorial Site at Korea University Medical School (Body Donation, Photo Credit: Korea University 2017)" width="400"/>
 
-<figcaption>My father donated his body to Korea University Medical School (my alma mater). Given that he grew up in a Confucian family, this was both an act of rebellion against his upbringing and a final act of service to others. Whenever I visit South Korea, I make a point to stop by the Korea University campus—not only to catch up with my teachers and friends who are now faculty there, but also to visit my father’s memorial site. It is marked by the Tower of Gratitude (shown in the picture), a monument on the medical campus that hosts the annual Ceremony of Gratitude, held every April to honor body donors who have contributed to the advancement of medicine through their noble sacrifice. Photo credit: Korea University (2017) </figcaption>
+<figcaption>My father donated his body to Korea University Medical School (my alma mater). Given that he grew up in a Confucian family, this was both an act of rebellion against his upbringing and a final act of service to others. Whenever I visit South Korea, I make a point to stop by the Korea University campus, not only to catch up with my teachers and friends who are now faculty there, but also to visit my father’s memorial site. It is marked by the Tower of Gratitude (shown in the picture), a monument on the medical campus that hosts the annual Ceremony of Gratitude, held every April to honor body donors who have contributed to the advancement of medicine through their noble sacrifice. Photo credit: Korea University (2017) </figcaption>
 
 </figure>
