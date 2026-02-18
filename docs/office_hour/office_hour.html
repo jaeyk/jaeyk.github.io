@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-84f3154f3b25afd141c2036ece8b131c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +81,7 @@ gtag('config', 'G-Q5LW45FBCB', { 'anonymize_ip': true});
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
@@ -93,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -280,8 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section id="unc-student-office-hour" class="level2">
 <h2 class="anchored" data-anchor-id="unc-student-office-hour">UNC Student Office Hour</h2>
-<p>I host weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A).<br>
-If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&amp;ismsaljsauthenabled&amp;ep=plink">please feel free to make an appointment</a>.</p>
+<p>I hold weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A). If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&amp;ismsaljsauthenabled&amp;ep=plink">please feel free to make an appointment</a>.</p>
+<p>Abernethy Hall is near Franklin Street, next to Hanes Art Center and the Kenan Music Building. My office is on the second floor. Please walk upstairs, as there is no elevator; it is only a two-story building. When you reach the second floor, turn left and continue down the hall.</p>
 <div style="margin-top: 0.75rem;">
 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4506609728687!2d-79.05687062404371!3d35.911467672513766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e7c92a4ebf%3A0x96e51db242dd6c93!2sAbernethy%20Hall%2C%20131%20S%20Columbia%20St%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1768307453720!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe></p>
 </div>
@@ -711,21 +727,48 @@ If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c7
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2026, Jae Yeon Kim</p>
+<div class="site-footer-grid">
+<div class="site-footer-block">
+<div class="site-footer-title">
+Jae Yeon Kim
+</div>
+<div class="site-footer-line">
+© 2026 Jae Yeon Kim
+</div>
+<div class="site-footer-line">
+UNC Chapel Hill
+</div>
+</div>
+<div class="site-footer-block">
+<div class="site-footer-title">
+Address
+</div>
+<div class="site-footer-line">
+Abernethy Hall, Room 216A
+</div>
+<div class="site-footer-line">
+131 S. Columbia Street, Campus Box 3435
+</div>
+<div class="site-footer-line">
+Chapel Hill, NC 27599-3435
+</div>
+</div>
+<div class="site-footer-block">
+<div class="site-footer-title">
+Contact
+</div>
+<div class="site-footer-line">
+<a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a>
+</div>
+</div>
+</div>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jaeyk/jaeyk.github.io">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
+<p><img class="site-footer-logo" src="../misc/Old_Well_mark.png" alt="UNC Old Well mark" loading="lazy"></p>
+</div>
   </div>
 </footer>
 

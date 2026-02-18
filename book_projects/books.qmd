@@ -28,7 +28,6 @@ The book also revisits the classic question of whether race or class is more pol
 
 By centering policy implementation, local political economy, and classification cost, *Unseen and Uncounted* reframes racial group formation as a process of political contestation, administrative negotiation, and institutional co-production. In doing so, it extends the theory of administrative burden by showing how burdens operate not only at the individual level, but also at the group level. More broadly, the book contributes to ongoing debates in political science, sociology, public administration, history, and critical data studies by offering new insight into how racial categories are constructed, contested, and institutionalized through the everyday workings of government.
 
-<span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by summer 2026.</span>
 
 ![Enter Opportunity Market. Source: Agenda, the newsletter of the National Council of La Raza Fall 1974](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/garcia.png){fig-align="center" width="80%"}
 
@@ -76,7 +75,7 @@ Why can we shop with one click but still struggle to access basic public service
 
 Why do so many students enter college full of ambition—only to graduate with more confusion than clarity?
 
-*How to Use University* is a practical, student-centered guide to navigating college with purpose, curiosity, and intention. Organized around four core themes—exploring college, learning, career, and life—it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a **launchpad**—not a system to passively endure—for discovering interests, initiating projects, and building momentum. It emphasizes a key idea: unlocking even one small opportunity—especially a self-initiated project—can set off a **cycle of opportunities** that grows over time. With its structured framework, practical strategies, and ethos of civic-minded entrepreneurship, this book has become a trusted companion for Korean college students seeking clarity, growth, and public impact.
+*How to Use University* is a practical, student-centered guide to navigating college with purpose, curiosity, and intention. Organized around four core themes (exploring college, learning, career, and life), it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a **launchpad**, not a system to passively endure, for discovering interests, initiating projects, and building momentum. It emphasizes a key idea: unlocking even one small opportunity, especially a self-initiated project, can set off a **cycle of opportunities** that grows over time. With its structured framework, practical strategies, and ethos of civic-minded entrepreneurship, this book has become a trusted companion for Korean college students seeking clarity, growth, and public impact.
 
 **Impact & Recognition**
 

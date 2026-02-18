@@ -19,10 +19,8 @@ website:
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
   page-footer:
-    left: "&copy; Copyright 2026, Jae Yeon Kim"
-    right: 
-      - icon: github
-        href: https://github.com/jaeyk/jaeyk.github.io
+    left: "<div class='site-footer-grid'><div class='site-footer-block'><div class='site-footer-title'>Jae Yeon Kim</div><div class='site-footer-line'>&copy; 2026 Jae Yeon Kim</div><div class='site-footer-line'>UNC Chapel Hill</div></div><div class='site-footer-block'><div class='site-footer-title'>Address</div><div class='site-footer-line'>Abernethy Hall, Room 216A</div><div class='site-footer-line'>131 S. Columbia Street, Campus Box 3435</div><div class='site-footer-line'>Chapel Hill, NC 27599-3435</div></div><div class='site-footer-block'><div class='site-footer-title'>Contact</div><div class='site-footer-line'><a href='mailto:jaekim@unc.edu'>jaekim@unc.edu</a></div></div></div>"
+    right: "<img class='site-footer-logo' src='/misc/Old_Well_mark.png' alt='UNC Old Well mark' loading='lazy'>"
 
   sidebar:
     style: docked
@@ -65,6 +63,7 @@ website:
         
 format:
   html:
+    theme: darkly
     css: styles.css
     toc: true
     toc-depth: 4
@@ -77,7 +76,7 @@ format:
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
           <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
           <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
