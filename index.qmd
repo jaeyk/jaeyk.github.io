@@ -37,23 +37,24 @@ format:
 
 <div class="hero-profile" style="flex: 0 0 auto; text-align: center; max-width: 160px;">
 <img src="profile_alt.png" alt="Jae Yeon Kim profile photo" width="140" style="border-radius: 50%;"/>
+<p class="hero-caption" style="font-size: 0.8em; color: #555; margin-top: 0.5em; line-height: 1.4; font-style: italic;">A political scientist by training, a data scientist in practice, and a civic tech nerd at heart.</p>
 </div>
 
 <div class="hero-contact" style="flex: 0 0 auto;">
 <h2 style="margin-top: 0; margin-bottom: 0.3em;">Jae Yeon Kim</h2>
-<div class="hero-links-inline">
-<a href="mailto:jaekim@unc.edu"><i class="bi bi-envelope"></i> Email</a>
-<span class="hero-links-sep">|</span>
-<a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf"><i class="bi bi-file-earmark-text"></i> CV</a>
-<span class="hero-links-sep">|</span>
-<a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en"><i class="bi bi-google"></i> Scholar</a>
-<span class="hero-links-sep">|</span>
-<a href="https://www.linkedin.com/in/jae-yeon-kim-694764229/"><i class="bi bi-linkedin"></i> LinkedIn</a>
-<span class="hero-links-sep">|</span>
-<a href="https://jaeyeonkim.substack.com/"><i class="bi bi-substack"></i> Substack</a>
-<span class="hero-links-sep">|</span>
-<a href="https://github.com/jaeyk"><i class="bi bi-github"></i> GitHub</a>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li><i class="bi bi-envelope"></i> <a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a></li>
+<li><i class="bi bi-file-earmark-text"></i> <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">CV</a></li>
+<li><i class="bi bi-google"></i> <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en">Google Scholar</a></li>
+<li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jae-yeon-kim-694764229/">LinkedIn</a></li>
+<li><i class="bi bi-substack"></i> <a href="https://jaeyeonkim.substack.com/">Substack</a></li>
+<li><i class="bi bi-github"></i> <a href="https://github.com/jaeyk">GitHub</a></li>
+</ul>
 </div>
+
+<div class="hero-quote" style="flex: 1 1 200px; border-left: 3px solid transparent; padding-left: 1em; font-size: 0.95em; color: #555; font-style: italic; align-self: center;">
+"The scientist is a communicator as well as a discoverer—sometimes even a missionary."<br/>
+<span style="font-style: normal;">—Herbert A. Simon (1916-2001)</span>
 </div>
 
 </div>
