@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -92,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -278,8 +295,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <figcaption>Civic opportunity map. Source: Kim, de Vries, and Han 2025</figcaption>
 </figure>
 </div>
-<div class="reversed-list" style="--reversed-counter-reset: 4;">
-<ol start="3" type="1">
+<div class="reversed-list">
+<ol type="1">
 <li><p><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C"><strong>MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy</strong></a> <a href="https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw"><strong>[Dashboard]</strong></a></p>
 <ul>
 <li><strong>Summary:</strong> We introduce MapAgora, a set of five new datasets that provide a comprehensive view of civic opportunity across America. Drawing on IRS tax records and the websites of over 1.7 million nonprofit organizations, we examine whether organizations offer civic opportunities, such as membership, volunteering, public events, or civic and political action, and classify them by type (e.g., political, professional, issue-based). The de-identified organization-level dataset includes indicators of civic opportunity, organizational type, and financial status. Four additional datasets aggregate this information at the ZIP code and county levels. We validate that civic opportunity is conceptually distinct from financial resources at the organizational level, while aggregate patterns align with traditional measures of socioeconomic inequality. These datasets offer new tools for understanding civic infrastructure, local democracy, and public policy.<br>
@@ -363,13 +380,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

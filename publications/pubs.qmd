@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Manuscripts under review</strong></summary>
 
-::: {.reversed-list style="--reversed-counter-reset: 4;"}
+::: {.reversed-list}
 
 [1.  "Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)]: #
     
@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 APSA    
     
-2.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+1.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
 
     -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
@@ -274,21 +274,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Working papers</strong></summary>
 
-::: {.reversed-list style="--reversed-counter-reset: 14;"}
+::: {.reversed-list}
 
 1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
     -   Presented at the 2025 APSA
 
-2.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants." (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
+1.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants." (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
 
     -   Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University 
 
-3.  "Crossing the Finish Line: The Role of Attention and Reminders in SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
+1.  "Crossing the Finish Line: The Role of Attention and Reminders in SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
     -   Presented at the 2025 APPAM
     
-4.  "Space and Place in WIC: Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
+1.  "Space and Place in WIC: Vendor Accessibility and Administrative Burden." (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)
 
     -   Presented at the 2025 National WIC Association annual conference
 
@@ -298,17 +298,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [5.  "How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field." (with Eric Giannella and Yixin Crystal Luo)]: #
 
-5.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
+1.  "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts." (with Aniket Kesari)
 
-    -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)
+    -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI
 
-6.  "AI and the American Contracting State."
+1.  "AI and the American Contracting State."
 
-7.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
-8.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
+1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
@@ -316,15 +316,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [    -   Presented at Korea University, Yonsei University, KAIST]: #
 
-9.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
+1.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
-10.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
+1.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
 
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
 -->
 
-11.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
+1.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
 
 [2.  "Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration." (with Woo Chang Kang)]: #
 
@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Peer-reviewed conference and workshop proceedings</strong></summary>
 
-::: {.reversed-list style="--reversed-counter-reset: 2;"}
+::: {.reversed-list}
 
 1.  ["Intersectional Bias in Hate Speech and Abusive Language Datasets."](https://arxiv.org/abs/2005.05921) (**Jae Yeon Kim**, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\]
 
@@ -350,9 +350,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Edited volume book chapters</strong></summary>
 
-::: {.reversed-list style="--reversed-counter-reset: 3;"}
+::: {.reversed-list}
 
-2. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)
+1. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)
 
 1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (**Jae Yeon Kim**) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
@@ -364,21 +364,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <summary><strong>Media and public writing</strong></summary>
 
-::: {.reversed-list style="--reversed-counter-reset: 12;"}
+::: {.reversed-list}
 
-8.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
+1.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025
 
-7.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
+1.  ["Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024
 
-6.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
+1.  ["The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora."](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024
 
-5.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
+1.  ["Behind the Paper: The Unequal Landscape of Civic Opportunity in America."](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023
 
-4.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
+1.  ["Episode 3.4: Race-based Coalitions in Three Chinatowns."](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023
 
-3.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022
+1.  ["Good Troublemakers Are the Key to Fixing Democracy in South Korea."](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022
 
-2.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
+1.  ["Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021
 
 1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
 

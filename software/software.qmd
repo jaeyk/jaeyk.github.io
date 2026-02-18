@@ -4,28 +4,28 @@ title: "Software"
 
 I develop open-source software to support data curation, computational social science research, and teaching. I also build lightweight tools for instructional and practical use. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
 
-::: {.reversed-list style="--reversed-counter-reset: 8;"}
+::: {.reversed-list}
 
-7. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
+1. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
 
-6. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
+1. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
 
-5. [**MapAgora**](https://snfagora.github.io/MapAgora/)
+1. [**MapAgora**](https://snfagora.github.io/MapAgora/)
    - **Summary:** An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.
    - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han
    - **Collaborator:** Milan de Vries
 
-4. [**autotextclassifier**](https://github.com/snfagora/autotextclassifier)
+1. [**autotextclassifier**](https://github.com/snfagora/autotextclassifier)
    - **Summary:** An R package for automated text classification using the tidymodels framework. Supports supervised learning pipelines with minimal setup for civic tech and policy research applications.
    - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han
    - **Collaborator:** Milan de Vries
 
-3. [**validatednamesr**](https://github.com/jaeyk/validatednamesr)
+1. [**validatednamesr**](https://github.com/jaeyk/validatednamesr)
    - **Summary:** An R package for accessing and analyzing the validated names dataset used in race and ethnicity experiments. Includes utilities for name filtering, trait inspection, and integration with survey tools.
    - **Use case:** Featured in ["Validated Names for Experimental Studies on Ethnicity and Race"](https://www.nature.com/articles/s41597-023-01947-0), *Nature: Scientific Data* (2023), with by Charles Crabtree, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx.
    - **Collaborator:** Charles Crabtree
 
-2. [**tidytweetjson**](https://jaeyk.github.io/tidytweetjson/)
+1. [**tidytweetjson**](https://jaeyk.github.io/tidytweetjson/)
    - **Summary:** An R package that transforms raw Twitter JSON files into clean, analysis-ready datasets. Useful for studying political discourse, social movements, and real-time reactions to events.
    - **Use case:** Used in ["COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes"](https://t.co/4Axd0gEQns), *Perspectives on Politics* (2021), with Nathan Chan and Vivien Leung.
 

@@ -93,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -516,9 +532,8 @@ Loading publications…
 <summary>
 <strong>Manuscripts under review</strong>
 </summary>
-<div class="reversed-list" style="--reversed-counter-reset: 4;">
+<div class="reversed-list">
 <ol type="1">
-<li><p>“Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is.” (Eric Giannella, <strong>Jae Yeon Kim</strong>, and Maximilian Hell)</p></li>
 <li><p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242">“Race, Violence, and the Effectiveness of Protest.”</a> (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, <strong>Jae Yeon Kim</strong>, and Liz McKenna)</p>
 <ul>
 <li>Presented at the 2025 APSA</li>
@@ -534,7 +549,7 @@ Loading publications…
 <summary>
 <strong>Working papers</strong>
 </summary>
-<div class="reversed-list" style="--reversed-counter-reset: 14;">
+<div class="reversed-list">
 <ol type="1">
 <li><p>“Reconstructing Implementation as Politics.” (with Akshay Mangla)</p>
 <ul>
@@ -552,39 +567,32 @@ Loading publications…
 <ul>
 <li>Presented at the 2025 National WIC Association annual conference</li>
 </ul></li>
-<li><p>“The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net.” (<strong>Jae Yeon Kim</strong>, Eric Giannella, and Maximilian Hell)</p>
-<ul>
-<li>Presented at the 2025 PMRC, New York City Mayor’s Office of Economic Opportunity</li>
-</ul></li>
 </ol>
-<ol start="6" type="1">
+<pre><code>-   Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity</code></pre>
+<ol type="1">
 <li><p>“Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts.” (with Aniket Kesari)</p>
 <ul>
-<li>Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)</li>
+<li>Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI</li>
 </ul></li>
+<li><p>“AI and the American Contracting State.”</p></li>
 <li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
 </ol>
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
-<ol start="8" type="1">
+<ol type="1">
 <li><p>“Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments.” (with Florian Keppeler)</p>
 <ul>
 <li>Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference</li>
 </ul></li>
-<li><p>“How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational.” (with Tyler Simko)</p>
-<ul>
-<li>Presented at Korea University, Yonsei University, KAIST</li>
-</ul></li>
+</ol>
+<ol type="1">
 <li><p>“Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.” (with Liz McKenna)</p></li>
 <li><p>“Higher Education as Safety Net Infrastructure.” (with Milan de Vries and Tyler Simko)</p></li>
 </ol>
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
 -->
-<ol start="12" type="1">
+<ol type="1">
 <li>“Democratic Exclusion: Understanding Nativist Backlash in East Asia.” (with Aram Hur and Taeku Lee)</li>
-</ol>
-<ol start="13" type="1">
-<li>“Everyday Experiences and Asian American Identity.” (with Taeku Lee)</li>
 </ol>
 </div>
 </details>
@@ -592,7 +600,7 @@ Loading publications…
 <summary>
 <strong>Peer-reviewed conference and workshop proceedings</strong>
 </summary>
-<div class="reversed-list" style="--reversed-counter-reset: 2;">
+<div class="reversed-list">
 <ol type="1">
 <li><a href="https://arxiv.org/abs/2005.05921">“Intersectional Bias in Hate Speech and Abusive Language Datasets.”</a> (<strong>Jae Yeon Kim</strong>, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, <a href="https://sites.google.com/view/icwsm2020datachallenge/home"><em>Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop</em></a> [<a href="https://github.com/jaeyk/intersectional-bias-in-ml">replication</a>]</li>
 </ol>
@@ -602,8 +610,8 @@ Loading publications…
 <summary>
 <strong>Edited volume book chapters</strong>
 </summary>
-<div class="reversed-list" style="--reversed-counter-reset: 3;">
-<ol start="2" type="1">
+<div class="reversed-list">
+<ol type="1">
 <li><p>APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)</p></li>
 <li><p><a href="https://www.ssoar.info/ssoar/handle/document/86424">“Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach.”</a> (<strong>Jae Yeon Kim</strong>) In C. Strippel, S. Paasch-Colberg, M. Emmer &amp; J. Trebbe (Eds.), <em>Challenges and Perspectives of Hate Speech Analysis</em>, 2022, (pp.&nbsp;261-275). Digital Communication Research (open-access book series by the German Communication Association)</p></li>
 </ol>
@@ -613,8 +621,8 @@ Loading publications…
 <summary>
 <strong>Media and public writing</strong>
 </summary>
-<div class="reversed-list" style="--reversed-counter-reset: 12;">
-<ol start="8" type="1">
+<div class="reversed-list">
+<ol type="1">
 <li><p><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">“Building Civic Muscle.”</a> (<strong>Jae Yeon Kim</strong>), APSA’s Civic Engagement Section Podcast (Civic Café), June 17, 2025</p></li>
 <li><p><a href="https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf">“Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status.”</a> (Charles Crabtree, <strong>Jae Yeon Kim</strong>, S. Michael Gaddis, and John B. Holbein), <em>Berkeley Interdisciplinary Migration Initiative</em>, November 5, 2024</p></li>
 <li><p><a href="https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/">“The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora.”</a> (<strong>Jae Yeon Kim</strong>), <em>HistPhil</em>, January 25, 2024</p></li>

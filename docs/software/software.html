@@ -93,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -273,8 +289,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <p>I develop open-source software to support data curation, computational social science research, and teaching. I also build lightweight tools for instructional and practical use. All packages are freely available on GitHub: <a href="https://github.com/jaeyk">github.com/jaeyk</a></p>
-<div class="reversed-list" style="--reversed-counter-reset: 8;">
-<ol start="7" type="1">
+<div class="reversed-list">
+<ol type="1">
 <li><p><a href="https://huggingface.co/spaces/jaeykim/PracticeTalk"><strong>PracticeTalk</strong></a>: A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.</p></li>
 <li><p><a href="https://jaeyk.github.io/ClassKit/"><strong>ClassKit</strong></a>: A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.</p></li>
 <li><p><a href="https://snfagora.github.io/MapAgora/"><strong>MapAgora</strong></a></p>
