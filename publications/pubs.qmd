@@ -302,11 +302,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 APPAM; Johns Hopkins SAIS; Duke Conference on Society-Centered AI (scheduled)
 
-6.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+6.  "AI and the American Contracting State."
+
+7.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 
-7.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
+8.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
@@ -314,15 +316,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [    -   Presented at Korea University, Yonsei University, KAIST]: #
 
-10.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
+9.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Liz McKenna)
 
-11.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
+10.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
 
 <!-- 4.  "Historical Legacies and Civic Inequality in America." (with Milan de Vries and Hahrie Han) 
     -   Presented at the 2024 APSA, WPSA
 -->
 
-12.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
+11.  "Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Aram Hur and Taeku Lee)
 
 [2.  "Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration." (with Woo Chang Kang)]: #
 
