@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -287,11 +304,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <p>I came from South Korea, so people I’ve met in the U.S. often ask if I’m from Seoul. Given that one in two South Koreans live in the Seoul Metropolitan Area, that’s not a bad guess. Chances are, they’ve met lots of Seoulites. It’s also true that most South Koreans who come to the U.S. for education or work tend to come from that region. In fact, my wife is one of them.</p>
-<p>But I was born and raised in a small town outside Jeonju, a city known for its rich history and delicious food (in my opinion, the best foodie town in Korea). I lived there until I was 11. Then I moved to Daejeon, a bigger city—though still much smaller than Seoul—where I stayed through high school, before heading to Seoul for college. That’s where I landed my first job and eventually got married.</p>
+<p>But I was born and raised in a small town outside Jeonju, a city known for its rich history and delicious food (in my opinion, the best foodie town in Korea). I lived there until I was 11. Then I moved to Daejeon, a bigger city, though still much smaller than Seoul, where I stayed through high school, before heading to Seoul for college. That’s where I landed my first job and eventually got married.</p>
 <p>Growing up, we didn’t have much. Ours was a single-earner, extended family household. My dad worked in a paper mill. My mom stayed home and raised two kids while also caring for my paternal grandparents. Back then, my biggest wish was to have a place where I could borrow books. I didn’t even know libraries existed, since there were none nearby. The only place I could read was a small neighborhood bookstore. It wasn’t a curated independent shop. It was just a humble store with rows of magazines, fiction paperbacks, and student prep books for the college entrance exam. My allowance was limited, so I couldn’t buy what I wanted. Instead, I’d stand and read quickly, pretending to browse. That’s how I first taught myself to read fast.</p>
-<p>Of course, it wasn’t all hardship. The town was surrounded by farms and low hills. It was the kind of place where kids could explore, wander, and feel part of the natural world. Many of our groceries came directly from farmers. Long before I knew the term “farmers market,” that was just how our market worked. Knowing where the food came from—and who grew it—taught us to appreciate it differently. Both sides of my family had roots in farming, and I often spent time on my grandparents’ farms. I began to notice how vegetables and fruits tasted different depending on the farm, the season, and even the grower. What people now call “farm-to-table” was just everyday life for us. We didn’t eat much meat, but we rarely ate processed food either.</p>
-<p>Now that I study poverty and inequality in America, I see how much South Korea has changed too—including my hometown, which is now industrialized. Looking back, I realize that not all working-class kids had regular access to fresh food or green environments. But at the time, I didn’t think much of it. It simply felt like the normal rhythm of life.</p>
-<p>There was also something else. A kind of informal afterschool care rooted in the community. After walking home from school—a walk I had been doing safely on my own since kindergarten, which was normal at the time—if my mom wasn’t home, I’d go to a friend’s house. Parents took turns hosting, rotating responsibilities in an informal mutual support system. It was never called a “program,” but it worked.</p>
+<p>Of course, it wasn’t all hardship. The town was surrounded by farms and low hills. It was the kind of place where kids could explore, wander, and feel part of the natural world. Many of our groceries came directly from farmers. Long before I knew the term “farmers market,” that was just how our market worked. Knowing where the food came from, and who grew it, taught us to appreciate it differently. Both sides of my family had roots in farming, and I often spent time on my grandparents’ farms. I began to notice how vegetables and fruits tasted different depending on the farm, the season, and even the grower. What people now call “farm-to-table” was just everyday life for us. We didn’t eat much meat, but we rarely ate processed food either.</p>
+<p>Now that I study poverty and inequality in America, I see how much South Korea has changed too, including my hometown, which is now industrialized. Looking back, I realize that not all working-class kids had regular access to fresh food or green environments. But at the time, I didn’t think much of it. It simply felt like the normal rhythm of life.</p>
+<p>There was also something else. A kind of informal afterschool care rooted in the community. After walking home from school, a walk I had been doing safely on my own since kindergarten, which was normal at the time, if my mom wasn’t home, I’d go to a friend’s house. Parents took turns hosting, rotating responsibilities in an informal mutual support system. It was never called a “program,” but it worked.</p>
 <p>Looking back, I feel deeply grateful for that small-town childhood. It wasn’t just the delicious food or the beautiful natural surroundings. It was the way those experiences taught me to pay attention, to appreciate simple things, and to share kindness. I learned how the seasons shape what we eat, how nature is something we live with rather than apart from, and how neighbors look after one another even without formal structures. These are lessons I still carry. They remind me of where I began and the values that continue to guide me.</p>
 <p>Since then, I’ve lived in more than ten cities across five countries on two continents. Some have been megacities like Seoul. But I’ve never forgotten my roots or the small-town lessons I carried with me.</p>
 
@@ -349,13 +366,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

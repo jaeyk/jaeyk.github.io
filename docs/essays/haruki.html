@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -287,9 +304,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <p>My tastes have changed a lot over the years. There are many things I used to like that I don’t anymore. But one thing has remained constant: I’m still a devoted fan of Haruki Murakami, the prolific Japanese novelist whose work blends myth and realism to capture the quiet rhythms and alienation of modern life.</p>
-<p>In <em>Norwegian Wood</em>, Murakami writes through the voice of Nagasawa to Watanabe, “Well, any friend of Gatsby is a friend of mine.” In the original Japanese, the line is: 『グレート・ギャツビイ』を 三回読む男なら、俺と友だちになれそうだな (Anyone who read <em>The Great Gatsby</em> three times—I feel like I could be friends with him).</p>
+<p>In <em>Norwegian Wood</em>, Murakami writes through the voice of Nagasawa to Watanabe, “Well, any friend of Gatsby is a friend of mine.” In the original Japanese, the line is: 『グレート・ギャツビイ』を 三回読む男なら、俺と友だちになれそうだな (Anyone who read <em>The Great Gatsby</em> three times, I feel like I could be friends with him).</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -304,28 +321,28 @@ Note
 </div>
 </div>
 </div>
-<p>I feel the same way about Murakami’s running memoir <em>What I Talk About When I Talk About Running</em>, a title that playfully nods to Raymond Carver’s <em>What We Talk About When We Talk About Love</em>. Anyone who has read this particular Haruki book three times—I have a feeling we’d get along.</p>
-<p>In the memoir, Murakami reflects on two central aspects of his life: writing and running. For him, the two are deeply connected. He explains how becoming a professional writer meant completely reinventing his lifestyle—when he wakes up, how he works, what hobbies he enjoys, where he lives, and who he spends time with. After returning to this book again and again, I’ve come to hold onto three lessons that continue to shape how I think about talent, focus, and everyday discipline.</p>
+<p>I feel the same way about Murakami’s running memoir <em>What I Talk About When I Talk About Running</em>, a title that playfully nods to Raymond Carver’s <em>What We Talk About When We Talk About Love</em>. Anyone who has read this particular Haruki book three times, I have a feeling we’d get along.</p>
+<p>In the memoir, Murakami reflects on two central aspects of his life: writing and running. For him, the two are deeply connected. He explains how becoming a professional writer meant completely reinventing his lifestyle, including when he wakes up, how he works, what hobbies he enjoys, where he lives, and who he spends time with. After returning to this book again and again, I’ve come to hold onto three lessons that continue to shape how I think about talent, focus, and everyday discipline.</p>
 <blockquote class="blockquote">
-<p><strong>1. “I stop every day right at the point where I feel I can write more.” —Haruki Murakami</strong></p>
+<p><strong>1. “I stop every day right at the point where I feel I can write more.” (Haruki Murakami)</strong></p>
 </blockquote>
-<p>This principle runs counter to how many of us are tempted to work. When things are going well, it’s easy to keep going—to chase the short-term satisfaction of crossing something off the list. But Murakami urges the opposite: stop while you’re still in flow. That way, you preserve energy and motivation for the next day.</p>
+<p>This principle runs counter to how many of us are tempted to work. When things are going well, it’s easy to keep going and chase the short-term satisfaction of crossing something off the list. But Murakami urges the opposite: stop while you’re still in flow. That way, you preserve energy and motivation for the next day.</p>
 <p>Trying to do too much, too fast, is a surefire path to burnout. As Murakami puts it, “To keep on going, you have to keep up the rhythm. That is the important thing for long-term projects.” And in academia, every project is a long-term project. Early in my career, I used to believe some ideas could be wrapped up in a few months. I no longer believe that. What I’ve learned instead is that finishing well requires knowing when to pause, how to conserve energy, and how to stay steady over time.</p>
 <blockquote class="blockquote">
-<p><strong>2. “I’m struck by how, except when you’re young, you really need to prioritize in life, figuring out in what order you should divide up your time and energy. If you don’t get that sort of system set by a certain age, you’ll lack focus and your life will be out of balance.” —Haruki Murakami</strong></p>
+<p><strong>2. “I’m struck by how, except when you’re young, you really need to prioritize in life, figuring out in what order you should divide up your time and energy. If you don’t get that sort of system set by a certain age, you’ll lack focus and your life will be out of balance.” (Haruki Murakami)</strong></p>
 </blockquote>
-<p>Murakami writes that talent is the most important quality for a novelist—but it’s also unreliable: “Talent has a mind of its own and wells up when it wants to, and once it dries up, that’s it.” Not only is talent unevenly distributed; it can also disappear.</p>
-<p>That’s why, he says, the second most important quality is “focus—the ability to concentrate all your limited talents on whatever’s critical at the moment.” For Murakami, that means waking up early and writing for three or four hours each morning. “I don’t see anything else. I don’t think about anything else.” Without that kind of focus, nothing meaningful gets done.</p>
+<p>Murakami writes that talent is the most important quality for a novelist, but it’s also unreliable: “Talent has a mind of its own and wells up when it wants to, and once it dries up, that’s it.” Not only is talent unevenly distributed; it can also disappear.</p>
+<p>That’s why, he says, the second most important quality is “focus, the ability to concentrate all your limited talents on whatever’s critical at the moment.” For Murakami, that means waking up early and writing for three or four hours each morning. “I don’t see anything else. I don’t think about anything else.” Without that kind of focus, nothing meaningful gets done.</p>
 <p>But focus, as Murakami describes it, isn’t just about maintaining distraction-free work hours. It’s also about knowing what not to pursue. He reminds us that you can’t please everyone. When he ran a bar, where he wrote his first novel at the kitchen table, he realized that if one out of ten customers liked the place enough to come back, that was enough. “It didn’t matter if nine out of ten didn’t like my bar. This realization lifted a weight off my shoulders.” What mattered was being clear about his stance and sticking to it.</p>
-<p>The same applies to creative pursuits, including academic ones. What matters is knowing what you want to focus on, working on it consistently, and reaching the people who matter to you. You can’t do everything or reach everyone. Focus doesn’t come from grinding harder—it comes from letting go of what’s not essential. You need to know where to invest your time, how to channel your abilities, and what goals are truly worth pursuing.</p>
+<p>The same applies to creative pursuits, including academic ones. What matters is knowing what you want to focus on, working on it consistently, and reaching the people who matter to you. You can’t do everything or reach everyone. Focus doesn’t come from grinding harder; it comes from letting go of what’s not essential. You need to know where to invest your time, how to channel your abilities, and what goals are truly worth pursuing.</p>
 <blockquote class="blockquote">
-<p><strong>3. “If concentration is the process of just holding your breath, endurance is the art of slowly, quietly breathing at the same time you’re storing air in your lungs.” —Haruki Murakami</strong></p>
+<p><strong>3. “If concentration is the process of just holding your breath, endurance is the art of slowly, quietly breathing at the same time you’re storing air in your lungs.” (Haruki Murakami)</strong></p>
 </blockquote>
-<p>This third lesson is about rhythm—about knowing when to push and when to pause. Murakami continues, “Unless you can find a balance between both, it’s difficult to write novels professionally over a long time. Continuing to breathe while you hold your breath.” To endure as a writer, or any kind of creative, means learning to resist extremes. That’s what makes you a good contrarian.</p>
-<p>Sometimes, you need to push through discomfort. Other times, you need to slow down, listen to your body, and adjust. The goal isn’t balance in the abstract—it’s rhythm: a pace that isn’t too fast or too slow, one that adapts to your needs over time.</p>
-<p>And finding that rhythm often requires building routines or rituals—ways to remind yourself how to return to it.</p>
+<p>This third lesson is about rhythm, about knowing when to push and when to pause. Murakami continues, “Unless you can find a balance between both, it’s difficult to write novels professionally over a long time. Continuing to breathe while you hold your breath.” To endure as a writer, or any kind of creative, means learning to resist extremes. That’s what makes you a good contrarian.</p>
+<p>Sometimes, you need to push through discomfort. Other times, you need to slow down, listen to your body, and adjust. The goal isn’t balance in the abstract; it’s rhythm, a pace that isn’t too fast or too slow, one that adapts to your needs over time.</p>
+<p>And finding that rhythm often requires building routines or rituals, ways to remind yourself how to return to it.</p>
 <p>For me, that means running, hiking, and cooking. Running helps me sync my mind and body. Hiking reminds me I’m part of nature. Cooking connects me with the seasons I observed and experienced when I was young, and brings back childhood memories of a home that is, quite literally, an ocean away.</p>
-<p>There’s no single right way to recover—but we all need one. There’s a quiet kind of pain in how we face uncertainty and rejection in academia. Sometimes, even doing well can be harmful if we don’t know how to stop and take care of ourselves. Pain is inevitable. Suffering is optional. And to make that suffering optional, we need to know when to push, but also when to pause, reflect, and recharge so that we can keep going.</p>
+<p>There’s no single right way to recover, but we all need one. There’s a quiet kind of pain in how we face uncertainty and rejection in academia. Sometimes, even doing well can be harmful if we don’t know how to stop and take care of ourselves. Pain is inevitable. Suffering is optional. And to make that suffering optional, we need to know when to push, but also when to pause, reflect, and recharge so that we can keep going.</p>
 
 
 
@@ -381,13 +398,14 @@ Note
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

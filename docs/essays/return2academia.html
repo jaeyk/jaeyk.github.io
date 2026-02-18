@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jae Yeon Kim">
 <meta name="dcterms.date" content="2025-04-20">
 
-<title>I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing – Hello, I'm Jae.</title>
+<title>I Didn’t Think I’d Return to Academia Until I Saw What Was Missing – Hello, I'm Jae.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -257,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing</h1>
+<h1 class="title">I Didn’t Think I’d Return to Academia Until I Saw What Was Missing</h1>
 </div>
 
 
@@ -289,21 +306,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>A little over a year into my data science role outside academia, in spring 2024, I spoke on the “Data Science Across Industries” panel at the PhD Pathways event at Stanford. Ironically, the panel was designed to help PhD students and postdocs explore careers outside the academy, but for me, it triggered a return. I had spent the past year applying my research skills to public problems: designing field experiments with government partners, analyzing administrative data, and learning from people who navigated public systems every day. I believed in the work. I still do. But listening to early-career scholars talk about their hopes for impact, I felt something shift.</p>
 <p>I wasn’t done with academia. I just hadn’t found the version of it I believed in yet.</p>
 <p>In 2022, I had left a tenure-track job to join Code for America, a civic tech nonprofit focused on improving access to public services through technology, design, and data. It was a leap. I didn’t fully know what to expect. But I wanted to learn how research could serve real people. Over the next two years, I helped build experiments with U.S. state and local governments, sat in on user interviews, and saw how broken public systems were. I also saw how much potential there was for research to do more than describe and analyze problems. It could help fix them.</p>
-<p>At the time, I thought I was stepping away from academia for good. In reality, I was becoming a different kind of researcher—one more attuned to practical constraints, lived experience, and the institutional frictions that shape how policy is delivered.</p>
+<p>At the time, I thought I was stepping away from academia for good. In reality, I was becoming a different kind of researcher, one more attuned to practical constraints, lived experience, and the institutional frictions that shape how policy is delivered.</p>
 <p>I learned new technical skills, yes, but I also learned how to work in multidisciplinary teams, how to frame questions that mattered beyond the academy, and how to generate evidence that was timely, usable, and grounded in context. The experience rewired how I think about rigor, relevance, and responsibility.</p>
 <p>Still, the decision to return wasn’t easy. That moment at Stanford made me confront it. Did I still belong in academia? Could I reconcile the intellectual freedom I valued with the applied, collaborative work I had grown to love?</p>
 <p>Rather than returning to where I left off, I chose to carry what I’d learned with me. I began to imagine a different kind of academic life: one that connects rigorous scholarship with real-world impact, and that bridges research and practice to improve public institutions and better serve communities. In 2026, I’ll begin a position as an assistant professor of public policy at the University of North Carolina–Chapel Hill. The opportunity to return wasn’t a reset. It was a reinvention.</p>
-<p>Too often, we present academic and non-academic paths as a binary. But that framing misses what’s happening at the intersections. Some of the most exciting work today—both intellectually and practically—is happening across sectors: in government, nonprofits, and industry, where researchers are advancing theory <em>and</em> solving problems at the same time.</p>
+<p>Too often, we present academic and non-academic paths as a binary. But that framing misses what’s happening at the intersections. Some of the most exciting work today, both intellectually and practically, is happening across sectors, in government, nonprofits, and industry, where researchers are advancing theory <em>and</em> solving problems at the same time.</p>
 <p>Rather than asking where research happens, I’ve learned to ask what kind of research I want to do, and why it matters.</p>
 <p>PhD programs rarely teach us that stepping outside academia can strengthen our scholarship. In graduate school, I was trained to run a Michelin-starred kitchen: refined, precise, and optimized for a narrow audience. Outside academia, I learned to run a healthy fast-food franchise: fast, responsive, and designed to meet people where they are. Both forms of work require creativity and care, but the tools, audiences, and stakes are different.</p>
-<p>For early-career researchers, the message too often is: once you leave, you can’t come back. But that’s not true. Some of the most meaningful research I’ve done happened outside the university, without the academic title, but with a clear research purpose. Leaving academia doesn’t mean leaving research. It can deepen it, offering a different vantage point shaped by institutional constraints, real-world complexity, and the lived experiences of the people your work is meant to serve. If anything, stepping outside can sharpen your sense of what questions matter, who they matter to, and how evidence can contribute to lasting change.</p>
+<p>For early-career researchers, the message too often is that once you leave, you can’t come back. But that’s not true. Some of the most meaningful research I’ve done happened outside the university, without the academic title, but with a clear research purpose. Leaving academia doesn’t mean leaving research. It can deepen it, offering a different vantage point shaped by institutional constraints, real-world complexity, and the lived experiences of the people your work is meant to serve. If anything, stepping outside can sharpen your sense of what questions matter, who they matter to, and how evidence can contribute to lasting change.</p>
 <p><strong>What I’ve Learned</strong></p>
 <ol type="1">
 <li><p><strong>You don’t have to choose once and for all.</strong> Careers are nonlinear. The skills you build across domains can make you a better scholar, collaborator, and teacher.</p></li>
-<li><p><strong>Seek alignment, not just prestige, and define success on your own terms.</strong> The right environment—whether inside or outside academia—should reflect your values and help you reconnect with why you became a researcher in the first place. Success might be a paper, a public dashboard, a field experiment, or a policy shift. If it helps people and moves your mission forward, it counts.</p></li>
+<li><p><strong>Seek alignment, not just prestige, and define success on your own terms.</strong> The right environment, whether inside or outside academia, should reflect your values and help you reconnect with why you became a researcher in the first place. Success might be a paper, a public dashboard, a field experiment, or a policy shift. If it helps people and moves your mission forward, it counts.</p></li>
 <li><p><strong>Research is portable.</strong> Stepping outside of academia doesn’t mean abandoning your identity as a researcher. It can sharpen your questions, broaden your perspective, and deepen your sense of what knowledge is for.</p></li>
 </ol>
-<p><strong>Here’s the bigger lesson.</strong> In a time of rising skepticism toward research and higher education, the best way to defend scholarship is to make it matter—to connect it to the people and problems it’s meant to serve. We do that not by standing apart, but by stepping in.</p>
+<p><strong>Here’s the bigger lesson.</strong> In a time of rising skepticism toward research and higher education, the best way to defend scholarship is to make it matter. Connect it to the people and problems it’s meant to serve. We do that not by standing apart, but by stepping in.</p>
 
 
 
@@ -359,13 +376,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

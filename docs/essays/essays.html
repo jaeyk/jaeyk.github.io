@@ -94,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -258,13 +274,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <p><img src="../misc/life_story_map.png" class="img-fluid" width="800"></p>
-<p>So far, I’ve lived in more than ten cities across five countries on two continents. I was born and raised in South Korea (Jeonju, Daejeon, Seoul, Changwon, and Dongducheon) and have also lived in Hong Kong (Kowloon Tong), Taiwan (Muzha District, Taipei City), Canada (Vancouver), and across the United States, including the San Francisco Bay Area (CA), Ann Arbor (MI), Cambridge (MA), and the Research Triangle (NC). My path has been non-linear, spanning academia, industry, public service, and civic technology. These experiences have shaped my identity as a bridge builder and translator—someone who works across boundaries of scholarship and practice, discipline and sector, and place and community.</p>
+<p>So far, I’ve lived in more than ten cities across five countries on two continents. I was born and raised in South Korea (Jeonju, Daejeon, Seoul, Changwon, and Dongducheon) and have also lived in Hong Kong (Kowloon Tong), Taiwan (Muzha District, Taipei City), Canada (Vancouver), and across the United States, including the San Francisco Bay Area (CA), Ann Arbor (MI), Cambridge (MA), and the Research Triangle (NC). My path has been non-linear, spanning academia, industry, public service, and civic technology. These experiences have shaped my identity as a bridge builder and translator, someone who works across boundaries of scholarship and practice, discipline and sector, and place and community.</p>
 <p>At the same time, my perspective and career path have been shaped by where I began. I’m a first-generation college student from a working-class family.</p>
 <p>These experiences continue to guide the research questions I pursue and the problems I choose to engage with.</p>
 <p>Below is a collection of essays I’ve written over the years, organized into three categories: professional reflections, personal reflections, and career advice. You can also find my writing on <a href="https://jaeyeonkim.substack.com/">Substack</a>.</p>
 <p><strong>Professional Reflections</strong></p>
 <ul>
-<li><p><a href="return2academia.html"><em>I Didn’t Think I’d Return to Academia — Until I Saw What Was Missing</em></a></p></li>
+<li><p><a href="return2academia.html"><em>I Didn’t Think I’d Return to Academia Until I Saw What Was Missing</em></a></p></li>
 <li><p><a href="policy_science.html"><em>Researching and Doing Policy Science as a Political Scientist</em></a></p></li>
 <li><p><a href="speaking_of_speaking_english.html"><em>Speaking of Speaking English</em></a></p></li>
 </ul>

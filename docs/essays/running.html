@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -298,17 +315,17 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Research, especially academic research, is built on failure. Every researcher knows this, but that doesn’t make it easier. From the first days of graduate school, I’ve faced rejection: papers, grants, jobs. Each one stings. But over time, I’ve learned something that running helped crystallize: to grow, you have to take risks. And to take risks, you have to accept failure.</p>
 <p>When I first started running, I set goals that mimicked the metrics of success in my professional life: speed and distance. But the more I pushed myself to meet those metrics, the less joy I found.</p>
 <p>Now, when I run, I don’t worry about how fast or far I go. I focus on the experience: breathing well, landing lightly, staying present. If I run slower today than yesterday, that’s okay. I’ll run again tomorrow. The same lesson applies to work. I still set goals. But once I’m working, I don’t obsess over outcomes. I focus on process, on learning, on flow.</p>
-<p>As Haruki Murakami wrote in his running memoir, <em>What I Talk About When I Talk About Running</em>, the goal is to keep going—day after day, with purpose and humility. That’s how I’ve learned to fail. And to keep moving.</p>
+<p>As Haruki Murakami wrote in his running memoir, <em>What I Talk About When I Talk About Running</em>, the goal is to keep going day after day, with purpose and humility. That’s how I’ve learned to fail. And to keep moving.</p>
 <p><strong>Learning How to Grow Old</strong></p>
 <p>The other lesson running has taught me is how to age, not passively, but deliberately.</p>
 <p>As much as I loved martial arts, it started taking a toll. I got injured more easily. Recovery took longer. I found myself wondering if I could keep pushing my body the same way I had in my twenties. The honest answer was no.</p>
-<p>But instead of resisting the inevitable, I started adapting. Running became a new kind of practice—one that matched the season of life I was entering. I don’t train to compete. I run to stay connected to my body. To feel my lungs expand and my feet lift off the ground. To remind myself that I’m still here, still learning, still alive.</p>
+<p>But instead of resisting the inevitable, I started adapting. Running became a new kind of practice, one that matched the season of life I was entering. I don’t train to compete. I run to stay connected to my body. To feel my lungs expand and my feet lift off the ground. To remind myself that I’m still here, still learning, still alive.</p>
 <p>I ran my first official half marathon at the San Francisco Marathon in 2021. In 2024, I ran the Berkeley Half Marathon during the academic job market, no less. In 2025, I’ll run my first full marathon, back where it started: San Francisco.</p>
-<p>Since 2020, I’ve run nearly everywhere I’ve lived or traveled—San Francisco, Los Angeles, Lake Tahoe, Honolulu, Chicago, Boston, Washington DC, Philadelphia, and in South Korea: Seoul, Sejong, and Daejeon. In Canada, I’ve run in both Montreal, Quebec and Vancouver, British Columbia, on opposite coasts.</p>
-<p>Each run etched something into my memory and left something in my body. Between official races, I’ve kept going: many self-paced half marathons, and more than a few beyond the half mark.</p>
+<p>Since 2020, I’ve run nearly everywhere I’ve lived or traveled, including San Francisco, Los Angeles, Lake Tahoe, Honolulu, Chicago, Boston, Washington DC, Philadelphia, and in South Korea, Seoul, Sejong, and Daejeon. In Canada, I’ve run in both Montreal, Quebec and Vancouver, British Columbia, on opposite coasts.</p>
+<p>Each run etched something into my memory and left something in my body. Between official races, I’ve kept going, including many self-paced half marathons and more than a few beyond the half mark.</p>
 <p><strong>The Road Ahead</strong></p>
 <p>Running didn’t just give me a new habit. I’ve learned to let go of perfection. I’ve learned that failure isn’t a detour; It’s part of the path. I’ve learned that aging isn’t something to fight, but something to navigate with care.</p>
-<p>As long as my legs can carry me, I’ll keep running. I’ll keep working. I’ll keep finding joy in the rhythm of small, deliberate steps—on the road and in life.</p>
+<p>As long as my legs can carry me, I’ll keep running. I’ll keep working. I’ll keep finding joy in the rhythm of small, deliberate steps, on the road and in life.</p>
 
 
 
@@ -364,13 +381,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

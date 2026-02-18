@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -300,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </figure>
 </div>
 <p><strong>2. Signpost your argument: don’t make them hunt for it</strong></p>
-<p>Writing a good SOP is as much about structure as substance. Members of the admissions committee are busy, reviewing applications while also researching, teaching, and advising. Help them understand who you are, what you’re proposing, and why it matters—quickly and clearly. (<a href="https://www.penguinrandomhouse.com/books/706548/writing-for-busy-readers-by-todd-rogers-and-jessica-lasky-fink/">This book</a> by Rogers and Lasky-Fink offers helpful guidance on how to do that.)</p>
+<p>Writing a good SOP is as much about structure as substance. Members of the admissions committee are busy, reviewing applications while also researching, teaching, and advising. Help them understand who you are, what you’re proposing, and why it matters, quickly and clearly. (<a href="https://www.penguinrandomhouse.com/books/706548/writing-for-busy-readers-by-todd-rogers-and-jessica-lasky-fink/">This book</a> by Rogers and Lasky-Fink offers helpful guidance on how to do that.)</p>
 <p>There’s a loose but reliable structure that most SOPs follow:</p>
 <ul>
 <li><strong>Hook</strong>: A personal or intellectual moment that motivates your research interest.</li>
@@ -309,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><strong>Qualifications</strong>: What experiences have prepared you to do this work.</li>
 <li><strong>Fit</strong>: Why this program, and what you hope to learn from it.</li>
 </ul>
-<p>Think of it like a well-crafted pitch. By the end, the committee shouldn’t just think you’re smart or hardworking—every applicant is.</p>
+<p>Think of it like a well-crafted pitch. By the end, the committee shouldn’t just think you’re smart or hardworking; every applicant is.</p>
 <p>They should think: <em>this person is working on a problem that matters, and our department can help them do it well</em>.</p>
 <p><strong>3. Don’t write like you’re trying to impress: write like you’re trying to connect</strong></p>
 <p>Avoid the temptation to overuse technical jargon. You’re not writing to prove how much you know. You’re writing to show what kind of researcher you’re becoming. And the most effective researchers are often the clearest communicators.</p>
@@ -371,13 +388,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

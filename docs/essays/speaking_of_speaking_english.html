@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -286,12 +303,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </header>
 
 
-<p>By the end of my second year in graduate school, I made a shift: I moved from comparative to American politics. It wasn’t part of any grand plan. I just started to notice something. American scholars were often seen as experts on the politics of other countries—but rarely the other way around. I believed international students like me also had something to say about American politics. We carried perspectives shaped by distance and difference. That, I thought, could be a contribution, not a liability.</p>
+<p>By the end of my second year in graduate school, I made a shift: I moved from comparative to American politics. It wasn’t part of any grand plan. I just started to notice something. American scholars were often seen as experts on the politics of other countries, but rarely the other way around. I believed international students like me also had something to say about American politics. We carried perspectives shaped by distance and difference. That, I thought, could be a contribution, not a liability.</p>
 <p>But the moment I entered that conversation, I felt what it meant to be on the outside. I began attending seminars and workshops where I was often the only non-native English speaker, and one of the only racial or ethnic minorities in the room.</p>
 <p>Articulating complex ideas in a second or third language isn’t just hard. It can be humiliating. The real challenge isn’t grammar or vocabulary. It’s knowing, deep down, that someone in the room is already questioning your intellect before you’ve finished your sentence. I didn’t need training in social psychology to know this was happening. Over the years, I heard it directly from people I respected: comments about my accent, my word choice, or the way I sounded “less certain.”</p>
 <p>The first time it happened, it felt like a punch to the stomach. I don’t believe those colleagues were malicious. I think they were unaware. But even casual comments, when repeated often enough, add up. One remark may seem harmless. But when you hear it enough, it becomes something sharp. A thousand paper cuts, quietly accumulated.</p>
 <p>At some point, I wrote down what I was feeling. I shared an early version of this reflection while I was still in graduate school, still unsure if I truly belonged. I braced for silence. But something unexpected happened instead.</p>
-<p>People reached out. They offered mentorship, solidarity, support. Some of them became mentors who opened doors I didn’t even know existed. Others became collaborators, allies, friends. Their kindness helped me finish my degree. But more than that, it helped me believe that I had a place in this field—not as an exception, but as someone who belonged.</p>
+<p>People reached out. They offered mentorship, solidarity, support. Some of them became mentors who opened doors I didn’t even know existed. Others became collaborators, allies, friends. Their kindness helped me finish my degree. But more than that, it helped me believe that I had a place in this field, not as an exception, but as someone who belonged.</p>
 <p>That experience changed how I show up in academia. These days, whenever I attend a conference, I extend a simple invitation: Let me buy you a coffee or tea<em>.</em> If you’re a graduate student (especially if you’re international, a minority, or unsure of your place), please reach out.</p>
 <p>I’ve mentored dozens of students across backgrounds, inside and outside academia. I do it because others did it for me. And because no one should have to navigate this alone.</p>
 <p>I also carry that mindset into my teaching. I work hard to create spaces where students from non-traditional backgrounds can find their footing, develop their skills, and feel seen. I want them to know what I often didn’t: that their voice, however it sounds, is something to protect, not correct.</p>
@@ -353,13 +370,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

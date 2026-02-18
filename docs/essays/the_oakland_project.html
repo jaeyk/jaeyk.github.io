@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -292,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Many of the contributors were colleagues and students of Aaron Wildavsky, the Berkeley political scientist who went on to found the Goldman School of Public Policy. Alongside Wildavsky and Pressman, the roster included Arnold Meltsner, Frank Levy, William Lunch, Frank Thompson, and Jesse McCorry. With the exception of Meltsner, who was Wildavsky’s colleague and a fellow founding faculty member of the Goldman School, most were his students who went on to long and distinguished careers. McCorry, who completed his doctorate at Berkeley, authored the final volume, <em>Marcus Foster and the Oakland Public Schools</em> (1978). Pressman’s career was tragically cut short when he died at only 33 while serving as an associate professor at MIT. <em>Implementation</em> was only his second book.</p>
 <p>Others contributed research outside the University of California Press series. Judith V. May, for example, authored <em>Citizen Participation: A Review of the Literature</em> (1971), published through ERIC. Archival records also note graduate students who assisted the project but did not publish volumes of their own.</p>
 <p>Wildavsky’s legacy continues today in both academia and practice. The Goldman School hosts the annual Aaron Wildavsky Lecture, with Jamila Michener of Cornell scheduled for 2025. APSA honors him with two major awards: the Aaron Wildavsky Enduring Contribution Award (Public Policy Section) and the Aaron Wildavsky Dissertation Award (Religion and Politics Section). His influence also reaches into today’s civic technology world. Jennifer Pahlka, founder of Code for America (where I once worked as a data scientist) and author of <em>Recoding America</em>, cited <em>Implementation</em> as her favorite book in an interview with Ezra Klein. That moment shows how a study of War on Poverty programs in Oakland, written more than fifty years ago, still shapes how reformers think about the politics of public programs.</p>
-<p>What we need now is scholarship that blends political science, public administration, and policy analysis with a sustained focus on the messy realities of implementation. The Oakland Project showed that such work is possible. I hope to continue this mission in my own book project, which examines the War on Poverty. At the same time, I aim to expand the implementation literature by connecting it to the politics of community organizing in race- and class-subjugated communities — stories of the War on Poverty that have rarely been part of the mainstream literature on public administration and policymaking.</p>
+<p>What we need now is scholarship that blends political science, public administration, and policy analysis with a sustained focus on the messy realities of implementation. The Oakland Project showed that such work is possible. I hope to continue this mission in my own book project, which examines the War on Poverty. At the same time, I aim to expand the implementation literature by connecting it to the politics of community organizing in race- and class-subjugated communities, stories of the War on Poverty that have rarely been part of the mainstream literature on public administration and policymaking.</p>
 <p><strong>The Oakland Project Series by the University of California Press</strong></p>
 <ul>
 <li>Meltsner, Arnold J. 1971. <em>The Politics of City Revenue</em>. Berkeley: University of California Press.<br>
@@ -362,13 +379,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

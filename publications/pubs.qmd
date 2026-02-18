@@ -8,6 +8,10 @@ resources:
 <div class="pub-search-controls">
 <label for="pub-search-input"><strong>Search publications</strong></label><br>
 <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link">
+<label for="pub-year-filter" class="pub-year-filter-label">Year</label>
+<select id="pub-year-filter" aria-label="Filter published papers by year">
+<option value="">All years</option>
+</select>
 <span id="pub-search-status" aria-live="polite"></span>
 <span id="pub-count-summary" aria-live="polite"></span>
 </div>
@@ -23,6 +27,16 @@ resources:
   width: 100%;
   margin: 0.35rem 0.5rem 0 0;
   padding: 0.45rem 0.55rem;
+}
+
+.pub-year-filter-label {
+  margin-right: 0.35rem;
+  margin-left: 0.15rem;
+}
+
+#pub-year-filter {
+  margin-top: 0.35rem;
+  padding: 0.4rem 0.5rem;
 }
 
 #pub-search-status {
@@ -43,12 +57,17 @@ resources:
 #published-journal-list ul {
   margin-top: 0.25rem;
 }
+
+.pub-year-heading {
+  margin: 1.25rem 0 0.5rem;
+}
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var input = document.getElementById("pub-search-input");
+  var yearFilter = document.getElementById("pub-year-filter");
   var status = document.getElementById("pub-search-status");
   var countSummary = document.getElementById("pub-count-summary");
   var listContainer = document.getElementById("published-journal-list");
@@ -56,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("details.published-papers-search-static")
   );
 
-  if (!input || !status || !countSummary || !listContainer) {
+  if (!input || !yearFilter || !status || !countSummary || !listContainer) {
     return;
   }
 
@@ -118,28 +137,83 @@ document.addEventListener("DOMContentLoaded", function () {
     return items.slice(0, -1).join(", ") + ", and " + items[items.length - 1];
   }
 
-  function buildPaperMarkup(paper) {
+  function buildPaperMarkup(paper, listValue) {
     var links = (paper.links || []).map(function (item) {
       return '[<a href="' + escapeHtml(item.url) + '">' + escapeHtml(item.label) + "</a>]";
     }).join(" ");
     var equalNote = (paper.equal_coauthors || []).length > 0 ? " (+ = co-lead authors.)" : "";
     var note = paper.note ? "<ul><li>" + escapeHtml(paper.note) + "</li></ul>" : "";
-    return '<li><p><a href="' + escapeHtml(paper.url) + '">"' + escapeHtml(paper.title) + '"</a> (' +
+    var liOpen = '<li' + (typeof listValue === "number" ? ' value="' + String(listValue) + '"' : "") + ">";
+    return liOpen + '<p><a href="' + escapeHtml(paper.url) + '">"' + escapeHtml(paper.title) + '"</a> (' +
       formatAuthors(paper.authors, paper.equal_coauthors) + ") <em>" + escapeHtml(paper.venue) + "</em>, " +
       escapeHtml(paper.citation) + equalNote + (links ? " " + links : "") + "</p>" + note + "</li>";
   }
 
-  function renderList(items) {
+  function renderGroupedList(items) {
     if (!items.length) {
       listContainer.innerHTML = "<p>No matching papers found.</p>";
       return;
     }
-    var html = '<ol start="' + items.length + '" reversed type="1">';
+
+    var groups = {};
     items.forEach(function (paper) {
-      html += buildPaperMarkup(paper);
+      var key = String(paper.year || "Unknown");
+      if (!groups[key]) {
+        groups[key] = [];
+      }
+      groups[key].push(paper);
     });
-    html += "</ol>";
+
+    var years = Object.keys(groups).sort(function (a, b) {
+      var ay = Number(a);
+      var by = Number(b);
+      if (isNaN(ay) && isNaN(by)) return a.localeCompare(b);
+      if (isNaN(ay)) return 1;
+      if (isNaN(by)) return -1;
+      return by - ay;
+    });
+
+    var html = "";
+    var runningNumber = items.length;
+    years.forEach(function (year) {
+      var yearItems = groups[year];
+      html += '<h4 class="pub-year-heading">' + escapeHtml(year) + "</h4>";
+      html += '<ol type="1">';
+      yearItems.forEach(function (paper) {
+        html += buildPaperMarkup(paper, runningNumber);
+        runningNumber -= 1;
+      });
+      html += "</ol>";
+    });
     listContainer.innerHTML = html;
+  }
+
+  function populateYearFilter(items) {
+    var selected = yearFilter.value;
+    var years = [];
+    items.forEach(function (paper) {
+      var year = Number(paper.year);
+      if (!isNaN(year) && years.indexOf(year) === -1) {
+        years.push(year);
+      }
+    });
+    years.sort(function (a, b) { return b - a; });
+
+    yearFilter.innerHTML = '<option value="">All years</option>';
+    years.forEach(function (year) {
+      var option = document.createElement("option");
+      option.value = String(year);
+      option.textContent = String(year);
+      yearFilter.appendChild(option);
+    });
+
+    if (selected) {
+      yearFilter.value = selected;
+    }
+  }
+
+  function renderList(items) {
+    renderGroupedList(items);
   }
 
   function entryMatches(entry, query) {
@@ -168,6 +242,13 @@ document.addEventListener("DOMContentLoaded", function () {
           matchCount += 1;
         }
       });
+
+      // Keep descending numbering aligned with currently visible items.
+      var wrapper = item.section.querySelector(".reversed-list");
+      if (wrapper) {
+        wrapper.style.setProperty("--reversed-counter-reset", String(sectionMatches + 1));
+      }
+
       if (query.length > 0) {
         item.section.open = sectionMatches > 0;
       } else if (Object.prototype.hasOwnProperty.call(initialSectionOpen, item.key)) {
@@ -193,6 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function runFilter() {
     var query = normalized(input.value);
+    var yearValue = yearFilter.value;
 
     var matches = allPapers.filter(function (paper) {
       var blob = normalized([
@@ -203,7 +285,9 @@ document.addEventListener("DOMContentLoaded", function () {
         paper.year,
         (paper.links || []).map(function (item) { return item.label + " " + item.url; }).join(" ")
       ].join(" "));
-      return query.length === 0 || blob.indexOf(query) !== -1;
+      var queryMatch = query.length === 0 || blob.indexOf(query) !== -1;
+      var yearMatch = !yearValue || String(paper.year) === yearValue;
+      return queryMatch && yearMatch;
     });
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
@@ -216,10 +300,12 @@ document.addEventListener("DOMContentLoaded", function () {
     renderList(matches);
     status.textContent = (matches.length + staticMatchCount) +
       ((matches.length + staticMatchCount) === 1 ? " match" : " matches") +
-      " of " + totalSearchable + " total";
+      " of " + totalSearchable + " total" +
+      (yearValue ? " (year: " + yearValue + ")" : "");
   }
 
   input.addEventListener("input", runFilter);
+  yearFilter.addEventListener("change", runFilter);
 
   fetch("data/published-papers.yml")
     .then(function (response) {
@@ -231,6 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (yamlText) {
       allPapers = jsyaml.load(yamlText) || [];
       allPapers.sort(function (a, b) { return Number(b.order) - Number(a.order); });
+      populateYearFilter(allPapers);
       updateCountSummary();
       runFilter();
     })

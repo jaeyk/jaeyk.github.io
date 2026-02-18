@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -288,29 +305,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <p>When I first entered the academic job market in the U.S., in my fifth year of graduate school, I revised my materials, practiced my job talk, followed every checklist, but I wasn’t sure what would actually matter. Like many others, I assumed it was about proving I was good enough.</p>
 <p>Over time, and with experience, I came to see things differently. The job market isn’t just about being the strongest candidate. It’s about fit, timing, and clarity. These are a few lessons I wish someone had shared with me earlier.</p>
-<p><strong>Understanding the Process Helps—But It Won’t Explain Everything</strong></p>
+<p><strong>Understanding the Process Helps, but It Won’t Explain Everything</strong></p>
 <p>The academic job market can feel like a black box. In reality, it’s a long, uneven process. The Berkeley Career Center <a href="https://career.berkeley.edu/grad-students-postdocs/academic-job-search/the-hiring-process-from-the-other-side/">explains</a> it well: departments typically request permission to hire in the spring, post job ads in the fall, interview in the winter, and extend offers in the spring, though it rarely runs smoothly.</p>
-<p>Even the job ad can be misleading. It’s often a compromise between faculty interests and administrative approval. It may not reflect a unified vision or clear priorities. That’s why you shouldn’t dismiss an opportunity just because you don’t fit the ad perfectly. Your job is to make the case for how your work fits—on your terms.</p>
+<p>Even the job ad can be misleading. It’s often a compromise between faculty interests and administrative approval. It may not reflect a unified vision or clear priorities. That’s why you shouldn’t dismiss an opportunity just because you don’t fit the ad perfectly. Your job is to make the case for how your work fits, on your terms.</p>
 <p><strong>1. Fit matters, and it’s not something you can force.</strong></p>
 <p>The job market is a two-way street. Departments are looking for candidates who fit their needs, but you’re also looking for a place that fits you. It’s not just about the job description; it’s about the culture, the people, and the values of the department.</p>
-<p>No one has a complete picture of what a department is like from the outside. That’s why it’s important to ask questions—to a lot of people. If you attend a conference or visit a campus, seek out informal conversations. Reach out to people whose work you admire. Read their papers, ask thoughtful questions, and follow up. These small gestures can build trust—and sometimes open doors.</p>
+<p>No one has a complete picture of what a department is like from the outside. That’s why it’s important to ask questions, to a lot of people. If you attend a conference or visit a campus, seek out informal conversations. Reach out to people whose work you admire. Read their papers, ask thoughtful questions, and follow up. These small gestures can build trust, and sometimes open doors.</p>
 <p>Many candidates think the market is a straight competition. But departments aren’t always hiring “the best” candidate in the abstract. They’re hiring the person whose work, teaching, and trajectory align with their evolving needs.</p>
 <p>That’s why clarity is so important. Your materials should make it easy to see how your work connects to what the department values.</p>
 <p>Not all departments or professional schools want the same things. Some prioritize theory and publications; others value applied relevance or interdisciplinary work. Even within fields, expectations vary.</p>
 <p>You don’t need to change who you are. Focus instead on finding an environment where you can grow into the scholar and colleague you want to be. The job market is partly about being chosen, but also about choosing well.</p>
-<p><strong>2. Define your direction—clearly, but with room to grow.</strong></p>
-<p>One thing that helps: write down your research in a single sentence. Not just the topic, but the question—and what you’re trying to understand about the world. Clear, simple language is better than buzzwords.</p>
+<p><strong>2. Define your direction, clearly, but with room to grow.</strong></p>
+<p>One thing that helps: write down your research in a single sentence. Not just the topic, but the question, and what you’re trying to understand about the world. Clear, simple language is better than buzzwords.</p>
 <p>That sentence will anchor your job talk, research statement, and cover letter. It helps committees remember you.</p>
 <p>But the job market isn’t just about your present. Committees want to know where you’re headed. What questions will guide your next projects? How will your research evolve over the next few years? They’re assessing your pipeline: your ability to sustain a coherent and growing scholarly agenda.</p>
 <p>Think, too, about alignment. Where does your research direction intersect with the department’s and school’s broader vision? Where could you find not just a place to land, but momentum to grow? You don’t need all the answers. But showing that you’ve thought ahead goes a long way.</p>
 <p><strong>3. Conversations, Not Auditions</strong></p>
-<p>Job talks, 1:1 meetings, group meetings—they’re all part of an extended conversation. It’s all about showing how you think, listen, and engage in real time.</p>
-<p>Think of it as jazz: you don’t control the setting, but you can improvise with care and attentiveness.</p>
-<p>The job talk, in particular, is high-stakes. It probably won’t win you the job outright, but it can certainly lose it. Committees are looking for clarity, coherence, and the ability to communicate beyond your subfield. A poor talk can be disqualifying, even if everything else looks strong. The Q&amp;A often matters as much as the presentation itself. It reveals how you handle feedback and interact with others—a glimpse of you as a colleague.</p>
+<p>Job talks, 1:1 meetings, and group meetings are all part of an extended conversation. It’s all about showing how you think, listen, and engage in real time.</p>
+<p>Think of it as jazz; you don’t control the setting, but you can improvise with care and attentiveness.</p>
+<p>The job talk, in particular, is high-stakes. It probably won’t win you the job outright, but it can certainly lose it. Committees are looking for clarity, coherence, and the ability to communicate beyond your subfield. A poor talk can be disqualifying, even if everything else looks strong. The Q&amp;A often matters as much as the presentation itself. It reveals how you handle feedback and interact with others, a glimpse of you as a colleague.</p>
 <p>And when someone asks if you have questions, take it seriously. Thoughtful questions show that you’ve imagined yourself in the role. What kind of mentorship do junior faculty receive? What directions is the department hoping to grow in? What do they hope this new hire will help build? These conversations reveal as much about them as they do about you, because the people you’re talking to are not just evaluating you; they are your potential future colleagues. Treat these moments as the beginning of a professional relationship. Be curious, engaged, and respectful.</p>
 <p><strong>If You’re Going on the Market</strong></p>
-<p>Everyone’s job market story is different. Some people get lucky quickly. Others take longer. And sometimes even the best-prepared candidates don’t get the outcome they hoped for. Part of this depends on the structure of your dissertation—whether it’s designed as a three-paper project or a book—and whether you’re fortunate enough to publish a chapter in a top journal before going on the market. Some of these factors are within your control. Others aren’t. Especially if you’re going on the market as an ABD, your advisor’s letters matter a great deal. Strong, specific letters from your dissertation committee can shape how hiring departments view your potential and help offset aspects of your work that are still in progress.</p>
-<p>What helped me was shifting the question—from “Am I good enough?” to “Where do I want to grow next, and with whom?” What matters most isn’t perfection. It’s having a clear vision, a trajectory you believe in, and enough momentum to keep moving forward.</p>
+<p>Everyone’s job market story is different. Some people get lucky quickly. Others take longer. And sometimes even the best-prepared candidates don’t get the outcome they hoped for. Part of this depends on the structure of your dissertation, whether it’s designed as a three-paper project or a book, and whether you’re fortunate enough to publish a chapter in a top journal before going on the market. Some of these factors are within your control. Others aren’t. Especially if you’re going on the market as an ABD, your advisor’s letters matter a great deal. Strong, specific letters from your dissertation committee can shape how hiring departments view your potential and help offset aspects of your work that are still in progress.</p>
+<p>What helped me was shifting the question, from “Am I good enough?” to “Where do I want to grow next, and with whom?” What matters most isn’t perfection. It’s having a clear vision, a trajectory you believe in, and enough momentum to keep moving forward.</p>
 <p>You won’t be the right fit everywhere. That’s okay. You only need one place where your work resonates and where you can continue to grow.</p>
 <p>I’m still learning. But if you’re preparing now, I hope this gives you a bit more confidence, and a little peace of mind. Build your community of mentors and supporters, and lean on them. The process is easier, and more rewarding, when you’re not doing it alone.</p>
 
@@ -368,13 +385,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

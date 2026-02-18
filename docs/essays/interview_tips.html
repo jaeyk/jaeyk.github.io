@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -93,6 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -288,14 +305,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <p><strong>Introduction</strong></p>
 <p>I’ve had a non-linear career path. Along the way, I’ve interviewed for roles in the private sector, nonprofits, and academia, and I’ve also served on hiring committees across those sectors. With time, I’ve come to see interviews less as high-stakes performances and more as conversations: opportunities to figure out whether you and the organization are truly a good fit.</p>
-<p>These four tips are things I wish I had known earlier in my career. They might seem obvious to seasoned professionals, but they’re not always intuitive to people just entering the job market—whether in academia or beyond.</p>
+<p>These four tips are things I wish I had known earlier in my career. They might seem obvious to seasoned professionals, but they’re not always intuitive to people just entering the job market, whether in academia or beyond.</p>
 <p><strong>1. Hiring is about solving a problem: focus on how you’re the solution</strong></p>
 <p>Every hiring process begins with a problem. A team needs capacity, a department needs expertise, a program needs leadership. Your goal in an interview is not to prove how smart or qualified you are; it’s to show how you can help solve that specific problem.</p>
 <p>Sometimes, the problem is clearly stated in the job ad. But often, it takes some digging. If you have contacts inside the organization, ask them what the real needs are. If you don’t, you can still ask the search committee chair (in academia) or the recruiter or hiring manager (in other settings). That’s their job, and most will be willing to offer insight.</p>
-<p>Good preparation begins with understanding what the other side wants and needs. From there, you can tailor your responses to show that you’re not just qualified—you’re aligned.</p>
+<p>Good preparation begins with understanding what the other side wants and needs. From there, you can tailor your responses to show that you’re not just qualified; you’re aligned.</p>
 <p><strong>2. Be yourself, and remember: you’re interviewing them too</strong></p>
 <p>It’s easy to feel like you have to mold yourself into the “ideal” candidate. But that instinct can backfire. The best interviews happen when you speak with clarity about who you are and what kind of work you want to do. If the organization isn’t drawn to that, it might not be the right place for you.</p>
-<p>An interview is a mutual learning process. If, by the end, you realize the values or goals don’t align, then not getting the offer is actually a useful outcome. Another opportunity will come—one where you won’t feel the need to hide or shrink who you are.</p>
+<p>An interview is a mutual learning process. If, by the end, you realize the values or goals don’t align, then not getting the offer is actually a useful outcome. Another opportunity will come, one where you won’t feel the need to hide or shrink who you are.</p>
 <p><strong>3. Listen as much as you speak</strong></p>
 <p>Interviews vary by sector. In academia, you give a job talk and answer questions. In other sectors, you often go through rounds of one-on-one or panel interviews. But across contexts, one principle holds: conversation beats monologue.</p>
 <p>Treat your responses as invitations, not conclusions. When others speak, really listen. Take notes. Echo back what they’ve said to show understanding. It might seem small, but these habits leave a lasting impression.</p>
@@ -305,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Before the interview, learn who your interviewers are. Read their bios. Look up their work. In academic settings, you can reference their interests directly in your talk. In other contexts, you can tailor your questions based on what they do.</p>
 <p>When they ask if you have any questions, don’t use that time to negotiate or express your doubts. Save that for after the offer. Instead, ask questions that reflect curiosity about their work or their vision for the team. It signals that you’ve done your homework and that you’re thinking like a future colleague.</p>
 <p><strong>Conclusion</strong></p>
-<p>Every interview is a little stressful. That’s normal. But it’s also a chance to learn—not just about potential roles, but about yourself. The better you understand your own values, the more clearly you’ll see whether a place feels like home.</p>
+<p>Every interview is a little stressful. That’s normal. But it’s also a chance to learn, not just about potential roles, but about yourself. The better you understand your own values, the more clearly you’ll see whether a place feels like home.</p>
 <p>And sometimes, the best way to help yourself in an interview is to focus on helping the other side. Make it easy for them to see how you fit. Make it easy for them to remember you, because of how you made them feel.</p>
 <p>If you’ve found something useful here, I hope you’ll pass it along. And if you have tips of your own, I’d love to hear them.</p>
 
@@ -363,13 +380,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
