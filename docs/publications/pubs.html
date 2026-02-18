@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="pub-search-controls">
-<p><label for="pub-search-input"><strong>Search publications</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <label for="pub-year-filter" class="pub-year-filter-label">Year</label> <select id="pub-year-filter" aria-label="Filter published papers by year"> <option value="">All years</option> </select> <span id="pub-search-status" aria-live="polite"></span> <span id="pub-count-summary" aria-live="polite"></span></p>
+<p><label for="pub-search-input"><strong>Search publications</strong></label><br> <input id="pub-search-input" type="search" placeholder="Type title, author, journal, year, or link"> <span id="pub-search-status" aria-live="polite"></span> <span id="pub-count-summary" aria-live="polite"></span></p>
 </div>
 <style>
 .pub-search-controls {
@@ -302,16 +302,6 @@ document.addEventListener('DOMContentLoaded', function() {
   width: 100%;
   margin: 0.35rem 0.5rem 0 0;
   padding: 0.45rem 0.55rem;
-}
-
-.pub-year-filter-label {
-  margin-right: 0.35rem;
-  margin-left: 0.15rem;
-}
-
-#pub-year-filter {
-  margin-top: 0.35rem;
-  padding: 0.4rem 0.5rem;
 }
 
 #pub-search-status {
@@ -341,7 +331,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var input = document.getElementById("pub-search-input");
-  var yearFilter = document.getElementById("pub-year-filter");
   var status = document.getElementById("pub-search-status");
   var countSummary = document.getElementById("pub-count-summary");
   var listContainer = document.getElementById("published-journal-list");
@@ -349,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("details.published-papers-search-static")
   );
 
-  if (!input || !yearFilter || !status || !countSummary || !listContainer) {
+  if (!input || !status || !countSummary || !listContainer) {
     return;
   }
 
@@ -462,30 +451,6 @@ document.addEventListener("DOMContentLoaded", function () {
     listContainer.innerHTML = html;
   }
 
-  function populateYearFilter(items) {
-    var selected = yearFilter.value;
-    var years = [];
-    items.forEach(function (paper) {
-      var year = Number(paper.year);
-      if (!isNaN(year) && years.indexOf(year) === -1) {
-        years.push(year);
-      }
-    });
-    years.sort(function (a, b) { return b - a; });
-
-    yearFilter.innerHTML = '<option value="">All years</option>';
-    years.forEach(function (year) {
-      var option = document.createElement("option");
-      option.value = String(year);
-      option.textContent = String(year);
-      yearFilter.appendChild(option);
-    });
-
-    if (selected) {
-      yearFilter.value = selected;
-    }
-  }
-
   function renderList(items) {
     renderGroupedList(items);
   }
@@ -548,7 +513,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function runFilter() {
     var query = normalized(input.value);
-    var yearValue = yearFilter.value;
 
     var matches = allPapers.filter(function (paper) {
       var blob = normalized([
@@ -559,9 +523,7 @@ document.addEventListener("DOMContentLoaded", function () {
         paper.year,
         (paper.links || []).map(function (item) { return item.label + " " + item.url; }).join(" ")
       ].join(" "));
-      var queryMatch = query.length === 0 || blob.indexOf(query) !== -1;
-      var yearMatch = !yearValue || String(paper.year) === yearValue;
-      return queryMatch && yearMatch;
+      return query.length === 0 || blob.indexOf(query) !== -1;
     });
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
@@ -574,12 +536,10 @@ document.addEventListener("DOMContentLoaded", function () {
     renderList(matches);
     status.textContent = (matches.length + staticMatchCount) +
       ((matches.length + staticMatchCount) === 1 ? " match" : " matches") +
-      " of " + totalSearchable + " total" +
-      (yearValue ? " (year: " + yearValue + ")" : "");
+      " of " + totalSearchable + " total";
   }
 
   input.addEventListener("input", runFilter);
-  yearFilter.addEventListener("change", runFilter);
 
   fetch("data/published-papers.yml")
     .then(function (response) {
@@ -591,7 +551,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (yamlText) {
       allPapers = jsyaml.load(yamlText) || [];
       allPapers.sort(function (a, b) { return Number(b.order) - Number(a.order); });
-      populateYearFilter(allPapers);
       updateCountSummary();
       runFilter();
     })
