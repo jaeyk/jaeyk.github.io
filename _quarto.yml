@@ -19,7 +19,7 @@ website:
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
   page-footer:
-    left: "&copy; Copyright 2026, Jae Yeon Kim<br>Abernethy Hall, Room 216A<br>131 S. Columbia Street, Campus Box 3435<br>Chapel Hill, NC 27599-3435<br><a href='mailto:jaekim@unc.edu'>jaekim@unc.edu</a>"
+    left: "&copy; Copyright 2026, Jae Yeon Kim"
     right: 
       - icon: github
         href: https://github.com/jaeyk/jaeyk.github.io
