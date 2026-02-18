@@ -57,7 +57,7 @@ Hill. The opportunity to return wasn’t a reset. It was a reinvention.
 Too often, we present academic and non-academic paths as a binary. But
 that framing misses what’s happening at the intersections. Some of the
 most exciting work today, both intellectually and practically, is
-happening across sectors: in government, nonprofits, and industry, where
+happening across sectors, in government, nonprofits, and industry, where
 researchers are advancing theory *and* solving problems at the same
 time.
 
@@ -72,7 +72,7 @@ franchise: fast, responsive, and designed to meet people where they are.
 Both forms of work require creativity and care, but the tools,
 audiences, and stakes are different.
 
-For early-career researchers, the message too often is: once you leave,
+For early-career researchers, the message too often is that once you leave,
 you can’t come back. But that’s not true. Some of the most meaningful
 research I’ve done happened outside the university, without the academic
 title, but with a clear research purpose. Leaving academia doesn’t mean
@@ -103,5 +103,5 @@ change.
 
 **Here's the bigger lesson.** In a time of rising skepticism toward
 research and higher education, the best way to defend scholarship is to
-make it matter: connect it to the people and problems it’s meant to
+make it matter. Connect it to the people and problems it’s meant to
 serve. We do that not by standing apart, but by stepping in.
