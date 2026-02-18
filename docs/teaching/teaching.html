@@ -93,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -843,7 +859,7 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2026, Jae Yeon Kim</p>
+<p>© Copyright 2026, Jae Yeon Kim<br>Abernethy Hall, Room 216A<br>131 S. Columbia Street, Campus Box 3435<br>Chapel Hill, NC 27599-3435<br><a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

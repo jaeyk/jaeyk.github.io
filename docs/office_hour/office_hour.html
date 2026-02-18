@@ -93,6 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
   if (searchInput) {
     searchInput.setAttribute('placeholder', 'Search this site...');
   }
+
+  // Auto-size reversed list numbering from actual item count.
+  document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
+    var wrapper = ol.closest('.reversed-list');
+    if (!wrapper) return;
+
+    // Allow manual override via --reversed-counter-reset when needed.
+    var manualReset = wrapper.style.getPropertyValue('--reversed-counter-reset');
+    if (manualReset && manualReset.trim() !== '') return;
+
+    var itemCount = Array.from(ol.children).filter(function(child) {
+      return child.tagName === 'LI';
+    }).length;
+
+    wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
+  });
 });
 </script>
 
@@ -280,8 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section id="unc-student-office-hour" class="level2">
 <h2 class="anchored" data-anchor-id="unc-student-office-hour">UNC Student Office Hour</h2>
-<p>I host weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A).<br>
-If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&amp;ismsaljsauthenabled&amp;ep=plink">please feel free to make an appointment</a>.</p>
+<p>I hold weekly 30-minute office hours for UNC students on Fridays between 10:00 AM and 12:00 PM in my office (Abernethy Hall, Room 216A). If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&amp;ismsaljsauthenabled&amp;ep=plink">please feel free to make an appointment</a>.</p>
+<p>Abernethy Hall is near Franklin Street, next to Hanes Art Center and the Kenan Music Building. My office is on the second floor. Please walk upstairs, as there is no elevator; it is only a two-story building. When you reach the second floor, turn left and continue down the hall.</p>
 <div style="margin-top: 0.75rem;">
 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4506609728687!2d-79.05687062404371!3d35.911467672513766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e7c92a4ebf%3A0x96e51db242dd6c93!2sAbernethy%20Hall%2C%20131%20S%20Columbia%20St%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1768307453720!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe></p>
 </div>
@@ -711,7 +727,7 @@ If you are interested, <a href="https://outlook.office.com/bookwithme/user/d68c7
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2026, Jae Yeon Kim</p>
+<p>© Copyright 2026, Jae Yeon Kim<br>Abernethy Hall, Room 216A<br>131 S. Columbia Street, Campus Box 3435<br>Chapel Hill, NC 27599-3435<br><a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
