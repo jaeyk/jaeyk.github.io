@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon/favicon-32x32.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139fc8ca0b02e000cf53a6c4d7034f53.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fbf488f49827fa9ee98d1f04fc3c79d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -283,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA</p></li>
 <li><p>Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA</p></li>
 <li><p>Datasets: <a href="https://doi.org/10.7910/DVN/FLUPBJ">Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)</a></p></li>
-<li><p>Interactive Map: <a href="https://www.google.com/maps/d/viewer?mid=1W0tTWI589Yk9ekBQ7GSdCYphUbNYRUg&amp;ll=35.29702258888104%2C-91.95725102610297&amp;z=5">Asian American and Latino Advocacy and Community Service Organizations (1868-2016)</a></p></li>
+<li><p>Interactive Map: <a href="https://jaeyk.github.io/aa_latino_organizations_map/">Asian American and Latino Advocacy and Community Service Organizations</a></p></li>
 </ul></li>
 </ol>
 <p><strong>Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America</strong> introduces the concept of <em>classification cost</em> to explain how the administrative challenges of identifying and categorizing marginalized communities shaped the rise of new racial group formations. Federal agencies set official racial classifications, but their consequences were most acutely felt in local encounters between street-level bureaucrats and community members. These dynamics became especially salient during the War on Poverty, when expanding social programs created new incentives and constraints for accessing public resources. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state defaulted to residual labels like “Other.”</p>
@@ -411,13 +412,14 @@ document.addEventListener('DOMContentLoaded', function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
