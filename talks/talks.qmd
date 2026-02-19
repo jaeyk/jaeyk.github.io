@@ -21,6 +21,7 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 
 </details>
 
+
 <details>
 <summary><strong>2025</strong></summary>
 
@@ -50,6 +51,7 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 | Feb 26     | Talk         | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern | Evanston, IL, USA    |
 
 </details>
+
 
 <details>
 <summary><strong>2024</strong></summary>
@@ -81,3 +83,8 @@ I’ve worked across academic and applied settings and enjoy meeting people work
 | Jan 11     | Talk         | [UW Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), UW | Virtual    |
 
 </details>
+
+
+![Explaining how state governments procure AI technologies. Photo credit: Duke Society-Centered AI Conference (2026).](../misc/duke_talk.jpg){fig-align="center" width="60%"}
+
+:::

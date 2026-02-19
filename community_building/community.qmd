@@ -47,4 +47,4 @@ I maintain an active network of [collaborators](coauthors.qmd) and [project part
   *UC Berkeley, 2023*  
   *[International Conference on Computational Social Science (IC2S2)](https://ic2s2.org/), 2024*
 
-![Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_tech_preconference.jpg){fig-align="center" out-width="70%"}
+![Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan](../misc/civic_tech_preconference.jpg){fig-align="center" width="60%"}

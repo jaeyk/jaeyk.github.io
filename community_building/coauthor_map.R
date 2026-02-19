@@ -104,7 +104,7 @@ for (i in seq_along(interactive_map$x$data)) {
 saveWidget(
   interactive_map,
   file = here("misc", "coauthor_map.html"),
-  selfcontained = TRUE
+  selfcontained = FALSE
 )
 
 # Also keep PNG version for backward compatibility

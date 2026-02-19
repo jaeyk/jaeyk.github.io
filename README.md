@@ -69,3 +69,16 @@ quarto render
 ```
 
 The rendered files are output to the `docs/` directory, which is served by GitHub Pages.
+
+## Recent Content Updates (February 2026)
+
+- Added event/teaching photos at the bottom of:
+  - `talks/talks.qmd`
+  - `teaching/teaching.qmd`
+  - `community_building/community.qmd`
+  - `essays/essays.qmd`
+- Standardized display style for page photos:
+  - Center aligned (`fig-align="center"` or centered `<figure>`)
+  - Reduced size (`width="60%"` by default; smaller where needed, e.g., `45%` on essays page)
+- Updated the Office Hour map embed (`office_hour/office_hour.qmd`) to be responsive with `width="100%"`.
+- Fixed Quarto structure warning in `talks/talks.qmd` by closing an unclosed `:::{.cell}` block.

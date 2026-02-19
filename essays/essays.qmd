@@ -40,3 +40,8 @@ Below is a collection of essays I’ve written over the years, organized into th
 **Korean essays**
 
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
+
+<figure style="text-align: center;">
+  <img src="../misc/jane_Berkeley.jpg" alt="PhD graduation photo (Berkeley, '21)." style="width: 45%;" />
+  <figcaption>PhD graduation photo (Berkeley, ’21).</figcaption>
+</figure>

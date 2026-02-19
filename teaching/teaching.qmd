@@ -63,6 +63,7 @@ This course examines how data scientists (or evaluators) can work in partnership
 
 </details>
 
+
 <details>
 <summary><strong>Pre-conference Tutorials</strong></summary>
 
@@ -121,3 +122,6 @@ An open-access textbook (CC BY‑NC‑SA 4.0) that equips social scientists with
 - **Op-ed:** ["Why Teaching Social Scientists How To Code Like A Professional Is Important."](https://dlab.berkeley.edu/news/why-teaching-social-scientists-how-code-professional-important), *UC Berkeley D-Lab* (2020)
 
 </details>
+
+
+![Explaining how to teach computational social science. Photo credit: Princeton Summer Institute in Computational Social Science (2019).](../misc/princeton_teaching.png){fig-align="center" width="60%"}
