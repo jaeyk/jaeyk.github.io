@@ -10,9 +10,9 @@ if ! cmp -s ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf 2>/dev/null; t
     cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf
 fi
 
-# Regenerate interactive map assets used in community page if scripts exist
+# Regenerate map assets used in community page if scripts exist
 if [ -f ./community_building/coauthor_map.R ] && [ -f ./community_building/partner_map.R ]; then
-    echo "Updating map HTML assets..."
+    echo "Updating map assets..."
     Rscript ./community_building/coauthor_map.R
     Rscript ./community_building/partner_map.R
 fi
@@ -21,9 +21,9 @@ fi
 echo "Rendering community page..."
 quarto render ./community_building/community.qmd
 
-# Prevent pushing a build with missing map assets (which causes iframe 404s)
-if [ ! -f ./misc/coauthor_map.html ] || [ ! -f ./misc/partner_map.html ]; then
-    echo "Map HTML assets missing in ./misc. Aborting push to avoid 404s."
+# Prevent pushing a build with missing static map assets
+if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then
+    echo "Map PNG assets missing in ./misc. Aborting push."
     exit 1
 fi
 
