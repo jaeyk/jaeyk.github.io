@@ -424,6 +424,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 1.  ["The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021
 
+1.  ["How I Accidentally became Interested in Data Science"](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020
+
 :::
 
 </details>
