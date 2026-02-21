@@ -1,14 +1,13 @@
 ## Partners in alphabetical order
 
-The following list includes the partners of ongoing and finished projects. 
-
+The following list includes the partners of ongoing and finished projects. All these names are listed in alphabetical order.
 ### Government agencies 
 
 #### Federal government 
 
 1. Office of Evaluation Sciences (OES)
 
-#### State and local government (alphabetical order)
+#### State and local government 
 
 1. Boulder County, Housing and Human Services
 1. California Department of Social Services (CDSS)
