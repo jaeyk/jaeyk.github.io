@@ -1,6 +1,7 @@
 ## Partners in alphabetical order
 
-The following list includes the partners of ongoing and finished projects. All these names are listed in alphabetical order.
+The following list includes partners from ongoing and completed projects, as well as organizations I have consulted with. All names are presented in alphabetical order.
+
 ### Government agencies 
 
 #### Federal government 
@@ -20,6 +21,10 @@ The following list includes the partners of ongoing and finished projects. All t
 
 ### Nonprofit organizations 
 
+#### Think tanks 
+
+1. Federation of American Scientists
+
 #### Civic tech organizations 
 
 1. Code for America
@@ -30,6 +35,7 @@ The following list includes the partners of ongoing and finished projects. All t
 1. Asian American Advocacy Fund
 1. Students Learn Students Vote Coalition
 
-#### Philanthrophy 
+#### Philanthropy 
 
 1. Hispanics in Philanthropy 
+1. Fairfield Community Foundation (CT)

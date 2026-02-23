@@ -20,6 +20,15 @@ library(here)
 library(plotly)
 library(htmlwidgets)
 
+category_colors <- c(
+  "Federal government" = "#1b9e77",
+  "State & local government" = "#d95f02",
+  "Civic tech" = "#7570b3",
+  "Philanthropy" = "#e7298a",
+  "Advocacy & voter mobilization" = "#66a61e",
+  "Think tanks" = "#e6ab02"
+)
+
 partners <- tibble::tribble(
   ~org, ~category, ~city, ~state, ~lat, ~lon,
   "Office of Evaluation Sciences", "Federal government", "Washington", "DC", 38.9072, -77.0369,
@@ -35,7 +44,9 @@ partners <- tibble::tribble(
   "Asian Americans Advancing Justice–Atlanta", "Advocacy & voter mobilization", "Atlanta", "GA", 33.7490, -84.3880,
   "Asian American Advocacy Fund", "Advocacy & voter mobilization", "Atlanta", "GA", 33.7490, -84.3880,
   "Students Learn Students Vote Coalition", "Advocacy & voter mobilization", "Washington", "DC", 38.9072, -77.0369,
-  "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712
+  "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
+  "Fairfield County Community Foundation", "Philanthropy", "Norwalk", "CT", 41.1177, -73.4082,
+  "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369
 )
 
 us_map <- map_data("state")
@@ -45,14 +56,30 @@ partners <- partners %>%
   mutate(
     label = str_wrap(org, width = 25),
     hover_text = paste0(org, "\n", city, ", ", state, "\nCategory: ", category),
+    # Manual nudges to avoid dense-label collisions in the Northeast.
+    label_nudge_x = if_else(
+      org == "Massachusetts Department of Early Education and Care",
+      2.6, 0
+    ),
+    label_nudge_y = if_else(
+      org == "Massachusetts Department of Early Education and Care",
+      1.1, 0
+    ),
     # Set category order for legend
     category = factor(category, levels = c(
       "Federal government",
       "State & local government",
       "Civic tech",
       "Philanthropy",
-      "Advocacy & voter mobilization"
-    ))
+      "Advocacy & voter mobilization",
+      "Think tanks"
+    )),
+    label_bg = unname(category_colors[as.character(category)]),
+    label_text_color = if_else(
+      as.character(category) == "Think tanks",
+      "black",
+      "white"
+    )
   )
 
 p <- ggplot() +
@@ -64,18 +91,27 @@ p <- ggplot() +
   coord_quickmap(xlim = c(-125, -66), ylim = c(24, 50), expand = FALSE) +
   geom_point(
     data = partners,
-    aes(x = lon, y = lat, shape = category),
+    aes(x = lon, y = lat, color = category),
     size = 3, alpha = 0.9
   ) +
   geom_label_repel(
     data = partners,
-    aes(x = lon, y = lat, label = label),
-    fill = "grey20", color = "white",
+    aes(x = lon, y = lat, label = label, fill = category),
+    color = partners$label_text_color,
+    segment.color = "grey25",
+    nudge_x = partners$label_nudge_x,
+    nudge_y = partners$label_nudge_y,
     size = 3, label.size = 0.2, label.padding = grid::unit(0.15, "lines"),
     max.overlaps = 20, seed = 123,
     show.legend = FALSE
   ) +
-  scale_shape_discrete(name = "Category") +
+  scale_color_manual(
+    name = "Category",
+    values = category_colors
+  ) +
+  scale_fill_manual(
+    values = category_colors
+  ) +
   theme_minimal(base_size = 12) +
   theme(
     legend.position = "bottom",
@@ -92,7 +128,10 @@ p <- ggplot() +
     axis.ticks = element_blank(),
     axis.title = element_blank()
   ) +
-  guides(shape = guide_legend(nrow = 2, byrow = TRUE))
+  guides(
+    color = guide_legend(nrow = 2, byrow = TRUE),
+    fill = "none"
+  )
 
 # Build a plotly-compatible version without geom_label_repel.
 p_interactive <- ggplot() +
@@ -104,10 +143,13 @@ p_interactive <- ggplot() +
   coord_quickmap(xlim = c(-125, -66), ylim = c(24, 50), expand = FALSE) +
   geom_point(
     data = partners,
-    aes(x = lon, y = lat, shape = category),
+    aes(x = lon, y = lat, color = category),
     size = 3, alpha = 0.9
   ) +
-  scale_shape_discrete(name = "Category") +
+  scale_color_manual(
+    name = "Category",
+    values = category_colors
+  ) +
   theme_minimal(base_size = 12) +
   theme(
     legend.position = "bottom",
@@ -124,7 +166,7 @@ p_interactive <- ggplot() +
     axis.ticks = element_blank(),
     axis.title = element_blank()
   ) +
-  guides(shape = guide_legend(nrow = 2, byrow = TRUE))
+  guides(color = guide_legend(nrow = 2, byrow = TRUE))
 
 # Convert to interactive plotly map
 interactive_map <- ggplotly(p_interactive) %>%
@@ -142,12 +184,12 @@ interactive_map <- ggplotly(p_interactive) %>%
     # Add annotations for organization names
     annotations = lapply(seq_len(nrow(partners)), function(i) {
       list(
-        x = partners$lon[i],
-        y = partners$lat[i],
+        x = partners$lon[i] + partners$label_nudge_x[i],
+        y = partners$lat[i] + partners$label_nudge_y[i],
         text = partners$label[i],
         showarrow = FALSE,
-        font = list(size = 9, color = "white"),
-        bgcolor = "rgba(50, 50, 50, 0.8)",
+        font = list(size = 9, color = partners$label_text_color[i]),
+        bgcolor = partners$label_bg[i],
         borderpad = 2,
         xanchor = "center",
         yanchor = "bottom",
