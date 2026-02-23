@@ -45,7 +45,6 @@ partners <- tibble::tribble(
   "Asian American Advocacy Fund", "Advocacy & voter mobilization", "Atlanta", "GA", 33.7490, -84.3880,
   "Students Learn Students Vote Coalition", "Advocacy & voter mobilization", "Washington", "DC", 38.9072, -77.0369,
   "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
-  "Fairfield County Community Foundation", "Philanthropy", "Norwalk", "CT", 41.1177, -73.4082,
   "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369
 )
 

@@ -38,4 +38,3 @@ The following list includes partners from ongoing and completed projects, as wel
 #### Philanthropy 
 
 1. Hispanics in Philanthropy 
-1. Fairfield Community Foundation (CT)
