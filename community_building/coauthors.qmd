@@ -24,7 +24,7 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Baobao Zhang           | Syracuse                                |                    |
 | Cameron Guage          | Dartmouth                               | Undergraduate RA   |
 | Carlos Ortiz           | UC Berkeley                             | Undergraduate RA   |
-| Charles Crabtree       | Dartmouth                               |                    |
+| Charles Crabtree       | Monash University (Melbourne, Australia) |                    |
 | Daegon Cho             | Yonsei University                       |                    |
 | Diane Coyle            | Cambridge                               |                    |
 | DG Kim                 | Harvard                                 |                    |
@@ -72,6 +72,7 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Tiago Ventura          | Georgetown                              |                    |
 | Tina Law               | UC Davis                                |                    |
 | Tyler Simko            | Michigan                                |                    |
+| Valentina Gonzalez-Rostani | University of Southern California       |                    |
 | Vivek Datta            | UC Berkeley                             | Undergraduate RA   |
 | Vivien Leung           | Santa Clara University                  |                    |
 | William Marx           | Dartmouth                               | Undergraduate RA   |
