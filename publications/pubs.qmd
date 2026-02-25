@@ -344,6 +344,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 APPAM; Johns Hopkins SAIS; 2026 Duke Conference on Society-Centered AI
 
+1.  "AI and the American Contracting State."
+
 1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
@@ -360,8 +362,6 @@ document.addEventListener("DOMContentLoaded", function () {
 1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
     -   Presented at the 2025 APSA
-
-1.  "AI and the American Contracting State."
 
 1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
