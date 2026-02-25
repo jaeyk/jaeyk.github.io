@@ -102,6 +102,7 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 .badge-lecture     { background-color: #8A2BE2; }
 .badge-podcast     { background-color: #FF69B4; }
 .badge-moderator   { background-color: #FF8C00; }
+.badge-discussant  { background-color: #20B2AA; }
 .badge-participant { background-color: #A0522D; }
 .badge-award       { background-color: #FFC300; }
 
@@ -126,9 +127,10 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 |---------------|-------------|-----------------------------------------------------------------------|-------------------------|
 | June 16–18    | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah, USA    |
 | May 1         | [Talk]{.badge .badge-talk}        | The Future of Quantitative Social Science in an Age of Artificial Intelligenc, University of Toronto, hosted by Rohan Alexander (*scheduled*) | Toronto, Canada |
-| April 10      | [Talk]{.badge .badge-talk}        | MPP Social, hosted by Douglas MacKay (*scheduled*) | Chapel Hill, NC |
+| April 10      | [Talk]{.badge .badge-talk}        | MPP Social, hosted by Douglas MacKay (*scheduled*) | Chapel Hill, NC, USA |
 | April 9      | [Panel]{.badge .badge-panel} | National Science Foundation (NSF) Human Networks and Data Science – Core Research Panel (*scheduled*) | Virtual |
 | March 25     | [Talk]{.badge .badge-talk}        | Institute for AI and Social Innovation, Yonsei University, hosted by Wha Sun Jho (*scheduled*) | Virtual         |
+| March 17.    | [Discussant]{.badge .badge-discussant} | Economic Democracy Initiative Workshop, Columbia University, hosted by Alexander Hertel-Fernandez (*scheduled*) | Virtual
 | March 9       | [Talk]{.badge .badge-talk}        | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill, hosted by Angel Hsu (*scheduled*) | Chapel Hill, NC, USA         |
 | March 4       | [Participant]{.badge .badge-participant} | [Federation of American Scientists](https://fas.org/) AI Policy Sprint Co-Creation Forum (*scheduled*) | Washington, DC, USA     |
 | February 14   | [Talk]{.badge .badge-talk}        | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University | Durham, NC, USA         |

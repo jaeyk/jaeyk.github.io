@@ -499,7 +499,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateCountSummary() {
     var underReviewCount = staticCounts.under_review || 0;
-    var workingPapersCount = staticCounts.working_papers || 0;
+    var readingForSubmissionCount = staticCounts.reading_for_submission || 0;
+    var workInProgressCount = staticCounts.work_in_progress || 0;
+    var workingPapersCount = readingForSubmissionCount + workInProgressCount;
     var pipelineCount = underReviewCount + workingPapersCount;
     countSummary.innerHTML =
       "Published papers: " + allPapers.length +
@@ -508,7 +510,8 @@ document.addEventListener("DOMContentLoaded", function () {
       " | Media and public writing: " + (staticCounts.media_public_writing || 0) +
       "<br>Pipeline: " + pipelineCount +
       " (Under review: " + underReviewCount +
-      ", Working papers: " + workingPapersCount + ")";
+      ", Preparing for submission: " + readingForSubmissionCount +
+      ", Work in progress: " + workInProgressCount + ")";
   }
 
   function runFilter() {
@@ -528,7 +531,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
       (staticCounts.under_review || 0) +
-      (staticCounts.working_papers || 0) +
+      (staticCounts.reading_for_submission || 0) +
+      (staticCounts.work_in_progress || 0) +
       (staticCounts.proceedings || 0) +
       (staticCounts.book_chapters || 0) +
       (staticCounts.media_public_writing || 0);
@@ -587,16 +591,12 @@ Loading publications…
 </ol>
 </div>
 </details>
-<details class="published-papers-search-static" data-count-key="working_papers">
+<details class="published-papers-search-static" data-count-key="reading_for_submission">
 <summary>
-<strong>Working papers</strong>
+<strong>Preparing for submission</strong>
 </summary>
 <div class="reversed-list">
 <ol type="1">
-<li><p>“Reconstructing Implementation as Politics.” (with Akshay Mangla)</p>
-<ul>
-<li>Presented at the 2025 APSA</li>
-</ul></li>
 <li><p>“Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.” (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)</p>
 <ul>
 <li>Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University</li>
@@ -616,15 +616,26 @@ Loading publications…
 <li>Presented at the 2025 APPAM; Johns Hopkins SAIS; 2026 Duke Conference on Society-Centered AI</li>
 </ul></li>
 <li><p>“AI and the American Contracting State.”</p></li>
-<li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
-</ol>
-<!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
-<ol type="1">
 <li><p>“Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments.” (with Florian Keppeler)</p>
 <ul>
 <li>Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference</li>
 </ul></li>
 </ol>
+</div>
+</details>
+<details class="published-papers-search-static" data-count-key="work_in_progress">
+<summary>
+<strong>Work in progress</strong>
+</summary>
+<div class="reversed-list">
+<ol type="1">
+<li><p>“Reconstructing Implementation as Politics.” (with Akshay Mangla)</p>
+<ul>
+<li>Presented at the 2025 APSA</li>
+</ul></li>
+<li><p>“Privacy Law Diffusion Across US State Legislatures.” (with Aniket Kesari)</p></li>
+</ol>
+<!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
 <ol type="1">
 <li><p>“Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.” (with Liz McKenna)</p></li>
 <li><p>“Higher Education as Safety Net Infrastructure.” (with Milan de Vries and Tyler Simko)</p></li>
@@ -672,6 +683,7 @@ Loading publications…
 <li><p><a href="https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387">“Good Troublemakers Are the Key to Fixing Democracy in South Korea.”</a> (<strong>Jae Yeon Kim</strong>), <em>Korea Pro</em>, May 16, 2022</p></li>
 <li><p><a href="https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&amp;utm_medium=social&amp;utm_source=twitter&amp;tid=sm_tw_monkeycage">“Thanks to Trump’s Rhetoric, Asian Americans Are Moving Toward the Democratic Party.”</a> (Nathan Chan, <strong>Jae Yeon Kim</strong>, and Vivien Leung), <em>Washington Post’s Monkey Cage</em>, March 30, 2021</p></li>
 <li><p><a href="https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups">“The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups.”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley Canadian Studies Program</em>, March 29, 2021</p></li>
+<li><p><a href="https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science">“How I Accidentally became Interested in Data Science”</a> (<strong>Jae Yeon Kim</strong>), <em>UC Berkeley D-Lab</em>, February 24, 2020</p></li>
 </ol>
 </div>
 </details>
@@ -1092,7 +1104,7 @@ Loading publications…
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2026, Jae Yeon Kim</p>
+<p>Get in touch: jaekim@unc.edu</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
