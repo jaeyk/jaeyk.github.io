@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <details class="published-papers-search-static" data-count-key="reading_for_submission">
 
-<summary><strong>Reading for submission</strong></summary>
+<summary><strong>Preparing for submission</strong></summary>
 
 ::: {.reversed-list}
 
