@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
       " | Media and public writing: " + (staticCounts.media_public_writing || 0) +
       "<br>Pipeline: " + pipelineCount +
       " (Under review: " + underReviewCount +
-      ", Reading for submission: " + readingForSubmissionCount +
+      ", Preparing for submission: " + readingForSubmissionCount +
       ", Work in progress: " + workInProgressCount + ")";
   }
 
