@@ -43,7 +43,6 @@ affiliation_coordinates <- tribble(
   "Harvard", 42.3770, -71.1167,
   "Hebrew University of Jerusalem", 31.7719, 35.1970,
   "Johns Hopkins", 39.3299, -76.6205,
-  "Korea University", 37.5894, 127.0325,
   "Loyola Marymount University", 33.9680, -118.4167,
   "MIT", 42.3601, -71.0942,
   "Meta", 37.4848, -122.1484,

@@ -76,6 +76,5 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Vivek Datta            | UC Berkeley                             | Undergraduate RA   |
 | Vivien Leung           | Santa Clara University                  |                    |
 | William Marx           | Dartmouth                               | Undergraduate RA   |
-| Woo Chang Kang         | Korea University                        |                    |
 | Zhaowen Guo            | Georgetown                              |                    |
 ::::
