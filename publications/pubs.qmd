@@ -221,7 +221,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateCountSummary() {
     var underReviewCount = staticCounts.under_review || 0;
-    var workingPapersCount = staticCounts.working_papers || 0;
+    var readingForSubmissionCount = staticCounts.reading_for_submission || 0;
+    var workInProgressCount = staticCounts.work_in_progress || 0;
+    var workingPapersCount = readingForSubmissionCount + workInProgressCount;
     var pipelineCount = underReviewCount + workingPapersCount;
     countSummary.innerHTML =
       "Published papers: " + allPapers.length +
@@ -230,7 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
       " | Media and public writing: " + (staticCounts.media_public_writing || 0) +
       "<br>Pipeline: " + pipelineCount +
       " (Under review: " + underReviewCount +
-      ", Working papers: " + workingPapersCount + ")";
+      ", Reading for submission: " + readingForSubmissionCount +
+      ", Work in progress: " + workInProgressCount + ")";
   }
 
   function runFilter() {
@@ -250,7 +253,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
       (staticCounts.under_review || 0) +
-      (staticCounts.working_papers || 0) +
+      (staticCounts.reading_for_submission || 0) +
+      (staticCounts.work_in_progress || 0) +
       (staticCounts.proceedings || 0) +
       (staticCounts.book_chapters || 0) +
       (staticCounts.media_public_writing || 0);
@@ -312,15 +316,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </details>
 
-<details class="published-papers-search-static" data-count-key="working_papers">
+<details class="published-papers-search-static" data-count-key="reading_for_submission">
 
-<summary><strong>Working papers</strong></summary>
+<summary><strong>Reading for submission</strong></summary>
 
 ::: {.reversed-list}
-
-1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
-
-    -   Presented at the 2025 APSA
 
 1.  "Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants." (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)
 
@@ -344,15 +344,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 APPAM; Johns Hopkins SAIS; 2026 Duke Conference on Society-Centered AI
 
+1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
+
+    -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
+:::
+
+</details>
+
+<details class="published-papers-search-static" data-count-key="work_in_progress">
+
+<summary><strong>Work in progress</strong></summary>
+
+::: {.reversed-list}
+
+1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
+
+    -   Presented at the 2025 APSA
+
 1.  "AI and the American Contracting State."
 
 1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
-
-1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
-
-    -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
 
 [9.  "How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational." (with Tyler Simko)]: #
 
