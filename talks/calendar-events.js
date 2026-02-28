@@ -239,15 +239,15 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth',
+    initialView: calendarEl.offsetWidth < 600 ? 'listMonth' : 'dayGridMonth',
     height: 'auto',
     headerToolbar: {
       left: 'prev,next',
       center: 'title',
       right: ''
     },
-    windowResize: function (view) {
-      calendar.changeView(window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth');
+    windowResize: function (arg) {
+      calendar.changeView(calendarEl.offsetWidth < 600 ? 'listMonth' : 'dayGridMonth');
     },
     events: events,
     eventContent: function (arg) {
