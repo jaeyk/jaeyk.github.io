@@ -17,6 +17,10 @@ if [ -f ./community_building/coauthor_map.R ] && [ -f ./community_building/partn
     Rscript ./community_building/partner_map.R
 fi
 
+# Regenerate calendar events from index.qmd
+echo "Regenerating calendar events..."
+Rscript ./generate_calendar.R
+
 # Render community page so docs and local links stay in sync
 echo "Rendering community page..."
 quarto render ./community_building/community.qmd
