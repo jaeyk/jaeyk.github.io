@@ -3,7 +3,7 @@ title: "Teaching"
 format: html 
 ---
 
-> "Human nature is not a machine to be built after a model, and set to do exactly the work prescribed for it, but a tree which requires to grow and develop itself on all sides, according to the tendency of the inward forces which make it a living thing. Such are the differences among human beings in their sources of pleasure, their susceptibilities of pain, and the operation on them of different physical and moral agencies, that unless there is a corresponding diversity in their modes of life, they neither obtain their fair share of happiness, nor grow up to the mental, moral, and aesthetic stature of which their nature is capable."
+> "Human nature is not a machine to be built after a model, and set to do exactly the work prescribed for it, but a tree which requires to grow and develop itself on all sides, according to the tendency of the inward forces which make it a living thing."
 >
 > -- John Stuart Mill, *On Liberty* (1859), Chapter 3
 
