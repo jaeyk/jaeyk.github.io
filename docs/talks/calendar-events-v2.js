@@ -251,6 +251,7 @@ document.addEventListener('DOMContentLoaded', function () {
       right: ''
     },
     events: events,
+    displayEventTime: false,
     eventContent: function (arg) {
       var props  = arg.event.extendedProps;
       var isPast = props.past;
