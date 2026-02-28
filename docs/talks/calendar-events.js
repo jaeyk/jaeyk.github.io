@@ -238,20 +238,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
 
-  var mq      = window.matchMedia('(max-width: 767px)');
-  var getView = function () { return mq.matches ? 'listMonth' : 'dayGridMonth'; };
-
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: getView(),
+    initialView: 'dayGridMonth',
     height: 'auto',
     headerToolbar: {
       left: 'prev,next',
       center: 'title',
       right: ''
     },
-    listDaySideFormat: false,
-    listDayFormat: { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' },
-    noEventsText: 'No events this month.',
     events: events,
     eventContent: function (arg) {
       var props  = arg.event.extendedProps;
@@ -302,9 +296,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   calendar.render();
-
-  mq.addEventListener('change', function () {
-    calendar.changeView(getView());
-  });
 });
 
