@@ -16,6 +16,7 @@ format:
           .fc-daygrid-event-dot { margin-top: 5px !important; }
           /* Tighten row height so wrapped events don't collapse the grid */
           .fc-daygrid-day-events { min-height: 0 !important; }
+          .fc .fc-today-button { display: none !important; }
           @media (max-width: 768px) {
             #calendar { margin: 0.25rem 0 1.5rem !important; }
             .fc .fc-toolbar.fc-header-toolbar { margin-bottom: 0.5rem !important; gap: 0.35rem; flex-wrap: wrap; }
