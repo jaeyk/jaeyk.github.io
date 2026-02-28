@@ -2,7 +2,6 @@
 project:
   type: website
   output-dir: docs
-  pre-render: generate_calendar.R
   preview:
     port: 5896
     browser: true
