@@ -8,6 +8,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = document.getElementById('calendar');
   if (!calendarEl) return;
+  var mobileQuery = window.matchMedia('(max-width: 768px)');
+  function preferredView() {
+    return mobileQuery.matches ? 'listMonth' : 'dayGridMonth';
+  }
 
   var events = [
     {
@@ -239,10 +243,10 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth',
+    initialView: preferredView(),
     height: 'auto',
     headerToolbar: {
-      left: 'prev,next',
+      left: 'prev,next today',
       center: 'title',
       right: ''
     },
@@ -250,28 +254,38 @@ document.addEventListener('DOMContentLoaded', function () {
     eventContent: function (arg) {
       var props  = arg.event.extendedProps;
       var isPast = props.past;
+      var isListView = arg.view.type.indexOf('list') === 0;
       var wrapper = document.createElement('div');
-      wrapper.style.cssText = 'padding:2px 3px; white-space:normal; overflow:visible; line-height:1.4;';
+      wrapper.style.cssText = isListView
+        ? 'padding:2px 0; white-space:normal; overflow:visible; line-height:1.4;'
+        : 'padding:2px 3px; white-space:normal; overflow:visible; line-height:1.4;';
       var titleEl = document.createElement('div');
-      titleEl.style.cssText = 'font-weight:700; font-size:0.8em; color:#ffffff;';
+      titleEl.style.cssText = isListView
+        ? 'font-weight:700; font-size:0.92em; color:#1f2937;'
+        : 'font-weight:700; font-size:0.8em; color:#ffffff;';
       titleEl.textContent = arg.event.title;
       wrapper.appendChild(titleEl);
       if (props.org) {
         var orgEl = document.createElement('div');
-        orgEl.style.cssText = 'font-size:0.76em; font-weight:700; color:#ffffff; margin-top:2px; text-decoration:underline; text-underline-offset:2px;';
+        orgEl.style.cssText = isListView
+          ? 'font-size:0.79em; font-weight:700; color:#0f172a; margin-top:2px; text-decoration:underline; text-underline-offset:2px;'
+          : 'font-size:0.76em; font-weight:700; color:#ffffff; margin-top:2px; text-decoration:underline; text-underline-offset:2px;';
         orgEl.textContent = props.org;
         wrapper.appendChild(orgEl);
       }
       if (props.host) {
         var hostEl = document.createElement('div');
-        hostEl.style.cssText = 'font-size:0.73em; font-weight:700; color:#ffffff; margin-top:1px; font-style:italic;';
+        hostEl.style.cssText = isListView
+          ? 'font-size:0.77em; font-weight:600; color:#4b5563; margin-top:1px; font-style:italic;'
+          : 'font-size:0.73em; font-weight:700; color:#ffffff; margin-top:1px; font-style:italic;';
         hostEl.textContent = 'by ' + props.host;
         wrapper.appendChild(hostEl);
       }
       if (props.place) {
         var placeEl = document.createElement('div');
-        var placeColor = isPast ? '#bbbbbb' : '#ffffff';
-        placeEl.style.cssText = 'display:inline-block; font-size:0.72em; font-weight:600; color:' + placeColor + '; background:rgba(0,0,0,0.22); border-radius:3px; padding:1px 4px; margin-top:3px;';
+        var placeColor = isListView ? '#334155' : (isPast ? '#bbbbbb' : '#ffffff');
+        var placeBg = isListView ? 'rgba(148,163,184,0.18)' : 'rgba(0,0,0,0.22)';
+        placeEl.style.cssText = 'display:inline-block; font-size:0.72em; font-weight:600; color:' + placeColor + '; background:' + placeBg + '; border-radius:3px; padding:1px 4px; margin-top:3px;';
         placeEl.textContent = props.place;
         wrapper.appendChild(placeEl);
       }
@@ -279,7 +293,13 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     eventDidMount: function (info) {
       if (info.event.extendedProps.past) {
-        info.el.style.opacity = '0.55';
+        info.el.style.opacity = info.view.type.indexOf('list') === 0 ? '0.75' : '0.55';
+      }
+    },
+    windowResize: function () {
+      var viewName = preferredView();
+      if (calendar.view.type !== viewName) {
+        calendar.changeView(viewName);
       }
     },
     eventClick: function (info) {
@@ -297,4 +317,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   calendar.render();
 });
-
