@@ -40,8 +40,8 @@ website:
             href: publications/pubs.qmd
           - text: "Book"
             href: book_projects/books.qmd
-          - text: "Talks"
-            href: talks/talks.qmd
+          #- text: "Talks"
+           # href: talks/talks.qmd
           - text: "Awards"
             href: awards/awards.qmd
       - text: "---"
