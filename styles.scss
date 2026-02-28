@@ -642,6 +642,16 @@ div.quarto-about-trestles .about-link:hover {
     margin-bottom: 0.5rem;
     font-size: 0.95em;
   }
+
+  /* Make tables horizontally scrollable instead of overflowing */
+  .cell table,
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
 }
 
 /* Fix mobile header buttons - remove dark background */

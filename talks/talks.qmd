@@ -1,90 +1,33 @@
 ---
 title: "Travel & Talks"
-format: html
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css' rel='stylesheet'>
+          <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+          <script src='calendar-events.js'></script>
+          <style>
+          /* Allow event titles and place lines to wrap */
+          .fc-event-main        { overflow: visible !important; }
+          .fc-event-title       { white-space: normal !important; overflow: visible !important; }
+          .fc-daygrid-event     { align-items: flex-start !important; }
+          .fc-daygrid-event-dot { margin-top: 5px !important; }
+          /* Tighten row height so wrapped events don't collapse the grid */
+          .fc-daygrid-day-events { min-height: 0 !important; }
+          </style>
 ---
 
-If I’m visiting your area and you’d like to connect—whether for collaboration or just conversation—you can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you!
+If I'm visiting your area and you'd like to connect—whether for collaboration or just conversation—you can use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header). I'd love to get to know you!
 
-I’ve worked across academic and applied settings and enjoy meeting people working on public problem-solving in any capacity.
+I've worked across academic and applied settings and enjoy meeting people working on public problem-solving in any capacity.
 
-:::{.cell}
+<div style="display:flex; flex-wrap:wrap; gap:0.4rem 1.1rem; margin:0.5rem 0 0.75rem; font-size:0.82em; align-items:center;">
+  <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#388e3c;margin-right:4px;vertical-align:middle;"></span>Talk</span>
+  <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#1976d2;margin-right:4px;vertical-align:middle;"></span>Panel</span>
+  <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#00796b;margin-right:4px;vertical-align:middle;"></span>Discussant</span>
+  <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#6d4c41;margin-right:4px;vertical-align:middle;"></span>Participant</span>
+  <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#aaaaaa;margin-right:4px;vertical-align:middle;opacity:0.55;"></span>Past event</span>
+</div>
 
-<details open>
-<summary><strong>2026</strong></summary>
-
-| Date   | Type | Event                                           | Place              |
-|--------|------|--------------------------------------------------|--------------------|
-| May 1 | Talk | The Future of Quantitative Social Science in an Age of Artificial Intelligence, University of Toronto (*scheduled*) | Toronto, Canada |
-| Mar 25 | Talk | Institute for AI and Social Innovation, Yonsei University (*scheduled*) | Virtual |
-| Mar 9 | Talk | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill (*scheduled*) | Chapel Hill, NC, USA |
-| Feb 14 | Talk | [Conference on Society-Centered AI](https://sites.duke.edu/scai/), Duke University | Durham, NC, USA    |
-
-</details>
-
-
-<details>
-<summary><strong>2025</strong></summary>
-
-| Date       | Type         | Event                                                                 | Place                |
-|------------|--------------|------------------------------------------------------------------------|----------------------|
-| November 19 | Talk | Institute of Governmental Studies, Korea University | Virtual |
-| November 12–16 | Panel | Association for Public Policy Analysis and Management (APPAM) | Seattle, WA, USA  |
-| October 30 | Talk | New York City Mayor's Office of Economic Opportunity (NYC Opportunity) | Virtual | 
-| October 22 | Talk | [PRIISM Seminar Series](https://steinhardt.nyu.edu/priism/events/upcoming-events), NYU | Virtual |
-| October 15 | Talk | Tech and Innovation Speaker Series, Johns Hopkins University SAIS | Washington, DC, USA |
-| Sep 30     | Talk | Inequality Working Group Seminar, [EAAMO (Equity and Access in Algorithms, Mechanisms, and Optimization)](https://bridges.eaamo.org/working_groups/inequality/) | Virtual |
-| Sep 9–14  | Panel   | American Political Science Association (APSA)                                    | Vancouver, Canada    |
-| Jun 29     | Panel        | [Annual Research Conference on the American Political Economy](https://www.americanpoliticaleconomy.org/events/annual-conference)     | Virtual   |
-| Jun 27–28  | Talk        | AI & Humanity, Korea Foundation for Advanced Studies    | Seoul, South Korea   |
-| Jun 26     | Panel        | Dept of Political Science & IR, Seoul National University     | Seoul, South Korea   |
-| Jun 26     | Panel   | Public Management Research Conference (PMRC), Seoul National University                         | Seoul, South Korea   |
-| June 25 | Panel | Innovating the AI Age: Technologies and Societies, Korea-Finland Innovation Forum | Seoul, South Korea |
-| Jun 20     | Workshop         | Dept of Political Science & IR, Korea University                                      | Seoul, South Korea   |
-| Jun 19     | Talk         | KIXLAB, KAIST  | Daejeon, South Korea |
-| Jun 17     | Talk         | Entangled with Books *(locally owned independent bookstore in Seoul)*                                    | Seoul, South Korea   |
-| Jun 13     | Talk         | Dept of Political Science & IR, Yonsei University                                      | Seoul, South Korea   |
-| Jun 10     | Talk         | Graduate School of International Studies, Korea University                                        | Seoul, South Korea   |
-| May 29–30  | Panel  | [Code for America Summit](https://summit.codeforamerica.org/) | Washington, DC, USA  |
-| May 22 | Guest Lecture |[GPD Module](https://home.watson.brown.edu/opportunity/pre-dissertation-fellowship), Brown University Watson Institute | Virtual |
-| May 20  | Podcast      | [Civic Café](https://sites.google.com/view/apsacivic/publications/civic-caf%C3%A9?authuser=0) podcast | Virtual               |
-| Apr 7      | Guest Lecture| [NLP for CSS](https://nlp-css-601-672.cs.jhu.edu/sp2025/index.html), Johns Hopkins CS [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/NLP4CSS_guest_lecture.pdf) | Virtual |
-| Feb 26     | Talk         | [American Politics Workshop](https://planitpurple.northwestern.edu/event/625048), Northwestern | Evanston, IL, USA    |
-
-</details>
-
-
-<details>
-<summary><strong>2024</strong></summary>
-
-| Date       | Type         | Event                                                                 | Place                |
-|------------|--------------|------------------------------------------------------------------------|----------------------|
-| Nov 20–23  | Panel   | Association for Public Policy Analysis and Management (APPAM)                                                  | National Harbor, MD  |
-| Nov 19     | Guest lecture         | Democracy by the Numbers, Johns Hopkins                               | Virtual   |
-| Oct 24     | Talk         | Better Government Lab Retreat, Ford School of Public Policy, University of Michigan                                         | Ann Arbor, MI, USA   |
-| Oct 23     | Talk         | [American Politics & Public Policy Workshop](https://csap.yale.edu/american-politics-public-policy-workshop), Yale | New Haven, CT, USA   |
-| Oct 15     | Talk         | Data-driven Public Administration and Management, Korea Foundation for Advanced Studies                                 | Virtual   |
-| Oct 9      | Talk         | [American Politics Workshop](https://polisci.msu.edu/news-events/events/kim-lecture.html), Michigan State University | East Lansing, MI, USA|
-| Sep 26     | Talk         | Data Science Lecture, KDI School                                       | Virtual  |
-| Sep 17     | Talk         | Identity and Politics Workshop, UC Berkeley                           | Berkeley, CA, USA    |
-| Sep 3–7    | Panel   | American Political Science Association (APSA)                                                    | Philadelphia, PA, USA|
-| Aug 28     | Talk         | Information Science Seminar, CU Boulder                         | Virtual     |
-| Jul 29     | Panel   | [Conference on Americana Political Economy (CAPE)](https://www.americanpoliticaleconomy.org/events/annual-conference) [[paper]](https://www.dropbox.com/scl/fi/jfblious81qwz6q9qqjuq/administrative_check_points.pdf?rlkey=wp4kt2oa9qe8huox4k9qdpc67&e=3&st=j869p0ka&dl=0) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_CAPE_kim.pdf) | Virtual  |
-| Jul 16–19  | Panel  | The International Conference for Computational Social Science (IC2S2) [[website]](https://github.com/jaeyk/ic2s2-training-css-tutorial) | Philadelphia, PA, USA|
-| Jun 25–28  | Panel  | Public Management Research Conference (PMRC), UW [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets_PMRC_kim.pdf) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/administrative_checkpoints_PMRC_kim.pdf) | Seattle, WA, USA     |
-| Jun 19     | Talk         | Korean Summer Workshop on Causal Inference                            | Virtual   |
-| Jun 14     | Talk         | [Toronto Data Workshop](https://ischool.utoronto.ca/news/introducing-the-toronto-data-workshop-summer-series/) [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf) [[talk]](https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ) | Virtual      |
-| Jun 9–13   | Workshop   | [Summer Institute in Migration Research Methods](https://bimi.berkeley.edu/summer-institute/2024-summer-institute-migration-research-methods) | Berkeley, CA, USA    |
-| Apr 23     | Talk         | P3 Lab Seminar, SNF Agora Institute, Johns Hopkins                    | Virtual  |
-| Apr 19     | Talk         |  Minnesota Political Methodology Colloquium [[slides]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf) | Virtual |
-| Mar 28–30  | Panel   | Western Political Science Association                                                    | Vancouver, Canada    |
-| Mar 14     | Panel     | Data Science Across Industries, PhD Pathways, Stanford                                                | Stanford, CA, USA    |
-| Feb 16     | Panel   |  Politics of Race, Immigration, and Ethnicity Consortium (PRIEC), Claremont Graduate School & UC Riverside                            | Claremont, CA, USA   |
-| Feb 15     | Talk         | REPS Lab, UCLA                                                        | Virtual |
-| Jan 11     | Talk         | [UW Data Science Seminar](https://escience.washington.edu/events/uwdss-kim/), UW | Virtual    |
-
-</details>
-
-
-![Explaining how state governments procure AI technologies. Photo credit: Duke Society-Centered AI Conference (2026).](../misc/duke_talk.jpg){fig-align="center" width="60%"}
-
-:::
+<div id="calendar" style="margin: 0.5rem 0 2.5rem;"></div>

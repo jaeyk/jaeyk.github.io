@@ -2,6 +2,7 @@
 project:
   type: website
   output-dir: docs
+  pre-render: generate_calendar.R
   preview:
     port: 5896
     browser: true
@@ -20,9 +21,15 @@ website:
   google-analytics: G-Q5LW45FBCB
   page-footer:
     left: "Get in touch: jaekim@unc.edu"
-    right: 
+    right:
       - icon: github
         href: https://github.com/jaeyk/jaeyk.github.io
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jae-yeon-kim-694764229/
+      - text: "Scholar"
+        href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en
+      - text: "Substack"
+        href: https://jaeyeonkim.substack.com/
 
   sidebar:
     style: docked
@@ -40,8 +47,8 @@ website:
             href: publications/pubs.qmd
           - text: "Book"
             href: book_projects/books.qmd
-          #- text: "Talks"
-           # href: talks/talks.qmd
+          - text: "Talks"
+            href: talks/talks.qmd
           - text: "Awards"
             href: awards/awards.qmd
       - text: "---"
@@ -83,6 +90,15 @@ format:
           <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
           <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
           <link rel="manifest" href="/images/favicon/site.webmanifest">
+          <meta property="og:title" content="Jae Yeon Kim — Political Scientist &amp; Data Scientist">
+          <meta property="og:description" content="Assistant Professor at UNC-Chapel Hill. Research on policy implementation, civic data, and computational social science.">
+          <meta property="og:image" content="https://jaeyk.github.io/profile_alt.png">
+          <meta property="og:url" content="https://jaeyk.github.io/">
+          <meta property="og:type" content="website">
+          <meta name="twitter:card" content="summary">
+          <meta name="twitter:title" content="Jae Yeon Kim">
+          <meta name="twitter:description" content="Assistant Professor at UNC-Chapel Hill researching policy implementation and civic data.">
+          <meta name="twitter:image" content="https://jaeyk.github.io/profile_alt.png">
           <script>
           document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.querySelector('#quarto-search input[type="text"], .aa-Input');
