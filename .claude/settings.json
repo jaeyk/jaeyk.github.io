@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/jaeyeonkim/.claude/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/jaeyeonkim/Documents/jaeyk.github.io/.claude"
+    ]
+  }
+}
