@@ -30,4 +30,4 @@ I've worked across academic and applied settings and enjoy meeting people workin
   <span><span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#aaaaaa;margin-right:4px;vertical-align:middle;opacity:0.55;"></span>Past event</span>
 </div>
 
-<div id="calendar" style="margin: 0.5rem 0 2.5rem;"></div>
+<div id="calendar" style="margin: 0.5rem 0 2.5rem; min-height: 300px;"></div>
