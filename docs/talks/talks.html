@@ -132,6 +132,14 @@ document.addEventListener('DOMContentLoaded', function() {
 .fc-daygrid-event-dot { margin-top: 5px !important; }
 /* Tighten row height so wrapped events don't collapse the grid */
 .fc-daygrid-day-events { min-height: 0 !important; }
+@media (max-width: 768px) {
+  #calendar { margin: 0.25rem 0 1.5rem !important; }
+  .fc .fc-toolbar.fc-header-toolbar { margin-bottom: 0.5rem !important; gap: 0.35rem; flex-wrap: wrap; }
+  .fc .fc-toolbar-title { font-size: 1.05rem !important; }
+  .fc .fc-button { padding: 0.3rem 0.5rem !important; font-size: 0.78rem !important; }
+  .fc .fc-list-day-cushion { padding: 6px 8px !important; }
+  .fc .fc-list-event-title a { white-space: normal !important; line-height: 1.35; }
+}
 </style>
 
 
