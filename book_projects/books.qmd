@@ -30,7 +30,7 @@ By centering policy implementation, local political economy, and classification 
 
 <span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by summer 2026.</span>
 
-![Enter Opportunity Market. Source: Agenda, the newsletter of the National Council of La Raza Fall 1974](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/garcia.png){fig-align="center" width="80%"}
+![Enter Opportunity Market. Source: Agenda, the newsletter of the National Council of La Raza Fall 1974 (p.20)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/garcia.png){fig-align="center" width="80%"}
 
 ![The Unity Council (est in 1964, Fruitvale, Oakland, CA). Photo Credit: Jae Yeon Kim (2025)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/unity_council.JPG){fig-align="center" width="60%"}
 
