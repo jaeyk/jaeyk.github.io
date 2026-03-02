@@ -36,6 +36,6 @@ Below is a collection of essays I’ve written over the years, organized into th
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
 
 <figure style="text-align: center;">
-  <img src="../misc/family_berkeley.jpg" alt="Family photo (Berkeley, '21)." style="width: 75%; max-width: 900px; height: auto;" />
+  <img src="../misc/family_berkeley.jpg" alt="Family photo (Berkeley, '21)." style="width: 50%; max-width: 500px; height: auto;" />
   <figcaption>Family photo (Berkeley, '21). I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane.</figcaption>
 </figure>
