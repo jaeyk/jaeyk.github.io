@@ -438,6 +438,19 @@ div.quarto-about-trestles .about-link:hover {
   cursor: text; /* optional: or 'default' to avoid pointer */
 }
 
+/* ORCID badge icon style */
+.orcid-icon {
+  display: inline-block;
+  color: #495057;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: -0.08em;
+  margin-right: 0.2em;
+  text-decoration: none !important;
+}
+
 /* Highlighting utility classes */
 .highlight-affiliation {
   color: #13294B;

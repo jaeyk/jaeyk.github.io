@@ -27,7 +27,7 @@ website:
         href: https://www.linkedin.com/in/jae-yeon-kim-694764229/
       - text: "Scholar"
         href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en
-      - text: "ORCID"
+      - text: "<span class='orcid-icon' aria-hidden='true'>iD</span> ORCID"
         href: https://orcid.org/0000-0002-6533-7910
       - text: "Substack"
         href: https://jaeyeonkim.substack.com/
