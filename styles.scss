@@ -58,6 +58,14 @@ div.quarto-post .metadata {
   margin-block-end: 2rem;
 }
 
+/* Home page has a custom hero; hide empty Quarto title block spacer. */
+#title-block-header:empty {
+  display: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: $headings-font-family;
   font-weight: 600;

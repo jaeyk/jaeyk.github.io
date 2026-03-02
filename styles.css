@@ -13,6 +13,13 @@ div.quarto-post .metadata {
   margin-block-end: 2rem;
 }
 
+#title-block-header:empty {
+  display: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Source Serif 4", Georgia, Times, "Times New Roman", serif;
   font-weight: 600;
