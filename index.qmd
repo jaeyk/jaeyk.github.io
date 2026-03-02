@@ -25,6 +25,9 @@ format:
 #     - icon: google
 #       text: Google scholar
 #       href: https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en
+#     - icon: person-badge
+#       text: ORCID
+#       href: https://orcid.org/0000-0002-6533-7910
 #     - icon: linkedin
 #       text: LinkedIn
 #       href: https://www.linkedin.com/in/jae-yeon-kim-694764229/
@@ -43,8 +46,11 @@ format:
 <h2 style="margin-top: 0; margin-bottom: 0.3em;">Jae Yeon Kim</h2>
 <p style="margin: 0; line-height: 1.6;">
 <i class="bi bi-envelope"></i> <a href="mailto:jaekim@unc.edu">jaekim@unc.edu</a> |
-<i class="bi bi-file-earmark-text"></i> <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">CV</a> |
+<i class="bi bi-file-earmark-text"></i> <a href="https://jaeyk.github.io/CV_Jae_Yeon_Kim.pdf">CV</a>
+</p>
+<p style="margin: 0.1em 0 0 0; line-height: 1.6;">
 <i class="bi bi-google"></i> <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en">Google Scholar</a> |
+<i class="bi bi-person-badge"></i> <a href="https://orcid.org/0000-0002-6533-7910">ORCID</a> |
 <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jae-yeon-kim-694764229/">LinkedIn</a> |
 <i class="bi bi-substack"></i> <a href="https://jaeyeonkim.substack.com/">Substack</a> |
 <i class="bi bi-github"></i> <a href="https://github.com/jaeyk">GitHub</a>
