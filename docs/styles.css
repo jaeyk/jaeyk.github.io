@@ -451,6 +451,20 @@ div.quarto-about-trestles .about-link:hover {
   text-decoration: none !important;
 }
 
+.hero-research-highlight {
+  margin: 0.55em 0 0 0;
+  display: inline-block;
+  background-color: rgba(73, 80, 87, 0.16);
+  color: #2f3439;
+  font-style: italic;
+  line-height: 1.35;
+  padding: 0.2em 0.55em;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
 /* Highlighting utility classes */
 .highlight-affiliation {
   color: #13294B;

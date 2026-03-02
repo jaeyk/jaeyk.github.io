@@ -55,7 +55,7 @@ format:
 <i class="bi bi-substack"></i> <a href="https://jaeyeonkim.substack.com/">Substack</a> |
 <i class="bi bi-github"></i> <a href="https://github.com/jaeyk">GitHub</a>
 </p>
-<p style="margin: 0.4em 0 0 0; color: #555; font-style: italic;">My research aims to make policy implementation work.</p>
+<p class="hero-research-highlight">My research aims to make policy implementation work.</p>
 </div>
 
 </div>
