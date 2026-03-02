@@ -11,7 +11,7 @@ At the same time, my perspective and career path have been shaped by where I beg
 
 These experiences continue to guide the research questions I pursue and the problems I choose to engage with.
 
-Below is a collection of essays I’ve written over the years, organized into three categories: professional reflections, personal reflections, and career advice. You can also find my writing on [Substack](https://jaeyeonkim.substack.com/).
+Below is a collection of essays I’ve written over the years, organized into three categories: professional reflections, personal reflections, and career advice. I used to practice martial arts (Taekwondo, Wushu, and Kendo), but I now focus on running and hiking. I believe there is a certain joy that comes from enduring voluntary hardship. In life, pain is inevitable, but suffering is optional. You can also find my writing on [Substack](https://jaeyeonkim.substack.com/).
 
 **Professional Reflections**
 
@@ -36,6 +36,6 @@ Below is a collection of essays I’ve written over the years, organized into th
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
 
 <figure style="text-align: center;">
-  <img src="../misc/jane_Berkeley.jpg" alt="PhD graduation photo (Berkeley, '21)." style="width: 45%;" />
-  <figcaption>PhD graduation photo (Berkeley, ’21).</figcaption>
+  <img src="../misc/family_Berkeley.jpg" alt="Family photo (Berkeley, '21). I am married to Sunmin Yun, a semiconductor engineer, and we have one daughter, Jane. Our family loves the arts and outdoor activities." style="width: 45%;" />
+  <figcaption>Family photo (Berkeley, '21). I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane.</figcaption>
 </figure>
