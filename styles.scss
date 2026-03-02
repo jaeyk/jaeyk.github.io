@@ -480,6 +480,33 @@ div.quarto-about-trestles .about-link:hover {
   cursor: text; /* optional: or 'default' to avoid pointer */
 }
 
+/* ORCID badge icon style */
+.orcid-icon {
+  display: inline-block;
+  color: #495057;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: -0.08em;
+  margin-right: 0.2em;
+  text-decoration: none !important;
+}
+
+.hero-research-highlight {
+  margin: 0.55em 0 0 0;
+  display: inline-block;
+  background-color: rgba(73, 80, 87, 0.16);
+  color: #2f3439;
+  font-style: italic;
+  line-height: 1.35;
+  padding: 0.2em 0.55em;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
 /* Highlighting utility classes */
 
 .highlight-affiliation {
