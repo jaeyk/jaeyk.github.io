@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Source Code AI Trust & Fairness Co-Creation Forum",
       start: "2026-03-04",
-      color: "#6d4c41",
+      color: "#aaaaaa",
       url: "https://fas.org/",
-      extendedProps: { org: "Federation of American Scientists", host: "", place: "Washington, DC, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "Federation of American Scientists", host: "", place: "Washington, DC, USA", type: "badge-participant", past: true }
     },
     {
       title: "Conference on Society-Centered AI",
