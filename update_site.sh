@@ -1,13 +1,22 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-set -eu
+set -euo pipefail
 
-cd ~/Documents/jaeyk.github.io/ || { echo "Directory not found. Aborting."; exit 1; }
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "${SCRIPT_DIR}" || { echo "Directory not found. Aborting."; exit 1; }
+
+CV_SOURCE="${SCRIPT_DIR}/generate_cv/CV_Jae_Yeon_Kim.pdf"
+CV_TARGET="${SCRIPT_DIR}/CV_Jae_Yeon_Kim.pdf"
+
+if [ ! -f "${CV_SOURCE}" ]; then
+    echo "CV source not found at ${CV_SOURCE}. Aborting."
+    exit 1
+fi
 
 # Only copy CV if it changed
-if ! cmp -s ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf 2>/dev/null; then
-    echo "Copying CV..."
-    cp ~/Downloads/CV_Jae_Yeon_Kim.pdf ./CV_Jae_Yeon_Kim.pdf
+if ! cmp -s "${CV_SOURCE}" "${CV_TARGET}" 2>/dev/null; then
+    echo "Copying CV from ${CV_SOURCE}..."
+    cp "${CV_SOURCE}" "${CV_TARGET}"
 fi
 
 # Regenerate map assets used in community page if scripts exist

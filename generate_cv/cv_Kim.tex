@@ -1,0 +1,805 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Set your name here
+\def\name{Jae Yeon Kim}
+% Load packages
+\usepackage{hyperref} % ref 
+\usepackage{geometry} % layout
+
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage{microtype}
+\usepackage{multicol}
+\usepackage{array}
+
+\usepackage{etaremune}
+\usepackage{enumitem} 
+
+%%%%%%%%%%%%%%%%%%%%%%% Fonts
+
+%\use{mathptmx} % Times New Roman
+\usepackage{setspace}
+
+% selinput can fail under some modern engines (e.g., tectonic/XeTeX).
+% Source is UTF-8, so explicit input mappings are unnecessary.
+
+%%%%%%%%%%%%%%%%%%%%%%% Others
+\usepackage{url} % URL
+\urlstyle{same}    
+
+\newcommand{\yearblock}[1]{\par\vspace{0.6\baselineskip}\textbf{#1}}
+
+\usepackage{xparse}
+
+\newcounter{talkcount}
+
+% Talk command with conditional separator
+\NewDocumentCommand{\talk}{m}{%
+  \ifnum\value{talkcount}>0
+    ;\space
+  \fi
+  \stepcounter{talkcount}%
+  #1%
+}
+
+\NewDocumentEnvironment{talkyear}{m +b}
+{%
+  % ---------- Pass 1: count ----------
+  \setcounter{talkcount}{0}%
+  \begingroup
+    \RenewDocumentCommand{\talk}{m}{\stepcounter{talkcount}}%
+    #2%
+  \endgroup
+
+  % ---------- Print year header with count ----------
+  \yearblock{#1\ [\arabic{talkcount}]}%
+
+  % ---------- Pass 2: print content ----------
+  \setcounter{talkcount}{0}%
+  #2%
+}
+{}
+
+%\sectionfont{\fontsize{12}{15}\selectfont}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,s
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+\usepackage[dvipsnames]{xcolor}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+colorlinks = true,
+urlcolor = Blue,
+pdfauthor = {\name},
+pdfkeywords = {political science},
+pdftitle = {\name: Curriculum Vitae},
+pdfsubject = {Curriculum Vitae},
+pdfpagemode = UseNone
+}
+
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}   
+
+\geometry{
+body={6.5in, 9.0in},
+left=1.0in,
+top=1.0in
+}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+\setlength{\emergencystretch}{2em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+\begin{list}{}{
+        \setlength{\leftmargin}{1.5em}
+        \setlength{\itemsep}{0.10em}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0.10em}
+    }
+}{
+\end{list}
+}
+
+\setlist[enumerate]{itemsep=0.10em}
+
+% Print the month and year
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi%
+\space \number \year}
+
+\begin{document}
+
+\textbf{{\Large\name}}
+
+\vspace{0.00001in} % very narrow space between the name and the line 
+\noindent\rule{\linewidth}{0.4pt} % a horizontal bar below the name 
+
+% Alternatively, print name centered and bold:
+%\centerline{\titlefont{\name}}
+
+\begin{minipage}[t]{0.48\linewidth}
+\raggedright
+University of North Carolina at Chapel Hill\\
+Department of Public Policy\\
+131 S.\ Columbia Street \\
+Chapel Hill, NC 27599--3435\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\raggedright
+\textbf{Email}: \href{mailto:jaekim@unc.edu}{jaekim@unc.edu}\\
+[0.2em]
+\textbf{Homepage}: \url{https://jaeyk.github.io}
+\end{minipage}
+
+\subsection*{Academic appointments}
+
+\begin{description}[font=\mdseries]
+
+\item \textbf{University of North Carolina at Chapel Hill}: Assistant Professor of Public Policy (January 2026-present; on leave in Spring 2027)
+\item \textbf{UC Berkeley's Berkeley Economy \& Society Initiative}: Visiting Scholar (January 2027-August 2027)
+\item \textbf{Harvard Kennedy School}: Research Fellow, Center for Public Leadership (February 2024-)
+
+\item \href{https://www.bettergovernmentlab.org/}{\textbf{University of Michigan's Ford School of Public Policy}}: Better Government Lab Fellow (November 2024-)
+
+\item \href{https://snfagora.jhu.edu/}{\textbf{Johns Hopkins University's SNF Agora Institute}}: Assistant Research Scientist (July 2024-June 2025); Research Fellow (January 2022-June 2024); Pre/Postdoctoral Fellow (Fall 2020-December 2021)
+
+\item \textbf{Korea Development Institute (KDI) School of Public Policy and Management} (in South Korea): Affiliate (2024-2026); Assistant Professor of Data Science (2022)
+
+\end{description}
+
+\subsection*{Professional appointments}
+
+\begin{description}[font=\mdseries]
+\item \href{https://codeforamerica.org/}{\textbf{Code for America}}: Senior Data Scientist (January 2023-May 2024); Contracting Data Scientist (November 2024-December 2025)
+\begin{description}[font=\mdseries]
+    \item Collaborated with the U.S. government to improve access to safety net programs. 
+\end{description}
+
+\end{description}
+
+\subsection*{Other appointments and affiliations}
+
+\begin{description}\itemsep1pt \parskip1pt
+\item 
+\href{https://www.americanpoliticaleconomy.org/}{\textbf{Consortium on the American Political Economy}}: Affiliate (2024-)
+%\item \textbf{Korea University's Peace \& Democracy Institute}: Affiliate (2026-)
+\end{description}
+
+\subsection*{Education}
+\begin{description}[font=\mdseries]
+\item \textbf{University of California, Berkeley}, USA (on the Korea Foundation for Advanced Studies scholarship)
+\begin{description}[font=\mdseries]
+\item Ph.D., Political Science, 2021
+\begin{description}[font=\mdseries]
+\item Fields: American Politics, Comparative Politics, Political Behavior (with distinction)
+\item Dissertation: \href{https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf}{Essays on the Politics of Solidarity in Multiracial America }
+\item Advisors: Paul Pierson and Taeku Lee (co-chairs), Eric Schickler, Irene Bloemraad
+\item \textbf{Co-Winner, Best Dissertation Award in Urban and Local Politics, APSA (2022)}
+\end{description}
+\item M.A., Political Science, 2016
+\end{description}
+\item \textbf{Korea University}, Seoul, South Korea 
+    \begin{description}\itemsep1pt \parskip1pt
+        \item B.A., English and Political Science (with Great Honors, 2012; Alternative military service: 2009--2010)
+        \item Exchange student programs: Hong Kong (2006 Fall); Taiwan (2007 Fall)
+    \end{description}
+\end{description}
+
+\subsection*{Research areas}
+
+\begin{description}\itemsep1pt \parskip1pt
+    \item Substantive: American Political Economy, Policy Implementation, Civic Engagement, Social Policy, Tech Policy
+    \item Methodological: Computational Social Science, Applied Data Science, Survey and Experimental Design, Mixed Methods, Human-Centered Design
+\end{description}
+
+\subsection*{Awards}
+\begin{etaremune}
+
+\item \textbf{\href{https://apsanet.org/membership/organized-sections/organized-section-6-volcker-junior-scholar-research-grant/}{Paul Volcker Junior Scholar Research Grant Award in Public Administration}}, American Political Science Association, 2025, recognizes "potential to shed new light on important public administration questions, their scholarly and methodological rigor, and their promise for advancing practice and theory development."
+
+\item \textbf{\href{https://sites.google.com/view/apsacivic/about-apsa-civic/awards?authuser=0}{Emerging Scholar Award in Civic Engagement}}, American Political Science Association, 2024, "recognizes an individual who is making notable contributions in the research of civic engagement within five years of earning their terminal degree and whose career to date demonstrates significant promise in this area."
+
+\item \textbf{\href{https://politicalsciencenow.com/congratulations-to-apsa-organized-section-award-recipients-sections-1-20/}{Best Dissertation Award in Urban and Local Politics}}, American Political Science Association, 2022, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
+
+\item \textbf{\href{https://www.wpsanet.org/award/}{Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics}}, Western Political Science Association, 2020, "for making a significant contribution to the understanding of Asian Pacific American politics."
+
+\item \textbf{\href{https://gsi.berkeley.edu/programs-services/award-programs/ogsi/ogsi-2017/}{Outstanding Graduate Student Instructor Award}}, Graduate Division, UC Berkeley, AY 2016-2017, received by approximately \textbf{10 percent} of Graduate Student Instructors at Berkeley
+%\item Political Behavior Field Exam, \textbf{Passage with Distinction}, Department of Political Science, UC Berkeley, 2017
+\end{etaremune}
+
+\subsection*{Journal articles}
+
+\begin{etaremune}
+\item[]\textbf{2025}
+\item \href{https://journals.sagepub.com/doi/10.1177/13684302251346402}{``Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.''} (Kasheena Rogbeer, \textbf{Jae Yeon Kim}, and Efrén Pérez). \textbf{\textit{Group Processes and Intergroup Relations}}. Online First in July 2025 \href{https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009}{[replication]}
+\begin{itemize}
+    \item Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
+\end{itemize}
+
+\item \href{https://www.nature.com/articles/s41597-025-05353-6.epdf?sharing_token=4HNrMMO7VOt9eQU42u5HrtRgN0jAjWel9jnR3ZoTv0Mpc6G86FwIcTyoYmFsd3Uahts-NrsxWU-Q0gVeUk6vtZN_k8pGamsuixpoqi1fOhudhtavd6jX7U8p5I4FQf1oJKpcfff8nLXFvlsgow1agfORM7KYSpMi13jgivdJVAs%3D}{``MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy.''} (\textbf{Jae Yeon Kim}, Milan de Vries, and Hahrie Han). \textbf{\textit{Nature: Scientific Data}}, 2025, 12, Article number: 1162 \href{https://github.com/snfagora/american_civic_opportunity_datasets}{[replication]} \href{https://www.readcube.com/articles/supplement?doi=10.1038%2Fs41597-025-05353-6&index=0}{[supplementary materials]} \href{https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw}{[dashboard]}
+\begin{itemize}
+    \item Featured in: \textit{\href{https://www.nationalcivicleague.org/mapping-civic-opportunity-in-america-what-the-data-reveal-about-democracys-hidden-infrastructure/}{National Civic League}}
+\end{itemize}
+
+\item \href{https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw}{``Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation.''} (\textbf{Jae Yeon Kim}, Pamela Herd, Sebastian Jilke, Donald Moynihan, and Kerry Rodden). \textbf{\textit{Journal of Policy Analysis and Management}}, Online First in April 2025 (Published in 2025, 44(4), 1153--1170. \textit{Lead article.}) \href{https://osf.io/w87h2/?view_only=None}{[replication]}
+\begin{itemize}
+    \item Research brief based on this work, authored by Eric Giannella and Donald Moynihan, was published in the \textit{\href{https://donmoynihan.substack.com/p/making-snap-interviews-more-flexible}{Can We Still Govern}} Substack on December 6, 2024.
+\end{itemize}
+
+\item[]\vspace{0.3\baselineskip}\textbf{2024}
+\item \href{https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51}{``Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Causal and Resistant to Divisive Threats.''} (\textbf{Jae Yeon Kim}, Efrén Pérez, and Kasheena Rogbeer). \textbf{\textit{Journal of Experimental Political Science}}, Online First in March 2024 \href{https://doi.org/10.7910/DVN/UWJYCB}{[replication]}
+
+\item \href{https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities}{``The Unequal Landscape of Civic Opportunity in America.''} (Milan de Vries, \textbf{Jae Yeon Kim} and Hahrie Han) \textbf{\textit{Nature Human Behaviour}}, Online First in November 2023 (Published in 2024, 8, 256--263) [\href{https://github.com/snfagora/map_civic_opportunity/tree/main}{replication}] \href{https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf}{[supplementary materials]}
+\begin{itemize}
+    \item Op-ed based on this research was published in \textit{\href{https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/}{HistPhil}} on January 25, 2024, and a research brief in \textit{\href{https://go.nature.com/45qrXpz}{Springer Nature: Social Sciences Community}} on November 13, 2023.
+    \item Cited in: \textit{\href{https://www.washingtonpost.com/opinions/2024/10/14/healthy-democracy-ecosystem-map-civic-engagement/}{The Washington Post}}, \textit{\href{https://apnews.com/article/trust-for-civic-life-rural-everyday-democracy-7faa9145d8d2930616280161c245bb64}{Associated Press}}, \textit{\href{https://www.nationalcivicleague.org/ncr-article/the-geography-of-discontent-and-what-democratic-innovations-can-do-about-it/}{National Civic League}}, \textit{\href{https://www.americansurveycenter.org/research/disconnected-places-and-spaces/}{Survey Center on American Life}} (a project of the American Enterprise Institute)
+    \item Featured in: \textit{\href{https://hub.jhu.edu/2023/11/13/civic-opportunity-heat-map/}{Johns Hopkins University Homepage}}
+\end{itemize}
+
+\item \href{https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23}{``Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers.''} (Aniket Kesari*, \textbf{Jae Yeon Kim}*, Sono Shah*, Taylor Brown*, Tiago Ventura*, and Tina Law*) \textbf{\textit{PS: Political Science \& Politics}}, Online First in September 2023 (Published in 2024, 57(1), 101-106) (* = co-lead authors.) \href{https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf}{[slides]}
+
+\item[]\vspace{0.3\baselineskip}\textbf{2023}
+\item \href{https://www.nature.com/articles/s41597-023-01947-0#Sec10}{``Validated Names for Experimental Studies on Ethnicity and Race.''} (Charles Crabtree, \textbf{Jae Yeon Kim}, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) \textbf{\textit{Nature: Scientific Data}}, 2023, 10, Article number: 130 \href{https://github.com/jaeyk/validated_names}{[replication]} \href{https://github.com/jaeyk/validatednamesr}{[R package]} \href{https://jaeyk.github.io/select_validated_names/?fbclid=IwY2xjawP0TOlleHRuA2FlbQIxMABicmlkETFIdVoxek4zU0p0SFhzZXZJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHm5a4tquUfrPydahJ1v3TX_HaLK7plqgT8aORGfWqVaYnyGDFhm4VdK0zE_h_aem_KusnJygN3w44M1hksHeycw}{[dashboard]}
+\begin{itemize}
+    \item Policy brief based on this research was published in the \textit{\href{https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf}{Berkeley Interdisciplinary Migration Initiative}} on November 5, 2024.
+\end{itemize}
+
+\item \href{https://journals.sagepub.com/doi/10.1177/10659129221144248}{``Contested Identity and Prejudice Against Co-ethnic Refugees: Evidence from South Korea.''} (\textbf{Jae Yeon Kim} and Taeku Lee) \textbf{\textit{Political Research Quarterly}}, Online First in December 2022 (Published in 2023, 76(3), 1433-1444) \href{https://github.com/jaeyk/contested-identity}{[replication]}
+
+\item \href{https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7}{``Rewiring Linked Fate: Bringing Back History, Agency, and Power.''} (Reuel Rogers* and \textbf{Jae Yeon Kim*}) \textbf{\textit{Perspectives on Politics}}, Online First in December 2021 (Published in 2023, 21(1), 288-301) (* = co-lead authors.) \href{https://github.com/jaeyk/linked_fate_review/}{[replication]}.
+
+\item[]\vspace{0.3\baselineskip}\textbf{2022}
+\item \href{https://journals.sagepub.com/doi/full/10.1177/00027162221077471}{``Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power.''} (Hahrie Han* and \textbf{Jae Yeon Kim*}) \textbf{\textit{The ANNALS of the American Academy of Political and Social Science}}, Online First in March 2022 (Published in 2022, 699(1), 175-185) (* = co-lead authors.)
+
+\item \href{https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF}{``Teaching Computational Social Science for All.''} (\textbf{Jae Yeon Kim} and Margaret Ng) \textbf{\textit{PS: Political Science \& Politics}}, Online First in February 2022 (Published in 2022, 55(3), 605-609)
+
+\item \href{https://link.springer.com/article/10.1007/s10796-021-10229-2}{``Identity and Status: When Counterspeech Increases Hate Speech Reporting and Why.''} (\textbf{Jae Yeon Kim}, Jaeung Sim, and Daegon Cho) \textbf{\textit{Information Systems Frontiers}}, Online First in January 2022 \href{https://github.com/jaeyk/status_identity_hate_speech_reporting}{[replication]}
+
+\item \href{https://journals.sagepub.com/doi/10.1177/1065912920983456}{``How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing.''} (\textbf{Jae Yeon Kim}), \textbf{\textit{Political Research Quarterly}}, Online First in December 2020 (Published in 2022, 75(1), 89-102) \href{https://github.com/jaeyk/regression-analysis-with-time-series-data}{[replication]}
+
+\item[]\vspace{0.3\baselineskip}\textbf{2021}
+\item \href{https://t.co/4Axd0gEQns}{``COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes.''} (Nathan Chan, \textbf{Jae Yeon Kim}, and Vivien Leung) \textbf{\textit{Perspectives on Politics}}, Online First in December 2021 \href{https://github.com/jaeyk/covid19antiasian/}{[replication]}
+\begin{itemize}
+    \item Op-ed based on this research was published in \textit{\href{https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage}{The Washington Post's Monkey Cage}} on March 30, 2021, and was later cited in an op-ed for \textit{\href{https://fivethirtyeight.com/features/why-the-recent-violence-against-asian-americans-may-solidify-their-support-of-democrats/}{FiveThirtyEight}} on April 1, 2021.
+\end{itemize}
+
+\item \href{https://tsjournal.org/index.php/jots/article/view/13/5}{"Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech During the COVID-19 Pandemic."} (\textbf{Jae Yeon Kim}* and Aniket Kesari*) \textbf{\textit{Journal of Online Trust and Safety}}, 2021, 1(1) (* = co-lead authors.) \href{https://github.com/jaeyk/asian_hate_misinformation}{[replication]}
+\begin{itemize}
+    \item Featured in: \textit{\href{https://www.platformer.news/p/facebook-goes-meta?token=eyJ1c2VyX2lkIjozMzg0MTczNywicG9zdF9pZCI6NDMyMjkzNDMsIl8iOiJ2N2ZkbyIsImlhdCI6MTYzNTQ3MDYyMiwiZXhwIjoxNjM1NDc0MjIyLCJpc3MiOiJwdWItNzk3NiIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.NatoanH3afQoMUpac4xFjQK2nAWPF83TupLcW_5bRVg}{Platformer}}
+\end{itemize}
+
+\item \href{https://link.springer.com/article/10.1007/s42001-020-00097-2}{``Integrating Human and Machine Coding to Measure Political Issues in Ethnic Newspaper Articles.''} (\textbf{Jae Yeon Kim}), \textbf{\textit{Journal of Computational Social Science}}, 2021, 4(2), 585-612 \href{https://github.com/jaeyk/content-analysis-for-evaluating-ML-performances}{[replication]}
+\begin{itemize}
+    \item Early version received \textbf{the 2020 Don T. Nakanishi Award} from the Western Political Science Association
+\end{itemize}
+
+\item[]\vspace{0.3\baselineskip}\textbf{2020}
+\item \href{https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E}{``Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver.''} (\textbf{Jae Yeon Kim}), \textbf{\textit{Studies in American Political Development}}, 2020, 34(2), 195-215 \href{https://github.com/jaeyk/analyzing-archival-data}{[replication]}
+\begin{itemize}
+    \item Research brief based on this project was published on the \textit{\href{https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups}{UC Berkeley Canadian Studies Program}} website, and the work was also featured in an interview on the \textit{\href{https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM}{Scope Conditions}} podcast.
+\end{itemize}
+\end{etaremune}
+
+\subsection*{Conference and workshop proceedings}
+\begin{etaremune}
+\item \href{https://arxiv.org/abs/2005.05921}{``Intersectional Bias in Hate Speech and Abusive Language Datasets.''} (\textbf{Jae Yeon Kim}, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, \href{https://sites.google.com/view/icwsm2020datachallenge/home}{\textit{Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop}} \href{https://github.com/jaeyk/intersectional-bias-in-ml}{[replication]}
+
+\begin{itemize}
+    \item Featured in: \textit{\href{http://x3ysn.mjt.lu/nl2/x3ysn/xs09.html?hl=en}{AlgorithmWatch Newsletter} }
+\end{itemize}
+\end{etaremune}
+
+\subsection*{Manuscript under review}
+
+\begin{etaremune}
+    
+%\item ``Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is.'' (Eric Giannella, \textbf{Jae Yeon Kim}, and Maximilian Hell) 
+
+\item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242}{``Race, Violence, and the Effectiveness of Protest.''} (James Druckman, Jennifer Oser,  Lior Sheffer, Devorah Manekin, Tamar Mitts, \textbf{Jae Yeon Kim}, and Liz McKenna) Presented at the 2025 APSA 
+
+
+\item ``Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination.'' (\textbf{Jae Yeon Kim}, Joan Cho, DG Kim, and Taeku Lee) \href{https://osf.io/vgau7/?view_only=802a2e1a7c344231ac1588a54a6df8fa}{[pre-registration]} Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
+
+\end{etaremune}
+
+\subsection*{Preparing for submission}
+
+\begin{etaremune}
+    
+\item ``Fear as a Psychological Cost: Evidence from Two List Experiments Among SNAP Applicants.'' (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin) Presented at the 2025 APSA, APPAM, NYU, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University 
+
+\item ``Crossing the Finish Line: The Role of Attention and Reminders in SNAP Application Completion.'' (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan) Presented at the 2025 APPAM
+
+\item ``Space and Place in WIC: Vendor Accessibility and Administrative Burden.'' (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan) Presented at the 2025 National WIC Association annual conference
+
+%\item ``The Political Economy of Scaling Public Innovations: The Case of Civic Tech in the U.S. Safety Net.'' (with Eric Giannella, and Maximilian Hell) Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity
+
+%\item ``How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field.'' (with Eric Giannella and Yixin Crystal Luo)
+
+\item "Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts," (with Aniket Kesari) Presented at the 2025 APPAM; Johns Hopkins SAIS; 2026 Duke Conference on Society-Centered AI
+    %\item ''Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson)
+
+\item "AI and the American Contracting State." 
+
+\item ``Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments.'' (with Florian Keppeler) 
+\href{https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/field_experiments_safety_nets.pdf}{[slides]} \href{https://youtu.be/bwd5ypg4nxw?si=1AJA5BWVzQN0n7vZ}{[talk]} Presented at the University of Toronto, 2024 PMRC, 2024 Korean Summer Workshop on Causal Inference
+
+
+\end{etaremune}
+
+\subsection*{Work in progress}
+
+\begin{etaremune}
+
+\item ``Reconstructing Implementation as Politics.'' (with Akshay Mangla) Presented at the 2025 APSA 
+
+%\item ``How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational.'' (with Tyler Simko) Presented at Korea University, Yonsei University, KAIST
+
+\item "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
+    
+\item ``Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.'' (with Liz McKenna)
+
+\item ``Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
+    
+%   \item ``Historical Legacies and Civic Inequality in America.'' (with Milan de Vries and Hahrie Han) Presented at the 2024 APSA, WPSA
+
+\item ``Democratic Exclusion: Understanding Nativist Backlash in East Asia." (with Taeku Lee and Aram Hur)
+ %   \item ``Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration.'' (with Woo Chang Kang)
+
+%\item ``Everyday Experiences and Asian American Identity.'' (with Taeku Lee)
+
+\end{etaremune}
+
+\subsection*{Book projects}
+
+\begin{itemize}
+    \item "Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America." (based on award-winning \href{https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf}{dissertation})
+
+\begin{itemize}
+    \item Interviewed by \href{https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM}{Scope Conditions Podcast} 
+    \item Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
+    \item Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+\end{itemize}
+
+\emph{Unseen and Uncounted} develops a new theory of racial group formation centered on the concept of classification cost---the administrative difficulty of recognizing small, fragmented, or poorly understood populations. During the War on Poverty, social policies were implemented through federal categories that often excluded non-white immigrant communities, particularly those from Asia and Latin America. This exclusion was not merely symbolic: it shaped eligibility for state resources and rendered these groups invisible in official records. In response, ethnic elites engaged in political innovation. They introduced new panethnic labels, built cross-ethnic coalitions, and founded civic organizations to reduce classification costs and make their communities legible to the state. These bottom-up efforts, rooted in encounters with street-level bureaucrats, eventually scaled upward to influence federal classification schemes and reshape the language of racial politics. The book draws on extensive archival research, administrative records, and digital trace data, and combines qualitative, quantitative, and computational methods. Using comparative analysis across cities, racial groups, and national contexts, it shows that panethnic identities, or race-based coalition formations, were not automatic reactions to racial discrimination. Rather, they emerged through strategic adaptation to the classificatory logics and incentive structures of the modern administrative state.
+\end{itemize}
+
+\subsection*{Books}
+
+\begin{itemize}
+    \item \href{http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160}{``We Need Civic Data: How Public Data Can Fail Us --- and How It Can Build a More Just Society.''} (in Korean; Sejong Books 2023)
+    \begin{itemize}
+    \item Included in the 2024 Sejong Books (Outstanding Book of the Year, General Knowledge Category), Ministry of Culture, Sports and Tourism, Republic of Korea
+    \item Featured in \textit{The Chosun Ilbo}, \textit{Maeil Business}, \textit{The Korean Economic Daily}, \textit{Kyunghyang Shinmun}, and \textit{Hankyoreh} (major Korean newspapers across the ideological spectrum)
+\end{itemize}
+\end{itemize}
+
+\subsection*{Book chapters}
+\begin{etaremune}
+
+\item APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress)
+
+\item \href{https://www.ssoar.info/ssoar/handle/document/86424}{``Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach.''} (\textbf{Jae Yeon Kim}) In C. Strippel, S.
+Paasch-Colberg, M. Emmer \& J. Trebbe (Eds.), \textit{Challenges and Perspectives of Hate Speech Analysis}, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association).
+\end{etaremune}
+
+%\subsection*{Book reviews}
+
+\subsection*{Media and public writing} 
+\begin{etaremune}
+    \item \href{https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=e9GJd_BFRg2Z5tOcPQzpPg}{"Building Civic Muscle.''} (\textbf{Jae Yeon Kim}), \textit{APSA's Civic Engagement Section Podcast (Civic Café)}, June 15, 2025
+    \item \href{https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf}{"Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status."} (Charles Crabtree, \textbf{Jae Yeon Kim}, S. Michael Gaddis, and John B. Holbein), \textit{Berkeley Interdisciplinary Migration Initiative}, November 5, 2024 
+    \item \href{https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/}{"The Uneven Landscape of Civic Opportunity in the United States: What We Discovered While Mapping The Modern Agora."} (\textbf{Jae Yeon Kim}), \textit{HistPhil}, January 25, 2024
+    \item \href{https://go.nature.com/45qrXpz}{"Behind the Paper: The Unequal Landscape of Civic Opportunity in America."} (\textbf{Jae Yeon Kim}), \textit{Springer Nature: Social Sciences Community}, November 13, 2023 \item \href{https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM}{"Episode 3.4: Race-based Coalitions in Three Chinatowns."} (\textbf{Jae Yeon Kim}), \textit{Scope Conditions}, June 14, 2023
+    \item \href{https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387}{"Good Troublemakers Are the Key to Fixing Democracy in South Korea."} (\textbf{Jae Yeon Kim}), \textit{Korea Pro}, May 16, 2022.
+    \item \href{https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage}{"Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party."} (Nathan Chan, \textbf{Jae Yeon Kim}, and Vivien Leung), \textit{Washington Post's Monkey Cage}, March 30, 2021
+    \item \href{https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups}{"The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups."} (\textbf{Jae Yeon Kim}), \textit{UC Berkeley Canadian Studies Program}, March 29, 2021
+    \item 
+    \href{https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science}{"How I Accidentally became Interested in Data Science"} (\textbf{Jae Yeon Kim}), \textit{UC Berkeley D-Lab}, February 24, 2020
+\end{etaremune}
+
+\subsection*{Published Datasets}
+
+\begin{enumerate}
+  \item "Civic Opportunity Datasets for the Study of American Local Politics and Public Policy." (\textbf{Jae Yeon Kim}, Milan de Vries, and Hahrie Han) \textbf{\textit{Nature: Scientific Data}}, 2025 \href{https://doi.org/10.7910/DVN/IRCA7C}{doi:10.7910/DVN/IRCA7C} \href{https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw}{[dashboard]}
+  
+  \item "Validated Names for Experimental Studies on Race and Ethnicity." (Charles Crabtree, \textbf{Jae Yeon Kim}, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) \textbf{\textit{Nature: Scientific Data}}, 2023  \href{https://doi.org/10.7910/DVN/LP4EAR}{doi:10.7910/DVN/LP4EAR} \href{https://jaeyk.github.io/select_validated_names/?fbclid=IwY2xjawP0TOlleHRuA2FlbQIxMABicmlkETFIdVoxek4zU0p0SFhzZXZJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHm5a4tquUfrPydahJ1v3TX_HaLK7plqgT8aORGfWqVaYnyGDFhm4VdK0zE_h_aem_KusnJygN3w44M1hksHeycw}{[dashboard]}
+\end{enumerate}
+
+\subsection*{Grants and Fellowships} 
+\begin{itemize}
+    \item External 
+\begin{etaremune}
+
+\item \textbf{\href{https://fas.org/accelerator/source-code/}{Policy Sprint: Developing a Policy Agenda for Fair and Trustworthy AI Futures}}, Federation of American Scientists and Kapor Foundation, 2025-2026: \$2,000
+
+\item \textbf{\href{https://apsanet.org/membership/organized-sections/organized-section-6-volcker-junior-scholar-research-grant/}{Paul Volcker Junior Scholar Research Grant Award}}, American Political Science Association, 2025: \$3,000
+\item \textbf{Global Research Agenda Grant}, National Research Foundation of Korea, 2024-2026: USD \$572,390 / 750,000,000 KRW (with Woo Chang Kang, Byoungha Lee, Inbok Rhee, Sunkyung Park, John S. Kuk, and Donghyun Danny Choi) 
+\item \textbf{Democracy Visiting Fellowship}, Ash Center for Democratic Governance and Innovation, Harvard Kennedy School, August 2020-July 2021 (declined due to logistics)
+\item \textbf{Post-SICSS (Summer Institute in Computational Social Science) Grant}, Russell Sage Foundation, 2019: \$6,462 (with Jaren Haber and Nick Camp)
+\item \textbf{\href{http://www.kfas.or.kr/ScholarShip/ScholarShip0201.aspx?pCulture=en}{Korea Foundation for Advanced Studies Doctoral Fellowship}} (in tuition scholarship and stipend), 2014-2019: \$220,033 (1 of 2 in political science selected nationwide)
+\item \textbf{\href{https://blum.ucr.edu/research/fellows}{California Poverty and Socioeconomic Inequality Fellows Program}}, Blum Initiative for Global and Regional Poverty Studies, 2017: \$500
+
+\end{etaremune}
+
+\item Internal 
+\begin{etaremune}
+\item \textbf{Faculty Start-Up Funds}, College of Arts and Sciences, UNC--Chapel Hill, 2026-2029
+\item \textbf{Medium Grants for Faculty Research Projects}, Weatherhead Center for International Affairs, Harvard University, 2024: \$25,000 (with Taeku Lee and Aram Hur)
+\item \textbf{Faculty Research Grant}, SNF Agora Institute, Johns Hopkins University, 2023-2025
+\item \textbf{Data Science Fellowship}, D-Lab, UC Berkeley, Fall 2020-Spring 2021 
+\item \textbf{Data Science Education Fellowship}, D-Lab and Data Science Education Program, College of Computing, Data Science, and Society, UC Berkeley, Spring 2020 
+\item \textbf{American Democracy Project Fellowship}, Center for the Study of American Democracy, UC Berkeley, 2019-2020: \$3,000
+\item \textbf{Doctoral Completion Fellowship}, Graduate Division and Department of Political Science, UC Berkeley, 2019-2020: \$28,000
+\item \textbf{Department Fellowship}, Department of Political Science, UC Berkeley, 2014-2019
+\item \textbf{\href{https://www.law.berkeley.edu/research/center-for-the-study-of-law-society/bels-fellows/}{Berkeley Empirical Legal Studies Graduate Fellowship}}, Center for the Study of Law and Society, UC Berkeley, 2017: \$1,000
+\item \textbf{\href{https://canada.berkeley.edu/edward-hildebrand-research-fellowship}{Edward Hildebrand Research Fellowship}}, Canadian Studies Program, UC Berkeley, 2017: \$3,500
+\item \textbf{Graduate Fellowship in Korean Studies}, Institute of East Asian Studies, UC Berkeley, 2016-2018: \$15,350
+\item \textbf{Graduate Fellowship in East Asian Studies}, Institute of East Asian Studies, UC Berkeley, 2015: \$3,480
+\item \textbf{Academic Excellence Scholarships}, Korea University: 2004 Fall; 2006 Spring; 2007 Spring
+\end{etaremune}
+\end{itemize}
+
+\subsection*{Invited Talks}
+{\small Bracketed number indicates total invited talks in that year.}
+
+\begin{talkyear}{2026}
+  \talk{University of Toronto (The Future of Quantitative Social Science in an Age of Artificial Intelligence)}
+  \talk{Yonsei University (Institute for AI and Social Innovation, scheduled)}
+  \talk{UNC (Data-Driven EnviroLab, scheduled)}
+\end{talkyear}.
+
+\begin{talkyear}{2025}
+  \talk{Korea University (Institute of Governmental Studies)}
+  \talk{New York City Mayor's Office of Economic Opportunity (NYC Opportunity)}
+  \talk{NYU (PRIISM Seminar)}
+  \talk{Johns Hopkins SAIS (Tech and Innovation Speaker Series)}
+  \talk{Equity and Access in Algorithms, Mechanisms, and Optimization (Inequality Working Group Seminar)}
+  \talk{Korea Foundation for Advanced Studies (AI \& Humanity: Where We Are, and Where We Are Heading)}
+  \talk{Seoul National University (Department of Political Science and International Relations)}
+  \talk{Yonsei University and the Embassy of Finland, Seoul (Korea-Finland Innovation Forum 2025)}
+  \talk{Korea University (Department of Political Science and International Relations)}
+  \talk{KAIST (KIXLAB)}
+  \talk{Yonsei University (Department of Political Science and International Relations)}
+  \talk{Korea University (Graduate School of International Studies)}
+  \talk{Brown University (Watson Institute GPD module guest lecture)}
+  \talk{APSA Civic Engagement Section (Civic Café podcast)}
+  \talk{Johns Hopkins (Natural Language Processing for Computational Social Science guest lecture)}
+  \talk{Northwestern (American Politics Workshop)}
+\end{talkyear}
+
+\begin{talkyear}{2024}
+  \talk{Johns Hopkins (Democracy by the Numbers guest lecture)}
+  \talk{Yale (American Politics and Public Policy Workshop)}
+  \talk{Michigan State University (American Politics Workshop)}
+  \talk{UC Berkeley (Identity and Politics Workshop)}
+  \talk{UC Berkeley (Summer Institute in Migration Research Methods)}
+  \talk{CU-Boulder (Information Science Seminar)}
+  \talk{University of Toronto (Toronto Data Workshop)}
+  \talk{Korean Summer Workshop on Causal Inference}
+  \talk{Johns Hopkins (SNF Agora P3 Lab)}
+  \talk{University of Minnesota (Political Methodology Colloquium)}
+  \talk{UCLA (Race, Ethnicity, Politics, and Society Lab)}
+  \talk{University of Washington (Data Science Seminar)}
+\end{talkyear}
+
+\begin{talkyear}{2023}
+  \talk{Wesleyan (Challenges to Democracy in East Asia guest lecture)}
+  \talk{Stanford (APARC and Korea Foundation for Advanced Studies joint conference)}
+  \talk{Florida Atlantic University (Summer Institute in Computational Social Science -- South Florida)}
+\end{talkyear}
+
+\begin{talkyear}{2022}
+  \talk{University of British Columbia (Scope Conditions podcast)}
+  \talk{National University of Singapore (Department of Communication and New Media)}
+  \talk{National University of Singapore (Digital Communications and Analytics guest lecture)}
+  \talk{Seoul National University (Institute of Social Science)}
+  \talk{KAIST (Science, Technology, and Society guest lecture)}
+  \talk{Korea University (Office of Information Technology and Service)}
+  \talk{Korea University (Introduction to Political Science guest lecture)}
+  \talk{Sungkyunkwan University (Methods of Economic Data Analysis guest lecture)}
+  \talk{Ewha Womans University (Graduate School of International Studies)}
+\end{talkyear}
+
+\begin{talkyear}{2021}
+  \talk{Stanford (New Research from the \textit{Journal of Online Trust and Safety}'s Inaugural Issue)}
+  \talk{University of Minnesota (American Politics Colloquium)}
+  \talk{Cornell (Democratic Vulnerabilities and Pathways for Reform Conference)}
+  \talk{Johns Hopkins (SNF Agora Institute P3 Lab)}
+  \talk{Dartmouth (Experiments in Politics guest lecture)}
+  \talk{KAIST (Data Analysis for Green Business and Policy guest lecture)}
+\end{talkyear}
+
+\begin{talkyear}{2020}
+  \talk{UC Berkeley (Computational Social Science Forum)}
+\end{talkyear}
+
+\subsection*{Conference and Workshop Presentations}
+
+* APSA = American Political Science Association, MPSA = Midwest Political Science Association,  
+WPSA = Western Political Science Association, APPAM = Association for Public Policy Analysis and Management,  
+PMRC = Public Management Research Conference, IC2S2 = International Conference on Computational Social Science
+
+\vspace{0.5em}
+
+\textbf{2026}
+Duke Conference on Society-Centered AI
+
+\vspace{0.5em}
+
+\textbf{2025}  
+APPAM, APSA, PMRC, Code for America Summit, Annual Research Conference on the American Political Economy
+
+\vspace{0.5em}
+
+\textbf{2024}  
+APPAM, APSA, PMRC, WPSA, Annual Research Conference on the American Political Economy, IC2S2 (tutorials), Stanford PhD Pathways (Data Science Across Industries Panel), Politics of Race, Immigration, and Ethnicity Consortium (Claremont Graduate University and UC Riverside)
+
+\vspace{0.5em}
+
+\textbf{2023}  
+APSA
+
+\vspace{0.5em}
+
+\textbf{2022}  
+APSA, MPSA, International Conference on Method Triangulation (Academia Sinica and TIGCR)
+
+\vspace{0.5em}
+
+\textbf{2021}  
+APSA, Asian Online Political Science Seminar Series, Junior Law and Politics Research Community, D-Lab Data Science Fellows Talk (UC Berkeley)
+
+\vspace{0.5em}
+
+\textbf{2020}  
+APSA, Joint Political Computational Social Science and Political Networks Conference, ICWSM Data Challenge Workshop, Summer Institute in Computational Social Science Festival, Data Science Showcase (UC Berkeley), D-Lab Data Science Fellows Talk (UC Berkeley)
+
+\vspace{0.5em}
+
+\textbf{2019}  
+MPSA, WPSA, Research Workshop in American Politics (UC Berkeley), Political Behavior Workshop (UC Berkeley), Canadian Studies Colloquium (UC Berkeley), Text Analysis Across Domains, Data Science Showcase (UC Berkeley)
+
+\vspace{0.5em}
+
+\textbf{2018}  
+APSA, MPSA, WPSA, Politics of Race, Immigration, and Ethnicity Consortium, Association for Asian Studies
+
+\vspace{0.5em}
+
+\textbf{2017}  
+MPSA, California Poverty and Socioeconomic Inequality Fellows Symposium
+
+\subsection*{Teaching}
+
+\begin{itemize}
+  \item \textbf{UNC Chapel Hill}
+  \begin{itemize}
+    \item \href{https://jaeyk.github.io/politics_of_public_policy/}{Politics of Public Policy}
+    \begin{itemize}
+      \item Doctoral Seminar --- Fall 2026 (scheduled)
+      \item Undergraduate Honors Seminar --- Spring 2026
+    \end{itemize}
+  \end{itemize}
+
+  \item \textbf{KDI School of Public Policy and Management}
+  \begin{itemize}
+    \item \textit{Master of Data Science}
+    \begin{itemize}
+      \item \href{https://github.com/KDIS-DSPPM/r-fundamentals}{R Fundamentals for Public Policy} --- Spring 2022, Fall 2022 [2x]
+      \item \href{https://github.com/KDIS-DSPPM/data-visualization}{Data Visualization and Communication} --- Summer 2022
+    \end{itemize}
+  \end{itemize}
+
+  \item \textbf{UC Berkeley}
+  \begin{itemize}
+    \item \textit{Graduate Seminars (doctoral and master's)}
+    \begin{itemize}
+      \item \href{https://github.com/PS239T/spring_2021}{Computational Tools for Social Science Research} --- Instructor of Record (Spring 2019, Spring 2021 [2x]); GSI with Rachel Bernhard (Fall 2016)
+      \item \href{https://github.com/jaeyk/digital_data_collection_workshop}{Research Workshop on Computational Tools for Digital Data Collection} (with Nick Kuipers) --- Fall 2020
+    \end{itemize}
+
+    \item \textit{Undergraduate Lectures}
+    \begin{itemize}
+      \item Introduction to Empirical Analysis and Quantitative Methods (with Laura Stoker) --- Fall 2016
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Pre-conference Tutorials}
+\begin{itemize}
+  \item \href{https://ic2s2-2024.org/tutorials}{International Conference on Computational Social Science (IC2S2)} --- July 2024  
+  Training Computational Social Science PhDs for Academic and Non-academic Careers
+  \item \href{https://github.com/jaeyk/sicss-howard-r-boot-camp}{Summer Institute in Computational Social Science (Howard R Bootcamp)} --- June 2021
+\end{itemize}
+
+\subsection*{Workshops}
+\begin{itemize}
+  \item \textbf{Doing Social Science with Generative AI}, Korea University --- Summer 2025
+  \item \textbf{Summer Institute in Migration Research Methods}, UC Berkeley --- Summer 2024
+  \item \textbf{\href{https://github.com/jaeyk/summer_digital_data_collection}{Digital Data Collection}}, Korea University --- Summer 2022
+  \item \textbf{UC Berkeley D-Lab} --- 2020--2021  
+  Topics: Fairness and Bias in Machine Learning; Machine Learning in R; SQL for R Users; R Package Development; Functional Programming in R; Advanced Data Wrangling in R; Reproducible Project Management in R; R Fundamentals
+\end{itemize}
+
+\subsection*{Advising}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{5.0cm}@{\hspace{0.8em}}>{\raggedright\arraybackslash}p{7.8cm}@{}}
+\textbf{Institution} & \textbf{Name (Field of Study)} & \textbf{Current Position} \\
+Harvard (2023) & Alison Yuhan Yao (MS in Data Science) & Data Scientist at Microsoft Azure\\
+KDI School (2022) & Lesego B. Otlhabanye (MDP) & Program Manager at African Leadership Academy \\
+UC Berkeley (2018--21) & Noor-Ul-Ain Ali (Data Science BA) & Research Associate at UCSF \\
+& Riya Shrestha (Molecular Environmental Biology BA) & Analyst at Beta Hat \\
+& Carlos Ortiz (Data Science BA) & Data Scientist at Snap Inc.\\
+& Sarah Nam (Immunology \& Data Science BA) & Senior Associate at Cancer Navigator \\
+& Sarah Santiago (Applied Mathematics BA) & Associate at Goldman Sachs \\
+& Vivek Datta (Computer Science \& Data Science BA) & Software Engineer II at Amazon Search\\
+& Angela Yip (Political Science BA) & Assistant Commonwealth's Attorney, Pittsylvania County \\
+& Brenna Uyeda (Environmental Economics and Policy BA) & Project Engineer at FTG Builders \\
+& Gregory Eng (Political Science \& History BA) & Associate at Hunton Andrews Kurth LLP \\
+& Jenny Feng (Political Economy \& Education BA) & J.D. Candidate, UC Davis School of Law \\
+\end{tabular}
+\normalsize
+
+\subsection*{Service}
+
+\textbf{Professional Service}
+
+\begin{itemize}
+
+  \item \textbf{Founder and Advisor}  
+  \begin{itemize}
+    \item Co-founder, \href{https://sites.google.com/view/d4g-roundtables?usp=sharing}{Data for Good Roundtables}, 2025--
+    \item Advisory Council, \href{https://sicss.io/people}{Summer Institute in Computational Social Science}, 2023--
+    \item Member, 
+    Procurement Committee, \href{https://www.sanjoseca.gov/your-government/departments-offices/information-technology/artificial-intelligence-inventory/govai-coalition/committees-working-groups}{GovAI Coalition}, 2025- 
+  \end{itemize}
+
+  \item \textbf{Summer Institutes}  
+  \begin{itemize}
+    \item \href{https://sicss.io/2022/korea/}{First Summer Institute in Computational Social Science in South Korea}, hosted by KAIST and KDI School, 2021--2022 
+    \item \href{https://compsocialscience.github.io/summer-institute/2020/bay_area/}{First Summer Institute in Computational Social Science in the San Francisco Bay Area}, hosted by UC Berkeley and Stanford, 2019--2020
+  \end{itemize}
+
+\item \textbf{Task Force}: Member, APSA Task Force on Artificial Intelligence, 2025-2026
+  
+  \item \textbf{Award Committees}  
+  \begin{itemize}
+    \item Member, Best Dissertation Award Committee, APSA American Political Economy Section, 2025
+    \item Member, Emerging Scholar Award Committee, APSA Civic Engagement Section, 2025
+  \end{itemize}
+
+  \item \textbf{Conference and Program Roles}  
+  \begin{itemize}
+    \item Co-organizer (with Elizabeth Bell), Reducing the Psychological Burden of Administrative Processes, APPAM, 2025
+    \item Co-organizer (with Shuping Wang), AI in the Public Sector: Cross-National Evidence on Bureaucracy, Procurement, and Organizational Change, APPAM, 2025
+    \item Co-organizer (with Alexander Hertel-Fernandez), The Politics of Administrative Burden, APSA, 2025 
+    \item Program Committee, 8th International Conference on Computational Social Science (IC2S2), University of Chicago, 2022
+  \end{itemize}
+
+  \item \textbf{Career Panels}: UNC-Chapel Hill (MPP Social, scheduled), USC (Political Science Virtual Job Market Event, 2025); UC Berkeley (Political Science Virtual Job Market Event, 2025); Stanford (PhD Pathways: Data Science Across Industries, 2024)
+  \item \textbf{Grant Reviewer} 
+  
+  \begin{itemize}
+    \item National Science Foundation (NSF) Human Networks and Data Science - Core Research Panel, 2026 
+    \item Time-sharing Experiments for the Social Sciences (TESS), 2022
+  \end{itemize}
+
+\item \textbf{Peer Reviewer}  
+
+\begin{itemize}
+  \item \textit{Conference:} ACM FAccT 2025  
+  \item \textit{Journals:}
+Proceedings of the National Academy of Sciences, Journal of Policy Analysis and Management [2x], American Political Science Review [5x], American Journal of Political Science, Journal of Public Administration Research and Theory, British Journal of Political Science, Political Analysis, Political Communication [2x], Political Behavior [6x], Political Research Quarterly [4x], Politics, Groups, and Identities [2x], Journal of Urban Affairs, Public Administration, PLOS ONE [2x], Journal of Open Source Software [2x]
+
+\end{itemize}
+
+\end{itemize}
+
+\vspace{0.5em}
+
+\textbf{Departmental Service}
+
+\begin{itemize}
+  
+  \item \textbf{KDI School of Public Policy and Management (2022)}: Curriculum Committee (Member), Research Project Deliberation Committee (Member), Internal Review Board (Member), KDIS Frontiers in Data and Policy Talk Series (Founder and Coordinator)
+
+  \item \textbf{UC Berkeley (2015--2021)}: \href{https://github.com/ottokienitz/hssw?tab=readme-ov-file}{Berkeley Historical Social Science Workshop} (Co-founder and Coordinator, Fall 2019), Faculty Hiring Committee (Graduate Student Representative, Fall 2016, Fall 2018), Diversity Action Committee (Member, Spring 2015--Spring 2021)
+  
+  \end{itemize}
+
+
+\subsection*{Additional Training}
+
+\begin{itemize}
+    \item Summer Institute in Migration Research Methods (SIMRM), UC Berkeley, 2024 
+    \item The Consortium on the American Political Economy (CAPE) Summer Academy, UC Berkeley, 2024 
+    \item Summer Institute in Computational Social Science (SICSS), Princeton University, 2019 
+    \item Inter-university Consortium for Political and Social Research (ICPSR), University of Michigan, 2017
+\end{itemize}
+
+\subsection*{Languages}
+
+\begin{itemize}
+    \item Proficient in R, Python, SQL, Command Line (UNIX/Linux), HTML, CSS, JavaScript, Git/GitHub
+    \item Fluent in English and Korean (native); intermediate proficiency in Japanese (studied as a second language in high school and college); and declining intermediate knowledge of Mandarin Chinese (studied in college and during exchange programs)
+\end{itemize}
+
+\subsection*{Others}
+
+\begin{itemize}
+    \item Citizenship: Republic of Korea
+    \item Permanent Residency Status: U.S.
+\end{itemize}
+
+\pagebreak
+
+\subsection*{References}
+
+\parbox[t]{0.475\textwidth}{\raggedright % First block
+{\href{https://polisci.berkeley.edu/people/person/paul-pierson}{Paul Pierson (Co-Chair)}}\\
+John Gross Distinguished Professor, Political Science\\
+Director of the Berkeley Economy and Society Initiative\\
+University of California, Berkeley \\ % Referee company
+%510-643-6424 \\
+\href{mailto:pierson@berkeley.edu}{pierson@berkeley.edu} % Referee contact information
+}
+\hspace{0.04\textwidth}
+\parbox[t]{0.475\textwidth}{\raggedright % Second block
+\href{https://gov.harvard.edu/people/taeku-lee}{Taeku Lee (Co-Chair)}\\
+Bae Family Professor of Government\\ 
+Faculty Dean of Dunster House\\
+Harvard University\\ % Referee company
+%617-495-4249\\
+\href{mailto:taekulee@fas.harvard.edu}{taekulee@fas.harvard.edu}
+}
+\par\vspace{0.9\baselineskip}
+
+\parbox[t]{0.475\textwidth}{\raggedright % Third block
+{\href{https://politicalscience.jhu.edu/directory/hahrie-han/}{Hahrie Han (Postdoctoral Advisor)}}\\
+Stavros Niarchos Foundation Professor, Political Science\\ 
+Director of the SNF Agora Institute\\
+Johns Hopkins University\\ % Referee company
+%410-516-0592 \\
+\href{mailto:hahrie@jhu.edu}{hahrie@jhu.edu} % Referee contact information
+}
+\hspace{0.04\textwidth}
+\parbox[t]{0.475\textwidth}{\raggedright % Fourth block
+{\href{https://fordschool.umich.edu/faculty/don-moynihan}{Donald Moynihan (Applied Policy Research)}}\\
+J. Ira and Nicki Harris Family Professor\\ 
+Ford School of Public Policy\\
+University of Michigan\\ % Referee company
+%202-687-5932 \\
+\href{mailto:dmoyn@umich.edu}{dmoyn@umich.edu} % Referee contact information
+}
+\par\vspace{0.9\baselineskip}
+\parbox[t]{0.475\textwidth}{\raggedright % Fifth block
+{\href{https://sociology.berkeley.edu/faculty/irene-bloemraad}{Irene Bloemraad (Dissertation Committee)}}\\
+Professor, Department of Political Science and Sociology\\
+President's Excellence Chair in Global Migration\\ 
+Co-Director, Centre for Migration Studies\\
+University of British Columbia\\
+\href{mailto:i.bloemraad@ubc.ca}{i.bloemraad@ubc.ca} % Referee contact information
+}
+\hspace{0.04\textwidth}
+\parbox[t]{0.475\textwidth}{\raggedright % Sixth block
+{\href{https://live-sas-www-polisci.pantheon.sas.upenn.edu/people/standing-faculty/daniel-hopkins}{Daniel Hopkins (Data Science / Research Methods)}}\\
+Julie and Martin Franklin Presidential Professor\\
+Political Science, Communication, Information Science\\ % Referee company
+%847-491-7450\\
+University of Pennsylvania\\
+\href{mailto:danhop@sas.upenn.edu}{danhop@sas.upenn.edu} % Referee contact information
+}
+
+\begin{center}
+Last updated: \today    
+\end{center}
+
+\end{document}
