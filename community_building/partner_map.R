@@ -25,7 +25,7 @@ category_colors <- c(
   "State & local government" = "#d95f02",
   "Civic tech" = "#7570b3",
   "Philanthropy" = "#e7298a",
-  "Advocacy & voter mobilization" = "#66a61e",
+  "Advocacy organizations" = "#66a61e",
   "Think tanks" = "#e6ab02"
 )
 
@@ -41,9 +41,11 @@ partners <- tibble::tribble(
   "New Mexico Human Services Department", "State & local government", "Santa Fe", "NM", 35.6870, -105.9378,
   "New York State Department of Health", "State & local government", "Albany", "NY", 42.6526, -73.7562,
   "Code for America", "Civic tech", "San Francisco", "CA", 37.7749, -122.4194,
-  "Asian Americans Advancing Justice–Atlanta", "Advocacy & voter mobilization", "Atlanta", "GA", 33.7490, -84.3880,
-  "Asian American Advocacy Fund", "Advocacy & voter mobilization", "Atlanta", "GA", 33.7490, -84.3880,
-  "Students Learn Students Vote Coalition", "Advocacy & voter mobilization", "Washington", "DC", 38.9072, -77.0369,
+  "Asian Americans Advancing Justice–Atlanta", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
+  "Asian American Advocacy Fund", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
+  "Student Basic Needs Coalition", "Advocacy organizations", "Knoxville", "TN", 35.9606, -83.9207,
+  "Students Learn Students Vote Coalition", "Advocacy organizations", "Washington", "DC", 38.9072, -77.0369,
+  "Kapor Foundation", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369
 )
@@ -70,7 +72,7 @@ partners <- partners %>%
       "State & local government",
       "Civic tech",
       "Philanthropy",
-      "Advocacy & voter mobilization",
+      "Advocacy organizations",
       "Think tanks"
     )),
     label_bg = unname(category_colors[as.character(category)]),

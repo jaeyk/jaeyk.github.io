@@ -2,13 +2,13 @@
 
 The following list includes partners from ongoing and completed projects, as well as organizations I have consulted with. All names are presented in alphabetical order.
 
-### Government agencies 
+### Government agencies
 
-#### Federal government 
+#### Federal government
 
 1. Office of Evaluation Sciences (OES)
 
-#### State and local government 
+#### State and local government
 
 1. Boulder County, Housing and Human Services
 1. California Department of Social Services (CDSS)
@@ -19,22 +19,24 @@ The following list includes partners from ongoing and completed projects, as wel
 1. New Mexico Human Services Department (NMHSD)
 1. New York State Department of Health (NYSDOH)
 
-### Nonprofit organizations 
+### Nonprofit organizations
 
-#### Think tanks 
+#### Think tanks
 
 1. Federation of American Scientists
 
-#### Civic tech organizations 
+#### Civic tech organizations
 
 1. Code for America
 
-#### Advocacy and voter mobilization organizations 
+#### Advocacy organizations
 
+1. Student Basic Needs Coalition
+1. Students Learn Students Vote Coalition
 1. Asian American Advancing Justice-Atlanta
 1. Asian American Advocacy Fund
-1. Students Learn Students Vote Coalition
 
-#### Philanthropy 
+#### Philanthropy
 
-1. Hispanics in Philanthropy 
+1. Kapor Foundation
+1. Hispanics in Philanthropy
