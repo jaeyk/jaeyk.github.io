@@ -10,7 +10,7 @@ The following list includes partners from ongoing and completed projects, as wel
 
 #### State and local government
 
-1. Boulder County, Housing and Human Services
+1. Boulder County, Housing and Human Services (HHS)
 1. California Department of Social Services (CDSS)
 1. City of San José, Office of Communications
 1. Colorado Department of Health Care Policy and Financing (HCPF)
