@@ -15,7 +15,7 @@ title: "Community building"
 
 ##### Applied Project Partners
 
-![Applied project partners map (updated February 23, 2026).](../misc/partner_map.png){fig-align="center" width="100%"}
+![Applied project partners map (updated March 6, 2026).](../misc/partner_map.png?v=20260306-1){fig-align="center" width="100%"}
 
 I maintain an active network of [collaborators](coauthors.qmd) and [project partner organizations](partners.md), and work closely with several research labs across institutions:
 

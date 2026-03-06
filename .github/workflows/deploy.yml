@@ -33,6 +33,13 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Cache-bust Community map images
+        run: |
+          FILE="docs/community_building/community.html"
+          SHA="${GITHUB_SHA::7}"
+          sed -i -E "s#(../misc/partner_map\.png)(\?v=[^\"<]*)?#\1?v=${SHA}#g" "$FILE"
+          sed -i -E "s#(../misc/coauthor_map[^\"<]*\.png)(\?v=[^\"<]*)?#\1?v=${SHA}#g" "$FILE"
+
       - name: Disable Jekyll
         run: touch docs/.nojekyll
 
