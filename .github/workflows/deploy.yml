@@ -33,6 +33,15 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Ensure Community map assets are published
+        run: |
+          mkdir -p docs/misc
+          cp -f misc/partner_map.png docs/misc/partner_map.png
+          shopt -s nullglob
+          for f in misc/coauthor_map*.png; do
+            cp -f "$f" docs/misc/
+          done
+
       - name: Cache-bust Community map images
         run: |
           FILE="docs/community_building/community.html"
