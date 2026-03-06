@@ -242,6 +242,36 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
 
+  function todayKeyLocal() {
+    var now = new Date();
+    var y = now.getFullYear();
+    var m = String(now.getMonth() + 1).padStart(2, '0');
+    var d = String(now.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + d;
+  }
+
+  function eventStartKey(startValue) {
+    if (typeof startValue === 'string') {
+      return startValue.slice(0, 10);
+    }
+    var dt = new Date(startValue);
+    if (isNaN(dt.getTime())) return null;
+    var y = dt.getFullYear();
+    var m = String(dt.getMonth() + 1).padStart(2, '0');
+    var d = String(dt.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + d;
+  }
+
+  // Keep past/future styling correct without requiring a manual re-render.
+  var todayKey = todayKeyLocal();
+  events.forEach(function (event) {
+    var startKey = eventStartKey(event.start);
+    var isPast = !!startKey && startKey < todayKey;
+    if (!event.extendedProps) event.extendedProps = {};
+    event.extendedProps.past = isPast;
+    event.color = isPast ? '#aaaaaa' : event.color;
+  });
+
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: preferredView(),
     height: 'auto',
