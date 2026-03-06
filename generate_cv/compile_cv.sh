@@ -3,6 +3,7 @@ set -euo pipefail
 
 # Compile a TeX CV and write a canonical output file name used by the site.
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 TEX_FILE="${1:-cv_Kim.tex}"
 TEX_PATH="${SCRIPT_DIR}/${TEX_FILE}"
 
@@ -14,7 +15,7 @@ fi
 BASE_NAME="$(basename "${TEX_FILE}" .tex)"
 PDF_PATH="${SCRIPT_DIR}/${BASE_NAME}.pdf"
 OUTPUT_NAME="CV_Jae_Yeon_Kim.pdf"
-OUTPUT_PATH="${SCRIPT_DIR}/${OUTPUT_NAME}"
+OUTPUT_PATH="${REPO_DIR}/${OUTPUT_NAME}"
 
 if command -v latexmk >/dev/null 2>&1; then
   latexmk -pdf -interaction=nonstopmode -halt-on-error "${TEX_PATH}"
@@ -44,17 +45,17 @@ else
   echo "Warning: site update script not found or not executable: ${SITE_UPDATE_SCRIPT}" >&2
 fi
 
-if git -C "${SCRIPT_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  git -C "${SCRIPT_DIR}" add "${TEX_FILE}" "${BASE_NAME}.pdf" "${OUTPUT_NAME}"
+if git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  git -C "${REPO_DIR}" add "generate_cv/${TEX_FILE}" "generate_cv/${BASE_NAME}.pdf" "${OUTPUT_NAME}"
 
-  if git -C "${SCRIPT_DIR}" diff --cached --quiet; then
+  if git -C "${REPO_DIR}" diff --cached --quiet; then
     echo "No changes to commit."
   else
     COMMIT_MSG="${COMMIT_MSG:-Update CV ($(date '+%Y-%m-%d %H:%M:%S'))}"
-    git -C "${SCRIPT_DIR}" commit -m "${COMMIT_MSG}"
-    git -C "${SCRIPT_DIR}" push
+    git -C "${REPO_DIR}" commit -m "${COMMIT_MSG}"
+    git -C "${REPO_DIR}" push
     echo "Done: committed and pushed changes."
   fi
 else
-  echo "Warning: ${SCRIPT_DIR} is not a git repository; skipping commit/push." >&2
+  echo "Warning: ${REPO_DIR} is not a git repository; skipping commit/push." >&2
 fi

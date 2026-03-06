@@ -5,18 +5,17 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${SCRIPT_DIR}" || { echo "Directory not found. Aborting."; exit 1; }
 
-CV_SOURCE="${SCRIPT_DIR}/generate_cv/CV_Jae_Yeon_Kim.pdf"
 CV_TARGET="${SCRIPT_DIR}/CV_Jae_Yeon_Kim.pdf"
 
-if [ ! -f "${CV_SOURCE}" ]; then
-    echo "CV source not found at ${CV_SOURCE}. Aborting."
-    exit 1
-fi
-
-# Only copy CV if it changed
-if ! cmp -s "${CV_SOURCE}" "${CV_TARGET}" 2>/dev/null; then
-    echo "Copying CV from ${CV_SOURCE}..."
-    cp "${CV_SOURCE}" "${CV_TARGET}"
+if [ ! -f "${CV_TARGET}" ]; then
+    COMPILE_SCRIPT="${SCRIPT_DIR}/generate_cv/compile_cv.sh"
+    echo "CV target not found at ${CV_TARGET}."
+    if [ ! -x "${COMPILE_SCRIPT}" ]; then
+        echo "Compile script not found or not executable: ${COMPILE_SCRIPT}. Aborting."
+        exit 1
+    fi
+    echo "Running ${COMPILE_SCRIPT} to generate CV..."
+    exec "${COMPILE_SCRIPT}"
 fi
 
 # Regenerate map assets used in community page if scripts exist
