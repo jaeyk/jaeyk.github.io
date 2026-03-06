@@ -6,16 +6,29 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${SCRIPT_DIR}" || { echo "Directory not found. Aborting."; exit 1; }
 
 CV_TARGET="${SCRIPT_DIR}/CV_Jae_Yeon_Kim.pdf"
+CV_SOURCE="${SCRIPT_DIR}/generate_cv/cv_Kim.tex"
+COMPILE_SCRIPT="${SCRIPT_DIR}/generate_cv/compile_cv.sh"
+FORCE_CV="${1:-}"
 
+NEED_CV_COMPILE=0
 if [ ! -f "${CV_TARGET}" ]; then
-    COMPILE_SCRIPT="${SCRIPT_DIR}/generate_cv/compile_cv.sh"
+    NEED_CV_COMPILE=1
     echo "CV target not found at ${CV_TARGET}."
+elif [ "${FORCE_CV}" = "--force-cv" ]; then
+    NEED_CV_COMPILE=1
+    echo "Forcing CV rebuild (--force-cv)."
+elif [ -f "${CV_SOURCE}" ] && [ "${CV_SOURCE}" -nt "${CV_TARGET}" ]; then
+    NEED_CV_COMPILE=1
+    echo "CV source is newer than target; rebuilding CV."
+fi
+
+if [ "${NEED_CV_COMPILE}" -eq 1 ]; then
     if [ ! -x "${COMPILE_SCRIPT}" ]; then
         echo "Compile script not found or not executable: ${COMPILE_SCRIPT}. Aborting."
         exit 1
     fi
     echo "Running ${COMPILE_SCRIPT} to generate CV..."
-    exec "${COMPILE_SCRIPT}"
+    UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 "${COMPILE_SCRIPT}"
 fi
 
 # Regenerate map assets used in community page if scripts exist

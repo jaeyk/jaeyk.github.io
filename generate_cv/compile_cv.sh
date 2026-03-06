@@ -38,14 +38,18 @@ cp "${PDF_PATH}" "${OUTPUT_PATH}"
 echo "Compiled PDF written to: ${OUTPUT_PATH}"
 
 SITE_UPDATE_SCRIPT="${SCRIPT_DIR}/../update_site.sh"
-if [[ -x "${SITE_UPDATE_SCRIPT}" ]]; then
+if [[ "${UPDATE_SITE_SKIP_RECURSE:-0}" == "1" ]]; then
+  echo "Skipping site update recursion (UPDATE_SITE_SKIP_RECURSE=1)."
+elif [[ -x "${SITE_UPDATE_SCRIPT}" ]]; then
   "${SITE_UPDATE_SCRIPT}"
   echo "Done: ran ${SITE_UPDATE_SCRIPT}"
 else
   echo "Warning: site update script not found or not executable: ${SITE_UPDATE_SCRIPT}" >&2
 fi
 
-if git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+if [[ "${UPDATE_SITE_SKIP_GIT:-0}" == "1" ]]; then
+  echo "Skipping git commit/push from compile script (UPDATE_SITE_SKIP_GIT=1)."
+elif git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git -C "${REPO_DIR}" add "generate_cv/${TEX_FILE}" "generate_cv/${BASE_NAME}.pdf" "${OUTPUT_NAME}"
 
   if git -C "${REPO_DIR}" diff --cached --quiet; then
