@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at the 2025 APSA    
     
-1.  "Threat, Opportunity, and Linked Fate: How Political Cues Condition the Effects of Perceived Discrimination." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+1.  "Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarityn." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
 
     -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
 
