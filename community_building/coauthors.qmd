@@ -25,6 +25,7 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Cameron Guage          | Dartmouth                               | Undergraduate RA   |
 | Carlos Ortiz           | UC Berkeley                             | Undergraduate RA   |
 | Charles Crabtree       | Monash University (Melbourne, Australia) |                    |
+| Christian Caballero    | UC Berkeley                             |                    |
 | Daegon Cho             | Yonsei University                       |                    |
 | Diane Coyle            | Cambridge                               |                    |
 | DG Kim                 | Harvard                                 |                    |
