@@ -26,7 +26,7 @@ jobs:
 
       - name: Install R packages for Quarto render
         run: |
-          Rscript -e "install.packages(c('dplyr','readr','knitr'), repos='https://cloud.r-project.org')"
+          Rscript -e "install.packages(c('dplyr','readr','knitr','rmarkdown'), repos='https://cloud.r-project.org')"
 
       - name: Install SASS
         run: npm install -g sass
