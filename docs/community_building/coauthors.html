@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -329,41 +294,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <section id="coauthors-in-alphabetical-order" class="level2">
 <h2 class="anchored" data-anchor-id="coauthors-in-alphabetical-order">Coauthors in alphabetical order</h2>
 <p>The following table includes the coauthors of ongoing and finished projects. <em>Indicates undergraduate RA coauthors.</em></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dplyr' was built under R version 4.5.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'knitr' was built under R version 4.5.2</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'readr' was built under R version 4.5.2</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>coauthors <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"coauthors.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p><strong>Total coauthors:</strong> 63</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(coauthors, <span class="at">format =</span> <span class="st">"pipe"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
+<p><strong>Total coauthors:</strong> 63 (updated 2026-03-09 )</p>
+<table class="caption-top table">
 <colgroup>
 <col style="width: 31%">
 <col style="width: 48%">
@@ -380,32 +312,32 @@ Attaching package: 'dplyr'</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Akshay Mangla</td>
 <td style="text-align: left;">Oxford</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Alan Yan</td>
 <td style="text-align: left;">UC Berkeley</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Andrew Thompson</td>
 <td style="text-align: left;">UPenn</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Aniket Kesari</td>
 <td style="text-align: left;">Fordham Law</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Aram Hur</td>
 <td style="text-align: left;">Tufts</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Baobao Zhang</td>
 <td style="text-align: left;">Syracuse</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Cameron Guage</td>
@@ -420,197 +352,197 @@ Attaching package: 'dplyr'</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Charles Crabtree</td>
 <td style="text-align: left;">Monash University (Melbourne, Australia)</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Christian Caballero</td>
 <td style="text-align: left;">UC Berkeley</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">DG Kim</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Daegon Cho</td>
 <td style="text-align: left;">Yonsei University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Devorah Manekin</td>
 <td style="text-align: left;">Hebrew University of Jerusalem</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Diane Coyle</td>
 <td style="text-align: left;">Cambridge</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Donald Moynihan</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Efrén Pérez</td>
 <td style="text-align: left;">UCLA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Emily Lin</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Eric Giannella</td>
 <td style="text-align: left;">Georgetown</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Florian Keppeler</td>
 <td style="text-align: left;">Aarhus University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Hahrie Han</td>
 <td style="text-align: left;">Johns Hopkins</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Jaeung Sim</td>
 <td style="text-align: left;">University of Connecticut</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">James Druckman</td>
 <td style="text-align: left;">Rochester</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Jaren Habers</td>
 <td style="text-align: left;">US Government Accountability Office</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Jennifer Oser</td>
 <td style="text-align: left;">Ben-Gurion University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Jennifer Wu</td>
 <td style="text-align: left;">SUNY Binghamton</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Joan Cho</td>
 <td style="text-align: left;">Wesleyan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Johannes Himmelreich</td>
 <td style="text-align: left;">Syracuse</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">John Holbein</td>
 <td style="text-align: left;">Virginia</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Kasheena Rogbeer</td>
 <td style="text-align: left;">UCLA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Kerry Rodden</td>
 <td style="text-align: left;">Code for America</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Lior Sheffer</td>
 <td style="text-align: left;">Tel Aviv University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Liz McKenna</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Maggie Hughes</td>
 <td style="text-align: left;">MIT</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Margaret Ng</td>
 <td style="text-align: left;">UIUC</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Marshall Ganz</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Michael Gaddis</td>
 <td style="text-align: left;">UCLA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Michael Shepherd</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Mila Gascó-Hernandez</td>
 <td style="text-align: left;">SUNY Albany</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Milan de Vries</td>
 <td style="text-align: left;">Johns Hopkins</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Nari Yoo</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Nathan Chan</td>
 <td style="text-align: left;">Loyola Marymount University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Nathaniel Olin</td>
 <td style="text-align: left;">Code for America</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Nicholas Camp</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Pamela Herd</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Paris Boo</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Rebecca Johnson</td>
 <td style="text-align: left;">Georgetown</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Reuel Rogers</td>
 <td style="text-align: left;">Northwestern</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Sarah Nam</td>
@@ -625,52 +557,52 @@ Attaching package: 'dplyr'</code></pre>
 <tr class="even">
 <td style="text-align: left;">Sebastian Jilke</td>
 <td style="text-align: left;">Georgetown</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Sono Shah</td>
 <td style="text-align: left;">Pew Research</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Sophie Jacobson</td>
 <td style="text-align: left;">Columbia</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Taeku Lee</td>
 <td style="text-align: left;">Harvard</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tamar Mitts</td>
 <td style="text-align: left;">Columbia</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Taylor Brown</td>
 <td style="text-align: left;">Meta</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tiago Ventura</td>
 <td style="text-align: left;">Georgetown</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Tina Law</td>
 <td style="text-align: left;">UC Davis</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tyler Simko</td>
 <td style="text-align: left;">Michigan</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Valentina Gonzalez-Rostani</td>
 <td style="text-align: left;">University of Southern California</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Vivek Datta</td>
@@ -680,7 +612,7 @@ Attaching package: 'dplyr'</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Vivien Leung</td>
 <td style="text-align: left;">Santa Clara University</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">William Marx</td>
@@ -690,12 +622,10 @@ Attaching package: 'dplyr'</code></pre>
 <tr class="odd">
 <td style="text-align: left;">Zhaowen Guo</td>
 <td style="text-align: left;">Georgetown</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 
 
 </section>

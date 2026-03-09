@@ -13,17 +13,12 @@ format:
 
 The following table includes the coauthors of ongoing and finished projects. *Indicates undergraduate RA coauthors.*
 
-```{r}
-library(dplyr)
-library(knitr)
-library(readr)
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+coauthors <- readr::read_csv("coauthors.csv", show_col_types = FALSE) |>
+  dplyr::mutate(Note = dplyr::coalesce(Note, "")) |>
+  dplyr::arrange(Name)
 
-coauthors <- read_csv("coauthors.csv", show_col_types = FALSE) |>
-  arrange(Name)
-```
-
-**Total coauthors:** `r nrow(coauthors)`
-
-```{r}
-kable(coauthors, format = "pipe")
+updated_date <- format(Sys.Date(), "%Y-%m-%d")
+cat("**Total coauthors:**", nrow(coauthors), "(updated", updated_date, ")\n\n")
+knitr::kable(coauthors, format = "pipe")
 ```
