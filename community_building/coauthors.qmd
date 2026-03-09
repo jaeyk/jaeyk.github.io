@@ -60,6 +60,7 @@ The following table includes the coauthors of ongoing and finished projects. *In
 | Nicholas Camp          | Michigan                                |                    |
 | Nathaniel Olin         | Code for America                        |                    |
 | Pamela Herd            | Michigan                                |                    |
+| Paris Boo              | Harvard        |                    |
 | Rebecca Johnson        | Georgetown                              |                    |
 | Reuel Rogers           | Northwestern                            |                    |
 | Sarah Nam              | UC Berkeley                             | Undergraduate RA   |
