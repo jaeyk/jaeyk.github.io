@@ -42,9 +42,16 @@ fi
 echo "Regenerating calendar events..."
 Rscript ./generate_calendar.R
 
-# Render community page so docs and local links stay in sync
-echo "Rendering community page..."
+# Ensure data source for coauthors page exists before rendering
+if [ ! -f ./community_building/coauthors.csv ]; then
+    echo "Missing required data file: ./community_building/coauthors.csv. Aborting."
+    exit 1
+fi
+
+# Render community pages so docs and local links stay in sync
+echo "Rendering community pages..."
 quarto render ./community_building/community.qmd
+quarto render ./community_building/coauthors.qmd
 
 # Prevent pushing a build with missing static map assets
 if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then

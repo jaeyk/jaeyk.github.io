@@ -29,6 +29,22 @@ read_coauthors_table <- function(path) {
   parsed
 }
 
+read_coauthors_data <- function(csv_path, qmd_path) {
+  if (file.exists(csv_path)) {
+    return(
+      readr::read_csv(csv_path, show_col_types = FALSE) %>%
+        transmute(
+          name = str_squish(Name %||% ""),
+          affiliation = str_squish(Affiliation %||% ""),
+          note = str_squish(Note %||% "")
+        ) %>%
+        filter(name != "", affiliation != "")
+    )
+  }
+
+  read_coauthors_table(qmd_path)
+}
+
 # Coordinates are institutional centroids used for map visualization.
 affiliation_coordinates <- tribble(
   ~affiliation, ~latitude, ~longitude,
@@ -72,7 +88,10 @@ affiliation_coordinates <- tribble(
   "Yonsei University", 37.5658, 126.9386
 )
 
-coauthors <- read_coauthors_table(here("community_building", "coauthors.qmd"))
+coauthors <- read_coauthors_data(
+  csv_path = here("community_building", "coauthors.csv"),
+  qmd_path = here("community_building", "coauthors.qmd")
+)
 
 collaborators_count <- coauthors %>%
   count(affiliation, name = "n")

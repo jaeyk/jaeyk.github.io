@@ -30,6 +30,10 @@ jobs:
       - name: Clean previous build
         run: rm -rf docs
 
+      - name: Validate community data assets
+        run: |
+          test -f community_building/coauthors.csv || { echo "Missing community_building/coauthors.csv"; exit 1; }
+
       - name: Render site
         run: quarto render
 
