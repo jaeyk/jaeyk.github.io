@@ -38,5 +38,6 @@ The following list includes partners from ongoing and completed projects, as wel
 
 #### Philanthropy
 
+1. Hopelab 
 1. Kapor Foundation
 1. Hispanics in Philanthropy

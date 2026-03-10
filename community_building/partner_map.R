@@ -47,6 +47,7 @@ partners <- tibble::tribble(
   "Students Learn Students Vote Coalition", "Advocacy organizations", "Washington", "DC", 38.9072, -77.0369,
   "Kapor Foundation", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
+  "Hopelab", "Philanthropy", "San Francisco", "CA", 37.7749, -122.4194,
   "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369
 )
 
@@ -64,7 +65,8 @@ partners <- partners %>%
     ),
     label_nudge_y = if_else(
       org == "Massachusetts Department of Early Education and Care",
-      1.1, 0
+      1.1,
+      if_else(org == "Hopelab", 1.0, 0)
     ),
     # Set category order for legend
     category = factor(category, levels = c(
