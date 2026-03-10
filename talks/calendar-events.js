@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Data-Driven EnviroLab",
       start: "2026-03-09",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://datadrivenlab.org/",
-      extendedProps: { org: "UNC Chapel Hill", host: "Angel Hsu", place: "Chapel Hill, NC, USA", type: "badge-talk", past: false }
+      extendedProps: { org: "UNC Chapel Hill", host: "Angel Hsu", place: "Chapel Hill, NC, USA", type: "badge-talk", past: true }
     },
     {
       title: "Source Code AI Trust & Fairness Co-Creation Forum",
