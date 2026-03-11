@@ -39,5 +39,5 @@ Below is a collection of essays I’ve written over the years, organized into th
 
 <figure style="text-align: center;">
   <img src="../misc/combined_row_image.jpg" alt="Family photo (Berkeley, '21)." style="width: 80%; max-width: 500px; height: auto;" />
-  <figcaption>I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane. The photo was taken on the day I received my Ph.D. from Berkeley, and the two images on the right are Jane’s paintings.</figcaption>
+  <figcaption>I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane. The photo was taken on the day I graduated from Berkeley with a Ph.D. in Political Science, and the two images on the right are Jane’s paintings. Sunmin and I do not paint, but we do love painting (and arts in general), to the extent that we chose our honeymoon destinations based on the museums we wanted to visit.</figcaption>
 </figure>
