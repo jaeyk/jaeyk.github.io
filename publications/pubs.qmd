@@ -349,6 +349,11 @@ document.addEventListener("DOMContentLoaded", function () {
 1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
+
+1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
+
+    -   Presented at the 2025 APSA
+    
 :::
 
 </details>
@@ -358,10 +363,6 @@ document.addEventListener("DOMContentLoaded", function () {
 <summary><strong>Work in progress</strong></summary>
 
 ::: {.reversed-list}
-
-1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
-
-    -   Presented at the 2025 APSA
 
 1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
