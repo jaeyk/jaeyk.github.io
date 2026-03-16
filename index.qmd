@@ -132,6 +132,7 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 | Date          | Type        | Event                                                                 | Place                   |
 |---------------|-------------|-----------------------------------------------------------------------|-------------------------|
 | June 16–18    | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, Utah, USA    |
+| May 21        | [Talk]{.badge .badge-talk}        | AI and Social Sciences, Department of Political Science and International Relations, Korea University, hosted by Woo Chang Kang (*scheduled*) | Seoul, South Korea |
 | May 1         | [Talk]{.badge .badge-talk}        | The Future of Quantitative Social Science in an Age of Artificial Intelligenc, University of Toronto, hosted by Rohan Alexander (*scheduled*) | Toronto, Canada |
 | April 10      | [Talk]{.badge .badge-talk}        | MPP Social, hosted by Douglas MacKay (*scheduled*) | Chapel Hill, NC, USA |
 | April 9      | [Panel]{.badge .badge-panel} | [National Science Foundation (NSF) Human Networks and Data Science](https://www.nsf.gov/funding/opportunities/hnds-human-networks-data-science) – Core Research Panel (*scheduled*) | Virtual |

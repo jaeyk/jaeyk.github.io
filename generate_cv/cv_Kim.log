@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 MAR 2026 07:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAR 2026 07:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,9 +503,9 @@ pdftex.map}{/Users/jaeyeonkim/Library/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}]
 
 [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 632.
+(Font)              <9> on input line 633.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 632.
+(Font)              <6> on input line 633.
 
 
 [9]
@@ -525,7 +525,7 @@ Package rerunfilecheck Info: File `cv_Kim.out' has not changed.
 Here is how much of TeX's memory you used:
  12557 strings out of 474662
  200705 string characters out of 5751110
- 653143 words of memory out of 5000000
+ 653234 words of memory out of 5000000
  35242 multiletter control sequences out of 15000+600000
  598563 words of font info for 145 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -535,7 +535,7 @@ Here is how much of TeX's memory you used:
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (12 pages, 278631 bytes).
+m.pdf (12 pages, 278683 bytes).
 PDF statistics:
  252 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams
