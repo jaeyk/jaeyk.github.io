@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "AI and Social Sciences",
       start: "2026-05-21",
       color: "#388e3c",
-      extendedProps: { org: "Department of Political Science and International Relations, Korea University", host: "Woo Chang Kang", place: "Seoul, South Korea", type: "badge-talk", past: false }
+      extendedProps: { org: "Department of Political Science and International Relations, Korea University", host: "Woo Chang Kang", place: "Virtual", type: "badge-talk", past: false }
     },
     {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
