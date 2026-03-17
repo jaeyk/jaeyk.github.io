@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "", place: "Park City, Utah, USA", type: "badge-participant", past: false }
     },
     {
+      title: "AI and Social Sciences",
+      start: "2026-05-21",
+      color: "#388e3c",
+      extendedProps: { org: "Department of Political Science and International Relations, Korea University", host: "Woo Chang Kang", place: "Virtual", type: "badge-talk", past: false }
+    },
+    {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
       start: "2026-05-01",
       color: "#388e3c",
@@ -55,16 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Data-Driven EnviroLab",
       start: "2026-03-09",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://datadrivenlab.org/",
-      extendedProps: { org: "UNC Chapel Hill", host: "Angel Hsu", place: "Chapel Hill, NC, USA", type: "badge-talk", past: false }
+      extendedProps: { org: "UNC Chapel Hill", host: "Angel Hsu", place: "Chapel Hill, NC, USA", type: "badge-talk", past: true }
     },
     {
       title: "Source Code AI Trust & Fairness Co-Creation Forum",
       start: "2026-03-04",
-      color: "#6d4c41",
+      color: "#aaaaaa",
       url: "https://fas.org/",
-      extendedProps: { org: "Federation of American Scientists", host: "", place: "Washington, DC, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "Federation of American Scientists", host: "", place: "Washington, DC, USA", type: "badge-participant", past: true }
     },
     {
       title: "Conference on Society-Centered AI",
@@ -242,15 +248,46 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
 
+  function todayKeyLocal() {
+    var now = new Date();
+    var y = now.getFullYear();
+    var m = String(now.getMonth() + 1).padStart(2, '0');
+    var d = String(now.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + d;
+  }
+
+  function eventStartKey(startValue) {
+    if (typeof startValue === 'string') {
+      return startValue.slice(0, 10);
+    }
+    var dt = new Date(startValue);
+    if (isNaN(dt.getTime())) return null;
+    var y = dt.getFullYear();
+    var m = String(dt.getMonth() + 1).padStart(2, '0');
+    var d = String(dt.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + d;
+  }
+
+  // Recompute past/future styling in the browser so builds do not go stale.
+  var todayKey = todayKeyLocal();
+  events.forEach(function (event) {
+    var startKey = eventStartKey(event.start);
+    var isPast = !!startKey && startKey < todayKey;
+    if (!event.extendedProps) event.extendedProps = {};
+    event.extendedProps.past = isPast;
+    event.color = isPast ? '#aaaaaa' : event.color;
+  });
+
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: preferredView(),
     height: 'auto',
     headerToolbar: {
-      left: 'prev,next today',
+      left: 'prev,next',
       center: 'title',
       right: ''
     },
     events: events,
+    displayEventTime: false,
     eventContent: function (arg) {
       var props  = arg.event.extendedProps;
       var isPast = props.past;
@@ -317,3 +354,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   calendar.render();
 });
+
