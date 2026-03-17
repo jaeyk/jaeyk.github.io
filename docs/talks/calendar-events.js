@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "2026 Veritas Scholars Summit",
       start: "2026-06-16",
+      end: "2026-06-19",
       color: "#6d4c41",
       url: "https://summit.veritas.org/scholars-summit",
       extendedProps: { org: "", host: "", place: "Park City, Utah, USA", type: "badge-participant", past: false }
@@ -94,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Association for Public Policy Analysis and Management (APPAM)",
       start: "2025-11-12",
+      end: "2025-11-17",
       color: "#aaaaaa",
       url: "https://convention2.allacademic.com/one/appam/appam25/index.php?PHPSESSID=e5dt3n10fmreghdqs05jjdnik2&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim",
       extendedProps: { org: "", host: "", place: "Seattle, WA, USA", type: "badge-panel", past: true }
@@ -101,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "The Gov AI Coalition Summit",
       start: "2025-11-05",
+      end: "2025-11-08",
       color: "#aaaaaa",
       url: "https://events.govtech.com/GovAI-Coalition-Summit",
       extendedProps: { org: "", host: "GovAI Coalition and the City of San José", place: "San José Convention Center, CA, USA", type: "badge-participant", past: true }
@@ -127,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Better Government Lab Research Treat",
       start: "2025-10-16",
+      end: "2025-10-18",
       color: "#aaaaaa",
       extendedProps: { org: "Georgetown McCourt School of Public Policy", host: "", place: "Washington, DC, USA", type: "badge-participant", past: true }
     },
@@ -147,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "American Political Science Association (APSA)",
       start: "2025-09-11",
+      end: "2025-09-15",
       color: "#aaaaaa",
       url: "https://convention2.allacademic.com/one/apsa/apsa25/index.php?PHPSESSID=q29h0kdgp0ikoco6u9j6vdt6t9&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim",
       extendedProps: { org: "", host: "", place: "Vancouver, Canada", type: "badge-panel", past: true }
@@ -154,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "New Faculty Orientation",
       start: "2025-08-14",
+      end: "2025-08-17",
       color: "#aaaaaa",
       extendedProps: { org: "", host: "UNC-CH", place: "Chapel Hill, NC, USA", type: "badge-participant", past: true }
     },
@@ -167,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Korea Foundation for Advanced Studies",
       start: "2025-06-27",
+      end: "2025-06-29",
       color: "#aaaaaa",
       extendedProps: { org: "", host: "", place: "Seoul, South Korea", type: "badge-talk", past: true }
     },
@@ -215,6 +222,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Code for America Summit",
       start: "2025-05-29",
+      end: "2025-05-31",
       color: "#aaaaaa",
       url: "https://summit.codeforamerica.org/agenda/",
       extendedProps: { org: "", host: "", place: "Washington, DC, USA", type: "badge-panel", past: true }
@@ -235,6 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Organizing Forum",
       start: "2025-05-15",
+      end: "2025-05-17",
       color: "#aaaaaa",
       url: "https://organizing.substack.com/",
       extendedProps: { org: "", host: "USC Equity Research Institute", place: "Los Angeles, CA, USA", type: "badge-participant", past: true }
@@ -268,11 +277,26 @@ document.addEventListener('DOMContentLoaded', function () {
     return y + '-' + m + '-' + d;
   }
 
+  function eventEndKey(event) {
+    if (event.end) {
+      var endKey = eventStartKey(event.end);
+      if (!endKey) return null;
+      var dt = new Date(endKey + 'T00:00:00');
+      if (isNaN(dt.getTime())) return endKey;
+      dt.setDate(dt.getDate() - 1);
+      var y = dt.getFullYear();
+      var m = String(dt.getMonth() + 1).padStart(2, '0');
+      var d = String(dt.getDate()).padStart(2, '0');
+      return y + '-' + m + '-' + d;
+    }
+    return eventStartKey(event.start);
+  }
+
   // Recompute past/future styling in the browser so builds do not go stale.
   var todayKey = todayKeyLocal();
   events.forEach(function (event) {
-    var startKey = eventStartKey(event.start);
-    var isPast = !!startKey && startKey < todayKey;
+    var endKey = eventEndKey(event);
+    var isPast = !!endKey && endKey < todayKey;
     if (!event.extendedProps) event.extendedProps = {};
     event.extendedProps.past = isPast;
     event.color = isPast ? '#aaaaaa' : event.color;

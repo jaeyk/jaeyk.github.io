@@ -18,15 +18,48 @@ month_map <- c(
   Sep=9, Oct=10, Nov=11, Dec=12
 )
 
-parse_event_date <- function(date_str, year) {
-  # Remove range end: "June 27–28" -> "June 27", "Nov 12-16" -> "Nov 12"
-  date_str <- trimws(sub(paste0("[", "\u2013", "\u2014", "\\-]\\s*\\d+\\s*$"), "", date_str, perl = TRUE))
-  parts <- strsplit(trimws(date_str), "\\s+")[[1]]
-  if (length(parts) < 2) return(NA_character_)
-  month_num <- month_map[parts[1]]
-  day       <- suppressWarnings(as.integer(gsub("[^0-9]", "", parts[2])))
-  if (is.na(month_num) || is.na(day)) return(NA_character_)
-  format(as.Date(sprintf("%d-%02d-%02d", year, month_num, day)), "%Y-%m-%d")
+build_date <- function(year, month_token, day_token) {
+  month_num <- month_map[[month_token]]
+  day <- suppressWarnings(as.integer(gsub("[^0-9]", "", day_token)))
+  if (is.null(month_num) || is.na(month_num) || is.na(day)) return(NA_character_)
+  format(as.Date(sprintf("%d-%02d-%02d", year, as.integer(month_num), day)), "%Y-%m-%d")
+}
+
+parse_event_dates <- function(date_str, year) {
+  date_str <- trimws(gsub("\\s+", " ", date_str, perl = TRUE))
+  if (!nzchar(date_str)) return(NULL)
+
+  range_parts <- strsplit(date_str, paste0("\\s*[", "\u2013", "\u2014", "\\-]\\s*"), perl = TRUE)[[1]]
+  range_parts <- trimws(range_parts)
+  if (length(range_parts) == 0) return(NULL)
+
+  start_tokens <- strsplit(range_parts[1], "\\s+")[[1]]
+  if (length(start_tokens) < 2) return(NULL)
+  start <- build_date(year, start_tokens[1], start_tokens[2])
+  if (is.na(start)) return(NULL)
+
+  end_inclusive <- start
+  if (length(range_parts) > 1 && nzchar(range_parts[2])) {
+    end_tokens <- strsplit(range_parts[2], "\\s+")[[1]]
+    if (length(end_tokens) >= 2) {
+      end_candidate <- build_date(year, end_tokens[1], end_tokens[2])
+    } else {
+      end_candidate <- build_date(year, start_tokens[1], end_tokens[1])
+    }
+    if (!is.na(end_candidate)) {
+      end_inclusive <- end_candidate
+    }
+  }
+
+  start_date <- as.Date(start)
+  end_date <- as.Date(end_inclusive)
+  if (end_date < start_date) return(NULL)
+
+  list(
+    start = format(start_date, "%Y-%m-%d"),
+    end = if (end_date > start_date) format(end_date + 1, "%Y-%m-%d") else NA_character_,
+    end_inclusive = format(end_date, "%Y-%m-%d")
+  )
 }
 
 # Badge types to include and their future colors (Material 700-series — readable with white text)
@@ -92,11 +125,13 @@ for (line in lines) {
     if (nchar(org) == 0) org <- NA_character_
   }
 
-  start <- parse_event_date(date_raw, current_year)
-  if (is.na(start)) next
+  date_info <- parse_event_dates(date_raw, current_year)
+  if (is.null(date_info)) next
 
   events[[length(events) + 1]] <- list(
-    start      = start,
+    start      = date_info$start,
+    end        = date_info$end,
+    end_inclusive = date_info$end_inclusive,
     title      = title,
     org        = org,
     host       = host,
@@ -116,16 +151,18 @@ safe_js <- function(s) {
 }
 
 js_objects <- vapply(events, function(e) {
-  is_past      <- e$start < today
+  comparison_end <- if (!is.na(e$end)) e$end else format(as.Date(e$start) + 1, "%Y-%m-%d")
+  is_past      <- comparison_end <= today
   future_color <- badge_colors[e$event_type]
   color        <- if (is_past) "#aaaaaa" else future_color
   url_ln       <- if (!is.na(e$url)) sprintf('      url: "%s",\n', safe_js(e$url)) else ""
+  end_ln       <- if (!is.na(e$end)) sprintf('      end: "%s",\n', e$end) else ""
   org_val      <- if (!is.na(e$org))  safe_js(e$org)  else ""
   host_val     <- if (!is.na(e$host)) safe_js(e$host) else ""
 
   sprintf(
-    '    {\n      title: "%s",\n      start: "%s",\n      color: "%s",\n%s      extendedProps: { org: "%s", host: "%s", place: "%s", type: "%s", past: %s }\n    }',
-    safe_js(e$title), e$start, color, url_ln,
+    '    {\n      title: "%s",\n      start: "%s",\n%s      color: "%s",\n%s      extendedProps: { org: "%s", host: "%s", place: "%s", type: "%s", past: %s }\n    }',
+    safe_js(e$title), e$start, end_ln, color, url_ln,
     org_val, host_val, safe_js(e$place), safe_js(e$event_type), tolower(is_past)
   )
 }, character(1))
@@ -171,11 +208,26 @@ document.addEventListener(\'DOMContentLoaded\', function () {
     return y + \'-\' + m + \'-\' + d;
   }
 
+  function eventEndKey(event) {
+    if (event.end) {
+      var endKey = eventStartKey(event.end);
+      if (!endKey) return null;
+      var dt = new Date(endKey + \'T00:00:00\');
+      if (isNaN(dt.getTime())) return endKey;
+      dt.setDate(dt.getDate() - 1);
+      var y = dt.getFullYear();
+      var m = String(dt.getMonth() + 1).padStart(2, \'0\');
+      var d = String(dt.getDate()).padStart(2, \'0\');
+      return y + \'-\' + m + \'-\' + d;
+    }
+    return eventStartKey(event.start);
+  }
+
   // Recompute past/future styling in the browser so builds do not go stale.
   var todayKey = todayKeyLocal();
   events.forEach(function (event) {
-    var startKey = eventStartKey(event.start);
-    var isPast = !!startKey && startKey < todayKey;
+    var endKey = eventEndKey(event);
+    var isPast = !!endKey && endKey < todayKey;
     if (!event.extendedProps) event.extendedProps = {};
     event.extendedProps.past = isPast;
     event.color = isPast ? \'#aaaaaa\' : event.color;
