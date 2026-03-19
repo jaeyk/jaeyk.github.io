@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
       start: "2026-05-01",
       color: "#388e3c",
-      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, Canada", type: "badge-talk", past: false }
+      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, ON, Canada", type: "badge-talk", past: false }
     },
     {
       title: "MPP Social",
