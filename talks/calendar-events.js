@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       end: "2026-06-19",
       color: "#6d4c41",
       url: "https://summit.veritas.org/scholars-summit",
-      extendedProps: { org: "", host: "", place: "Park City, Utah, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "", host: "", place: "Park City, UT, USA", type: "badge-participant", past: false }
     },
     {
       title: "AI and Social Sciences",
