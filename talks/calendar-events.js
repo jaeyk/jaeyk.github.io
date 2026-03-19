@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "Economic Democracy Initiative Workshop",
       start: "2026-03-17",
       color: "#aaaaaa",
-      extendedProps: { org: "Columbia University", host: "Alexander Hertel-Fernandez", place: "Virtual", type: "badge-discussant", past: true }
+      extendedProps: { org: "Columbia University", host: "Alexander Hertel-Fernandez and Sophie Jacobson", place: "Virtual", type: "badge-discussant", past: true }
     },
     {
       title: "Data-Driven EnviroLab",
