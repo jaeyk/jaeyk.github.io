@@ -50,7 +50,7 @@ By centering policy implementation, local political economy, and classification 
 
 Why can we shop with one click but still struggle to access basic public services?
 
-*We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data, data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, citizen-centered digital state. From improving public service interfaces to training the next generation of civic data scientists, this book reimagines public data not just as infrastructure, but as a foundation for stronger democracy and better government.
+*We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data, data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, human-centered digital state.
 
 **Impact & Recognition**
 
@@ -76,7 +76,7 @@ Why can we shop with one click but still struggle to access basic public service
 
 Why do so many students enter college full of ambition, only to graduate with more confusion than clarity?
 
-*How to Use University* is a practical guide to navigating college with purpose. Organized around four core themes, exploring college, learning, career, and life, it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a **launchpad** for discovering interests, initiating projects, and building community. It emphasizes a key idea: unlocking even one small opportunity, especially a self-initiated project, can set off a **cycle of opportunities** that grows over time. With its structured framework, practical strategies, and ethos of public leadership, this book has become a trusted companion for Korean college students, exposing a **hidden transcript** centered on agency, initiative, and continuous learning.
+*How to Use University* is a practical guide to navigating college with purpose. Organized around four core themes, exploring college, learning, career, and life, it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a **launchpad** for discovering interests, initiating projects, and building community. It emphasizes a key idea: unlocking even one small opportunity, especially a self-initiated project, can set off a **cycle of opportunities** that grows over time.
 
 **Impact & Recognition**
 
