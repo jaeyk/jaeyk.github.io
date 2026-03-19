@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var events = [
     {
+      title: "American Political Science Association (APSA) Annual Meeting",
+      start: "2026-09-03",
+      end: "2026-09-07",
+      color: "#1976d2",
+      url: "https://connect.apsanet.org/apsa2026/",
+      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
+    },
+    {
       title: "2026 Veritas Scholars Summit",
       start: "2026-06-16",
       end: "2026-06-19",
