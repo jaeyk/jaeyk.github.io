@@ -46,11 +46,11 @@ By centering policy implementation, local political economy, and classification 
 <details>
 <summary><strong>Books</strong></summary>
 
-2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://civicdatascience.wordpress.com/)\]
+2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://sites.google.com/view/civicdata/home)\]
 
 Why can we shop with one click but still struggle to access basic public services?
 
-*We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data—data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, citizen-centered digital state. From improving public service interfaces to training the next generation of civic data scientists, this book reimagines public data not just as infrastructure, but as a foundation for stronger democracy and better government.
+*We Need Civic Data* is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data, data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, citizen-centered digital state. From improving public service interfaces to training the next generation of civic data scientists, this book reimagines public data not just as infrastructure, but as a foundation for stronger democracy and better government.
 
 **Impact & Recognition**
 
@@ -88,8 +88,15 @@ Why do so many students enter college full of ambition, only to graduate with mo
 
 - A fully revised **second edition is forthcoming in 2026.**
 
-::: center
-![](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788984074392.jpg){fig-align="center" width="30%"}
-:::
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:2rem; flex-wrap:wrap; margin:1.5rem 0;">
+  <figure style="margin:0; text-align:center; width:260px;">
+    <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788984074392.jpg" alt="First edition cover" style="display:block; margin:0 auto; max-width:100%; height:360px; object-fit:contain;">
+    <figcaption>First edition cover</figcaption>
+  </figure>
+  <figure style="margin:0; text-align:center; width:260px;">
+    <img src="../misc/learn2career.png" alt="Second edition cover" style="display:block; margin:0 auto; max-width:100%; height:360px; object-fit:contain;">
+    <figcaption>Second edition cover</figcaption>
+  </figure>
+</div>
 
 </details>
