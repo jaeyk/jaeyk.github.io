@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  20 MAR 2026 08:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  20 MAR 2026 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,10 +535,10 @@ Here is how much of TeX's memory you used:
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (12 pages, 278686 bytes).
+m.pdf (12 pages, 278331 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
  20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 
