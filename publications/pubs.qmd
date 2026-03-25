@@ -338,6 +338,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 1.  "AI and the American Contracting State."
 
+    -   Scheduled to present at Yonsei University   
+
 1.  "Plumbing Public Administration: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
     -   Presented at the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference
