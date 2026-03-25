@@ -72,7 +72,7 @@ Why can we shop with one click but still struggle to access basic public service
 ::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}
 
-1. ["How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career (in Korean)"](https://ebook-product.kyobobook.co.kr/dig/epd/sam/E000003198821) (Sejong Books, 2nd ed. forthcoming) [[book substack](https://learn2career.substack.com/)]
+1. ["How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career (in Korean)"](https://www.yes24.com/product/goods/183755163) (Sejong Books, 2nd ed) [[book substack](https://learn2career.substack.com/)]
 
 Why do so many students enter college full of ambition, only to graduate with more confusion than clarity?
 
@@ -86,7 +86,7 @@ Why do so many students enter college full of ambition, only to graduate with mo
 
 - Frequently used in student development seminars and campus book clubs
 
-- A fully revised **second edition is forthcoming in 2026.**
+- A fully revised **second edition was published in 2026.**
 
 <div style="display:flex; justify-content:center; align-items:flex-start; gap:2rem; flex-wrap:wrap; margin:1.5rem 0;">
   <figure style="margin:0; text-align:center; width:260px;">
