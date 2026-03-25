@@ -304,14 +304,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [1.  "Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is." (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)]: #
     
-1.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
-
-    -   Presented at the 2025 APSA    
-    
-1.  "Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarity." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
-
-    -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
-
 :::
 
 </details>
@@ -353,7 +345,15 @@ document.addEventListener("DOMContentLoaded", function () {
 1.  "Reconstructing Implementation as Politics." (with Akshay Mangla)
 
     -   Presented at the 2025 APSA
+
+1.  ["Race, Violence, and the Effectiveness of Protest."](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, **Jae Yeon Kim**, and Liz McKenna)
+
+    -   Presented at the 2025 APSA    
     
+1.  "Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarity." (**Jae Yeon Kim**, Joan Cho, DG Kim, and Taeku Lee)
+
+    -   Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan
+
 :::
 
 </details>
