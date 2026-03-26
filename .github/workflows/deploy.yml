@@ -10,12 +10,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy-prebuilt:
+  choose-deploy-mode:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
+    outputs:
+      use_prebuilt: ${{ steps.guard.outputs.use_prebuilt }}
 
     steps:
       - name: Checkout repo
@@ -23,13 +22,15 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Verify rendered output is included when source changes
+      - name: Choose deploy mode
+        id: guard
         run: |
           BEFORE_SHA="${{ github.event.before }}"
           AFTER_SHA="${{ github.sha }}"
 
           if [ -z "${BEFORE_SHA}" ] || [ "${BEFORE_SHA}" = "0000000000000000000000000000000000000000" ]; then
-            echo "No comparable previous commit found; skipping rendered-output guard."
+            echo "No comparable previous commit found; using prebuilt docs."
+            echo "use_prebuilt=true" >> "${GITHUB_OUTPUT}"
             exit 0
           fi
 
@@ -37,23 +38,38 @@ jobs:
           echo "Changed files:"
           printf '%s\n' "${CHANGED_FILES}"
 
+          if [ ! -f docs/index.html ]; then
+            echo "docs/index.html is missing; full rebuild required."
+            echo "use_prebuilt=false" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
           if ! printf '%s\n' "${CHANGED_FILES}" | grep -Eq '(^|/)([^/]+\.qmd|[^/]+\.md|_quarto\.yml|styles\.(scss|css)|generate_calendar\.R|community_building/[^/]+\.R|images/|misc/[^/]+\.png|profile(\.jpg|.*\.png)|CV_Jae_Yeon_Kim\.pdf)$'; then
             echo "No site source changes detected; prebuilt deploy is allowed."
+            echo "use_prebuilt=true" >> "${GITHUB_OUTPUT}"
             exit 0
           fi
 
           if printf '%s\n' "${CHANGED_FILES}" | grep -Eq '^(docs/|CV_Jae_Yeon_Kim\.pdf$)'; then
             echo "Rendered output detected alongside source changes."
+            echo "use_prebuilt=true" >> "${GITHUB_OUTPUT}"
             exit 0
           fi
 
-          echo "Site source files changed without committed rendered output in docs/."
-          echo "Run ./update_site.sh locally and push the updated docs/ output."
-          exit 1
+          echo "Site source files changed without committed rendered output in docs/; full rebuild required."
+          echo "use_prebuilt=false" >> "${GITHUB_OUTPUT}"
 
-      - name: Verify prebuilt docs exist
-        run: |
-          test -f docs/index.html || { echo "Missing docs/index.html. Run ./update_site.sh locally before pushing."; exit 1; }
+  deploy-prebuilt:
+    if: github.event_name == 'push' && needs.choose-deploy-mode.outputs.use_prebuilt == 'true'
+    runs-on: ubuntu-latest
+    needs: choose-deploy-mode
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Disable Jekyll
         run: touch docs/.nojekyll
@@ -66,7 +82,82 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
 
-  build-deploy:
+  build-deploy-push:
+    if: github.event_name == 'push' && needs.choose-deploy-mode.outputs.use_prebuilt != 'true'
+    runs-on: ubuntu-latest
+    needs: choose-deploy-mode
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Set up R package cache and dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::dplyr
+            any::readr
+            any::knitr
+            any::rmarkdown
+
+      - name: Install SASS
+        run: npm install -g sass
+
+      - name: Compile SCSS to CSS
+        run: sass styles.scss styles.css
+
+      - name: Clean previous build
+        run: rm -rf docs
+
+      - name: Validate community data assets
+        run: |
+          test -f community_building/coauthors.csv || { echo "Missing community_building/coauthors.csv"; exit 1; }
+
+      - name: Remove expired scheduled event markers
+        run: python3 ./scripts/update_scheduled_events.py --file ./index.qmd
+
+      - name: Render site
+        run: quarto render
+
+      - name: Ensure Community map assets are published
+        run: |
+          mkdir -p docs/misc
+          cp -f misc/partner_map.png docs/misc/partner_map.png
+          shopt -s nullglob
+          for f in misc/coauthor_map*.png; do
+            cp -f "$f" docs/misc/
+          done
+
+      - name: Cache-bust Community map images
+        run: |
+          FILE="docs/community_building/community.html"
+          SHA="${GITHUB_SHA::7}"
+          sed -i -E "s#(../misc/partner_map\.png)(\?v=[^\"<]*)?#\1?v=${SHA}#g" "$FILE"
+          sed -i -E "s#(../misc/coauthor_map[^\"<]*\.png)(\?v=[^\"<]*)?#\1?v=${SHA}#g" "$FILE"
+
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
+
+  build-deploy-manual:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
 
