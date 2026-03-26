@@ -10,7 +10,64 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  deploy-prebuilt:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Verify rendered output is included when source changes
+        run: |
+          BEFORE_SHA="${{ github.event.before }}"
+          AFTER_SHA="${{ github.sha }}"
+
+          if [ -z "${BEFORE_SHA}" ] || [ "${BEFORE_SHA}" = "0000000000000000000000000000000000000000" ]; then
+            echo "No comparable previous commit found; skipping rendered-output guard."
+            exit 0
+          fi
+
+          CHANGED_FILES="$(git diff --name-only "${BEFORE_SHA}" "${AFTER_SHA}")"
+          echo "Changed files:"
+          printf '%s\n' "${CHANGED_FILES}"
+
+          if ! printf '%s\n' "${CHANGED_FILES}" | grep -Eq '(^|/)([^/]+\.qmd|[^/]+\.md|_quarto\.yml|styles\.(scss|css)|generate_calendar\.R|community_building/[^/]+\.R|images/|misc/[^/]+\.png|profile(\.jpg|.*\.png)|CV_Jae_Yeon_Kim\.pdf)$'; then
+            echo "No site source changes detected; prebuilt deploy is allowed."
+            exit 0
+          fi
+
+          if printf '%s\n' "${CHANGED_FILES}" | grep -Eq '^(docs/|CV_Jae_Yeon_Kim\.pdf$)'; then
+            echo "Rendered output detected alongside source changes."
+            exit 0
+          fi
+
+          echo "Site source files changed without committed rendered output in docs/."
+          echo "Run ./update_site.sh locally and push the updated docs/ output."
+          exit 1
+
+      - name: Verify prebuilt docs exist
+        run: |
+          test -f docs/index.html || { echo "Missing docs/index.html. Run ./update_site.sh locally before pushing."; exit 1; }
+
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
+
   build-deploy:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
 
     permissions:
@@ -28,9 +85,14 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
-      - name: Install R packages for Quarto render
-        run: |
-          Rscript -e "install.packages(c('dplyr','readr','knitr','rmarkdown'), repos='https://cloud.r-project.org')"
+      - name: Set up R package cache and dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::dplyr
+            any::readr
+            any::knitr
+            any::rmarkdown
 
       - name: Install SASS
         run: npm install -g sass
@@ -44,6 +106,9 @@ jobs:
       - name: Validate community data assets
         run: |
           test -f community_building/coauthors.csv || { echo "Missing community_building/coauthors.csv"; exit 1; }
+
+      - name: Remove expired scheduled event markers
+        run: python3 ./scripts/update_scheduled_events.py --file ./index.qmd
 
       - name: Render site
         run: quarto render

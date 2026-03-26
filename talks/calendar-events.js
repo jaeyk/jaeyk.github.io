@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Institute for AI and Social Innovation",
       start: "2026-03-25",
-      color: "#388e3c",
-      extendedProps: { org: "Yonsei University", host: "Wha Sun Jho", place: "Virtual", type: "badge-talk", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "Yonsei University", host: "Wha Sun Jho", place: "Virtual", type: "badge-talk", past: true }
     },
     {
       title: "Economic Democracy Initiative Workshop",

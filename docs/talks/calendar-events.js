@@ -15,12 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var events = [
     {
+      title: "American Political Science Association (APSA) Annual Meeting",
+      start: "2026-09-03",
+      end: "2026-09-07",
+      color: "#1976d2",
+      url: "https://connect.apsanet.org/apsa2026/",
+      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
+    },
+    {
       title: "2026 Veritas Scholars Summit",
       start: "2026-06-16",
       end: "2026-06-19",
       color: "#6d4c41",
       url: "https://summit.veritas.org/scholars-summit",
-      extendedProps: { org: "", host: "", place: "Park City, Utah, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "", host: "", place: "Park City, UT, USA", type: "badge-participant", past: false }
     },
     {
       title: "AI and Social Sciences",
@@ -32,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
       start: "2026-05-01",
       color: "#388e3c",
-      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, Canada", type: "badge-talk", past: false }
+      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, ON, Canada", type: "badge-talk", past: false }
     },
     {
       title: "MPP Social",
@@ -50,14 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Institute for AI and Social Innovation",
       start: "2026-03-25",
-      color: "#388e3c",
-      extendedProps: { org: "Yonsei University", host: "Wha Sun Jho", place: "Virtual", type: "badge-talk", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "Yonsei University", host: "Wha Sun Jho", place: "Virtual", type: "badge-talk", past: true }
     },
     {
       title: "Economic Democracy Initiative Workshop",
       start: "2026-03-17",
-      color: "#00796b",
-      extendedProps: { org: "Columbia University", host: "Alexander Hertel-Fernandez", place: "Virtual", type: "badge-discussant", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "Columbia University", host: "Alexander Hertel-Fernandez and Sophie Jacobson", place: "Virtual", type: "badge-discussant", past: true }
     },
     {
       title: "Data-Driven EnviroLab",

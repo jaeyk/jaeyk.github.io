@@ -38,6 +38,10 @@ if [ -f ./community_building/coauthor_map.R ] && [ -f ./community_building/partn
     Rscript ./community_building/partner_map.R
 fi
 
+# Remove scheduled markers for events whose dates have already passed
+echo "Updating expired scheduled event markers..."
+python3 ./scripts/update_scheduled_events.py --file ./index.qmd
+
 # Regenerate calendar events from index.qmd
 echo "Regenerating calendar events..."
 Rscript ./generate_calendar.R
@@ -48,10 +52,9 @@ if [ ! -f ./community_building/coauthors.csv ]; then
     exit 1
 fi
 
-# Render community pages so docs and local links stay in sync
-echo "Rendering community pages..."
-quarto render ./community_building/community.qmd
-quarto render ./community_building/coauthors.qmd
+# Render the full site locally so committed docs are ready to deploy
+echo "Rendering full site locally..."
+quarto render
 
 # Prevent pushing a build with missing static map assets
 if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then
@@ -60,11 +63,11 @@ if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then
 fi
 
 # Stage, commit, and push changes
-# GitHub Actions will handle SCSS compilation and site rendering
+# Pushes now deploy the committed docs directly; workflow_dispatch remains available for a full rebuild
 echo "Committing and pushing changes..."
 git add .
 git commit -m "Update site $(date '+%Y-%m-%d %H:%M')" || echo "No changes to commit"
 git push
 
-echo "GitHub Actions will now build and deploy the site."
-echo "Check status at: https://github.com/jaeyk/jaeyk.github.io/actions"
+echo "GitHub Actions will now deploy the prebuilt docs."
+echo "Use workflow_dispatch in GitHub Actions when you want a full rebuild on GitHub."
