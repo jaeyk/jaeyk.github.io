@@ -1,64 +1,58 @@
-Name,Affiliation,Note
-"Akshay Mangla","Oxford",""
-"Alan Yan","UC Berkeley",""
-"Andrew Thompson","UPenn",""
-"Aniket Kesari","Fordham Law",""
-"Aram Hur","Tufts",""
-"Baobao Zhang","Syracuse",""
-"Cameron Guage","Dartmouth","Undergraduate RA"
-"Carlos Ortiz","UC Berkeley","Undergraduate RA"
-"Charles Crabtree","Monash University",""
-"Christian Caballero","UC Berkeley",""
-"Daegon Cho","Yonsei University",""
-"Diane Coyle","Cambridge",""
-"DG Kim","Harvard",""
-"Donald Moynihan","Michigan",""
-"Devorah Manekin","Hebrew University of Jerusalem",""
-"Efrén Pérez","UCLA",""
-"Eric Giannella","Georgetown",""
-"Emily Lin","Harvard",""
-"Florian Keppeler","Aarhus University",""
-"Hahrie Han","Johns Hopkins",""
-"Kasheena Rogbeer","UCLA",""
-"Kerry Rodden","Code for America",""
-"Jaeung Sim","University of Connecticut",""
-"James Druckman","Rochester",""
-"Jaren Habers","US Government Accountability Office",""
-"Jennifer Oser","Ben-Gurion University",""
-"Jennifer Wu","SUNY Binghamton",""
-"Joan Cho","Wesleyan",""
-"John Holbein","Virginia",""
-"Johannes Himmelreich","Syracuse",""
-"Lior Sheffer","Tel Aviv University",""
-"Liz McKenna","Harvard",""
-"Maggie Hughes","MIT",""
-"Margaret Ng","UIUC",""
-"Marshall Ganz","Harvard",""
-"Michael Gaddis","UCLA",""
-"Michael Shepherd","Michigan",""
-"Milan de Vries","Johns Hopkins",""
-"Mila Gascó-Hernandez","SUNY Albany",""
-"Nathan Chan","Loyola Marymount University",""
-"Nari Yoo","Michigan",""
-"Nicholas Camp","Michigan",""
-"Nathaniel Olin","Code for America",""
-"Pamela Herd","Michigan",""
-"Paris Boo","Harvard",""
-"Rebecca Johnson","Georgetown",""
-"Reuel Rogers","Northwestern",""
-"Sarah Nam","UC Berkeley","Undergraduate RA"
-"Sarah Santiago","UC Berkeley","Undergraduate RA"
-"Sebastian Jilke","Georgetown",""
-"Sono Shah","Pew Research",""
-"Sophie Jacobson","Columbia",""
-"Taeku Lee","Harvard",""
-"Tamar Mitts","Columbia",""
-"Taylor Brown","Meta",""
-"Tiago Ventura","Georgetown",""
-"Tina Law","UC Davis",""
-"Tyler Simko","Michigan",""
-"Valentina Gonzalez-Rostani","University of Southern California",""
-"Vivek Datta","UC Berkeley","Undergraduate RA"
-"Vivien Leung","Santa Clara University",""
-"William Marx","Dartmouth","Undergraduate RA"
-"Zhaowen Guo","Georgetown",""
+Name,Affiliation,Note,Latitude,Longitude
+"Akshay Mangla","Oxford","",51.7548,-1.2544
+"Alan Yan","UC Berkeley","",37.8719,-122.2585
+"Aniket Kesari","Fordham Law","",40.7712,-73.9647
+"Baobao Zhang","Syracuse","",43.0481,-76.1474
+"Cameron Guage","Dartmouth","Undergraduate RA",43.7044,-72.2887
+"Carlos Ortiz","UC Berkeley","Undergraduate RA",37.8719,-122.2585
+"Charles Crabtree","Monash University","",-37.9105,145.1364
+"Christian Caballero","UC Berkeley","",37.8719,-122.2585
+"Daegon Cho","Yonsei University","",37.5658,126.9386
+"Diane Coyle","Cambridge","",52.2053,0.1218
+"DG Kim","Harvard","",42.3770,-71.1167
+"Donald Moynihan","Michigan","",42.2780,-83.7382
+"Devorah Manekin","Hebrew University of Jerusalem","",31.7719,35.1970
+"Efrén Pérez","UCLA","",34.0689,-118.4452
+"Eric Giannella","Georgetown","",38.9076,-77.0723
+"Florian Keppeler","Aarhus University","",56.1710,10.2039
+"Hahrie Han","Johns Hopkins","",39.3299,-76.6205
+"Kasheena Rogbeer","UCLA","",34.0689,-118.4452
+"Kerry Rodden","Code for America","",37.7749,-122.4194
+"Jaeung Sim","University of Connecticut","",41.8084,-72.2495
+"James Druckman","Rochester","",43.1566,-77.6088
+"Jaren Habers","US Government Accountability Office","",38.8895,-77.0091
+"Jennifer Oser","Ben-Gurion University","",31.2614,34.7996
+"Jennifer Wu","SUNY Binghamton","",42.0887,-75.9690
+"Joan Cho","Wesleyan","",41.5584,-72.6565
+"John Holbein","Virginia","",38.0349,-78.5056
+"Johannes Himmelreich","Syracuse","",43.0481,-76.1474
+"Lior Sheffer","Tel Aviv University","",32.1133,34.8044
+"Liz McKenna","Harvard","",42.3770,-71.1167
+"Margaret Ng","UIUC","",40.1020,-88.2272
+"Michael Gaddis","UCLA","",34.0689,-118.4452
+"Milan de Vries","Johns Hopkins","",39.3299,-76.6205
+"Mila Gascó-Hernandez","SUNY Albany","",42.6860,-73.8238
+"Nathan Chan","Loyola Marymount University","",33.9680,-118.4167
+"Nathaniel Olin","Code for America","",37.7749,-122.4194
+"Nari Yoo","Michigan","",42.2780,-83.7382
+"Nicholas Camp","Michigan","",42.2780,-83.7382
+"Pamela Herd","Michigan","",42.2780,-83.7382
+"Paris Boo","Harvard","",42.3770,-71.1167
+"Rebecca Johnson","Georgetown","",38.9076,-77.0723
+"Reuel Rogers","Northwestern","",42.0565,-87.6753
+"Sarah Nam","UC Berkeley","Undergraduate RA",37.8719,-122.2585
+"Sarah Santiago","UC Berkeley","Undergraduate RA",37.8719,-122.2585
+"Sebastian Jilke","Georgetown","",38.9076,-77.0723
+"Sono Shah","Pew Research","",38.9040,-77.0375
+"Sophie Jacobson","Columbia","",40.8075,-73.9626
+"Taeku Lee","Harvard","",42.3770,-71.1167
+"Tamar Mitts","Columbia","",40.8075,-73.9626
+"Taylor Brown","Meta","",37.4848,-122.1484
+"Tiago Ventura","Georgetown","",38.9076,-77.0723
+"Tina Law","UC Davis","",38.5382,-121.7617
+"Tyler Simko","Michigan","",42.2780,-83.7382
+"Valentina Gonzalez-Rostani","University of Southern California","",34.0224,-118.2851
+"Vivek Datta","UC Berkeley","Undergraduate RA",37.8719,-122.2585
+"Vivien Leung","Santa Clara University","",37.3496,-121.9390
+"William Marx","Dartmouth","Undergraduate RA",43.7044,-72.2887
+"Zhaowen Guo","Georgetown","",38.9076,-77.0723

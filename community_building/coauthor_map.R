@@ -31,67 +31,37 @@ read_coauthors_table <- function(path) {
 
 read_coauthors_data <- function(csv_path, qmd_path) {
   if (file.exists(csv_path)) {
+    df <- readr::read_csv(csv_path, show_col_types = FALSE)
+    has_coords <- all(c("Latitude", "Longitude") %in% names(df))
     return(
-      readr::read_csv(csv_path, show_col_types = FALSE) %>%
+      df %>%
         transmute(
           name = str_squish(Name %||% ""),
           affiliation = str_squish(Affiliation %||% ""),
-          note = str_squish(Note %||% "")
+          note = str_squish(Note %||% ""),
+          latitude = if (has_coords) Latitude else NA_real_,
+          longitude = if (has_coords) Longitude else NA_real_
         ) %>%
         filter(name != "", affiliation != "")
     )
   }
 
-  read_coauthors_table(qmd_path)
+  read_coauthors_table(qmd_path) %>%
+    mutate(latitude = NA_real_, longitude = NA_real_)
 }
-
-# Coordinates are institutional centroids used for map visualization.
-affiliation_coordinates <- tribble(
-  ~affiliation, ~latitude, ~longitude,
-  "Aarhus University", 56.1710, 10.2039,
-  "Ben-Gurion University", 31.2614, 34.7996,
-  "Cambridge", 52.2053, 0.1218,
-  "Code for America", 37.7749, -122.4194,
-  "Columbia", 40.8075, -73.9626,
-  "Dartmouth", 43.7044, -72.2887,
-  "Fordham Law", 40.7712, -73.9647,
-  "Georgetown", 38.9076, -77.0723,
-  "Harvard", 42.3770, -71.1167,
-  "Hebrew University of Jerusalem", 31.7719, 35.1970,
-  "Johns Hopkins", 39.3299, -76.6205,
-  "Loyola Marymount University", 33.9680, -118.4167,
-  "MIT", 42.3601, -71.0942,
-  "Meta", 37.4848, -122.1484,
-  "Michigan", 42.2780, -83.7382,
-  "Monash", -37.9105, 145.1364,
-  "Monash University (Melbourne, Australia)", -37.9105, 145.1364,
-  "Northwestern", 42.0565, -87.6753,
-  "Oxford", 51.7548, -1.2544,
-  "Pew Research", 38.9040, -77.0375,
-  "Rochester", 43.1566, -77.6088,
-  "SUNY Albany", 42.6860, -73.8238,
-  "SUNY Binghamton", 42.0887, -75.9690,
-  "Santa Clara University", 37.3496, -121.9390,
-  "Syracuse", 43.0481, -76.1474,
-  "Tel Aviv University", 32.1133, 34.8044,
-  "Tufts", 42.4075, -71.1190,
-  "UC Berkeley", 37.8719, -122.2585,
-  "UC Davis", 38.5382, -121.7617,
-  "UCLA", 34.0689, -118.4452,
-  "UIUC", 40.1020, -88.2272,
-  "UPenn", 39.9522, -75.1932,
-  "US Government Accountability Office", 38.8895, -77.0091,
-  "University of Connecticut", 41.8084, -72.2495,
-  "University of Southern California", 34.0224, -118.2851,
-  "Virginia", 38.0349, -78.5056,
-  "Wesleyan", 41.5584, -72.6565,
-  "Yonsei University", 37.5658, 126.9386
-)
 
 coauthors <- read_coauthors_data(
   csv_path = here("community_building", "coauthors.csv"),
   qmd_path = here("community_building", "coauthors.qmd")
 )
+
+# Derive per-affiliation coordinates from the CSV (first non-NA value per group)
+affiliation_coordinates <- coauthors %>%
+  filter(!is.na(latitude), !is.na(longitude)) %>%
+  group_by(affiliation) %>%
+  slice(1) %>%
+  ungroup() %>%
+  select(affiliation, latitude, longitude)
 
 collaborators_count <- coauthors %>%
   count(affiliation, name = "n")
