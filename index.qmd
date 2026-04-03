@@ -136,7 +136,6 @@ I have created original datasets and data tools, including the [MapAgora Civic O
 | May 21        | [Talk]{.badge .badge-talk}        | AI and Social Sciences, Department of Political Science and International Relations, Korea University, hosted by Woo Chang Kang (*scheduled*) | Virtual |
 | May 1         | [Talk]{.badge .badge-talk}        | The Future of Quantitative Social Science in an Age of Artificial Intelligenc, University of Toronto, hosted by Rohan Alexander (*scheduled*) | Toronto, ON, Canada |
 | April 10      | [Talk]{.badge .badge-talk}        | MPP Social, hosted by Douglas MacKay (*scheduled*) | Chapel Hill, NC, USA |
-| April 9      | [Panel]{.badge .badge-panel} | [National Science Foundation (NSF) Human Networks and Data Science](https://www.nsf.gov/funding/opportunities/hnds-human-networks-data-science) – Core Research Panel (*scheduled*) | Virtual |
 | March 25     | [Talk]{.badge .badge-talk}        | Institute for AI and Social Innovation, Yonsei University, hosted by Wha Sun Jho | Virtual         |
 | March 17    | [Discussant]{.badge .badge-discussant} | Economic Democracy Initiative Workshop, Columbia University, hosted by Alexander Hertel-Fernandez and Sophie Jacobson| Virtual
 | March 9       | [Talk]{.badge .badge-talk}        | [Data-Driven EnviroLab](https://datadrivenlab.org/), UNC Chapel Hill, hosted by Angel Hsu | Chapel Hill, NC, USA         |

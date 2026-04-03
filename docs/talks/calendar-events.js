@@ -49,13 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "Douglas MacKay", place: "Chapel Hill, NC, USA", type: "badge-talk", past: false }
     },
     {
-      title: "National Science Foundation (NSF) Human Networks and Data Science – Core Research Panel",
-      start: "2026-04-09",
-      color: "#1976d2",
-      url: "https://www.nsf.gov/funding/opportunities/hnds-human-networks-data-science",
-      extendedProps: { org: "", host: "", place: "Virtual", type: "badge-panel", past: false }
-    },
-    {
       title: "Institute for AI and Social Innovation",
       start: "2026-03-25",
       color: "#aaaaaa",
