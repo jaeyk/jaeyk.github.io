@@ -36,7 +36,7 @@ Below is a collection of essays I’ve written over the years, organized into th
 **Korean essays**
 
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
-- [*대학사용법 개정판* 서브스택](https://learn2career.substack.com/)
+- [*대학사용법 개정판* 서브스택](https://learn2career.substack.com/) [[*자매판 팟캐스트*](https://learn2career.substack.com/podcast)]
 
 <figure style="text-align: center;">
   <img src="../misc/combined_row_image.jpg" alt="Family photo (Berkeley, '21)." style="width: 80%; max-width: 500px; height: auto;" />
