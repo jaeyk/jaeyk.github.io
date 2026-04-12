@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "MPP Social",
       start: "2026-04-10",
       color: "#aaaaaa",
-      extendedProps: { org: "", host: "Douglas MacKay", place: "Chapel Hill, NC, USA", type: "badge-talk", past: true }
+      extendedProps: { org: "UNC Chapel Hill", host: "Douglas MacKay", place: "Chapel Hill, NC, USA", type: "badge-talk", past: true }
     },
     {
       title: "Institute for AI and Social Innovation",
