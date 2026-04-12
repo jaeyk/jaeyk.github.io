@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 1.  "AI and the American Contracting State."
 
-    -   Scheduled to present at Yonsei University   
+    -   Presented at Yonsei University   
 
 1.  "The SIMC Framework: Aligning Academic Research and Government Practice in Field Experiments." (with Florian Keppeler)
 
