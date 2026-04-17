@@ -34,12 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "AI and Social Sciences",
       start: "2026-05-21",
       color: "#388e3c",
+      url: "https://politics.korea.ac.kr/kupolitics_kor/community/grad_school.do?mode=view&articleNo=804673&article.offset=0&articleLimit=10&totalNoticeYn=N&totalBoardNo&fbclid=IwY2xjawRPEeRleHRuA2FlbQIxMABicmlkETFwd0pSVVhHN2xaTTd2ZEY4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsSLrFD-TJ9pjZXdolPqX79MkzjxQEvOtKUN_ddPlxued1JrXzLuFAgbdgAj_aem_fhq3jLsOEWuShEhMULwhMA",
       extendedProps: { org: "Department of Political Science and International Relations, Korea University", host: "Woo Chang Kang", place: "Virtual", type: "badge-talk", past: false }
     },
     {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
       start: "2026-05-01",
       color: "#388e3c",
+      url: "https://rohanalexander.com/tdw.html?fbclid=IwY2xjawRPEctleHRuA2FlbQIxMABicmlkETFwd0pSVVhHN2xaTTd2ZEY4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrpKC20cB6deQ9gpFVoU0pkbwykSlhKol_1prTn6yWqn5Uj4YFUF6inmY9d3_aem_gfy7-jwggUYKf-t_TLT_Vw",
       extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, ON, Canada", type: "badge-talk", past: false }
     },
     {
