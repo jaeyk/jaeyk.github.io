@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list}
 
-1. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle, in progress) Under review at *Cambridge University Press*
+1. APSA Task Force Book Chapter on AI, the Public Sector, and Policymaking (with Baobao Zhang, Johannes Himmelreich, Mila Gascó-Hernandez, and Diane Coyle) Under contract with *Cambridge University Press*
 
 1.  ["Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach."](https://www.ssoar.info/ssoar/handle/document/86424) (**Jae Yeon Kim**) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)
 
