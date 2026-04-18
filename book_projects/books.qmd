@@ -57,7 +57,7 @@ By centering policy implementation, local political economy, and classification 
 <details>
 <summary><strong>Books</strong></summary>
 
-2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://sites.google.com/view/civicdata/home)\]
+2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://wethedata.vercel.app/)\]
 
 Why can we shop with one click but still struggle to access basic public services?
 
