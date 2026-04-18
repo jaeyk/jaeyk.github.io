@@ -374,6 +374,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 [    -   Presented at Korea University, Yonsei University, KAIST]: #
 
+1.  "Predicting Protests." (with James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, and Liz McKenna)
+
 1.  "Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact." (with Christian Caballero and Liz McKenna)
 
 1.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
