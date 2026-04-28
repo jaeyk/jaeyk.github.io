@@ -258,14 +258,6 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "Stanford Causal Science Center", place: "Palo Alto, CA, USA", type: "badge-participant", past: true }
     },
     {
-      title: "Organizing Forum",
-      start: "2025-05-15",
-      end: "2025-05-17",
-      color: "#aaaaaa",
-      url: "https://organizing.substack.com/",
-      extendedProps: { org: "", host: "USC Equity Research Institute", place: "Los Angeles, CA, USA", type: "badge-participant", past: true }
-    },
-    {
       title: "American Politics Workshop",
       start: "2025-02-26",
       color: "#aaaaaa",

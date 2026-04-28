@@ -1,14 +1,18 @@
 # generate_calendar.R
 #
 # Quarto pre-render script: reads Talk, Panel, Discussant, and Participant
-# badge events from index.qmd and writes talks/calendar-events.js.
+# badge events from index.qmd and writes calendar data for the homepage and talks page.
 #
 # Workflow:
 #   1. Edit badge rows in index.qmd (add/update/remove events)
 #   2. Run: quarto render
-#   3. This script regenerates talks/calendar-events.js automatically
+#   3. This script regenerates talks/calendar-events.js and talks/upcoming-talks.js
 
 lines <- readLines("index.qmd", encoding = "UTF-8")
+
+`%||%` <- function(x, y) {
+  if (is.null(x) || length(x) == 0 || is.na(x)) y else x
+}
 
 # ── Month name lookup (full + abbreviated) ───────────────────────────────────
 month_map <- c(
@@ -70,18 +74,25 @@ badge_colors <- c(
   "badge-participant" = "#6d4c41"
 )
 
+strip_markdown <- function(s) {
+  s <- gsub("\\[([^\\]]+)\\]\\([^)]+\\)", "\\1", s, perl = TRUE)
+  s <- gsub("\\{[^}]+\\}", "", s, perl = TRUE)
+  s <- gsub("\\(\\*[^)]*\\*\\)", "", s, perl = TRUE)
+  s <- gsub("\\*([^*]+)\\*", "\\1", s, perl = TRUE)
+  trimws(gsub("\\s{2,}", " ", s, perl = TRUE))
+}
+
 # ── Parse table rows ──────────────────────────────────────────────────────────
 events       <- list()
 current_year <- NULL
 
 for (line in lines) {
-  # Detect year from section headers ("2025 News", "2026 News", etc.)
+  # Backward-compatible fallback for older year-section tables.
   if (grepl("202[4-9].*News", line)) {
     m <- regmatches(line, regexpr("202[4-9]", line))
     if (length(m) > 0) current_year <- as.integer(m)
   }
 
-  if (is.null(current_year))       next
   if (!grepl("^\\s*\\|", line))    next   # must be a table row
 
   # Detect which badge type this row has (if any), matching by name
@@ -95,21 +106,27 @@ for (line in lines) {
   parts <- trimws(parts[nchar(trimws(parts)) > 0])
   if (length(parts) < 4) next
 
-  date_raw  <- parts[1]
-  event_raw <- parts[3]
-  place_raw <- trimws(gsub("\\*[^*]*\\*", "", parts[4]))  # strip *italics*
+  row_year <- suppressWarnings(as.integer(parts[1]))
+  if (!is.na(row_year) && length(parts) >= 5) {
+    year      <- row_year
+    date_raw  <- parts[2]
+    event_raw <- parts[4]
+    place_raw <- trimws(gsub("\\*[^*]*\\*", "", parts[5]))
+  } else {
+    if (is.null(current_year)) next
+    year      <- current_year
+    date_raw  <- parts[1]
+    event_raw <- parts[3]
+    place_raw <- trimws(gsub("\\*[^*]*\\*", "", parts[4]))
+  }
+  if (grepl("^-+$", date_raw)) next
 
   # Extract first URL from event text (perl=TRUE so \s matches whitespace in class)
   url_m <- regmatches(event_raw, regexpr("https?://[^)\\s\"'>]+", event_raw, perl = TRUE))
   url   <- if (length(url_m) > 0) url_m else NA_character_
 
   # Clean title: [text](url) -> text, strip {.class}, (*...*), *italics*, extra spaces
-  title <- event_raw
-  title <- gsub("\\[([^\\]]+)\\]\\([^)]+\\)", "\\1", title, perl = TRUE)
-  title <- gsub("\\{[^}]+\\}", "", title, perl = TRUE)
-  title <- gsub("\\(\\*[^)]*\\*\\)", "", title, perl = TRUE)
-  title <- gsub("\\*([^*]+)\\*", "\\1", title, perl = TRUE)
-  title <- trimws(gsub("\\s{2,}", " ", title, perl = TRUE))
+  title <- strip_markdown(event_raw)
 
   # Split: extract "hosted by ..." then org from first comma
   host <- NA_character_
@@ -125,7 +142,7 @@ for (line in lines) {
     if (nchar(org) == 0) org <- NA_character_
   }
 
-  date_info <- parse_event_dates(date_raw, current_year)
+  date_info <- parse_event_dates(date_raw, year)
   if (is.null(date_info)) next
 
   events[[length(events) + 1]] <- list(
@@ -147,6 +164,14 @@ today <- format(Sys.Date(), "%Y-%m-%d")
 safe_js <- function(s) {
   s <- gsub("\\\\", "\\\\\\\\", s)
   s <- gsub('"', '\\\\"', s)
+  s
+}
+
+safe_html <- function(s) {
+  s <- gsub("&", "&amp;", s, fixed = TRUE)
+  s <- gsub("<", "&lt;", s, fixed = TRUE)
+  s <- gsub(">", "&gt;", s, fixed = TRUE)
+  s <- gsub('"', "&quot;", s, fixed = TRUE)
   s
 }
 
@@ -314,5 +339,99 @@ document.addEventListener(\'DOMContentLoaded\', function () {
 )
 
 writeLines(js_out, "talks/calendar-events.js")
-message(sprintf("[generate_calendar.R] Wrote %d talk events to talks/calendar-events.js",
-                length(events)))
+
+format_display_date <- function(start, end_inclusive) {
+  start_date <- as.Date(start)
+  end_date <- as.Date(end_inclusive)
+  month_label <- function(d) {
+    month_names <- c("Jan.", "Feb.", "March", "April", "May", "June",
+                     "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec.")
+    sprintf("%s %d", month_names[as.integer(format(d, "%m"))], as.integer(format(d, "%d")))
+  }
+  start_label <- month_label(start_date)
+  if (is.na(end_date) || end_date <= start_date) return(start_label)
+  if (format(start_date, "%Y-%m") == format(end_date, "%Y-%m")) {
+    return(sprintf("%s-%d", start_label, as.integer(format(end_date, "%d"))))
+  }
+  end_label <- month_label(end_date)
+  sprintf("%s-%s", start_label, end_label)
+}
+
+event_end_for_sort <- function(e) {
+  if (!is.na(e$end_inclusive)) as.Date(e$end_inclusive) else as.Date(e$start)
+}
+
+today_date <- Sys.Date()
+future_events <- events[vapply(events, function(e) event_end_for_sort(e) >= today_date, logical(1))]
+if (length(future_events) > 0) {
+  future_events <- future_events[order(vapply(future_events, function(e) as.Date(e$start), as.Date("1970-01-01")))]
+}
+homepage_events <- head(future_events, 5)
+
+landing_items <- vapply(homepage_events, function(e) {
+  date_label <- safe_html(format_display_date(e$start, e$end_inclusive))
+  detail <- if (!is.na(e$org) && nzchar(e$org)) {
+    sprintf("%s, %s", e$title, e$org)
+  } else {
+    e$title
+  }
+  detail <- safe_html(detail)
+  if (!is.na(e$url) && nzchar(e$url)) {
+    detail <- sprintf('<a href="%s">%s</a>', safe_html(e$url), detail)
+  }
+  sprintf('      <li><time datetime="%s">%s.</time> %s</li>', e$start, date_label, detail)
+}, character(1))
+
+upcoming_out <- sprintf(
+'// Auto-generated from index.qmd by generate_calendar.R
+// Do not edit this file directly.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var list = document.getElementById("landing-talk-list");
+  if (!list) return;
+  list.innerHTML = `%s`;
+});
+',
+  paste(landing_items, collapse = "\n")
+)
+
+writeLines(upcoming_out, "talks/upcoming-talks.js")
+
+papers <- yaml::read_yaml("publications/data/published-papers.yml")
+paper_order <- vapply(papers, function(p) {
+  if (!is.null(p$order)) as.numeric(p$order) else as.numeric(p$year %||% 0)
+}, numeric(1))
+papers <- papers[order(paper_order, decreasing = TRUE)]
+recent_papers <- head(papers, 3)
+
+publication_items <- vapply(recent_papers, function(p) {
+  title <- safe_html(p$title %||% "")
+  venue <- safe_html(p$venue %||% "")
+  citation <- safe_html(p$citation %||% "")
+  meta <- trimws(paste(c(venue, citation)[nzchar(c(venue, citation))], collapse = ", "))
+  title_markup <- if (!is.null(p$url) && nzchar(p$url)) {
+    sprintf('<a href="%s">%s</a>', safe_html(p$url), title)
+  } else {
+    title
+  }
+  sprintf("      <li>%s%s</li>",
+          title_markup,
+          if (nzchar(meta)) sprintf(" <span>%s</span>", meta) else "")
+}, character(1))
+
+recent_publications_out <- sprintf(
+'// Auto-generated from publications/data/published-papers.yml by generate_calendar.R
+// Do not edit this file directly.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var list = document.getElementById("landing-publication-list");
+  if (!list) return;
+  list.innerHTML = `%s`;
+});
+',
+  paste(publication_items, collapse = "\n")
+)
+
+writeLines(recent_publications_out, "publications/recent-publications.js")
+message(sprintf("[generate_calendar.R] Wrote %d talk events, %d upcoming events, and %d recent publications",
+                length(events), length(homepage_events), length(recent_papers)))

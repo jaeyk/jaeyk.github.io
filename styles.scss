@@ -178,6 +178,20 @@ h1, .h1, h2, .h2, h3, .h3 {
 .sidebar { flex: 0 0 20%; }
 .content { flex: 1 1 80%; }
 
+#quarto-content.page-layout-article.page-columns {
+  grid-template-columns:
+    [screen-start] minmax(1.25rem, 1fr)
+    [page-start] minmax(0, 1080px)
+    [page-end] minmax(1.25rem, 1fr)
+    [screen-end] !important;
+}
+
+.page-layout-article main.content {
+  grid-column: page-start / page-end;
+  max-width: 1080px;
+  width: 100%;
+}
+
 dl.auto-numbered {
   counter-reset: number;
   margin-left: 1em;
@@ -389,35 +403,35 @@ div.quarto-about-trestles .about-link:hover {
 
 /* Fix low-contrast hover on navbar brand */
 .navbar .navbar-brand {
-  color: white !important;
+  color: $unc-dark-blue !important;
   font-weight: 600;
   text-decoration: none;
 }
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: white !important;
+  color: $unc-blue !important;
   opacity: 0.85;
   text-decoration: none;
 }
 
 /* Navbar brand (site title): visible by default and on hover */
 .navbar .navbar-brand {
-  color: white !important;
+  color: $unc-dark-blue !important;
   font-weight: 600;
   text-decoration: none;
 }
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: white !important;
+  color: $unc-blue !important;
   opacity: 0.85;
   text-decoration: none;
 }
 
 /* Navbar menu items: same hover contrast and style */
 .navbar .nav-link {
-  color: white !important;
+  color: $unc-dark-blue !important;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -425,14 +439,60 @@ div.quarto-about-trestles .about-link:hover {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: white !important;
+  color: $unc-blue !important;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-/* FORCE the navbar background to UNC blue, overriding Flatly */
-.navbar.navbar-expand-lg.navbar-dark.bg-primary {
-  background-color: #4B9CD3 !important;
+.navbar .dropdown-menu,
+.navbar .dropdown-item {
+  color: $unc-dark-blue !important;
+}
+
+.navbar,
+.navbar.navbar-expand-lg,
+.navbar.navbar-expand-lg.navbar-light,
+.navbar.navbar-expand-lg.navbar-dark {
+  background-color: #f8fbfd !important;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar .navbar-nav .show > .nav-link {
+  color: $unc-dark-blue !important;
+  opacity: 1 !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: $unc-blue !important;
+  opacity: 1 !important;
+}
+
+.navbar .quarto-search-button,
+.navbar .aa-DetachedSearchButton,
+.navbar button {
+  color: $unc-dark-blue !important;
+}
+
+.navbar .navbar-brand-container {
+  display: none !important;
+}
+
+.navbar .navbar-container {
+  justify-content: flex-start !important;
+}
+
+.navbar .navbar-collapse {
+  margin-left: 0 !important;
 }
 
 /* ONLY affect the left column of the landing page */
@@ -814,6 +874,141 @@ div.quarto-about-trestles .about-link svg {
 
 .indigo-text {
   color: #1a237e;
+}
+
+/* Homepage landing sidebar with compact schedule */
+.landing-sidebar {
+  float: left;
+  width: 270px;
+  margin: 0 2.25rem 1.5rem 0;
+  color: $unc-dark-blue;
+}
+
+.landing-profile-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1.1rem;
+}
+
+.landing-sidebar h2 {
+  margin: 0 0 0.25rem;
+  color: $unc-dark-blue;
+  font-size: 1.55rem;
+  line-height: 1.05;
+}
+
+.landing-title {
+  margin: 0 0 0.8rem;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.landing-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.35rem;
+  margin: 0 0 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.landing-tagline {
+  margin: 0 0 1.35rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid $unc-blue;
+  font-size: 1.02rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.upcoming-talks,
+.new-publications {
+  border: 1px solid #d9e2ec;
+  border-radius: 6px;
+  padding: 1rem 1.05rem;
+  background: #ffffff;
+}
+
+.new-publications {
+  margin-top: 1rem;
+}
+
+.upcoming-talks h3,
+.new-publications h3 {
+  margin: 0 0 0.8rem;
+  color: #c43f5c;
+  font-family: $font-sans;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upcoming-talks ol,
+.new-publications ol {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upcoming-talks li,
+.new-publications li {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.new-publications li span {
+  display: block;
+  margin-top: 0.1rem;
+  color: #4b5563;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.upcoming-talks time {
+  color: $unc-dark-blue;
+  font-weight: 700;
+}
+
+.talks-link,
+.publications-link {
+  margin: 0.9rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.student-note.callout {
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.student-note .callout-header {
+  border-bottom: none !important;
+}
+
+.hello {
+  margin-top: 0;
+  font-weight: 700;
+  color: $unc-dark-blue;
+}
+
+@media (max-width: 900px) {
+  .landing-sidebar {
+    float: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 0 1.5rem;
+  }
 }
 
 /* Text selection - UNC colors */
