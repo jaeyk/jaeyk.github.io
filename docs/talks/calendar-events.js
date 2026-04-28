@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var events = [
     {
+      title: "Better Government Lab Research Retreat",
+      start: "2026-09-16",
+      end: "2026-09-19",
+      color: "#6d4c41",
+      extendedProps: { org: "", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: false }
+    },
+    {
       title: "American Political Science Association (APSA) Annual Meeting",
       start: "2026-09-03",
       end: "2026-09-07",
@@ -138,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "NYU", host: "Klint Kanopka and Ravi Shroff", place: "Virtual", type: "badge-talk", past: true }
     },
     {
-      title: "Better Government Lab Research Treat",
+      title: "Better Government Lab Research Retreat",
       start: "2025-10-16",
       end: "2025-10-18",
       color: "#aaaaaa",

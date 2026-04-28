@@ -19,9 +19,9 @@ month_map <- c(
 )
 
 build_date <- function(year, month_token, day_token) {
-  month_num <- month_map[[month_token]]
+  month_num <- unname(month_map[month_token])
   day <- suppressWarnings(as.integer(gsub("[^0-9]", "", day_token)))
-  if (is.null(month_num) || is.na(month_num) || is.na(day)) return(NA_character_)
+  if (length(month_num) == 0 || is.na(month_num) || is.na(day)) return(NA_character_)
   format(as.Date(sprintf("%d-%02d-%02d", year, as.integer(month_num), day)), "%Y-%m-%d")
 }
 
