@@ -819,10 +819,32 @@ div.quarto-about-trestles .about-link svg {
 }
 
 /* Homepage landing sidebar with compact schedule */
+.landing-hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(170px, 24vw, 260px);
+  margin: 0 0 1.6rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #d9e2ec;
+  background: #f8fbfd;
+}
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("misc/civic_tech_preconference.jpg");
+  background-size: cover;
+  background-position: center 42%;
+  filter: grayscale(100%);
+  opacity: 0.82;
+}
+
 .landing-sidebar {
   float: left;
-  width: 270px;
-  margin: 0 2.25rem 1.5rem 0;
+  width: 310px;
+  margin: 0 2.5rem 1.5rem 0;
   color: #13294B;
 }
 
@@ -948,7 +970,7 @@ div.quarto-about-trestles .about-link svg {
   .landing-sidebar {
     float: none;
     width: 100%;
-    max-width: 360px;
+    max-width: 420px;
     margin: 0 0 1.5rem;
   }
 }
