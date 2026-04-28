@@ -124,7 +124,7 @@ I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Pu
 
 | Date          | Type        | Event                                                                 | Place                   |
 |---------------|-------------|-----------------------------------------------------------------------|-------------------------|
-| September 16-18 | [Participant]{.badge .badge-participant} | Better Government Lab Research Retreat (*scheduled*) | Ann Arbor, MI, USA    |
+| September 16-18 | [Participant]{.badge .badge-participant} | Better Government Lab Research Retreat, Michigan Ford School of Public Policy (*scheduled*) | Ann Arbor, MI, USA    |
 | September 3-6 | [Panel]{.badge .badge-panel} | [American Political Science Association (APSA) Annual Meeting](https://connect.apsanet.org/apsa2026/) (*scheduled*) | Boston, MA, USA |
 | June 16–18    | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) (*scheduled*) | Park City, UT, USA    |
 | June 11       | [Panel]{.badge .badge-panel} | Source Code AI Trust  & Fairness Launch Event, [Federation of American Scientists](https://fas.org/) (*scheduled*) | Washington, DC, USA     |

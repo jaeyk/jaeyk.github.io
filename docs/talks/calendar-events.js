@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       start: "2026-09-16",
       end: "2026-09-19",
       color: "#6d4c41",
-      extendedProps: { org: "", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "Michigan Ford School of Public Policy", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: false }
     },
     {
       title: "American Political Science Association (APSA) Annual Meeting",
