@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  27 APR 2026 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  28 APR 2026 09:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,9 +442,6 @@ LaTeX Info: Redefining \microtypecontext on input line 116.
 Package microtype Info: Applying patch `item' on input line 116.
 Package microtype Info: Applying patch `toc' on input line 116.
 Package microtype Info: Applying patch `eqnum' on input line 116.
-
-Package microtype Warning: Unable to apply patch `footnote' on input line 116.
-
 Package microtype Info: Applying patch `verbatim' on input line 116.
 LaTeX Info: Redefining \microtypesetup on input line 116.
 Package microtype Info: Generating PDF output.
@@ -503,9 +500,9 @@ pdftex.map}{/Users/jaeyeonkim/Library/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}]
 
 [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 636.
+(Font)              <9> on input line 637.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 636.
+(Font)              <6> on input line 637.
 
 
 [9]
@@ -523,10 +520,10 @@ Package rerunfilecheck Info: File `cv_Kim.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12563 strings out of 474662
- 200761 string characters out of 5751110
- 654250 words of memory out of 5000000
- 35242 multiletter control sequences out of 15000+600000
+ 12560 strings out of 474662
+ 200686 string characters out of 5751110
+ 653226 words of memory out of 5000000
+ 35239 multiletter control sequences out of 15000+600000
  598951 words of font info for 148 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,8n,79p,1583b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -535,7 +532,7 @@ Here is how much of TeX's memory you used:
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (12 pages, 279294 bytes).
+m.pdf (12 pages, 279391 bytes).
 PDF statistics:
  252 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams
