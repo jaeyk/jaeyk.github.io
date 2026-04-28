@@ -87,7 +87,7 @@ I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Pu
 ::: {.callout-note .student-note}
 ## 🎓 For Prospective PhD and UNC Students
 
-**PhD Students**: I won’t be taking students in the coming cycle (starting in Fall 2027). If you are interested in working with me, please email me (1) which of my work you have read, (2) why it is connected to your research agenda, and (3) how I can help you develop it.
+**PhD Students**: I won’t be taking students in the coming cycle (starting in Fall 2027). <!--If you are interested in working with me, please email me (1) which of my work you have read, (2) why it is connected to your research agenda, and (3) how I can help you develop it.-->
 
 **UNC graduate and undergraduate students**: I cannot serve on your committee or advise on your honors thesis unless I know you well and there is a strong alignment between your topic and my research expertise. That said, if you think you could benefit from my expertise, please reach out to me by email and schedule a time during my office hours.
 :::

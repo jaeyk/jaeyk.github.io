@@ -940,8 +940,6 @@ div.quarto-about-trestles .about-link svg {
 
 .landing-tagline {
   margin: 0 0 1.35rem;
-  padding-left: 0.75rem;
-  border-left: 3px solid $unc-blue;
   font-size: 1.02rem;
   font-style: italic;
   font-weight: 700;
@@ -1008,9 +1006,7 @@ div.quarto-about-trestles .about-link svg {
 }
 
 .student-note.callout {
-  border-top: none !important;
-  border-right: none !important;
-  border-bottom: none !important;
+  border: none !important;
   box-shadow: none !important;
 }
 
