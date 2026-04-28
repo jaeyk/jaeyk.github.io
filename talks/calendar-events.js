@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "Source Code AI Trust & Fairness Launch Event",
       start: "2026-06-11",
       color: "#1976d2",
-      url: "https://fas.org/event/source-code-launch/",
+      url: "https://fas.org/",
       extendedProps: { org: "Federation of American Scientists", host: "", place: "Washington, DC, USA", type: "badge-panel", past: false }
     },
     {
