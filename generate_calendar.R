@@ -397,30 +397,113 @@ document.addEventListener("DOMContentLoaded", function () {
 
 writeLines(upcoming_out, "talks/upcoming-talks.js")
 
-papers <- yaml::read_yaml("publications/data/published-papers.yml")
-paper_order <- vapply(papers, function(p) {
-  if (!is.null(p$order)) as.numeric(p$order) else as.numeric(p$year %||% 0)
-}, numeric(1))
-papers <- papers[order(paper_order, decreasing = TRUE)]
-recent_papers <- head(papers, 3)
+month_lookup <- c(
+  January = 1, February = 2, March = 3, April = 4, May = 5, June = 6,
+  July = 7, August = 8, September = 9, October = 10, November = 11, December = 12,
+  Jan = 1, Feb = 2, Mar = 3, Apr = 4, Jun = 6, Jul = 7, Aug = 8,
+  Sep = 9, Sept = 9, Oct = 10, Nov = 11, Dec = 12
+)
 
-publication_items <- vapply(recent_papers, function(p) {
-  title <- safe_html(p$title %||% "")
-  venue <- safe_html(p$venue %||% "")
-  citation <- safe_html(p$citation %||% "")
+publication_date <- function(text, year_fallback = NA_integer_) {
+  text <- gsub("\\.", "", text)
+  month_pattern <- paste(names(month_lookup), collapse = "|")
+  m <- regexec(sprintf("\\b(%s)\\s+([0-9]{1,2}),?\\s+(20[0-9]{2})\\b", month_pattern), text, perl = TRUE)
+  hit <- regmatches(text, m)[[1]]
+  if (length(hit) == 4) {
+    return(as.Date(sprintf("%s-%02d-%02d", hit[4], month_lookup[[hit[2]]], as.integer(hit[3]))))
+  }
+  m <- regexec(sprintf("\\b(%s)\\s+(20[0-9]{2})\\b", month_pattern), text, perl = TRUE)
+  hit <- regmatches(text, m)[[1]]
+  if (length(hit) == 3) {
+    return(as.Date(sprintf("%s-%02d-01", hit[3], month_lookup[[hit[2]]])))
+  }
+  y <- regmatches(text, regexpr("20[0-9]{2}", text, perl = TRUE))
+  if (length(y) > 0 && nzchar(y)) return(as.Date(sprintf("%s-01-01", y)))
+  if (!is.na(year_fallback)) return(as.Date(sprintf("%d-01-01", year_fallback)))
+  as.Date("1900-01-01")
+}
+
+clean_publication_text <- function(s) {
+  s <- gsub("\\*\\*([^*]+)\\*\\*", "\\1", s, perl = TRUE)
+  s <- gsub("\\*([^*]+)\\*", "\\1", s, perl = TRUE)
+  s <- gsub("\\[[^\\]]+\\]\\([^)]+\\)", "", s, perl = TRUE)
+  trimws(gsub("\\s{2,}", " ", s, perl = TRUE))
+}
+
+publication_items_data <- list()
+
+papers <- yaml::read_yaml("publications/data/published-papers.yml")
+for (p in papers) {
+  title <- p$title %||% ""
+  venue <- p$venue %||% ""
+  citation <- p$citation %||% ""
   meta <- trimws(paste(c(venue, citation)[nzchar(c(venue, citation))], collapse = ", "))
-  title_markup <- if (!is.null(p$url) && nzchar(p$url)) {
-    sprintf('<a href="%s">%s</a>', safe_html(p$url), title)
+  publication_items_data[[length(publication_items_data) + 1]] <- list(
+    title = title,
+    url = p$url %||% "",
+    meta = meta,
+    date = publication_date(citation, p$year %||% NA_integer_),
+    order = as.numeric(p$order %||% 0)
+  )
+}
+
+pub_lines <- readLines("publications/pubs.qmd", encoding = "UTF-8")
+static_sections <- c(
+  book_chapters = "Book chapter",
+  proceedings = "Proceeding",
+  media_public_writing = "Media/Public writing"
+)
+
+for (section_key in names(static_sections)) {
+  start <- grep(sprintf('data-count-key="%s"', section_key), pub_lines, fixed = TRUE)
+  if (length(start) == 0) next
+  end_candidates <- grep("^</details>", pub_lines)
+  end <- end_candidates[end_candidates > start[1]][1]
+  if (is.na(end)) next
+  section_lines <- pub_lines[start[1]:end]
+  entry_lines <- grep("^1\\.\\s+", section_lines, value = TRUE)
+  for (entry in entry_lines) {
+    link <- regmatches(entry, regexec('\\[\\"?([^\\]]+?)\\"?\\]\\(([^)]+)\\)', entry, perl = TRUE))[[1]]
+    if (length(link) >= 3) {
+      title <- link[2]
+      url <- link[3]
+    } else {
+      title <- sub("^1\\.\\s+", "", entry)
+      title <- sub("\\s*\\([^)]*\\).*$", "", title)
+      url <- ""
+    }
+    meta <- clean_publication_text(sub("^1\\.\\s+", "", entry))
+    meta <- trimws(sub("^\\([^)]+\\),?\\s*", "", meta))
+    publication_items_data[[length(publication_items_data) + 1]] <- list(
+      title = trimws(gsub('^"|"$', "", title)),
+      url = url,
+      meta = meta,
+      date = publication_date(entry),
+      order = 0
+    )
+  }
+}
+
+publication_order <- order(
+  vapply(publication_items_data, function(item) item$date, as.Date("1900-01-01")),
+  vapply(publication_items_data, function(item) item$order, numeric(1)),
+  decreasing = TRUE
+)
+recent_publications <- head(publication_items_data[publication_order], 3)
+
+publication_items <- vapply(recent_publications, function(p) {
+  title_markup <- if (nzchar(p$url)) {
+    sprintf('<a href="%s">%s</a>', safe_html(p$url), safe_html(p$title))
   } else {
-    title
+    safe_html(p$title)
   }
   sprintf("      <li>%s%s</li>",
           title_markup,
-          if (nzchar(meta)) sprintf(" <span>%s</span>", meta) else "")
+          if (nzchar(p$meta)) sprintf(" <span>%s</span>", safe_html(p$meta)) else "")
 }, character(1))
 
 recent_publications_out <- sprintf(
-'// Auto-generated from publications/data/published-papers.yml by generate_calendar.R
+'// Auto-generated from publications metadata by generate_calendar.R
 // Do not edit this file directly.
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -433,5 +516,5 @@ document.addEventListener("DOMContentLoaded", function () {
 )
 
 writeLines(recent_publications_out, "publications/recent-publications.js")
-message(sprintf("[generate_calendar.R] Wrote %d talk events, %d upcoming events, and %d recent publications",
-                length(events), length(homepage_events), length(recent_papers)))
+message(sprintf("[generate_calendar.R] Wrote %d talk events, %d upcoming events, and %d recent publications/media items",
+                length(events), length(homepage_events), length(recent_publications)))
