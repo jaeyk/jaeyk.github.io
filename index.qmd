@@ -50,7 +50,7 @@ format:
     <span aria-hidden="true">·</span>
     <i class="bi bi-google"></i> <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&amp;hl=en">Scholar</a>
   </p>
-  <p class="landing-tagline">My research aims to make policy implementation work.</p>
+  <p class="landing-tagline"><strong>My research aims to make policy implementation work.</strong></p>
 
   <section class="upcoming-talks" aria-labelledby="upcoming-talks-heading">
     <h3 id="upcoming-talks-heading">Upcoming Talks &amp; Events</h3>
