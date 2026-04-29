@@ -19,7 +19,7 @@ website:
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
   page-footer:
-    left:
+    center:
       - text: "Get in touch: jaekim@unc.edu"
       - icon: github
         href: https://github.com/jaeyk/jaeyk.github.io
