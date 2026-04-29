@@ -42,7 +42,7 @@ format:
 <div class="landing-sidebar">
   <img src="bigger_than_headshot.jpg" alt="Jae Yeon Kim" class="landing-profile-image"/>
   <h2>Jae Yeon Kim</h2>
-  <p class="landing-title">Assistant Professor of Public Policy<br>University of North Carolina at&nbsp;Chapel Hill</p>
+  <p class="landing-title">Assistant Professor of Public Policy<br>University of North Carolina at&nbsp;Chapel&nbsp;Hill</p>
   <p class="landing-links">
     <i class="bi bi-envelope"></i> <a href="mailto:jaekim@unc.edu">Email</a>
     <span aria-hidden="true">·</span>
