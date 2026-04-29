@@ -52,6 +52,10 @@ if [ ! -f ./community_building/coauthors.csv ]; then
     exit 1
 fi
 
+# Compile SCSS to CSS before rendering
+echo "Compiling styles.scss → styles.css..."
+sass styles.scss styles.css --no-source-map
+
 # Render the full site locally so committed docs are ready to deploy
 echo "Rendering full site locally..."
 quarto render
