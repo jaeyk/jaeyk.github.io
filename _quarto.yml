@@ -19,6 +19,7 @@ website:
   back-to-top-navigation: true
   google-analytics: G-Q5LW45FBCB
   page-footer:
+    left: "© 2026 Jae Yeon Kim. All rights reserved."
     center:
       - text: "Get in touch: jaekim@unc.edu"
       - icon: github
