@@ -34,6 +34,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Bio"
+        href: bio.qmd
       - text: "CV"
         href: CV_Jae_Yeon_Kim.pdf
       - text: "Publications"
