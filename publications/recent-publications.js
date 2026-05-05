@@ -4,8 +4,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("landing-publication-list");
   if (!list) return;
-  list.innerHTML = `      <li><a href="https://journals.sagepub.com/doi/10.1177/13684302251346402">Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.</a> <span>Group Processes and Intergroup Relations, Online First in July 2025</span></li>
-      <li><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">Building Civic Muscle.</a> <span>APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025</span></li>
-      <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pam.70007?fbclid=IwY2xjawJaKWFleHRuA2FlbQIxMAABHfrqWiIxjaUVOIIe5m616cc3zDEulBp9iQ97XAagyGv1LKgaj3UiFdpXSw_aem_5XiHzAKcQfxO3LuQJMT0Iw">Administrative Checkpoints, Burdens, and Human-centered Design: Increasing Interview Access to Raise SNAP Participation.</a> <span>Journal of Policy Analysis and Management, Online First in April 2025</span></li>`;
+  list.innerHTML = `      <li><a href="https://preprints.apsanet.org/engage/apsa/article-details/69fa21314770e67d929474f3">AI, the Public Sector, and Policymaking</a> <span>in Artificial Intelligence, Politics, and Political Science edited by Nathaniel Persily and Joshua A. Tucker, forthcoming at Cambridge University Press</span></li>
+      <li><a href="https://journals.sagepub.com/doi/10.1177/13684302251346402">Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.</a> <span>Group Processes and Intergroup Relations, Online First in July 2025</span></li>
+      <li><a href="https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821">Building Civic Muscle.</a> <span>APSA's Civic Engagement Section Podcast (Civic Café), June 17, 2025</span></li>`;
 });
 

@@ -438,11 +438,12 @@ for (p in papers) {
   venue <- p$venue %||% ""
   citation <- p$citation %||% ""
   meta <- trimws(paste(c(venue, citation)[nzchar(c(venue, citation))], collapse = ", "))
+  is_forthcoming <- grepl("forthcoming", paste(citation, meta), ignore.case = TRUE)
   publication_items_data[[length(publication_items_data) + 1]] <- list(
     title = title,
     url = p$url %||% "",
     meta = meta,
-    date = publication_date(citation, p$year %||% NA_integer_),
+    date = if (is_forthcoming) as.Date("2099-01-01") else publication_date(citation, p$year %||% NA_integer_),
     order = as.numeric(p$order %||% 0)
   )
 }
@@ -474,11 +475,12 @@ for (section_key in names(static_sections)) {
     }
     meta <- clean_publication_text(sub("^1\\.\\s+", "", entry))
     meta <- trimws(sub("^\\([^)]+\\),?\\s*", "", meta))
+    is_forthcoming <- grepl("forthcoming", entry, ignore.case = TRUE)
     publication_items_data[[length(publication_items_data) + 1]] <- list(
       title = trimws(gsub('^"|"$', "", title)),
       url = url,
       meta = meta,
-      date = publication_date(entry),
+      date = if (is_forthcoming) as.Date("2099-01-01") else publication_date(entry),
       order = 0
     )
   }
