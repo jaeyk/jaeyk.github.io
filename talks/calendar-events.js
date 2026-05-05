@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc",
       start: "2026-05-01",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://rohanalexander.com/tdw.html?fbclid=IwY2xjawRPEctleHRuA2FlbQIxMABicmlkETFwd0pSVVhHN2xaTTd2ZEY4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrpKC20cB6deQ9gpFVoU0pkbwykSlhKol_1prTn6yWqn5Uj4YFUF6inmY9d3_aem_gfy7-jwggUYKf-t_TLT_Vw",
-      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, ON, Canada", type: "badge-talk", past: false }
+      extendedProps: { org: "University of Toronto", host: "Rohan Alexander", place: "Toronto, ON, Canada", type: "badge-talk", past: true }
     },
     {
       title: "MPP Social",
