@@ -1,0 +1,18 @@
+---
+title: "Advising"
+format: html
+---
+
+## Letters of recommendation
+
+First, if you are my advisee, it is my responsibility to write a letter for you. If you are my former student, please explain when you took my course, how you performed, and why you think I should write a letter for you. If I previously told you that I can write a letter, just tell me which course you took and in which semester.
+
+Second, please provide all relevant and accurate information at least 2–3 weeks before the deadline.
+
+Third, please explain what you would like me to emphasize in the letter that is not already reflected in your other materials. I will use this as context when writing the letter. An ideal format is a short one-page memo with bullet points. Do not spend too much time on it.
+
+Please use [this link](https://forms.gle/m7RyNUTLPJxEa6cU7) to submit your request for a letter of recommendation.
+
+## Current and former advisees
+
+See [here](../teaching/advisees.md) for the list of my current and former students, including undergraduate RAs, and their placements.

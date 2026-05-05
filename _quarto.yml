@@ -52,6 +52,8 @@ website:
         href: datasets/data.qmd
       - text: "Teaching"
         href: teaching/teaching.qmd
+      - text: "Advising"
+        href: mentoring/mentoring.qmd
       - text: "Community"
         href: community_building/community.qmd
       - text: "Personal"
