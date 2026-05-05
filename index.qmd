@@ -58,6 +58,12 @@ format:
     <p class="talks-link"><a href="talks/talks.html">Full talks calendar</a></p>
   </section>
 
+  <section class="new-publications" aria-labelledby="new-publications-heading">
+    <h3 id="new-publications-heading">New Publications &amp; Media</h3>
+    <ol id="landing-publication-list"></ol>
+    <p class="publications-link"><a href="publications/pubs.html">All publications</a></p>
+  </section>
+
 </div>
 <script src="talks/upcoming-talks.js"></script>
 <script src="publications/recent-publications.js"></script>
@@ -86,14 +92,6 @@ I have received multiple awards from the American Political Science Association.
 :::
 
 <div style="clear: both;"></div>
-
-```{=html}
-<section class="new-publications" aria-labelledby="new-publications-heading">
-  <h3 id="new-publications-heading">New Publications &amp; Media</h3>
-  <ol id="landing-publication-list"></ol>
-  <p class="publications-link"><a href="publications/pubs.html">All publications</a></p>
-</section>
-```
 
 ::: {.calendar-source style="display: none;" aria-hidden="true"}
 | Year | Date | Type | Event | Place |
