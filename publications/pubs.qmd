@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list}
 
-1.  "Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan), R&R at *Journal of Behavioral Public Administration*
+1.  "Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan) R&R at *Journal of Behavioral Public Administration*
 
 1.  "Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarity." (with Joan Cho, DG Kim, and Taeku Lee)
 
