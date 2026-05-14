@@ -11,7 +11,6 @@ I am committed to providing excellent and accessible learning experiences for st
 
 My pedagogical approach combines liberal arts–style broad intellectual foundations with design school–style hands-on experiences. My strength as an instructor comes from interdisciplinary training and extensive applied experience. My objective is to help students build strong intellectual foundations while simultaneously developing the habits of mind that allow them to tackle new problems. Guided by these principles, my teaching in public policy and data science emphasizes engagement with big ideas and cutting-edge scholarship, alongside sustained attention to practical applications and ethical implications.
 
-
 **Current Teaching in Public Policy (UNC-CH)**
 
 * **The Politics of Public Policy** \[[course website](https://jaeyk.github.io/politics_of_public_policy/)\]
