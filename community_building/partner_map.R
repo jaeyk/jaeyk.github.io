@@ -48,7 +48,9 @@ partners <- tibble::tribble(
   "Kapor Foundation", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hopelab", "Philanthropy", "San Francisco", "CA", 37.7749, -122.4194,
-  "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369
+  "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369,
+  "Public Benefit Innovation Fund", "Philanthropy", "Washington", "DC", 38.9072, -77.0369,
+  "Digital Harbor Foundation", "Philanthropy", "Baltimore", "MD", 39.2904, -76.6122,
 )
 
 us_map <- map_data("state")

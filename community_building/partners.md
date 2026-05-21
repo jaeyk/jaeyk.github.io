@@ -23,21 +23,23 @@ The following list includes partners from ongoing and completed projects, as wel
 
 #### Think tanks
 
-1. Federation of American Scientists
+1. [Federation of American Scientists](https://fas.org/)
 
 #### Civic tech organizations
 
-1. Code for America
+1. [Code for America](https://codeforamerica.org/)
 
 #### Advocacy organizations
 
-1. Student Basic Needs Coalition
-1. Students Learn Students Vote Coalition
-1. Asian American Advancing Justice-Atlanta
-1. Asian American Advocacy Fund
+1. [Student Basic Needs Coalition](https://studentbasicneeds.com/)
+1. [Students Learn Students Vote Coalition](https://slsvcoalition.org/)
+1. [Asian American Advancing Justice-Atlanta](https://www.advancingjustice-atlanta.org/)
+1. [Asian American Advocacy Fund](https://asianamericanadvocacyfund.org/)
 
 #### Philanthropy
 
-1. Hopelab 
-1. Kapor Foundation
-1. Hispanics in Philanthropy
+1. [Public Benefit Innovation Fund](https://www.publicbenefitinnovationfund.org/)
+1. [Digital Harbor Foundation](https://digitalharbor.org/)
+1. [Kapor Foundation](https://www.kaporcenter.org/kapor-foundation/)
+1. [Hopelab](https://hopelab.org/) 
+1. [Hispanics in Philanthropy](https://hipfunds.org/)
