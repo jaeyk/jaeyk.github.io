@@ -98,7 +98,7 @@ def process_lines(lines: list[str], today: date) -> ParseResult:
             updated_lines.append(line)
             continue
 
-        if current_year is None or "(*scheduled*)" not in line or not line.lstrip().startswith("|"):
+        if "(*scheduled*)" not in line or not line.lstrip().startswith("|"):
             updated_lines.append(line)
             continue
 
@@ -107,7 +107,19 @@ def process_lines(lines: list[str], today: date) -> ParseResult:
             updated_lines.append(line)
             continue
 
-        end_date = parse_end_date(cells[0], current_year)
+        # Support both old format (Date | ...) and new format (Year | Date | ...)
+        row_year = current_year
+        date_cell = cells[0]
+        year_match = re.match(r"^(20\d{2})$", cells[0])
+        if year_match and len(cells) >= 2:
+            row_year = int(year_match.group(1))
+            date_cell = cells[1]
+
+        if row_year is None:
+            updated_lines.append(line)
+            continue
+
+        end_date = parse_end_date(date_cell, row_year)
         if end_date is None or end_date >= today:
             updated_lines.append(line)
             continue
