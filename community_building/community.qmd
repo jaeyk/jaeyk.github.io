@@ -2,6 +2,8 @@
 title: "Community building"
 ---
 
+> [My version of policy entrepreneurship is closer to the role of a facilitator. I aspire to be someone who helps create space for collective learning and problem-solving.](https://substack.com/home/post/p-198463690)
+
 #### Bridging Research and Practice
 
 - **Co-founder**, [*Data for Good Roundtables*](https://sites.google.com/view/d4g-roundtables?usp=sharing) (2025– )  
@@ -47,4 +49,5 @@ I maintain an active network of [collaborators](coauthors.qmd) and [project part
   *UC Berkeley, 2023*  
   *[International Conference on Computational Social Science (IC2S2)](https://ic2s2.org/), 2024*
 
-![Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan](../misc/civic_tech_preconference.jpg){fig-align="center" width="60%"}
+![Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan (2024)](../misc/civic_tech_preconference.jpg){fig-align="center" width="60%"}
+![Source Code: Building an AI Trust and Fairness Policy Agenda Hill Briefing. Photo credit: Federation of American Scientists (2026)](../misc/fas.jpg){fig-align="center" width="60%"}
