@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "2026 Veritas Scholars Summit",
       start: "2026-06-16",
       end: "2026-06-19",
-      color: "#6d4c41",
+      color: "#aaaaaa",
       url: "https://summit.veritas.org/scholars-summit",
-      extendedProps: { org: "", host: "", place: "Park City, UT, USA", type: "badge-participant", past: false }
+      extendedProps: { org: "", host: "", place: "Park City, UT, USA", type: "badge-participant", past: true }
     },
     {
       title: "Source Code AI Trust & Fairness Launch Event",

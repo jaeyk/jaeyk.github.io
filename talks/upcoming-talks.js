@@ -4,8 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("landing-talk-list");
   if (!list) return;
-  list.innerHTML = `      <li><time datetime="2026-06-16">June 16-18.</time> <a href="https://summit.veritas.org/scholars-summit">2026 Veritas Scholars Summit</a></li>
-      <li><time datetime="2026-09-03">Sept. 3-6.</time> <a href="https://connect.apsanet.org/apsa2026/">American Political Science Association (APSA) Annual Meeting</a></li>
+  list.innerHTML = `      <li><time datetime="2026-09-03">Sept. 3-6.</time> <a href="https://connect.apsanet.org/apsa2026/">American Political Science Association (APSA) Annual Meeting</a></li>
       <li><time datetime="2026-09-16">Sept. 16-18.</time> Better Government Lab Research Retreat, Michigan Ford School of Public Policy</li>`;
 });
 
