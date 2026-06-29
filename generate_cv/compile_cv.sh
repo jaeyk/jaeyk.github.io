@@ -18,7 +18,7 @@ OUTPUT_NAME="CV_Jae_Yeon_Kim.pdf"
 OUTPUT_PATH="${REPO_DIR}/${OUTPUT_NAME}"
 
 if command -v latexmk >/dev/null 2>&1; then
-  latexmk -pdf -interaction=nonstopmode -halt-on-error "${TEX_PATH}"
+  latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="${SCRIPT_DIR}" "${TEX_PATH}"
 elif command -v pdflatex >/dev/null 2>&1; then
   pdflatex -interaction=nonstopmode -halt-on-error -output-directory="${SCRIPT_DIR}" "${TEX_PATH}"
   pdflatex -interaction=nonstopmode -halt-on-error -output-directory="${SCRIPT_DIR}" "${TEX_PATH}"

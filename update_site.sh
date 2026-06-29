@@ -60,6 +60,12 @@ sass styles.scss styles.css --no-source-map
 echo "Rendering full site locally..."
 quarto render
 
+# Quarto should copy root-level static files into docs/, but keep the deployed CV
+# explicit because visitors access this exact file from the navbar and homepage.
+if [ -f "${CV_TARGET}" ]; then
+    cp "${CV_TARGET}" "${SCRIPT_DIR}/docs/CV_Jae_Yeon_Kim.pdf"
+fi
+
 # Prevent pushing a build with missing static map assets
 if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then
     echo "Map PNG assets missing in ./misc. Aborting push."
