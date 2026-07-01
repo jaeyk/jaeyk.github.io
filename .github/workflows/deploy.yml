@@ -44,7 +44,7 @@ jobs:
             exit 0
           fi
 
-          if ! printf '%s\n' "${CHANGED_FILES}" | grep -Eq '(^|/)([^/]+\.qmd|[^/]+\.md|_quarto\.yml|styles\.(scss|css)|generate_calendar\.R|community_building/[^/]+\.R|images/|misc/[^/]+\.png|profile(\.jpg|.*\.png)|CV_Jae_Yeon_Kim\.pdf)$'; then
+          if ! printf '%s\n' "${CHANGED_FILES}" | grep -Eq '(^|/)([^/]+\.qmd|[^/]+\.md|_quarto\.yml|styles\.(scss|css)|generate_calendar\.R|community_building/[^/]+\.R|generate_cv/(cv_Kim\.tex|resume\.cls|compile_cv\.sh)|images/|misc/[^/]+\.png|profile(\.jpg|.*\.png)|CV_Jae_Yeon_Kim\.pdf)$'; then
             echo "No site source changes detected; prebuilt deploy is allowed."
             echo "use_prebuilt=true" >> "${GITHUB_OUTPUT}"
             exit 0
@@ -114,6 +114,14 @@ jobs:
       - name: Install SASS
         run: npm install -g sass
 
+      - name: Install LaTeX dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended tex-gyre
+
+      - name: Compile CV
+        run: UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 ./generate_cv/compile_cv.sh
+
       - name: Compile SCSS to CSS
         run: sass styles.scss styles.css
 
@@ -129,6 +137,9 @@ jobs:
 
       - name: Render site
         run: quarto render
+
+      - name: Ensure CV PDF is published
+        run: cp -f CV_Jae_Yeon_Kim.pdf docs/CV_Jae_Yeon_Kim.pdf
 
       - name: Ensure Community map assets are published
         run: |
@@ -188,6 +199,14 @@ jobs:
       - name: Install SASS
         run: npm install -g sass
 
+      - name: Install LaTeX dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended tex-gyre
+
+      - name: Compile CV
+        run: UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 ./generate_cv/compile_cv.sh
+
       - name: Compile SCSS to CSS
         run: sass styles.scss styles.css
 
@@ -203,6 +222,9 @@ jobs:
 
       - name: Render site
         run: quarto render
+
+      - name: Ensure CV PDF is published
+        run: cp -f CV_Jae_Yeon_Kim.pdf docs/CV_Jae_Yeon_Kim.pdf
 
       - name: Ensure Community map assets are published
         run: |

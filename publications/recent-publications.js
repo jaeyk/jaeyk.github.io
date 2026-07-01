@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("landing-publication-list");
   if (!list) return;
   list.innerHTML = `      <li><a href="https://preprints.apsanet.org/engage/apsa/article-details/69fa21314770e67d929474f3">AI, the Public Sector, and Policymaking</a> <span>in Artificial Intelligence, Politics, and Political Science edited by Nathaniel Persily and Joshua A. Tucker, forthcoming at Cambridge University Press</span></li>
-      <li><a href="https://fas.org/publication/how-governments-purchase-ai-fair/">How State Governments Should Purchase AI to Ensure Fair, Transparent, and Accountable Use.</a> <span>Federation of American Scientists, June 8, 2026</span></li>
-      <li><a href="https://journals.sagepub.com/doi/10.1177/13684302251346402">Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.</a> <span>Group Processes and Intergroup Relations, Online First in July 2025</span></li>`;
+      <li>AI and the Future of Quantitative Social Science book chapter on &quot;Failing Faster, Learning Better <span>AI and the Future of Quantitative Social Science book chapter on &quot;Failing Faster, Learning Better&quot; (with Charles Crabtree and Valentina González-Rostani) in Notes on the Future of Quantitative Social Science edited by Rohan Alexander, forthcoming at CRC Press</span></li>
+      <li><a href="https://fas.org/publication/how-governments-purchase-ai-fair/">How State Governments Should Purchase AI to Ensure Fair, Transparent, and Accountable Use.</a> <span>Federation of American Scientists, June 8, 2026</span></li>`;
 });
 
