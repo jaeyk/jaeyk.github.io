@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "GovAI Coalition",
       start: "2026-07-02",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition",
-      extendedProps: { org: "", host: "", place: "Virtual", type: "badge-talk", past: false }
+      extendedProps: { org: "", host: "", place: "Virtual", type: "badge-talk", past: true }
     },
     {
       title: "2026 Veritas Scholars Summit",
