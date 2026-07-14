@@ -12,6 +12,15 @@ if [[ ! -f "${TEX_PATH}" ]]; then
   exit 1
 fi
 
+# Normalize malformed or inconsistent double quotation marks before compiling.
+QUOTE_NORMALIZER="${SCRIPT_DIR}/normalize_cv_quotes.py"
+if command -v python3 >/dev/null 2>&1 && [[ -f "${QUOTE_NORMALIZER}" ]]; then
+  python3 "${QUOTE_NORMALIZER}" "${TEX_PATH}"
+else
+  echo "Error: Python 3 or quote normalizer not found." >&2
+  exit 1
+fi
+
 BASE_NAME="$(basename "${TEX_FILE}" .tex)"
 PDF_PATH="${SCRIPT_DIR}/${BASE_NAME}.pdf"
 OUTPUT_NAME="CV_Jae_Yeon_Kim.pdf"
@@ -50,7 +59,12 @@ fi
 if [[ "${UPDATE_SITE_SKIP_GIT:-0}" == "1" ]]; then
   echo "Skipping git commit/push from compile script (UPDATE_SITE_SKIP_GIT=1)."
 elif git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  git -C "${REPO_DIR}" add "generate_cv/${TEX_FILE}" "generate_cv/${BASE_NAME}.pdf" "${OUTPUT_NAME}"
+  git -C "${REPO_DIR}" add \
+    "generate_cv/${TEX_FILE}" \
+    "generate_cv/${BASE_NAME}.pdf" \
+    "generate_cv/compile_cv.sh" \
+    "generate_cv/normalize_cv_quotes.py" \
+    "${OUTPUT_NAME}"
 
   if git -C "${REPO_DIR}" diff --cached --quiet; then
     echo "No changes to commit."
