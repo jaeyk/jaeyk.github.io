@@ -172,6 +172,10 @@ safe_html <- function(s) {
   s <- gsub("<", "&lt;", s, fixed = TRUE)
   s <- gsub(">", "&gt;", s, fixed = TRUE)
   s <- gsub('"', "&quot;", s, fixed = TRUE)
+  # Escape backticks/${ so this content can't break the JS template
+  # literal it gets interpolated into (list.innerHTML = `...`).
+  s <- gsub("`", "&#96;", s, fixed = TRUE)
+  s <- gsub("${", "&#36;{", s, fixed = TRUE)
   s
 }
 
@@ -464,6 +468,11 @@ for (section_key in names(static_sections)) {
   section_lines <- pub_lines[start[1]:end]
   entry_lines <- grep("^1\\.\\s+", section_lines, value = TRUE)
   for (entry in entry_lines) {
+    # Normalize LaTeX-style ``quotes'' to curly quotes so they display
+    # correctly (Pandoc does this automatically when rendering pubs.qmd,
+    # but this script reads the raw source text directly).
+    entry <- gsub("``", "“", entry, fixed = TRUE)
+    entry <- gsub("''", "”", entry, fixed = TRUE)
     link <- regmatches(entry, regexec('\\[\\"?([^\\]]+?)\\"?\\]\\(([^)]+)\\)', entry, perl = TRUE))[[1]]
     if (length(link) >= 3) {
       title <- link[2]
