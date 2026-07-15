@@ -79,7 +79,7 @@ Previously, I worked as a Senior Data Scientist at [Code for America](https://co
 
 My research focuses on making policy implementation work. I study administrative burden in safety net programs, the relationship between civic infrastructure and democratic governance, and how state and local governments use artificial intelligence to deliver public services.
 
-I'm currently working on a book project titled [*Unseen and Uncounted*](https://jaeyk.github.io/book_projects/books.html), which examines how the administrative challenges of identifying and categorizing non-Black minority communities gave rise to new racial group formations during the War on Poverty. My second book project examines how governments in the United States and South Korea govern the use of artificial intelligence in public service delivery, and how these efforts reshape relationships among the state, market, and civil society.
+I'm currently working on a book project titled [*Unseen and Uncounted*](https://jaeyk.github.io/book_projects/books.html), which examines how the administrative challenges of identifying and categorizing non-Black minority communities gave rise to new racial group formations during the War on Poverty. My second book project examines how governments in the United States and South Korea adapt to artificial intelligence challenges in public service delivery, and how these responses reshape relationships among the state, market, and civil society.
 
 I use a wide range of methods, including big data and AI, field experiments, archival research, and human-centered design. I often collaborate with [government and nonprofit partners](https://jaeyk.github.io/community_building/partners.html) to produce research that directly informs policy and improves practice.
 
