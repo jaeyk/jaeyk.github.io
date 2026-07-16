@@ -101,6 +101,7 @@ I am the recipient of the Paul Volcker Junior Scholar Research Grant Award in Pu
 | Year | Date | Type | Event | Place |
 |------|------|------|-------|-------|
 | 2026 | September 16-18 | [Participant]{.badge .badge-participant} | Better Government Lab Research Retreat, Michigan Ford School of Public Policy (*scheduled*) | Ann Arbor, MI, USA |
+| 2026 | September 11 (*scheduling*) | [Talk]{.badge .badge-talk} | [AI Skeptics Podcast](https://www.oceannetwork.net/), hosted by Cathy O'Neil and Jake Appel | Virtual | 
 | 2026 | September 3-6 | [Panel]{.badge .badge-panel} | [American Political Science Association (APSA) Annual Meeting](https://connect.apsanet.org/apsa2026/) (*scheduled*) | Boston, MA, USA |
 | 2026 | July 2 | [Talk]{.badge .badge-talk} | [GovAI Coalition](https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition) | Virtual | 
 | 2026 | June 16–18 | [Participant]{.badge .badge-participant} | [2026 Veritas Scholars Summit](https://summit.veritas.org/scholars-summit) | Park City, UT, USA |

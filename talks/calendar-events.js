@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "Michigan Ford School of Public Policy", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: false }
     },
     {
+      title: "AI Skeptics Podcast",
+      start: "2026-09-11",
+      color: "#388e3c",
+      url: "https://www.oceannetwork.net/",
+      extendedProps: { org: "", host: "Cathy O'Neil and Jake Appel", place: "Virtual", type: "badge-talk", past: false }
+    },
+    {
       title: "American Political Science Association (APSA) Annual Meeting",
       start: "2026-09-03",
       end: "2026-09-07",

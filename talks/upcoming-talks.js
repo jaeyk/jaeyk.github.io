@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("landing-talk-list");
   if (!list) return;
   list.innerHTML = `      <li><time datetime="2026-09-03">Sept. 3-6.</time> <a href="https://connect.apsanet.org/apsa2026/">American Political Science Association (APSA) Annual Meeting</a></li>
+      <li><time datetime="2026-09-11">Sept. 11.</time> <a href="https://www.oceannetwork.net/">AI Skeptics Podcast</a></li>
       <li><time datetime="2026-09-16">Sept. 16-18.</time> Better Government Lab Research Retreat, Michigan Ford School of Public Policy</li>`;
 });
 
