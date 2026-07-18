@@ -1,6 +1,8 @@
 ---
 title: "Publications"
-format: html
+format:
+  html:
+    from: markdown-smart
 resources:
   - data/published-papers.yml
 ---
