@@ -42,6 +42,10 @@ fi
 echo "Updating expired scheduled event markers..."
 python3 ./scripts/update_scheduled_events.py --file ./index.qmd
 
+# Normalize quotation marks in publications page to a consistent straight-quote style
+echo "Normalizing quotation styles in pubs.qmd..."
+python3 ./scripts/fix_quote_style.py --file ./publications/pubs.qmd
+
 # Regenerate calendar events from index.qmd
 echo "Regenerating calendar events..."
 Rscript ./generate_calendar.R
