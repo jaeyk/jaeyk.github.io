@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 # Normalize every quotation style to plain straight quotes so titles render
@@ -15,6 +16,20 @@ REPLACEMENTS = [
     ("‘", "'"),  # left single quotation mark ‘
     ("’", "'"),  # right single quotation mark ’
 ]
+
+# Every numbered publication entry titles itself as "Title." or ["Title."](url).
+# A title with no quotes at all isn't a wrong quote character, so it can't be
+# auto-corrected here (we'd have to guess where the title ends) - just flag it.
+TITLE_LINE_RE = re.compile(r'^\d+\.\s+')
+QUOTED_TITLE_RE = re.compile(r'^\d+\.\s+\[?"')
+
+
+def find_unquoted_titles(text: str) -> list[tuple[int, str]]:
+    problems = []
+    for line_no, line in enumerate(text.splitlines(), start=1):
+        if TITLE_LINE_RE.match(line) and not QUOTED_TITLE_RE.match(line):
+            problems.append((line_no, line.strip()[:80]))
+    return problems
 
 
 def parse_args() -> argparse.Namespace:
@@ -49,6 +64,10 @@ def main() -> int:
         path.write_text(updated, encoding="utf-8")
 
     print(f"Fixed {total_replacements} inconsistent quotation mark(s) in {path}.")
+
+    for line_no, snippet in find_unquoted_titles(updated):
+        print(f"WARNING: {path}:{line_no} has a title with no quotes: {snippet!r}")
+
     return 0
 
 
