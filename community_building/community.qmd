@@ -23,6 +23,8 @@ I maintain an active network of [collaborators](coauthors.qmd) and [project part
 
 - **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
   (Co-directors: Donald Moynihan, Pamela Herd, Sebastian Jilke) 
+- **Algorithms, Data, and Public Policy Technology (ADAPPT) Lab**, New York University
+  (Director: Alex Chohlas-Wood)
 - **P3 Lab**, Johns Hopkins SNF Agora Institute  
   (Director: Hahrie Han)  
 - **Civic Power Lab**, Harvard Kennedy School  
