@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var events = [
     {
+      title: "Association for Public Policy Analysis and Management (APPAM) Annual Meeting",
+      start: "2026-11-05",
+      end: "2026-11-08",
+      color: "#1976d2",
+      url: "https://www.appam.org/conference-events/2026appam/",
+      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
+    },
+    {
       title: "Better Government Lab Research Retreat",
       start: "2026-09-16",
       end: "2026-09-19",
