@@ -18,6 +18,7 @@ The following list includes partners from ongoing and completed projects, as wel
 1. Massachusetts Department of Early Education and Care (EEC)
 1. New Mexico Human Services Department (NMHSD)
 1. New York State Department of Health (NYSDOH)
+1. New York City Mayor's Office for Economic Opportunity (NYC Opportunity)
 
 ### Nonprofit organizations
 
@@ -41,5 +42,5 @@ The following list includes partners from ongoing and completed projects, as wel
 1. [Public Benefit Innovation Fund](https://www.publicbenefitinnovationfund.org/)
 1. [Digital Harbor Foundation](https://digitalharbor.org/)
 1. [Kapor Foundation](https://www.kaporcenter.org/kapor-foundation/)
-1. [Hopelab](https://hopelab.org/) 
+1. [Hopelab](https://hopelab.org/)
 1. [Hispanics in Philanthropy](https://hipfunds.org/)

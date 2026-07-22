@@ -40,6 +40,7 @@ partners <- tibble::tribble(
   "Massachusetts Department of Early Education and Care", "State & local government", "Boston", "MA", 42.3601, -71.0589,
   "New Mexico Human Services Department", "State & local government", "Santa Fe", "NM", 35.6870, -105.9378,
   "New York State Department of Health", "State & local government", "Albany", "NY", 42.6526, -73.7562,
+  "New York City Mayor's Office for Economic Opportunity", "State & local government", "New York", "NY", 40.7128, -74.0060,
   "Code for America", "Civic tech", "San Francisco", "CA", 37.7749, -122.4194,
   "Asian Americans Advancing Justice–Atlanta", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
   "Asian American Advocacy Fund", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
