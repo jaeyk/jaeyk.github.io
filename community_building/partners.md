@@ -13,6 +13,7 @@ The following list includes partners from ongoing and completed projects, as wel
 1. Boulder County, Housing and Human Services (HHS)
 1. California Department of Social Services (CDSS)
 1. City of San José, Office of Communications
+1. Colorado Govenor's Office of Information Technology (OIT)
 1. Colorado Department of Health Care Policy and Financing (HCPF)
 1. [Government AI Coalition](https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition)
 1. Massachusetts Department of Early Education and Care (EEC)
