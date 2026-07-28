@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var events = [
     {
+      title: "InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)",
+      start: "2026-12-09",
+      color: "#1976d2",
+      url: "https://www.innovateus.net/",
+      extendedProps: { org: "", host: "", place: "Virtual", type: "badge-panel", past: false }
+    },
+    {
       title: "Association for Public Policy Analysis and Management (APPAM) Annual Meeting",
       start: "2026-11-05",
       end: "2026-11-08",
