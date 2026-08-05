@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
     },
     {
+      title: "Causal Inference Research Group",
+      start: "2026-10-02",
+      color: "#388e3c",
+      url: "https://causal.unc.edu/talks/",
+      extendedProps: { org: "UNC-Chapel Hill", host: "", place: "Chapel Hill, NC", type: "badge-talk", past: false }
+    },
+    {
       title: "Better Government Lab Research Retreat",
       start: "2026-09-16",
       end: "2026-09-19",

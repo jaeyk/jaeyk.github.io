@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   list.innerHTML = `      <li><time datetime="2026-09-03">Sept. 3-6.</time> <a href="https://connect.apsanet.org/apsa2026/">American Political Science Association (APSA) Annual Meeting</a></li>
       <li><time datetime="2026-09-11">Sept. 11.</time> <a href="https://www.oceannetwork.net/">AI Skeptics Podcast</a></li>
       <li><time datetime="2026-09-16">Sept. 16-18.</time> Better Government Lab Research Retreat, Michigan Ford School of Public Policy</li>
-      <li><time datetime="2026-11-05">Nov. 5-7.</time> <a href="https://www.appam.org/conference-events/2026appam/">Association for Public Policy Analysis and Management (APPAM) Annual Meeting</a></li>
-      <li><time datetime="2026-12-09">Dec. 9.</time> <a href="https://www.innovateus.net/">InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)</a></li>`;
+      <li><time datetime="2026-10-02">Oct. 2.</time> <a href="https://causal.unc.edu/talks/">Causal Inference Research Group, UNC-Chapel Hill</a></li>
+      <li><time datetime="2026-11-05">Nov. 5-7.</time> <a href="https://www.appam.org/conference-events/2026appam/">Association for Public Policy Analysis and Management (APPAM) Annual Meeting</a></li>`;
 });
 
