@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       start: "2026-10-02",
       color: "#388e3c",
       url: "https://causal.unc.edu/talks/",
-      extendedProps: { org: "UNC-Chapel Hill", host: "", place: "Chapel Hill, NC", type: "badge-talk", past: false }
+      extendedProps: { org: "UNC-Chapel Hill", host: "Daniel Westreich", place: "Chapel Hill, NC", type: "badge-talk", past: false }
     },
     {
       title: "Better Government Lab Research Retreat",
