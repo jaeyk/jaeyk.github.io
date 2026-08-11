@@ -71,6 +71,8 @@ format:
 
 <p class="hello">Hello! I am Jae.</p>
 
+I am a political scientist, data scientist, policy scholar, and civic technologist.
+
 I am an Assistant Professor of Public Policy at [the University of North Carolina at Chapel Hill](https://publicpolicy.unc.edu/person/jae-yeon-kim/), and a fellow at the [Civic Power Lab](https://civicpowerlab.us/) at the Harvard Kennedy School and a [Better Government Lab](https://www.bettergovernmentlab.org/) Fellow at the University of Michigan's Ford School of Public Policy. I co-founded [the Data for Good Roundtables](https://sites.google.com/view/d4g-roundtables/home) and [the Administrative Politics Network](https://sites.google.com/view/apnetwork/home).
 
 In Spring 2027, I will be on research leave and visiting UC Berkeley's [Berkeley Economy & Society Initiative](https://besi.berkeley.edu/).
