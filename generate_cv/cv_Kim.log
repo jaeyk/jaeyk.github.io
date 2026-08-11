@@ -522,7 +522,7 @@ Package rerunfilecheck Info: File `cv_Kim.out' has not changed.
 Here is how much of TeX's memory you used:
  12558 strings out of 474662
  200664 string characters out of 5751110
- 652373 words of memory out of 5000000
+ 654882 words of memory out of 5000000
  35239 multiletter control sequences out of 15000+600000
  598769 words of font info for 147 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
