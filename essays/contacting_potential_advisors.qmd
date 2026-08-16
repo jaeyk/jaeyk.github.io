@@ -1,6 +1,7 @@
 ---
 title: "Advice for Prospective PhD Students"
 author: "Jae Yeon Kim"
+date: 2026-08-16
 format: html
 toc: false
 ---
