@@ -1,0 +1,24 @@
+---
+title: "Advice for Prospective PhD Students"
+author: "Jae Yeon Kim"
+format: html
+toc: false
+---
+
+## Do you need to contact potential advisors?
+
+Usually, no. Most social science PhD programs—except those organized around labs—do not require applicants to contact potential advisors. At least in U.S. social science programs, funding generally comes from departments, and admissions decisions are usually made at the department level by an admissions committee.
+
+## If you reach out, demonstrate the fit
+
+If you decide to contact a potential advisor, make the message specific. Copying and pasting statements from a faculty bio or homepage generally does not work and can send a bad signal. An effective email should show genuine commitment and investment. Reusing a faculty member’s own description of their work does not provide that signal.
+
+Similarly, simply claiming that there is a fit does not make it so. Explain what you have read, how it connects to your developing research agenda, and how that faculty member could help you advance it. Demonstrating fit takes time and effort.
+
+## Focus on the project and the field
+
+What matters most is your project proposal and its fit with the field of study to which you are applying. This is why your statement of purpose and writing sample matter so much. For example, applicants to a public policy PhD program can choose among many fields and pursue a wide variety of topics. I want to see how an applicant connects a topic of interest to a fundamental question in the field in a way that is both fresh and important.
+
+One useful test is to ask: *If you discovered what you aim to discover, why would it matter, and to whom?* The more consequential the answer—and the broader and more diverse the group of people to whom it matters—the stronger the project.
+
+For more on presenting a research agenda, see my [guide to writing a statement of purpose](sop.html).

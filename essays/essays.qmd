@@ -27,6 +27,10 @@ Below is a collection of essays I’ve written over the years, organized into th
 
 **Career Advice**
 
+- [*Advice for Prospective PhD Students*](contacting_potential_advisors.html)
+
+- [*How to Write a Statement of Purpose for Graduate School in Political Science / Public Policy*](sop.html)
+
 - [*Academic Job Talks as Storytelling: Why Character Matters as Much as Plot*](academic_job_talk.html)
 
 - [*What I Wish I Knew Before the Academic Job Market*](job_market.html)
