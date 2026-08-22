@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list}
 
-1.  ["Flood of Comments on White House Grantmaking Overhaul Is Largely Negative, Analysis Shows."](https://www.statnews.com/2026/07/15/trump-omb-grant-funding-proposal-comments-95-percent-opposed/) (Anil Oza and J. Emory Parker), *STAT News*, July 15, 2026 (contributed to the underlying data analysis as part of the UNC-STAT partnership)
+1.  ["Flood of Comments on White House Grantmaking Overhaul Is Largely Negative, Analysis Shows."](https://www.statnews.com/2026/07/15/trump-omb-grant-funding-proposal-comments-95-percent-opposed/) (Anil Oza and J. Emory Parker), *STAT News*, July 15, 2026 (contributed to the underlying data analysis as part of the UNC-STAT collaboration)
 
 1.  ["How State Governments Should Purchase AI to Ensure Fair, Transparent, and Accountable Use."](https://fas.org/publication/how-governments-purchase-ai-fair/) (**Jae Yeon Kim** and Aniket Kesari), *Federation of American Scientists*, June 8, 2026
 
