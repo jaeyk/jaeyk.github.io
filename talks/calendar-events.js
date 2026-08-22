@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)",
       start: "2026-12-09",
       color: "#1976d2",
-      url: "https://www.innovateus.net/",
+      url: "https://innovate-us.org/",
       extendedProps: { org: "", host: "", place: "Virtual", type: "badge-panel", past: false }
     },
     {
