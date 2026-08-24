@@ -348,9 +348,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var equalNote = (paper.equal_coauthors || []).length > 0 ? " (+ = co-lead authors.)" : "";
     var note = paper.note ? "<ul><li>" + escapeHtml(paper.note) + "</li></ul>" : "";
     var liOpen = '<li' + (typeof listValue === "number" ? ' value="' + String(listValue) + '"' : "") + ">";
-    return liOpen + '<p><a href="' + escapeHtml(paper.url) + '">"' + escapeHtml(paper.title) + '"</a> (' +
-      formatAuthors(paper.authors, paper.equal_coauthors) + ") <em>" + escapeHtml(paper.venue) + "</em>, " +
-      escapeHtml(paper.citation) + equalNote + (links ? " " + links : "") + "</p>" + note + "</li>";
+    var titleMarkup = paper.url
+      ? '<a href="' + escapeHtml(paper.url) + '">"' + escapeHtml(paper.title) + '"</a>'
+      : '"' + escapeHtml(paper.title) + '"';
+    var venueEm = paper.venue ? "<em>" + escapeHtml(paper.venue) + "</em>" : "";
+    var citationText = escapeHtml(paper.citation);
+    var venueAndCitation = citationText.indexOf("{venue}") !== -1
+      ? citationText.replace("{venue}", venueEm)
+      : (venueEm ? venueEm + ", " : "") + citationText;
+    return liOpen + "<p>" + titleMarkup + " (" +
+      formatAuthors(paper.authors, paper.equal_coauthors) + ") " + venueAndCitation +
+      equalNote + (links ? " " + links : "") + "</p>" + note + "</li>";
   }
 
   function renderGroupedList(items) {
@@ -531,7 +539,6 @@ Loading publications...
 </summary>
 <div class="reversed-list">
 <ol type="1">
-<li><p>"Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion." (with Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan) R&amp;R at <em>Journal of Behavioral Public Administration</em></p></li>
 <li><p>"Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarity." (with Joan Cho, DG Kim, and Taeku Lee)</p>
 <ul>
 <li>Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan</li>

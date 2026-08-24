@@ -1,3 +1,17 @@
+- order: 18
+  year: 2026
+  title: "Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion."
+  url: 
+  authors:
+    - "Jae Yeon Kim"
+    - "Eric Giannella"
+    - "Zhaowen Guo"
+    - "Pamela Herd"
+    - "Sebastian Jilke"
+    - "Donald Moynihan"
+  venue: "Journal of Behavioral Public Administration"
+  citation: "Conditionally accepted at the {venue}"
+
 - order: 17
   year: 2025
   title: "Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans."
@@ -11,7 +25,7 @@
   links:
     - label: "replication"
       url: "https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009"
-  #note: "Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem."
+  note: "Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem."
 
 - order: 16
   year: 2025

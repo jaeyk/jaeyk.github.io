@@ -441,7 +441,12 @@ for (p in papers) {
   title <- p$title %||% ""
   venue <- p$venue %||% ""
   citation <- p$citation %||% ""
-  meta <- trimws(paste(c(venue, citation)[nzchar(c(venue, citation))], collapse = ", "))
+  if (grepl("{venue}", citation, fixed = TRUE)) {
+    citation <- gsub("{venue}", venue, citation, fixed = TRUE)
+    meta <- citation
+  } else {
+    meta <- trimws(paste(c(venue, citation)[nzchar(c(venue, citation))], collapse = ", "))
+  }
   is_forthcoming <- grepl("forthcoming", paste(citation, meta), ignore.case = TRUE)
   publication_items_data[[length(publication_items_data) + 1]] <- list(
     title = title,
