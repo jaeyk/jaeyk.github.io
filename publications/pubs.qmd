@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     -   Presented at Yonsei University, Scheduled: 2026 APPAM   
 
-1.  "Higher Education as Safety Net Infrastructure." (with Milan de Vries and Tyler Simko)
+1.  "Higher Education as Safety Net Infrastructure." (with Tyler Simko)
 
     -   Scheduled: 2026 APPAM
 
