@@ -24,7 +24,7 @@ Faced with exclusion from official categories, ethnic elites engaged in politica
 
 Drawing on original data from both local administrators and community organizers, the book traces the evolution of policies governing diverse low-income populations at the subnational, national, and transnational levels during the postwar period of American political development. Governing diversity is challenging for both administrative and political reasons, and these challenges are inherently connected. Classifying diverse groups is costly, and unless target groups develop the capacity to make themselves legible, the state has difficulty recognizing them and distributing resources fairly.
 
-<span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by 2026.</span>
+<span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by 2026 and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).</span>
 
 **Table of Contents**
 
@@ -36,8 +36,6 @@ Drawing on original data from both local administrators and community organizers
   - Chapter 5. Classification Cost and New Group Formation: The Cases of Disability and Gig Worker Rights
 - *Governing Diversity: Why Both State and Civic Capacity Matter*
 
-<span style="color:red;">I plan to complete the first entire manuscript by 2026, and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).</span>
-
 **Pictures from the archives and field**
 
 ![Enter Opportunity Market. Source: Agenda, the newsletter of the National Council of La Raza Fall 1974 (p.20)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/garcia.png){fig-align="center" width="80%"}
@@ -46,7 +44,9 @@ Drawing on original data from both local administrators and community organizers
 
 *Note: [The Unity Council](https://unitycouncil.org/about-us/) was "the first Spanish-language focused employment center in Oakland and served as an anchor response to President Lyndon B. Johnson’s War on Poverty."*
 
-![Asian American Panethnic Organizing Ecosystem in San Francisco’s Chinatown. Source: Kim (2022). Chinese for Affirmative Action is an Asian American advocacy organization. Although affirmative action for Asian Americans is often associated today with elite college admissions, this organization leveraged the concept to advance fair employment and educational opportunities for Asian communities. The term Chinese in its name reflects its historical origins in San Francisco’s Chinatown.](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/.png){fig-align="center" width="60%"}
+**Data Visualizations**
+
+![Asian American Panethnic Organizing Ecosystem in San Francisco’s Chinatown. Source: Kim (2022). Chinese for Affirmative Action is an Asian American advocacy organization. Although affirmative action for Asian Americans is often associated today with elite college admissions, this organization leveraged the concept to advance fair employment and educational opportunities for Asian communities. The term Chinese in its name reflects its historical origins in San Francisco’s Chinatown.](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/sf_cca_map.png){fig-align="center" width="80%"}
 
 *Note: [Chinese for Affirmative Action](https://caasf.org/mission-vision-history/) was established to leverage War on Poverty resources and to advocate for fair education and employment opportunities for Chinatown residents.*
 
