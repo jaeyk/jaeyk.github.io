@@ -1,8 +1,8 @@
 ## Advisees (2018-present)
 
-- **UNC (2026-)** (undergraduate students):
-  - Serena Michael Ray (current undergraduate student in Public Policy)
-  - Juliet Rose Loffredo (current undergraduate student in Journalism and Public Policy)
+- **UNC Chapel Hill** (2026-):
+  - Serena Michael Ray (Public Policy undergraduate)
+  - Juliet Rose Loffredo (Journalism and Public Policy undergraduate)
 
 - **Harvard** (2023, master students):
   - Alison Yuhan Yao (MS in data science; Currently: data scientist at Microsoft Azure)
