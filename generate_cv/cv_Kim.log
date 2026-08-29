@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 AUG 2026 11:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 AUG 2026 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,9 +511,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [11]
 
-[12]
-
-[13] (/Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Kim.aux)
+[12] (/Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Kim.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -522,11 +520,11 @@ Package rerunfilecheck Info: File `cv_Kim.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12559 strings out of 474662
- 200671 string characters out of 5751110
- 652786 words of memory out of 5000000
+ 12564 strings out of 474662
+ 200720 string characters out of 5751110
+ 653786 words of memory out of 5000000
  35239 multiletter control sequences out of 15000+600000
- 598769 words of font info for 147 fonts, out of 8000000 for 9000
+ 599189 words of font info for 150 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,8n,79p,1830b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/jaeyeonkim/Library/texmf/fonts/type1/public/tex-gyre/qplb.pfb></Users
@@ -534,10 +532,10 @@ Here is how much of TeX's memory you used:
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (13 pages, 284347 bytes).
+m.pdf (12 pages, 284114 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
  20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 
