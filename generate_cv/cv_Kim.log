@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 SEP 2026 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 SEP 2026 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,9 +502,9 @@ pdftex.map}{/Users/jaeyeonkim/Library/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}]
 
 [9]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 663.
+(Font)              <9> on input line 666.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 663.
+(Font)              <6> on input line 666.
 
 
 [10]
@@ -524,20 +524,20 @@ Package rerunfilecheck Info: File `cv_Kim.out' has not changed.
 Here is how much of TeX's memory you used:
  12561 strings out of 474662
  200691 string characters out of 5751110
- 654406 words of memory out of 5000000
+ 654696 words of memory out of 5000000
  35239 multiletter control sequences out of 15000+600000
  598909 words of font info for 148 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,8n,79p,1830b,685s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1830b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/jaeyeonkim/Library/texmf/fonts/type1/public/tex-gyre/qplb.pfb></Users
 /jaeyeonkim/Library/texmf/fonts/type1/public/tex-gyre/qplbi.pfb></Users/jaeyeon
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (13 pages, 284885 bytes).
+m.pdf (13 pages, 285060 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
  44 named destinations out of 1000 (max. 500000)
  20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 
