@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <li><time datetime="2026-09-11">Sept. 11.</time> <a href="https://www.oceannetwork.net/">AI Skeptics Podcast</a></li>
       <li><time datetime="2026-09-16">Sept. 16-18.</time> Better Government Lab Research Retreat, Michigan Ford School of Public Policy</li>
       <li><time datetime="2026-09-23">Sept. 23.</time> National Public Health AI Peer Learning Series</li>
-      <li><time datetime="2026-10-02">Oct. 2.</time> <a href="https://causal.unc.edu/talks/">Causal Inference Research Group, UNC-Chapel Hill</a></li>`;
+      <li><time datetime="2026-09-25">Sept. 25.</time> Data Science and Society Seminar Series, UNC-Chapel Hill</li>`;
 });
 
