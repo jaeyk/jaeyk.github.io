@@ -86,6 +86,10 @@
   venue: "Nature Human Behaviour"
   citation: "Online First in November 2023"
   links:
+    - label: "website"
+      url: "https://snfagora.github.io/modern_agora_dashboard/#about"
+    - label: "dashboard"
+      url: "https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw"
     - label: "replication"
       url: "https://github.com/snfagora/map_civic_opportunity/tree/main"
     - label: "supplementary materials"

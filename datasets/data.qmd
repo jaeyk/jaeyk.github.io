@@ -14,7 +14,7 @@ public good.
 1.  [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
-    [**\[Dashboard\]**](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw)
+    [**\[Dashboard\]**](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw) [**\[Website\]**](https://snfagora.github.io/modern_agora_dashboard/#about)
 
     -   **Summary:** We introduce MapAgora, a set of five new datasets
         that provide a comprehensive view of civic opportunity across

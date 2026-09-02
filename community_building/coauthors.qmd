@@ -4,7 +4,7 @@ format:
     toc: true
     toc-depth: 4
     theme: cosmo
-    css: ../styles.scss
+    css: ../styles.css
     smooth-scroll: true
     df-print: paged  # Required only for R-based data frames
 ---

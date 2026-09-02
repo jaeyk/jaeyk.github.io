@@ -56,9 +56,23 @@ if [ ! -f ./community_building/coauthors.csv ]; then
     exit 1
 fi
 
-# Compile SCSS to CSS before rendering
+# Compile SCSS to CSS before rendering when Sass is available.
+# If Sass is unavailable, allow the build to continue only when the compiled CSS
+# is already present and newer than the SCSS source.
 echo "Compiling styles.scss → styles.css..."
-sass styles.scss styles.css --no-source-map
+if command -v sass >/dev/null 2>&1; then
+    sass styles.scss styles.css --no-source-map
+elif [ ! -f ./styles.css ]; then
+    echo "Sass is not installed and ./styles.css is missing. Aborting."
+    echo "Install Dart Sass or regenerate styles.css on a machine with Sass available."
+    exit 1
+elif [ ./styles.scss -nt ./styles.css ]; then
+    echo "Sass is not installed and ./styles.scss has changed more recently than ./styles.css. Aborting."
+    echo "Install Dart Sass to refresh styles.css before rendering."
+    exit 1
+else
+    echo "Sass is not installed, but existing styles.css is up to date. Reusing compiled CSS."
+fi
 
 # Render the full site locally so committed docs are ready to deploy
 echo "Rendering full site locally..."
