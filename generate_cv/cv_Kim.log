@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  2 SEP 2026 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  4 SEP 2026 05:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,9 +502,9 @@ pdftex.map}{/Users/jaeyeonkim/Library/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}]
 
 [9]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 666.
+(Font)              <9> on input line 667.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 666.
+(Font)              <6> on input line 667.
 
 
 [10]
@@ -534,7 +534,7 @@ Here is how much of TeX's memory you used:
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (13 pages, 284955 bytes).
+m.pdf (13 pages, 284961 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  243 compressed objects within 3 object streams
