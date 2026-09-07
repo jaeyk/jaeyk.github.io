@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "American Political Science Association (APSA) Annual Meeting",
       start: "2026-09-03",
       end: "2026-09-07",
-      color: "#1976d2",
+      color: "#aaaaaa",
       url: "https://connect.apsanet.org/apsa2026/",
-      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
+      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: true }
     },
     {
       title: "GovAI Coalition",
