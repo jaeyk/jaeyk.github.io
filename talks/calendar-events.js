@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       start: "2026-10-28",
       color: "#388e3c",
       url: "https://www.koreasociety.org/",
-      extendedProps: { org: "TheKorea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
+      extendedProps: { org: "The Korea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
     },
     {
       title: "Causal Inference Research Group",
