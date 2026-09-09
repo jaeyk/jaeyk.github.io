@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: "Association for Public Policy Analysis and Management (APPAM) Annual Meeting",
-      start: "2026-11-05",
-      end: "2026-11-08",
+      start: "2026-11-04",
+      end: "2026-11-07",
       color: "#1976d2",
       url: "https://www.appam.org/conference-events/2026appam/",
       extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
