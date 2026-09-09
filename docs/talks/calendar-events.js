@@ -30,6 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-panel", past: false }
     },
     {
+      title: "Sherman Family Emerging Scholar Award Lecture",
+      start: "2026-10-28",
+      color: "#388e3c",
+      extendedProps: { org: "Korea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
+    },
+    {
       title: "Causal Inference Research Group",
       start: "2026-10-02",
       color: "#388e3c",
