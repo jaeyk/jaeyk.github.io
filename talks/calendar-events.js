@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "Sherman Family Emerging Scholar Award Lecture",
       start: "2026-10-28",
       color: "#388e3c",
-      extendedProps: { org: "Korea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
+      url: "https://www.koreasociety.org/",
+      extendedProps: { org: "TheKorea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
     },
     {
       title: "Causal Inference Research Group",
