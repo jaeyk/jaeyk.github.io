@@ -103,7 +103,7 @@ I am the recipient of the Sherman Family Emerging Scholar Award, The Korea Socie
 | Year | Date | Type | Event | Place |
 |------|------|------|-------|-------|
 | 2026 | December 9 | [Panel]{.badge .badge-panel} | [InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)](https://innovate-us.org/) (*scheduled*) | Virtual |
-| 2026 | November 4-7 | [Panel]{.badge .badge-panel} | [Association for Public Policy Analysis and Management (APPAM) Annual Meeting](https://www.appam.org/conference-events/2026appam/) (*scheduled*) | Boston, MA, USA |
+| 2026 | November 4-6 | [Panel]{.badge .badge-panel} | [Association for Public Policy Analysis and Management (APPAM) Annual Meeting](https://www.appam.org/conference-events/2026appam/) (*scheduled*) | Boston, MA, USA |
 | 2026 | October 28 | [Talk]{.badge .badge-talk} | Sherman Family Emerging Scholar Award Lecture, [The Korea Society](https://www.koreasociety.org/) (*scheduled*) | New York City, NY, USA |
 | 2026 | October 2 | [Talk]{.badge .badge-talk} | [Causal Inference Research Group](https://causal.unc.edu/talks/), UNC-Chapel Hill, hosted by Daniel Westreich (*scheduled*) | Chapel Hill, NC  |
 | 2026 | September 25 | [Talk]{.badge .badge-talk} | Data Science and Society Seminar Series, UNC-Chapel Hill, hosted by Tarek Zikry and Iain Carmichael (*scheduled*) | Chapel Hill, NC  |
