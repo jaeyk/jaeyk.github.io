@@ -6,7 +6,7 @@ format: html
 <details open>
 <summary><strong>In progress</strong></summary>
 
-1.  "Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America." (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+1.  **"Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America."** (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
     -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
@@ -36,26 +36,16 @@ Drawing on original data from both local administrators and community organizers
   - Chapter 5. Classification Cost and New Group Formation: The Cases of Disability and Gig Worker Rights
 - *Governing Diversity: Why Both State and Civic Capacity Matter*
 
-**Pictures from the archives and field**
 
-![Enter Opportunity Market. Source: Agenda, the newsletter of the National Council of La Raza Fall 1974 (p.20)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/garcia.png){fig-align="center" width="80%"}
+2. **"Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State."**
 
-![The Unity Council (est in 1964, Fruitvale, Oakland, CA). Photo Credit: Jae Yeon Kim (2025)](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/unity_council.JPG){fig-align="center" width="60%"}
 
-*Note: [The Unity Council](https://unitycouncil.org/about-us/) was "the first Spanish-language focused employment center in Oakland and served as an anchor response to President Lyndon B. Johnson’s War on Poverty."*
-
-**Data Visualizations**
-
-![Asian American Panethnic Organizing Ecosystem in San Francisco’s Chinatown. Source: Kim (2022). Chinese for Affirmative Action is an Asian American advocacy organization. Although affirmative action for Asian Americans is often associated today with elite college admissions, this organization leveraged the concept to advance fair employment and educational opportunities for Asian communities. The term Chinese in its name reflects its historical origins in San Francisco’s Chinatown.](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/sf_cca_map.png){fig-align="center" width="80%"}
-
-*Note: [Chinese for Affirmative Action](https://caasf.org/mission-vision-history/) was established to leverage War on Poverty resources and to advocate for fair education and employment opportunities for Chinatown residents.*
-
-</details>
 
 <details>
-<summary><strong>Books</strong></summary>
 
-2.  ["We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society (in Korean)."](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160) (in Korean, Sejong Books 2023) \[[book website](https://wethedata.vercel.app/)\]
+<summary><strong>Korean Books</strong></summary>
+
+1. **"We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society"** (in Korean, [Sejong Books](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160), 2023) \[[book website](https://wethedata.vercel.app/)\]
 
 Why can we shop with one click but still struggle to access basic public services?
 
@@ -81,7 +71,7 @@ Why can we shop with one click but still struggle to access basic public service
 ::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}
 
-1. ["How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career (in Korean)"](https://www.yes24.com/product/goods/183755163) (Sejong Books, 2nd ed., 2026) [[book website](https://learn2career.vercel.app/)]
+2. **"How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career"** (in Korean, Sejong Books, 2nd ed., 2026) [[book website](https://learn2career.vercel.app/)]
 
 Why do so many students enter college full of ambition, only to graduate with more confusion than clarity?
 
