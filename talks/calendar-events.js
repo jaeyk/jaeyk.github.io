@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "AI Skeptics Podcast",
       start: "2026-09-11",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://www.oceannetwork.net/",
-      extendedProps: { org: "", host: "Cathy O'Neil and Jake Appel", place: "Virtual", type: "badge-talk", past: false }
+      extendedProps: { org: "", host: "Cathy O'Neil and Jake Appel", place: "Virtual", type: "badge-talk", past: true }
     },
     {
       title: "American Political Science Association (APSA) Annual Meeting",
