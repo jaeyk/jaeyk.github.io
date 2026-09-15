@@ -24,6 +24,7 @@ category_colors <- c(
   "Federal government" = "#1b9e77",
   "State & local government" = "#d95f02",
   "Civic tech" = "#7570b3",
+  "Nonprofits" = "#a6761d",
   "Philanthropy" = "#e7298a",
   "Advocacy organizations" = "#66a61e",
   "Think tanks" = "#e6ab02"
@@ -45,12 +46,15 @@ partners <- tibble::tribble(
   "Code for America", "Civic tech", "San Francisco", "CA", 37.7749, -122.4194,
   "Asian Americans Advancing Justice–Atlanta", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
   "Asian American Advocacy Fund", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
-  "Student Basic Needs Coalition", "Advocacy organizations", "Knoxville", "TN", 35.9606, -83.9207,
   "Students Learn Students Vote Coalition", "Advocacy organizations", "Washington", "DC", 38.9072, -77.0369,
   "Kapor Foundation", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hispanics in Philanthropy", "Philanthropy", "Oakland", "CA", 37.8044, -122.2712,
   "Hopelab", "Philanthropy", "San Francisco", "CA", 37.7749, -122.4194,
   "Federation of American Scientists", "Think tanks", "Washington", "DC", 38.9072, -77.0369,
+  "Health Resources in Action", "Nonprofits", "Boston", "MA", 42.3601, -71.0589,
+  "Innovate US", "Nonprofits", "Boston", "MA", 42.3601, -71.0589,
+  "Louisiana Public Health Institute", "Nonprofits", "New Orleans", "LA", 29.9511, -90.0715,
+  "Student Basic Needs Coalition", "Nonprofits", "Knoxville", "TN", 35.9606, -83.9207,
   "Public Benefit Innovation Fund", "Philanthropy", "Washington", "DC", 38.9072, -77.0369,
   "Digital Harbor Foundation", "Philanthropy", "Baltimore", "MD", 39.2904, -76.6122,
 )
@@ -64,19 +68,26 @@ partners <- partners %>%
     hover_text = paste0(org, "\n", city, ", ", state, "\nCategory: ", category),
     # Manual nudges to avoid dense-label collisions in the Northeast.
     label_nudge_x = if_else(
-      org == "Massachusetts Department of Early Education and Care",
+      org %in% c(
+        "Massachusetts Department of Early Education and Care",
+        "Health Resources in Action",
+        "Innovate US"
+      ),
       2.6, 0
     ),
-    label_nudge_y = if_else(
-      org == "Massachusetts Department of Early Education and Care",
-      1.1,
-      if_else(org == "Hopelab", 1.0, 0)
+    label_nudge_y = case_when(
+      org == "Massachusetts Department of Early Education and Care" ~ 1.1,
+      org == "Health Resources in Action" ~ 0.1,
+      org == "Innovate US" ~ -0.9,
+      org == "Hopelab" ~ 1.0,
+      TRUE ~ 0
     ),
     # Set category order for legend
     category = factor(category, levels = c(
       "Federal government",
       "State & local government",
       "Civic tech",
+      "Nonprofits",
       "Philanthropy",
       "Advocacy organizations",
       "Think tanks"
