@@ -44,6 +44,7 @@ partners <- tibble::tribble(
   "New York State Department of Health", "State & local government", "Albany", "NY", 42.6526, -73.7562,
   "New York City Mayor's Office for Economic Opportunity", "State & local government", "New York", "NY", 40.7128, -74.0060,
   "Code for America", "Civic tech", "San Francisco", "CA", 37.7749, -122.4194,
+  "U.S. Digital Response", "Civic tech", "Oakland", "CA", 37.8044, -122.2712,
   "Asian Americans Advancing Justice–Atlanta", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
   "Asian American Advocacy Fund", "Advocacy organizations", "Atlanta", "GA", 33.7490, -84.3880,
   "Students Learn Students Vote Coalition", "Advocacy organizations", "Washington", "DC", 38.9072, -77.0369,

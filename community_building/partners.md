@@ -37,6 +37,7 @@ The following list includes partners from ongoing and completed projects, as wel
 #### Civic tech organizations
 
 1. [Code for America](https://codeforamerica.org/)
+1. [U.S. Digital Response](https://www.usdigitalresponse.org/)
 
 #### Advocacy organizations
 
