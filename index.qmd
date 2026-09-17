@@ -88,7 +88,7 @@ I am the recipient of the Sherman Family Emerging Scholar Award, The Korea Socie
 ::: {.callout-note .student-note}
 ## 🎓 For Prospective PhD and UNC Students
 
-**PhD Students**: I will not be taking students in the coming cycle (starting in Fall 2027). If you are interested in working with me, please read my [advice for prospective PhD students](essays/contacting_potential_advisors.qmd). If you then choose to email me, please explain (1) which of my work you have read, (2) why it is connected to your research agenda, and (3) how I can help you develop it. I look forward to working with self-motivated, intellectually curious students who are passionate about policy problems and eager to learn how to translate them into theoretical questions and test them empirically.
+**PhD Students**: I will not be taking students in the coming cycle (starting in Fall 2027). If you are interested in working with me, please read my [advice for prospective PhD students](essays/contacting_potential_advisors.qmd). If you then choose to email me, please explain (1) which of my work you have read, (2) why it is connected to your research agenda, and (3) how I can help you develop it. I look forward to working with self-motivated, intellectually curious students who approach their research with a healthy dose of skepticism, a big dose of imagination, and a relentless attention to detail.
 
 **UNC graduate and undergraduate students**: I cannot serve on your committee or advise on your honors thesis unless I know you well and there is a strong alignment between your topic and my research expertise. That said, if you think you could benefit from my expertise, please reach out to me by email and schedule a time during my office hours.
 :::
