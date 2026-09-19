@@ -447,6 +447,7 @@ document.addEventListener("DOMContentLoaded", function () {
     - Interviewed on the AI Skeptics Podcast (hosted by Cathy O'Neil and Jake Appel)
     - Used as educational material for the National Public Health AI Peer Learning Series (hosted by Health Resources in Action and the Louisiana Public Health Institute) and InnovateUS
     - Introduced to a Japanese policy audience by the Policy Entrepreneurs Platform
+    - Catalogued by the National Association of State Procurement Officials (NASPO)
 
 1.  ["Building Civic Muscle."](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), *APSA's Civic Engagement Section Podcast (Civic Café)*, June 17, 2025
 
