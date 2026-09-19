@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "Better Government Lab Research Retreat",
       start: "2026-09-16",
       end: "2026-09-19",
-      color: "#6d4c41",
-      extendedProps: { org: "Michigan Ford School of Public Policy", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "Michigan Ford School of Public Policy", host: "", place: "Ann Arbor, MI, USA", type: "badge-participant", past: true }
     },
     {
       title: "AI Skeptics Podcast",
