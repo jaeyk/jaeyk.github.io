@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "The Korea Society", host: "", place: "New York City, NY, USA", type: "badge-talk", past: false }
     },
     {
+      title: "Source Code AI Policy Webinar for State and Local Government Staff",
+      start: "2026-10-14",
+      color: "#1976d2",
+      extendedProps: { org: "Federation of American Scientists", host: "", place: "Virtual", type: "badge-panel", past: false }
+    },
+    {
       title: "Causal Inference Research Group",
       start: "2026-10-02",
       color: "#388e3c",
