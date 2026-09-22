@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 SEP 2026 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 SEP 2026 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,13 +528,13 @@ Here is how much of TeX's memory you used:
  35239 multiletter control sequences out of 15000+600000
  599049 words of font info for 149 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,8n,79p,1849b,683s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1862b,683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/jaeyeonkim/Library/texmf/fonts/type1/public/tex-gyre/qplb.pfb></Users
 /jaeyeonkim/Library/texmf/fonts/type1/public/tex-gyre/qplbi.pfb></Users/jaeyeon
 kim/Library/texmf/fonts/type1/public/tex-gyre/qplr.pfb></Users/jaeyeonkim/Libra
 ry/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
 Output written on /Users/jaeyeonkim/Documents/jaeyk.github.io/generate_cv/cv_Ki
-m.pdf (13 pages, 284875 bytes).
+m.pdf (13 pages, 284884 bytes).
 PDF statistics:
  270 PDF objects out of 1000 (max. 8388607)
  244 compressed objects within 3 object streams
