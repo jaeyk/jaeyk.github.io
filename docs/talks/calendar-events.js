@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "National Public Health AI Peer Learning Series",
       start: "2026-09-23",
-      color: "#388e3c",
-      extendedProps: { org: "", host: "Health Resource in Action and Louisiana Public Health Institute", place: "Virtual", type: "badge-talk", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "", host: "Health Resource in Action and Louisiana Public Health Institute", place: "Virtual", type: "badge-talk", past: true }
     },
     {
       title: "Better Government Lab Research Retreat",

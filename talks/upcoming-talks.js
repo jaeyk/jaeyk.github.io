@@ -4,10 +4,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("landing-talk-list");
   if (!list) return;
-  list.innerHTML = `      <li><time datetime="2026-09-23">Sept. 23.</time> National Public Health AI Peer Learning Series</li>
-      <li><time datetime="2026-09-25">Sept. 25.</time> Data Science and Society Seminar Series, UNC-Chapel Hill</li>
+  list.innerHTML = `      <li><time datetime="2026-09-25">Sept. 25.</time> Data Science and Society Seminar Series, UNC-Chapel Hill</li>
       <li><time datetime="2026-10-02">Oct. 2.</time> <a href="https://causal.unc.edu/talks/">Causal Inference Research Group, UNC-Chapel Hill</a></li>
       <li><time datetime="2026-10-14">Oct. 14.</time> State and Local AI Policy: Actionable Solutions for Policymakers, Federation of American Scientists</li>
-      <li><time datetime="2026-10-28">Oct. 28.</time> <a href="https://www.koreasociety.org/">Sherman Family Emerging Scholar Award Lecture, The Korea Society</a></li>`;
+      <li><time datetime="2026-10-28">Oct. 28.</time> <a href="https://www.koreasociety.org/">Sherman Family Emerging Scholar Award Lecture, The Korea Society</a></li>
+      <li><time datetime="2026-11-04">Nov. 4-6.</time> <a href="https://www.appam.org/conference-events/2026appam/">Association for Public Policy Analysis and Management (APPAM) Annual Meeting</a></li>`;
 });
 
