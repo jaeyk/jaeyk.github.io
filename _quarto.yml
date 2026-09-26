@@ -2,6 +2,10 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!research_agenda/"
   preview:
     port: 5896
     browser: true

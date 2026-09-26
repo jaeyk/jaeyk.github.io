@@ -77,7 +77,56 @@ In Spring 2027, I will be on research leave and visiting UC Berkeley's [Berkeley
 
 Previously, I worked as a Senior Data Scientist at [Code for America](https://codeforamerica.org/), where I collaborated with the U.S. government to improve access to safety net programs. I also served as an Assistant Research Scientist at the SNF Agora Institute at Johns Hopkins University, where I co-developed [the Mapping the Modern Agora Project.](https://snfagora.jhu.edu/our-work/research-projects/mapping-the-modern-agora/) I earned my Ph.D. in Political Science from the University of California, Berkeley.
 
-I am a policy scholar and public interest data scientist. Combining my experience as a data scientist in the U.S. public sector with my training as a social scientist, I study policy implementation, government capacity, and technological change. Specifically, my research examines how government can help people navigate bureaucracy, strengthen public trust, and buy and use technology, including but not limited to AI systems, effectively and responsibly.
+I am a policy scholar and public interest data scientist. Combining my experience as a data scientist in the U.S. public sector with my training as a social scientist, I study policy implementation, government capacity, and technological change. Specifically, my research examines how government can help people navigate bureaucracy, strengthen public trust, and buy and use technology, including but not limited to AI systems, effectively and responsibly. (If you want to see the connection between these areas, [see this diagram <i class="bi bi-diagram-3"></i>](#research-agenda){.agenda-open}.)
+
+```{=html}
+<dialog id="research-agenda" class="agenda-dialog" aria-labelledby="agenda-diagram-caption">
+  <button type="button" class="agenda-dialog-close" aria-label="Close">&times;</button>
+<figure class="agenda-diagram">
+  <figcaption id="agenda-diagram-caption" class="agenda-caption">
+    Two connected consequences of legalistic governance
+  </figcaption>
+  <div class="agenda-source">
+    <span>The U.S. response to economic, social, and political complexity</span>
+    <strong>Legalistic mode of governance</strong>
+  </div>
+  <div class="agenda-branches">
+    <div class="agenda-branch agenda-citizens">
+      <div class="agenda-relation">Government &rarr; Citizens</div>
+      <div class="agenda-step"><strong>Heavier administrative burdens on people</strong></div>
+      <div class="agenda-arrow" aria-hidden="true"></div>
+      <div class="agenda-step agenda-outcome"><strong>Difficulty accessing government programs</strong></div>
+      <div class="agenda-arrow" aria-hidden="true"></div>
+      <div class="agenda-program"><small>Research program</small><strong>Reduce administrative burdens and strengthen public trust</strong></div>
+    </div>
+    <div class="agenda-branch agenda-business">
+      <div class="agenda-relation">Government &rarr; Business</div>
+      <div class="agenda-step"><strong>Resource constraints on government</strong></div>
+      <div class="agenda-arrow" aria-hidden="true"></div>
+      <div class="agenda-step agenda-outcome"><strong>Dependence on private contractors</strong></div>
+      <div class="agenda-arrow" aria-hidden="true"></div>
+      <div class="agenda-program"><small>Research program</small><strong>Improve tech (AI) procurement and contractor management</strong></div>
+    </div>
+  </div>
+</figure>
+</dialog>
+<script>
+(function() {
+  var dialog = document.getElementById('research-agenda');
+  if (!dialog || !dialog.showModal) return;
+
+  document.querySelectorAll('.agenda-open').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      dialog.showModal();
+    });
+  });
+  dialog.querySelector('.agenda-dialog-close').addEventListener('click', function() { dialog.close(); });
+  // Clicking the dimmed backdrop (the dialog element itself) closes it.
+  dialog.addEventListener('click', function(e) { if (e.target === dialog) dialog.close(); });
+})();
+</script>
+```
 
 I'm currently finishing a book manuscript (monograph) titled [*Unseen and Uncounted*](https://jaeyk.github.io/book_projects/books.html), which examines how the administrative challenges of identifying and categorizing non-Black minority communities gave rise to new racial group formations during the War on Poverty. My second book project, tentatively titled *Burdens, Profits, and People Power*, investigates how AI exacerbates existing inequalities through administrative burdens, what kinds of businesses profit from these hidden practices, and how people can build power, resist, and transform this unjust system.
 

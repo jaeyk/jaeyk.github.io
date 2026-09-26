@@ -1245,3 +1245,229 @@ nav[role=navigation] * {
   left: -2em;
   font-weight: normal;
 }
+
+/* Research agenda diagram (homepage) */
+.agenda-open {
+  white-space: nowrap;
+}
+
+.agenda-diagram {
+  margin: 0;
+  padding: 1.5rem 1.25rem 1.25rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 6px;
+  background: #f8fbfd;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #13294B;
+}
+
+.agenda-caption {
+  margin: 0 0 1.1rem;
+  color: #c43f5c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.agenda-diagram small {
+  display: block;
+  color: #4b5563;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.agenda-diagram strong {
+  display: block;
+  font-family: "Source Serif 4", Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.agenda-source {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto 2.4rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #13294B;
+  border-radius: 6px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.agenda-source span {
+  display: block;
+  color: #4b5563;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.agenda-source strong {
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.agenda-source::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 1.2rem;
+  content: "";
+  background: #9fb3c8;
+}
+
+.agenda-branches {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.agenda-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.agenda-relation {
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.agenda-citizens {
+  --agenda-accent: #4B9CD3;
+}
+
+.agenda-business {
+  --agenda-accent: #c43f5c;
+}
+
+.agenda-relation {
+  color: var(--agenda-accent);
+}
+
+.agenda-step,
+.agenda-program {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #d9e2ec;
+  border-top: 3px solid var(--agenda-accent);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.agenda-step strong {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+.agenda-outcome strong {
+  font-style: italic;
+}
+
+.agenda-program {
+  border-color: #13294B;
+  border-top-color: var(--agenda-accent);
+  background: #13294B;
+}
+
+.agenda-program small {
+  color: #c9d6e3;
+}
+
+.agenda-program strong {
+  margin-top: 0.25rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.agenda-arrow {
+  position: relative;
+  height: 1.4rem;
+}
+
+.agenda-arrow::before {
+  position: absolute;
+  top: 0.2rem;
+  bottom: 0.35rem;
+  left: 50%;
+  width: 1px;
+  content: "";
+  background: #9fb3c8;
+}
+
+.agenda-arrow::after {
+  position: absolute;
+  bottom: 0.25rem;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  content: "";
+  border-right: 1px solid #9fb3c8;
+  border-bottom: 1px solid #9fb3c8;
+  transform: rotate(45deg);
+}
+
+.agenda-branch p {
+  margin: 0.8rem 0 0;
+  color: #4b5563;
+  font-family: "Source Serif 4", Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.agenda-dialog {
+  width: min(1000px, 100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  overflow: auto;
+}
+
+.agenda-dialog::backdrop {
+  background: rgba(19, 41, 75, 0.6);
+}
+
+.agenda-dialog .agenda-diagram {
+  padding: 2.5rem 2rem 2rem;
+  background: #ffffff;
+}
+
+.agenda-dialog .agenda-caption {
+  font-size: 0.95rem;
+}
+
+.agenda-dialog .agenda-step strong {
+  font-size: 1.2rem;
+}
+
+.agenda-dialog .agenda-program strong,
+.agenda-dialog .agenda-source strong {
+  font-size: 1.3rem;
+}
+
+.agenda-dialog .agenda-diagram small {
+  font-size: 0.75rem;
+}
+
+.agenda-dialog-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  z-index: 1;
+  border: none;
+  background: none;
+  color: #13294B;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
