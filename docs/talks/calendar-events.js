@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Data Science and Society Seminar Series",
       start: "2026-09-25",
-      color: "#388e3c",
-      extendedProps: { org: "UNC-Chapel Hill", host: "Tarek Zikry and Iain Carmichael", place: "Chapel Hill, NC", type: "badge-talk", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "UNC-Chapel Hill", host: "Tarek Zikry and Iain Carmichael", place: "Chapel Hill, NC", type: "badge-talk", past: true }
     },
     {
       title: "National Public Health AI Peer Learning Series",
