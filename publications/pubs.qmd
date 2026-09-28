@@ -471,7 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <details class="published-papers-search-static" data-count-key="public_writing">
 
-<summary><strong>Public writing</strong></summary>
+<summary><strong>Public writing and other public-facing work</strong></summary>
 
 ::: {.reversed-list}
 
