@@ -461,7 +461,9 @@ pub_lines <- readLines("publications/pubs.qmd", encoding = "UTF-8")
 static_sections <- c(
   book_chapters = "Book chapter",
   proceedings = "Proceeding",
-  media_public_writing = "Media/Public writing"
+  policy_memos = "Policy memo",
+  media_interviews = "Media",
+  public_writing = "Public writing"
 )
 
 for (section_key in names(static_sections)) {
