@@ -481,14 +481,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     var staticMatchCount = runStaticFilter(query);
     var totalSearchable = allPapers.length +
-      (staticCounts.under_review || 0) +
-      (staticCounts.reading_for_submission || 0) +
-      (staticCounts.work_in_progress || 0) +
-      (staticCounts.proceedings || 0) +
-      (staticCounts.book_chapters || 0) +
-      (staticCounts.policy_memos || 0) +
-      (staticCounts.media_interviews || 0) +
-      (staticCounts.public_writing || 0);
+      Object.keys(staticCounts).reduce(function (sum, key) {
+        return sum + staticCounts[key];
+      }, 0);
 
     renderList(matches);
     status.textContent = (matches.length + staticMatchCount) +
@@ -654,7 +649,7 @@ Loading publications...
 </details>
 <details class="published-papers-search-static" data-count-key="media_interviews">
 <summary>
-<strong>Media interviews and mentions</strong>
+<strong>Public lectures, media interviews, and mentions</strong>
 </summary>
 <div class="reversed-list">
 <ol type="1">
