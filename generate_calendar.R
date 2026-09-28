@@ -505,7 +505,7 @@ publication_order <- order(
   vapply(publication_items_data, function(item) item$order, numeric(1)),
   decreasing = TRUE
 )
-recent_publications <- head(publication_items_data[publication_order], 3)
+recent_publications <- head(publication_items_data[publication_order], 5)
 
 publication_items <- vapply(recent_publications, function(p) {
   title_markup <- if (nzchar(p$url)) {
