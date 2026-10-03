@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "Causal Inference Research Group",
       start: "2026-10-02",
-      color: "#388e3c",
+      color: "#aaaaaa",
       url: "https://causal.unc.edu/talks/",
-      extendedProps: { org: "UNC-Chapel Hill", host: "Daniel Westreich", place: "Chapel Hill, NC", type: "badge-talk", past: false }
+      extendedProps: { org: "UNC-Chapel Hill", host: "Daniel Westreich", place: "Chapel Hill, NC", type: "badge-talk", past: true }
     },
     {
       title: "Data Science and Society Seminar Series",
