@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
       extendedProps: { org: "", host: "", place: "Virtual", type: "badge-panel", past: false }
     },
     {
+      title: "Annual Summit: The Need for Roots in a Digital Society hosted by Boston University",
+      start: "2026-11-06",
+      color: "#6d4c41",
+      url: "https://sites.bu.edu/misi/2026/07/30/misi-summit-2026-the-need-for-roots-in-a-digital-society/",
+      extendedProps: { org: "", host: "", place: "Boston, MA, USA", type: "badge-participant", past: false }
+    },
+    {
       title: "Association for Public Policy Analysis and Management (APPAM) Annual Meeting",
       start: "2026-11-04",
       end: "2026-11-07",

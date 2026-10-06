@@ -148,6 +148,7 @@ I am the recipient of the Sherman Family Emerging Scholar Award, The Korea Socie
 | Year | Date | Type | Event | Place |
 |------|------|------|-------|-------|
 | 2026 | December 9 | [Panel]{.badge .badge-panel} | [InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)](https://innovate-us.org/) (*scheduled*) | Virtual |
+| 2026 | November 6 | [Participant]{.badge .badge-participant} | [Annual Summit: The Need for Roots in a Digital Society](https://sites.bu.edu/misi/2026/07/30/misi-summit-2026-the-need-for-roots-in-a-digital-society/) hosted by Boston University | Boston, MA, USA |
 | 2026 | November 4-6 | [Panel]{.badge .badge-panel} | [Association for Public Policy Analysis and Management (APPAM) Annual Meeting](https://www.appam.org/conference-events/2026appam/) (*scheduled*) | Boston, MA, USA |
 | 2026 | October 28 | [Talk]{.badge .badge-talk} | Sherman Family Emerging Scholar Award Lecture, [The Korea Society](https://www.koreasociety.org/) (*scheduled*) | New York City, NY, USA |
 | 2026 | October 14 | [Panel]{.badge .badge-panel} | State and Local AI Policy: Actionable Solutions for Policymakers, Federation of American Scientists (*scheduled*) | Virtual |

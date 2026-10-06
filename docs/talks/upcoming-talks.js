@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   list.innerHTML = `      <li><time datetime="2026-10-14">Oct. 14.</time> State and Local AI Policy: Actionable Solutions for Policymakers, Federation of American Scientists</li>
       <li><time datetime="2026-10-28">Oct. 28.</time> <a href="https://www.koreasociety.org/">Sherman Family Emerging Scholar Award Lecture, The Korea Society</a></li>
       <li><time datetime="2026-11-04">Nov. 4-6.</time> <a href="https://www.appam.org/conference-events/2026appam/">Association for Public Policy Analysis and Management (APPAM) Annual Meeting</a></li>
+      <li><time datetime="2026-11-06">Nov. 6.</time> <a href="https://sites.bu.edu/misi/2026/07/30/misi-summit-2026-the-need-for-roots-in-a-digital-society/">Annual Summit: The Need for Roots in a Digital Society hosted by Boston University</a></li>
       <li><time datetime="2026-12-09">Dec. 9.</time> <a href="https://innovate-us.org/">InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)</a></li>`;
 });
 
