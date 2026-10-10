@@ -71,7 +71,7 @@ format:
 
 <p class="hello">Hello! I am Jae.</p>
 
-I am an Assistant Professor of Public Policy at [the University of North Carolina at Chapel Hill](https://publicpolicy.unc.edu/person/jae-yeon-kim/), a fellow at the [Civic Power Lab](https://civicpowerlab.us/) at the Harvard Kennedy School and a [Better Government Lab](https://www.bettergovernmentlab.org/) Fellow at the University of Michigan's Ford School of Public Policy. I am the founder and director of the [People, Organizations, Futures Lab (POF Lab)](https://jaeyk.github.io/pof-lab/).
+I am an Assistant Professor of Public Policy at [the University of North Carolina at Chapel Hill](https://publicpolicy.unc.edu/person/jae-yeon-kim/), a fellow at the [Civic Power Lab](https://civicpowerlab.us/) at the Harvard Kennedy School and a [Better Government Lab](https://www.bettergovernmentlab.org/) Fellow at the University of Michigan's Ford School of Public Policy. I am also the founder and director of the [People, Organizations, Futures Lab (POF Lab)](https://jaeyk.github.io/pof-lab/).
 
 In Spring 2027, I will be on research leave and visiting UC Berkeley's [Berkeley Economy & Society Initiative](https://besi.berkeley.edu/).
 
