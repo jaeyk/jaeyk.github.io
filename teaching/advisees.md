@@ -1,7 +1,7 @@
 ## Advisees (2018-present)
 
 - **UNC Chapel Hill** 
-  - **Undergraduate students** (2026-, via [The Duncan MacRae Jr. Mentored Research Assistant Grant](https://publicpolicy.unc.edu/academics/undergraduate/honors-and-awards/macrae-jr-mentored-research-assistant-grant/):
+  - *Undergraduate students* (2026-, via [The Duncan MacRae Jr. Mentored Research Assistant Grant](https://publicpolicy.unc.edu/academics/undergraduate/honors-and-awards/macrae-jr-mentored-research-assistant-grant/))
     - Serena Michael Ray (Public Policy undergraduate)
     - Juliet Rose Loffredo (Journalism and Public Policy undergraduate)
 
