@@ -388,6 +388,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {.reversed-list}
 
+1.  "The Efficiency Trap: The Paradox of the Korean Digital Government."
+
 1.  "Privacy Law Diffusion Across US State Legislatures." (with Aniket Kesari)
 
 <!-- 3. "Discipline or Support? Public Reactions to the Use of AI in the American Welfare State." (with Sophie Jacobson) -->
