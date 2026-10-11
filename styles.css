@@ -889,6 +889,10 @@ div.quarto-about-trestles .about-link svg {
   font-weight: 600;
 }
 
+.landing-sidebar .landing-title a {
+  font-weight: inherit;
+}
+
 .landing-links {
   display: flex;
   flex-wrap: wrap;
