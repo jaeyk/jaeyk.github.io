@@ -1,8 +1,9 @@
 ## Advisees (2018-present)
 
-- **UNC Chapel Hill** (2026-):
-  - Serena Michael Ray (Public Policy undergraduate)
-  - Juliet Rose Loffredo (Journalism and Public Policy undergraduate)
+- **UNC Chapel Hill** 
+  - **Undergraduate students** (2026-, via [The Duncan MacRae Jr. Mentored Research Assistant Grant](https://publicpolicy.unc.edu/academics/undergraduate/honors-and-awards/macrae-jr-mentored-research-assistant-grant/):
+    - Serena Michael Ray (Public Policy undergraduate)
+    - Juliet Rose Loffredo (Journalism and Public Policy undergraduate)
 
 - **Harvard** (2023, master students):
   - Alison Yuhan Yao (MS in data science; Currently: data scientist at Microsoft Azure)
