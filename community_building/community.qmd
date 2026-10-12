@@ -16,7 +16,7 @@ title: "Community building"
 
 ##### Collaborator Locations
 
-![Collaborator locations map (updated February 25, 2026).](../misc/coauthor_map_20260225a.png){fig-align="center" width="100%"}
+![Collaborator locations map.](../misc/coauthor_map.png){fig-align="center" width="100%"}
 
 ##### Applied Project Partners
 
