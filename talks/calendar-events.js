@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: "State and Local AI Policy: Actionable Solutions for Policymakers",
       start: "2026-10-14",
-      color: "#1976d2",
-      extendedProps: { org: "Federation of American Scientists", host: "", place: "Virtual", type: "badge-panel", past: false }
+      color: "#aaaaaa",
+      extendedProps: { org: "Federation of American Scientists", host: "", place: "Virtual", type: "badge-panel", past: true }
     },
     {
       title: "Causal Inference Research Group",
