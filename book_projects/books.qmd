@@ -6,7 +6,7 @@ format: html
 <details open>
 <summary><strong>In progress</strong></summary>
 
-1.  **"Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America."** (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+1.  [**"Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America."**]{style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"} (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
 
     -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
@@ -39,7 +39,7 @@ Drawing on original data from both local administrators and community organizers
 
 ---
 
-2. **"Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State."**
+2. [**"Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State."**]{style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"}
 
 **Table of Contents**
 
