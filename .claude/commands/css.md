@@ -48,7 +48,7 @@ $font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 
 $headings-font-family: $font-serif;
 $sidebar-font-family: $font-sans;
-$font-family-base: $font-serif;
+$font-family-base: $font-sans;   // Inter body text; Source Serif for headings and quotes
 ```
 
 ### 4. Existing CSS Utility Classes
@@ -154,7 +154,8 @@ Breakpoints: `xs` (0), `sm` (576px), `md` (768px), `lg` (992px), `xl` (1200px)
 
 | Element | Font | Weight |
 |---|---|---|
-| Body text | Source Serif 4 | 400 |
+| Body text, navbar, footer | Inter | 400 |
+| Blockquotes | Source Serif 4 italic | 400 |
 | Headings (H1–H3) | Source Serif 4 | 600 |
 | UI labels (homepage boxes, diagram) | Inter | 600/700 |
 | Code blocks | Monospace (system) | 400 |

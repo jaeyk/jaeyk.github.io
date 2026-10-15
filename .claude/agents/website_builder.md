@@ -122,8 +122,8 @@ Key variables:
 $unc-blue: #4B9CD3;          // UNC Carolina Blue (primary)
 $unc-dark-blue: #13294B;     // UNC Dark Blue
 $unc-gray: #E0E0E0;          // Borders, subtle backgrounds
-$font-serif: 'Source Serif 4', Georgia, serif;   // Body & headings
-$font-sans: 'Inter', -apple-system, sans-serif;  // Sidebar & UI
+$font-serif: 'Source Serif 4', Georgia, serif;   // Headings & blockquotes
+$font-sans: 'Inter', -apple-system, sans-serif;  // Body text & UI
 ```
 
 **Available CSS utility classes:**

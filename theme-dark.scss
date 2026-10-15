@@ -14,3 +14,7 @@ $navbar-fg: #8ec5ec;
 $footer-bg: #16191d;
 $footer-fg: #aab4c0;
 $callout-color-note: #4B9CD3;
+
+// Quarto derives caption, summary, and other "muted" text colors from this;
+// the Bootstrap default (#6c757d) is too dim on a dark background.
+$text-muted: #b9c3ce;

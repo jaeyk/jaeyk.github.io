@@ -153,9 +153,8 @@ The theme is set in `_quarto.yml`:
 format:
   html:
     theme:
-      light: default                       # Quarto base theme
-      dark: [default, theme-dark.scss]     # Dark colors layered on the same base
-    # Light is the default for every visitor; dark mode is opt-in via the navbar toggle.
+      dark: [default, theme-dark.scss]     # Listed first = default for every visitor
+      light: default                       # Quarto base theme; available via the navbar toggle
     css: styles.css                        # Site rules, compiled from styles.scss with `sass`
 ```
 

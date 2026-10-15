@@ -15,7 +15,7 @@ $font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
 $font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
 $headings-font-family: $font-serif;
-$font-family-base: $font-serif;
+$font-family-base: $font-sans;  // Inter for body text; headings stay in Source Serif
 
 // Comfortable line length for running text (~85–95 characters)
 $prose-width: 80ch;
@@ -51,7 +51,7 @@ body.quarto-dark {
   --site-link-underline: rgba(142, 197, 236, 0.4);
   --site-accent: #f08aa1;
   --site-heading: #e6edf5;
-  --site-muted: #aab4c0;
+  --site-muted: #b9c3ce;
   --site-bg: #16191d;
   --site-surface: #1e2329;
   --site-surface-2: #26303a;
@@ -64,6 +64,10 @@ body.quarto-dark {
   --site-program-text: #ffffff;
   --site-program-muted: #b9cbe0;
 
+  /* Bootstrap/Quarto muted text (captions, metadata) */
+  --quarto-text-muted: var(--site-muted);
+  --bs-secondary-color: var(--site-muted);
+
   /* FullCalendar (talks page) */
   --fc-border-color: var(--site-border);
   --fc-page-bg-color: var(--site-bg);
@@ -75,6 +79,7 @@ body.quarto-dark {
 /* ===== Base typography ===== */
 body {
   font-family: $font-family-base;
+  line-height: 1.65;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, h5, h6 {
@@ -106,7 +111,8 @@ main.content blockquote {
   border-radius: 0 6px 6px 0;
   background: var(--site-surface-2);
   color: var(--bs-body-color);
-  font-size: 1.1rem;
+  font-family: $font-serif;
+  font-size: 1.15rem;
   font-style: italic;
   line-height: 1.6;
 }
@@ -187,10 +193,56 @@ main.content a:hover,
   color: var(--site-link-hover) !important;
 }
 
+/* Talks calendar list view (phones): generate_calendar.R hard-codes dark text
+   colors inline, so override them in dark mode. */
+body.quarto-dark {
+  --fc-list-event-hover-bg-color: var(--site-surface-2);
+}
+
+body.quarto-dark .fc-list-event-title > a > div > div,
+body.quarto-dark .fc-list-event-title > div > div,
+body.quarto-dark .fc-list-event-title div {
+  color: var(--bs-body-color) !important;
+}
+
+body.quarto-dark .fc-list-event-title div[style*="italic"] {
+  color: var(--site-muted) !important;
+}
+
 /* Calendar day/weekday numbers are links but shouldn't look like them. */
 .fc a.fc-col-header-cell-cushion,
 .fc a.fc-daygrid-day-number {
   text-decoration: none;
+}
+
+/* ===== Form inputs (e.g., publications search) =====
+   Set explicit colors so typed text stays visible in dark mode. */
+main.content input[type="search"],
+main.content input[type="text"],
+main.content textarea {
+  background-color: var(--site-bg);
+  color: var(--bs-body-color);
+  border: 1px solid var(--site-line);
+  border-radius: 4px;
+}
+
+main.content input[type="search"]:focus,
+main.content input[type="text"]:focus,
+main.content textarea:focus {
+  outline: none;
+  border-color: $unc-blue;
+  box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.25);
+}
+
+main.content input::placeholder,
+main.content textarea::placeholder {
+  color: var(--site-muted);
+  opacity: 1;
+}
+
+body.quarto-dark main.content input,
+body.quarto-dark main.content textarea {
+  color-scheme: dark;
 }
 
 /* ===== Buttons ===== */
@@ -256,7 +308,26 @@ main.content a:hover,
 .navbar .nav-link {
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
+}
+
+/* Smaller laptops: 13 menu items barely fit, so tighten spacing and size
+   instead of letting "Office Hour" wrap onto two lines. */
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .navbar .navbar-nav .nav-link {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1149.98px) {
+  .navbar .navbar-nav .nav-link {
+    padding-left: 0.28rem;
+    padding-right: 0.28rem;
+    font-size: 0.86rem;
+  }
 }
 
 .navbar .nav-link:hover,
@@ -299,6 +370,39 @@ main.content a:hover,
 
 .nav-footer .bi {
   font-size: 1.15rem;
+}
+
+/* Keep "Get in touch: email" on one line and icons vertically centered. */
+.nav-footer-center .footer-items {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-footer-center .nav-item:first-child {
+  white-space: nowrap;
+}
+
+/* Phones: Quarto stacks the three footer columns with large gaps, and the
+   right column is empty — tighten the stack and drop the empty row. */
+@media (max-width: 575.98px) {
+  .nav-footer {
+    min-height: 0;
+    row-gap: 0.25rem;
+  }
+
+  .nav-footer-left {
+    margin-bottom: 0;
+  }
+
+  .nav-footer-center {
+    min-height: 0;
+    margin: 0.25rem 0 0 !important;
+  }
+
+  .nav-footer-right {
+    display: none;
+  }
 }
 
 /* Mobile header buttons: no dark background */
@@ -459,6 +563,37 @@ details table th {
 
 .student-note .callout-header {
   border-bottom: none !important;
+}
+
+/* Dark mode: Quarto hard-codes a dim grey (#6c757d) for captions and
+   collapsible-section toggles; brighten them. */
+body.quarto-dark figcaption,
+body.quarto-dark .figure-caption,
+body.quarto-dark .panel-caption,
+body.quarto-dark .subfigure-caption,
+body.quarto-dark .table-caption,
+body.quarto-dark caption,
+body.quarto-dark .quarto-title-meta-heading,
+body.quarto-dark .text-muted {
+  color: var(--site-muted) !important;
+}
+
+body.quarto-dark details > summary {
+  color: var(--site-heading);
+}
+
+/* Dark mode: Quarto's callout title bars are near-black navy; lighten them. */
+body.quarto-dark .callout .callout-header {
+  background-color: #2a4a68 !important;
+}
+
+body.quarto-dark .callout .callout-title-container {
+  color: var(--site-heading) !important;
+  font-weight: 600;
+}
+
+body.quarto-dark .callout .callout-icon::before {
+  filter: brightness(1.6);
 }
 
 /* ===== Homepage ===== */
@@ -828,11 +963,9 @@ details table th {
 }
 
 /* ===== Mobile ===== */
-/* Source Serif has a small x-height, so phones get a slightly larger base
-   size (17px) rather than a smaller one. */
 @media (max-width: 768px) {
   body {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
