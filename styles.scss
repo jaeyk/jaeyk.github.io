@@ -828,19 +828,37 @@ details table th {
 }
 
 /* ===== Mobile ===== */
+/* Source Serif has a small x-height, so phones get a slightly larger base
+   size (17px) rather than a smaller one. */
 @media (max-width: 768px) {
   body {
-    font-size: 0.95em;
+    font-size: 1.0625rem;
+    line-height: 1.6;
   }
 
-  h1, .h1 { font-size: 1.6em; }
-  h2, .h2 { font-size: 1.3em; }
-  h3, .h3 { font-size: 1.1em; }
+  h1, .h1 { font-size: 1.75rem; }
+  h2, .h2 { font-size: 1.4rem; }
+  h3, .h3 { font-size: 1.2rem; }
 
-  blockquote {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.95em;
+  .book-entry {
+    padding: 1.1rem 1.1rem;
+  }
+
+  .book-entry h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Homepage boxes */
+  .upcoming-talks li,
+  .new-publications li,
+  .talks-link,
+  .publications-link,
+  .landing-links {
+    font-size: 1rem;
+  }
+
+  .new-publications li span {
+    font-size: 0.92rem;
   }
 
   /* Make tables horizontally scrollable instead of overflowing */
@@ -849,7 +867,7 @@ details table th {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    font-size: 0.82rem;
+    font-size: 0.92rem;
     white-space: nowrap;
   }
 }
