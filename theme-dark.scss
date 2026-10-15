@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+// Dark color scheme layered on Quarto's default theme, so fonts and spacing
+// match light mode. Site-specific colors live as CSS variables in styles.scss
+// (see `body.quarto-dark`).
+
+$body-bg: #16191d;
+$body-color: #d6dce3;
+$headings-color: #e6edf5;
+$link-color: #8ec5ec;
+$border-color: #343c46;
+$code-bg: #1e2329;
+$navbar-bg: #1e2329;
+$navbar-fg: #8ec5ec;
+$footer-bg: #16191d;
+$footer-fg: #aab4c0;
+$callout-color-note: #4B9CD3;

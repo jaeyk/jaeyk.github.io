@@ -6,17 +6,22 @@ format: html
 <details open>
 <summary><strong>In progress</strong></summary>
 
-1.  [**"Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America."**]{style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"} (based on [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf))
+::: {.book-entry}
+[Book project 1]{.book-label}
 
-    -   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
+### Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America {.unnumbered .unlisted}
 
-    -   Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
+Based on my [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf).
 
-    -   Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+-   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
-    -   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
-    
-    -   Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
+-   Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
+
+-   Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+
+-   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+
+-   Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
 
 *Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America* introduces the concept of classification cost to explain how the administrative challenges of classifying marginalized communities shaped the rise of new racial group formations. Identifying diverse target populations using coarse administrative categories is difficult, but often unavoidable in policy implementation. These challenges became especially salient during the War on Poverty, when the federal government sought to expand safety net programs without revising how it categorized target populations. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state often defaulted to residual labels such as “Other.”
 
@@ -24,8 +29,9 @@ Faced with exclusion from official categories, government statistics, and resour
 
 Drawing on original data from both local administrators and community organizers, the book traces the development of policies governing diverse low-income populations at the subnational, national, and transnational levels during the postwar period of American political development. Governing diversity pushes the limits of state capacity because it requires more and better information. When obtaining such information is difficult, one option is to borrow informational capacity from communities. Even in the era of artificial intelligence, this challenge persists and the solution remains relevant. No matter how powerful the machines embedded in government become, the ground truth is on the ground, among the people the state aims to serve.
 
-
-<span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by 2026 and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).</span>
+::: {.callout-note appearance="simple"}
+Sample chapters are available upon request. I plan to complete the first draft by 2026 and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).
+:::
 
 **Table of Contents**
 
@@ -36,10 +42,12 @@ Drawing on original data from both local administrators and community organizers
   - Chapter 4. Race, Class, and Panethnic Civil Society in the Post-Reagan Era
   - Chapter 5. Classification Cost and New Group Formation: The Making of Gig Workers
 - *Governing Diversity: Why Both State and Civic Capacity Matter Even in the Era of Artificial Intelligence*
+:::
 
----
+::: {.book-entry}
+[Book project 2]{.book-label}
 
-2. [**"Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State."**]{style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"}
+### Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State {.unnumbered .unlisted}
 
 **Table of Contents**
 
@@ -52,12 +60,20 @@ Drawing on original data from both local administrators and community organizers
   - Chapter 4: What the Public Knows, Can Know, and Should Know
   - Chapter 5: From Resistance to Institutional Reform
 - *Procurement as a New Progressive Agenda*
+:::
+
+</details>
 
 <details>
 
 <summary><strong>Korean Books</strong></summary>
 
-1. **"We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society"** (in Korean, [Sejong Books](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160), 2023) \[[book website](https://wethedata.vercel.app/)\]
+::: {.book-entry}
+[Published 2023 · In Korean]{.book-label}
+
+### We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society {.unnumbered .unlisted}
+
+[Sejong Books](http://www.sejongbooks.co.kr/?act=board.index&bbs_code=sub2_1&sc=bbs_title&ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&page=1&bbs_mode=view&bbs_seq=160), 2023 · [Book website](https://wethedata.vercel.app/)
 
 Why can we shop with one click but still struggle to access basic public services?
 
@@ -80,10 +96,15 @@ Why can we shop with one click but still struggle to access basic public service
   [*Chosun Ilbo*'s Civic Section](https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA) *(a major conservative newspaper)* and
   [*Weekly Kyunghang*](https://weekly.khan.co.kr/khnm.html?mode=list&s_code=ne039) *(a major liberal magazine)*
 
-::: center
 ![](https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg){fig-align="center"}
+:::
 
-2. **"How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career"** (in Korean, Sejong Books, 2nd ed., 2026) [[book website](https://learn2career.vercel.app/)]
+::: {.book-entry}
+[Published 2026 (2nd ed.) · In Korean]{.book-label}
+
+### How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career {.unnumbered .unlisted}
+
+Sejong Books, 2nd ed., 2026 · [Book website](https://learn2career.vercel.app/)
 
 Why do so many students enter college full of ambition, only to graduate with more confusion than clarity?
 
@@ -109,5 +130,6 @@ Why do so many students enter college full of ambition, only to graduate with mo
     <figcaption>Second edition cover</figcaption>
   </figure>
 </div>
+:::
 
 </details>

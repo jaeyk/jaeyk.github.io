@@ -32,14 +32,14 @@ resources:
   margin-top: 0.4rem;
   margin-left: 0;
   font-size: 0.95rem;
-  color: #444;
+  color: var(--site-muted);
 }
 
 #pub-count-summary {
   display: block;
   margin-top: 0.35rem;
   font-size: 0.95rem;
-  color: #444;
+  color: var(--site-muted);
 }
 
 #published-journal-list ul {

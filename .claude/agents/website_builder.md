@@ -128,9 +128,13 @@ $font-sans: 'Inter', -apple-system, sans-serif;  // Sidebar & UI
 
 **Available CSS utility classes:**
 
-- `.carolina-blue` — UNC blue highlight badge (blue text, light blue bg, rounded padding, bold)
+- `.carolina-blue` — highlight label (dark blue text, soft blue bg, rounded padding, bold)
 - `.reversed-list` — Reversed-numbered `<ol>` with auto-sized counter via JavaScript
-- `.hero-header` — Homepage hero section layout div
+- `.badge .badge-<type>` — event-type badges matching the talks calendar palette
+
+**Dark mode:** the site has a light/dark toggle (`theme-dark.scss` + `body.quarto-dark` variables in `styles.scss`). New rules must use the `--site-*` CSS variables, not hard-coded colors, and pages shouldn't use inline color styles.
+
+**Line length:** `essays/_metadata.yml` sets `body-classes: prose`, capping paragraph width for long-form reading; all other pages use the full 1400px content width.
 
 **Adding a new class** — add under `/*-- scss:rules --*/`:
 ```scss
@@ -144,9 +148,6 @@ $font-sans: 'Inter', -apple-system, sans-serif;  // Sidebar & UI
 
 **Targeting Quarto elements:**
 
-- `#quarto-sidebar` — left sidebar container
-- `.sidebar-navigation` — sidebar nav links
-- `#TOC` — table of contents panel
 - `.quarto-title` — page title
 - `#quarto-content` — main content area
 - `.nav-footer` — page footer
@@ -164,9 +165,6 @@ Content here...
 <!-- Bootstrap icons -->
 <i class="bi bi-envelope"></i>
 <i class="bi bi-github"></i>
-
-<!-- Custom layout div -->
-<div class="hero-header">...</div>
 ```
 
 **Images with Quarto figure attributes:**

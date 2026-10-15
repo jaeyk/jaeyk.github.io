@@ -153,11 +153,13 @@ The theme is set in `_quarto.yml`:
 format:
   html:
     theme:
-      - cosmo            # Quarto base theme
-      - styles.scss      # Site custom overrides
+      light: default                       # Quarto base theme
+      dark: [default, theme-dark.scss]     # Dark colors layered on the same base
+    # Light is the default for every visitor; dark mode is opt-in via the navbar toggle.
+    css: styles.css                        # Site rules, compiled from styles.scss with `sass`
 ```
 
-Edit `styles.scss` for theme customizations — never edit `styles.css` directly.
+Edit `styles.scss` for site styling — never edit `styles.css` directly. `theme-dark.scss` holds only Bootstrap color variables for dark mode.
 
 ### 10. What NOT to Change
 

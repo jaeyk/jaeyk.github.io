@@ -1,6 +1,7 @@
 ---
 title: ""
 format: html
+body-classes: ""  # full width: overrides the essay line-length cap from _metadata.yml
 ---
 
 ![](../misc/life_story_map.png){width=800px}
@@ -44,7 +45,7 @@ Below is a collection of essays I’ve written over the years, organized into th
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
 - [*대학사용법 개정판* 서브스택](https://learn2career.substack.com/) [[*자매판 팟캐스트*](https://learn2career.substack.com/podcast)]
 
-<figure style="text-align: center;">
-  <img src="../misc/combined_row_image.jpg" alt="Family photo (Berkeley, '21)." style="width: 80%; max-width: 500px; height: auto;" />
-  <figcaption>I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane. The photo was taken on the day I graduated from Berkeley with a Ph.D. in Political Science, and the two images on the right are Jane’s paintings. Sunmin and I do not paint, but we do love painting (and arts in general), to the extent that we chose our honeymoon destinations based on the museums we wanted to visit.</figcaption>
+<figure style="text-align: left; margin: 1.5rem 0;">
+  <img src="../misc/combined_row_image.jpg" alt="Family photo (Berkeley, '21)." style="display: block; width: 80%; max-width: 500px; height: auto;" />
+  <figcaption style="text-align: left; margin-top: 0.6rem;">I am married to Sunmin Yun, a semiconductor (chip) engineer, and we have one daughter, Jane. The photo was taken on the day I graduated from Berkeley with a Ph.D. in Political Science, and the two images on the right are Jane’s paintings. Sunmin and I do not paint, but we do love painting (and arts in general), to the extent that we chose our honeymoon destinations based on the museums we wanted to visit.</figcaption>
 </figure>

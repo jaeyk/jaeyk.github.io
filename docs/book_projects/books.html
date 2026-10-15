@@ -38,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-139c326bf45a768e00833f04db1698c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-139c326bf45a768e00833f04db1698c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d1f21d1ab5029d76f66b5f44fcd0afcf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-139c326bf45a768e00833f04db1698c3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,7 +128,169 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -196,6 +362,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -209,6 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -233,20 +401,31 @@ document.addEventListener('DOMContentLoaded', function() {
 <summary>
 <strong>In progress</strong>
 </summary>
-<ol type="1">
-<li><p><span style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"><strong>“Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America.”</strong></span> (based on <a href="https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf">dissertation</a>)</p>
+<div class="book-entry">
+<p><span class="book-label">Book project 1</span></p>
+<section id="unseen-and-uncounted-how-bureaucracy-and-community-organizing-made-new-racial-groups-in-america" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="unseen-and-uncounted-how-bureaucracy-and-community-organizing-made-new-racial-groups-in-america">Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America</h3>
+<p>Based on my <a href="https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf">dissertation</a>.</p>
 <ul>
 <li><p>Interviewed by <a href="https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM">Scope Conditions podcast</a></p></li>
 <li><p>Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA</p></li>
 <li><p>Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA</p></li>
 <li><p>Datasets: <a href="https://doi.org/10.7910/DVN/FLUPBJ">Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)</a></p></li>
 <li><p>Interactive Map: <a href="https://jaeyk.github.io/aa_latino_organizations_map/">Asian American and Latino Advocacy and Community Service Organizations</a></p></li>
-</ul></li>
-</ol>
+</ul>
 <p><em>Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America</em> introduces the concept of classification cost to explain how the administrative challenges of classifying marginalized communities shaped the rise of new racial group formations. Identifying diverse target populations using coarse administrative categories is difficult, but often unavoidable in policy implementation. These challenges became especially salient during the War on Poverty, when the federal government sought to expand safety net programs without revising how it categorized target populations. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state often defaulted to residual labels such as “Other.”</p>
 <p>Faced with exclusion from official categories, government statistics, and resource allocation decisions, ethnic elites engaged in political innovation. They coined new panethnic labels, built coalitions across national origin lines, and established civic organizations that rendered their communities legible to the state. These bottom-up efforts reduced classification costs for local government agencies in implementing policies. Over time, these strategies scaled upward, influencing federal classification schemes and institutionalizing panethnic categories such as “Asian American” and “Latino.”</p>
 <p>Drawing on original data from both local administrators and community organizers, the book traces the development of policies governing diverse low-income populations at the subnational, national, and transnational levels during the postwar period of American political development. Governing diversity pushes the limits of state capacity because it requires more and better information. When obtaining such information is difficult, one option is to borrow informational capacity from communities. Even in the era of artificial intelligence, this challenge persists and the solution remains relevant. No matter how powerful the machines embedded in government become, the ground truth is on the ground, among the people the state aims to serve.</p>
-<p><span style="color:blue;">Sample chapters are available upon request. I plan to complete the first draft by 2026 and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).</span></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Sample chapters are available upon request. I plan to complete the first draft by 2026 and will schedule book workshops in Spring 2027 (UC Berkeley and elsewhere).</p>
+</div>
+</div>
+</div>
 <p><strong>Table of Contents</strong></p>
 <ul>
 <li><em>Identity Politics is Just Politics</em>
@@ -259,10 +438,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul></li>
 <li><em>Governing Diversity: Why Both State and Civic Capacity Matter Even in the Era of Artificial Intelligence</em></li>
 </ul>
-<hr>
-<ol start="2" type="1">
-<li><span style="background-color: #e0e0e0; padding: 2px 6px; border-radius: 4px;"><strong>“Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State.”</strong></span></li>
-</ol>
+</section>
+</div>
+<div class="book-entry">
+<p><span class="book-label">Book project 2</span></p>
+<section id="burdens-profits-and-people-power-inequality-and-resistance-in-the-american-ai-contracting-state" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="burdens-profits-and-people-power-inequality-and-resistance-in-the-american-ai-contracting-state">Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State</h3>
 <p><strong>Table of Contents</strong></p>
 <ul>
 <li><em>Procurement as Politics by Other Means</em></li>
@@ -279,13 +460,18 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul></li>
 <li><em>Procurement as a New Progressive Agenda</em></li>
 </ul>
+</section>
+</div>
+</details>
 <details>
 <summary>
 <strong>Korean Books</strong>
 </summary>
-<ol type="1">
-<li><strong>“We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society”</strong> (in Korean, <a href="http://www.sejongbooks.co.kr/?act=board.index&amp;bbs_code=sub2_1&amp;sc=bbs_title&amp;ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&amp;page=1&amp;bbs_mode=view&amp;bbs_seq=160">Sejong Books</a>, 2023) [<a href="https://wethedata.vercel.app/">book website</a>]</li>
-</ol>
+<div class="book-entry">
+<p><span class="book-label">Published 2023 · In Korean</span></p>
+<section id="we-need-civic-data-how-public-data-can-fail-us-and-how-it-can-build-a-more-just-society" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="we-need-civic-data-how-public-data-can-fail-us-and-how-it-can-build-a-more-just-society">We Need Civic Data: How Public Data Can Fail Us, and How It Can Build a More Just Society</h3>
+<p><a href="http://www.sejongbooks.co.kr/?act=board.index&amp;bbs_code=sub2_1&amp;sc=bbs_title&amp;ss=%EC%9A%B0%EB%A6%AC%EC%97%90%EA%B2%8C%EB%8A%94&amp;page=1&amp;bbs_mode=view&amp;bbs_seq=160">Sejong Books</a>, 2023 · <a href="https://wethedata.vercel.app/">Book website</a></p>
 <p>Why can we shop with one click but still struggle to access basic public services?</p>
 <p><em>We Need Civic Data</em> is the first book in Korean to comprehensively examine the concept, practice, and promise of civic data, data designed not for profit or bureaucratic procedure, but for the public good. Written by social data scientist and public interest technologist Jae Yeon Kim, the book draws on real-world policy examples from the U.S. and South Korea to show how government data systems shape who gets access to benefits, who gets heard, and who gets left behind. Across ten clear and accessible chapters, Kim offers a roadmap for building a more equitable, human-centered digital state.</p>
 <p><strong>Impact &amp; Recognition</strong></p>
@@ -295,15 +481,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Featured in major Korean newspapers across the ideological spectrum: <a href="https://futurechosun.com/archives/80334"><em>The Chosun Ilbo</em></a>, <a href="https://www.mk.co.kr/news/culture/10825533"><em>Maeil Business Newspaper</em></a>, <a href="https://www.hankyung.com/article/202309136820i"><em>The Korea Economic Daily</em></a>, <a href="https://www.khan.co.kr/culture/book/article/202309082034005"><em>Kyunghyang Shinmun</em></a>, <a href="https://h21.hani.co.kr/arti/world/world_general/54378.html"><em>Hankyoreh</em></a></p></li>
 <li><p>Regular op-eds based on the book published in: <a href="https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA"><em>Chosun Ilbo</em>’s Civic Section</a> <em>(a major conservative newspaper)</em> and <a href="https://weekly.khan.co.kr/khnm.html?mode=list&amp;s_code=ne039"><em>Weekly Kyunghang</em></a> <em>(a major liberal magazine)</em></p></li>
 </ul>
-<div class="center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://raw.githubusercontent.com/jaeyk/jaeyk.github.io/main/misc/civic_data_book.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<ol start="2" type="1">
-<li><strong>“How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career”</strong> (in Korean, Sejong Books, 2nd ed., 2026) [<a href="https://learn2career.vercel.app/">book website</a>]</li>
-</ol>
+</section>
+</div>
+<div class="book-entry">
+<p><span class="book-label">Published 2026 (2nd ed.) · In Korean</span></p>
+<section id="how-to-use-university-learning-how-to-learn-and-why-it-matters-for-a-fulfilling-career" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="how-to-use-university-learning-how-to-learn-and-why-it-matters-for-a-fulfilling-career">How to Use University: Learning How to Learn and Why It Matters for a Fulfilling Career</h3>
+<p>Sejong Books, 2nd ed., 2026 · <a href="https://learn2career.vercel.app/">Book website</a></p>
 <p>Why do so many students enter college full of ambition, only to graduate with more confusion than clarity?</p>
 <p><em>How to Use University</em> is a practical guide to navigating college with purpose. Organized around four core themes, exploring college, learning, career, and life, it helps students shift from passive schooling to intentional, opportunity-driven learning. The book encourages students to treat the university as a <strong>launchpad</strong> for discovering interests, initiating projects, and building community. It emphasizes a key idea: unlocking even one small opportunity, especially a self-initiated project, can set off a <strong>cycle of opportunities</strong> that grows over time.</p>
 <p><strong>Impact &amp; Recognition</strong></p>
@@ -327,14 +516,28 @@ Second edition cover
 </figcaption>
 </figure>
 </div>
-</div></details>
+</section>
+</div>
+</details>
 
 
-</details><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
 
- <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -733,7 +936,7 @@ Second edition cover
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

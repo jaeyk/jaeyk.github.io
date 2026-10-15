@@ -65,6 +65,9 @@ website:
         
 format:
   html:
+    theme:
+      light: default
+      dark: [default, theme-dark.scss]
     css: styles.css
     toc: true
     toc-depth: 4

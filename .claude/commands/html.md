@@ -12,9 +12,11 @@ When the user asks you to add or modify HTML on a page, follow these rules:
 
 | Class | Effect |
 |---|---|
-| `.carolina-blue` | UNC blue badge highlight (background #e8edf7, blue text, rounded padding) |
+| `.carolina-blue` | Highlight label (soft blue background, dark blue text, rounded padding; adapts to dark mode) |
 | `.reversed-list` | Wrapper for reversed-numbered `<ol>` lists |
-| `.hero-header` | Homepage hero section layout |
+| `.badge .badge-talk` etc. | Event-type badge (talk, panel, discussant, participant, …) |
+
+Avoid inline `style="color: …"` or `background-color` — it breaks dark mode. Use a class with the `--site-*` variables from `styles.scss` instead.
 
 **Example — `.carolina-blue` badge:**
 ```html
