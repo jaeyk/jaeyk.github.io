@@ -1,157 +1,77 @@
-Run shell commands and scripts for building, previewing, and maintaining this Quarto website.
+Run shell commands and scripts for previewing, building, deploying, and maintaining this Astro website.
 
 ## Context
 
-This is a Quarto-based academic website. The main build tool is `quarto`. R scripts generate visualizations. GitHub Pages serves from the `docs/` directory. The repo is at `/Users/jaeyeonkim/Documents/jaeyk.github.io/`.
+The repo (`/Users/jaeyeonkim/Documents/jaeyk.github.io/`) is an Astro project at its root. It needs Node.js 22+ (`package.json` `engines`). R scripts in `r/` draw figures, and LaTeX in `generate_cv/` builds the CV. GitHub Actions deploys on every push to `main`.
 
 ## Instructions
 
-### 1. Core Quarto Commands
+### 1. Preview
 
 ```bash
-# Start local dev server (port 5896, auto-reloads on changes)
-quarto preview
-
-# Build entire site to docs/
-quarto render
-
-# Build a single page only
-quarto render path/to/file.qmd
-
-# Check Quarto installation and version
-quarto check
-
-# Update Quarto extensions
-quarto update
+./preview.sh            # live dev server, http://localhost:4321, reloads on save (no site search)
+./preview.sh --built    # production build + preview server, includes Pagefind search
 ```
 
-Always run commands from the project root: `/Users/jaeyeonkim/Documents/jaeyk.github.io/`
+Both install dependencies (`npm ci`) on first run. Run long-lived servers in the background, and stop them when done (`npx astro preview stop`, or kill the dev server).
 
-### 2. Typical Workflow
+### 2. Build and check
 
 ```bash
-# 1. Start preview while editing
-quarto preview
-
-# 2. Make edits to .qmd or .scss files
-
-# 3. When ready to publish, render the full site
-quarto render
-
-# 4. Stage and commit the docs/ output
-git add docs/
-git add -p    # review changes
-git commit -m "Update site YYYY-MM-DD HH:MM"
-git push
+npm run build    # astro build → dist/, then pagefind --site dist
+npm run check    # astro check: TypeScript + .astro template errors
 ```
 
-### 3. Git Operations
+A failing build blocks deploys, so run it before pushing. Data errors (bad talk dates or types, malformed YAML) fail the build with a message naming the entry.
+
+### 3. Deploy
 
 ```bash
-# Check status (never -uall flag — can be slow on large repos)
-git status
-
-# Stage specific files
-git add index.qmd essays/new_essay.qmd
-
-# Stage built output
-git add docs/
-
-# Commit
-git commit -m "Message here"
-
-# Push to GitHub Pages
-git push origin main
+./update_site.sh                  # CV if changed → R maps → build → git add -A, commit, push
+./update_site.sh --skip-maps      # skip the R map scripts
+./update_site.sh --force-cv       # recompile the CV regardless
+./update_site.sh -m "message"     # custom commit message
 ```
 
-The site auto-deploys when `docs/` is pushed to `main`.
-
-### 4. R Scripts for Visualizations
-
-Some pages use R-generated figures. Run R scripts individually:
-```bash
-Rscript figures/career_gantt_chart.R
-Rscript community_building/coauthor_map.R
-Rscript community_building/partner_map.R
-Rscript essays/life_story_map.R
-```
-
-Or render with R inline via Quarto (if the `.qmd` file has R code chunks):
-```bash
-quarto render publications/pubs.qmd
-```
-
-### 5. Checking Site Output
+The push to `main` triggers `.github/workflows/deploy.yml` (Node 22 → `npm ci` → `npm run build` → publish `dist/` to `gh-pages`). Watch it with:
 
 ```bash
-# List generated HTML files in docs/
-ls docs/*.html
-
-# Check file sizes (find large assets)
-du -sh docs/site_libs/
-du -sh docs/
-
-# Find recently modified source files
-find . -name "*.qmd" -newer docs/index.html -not -path "./docs/*"
+gh run list --limit 3
+gh run watch <run-id> --exit-status
 ```
 
-### 6. Cleaning & Rebuilding
+Only commit or push when the user asks. `update_site.sh` stages everything with `git add -A`, so check `git status` first.
+
+### 4. CV
 
 ```bash
-# Remove generated output and rebuild fresh
-rm -rf docs/
-quarto render
-
-# Clear Quarto cache (if rendering behaves oddly)
-rm -rf .quarto/
-quarto render
+UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 ./generate_cv/compile_cv.sh
 ```
 
-**Warning:** `rm -rf docs/` removes all built files. Always re-run `quarto render` immediately after.
+This compiles `generate_cv/cv_Kim.tex` and copies the result to `public/CV_Jae_Yeon_Kim.pdf`. Without the two variables, the script also runs `update_site.sh` and commits/pushes. It needs `latexmk`, `pdflatex`, or `tectonic`.
 
-### 7. Debugging Build Issues
+### 5. R figures
 
 ```bash
-# Verbose render output
-quarto render --verbose
-
-# Render single file with verbose logging
-quarto render path/to/file.qmd --verbose
-
-# Check if SCSS compiles without errors
-quarto render index.qmd
-
-# Validate _quarto.yml syntax
-quarto check
+Rscript r/coauthor_map.R      # reads src/data/coauthors.csv → public/misc/coauthor_map.{png,html}
+Rscript r/partner_map.R       # → public/misc/partner_map.{png,html}
+Rscript r/life_story_map.R    # → public/misc/life_story_map.png
+Rscript r/diagram.R           # → public/misc/research_agenda_slide_horizontal_wrapped.png
 ```
 
-### 8. Dependency Management
+The scripts use `here()`, which finds the root via `jaeyk.Rproj`. Run them from the repo root.
+
+### 6. Dependencies
 
 ```bash
-# Check R packages (run inside R or Rscript)
-Rscript -e "installed.packages()[,1]"
-
-# Install R package if missing
-Rscript -e "install.packages('packagename')"
+npm ci                          # clean install from package-lock.json (what CI uses)
+npm install <pkg>               # add a dependency; commit package.json and package-lock.json
+npm outdated                    # see available updates
 ```
 
-### 9. Common File Locations
+Keep FullCalendar on v6 (`@fullcalendar/*@6`) unless deliberately migrating.
 
-| Purpose | Path |
-|---|---|
-| Main config | `_quarto.yml` |
-| Homepage | `index.qmd` |
-| Styles source | `styles.scss` |
-| Styles output | `styles.css` |
-| Built site | `docs/` |
-| Quarto cache | `.quarto/` |
-| GitHub Actions | `.github/workflows/` |
+### 7. Don't
 
-### 10. What NOT to Do
-
-- Do not `rm -rf docs/` without immediately running `quarto render`
-- Do not force-push to `main` — it can break GitHub Pages
-- Do not edit files inside `docs/` — they are overwritten by `quarto render`
-- Do not run `quarto render` with `--no-cache` unnecessarily on large sites
-
-Now help the user with: $ARGUMENTS
+- Don't commit `dist/`, `node_modules/`, or `.astro/` (all gitignored).
+- Don't recreate `docs/` or run `quarto`; the site no longer uses Quarto.

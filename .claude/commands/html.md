@@ -1,128 +1,31 @@
-Add or modify HTML elements within a .qmd page on this Quarto website, following its established HTML patterns and CSS conventions.
+Add or modify HTML on this Astro website — inside Markdown pages, in `.astro` pages and components, or on the homepage — following its established patterns and CSS classes.
 
 ## Context
 
-This site mixes HTML directly into `.qmd` Quarto Markdown files. It uses Bootstrap (via Quarto), custom SCSS variables, and specific CSS utility classes. All HTML should integrate with the existing theme.
+- **Markdown pages** (`src/pages/**/*.md`) accept raw HTML. Put a blank line between an HTML tag and any Markdown inside it, or the Markdown won't be processed.
+- **`.astro` files** (`src/pages/index.astro`, `pubs.astro`, `talks.astro`, `coauthors.astro`, `src/layouts/*`, `src/components/*.astro`) are HTML templates with a `---` frontmatter script on top. Use `class` (not `className`), `{expression}` to insert values, and `{items.map((x) => <li>{x}</li>)}` for lists.
+- **The homepage** (`src/pages/index.astro`) is hand-written HTML: hero, floated `.landing-sidebar` (profile, links, upcoming talks, new publications), bio paragraphs, and the student-note callout.
 
 ## Instructions
 
-When the user asks you to add or modify HTML on a page, follow these rules:
+1. **Use existing classes** (defined in `src/styles/global.scss`):
+   - `.callout callout-note` (+ `.callout-header` / `.callout-body`, or `callout-simple`); `<details class="callout"><summary>Note</summary>…</details>` for collapsible notes
+   - `.book-entry` cards with a `.book-label` span
+   - `<figure class="figure-center">` with `<img>` + `<figcaption>`
+   - `<details>` + `<summary><strong>Title</strong></summary>` for collapsible sections
+   - `.reversed-list` wrapping an `<ol>` for count-down numbering
+   - `.table-wrap` around wide tables
+   - `.badge .badge-<type>`, `.carolina-blue`, `.muted`
+   - Homepage: `.landing-box` (sidebar boxes), `.landing-box-link`, `.hello`
 
-### 1. Available CSS Utility Classes
+2. **No inline colors.** Use classes or `var(--site-…)` so dark mode works. Layout-only inline styles (width, gap, margin) are fine.
 
-| Class | Effect |
-|---|---|
-| `.carolina-blue` | Highlight label (soft blue background, dark blue text, rounded padding; adapts to dark mode) |
-| `.reversed-list` | Wrapper for reversed-numbered `<ol>` lists |
-| `.badge .badge-talk` etc. | Event-type badge (talk, panel, discussant, participant, …) |
+3. **Icons:** Bootstrap Icons are loaded site-wide: `<i class="bi bi-envelope" aria-hidden="true"></i>`. Add `aria-hidden="true"` to decorative icons and give icon-only links an `aria-label`.
 
-Avoid inline `style="color: …"` or `background-color` — it breaks dark mode. Use a class with the `--site-*` variables from `styles.scss` instead.
+4. **Links and assets:** internal pages end in `.html` (`/talks/talks.html`). Files in `public/` use root paths (`/misc/photo.jpg`). External embeds (`<iframe>`) are fine; give them a `title`.
 
-**Example — `.carolina-blue` badge:**
-```html
-<span class="carolina-blue">Featured</span>
-```
+5. **Interactive HTML** (state, toggles, dialogs) belongs in a React component, not inline `<script>`; see `/javascript`.
 
-**Example — Reversed list (publications/software):**
-```html
-<div class="reversed-list">
-<ol>
-<li>Item 3 (displays as 3, 2, 1...)</li>
-<li>Item 2</li>
-<li>Item 1</li>
-</ol>
-</div>
-```
-Note: The counter reset value is auto-calculated by the site's JavaScript — just use the class.
+6. **Whitespace:** `compressHTML` is off in `astro.config.mjs` because compression removes the spaces next to inline links. Leave it off.
 
-### 2. Bootstrap Icons
-
-The site loads Bootstrap Icons. Use them as:
-```html
-<i class="bi bi-envelope"></i>       <!-- email -->
-<i class="bi bi-github"></i>         <!-- GitHub -->
-<i class="bi bi-linkedin"></i>       <!-- LinkedIn -->
-<i class="bi bi-file-earmark-pdf"></i> <!-- PDF -->
-<i class="bi bi-box-arrow-up-right"></i> <!-- external link -->
-```
-
-### 3. Expandable Sections
-
-```html
-<details open>
-<summary><strong>Section Title</strong></summary>
-
-Markdown or HTML content here.
-
-</details>
-```
-Use `open` attribute for sections that should be expanded by default.
-
-### 4. Layout Divs
-
-```html
-<!-- Two-column layout using Bootstrap grid -->
-<div class="row">
-  <div class="col-md-6">Left content</div>
-  <div class="col-md-6">Right content</div>
-</div>
-
-<!-- Centered content -->
-<div style="text-align: center;">Content here</div>
-
-<!-- Custom card/box -->
-<div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
-Content here
-</div>
-```
-
-### 5. Image Figures
-
-Prefer the Quarto markdown syntax for images (Quarto handles responsive rendering):
-```markdown
-![Caption](path/to/image.png){fig-align="center" width="80%"}
-```
-
-For HTML-only contexts:
-```html
-<figure style="text-align: center;">
-  <img src="path/to/image.png" alt="Description" style="width: 80%;">
-  <figcaption>Caption text</figcaption>
-</figure>
-```
-
-### 6. Links & Buttons
-
-```html
-<!-- Standard link button -->
-<a href="https://..." class="btn btn-sm btn-outline-primary" target="_blank">
-  <i class="bi bi-box-arrow-up-right"></i> Label
-</a>
-
-<!-- UNC-themed inline link -->
-<a href="https://..." style="color: #4B9CD3;">Link text</a>
-```
-
-### 7. Color Reference
-
-| Variable | Hex | Use |
-|---|---|---|
-| UNC Carolina Blue | `#4B9CD3` | Primary accent, links |
-| UNC Dark Blue | `#13294B` | Dark backgrounds, headers |
-| UNC Gray | `#E0E0E0` | Borders, backgrounds |
-| Badge background | `#e8edf7` | `.carolina-blue` bg |
-
-### 8. Typography Rules
-
-- Body/headings font: Source Serif 4 (serif) — Quarto applies automatically
-- UI/sidebar font: Inter (sans-serif) — apply with `style="font-family: 'Inter', sans-serif;"`
-- Heading weights use `font-weight: 600`
-
-### 9. What NOT to Do
-
-- Do not add inline `<style>` blocks to individual pages — add to `styles.scss` instead
-- Do not use `<table>` for layout — use Bootstrap grid
-- Do not override Quarto's default heading hierarchy
-- Do not hardcode font imports — they are loaded globally
-
-Now help the user with: $ARGUMENTS
+7. **Check:** `./preview.sh`, view the page at desktop width and narrow (phone) width, in both themes.

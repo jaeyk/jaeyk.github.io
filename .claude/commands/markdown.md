@@ -1,74 +1,54 @@
-Create or update a Quarto Markdown (.qmd) page for this website following its established conventions.
+Create or update a Markdown (.md) content page on this Astro website following its established conventions.
 
 ## Context
 
-This is a Quarto-based academic website (jaeyk.github.io). All content pages use `.qmd` files with YAML frontmatter.
+Text pages (essays, teaching, awards, books, software, data, …) are plain Markdown files in `src/pages/`. The file path is the URL: `src/pages/teaching/teaching.md` → `/teaching/teaching.html`. Pages that need data or components are `.astro` files instead (see `/html` and `/javascript`).
 
 ## Instructions
 
-When the user asks you to create or edit a markdown page, do the following:
+1. **Choose the layout by page type.** The number of `../` is one per folder level below `src/`.
 
-1. **Use the correct frontmatter** based on the page type:
-
-   **Standard page:**
+   Text page:
    ```yaml
    ---
-   title: "Title Here"
-   format: html
-   toc: true
-   toc-depth: 4
-   number-sections: false
+   layout: ../../layouts/Page.astro
+   title: "Page Title"
    ---
    ```
 
-   **Essay or article (with authorship):**
+   Essay (line length capped for reading; author and date shown under the title):
    ```yaml
    ---
+   layout: ../../layouts/Essay.astro
    title: "Essay Title"
    author: "Jae Yeon Kim"
    date: "Month DD, YYYY"
-   format: html
-   toc: true
-   number-sections: false
    ---
    ```
 
-   **Data-driven page (loads a YAML data file):**
-   ```yaml
-   ---
-   title: "Title"
-   format: html
-   resources:
-     - data/filename.yml
-   ---
-   ```
+   Omit `title` to have no page heading (as `essays/essays.md` does).
 
-2. **File naming:** Use snake_case with `.qmd` extension (e.g., `new_essay.qmd`, `spring_teaching.qmd`)
+2. **File names are snake_case**, placed in the matching folder (`src/pages/essays/my_essay.md`).
 
-3. **Place the file** in the appropriate subdirectory:
-   - Personal essays → `essays/`
-   - Teaching content → `teaching/`
-   - Research/publications → `publications/`
-   - Community work → `community_building/`
-   - Software → `software/`
-   - Datasets → `datasets/`
-   - Talks → `talks/`
-   - Awards → `awards/`
+3. **Link new pages from somewhere.** A new essay goes in the right category list in `src/pages/essays/essays.md`. A new top-level section goes in `NAV` in `src/site.ts`.
 
-4. **Content formatting rules:**
-   - Use `##` for top-level sections (H2), `###` for subsections
-   - Bold with `**text**`, italic with `*text*`
-   - For images: `![Alt text](path){fig-align="center" width="80%"}`
-   - For links: `[label](url)`
-   - Ordered lists use `1.` — Quarto will auto-number
-   - For reversed/descending numbered lists, wrap in `<div class="reversed-list">` and use `<ol>`
+4. **Links:** internal links point to `.html` (`[essay](return2academia.html)`, `/talks/talks.html`). Never link to `.qmd` or `.md`.
 
-5. **After creating the file**, remind the user to add it to the sidebar in `_quarto.yml` if it should appear in navigation:
-   ```yaml
-   - text: "Display Name"
-     href: directory/filename.qmd
-   ```
+5. **Images and files** live in `public/` and use root paths: `![Caption](/misc/photo.jpg)`, `[slides](/slides/talk.pdf)`.
 
-6. **Run `quarto preview`** to verify locally before rendering.
+6. **No Quarto syntax.** Use HTML for anything beyond plain Markdown, with blank lines between HTML tags and Markdown inside them:
 
-Now help the user with: $ARGUMENTS
+   | Want | Write |
+   | --- | --- |
+   | Card / styled block | `<div class="book-entry">` … `</div>` |
+   | Small label | `<span class="book-label">Label</span>` |
+   | Note box | `<div class="callout callout-note">` … `</div>` (`callout-simple` for a plain bar) |
+   | Collapsible note | `<details class="callout"><summary>Note</summary>` … `</details>` |
+   | Collapsible section | `<details>` + `<summary><strong>Title</strong></summary>` |
+   | Centered figure | `<figure class="figure-center" style="width:60%"><img src="/misc/x.png" alt="…"><figcaption>…</figcaption></figure>` |
+   | Count-down numbered list | `<div class="reversed-list">` + a Markdown `1.` list + `</div>` |
+   | Icon | `<i class="bi bi-envelope"></i>` (Bootstrap Icons are loaded site-wide) |
+
+7. **Talks and publications are not Markdown pages.** Edit `src/data/talks.yaml`, `src/data/journal-articles.yaml`, or `src/data/other-publications.yaml` (schemas in the root `README.md` and the `website_builder` agent).
+
+8. **Check it:** `./preview.sh`, open the page, then confirm `npm run build` passes.

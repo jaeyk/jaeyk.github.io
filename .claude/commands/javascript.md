@@ -1,145 +1,40 @@
-Add or modify JavaScript on this Quarto website, following its established patterns for DOM manipulation, external libraries, and Quarto integration.
+Add or modify interactive behavior on this Astro website: React components (islands) for anything stateful, and small Astro `<script>`s for simple DOM tweaks.
 
 ## Context
 
-This site uses JavaScript in three ways:
-1. **Global custom JS** — injected via `_quarto.yml`'s `include-in-header`
-2. **Page-level inline JS** — written directly inside `.qmd` files in `<script>` tags
-3. **Standalone `.js` files** — referenced by specific pages (e.g., `talks/calendar-events.js`)
+Pages are static HTML. Interactivity comes from React components in `src/components/*.tsx`, mounted as "islands" with a `client:*` directive:
+
+| Component | Used in | Directive | Purpose |
+| --- | --- | --- | --- |
+| `PublicationsSearch.tsx` | `publications/pubs.astro` | `client:load` | Search/filter, counts, grouped and numbered lists |
+| `TalksCalendar.tsx` | `talks/talks.astro` | `client:only="react"` | FullCalendar v6 (month grid on desktop, list on phones) |
+| `UpcomingTalks.tsx` | `index.astro` | `client:load` | Next 5 events, recomputed from the visitor's date |
+| `AgendaDialog.tsx` | `index.astro` | `client:visible` | Inline link + research-agenda `<dialog>` (portaled to `<body>`) |
+| `ThemeToggle.tsx` | `Navbar.astro` | `client:load` | Dark/light switch (`data-theme` on `<html>`, `localStorage.theme`) |
+| `SiteSearch.tsx` | `Navbar.astro` | `client:idle` | Pagefind search dialog (⌘K); loads `/pagefind/*` lazily |
+
+Data reaches components as props from the page's frontmatter (`loadTalks()`, `loadJournalArticles()`, `loadOtherSections()` in `src/lib/`). Props must be serializable (plain objects, strings, numbers).
 
 ## Instructions
 
-### 1. Always Wrap DOM Code
+1. **Pick the right tool.**
+   - State, user input, or re-rendering → React component in `src/components/`, written in TypeScript (`.tsx`).
+   - A one-off DOM tweak with no state → a `<script>` tag in an `.astro` file. Astro bundles it as a module that runs once per page, so no `DOMContentLoaded` wrapper is needed (see the navbar toggle in `Navbar.astro` and the `.reversed-list` sizer in `Base.astro`).
+   - Don't put `<script>` tags in Markdown pages.
 
-All code that touches the DOM must use DOMContentLoaded:
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-  // your code here
-});
-```
+2. **Choose the hydration directive:** `client:load` (needed right away), `client:idle` (can wait), `client:visible` (below the fold), `client:only="react"` (uses `window` or the DOM at render time; it isn't rendered at build time, so it can't be used for content that should be in the HTML for SEO).
 
-### 2. Where to Put JavaScript
+3. **Write components like the existing ones:**
+   - Default-export a function component and type its props with an `interface`.
+   - Import React types by name (`import { useState, type ReactNode } from 'react'`), not as `React.X`.
+   - Touch `window`, `document`, or `localStorage` only inside `useEffect`/event handlers, unless the island is `client:only`. Wrap `localStorage` in try/catch.
+   - For anything date-dependent, render with a build-time value, then recompute in `useEffect` (see `UpcomingTalks.tsx`) so the page never goes stale.
+   - Style with classes from `src/styles/global.scss` (`className=…`), not inline colors.
 
-| Use case | Location |
-|---|---|
-| Site-wide behavior | `_quarto.yml` → `format.html.include-in-header` |
-| Single-page behavior | `<script>` block inside the `.qmd` file |
-| Complex page feature | Separate `.js` file in the page's directory |
+4. **Libraries:** install with `npm install <pkg>` and import them; don't load scripts from a CDN. FullCalendar is pinned to v6 (`@fullcalendar/*@6`), and its v7 React package is a different major API. js-yaml is v5: use `import { load } from 'js-yaml'` (there is no default export).
 
-**Adding to `_quarto.yml` (global):**
-```yaml
-format:
-  html:
-    include-in-header:
-      - text: |
-          <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            // code
-          });
-          </script>
-```
+5. **Shared logic** (parsing, date math) belongs in `src/lib/` so pages and components can both import it.
 
-**Adding inline to a `.qmd` page:**
-```html
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // code
-});
-</script>
-```
+6. **Analytics:** the Google Analytics tag is in `Base.astro`. Don't add another.
 
-**Adding a standalone file (e.g., for a feature-rich page):**
-```yaml
-# In the .qmd frontmatter:
-format:
-  html:
-    include-in-header:
-      - text: '<script src="calendar-events.js"></script>'
-```
-
-### 3. Loading External Libraries via CDN
-
-Add in frontmatter's `include-in-header`, before any code that uses the library:
-```yaml
-format:
-  html:
-    include-in-header:
-      - text: |
-          <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-```
-
-**Libraries already available site-wide (loaded by Quarto/Bootstrap):**
-- Bootstrap JS (modals, tooltips, etc.)
-- Quarto's navigation and search scripts
-- Clipboard.js
-
-### 4. Existing Site Patterns to Follow or Extend
-
-**Search placeholder customization:**
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-  var searchInput = document.querySelector('#quarto-search input[type="text"]');
-  if (searchInput) {
-    searchInput.setAttribute('placeholder', 'Search this site...');
-  }
-});
-```
-
-**Reversed list counter (auto-sizes from item count):**
-```javascript
-document.querySelectorAll('.reversed-list > ol').forEach(function(ol) {
-  var wrapper = ol.closest('.reversed-list');
-  var itemCount = Array.from(ol.children).filter(function(child) {
-    return child.tagName === 'LI';
-  }).length;
-  wrapper.style.setProperty('--reversed-counter-reset', String(itemCount + 1));
-});
-```
-
-**YAML-driven publication search (from `publications/pubs.qmd`):**
-```javascript
-fetch('data/published-papers.yml')
-  .then(response => response.text())
-  .then(text => {
-    const papers = jsyaml.load(text);
-    // filter and render papers
-  });
-```
-
-**FullCalendar integration (from `talks/calendar-events.js`):**
-```javascript
-document.addEventListener('DOMContentLoaded', function () {
-  var calendarEl = document.getElementById('calendar');
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth',
-    events: [ /* event objects */ ],
-    eventClick: function(info) {
-      if (info.event.url) {
-        window.open(info.event.url, '_blank');
-        info.jsEvent.preventDefault();
-      }
-    }
-  });
-  calendar.render();
-});
-```
-
-### 5. Quarto-Specific DOM Selectors
-
-| Selector | What it targets |
-|---|---|
-| `#quarto-search input[type="text"]` | Sidebar search input |
-| `.quarto-title` | Page title element |
-| `#quarto-sidebar` | Left sidebar container |
-| `.sidebar-navigation` | Sidebar nav links |
-| `.reversed-list > ol` | Reversed-numbered lists |
-
-### 6. What NOT to Do
-
-- Do not use jQuery — vanilla JS only (or a CDN-loaded library)
-- Do not use `document.write()`
-- Do not modify Quarto's generated navigation scripts
-- Do not block rendering — keep scripts non-blocking (DOMContentLoaded or `defer`)
-- Do not duplicate the Google Analytics script (already in `_quarto.yml`)
-
-Now help the user with: $ARGUMENTS
+7. **Verify:** `npm run check` (types), `npm run build`, then `./preview.sh --built` and use the feature in the browser with the devtools console open (no errors).
