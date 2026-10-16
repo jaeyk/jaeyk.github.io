@@ -92,7 +92,7 @@ body {
   background: var(--site-bg);
   color: var(--site-text);
   font-family: $font-sans;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   line-height: 1.65;
 }
 
@@ -331,6 +331,7 @@ textarea {
   display: block;
   padding: 0.5rem 0.55rem;
   color: var(--site-link);
+  font-size: 1.0625rem; // pinned so larger body text doesn't overflow the 13-item menu
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -496,6 +497,7 @@ details.callout > summary {
   font-weight: 600;
 }
 
+details.callout > summary { cursor: pointer; }
 details.callout:not([open]) > summary { margin-bottom: 0; }
 
 .callout-simple {
