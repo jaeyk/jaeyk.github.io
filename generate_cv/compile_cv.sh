@@ -24,7 +24,7 @@ fi
 BASE_NAME="$(basename "${TEX_FILE}" .tex)"
 PDF_PATH="${SCRIPT_DIR}/${BASE_NAME}.pdf"
 OUTPUT_NAME="CV_Jae_Yeon_Kim.pdf"
-OUTPUT_PATH="${REPO_DIR}/${OUTPUT_NAME}"
+OUTPUT_PATH="${REPO_DIR}/public/${OUTPUT_NAME}"
 
 if command -v latexmk >/dev/null 2>&1; then
   latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="${SCRIPT_DIR}" "${TEX_PATH}"
@@ -64,7 +64,7 @@ elif git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     "generate_cv/${BASE_NAME}.pdf" \
     "generate_cv/compile_cv.sh" \
     "generate_cv/normalize_cv_quotes.py" \
-    "${OUTPUT_NAME}"
+    "public/${OUTPUT_NAME}"
 
   if git -C "${REPO_DIR}" diff --cached --quiet; then
     echo "No changes to commit."

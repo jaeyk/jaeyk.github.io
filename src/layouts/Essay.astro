@@ -1,0 +1,25 @@
+---
+// Long-form essays: capped line length plus author and date under the title.
+import Page from './Page.astro';
+
+interface Props {
+  frontmatter: { title: string; author?: string; date?: string; description?: string };
+}
+
+const { frontmatter } = Astro.props;
+const date = frontmatter.date && /^\d{4}-\d{2}-\d{2}$/.test(frontmatter.date)
+  ? new Date(`${frontmatter.date}T00:00:00`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  : frontmatter.date;
+---
+
+<Page frontmatter={frontmatter} bodyClass="prose">
+  <div slot="meta" class="title-meta" data-pagefind-ignore>
+    {frontmatter.author && (
+      <div><span class="title-meta-heading">Author</span>{frontmatter.author}</div>
+    )}
+    {date && (
+      <div><span class="title-meta-heading">Published</span>{date}</div>
+    )}
+  </div>
+  <slot />
+</Page>

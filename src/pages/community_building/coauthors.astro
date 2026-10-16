@@ -1,0 +1,50 @@
+---
+// Reads src/data/coauthors.csv, the same file r/coauthor_map.R uses for the map.
+import csv from '../../data/coauthors.csv?raw';
+import Page from '../../layouts/Page.astro';
+
+function parseCsv(text: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = '';
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+      else if (c === '"') quoted = false;
+      else field += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ',') { row.push(field); field = ''; }
+    else if (c === '\n' || c === '\r') {
+      if (c === '\r' && text[i + 1] === '\n') i++;
+      row.push(field); field = '';
+      if (row.some((f) => f !== '')) rows.push(row);
+      row = [];
+    } else field += c;
+  }
+  row.push(field);
+  if (row.some((f) => f !== '')) rows.push(row);
+  return rows;
+}
+
+const [header, ...rows] = parseCsv(csv);
+const col = (name: string) => header.indexOf(name);
+const coauthors = rows
+  .map((r) => ({ name: r[col('Name')], affiliation: r[col('Affiliation')], note: r[col('Note')] ?? '' }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const updated = new Date().toISOString().slice(0, 10);
+---
+
+<Page title="Coauthors in alphabetical order">
+  <p>The following table includes the coauthors of ongoing and finished projects. <em>Indicates undergraduate RA coauthors.</em></p>
+  <p><strong>Total coauthors:</strong> {coauthors.length} (updated {updated})</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Name</th><th>Affiliation</th><th>Note</th></tr></thead>
+      <tbody>
+        {coauthors.map((c) => <tr><td>{c.name}</td><td>{c.affiliation}</td><td>{c.note}</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+</Page>

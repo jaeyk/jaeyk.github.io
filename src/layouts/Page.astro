@@ -1,0 +1,22 @@
+---
+// Layout for Markdown pages: `layout: ../layouts/Page.astro` in frontmatter.
+import Base from './Base.astro';
+
+interface Props {
+  frontmatter?: { title?: string; description?: string };
+  title?: string;
+  bodyClass?: string;
+}
+
+const { frontmatter = {}, title = frontmatter.title, bodyClass } = Astro.props;
+---
+
+<Base title={title} description={frontmatter.description} bodyClass={bodyClass}>
+  {title && (
+    <header class="title-block">
+      <h1>{title}</h1>
+      <slot name="meta" />
+    </header>
+  )}
+  <slot />
+</Base>

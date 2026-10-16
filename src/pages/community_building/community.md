@@ -1,0 +1,60 @@
+---
+layout: ../../layouts/Page.astro
+title: "Community building"
+---
+
+> [My version of policy entrepreneurship is closer to the role of a facilitator. I aspire to be someone who helps create space for collective learning and problem-solving.](https://substack.com/home/post/p-198463690)
+
+#### Bridging Research and Practice
+
+- **Co-founder**, [*Data for Good Roundtables*](https://sites.google.com/view/d4g-roundtables?usp=sharing) (2025– )  
+  A safe and brave space where academics and practitioners come together to discuss using data for good.
+
+- **Co-founder**, [Administrative Politics Network](https://sites.google.com/view/apnetwork/home) (2026- )
+  A network of scholars whose work focuses on administrative politics, broadly construed
+
+#### Collaborators, Project Partners, and Lab Affiliations
+
+##### Collaborator Locations
+
+<figure class="figure-center" style="width:100%"><img src="../misc/coauthor_map.png" alt="Collaborator locations map."><figcaption>Collaborator locations map.</figcaption></figure>
+
+##### Applied Project Partners
+
+<figure class="figure-center" style="width:100%"><img src="../misc/partner_map.png" alt="Applied project partners map (updated September 15, 2026)."><figcaption>Applied project partners map (updated September 15, 2026).</figcaption></figure>
+
+I maintain an active network of [collaborators](coauthors.html) and [project partner organizations](partners.html), and work closely with several research labs across institutions:
+
+- **Better Government Lab**, Georgetown McCourt & Michigan Ford School  
+  (Co-directors: Donald Moynihan, Pamela Herd, Sebastian Jilke) 
+- **Algorithms, Data, and Public Policy Technology (ADAPPT) Lab**, New York University
+  (Director: Alex Chohlas-Wood)
+- **P3 Lab**, Johns Hopkins SNF Agora Institute  
+  (Director: Hahrie Han)  
+- **Civic Power Lab**, Harvard Kennedy School  
+  (Director: Liz McKenna)  
+- **REPS Lab**, UCLA  
+  (Director: Efrén Pérez)
+
+#### Field-Building in Computational Social Science
+
+- **Advisory Council Member**, [Summer Institute in Computational Social Science (SICSS)](https://sicss.io/people)  
+- **Co-organizer**, [SICSS Bay Area (2020)](https://sicss.io/2020/bay_area/)  
+  Co-hosted by UC Berkeley and Stanford  
+- **Co-organizer**, [SICSS Korea (2022)](https://sicss.io/2022/korea/)  
+  Co-hosted by KAIST and KDI School  
+
+#### Community Engagement & Mentorship
+
+- **Speaker / Panelist on Civic Tech**  
+  *MPP Social, University of North Carolina at Chapel Hill, 2026*  
+  *Public Management Research Conference (PMRC), University of Washington, 2024*
+
+- **Panelist on Data Science Career Paths**  
+  *Stanford University, 2024*  
+  *UC Berkeley, 2023*  
+  *[International Conference on Computational Social Science (IC2S2)](https://ic2s2.org/), 2024*
+
+<figure class="figure-center" style="width:60%"><img src="../misc/civic_tech_preconference.jpg" alt="Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan (2024)"><figcaption>Civic tech pre-conference at the 2024 PMRC, Daniel J. Evans School of Public Policy and Governance, University of Washington. Photo credit: Donald Moynihan (2024)</figcaption></figure>
+
+<figure class="figure-center" style="width:60%"><img src="../misc/fas.jpg" alt="Source Code: Building an AI Trust and Fairness Policy Agenda Hill Briefing. Photo credit: Federation of American Scientists (2026)"><figcaption>Source Code: Building an AI Trust and Fairness Policy Agenda Hill Briefing. Photo credit: Federation of American Scientists (2026)</figcaption></figure>

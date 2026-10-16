@@ -1,0 +1,14 @@
+---
+import { EMAIL, FOOTER_LINKS } from '../site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-left">© {year} Jae Yeon Kim. All rights reserved.</div>
+  <div class="footer-center">
+    <span class="footer-email">Get in touch: {EMAIL}</span>
+    {FOOTER_LINKS.map((link) => (
+      <a href={link.href} aria-label={link.label}><i class={`bi bi-${link.icon}`} aria-hidden="true"></i></a>
+    ))}
+  </div>
+</footer>

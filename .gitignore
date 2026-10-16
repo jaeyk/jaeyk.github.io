@@ -1,8 +1,34 @@
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS / editors
+.DS_Store
+.idea/
+
+# R
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
-/.quarto/
+# Python
+__pycache__/
 
-**/*.quarto_ipynb
+# LaTeX build files (the CV is compiled inside generate_cv/)
+generate_cv/*.aux
+generate_cv/*.fdb_latexmk
+generate_cv/*.fls
+generate_cv/*.log
+generate_cv/*.out

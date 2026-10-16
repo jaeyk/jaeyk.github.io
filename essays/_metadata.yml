@@ -1,3 +1,0 @@
-# Applies to every page in essays/: long-form reading pages get a capped
-# line length (see `.prose` in styles.scss).
-body-classes: prose

@@ -1,0 +1,86 @@
+---
+import '../styles/global.scss';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, GOOGLE_ANALYTICS_ID } from '../site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const { title, description = SITE_DESCRIPTION, bodyClass = '' } = Astro.props;
+const pageTitle = title ? `${title} – ${SITE_TITLE}` : SITE_TITLE;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+    <!-- Apply the saved color scheme before first paint (dark by default). -->
+    <script is:inline>
+      (function () {
+        var theme = 'dark';
+        try { theme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400;1,14..32,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+    <meta property="og:title" content="Jae Yeon Kim — Political Scientist &amp; Data Scientist" />
+    <meta
+      property="og:description"
+      content="Assistant Professor at UNC-Chapel Hill. Research on policy implementation, civic data, and computational social science."
+    />
+    <meta property="og:image" content="https://jaeyk.github.io/profile_alt.png" />
+    <meta property="og:url" content="https://jaeyk.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jae Yeon Kim" />
+    <meta name="twitter:description" content="Assistant Professor at UNC-Chapel Hill researching policy implementation and civic data." />
+    <meta name="twitter:image" content="https://jaeyk.github.io/profile_alt.png" />
+
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
+    <script is:inline define:vars={{ id: GOOGLE_ANALYTICS_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', id);
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <Navbar />
+    <main class="content" id="main" data-pagefind-body>
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Size CSS-counter numbering on `.reversed-list` pages (software, data)
+      // from the actual number of items, so the list counts down to 1.
+      document.querySelectorAll<HTMLElement>('.reversed-list').forEach((wrapper) => {
+        const ol = wrapper.querySelector(':scope > ol');
+        if (!ol || wrapper.style.getPropertyValue('--reversed-counter-reset')) return;
+        const count = Array.from(ol.children).filter((c) => c.tagName === 'LI').length;
+        wrapper.style.setProperty('--reversed-counter-reset', String(count + 1));
+      });
+    </script>
+  </body>
+</html>

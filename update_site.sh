@@ -1,101 +1,68 @@
 #!/usr/bin/env bash
+# Rebuild generated assets, check that the site builds, then commit and push.
+# GitHub Actions (.github/workflows/deploy.yml) builds and publishes the site
+# after the push, usually within a couple of minutes.
+#
+# Usage:
+#   ./update_site.sh                 # normal update
+#   ./update_site.sh --force-cv      # also recompile the CV even if unchanged
+#   ./update_site.sh --skip-maps     # don't rerun the R map scripts
+#   ./update_site.sh -m "message"    # custom commit message
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "${SCRIPT_DIR}" || { echo "Directory not found. Aborting."; exit 1; }
+cd "${SCRIPT_DIR}"
 
-CV_TARGET="${SCRIPT_DIR}/CV_Jae_Yeon_Kim.pdf"
-CV_SOURCE="${SCRIPT_DIR}/generate_cv/cv_Kim.tex"
-COMPILE_SCRIPT="${SCRIPT_DIR}/generate_cv/compile_cv.sh"
-FORCE_CV="${1:-}"
+CV_TARGET="public/CV_Jae_Yeon_Kim.pdf"
+CV_SOURCE="generate_cv/cv_Kim.tex"
+FORCE_CV=0
+SKIP_MAPS=0
+COMMIT_MSG="Update site $(date '+%Y-%m-%d %H:%M')"
 
-NEED_CV_COMPILE=0
-if [ ! -f "${CV_TARGET}" ]; then
-    NEED_CV_COMPILE=1
-    echo "CV target not found at ${CV_TARGET}."
-elif [ "${FORCE_CV}" = "--force-cv" ]; then
-    NEED_CV_COMPILE=1
-    echo "Forcing CV rebuild (--force-cv)."
-elif [ -f "${CV_SOURCE}" ] && [ "${CV_SOURCE}" -nt "${CV_TARGET}" ]; then
-    NEED_CV_COMPILE=1
-    echo "CV source is newer than target; rebuilding CV."
-fi
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --force-cv) FORCE_CV=1 ;;
+        --skip-maps) SKIP_MAPS=1 ;;
+        -m) shift; COMMIT_MSG="$1" ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+    shift
+done
 
-if [ "${NEED_CV_COMPILE}" -eq 1 ]; then
-    if [ ! -x "${COMPILE_SCRIPT}" ]; then
-        echo "Compile script not found or not executable: ${COMPILE_SCRIPT}. Aborting."
-        exit 1
-    fi
-    echo "Running ${COMPILE_SCRIPT} to generate CV..."
-    UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 "${COMPILE_SCRIPT}"
-fi
-
-# Regenerate map assets used in community page if scripts exist
-if [ -f ./community_building/coauthor_map.R ] && [ -f ./community_building/partner_map.R ]; then
-    echo "Updating map assets..."
-    Rscript ./community_building/coauthor_map.R
-    Rscript ./community_building/partner_map.R
-fi
-
-# Remove scheduled markers for events whose dates have already passed
-echo "Updating expired scheduled event markers..."
-python3 ./scripts/update_scheduled_events.py --file ./index.qmd
-
-# Normalize quotation marks in publications page to a consistent straight-quote style
-echo "Normalizing quotation styles in pubs.qmd..."
-python3 ./scripts/fix_quote_style.py --file ./publications/pubs.qmd
-
-# Regenerate calendar events from index.qmd
-echo "Regenerating calendar events..."
-Rscript ./generate_calendar.R
-
-# Ensure data source for coauthors page exists before rendering
-if [ ! -f ./community_building/coauthors.csv ]; then
-    echo "Missing required data file: ./community_building/coauthors.csv. Aborting."
-    exit 1
-fi
-
-# Compile SCSS to CSS before rendering when Sass is available.
-# If Sass is unavailable, allow the build to continue only when the compiled CSS
-# is already present and newer than the SCSS source.
-echo "Compiling styles.scss → styles.css..."
-if command -v sass >/dev/null 2>&1; then
-    sass styles.scss styles.css --no-source-map
-elif [ ! -f ./styles.css ]; then
-    echo "Sass is not installed and ./styles.css is missing. Aborting."
-    echo "Install Dart Sass or regenerate styles.css on a machine with Sass available."
-    exit 1
-elif [ ./styles.scss -nt ./styles.css ]; then
-    echo "Sass is not installed and ./styles.scss has changed more recently than ./styles.css. Aborting."
-    echo "Install Dart Sass to refresh styles.css before rendering."
-    exit 1
+# 1. CV: recompile when the LaTeX source is newer than the PDF (or when forced).
+if [ "${FORCE_CV}" -eq 1 ] || [ ! -f "${CV_TARGET}" ] || [ "${CV_SOURCE}" -nt "${CV_TARGET}" ]; then
+    echo "Compiling CV..."
+    UPDATE_SITE_SKIP_RECURSE=1 UPDATE_SITE_SKIP_GIT=1 ./generate_cv/compile_cv.sh
 else
-    echo "Sass is not installed, but existing styles.css is up to date. Reusing compiled CSS."
+    echo "CV is up to date."
 fi
 
-# Render the full site locally so committed docs are ready to deploy
-echo "Rendering full site locally..."
-quarto render
-
-# Quarto should copy root-level static files into docs/, but keep the deployed CV
-# explicit because visitors access this exact file from the navbar and homepage.
-if [ -f "${CV_TARGET}" ]; then
-    cp "${CV_TARGET}" "${SCRIPT_DIR}/docs/CV_Jae_Yeon_Kim.pdf"
+# 2. Community page maps (written to public/misc/).
+if [ "${SKIP_MAPS}" -eq 0 ]; then
+    if command -v Rscript >/dev/null 2>&1; then
+        echo "Updating map images..."
+        Rscript r/coauthor_map.R
+        Rscript r/partner_map.R
+    else
+        echo "Rscript not found; skipping map images (use --skip-maps to silence this)."
+    fi
 fi
 
-# Prevent pushing a build with missing static map assets
-if [ ! -f ./misc/coauthor_map.png ] || [ ! -f ./misc/partner_map.png ]; then
-    echo "Map PNG assets missing in ./misc. Aborting push."
-    exit 1
+# 3. Make sure the site builds before anything is pushed.
+if [ ! -d node_modules ]; then
+    echo "Installing dependencies..."
+    npm ci
 fi
+echo "Building site..."
+npm run build
 
-# Stage, commit, and push changes
-# Pushes now deploy the committed docs directly; workflow_dispatch remains available for a full rebuild
-echo "Committing and pushing changes..."
-git add .
-git commit -m "Update site $(date '+%Y-%m-%d %H:%M')" || echo "No changes to commit"
+# 4. Commit and push; GitHub Actions deploys from here.
+git add -A
+if git diff --cached --quiet; then
+    echo "No changes to commit."
+else
+    git commit -m "${COMMIT_MSG}"
+fi
 git push
-
-echo "GitHub Actions will now deploy the prebuilt docs."
-echo "Use workflow_dispatch in GitHub Actions when you want a full rebuild on GitHub."
+echo "Pushed. GitHub Actions is now deploying the site: https://github.com/jaeyk/jaeyk.github.io/actions"

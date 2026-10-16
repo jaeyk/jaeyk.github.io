@@ -1,0 +1,28 @@
+---
+layout: ../../layouts/Page.astro
+title: "Office Hour"
+---
+
+## UNC Student Office Hour
+
+I hold weekly 30-minute office hours for UNC students on Mondays between 1:00 PM and 3:00 PM in my office (Abernethy Hall, Room 216A). If you are interested, [please feel free to make an appointment](https://outlook.office.com/bookwithme/user/d68c72d12207404bbbdf6879a13da2cf@unc.edu?anonymous&ismsaljsauthenabled&ep=plink).
+
+Abernethy Hall is near Franklin Street, next to Hanes Art Center and the Kenan Music Building. My office is on the second floor. Please walk upstairs, as there is no elevator; it is only a two-story building. When you reach the second floor, turn left and continue down the hall.
+
+<div style="margin-top: 0.75rem;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4506609728687!2d-79.05687062404371!3d35.911467672513766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e7c92a4ebf%3A0x96e51db242dd6c93!2sAbernethy%20Hall%2C%20131%20S%20Columbia%20St%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1768307453720!5m2!1sen!2sus"
+    width="100%"
+    height="320"
+    style="border:0; max-width: 100%;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+**Possible topics:**
+
+- Course questions  
+- Paper and research ideas  
+- Graduate school and careers

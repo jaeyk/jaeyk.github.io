@@ -1,107 +1,235 @@
 # jaeyk.github.io
 
-Source for [Jae Yeon Kim](https://jaeyk.github.io)'s academic website — built with [Quarto](https://quarto.org/) and served via GitHub Pages.
+Source for [Jae Yeon Kim](https://jaeyk.github.io)'s academic website. It's
+built with [Astro](https://astro.build), with a few interactive parts written
+in React, and served by GitHub Pages.
 
-## Live Site
-
-[https://jaeyk.github.io](https://jaeyk.github.io)
+This README is written for someone who knows Quarto. The [cheat sheet
+below](#quarto--astro-cheat-sheet) maps each Quarto habit to its equivalent
+here.
 
 ---
 
-## Tech Stack
+## Quick start
 
-| Layer | Tool |
+You need [Node.js](https://nodejs.org) 22 or newer. Check with `node -v`.
+
+```sh
+./preview.sh            # live preview at http://localhost:4321, refreshes as you save
+./preview.sh --built    # preview the finished site, including site search
+./update_site.sh        # rebuild, commit, and push; GitHub then publishes the site
+```
+
+The first run of either script installs dependencies automatically.
+
+---
+
+## How publishing works
+
+1. You edit files and preview with `./preview.sh`.
+2. `./update_site.sh` checks that the site builds, then commits and pushes.
+3. On every push to `main`, GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml))
+   builds the site and publishes it to the `gh-pages` branch. The live site
+   updates a minute or two later. You can watch progress in the repo's
+   **Actions** tab, or rerun a deploy there with **Run workflow**.
+
+Unlike the old Quarto setup, you never commit built HTML: there is no `docs/`
+folder. The `dist/` folder that builds create is ignored by git.
+
+`update_site.sh` options:
+
+| Option | What it does |
 | --- | --- |
-| Site framework | [Quarto](https://quarto.org/) |
-| Hosting | GitHub Pages (served from `docs/`, deployed to `gh-pages` branch) |
-| Styling | Custom SCSS (`styles.scss`) compiled to `styles.css` via [Dart Sass](https://sass-lang.com/) |
-| Typography | [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) (body), [Inter](https://fonts.google.com/specimen/Inter) (UI) via Google Fonts |
-| Icons | [Bootstrap Icons](https://icons.getbootstrap.com/) v1.11.3 |
-| Data generation | R (`generate_calendar.R`) for talks calendar and recent publications JS |
-| Event cleanup | Python (`scripts/update_scheduled_events.py`) strips `(*scheduled*)` markers from past events |
-| CV | LaTeX (`generate_cv/cv_Kim.tex`) compiled by `generate_cv/compile_cv.sh` |
-| CI/CD | GitHub Actions (`.github/workflows/deploy.yml`) |
+| *(none)* | Recompiles the CV if `cv_Kim.tex` changed, reruns the R maps, builds, commits, pushes |
+| `--force-cv` | Recompiles the CV even if the `.tex` didn't change |
+| `--skip-maps` | Skips the R map scripts (faster; use when the maps haven't changed) |
+| `-m "message"` | Uses your own commit message |
 
 ---
 
-## Site Structure
+## Common tasks
+
+### Add a talk or event
+
+Add an entry anywhere in [`src/data/talks.yaml`](src/data/talks.yaml); order
+doesn't matter:
+
+```yaml
+- start: 2026-12-09
+  end: 2026-12-11          # optional: last day of a multi-day event
+  type: talk               # talk | panel | discussant | participant
+  title: "Name of the event"
+  org: "Hosting organization"   # optional
+  host: "Person who invited you" # optional
+  url: "https://..."             # optional
+  place: "Boston, MA, USA"
+```
+
+The talks calendar and the homepage's "Upcoming Talks & Events" box both update
+from this file. Past events turn grey automatically based on today's date, so
+there's no R script to run and no "scheduled" marker to remove.
+
+### Add a publication
+
+- **Journal article** → [`src/data/journal-articles.yaml`](src/data/journal-articles.yaml).
+  Copy an existing entry and give it the next-highest `order` number.
+  In `citation`, `{venue}` is replaced by the italicized journal name.
+- **Everything else** (under review, working papers, chapters, policy memos,
+  media, public writing) → [`src/data/other-publications.yaml`](src/data/other-publications.yaml).
+  Each entry is one line of Markdown, with optional `notes` bullets:
+
+  ```yaml
+  - text: "[\"Paper Title.\"](https://link) (with Coauthor Name)"
+    notes:
+      - "Presented at the 2026 APSA"
+  ```
+
+  Put the newest item first in its section. To hide an item without deleting
+  it, put `#` at the start of its lines.
+
+The publications page search, the counts at the top, and the homepage's "New
+Publications & Media" box all update automatically.
+
+### Edit a text page or essay
+
+Text pages are plain Markdown files in [`src/pages/`](src/pages). The file path
+becomes the URL:
+
+| File | URL |
+| --- | --- |
+| `src/pages/teaching/teaching.md` | `/teaching/teaching.html` |
+| `src/pages/essays/haruki.md` | `/essays/haruki.html` |
+| `src/pages/index.astro` | `/` (homepage) |
+
+### Add a new essay
+
+Create `src/pages/essays/my_essay.md`:
+
+```md
+---
+layout: ../../layouts/Essay.astro
+title: "My Essay Title"
+author: "Jae Yeon Kim"
+date: "October 16, 2026"
+---
+
+Your text in Markdown...
+```
+
+Then add a link to it in [`src/pages/essays/essays.md`](src/pages/essays/essays.md).
+For non-essay pages, use `layout: ../../layouts/Page.astro`. The number of
+`../` matches how deep the file is: one `../` per folder level below `src/`.
+
+### Add an image, PDF, or slide deck
+
+Put the file in [`public/`](public), for example `public/misc/photo.jpg` or
+`public/slides/talk.pdf`. It's served from the site root: `/misc/photo.jpg`,
+`/slides/talk.pdf`. Link to it with that path:
+
+```md
+![Caption](/misc/photo.jpg)
+```
+
+### Update the CV
+
+Edit [`generate_cv/cv_Kim.tex`](generate_cv/cv_Kim.tex) and run
+`./update_site.sh`. It compiles the PDF to `public/CV_Jae_Yeon_Kim.pdf` (the
+navbar's CV link). Needs a LaTeX install (`latexmk`, `pdflatex`, or `tectonic`).
+
+### Update coauthors or the community maps
+
+- Coauthors: edit [`src/data/coauthors.csv`](src/data/coauthors.csv). The
+  coauthors page reads it directly, and `r/coauthor_map.R` draws the map from it.
+- Partner map: edit [`r/partner_map.R`](r/partner_map.R).
+- `./update_site.sh` reruns both map scripts, which write PNGs to `public/misc/`.
+  This needs R with the scripts' packages; open `jaeyk.Rproj` so `here()` finds
+  the project root.
+
+### Change the navbar, footer, colors, or fonts
+
+- Navbar links, footer, site title, Google Analytics ID → [`src/site.ts`](src/site.ts)
+- Colors, fonts, spacing → [`src/styles/global.scss`](src/styles/global.scss).
+  Colors are CSS variables at the top: `:root` for light mode,
+  `:root[data-theme='dark']` for dark mode. Change both.
+
+---
+
+## Quarto → Astro cheat sheet
+
+| In Quarto you… | Here you… |
+| --- | --- |
+| `quarto preview` | `./preview.sh` |
+| `quarto render` + commit `docs/` | `./update_site.sh` (GitHub builds the site for you) |
+| Edited `_quarto.yml` for the navbar/footer | Edit `src/site.ts` |
+| Edited `styles.scss` | Edit `src/styles/global.scss` |
+| Wrote pages as `.qmd` | Write `.md`, with a `layout:` line in the frontmatter (see above) |
+| Linked to `other.qmd` | Link to `other.html` |
+| Added talks as hidden table rows in `index.qmd` | Add entries to `src/data/talks.yaml` |
+| Ran `generate_calendar.R` | Nothing; it's automatic |
+| Put images next to pages or in `misc/` | Put them in `public/` and link with `/misc/...` |
+| Ran R code chunks inside a page | Run the R script yourself (in `r/`); save its output to `public/` |
+
+Quarto's special Markdown doesn't work in `.md` files here. Use plain HTML
+instead (put blank lines around Markdown inside HTML blocks):
+
+| Quarto | Here |
+| --- | --- |
+| `::: {.book-entry}` … `:::` | `<div class="book-entry">` … `</div>` |
+| `[Label]{.book-label}` | `<span class="book-label">Label</span>` |
+| `::: {.callout-note}` … `:::` | `<div class="callout callout-note">` … `</div>` |
+| `::: {.callout-note collapse="true"}` | `<details class="callout"><summary>Note</summary>` … `</details>` |
+| `![Caption](img.png){width=60%}` | `<figure class="figure-center" style="width:60%"><img src="/misc/img.png" alt="Caption"><figcaption>Caption</figcaption></figure>` |
+| `## Heading {.unnumbered}` | `## Heading` (headings are never numbered) |
+| `::: {.reversed-list}` numbered list | `<div class="reversed-list">` … `</div>` (counts down automatically) |
+
+Existing pages are full of examples. [`src/pages/book_projects/books.md`](src/pages/book_projects/books.md)
+uses most of these.
+
+---
+
+## Project layout
 
 ```text
 .
-├── index.qmd                   # Homepage (bio, sidebar, upcoming talks, recent pubs)
-├── _quarto.yml                 # Global config: navbar, footer, theme, metadata
-├── styles.scss                 # SCSS source — edit this, not styles.css
-├── styles.css                  # Compiled output — regenerated by update_site.sh
-├── update_site.sh              # Main local dev script (compile → render → push)
-├── generate_calendar.R         # Generates talks/upcoming-talks.js and
-│                               #   publications/recent-publications.js from source data
-├── publications/
-│   ├── pubs.qmd                # Publications page
-│   ├── data/published-papers.yml  # Structured paper metadata (primary source)
-│   └── recent-publications.js  # Auto-generated — do not edit directly
-├── talks/
-│   ├── talks.qmd               # Full talks calendar page
-│   ├── calendar-events.js      # Auto-generated — do not edit directly
-│   └── upcoming-talks.js       # Auto-generated — do not edit directly
-├── scripts/
-│   └── update_scheduled_events.py  # Removes (*scheduled*) from past events in index.qmd
-├── generate_cv/
-│   ├── cv_Kim.tex              # CV source
-│   └── compile_cv.sh           # Compiles LaTeX → CV_Jae_Yeon_Kim.pdf
-├── community_building/         # Coauthor/partner maps (R-generated)
-├── misc/                       # Static map assets (PNG)
-├── docs/                       # Rendered site output — do not edit directly
-└── .github/workflows/
-    └── deploy.yml              # CI/CD pipeline
+├── src/
+│   ├── pages/          # one file per page; the path is the URL
+│   ├── data/           # talks, publications, coauthors (YAML/CSV)
+│   ├── components/     # navbar, footer, and React interactive parts
+│   ├── layouts/        # page templates (Base, Page, Essay)
+│   ├── lib/            # code that reads the data files
+│   ├── styles/         # global.scss
+│   └── site.ts         # navbar, footer, site-wide settings
+├── public/             # images, PDFs, slides; copied to the site as-is
+├── r/                  # R scripts that draw figures into public/misc/
+├── generate_cv/        # LaTeX CV source and compile script
+├── preview.sh          # preview locally
+├── update_site.sh      # build, commit, push (GitHub deploys)
+└── .github/workflows/deploy.yml
 ```
 
-Other content directories follow the same pattern (`awards/`, `book_projects/`, `datasets/`, `essays/`, `office_hour/`, `software/`, `teaching/`): each has a `.qmd` source file rendered into `docs/`.
+Interactive parts (React, in `src/components/`):
+
+| Component | What it does |
+| --- | --- |
+| `PublicationsSearch.tsx` | Search box and filtering on the publications page |
+| `TalksCalendar.tsx` | The talks calendar (FullCalendar) |
+| `UpcomingTalks.tsx` | The homepage's upcoming-events box |
+| `AgendaDialog.tsx` | The research-agenda diagram pop-up on the homepage |
+| `ThemeToggle.tsx` | Dark/light switch |
+| `SiteSearch.tsx` | Site-wide search (Pagefind; built by `npm run build`) |
 
 ---
 
-## Local Workflow
+## Troubleshooting
 
-All local updates go through `./update_site.sh`:
-
-```bash
-./update_site.sh
-```
-
-This script runs the following steps in order:
-
-1. **CV** — rebuilds `CV_Jae_Yeon_Kim.pdf` from LaTeX if the source is newer (or `--force-cv` is passed)
-2. **Maps** — regenerates coauthor and partner map assets via R
-3. **Event cleanup** — runs `scripts/update_scheduled_events.py` to strip `(*scheduled*)` from past events in `index.qmd`
-4. **Calendar + publications** — runs `generate_calendar.R` to regenerate `talks/upcoming-talks.js`, `talks/calendar-events.js`, and `publications/recent-publications.js`
-5. **SCSS compile** — compiles `styles.scss → styles.css` via `sass`
-6. **Render** — runs `quarto render` to rebuild `docs/`
-7. **Push** — commits and pushes to `main`; GitHub Actions deploys to GitHub Pages
-
-> **Important:** Always edit `styles.scss`, not `styles.css`. The CSS file is overwritten on every run.
-
----
-
-## Content Updates
-
-### Adding a talk or event
-
-Edit the calendar table in `index.qmd` (inside the `.calendar-source` div). `generate_calendar.R` reads those rows automatically on the next `./update_site.sh` run.
-
-### Adding a publication
-
-Add an entry to `publications/data/published-papers.yml`. For media, book chapters, or proceedings, add the item directly to the relevant `<details>` section in `publications/pubs.qmd`. The homepage sidebar picks up the three most recent items automatically.
-
-### Updating the CV
-
-Edit `generate_cv/cv_Kim.tex` and run `./update_site.sh` (or `./update_site.sh --force-cv`).
-
----
-
-## Deploy Pipeline
-
-Pushes to `main` trigger `.github/workflows/deploy.yml`, which chooses between two deploy modes:
-
-- **Prebuilt deploy** (fast) — used when `docs/` is already committed alongside source changes. Publishes `docs/` directly to `gh-pages` without re-rendering on GitHub.
-- **Full rebuild** (slower) — used when source files changed but `docs/` was not committed. GitHub Actions installs Quarto, R, and Sass, then re-renders and deploys.
-
-`workflow_dispatch` always triggers a full rebuild regardless of commit contents.
+- **The build fails with a message about `talks.yaml`.** A date isn't in
+  `YYYY-MM-DD` form, or `type` isn't one of `talk`, `panel`, `discussant`,
+  `participant`. The message names the event.
+- **The build fails with a YAML error.** Usually an unquoted value that
+  contains `: ` or `"`. Wrap the whole value in double quotes and write any
+  inner `"` as `\"`.
+- **Site search shows nothing in `./preview.sh`.** Expected: search only works
+  on a built site. Use `./preview.sh --built`.
+- **A page changed but the live site didn't.** Check the **Actions** tab on
+  GitHub; a red ✗ means the build failed, and its log shows why.
+- **Type and template errors:** `npm run check`.

@@ -1,0 +1,20 @@
+---
+layout: ../../layouts/Page.astro
+title: "Awards"
+---
+
+### Research
+
+*  **Sherman Family Emerging Scholar Award, The Korea Society (2026)**, recognizes "pioneering and impactful scholarship" that "stimulates and supports the next generation of U.S. thought leadership on Korea."
+
+*  **Paul Volcker Junior Scholar Research Grant Award in Public Administration, American Political Science Association (2025)**, recognizes research "potential to shed new light on important public administration questions, their scholarly and methodological rigor, and their promise for advancing practice and theory development." 
+
+*  **Emerging Scholar Award in Civic Engagement, American Political Science Association (2024)**, "recognizes an individual who is making notable contributions in the research of civic engagement within five years of earning their terminal degree and whose career to date demonstrates significant promise in this area."
+
+*  **Best Dissertation Award in Urban and Local Politics, American Political Science Association (2022)**, "given annually for the best dissertation on urban politics (domestic or international) accepted in the previous year."
+
+*  **Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics, Western Political Science Association (2020)**, "for making a significant contribution to the understanding of Asian Pacific American politics."
+
+### Teaching
+
+*  **Outstanding Graduate Student Instructor Award**, Graduate Division, UC Berkeley, AY 2016-2017

@@ -1,0 +1,32 @@
+---
+// Events live in src/data/talks.yaml.
+import Page from '../../layouts/Page.astro';
+import TalksCalendar from '../../components/TalksCalendar';
+import { PAST_COLOR, TALK_COLORS, loadTalks } from '../../lib/talks';
+
+const legend = [
+  { label: 'Talk', color: TALK_COLORS.talk },
+  { label: 'Panel', color: TALK_COLORS.panel },
+  { label: 'Discussant', color: TALK_COLORS.discussant },
+  { label: 'Participant', color: TALK_COLORS.participant },
+  { label: 'Past event', color: PAST_COLOR, past: true },
+];
+---
+
+<Page title="Travel & Talks">
+  <p>
+    If I'm visiting your area and you'd like to connect—whether for collaboration or just conversation—you can use
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-c4bgAAoBV6IMzdCCJzdxuDWnX76oS9_Tp7UjPXEZnAD49g/viewform?usp=header">this form</a>. I'd love to get to know you!
+  </p>
+  <p>I've worked across academic and applied settings and enjoy meeting people working on public problem-solving in any capacity.</p>
+
+  <div class="calendar-legend">
+    {legend.map((item) => (
+      <span><span class="swatch" class:list={{ past: item.past }} style={`background:${item.color}`}></span>{item.label}</span>
+    ))}
+  </div>
+
+  <div class="talks-calendar">
+    <TalksCalendar client:only="react" talks={loadTalks()} />
+  </div>
+</Page>

@@ -1,0 +1,107 @@
+# Everything on the publications page except journal articles.
+# Each item's "text" is Markdown; "notes" become the bullet points under it.
+# Items are listed newest first. To hide an item without deleting it,
+# comment it out with "#".
+
+- key: proceedings
+  title: "Peer-reviewed conference and workshop proceedings"
+  items:
+    - text: "[\"Intersectional Bias in Hate Speech and Abusive Language Datasets.\"](https://arxiv.org/abs/2005.05921) (**Jae Yeon Kim**, Carlos Ortiz, Sarah Nam, Sarah Santiago, and Vivek Datta), 2020, [*Proceedings of the Fourteenth International AAAI Conference on Web and Social Media (ICWSM), Data Challenge Workshop*](https://sites.google.com/view/icwsm2020datachallenge/home) \\[[replication](https://github.com/jaeyk/intersectional-bias-in-ml)\\]"
+
+- key: under_review
+  title: "Manuscripts under review"
+  items:
+    - text: "\"Not All Threats Unite: Hate Crime, State Surveillance, and Minority Group Solidarity.\" (with Joan Cho, DG Kim, and Taeku Lee)"
+      notes:
+        - "Presented at the 2022, 2023, 2024 APSA, Harvard, UC Berkeley, UCLA, Johns Hopkins, Dartmouth, Wesleyan"
+    - text: "[\"Race, Violence, and the Effectiveness of Protest.\"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5696242) (with James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, and Liz McKenna)"
+      notes:
+        - "Presented at the 2025 APSA"
+    - text: "[\"The SIMC Framework: Aligning Academic Research and Government Practice in Field Experiments.\"](https://doi.org/10.31235/osf.io/wzva9_v1) (with Florian Keppeler) [\\[slides\\]](https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/CIRL_SIMC_Kim_2026.pdf) [\\[talk\\]](https://unc.zoom.us/rec/share/KSgNwGTNlpDp-d0dNj_yn3uoFAYUFIpv75IGXtmiVzOOy3Zt3de34aHb7Nni5MPF.IQOzB6qJBADmEBen?startTime=1790957318000)"
+      notes:
+        - "Presented at UNC Chapel Hill (Causal Inference Research Group), the University of Toronto, 2024 PMRC, and 2024 Korean Summer Workshop on Causal Inference"
+    # - text: "\"Mission Driven Evaluations: RCTs Are Not the Problem. Misaligned Evaluation Is.\" (Eric Giannella, **Jae Yeon Kim**, and Maximilian Hell)"
+
+- key: reading_for_submission
+  title: "Preparing for submission"
+  items:
+    - text: "\"How Fear Triggers System Avoidance: Legal Status, Perceived Risk, and Safety Net Program Access.\" (with Pamela Herd, Eric Giannella, Sebastian Jilke, Donald Moynihan, and Nathaniel Olin)"
+      notes:
+        - "Presented at the 2025 APSA, APPAM, NYU, UNC Chapel Hill, Equity and Access in Algorithms, Mechanisms, and Optimization (EEAMO), Korea University"
+    - text: "\"Space and Place in WIC: Vendor Accessibility and Administrative Burden.\" (with Zhaowen Guo, Eric Giannella, Pamela Herd, Sebastian Jilke, and Donald Moynihan)"
+      notes:
+        - "Presented at the 2025 National WIC Association annual conference"
+    # - text: "\"How Civic Tech Spreads and Persists: The Code for America Alumni Network and the Formation of a Mission-Driven Technology Field.\" (with Eric Giannella and Yixin Crystal Luo)"
+    - text: "\"Profits and Burdens: Artificial Intelligence and the American Contracting State.\""
+      notes:
+        - "Presented at Yonsei University, Scheduled: 2026 APPAM"
+    - text: "\"Contracting for Fair AI: A Computational Text Analysis of State AI Procurement Contracts.\" (with Aniket Kesari)"
+      notes:
+        - "Presented at the 2025 APPAM; Johns Hopkins SAIS; 2026 Duke Conference on Society-Centered AI"
+    - text: "\"Power Architecture of Policy Delivery: Reconstructing Implementation as Politics.\" (with Akshay Mangla)"
+      notes:
+        - "Presented at the 2025 APSA"
+    - text: "\"Higher Education as Safety Net Infrastructure.\" (with Tyler Simko)"
+      notes:
+        - "Scheduled: 2026 APPAM"
+    - text: "\"The Scaling Problem in Evidence-Based Policy Innovation: Site Selection and Institutional Fragmentation.\" (**Jae Yeon Kim**, Eric Giannella, and Maximilian Hell)"
+      notes:
+        - "Presented at the 2025 PMRC, New York City Mayor's Office of Economic Opportunity"
+
+- key: work_in_progress
+  title: "Work in progress"
+  items:
+    - text: "\"The Efficiency Trap: The Paradox of the Korean Digital Government.\" (with Sanghee Park)"
+    - text: "\"Privacy Law Diffusion Across US State Legislatures.\" (with Aniket Kesari)"
+    # - text: "\"Discipline or Support? Public Reactions to the Use of AI in the American Welfare State.\" (with Sophie Jacobson)"
+    # - text: "\"How Political Scientists Can Improve Policy Implementation: Be Practical, Grounded, and Relational.\" (with Tyler Simko)"
+    #   notes:
+    #     - "Presented at Korea University, Yonsei University, KAIST"
+    - text: "\"Predicting Protests.\" (with James Druckman, Jennifer Oser, Lior Sheffer, Devorah Manekin, Tamar Mitts, and Liz McKenna)"
+    - text: "\"Between Donors and Democracy: How Civic Organizations Navigate Competing Definitions of Impact.\" (with Christian Caballero and Liz McKenna)"
+    # - text: "\"Historical Legacies and Civic Inequality in America.\" (with Milan de Vries and Hahrie Han)"
+    #   notes:
+    #     - "Presented at the 2024 APSA, WPSA"
+    - text: "\"Why Do the Public Support Disciplining Immigrants?: Evidence from South Korea.\" (with Paris Boo and Taeku Lee)"
+    # - text: "\"Opportunity, Burden, and Migration Decision: A Survey Experiment on Korean Attitudes Toward U.S. Immigration.\" (with Woo Chang Kang)"
+    # - text: "\"Everyday Experiences and Asian American Identity.\" (with Taeku Lee)"
+
+- key: book_chapters
+  title: "Edited volume book chapters"
+  items:
+    - text: "[\"AI, the Public Sector, and Policymaking.\"](https://preprints.apsanet.org/engage/apsa/article-details/69fa21314770e67d929474f3) (with Baobao Zhang, Diane Coyle, Johannes Himmelreich, and Mila Gascó-Hernandez), in *Artificial Intelligence, Politics, and Political Science* edited by Nathaniel Persily and Joshua A. Tucker, forthcoming at *Cambridge University Press*"
+      notes:
+        - "Commissioned as part of the APSA presidential task force on AI"
+    - text: "\"Failing Faster, Learning Better.\" (with Charles Crabtree and Valentina González-Rostani) in *Notes on the Future of Quantitative Social Science* edited by Rohan Alexander, forthcoming at *CRC Press*"
+    - text: "[\"Machines Do Not Decide Hate Speech: Machine Learning, Power, and the Intersectional Approach.\"](https://www.ssoar.info/ssoar/handle/document/86424) (**Jae Yeon Kim**) In C. Strippel, S. Paasch-Colberg, M. Emmer & J. Trebbe (Eds.), *Challenges and Perspectives of Hate Speech Analysis*, 2022, (pp. 261-275). Digital Communication Research (open-access book series by the German Communication Association)"
+
+- key: policy_memos
+  title: "Policy memos and briefs"
+  items:
+    - text: "[\"How State Governments Should Purchase AI to Ensure Fair, Transparent, and Accountable Use.\"](https://fas.org/publication/how-governments-purchase-ai-fair/) (**Jae Yeon Kim** and Aniket Kesari), *Federation of American Scientists*, June 8, 2026"
+      notes:
+        - "Presented at the U.S. Senate (Source Code: Building an AI Trust and Fairness Policy Agenda, co-hosted by the Federation of American Scientists and the Kapor Foundation) and the GovAI Coalition (Procurement Committee)"
+        - "Interviewed on the AI Skeptics Podcast (hosted by Cathy O'Neil and Jake Appel)"
+        - "Used as educational material for the National Public Health AI Peer Learning Series (hosted by Health Resources in Action and the Louisiana Public Health Institute) and InnovateUS"
+        - "Introduced to a Japanese policy audience by the Policy Entrepreneurs Platform"
+        - "Catalogued by the National Association of State Procurement Officials (NASPO)"
+    - text: "[\"Policy Brief: Validated Names for Studying Discrimination Based on Race, Citizenship, and Socioeconomic Status.\"](https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf) (Charles Crabtree, **Jae Yeon Kim**, S. Michael Gaddis, and John B. Holbein), *Berkeley Interdisciplinary Migration Initiative*, November 5, 2024"
+
+- key: media_interviews
+  title: "Public lectures, media interviews, and mentions"
+  items:
+    - text: "[\"Government AI Procurement is a Problem.\"](https://youtu.be/9iozBEUdraY?si=MHsuyYnivvFbGz5E) (**Jae Yeon Kim** and Aniket Kesari), *AI Skeptics Podcast*, September 27, 2026"
+    - text: "[\"Building Civic Muscle.\"](https://open.spotify.com/episode/5865Wjmn02pJavm1YH4yao?si=c8658129128c4821) (**Jae Yeon Kim**), *APSA's Civic Engagement Section Podcast (Civic Café)*, June 17, 2025"
+    - text: "[\"Episode 3.4: Race-based Coalitions in Three Chinatowns.\"](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM) (**Jae Yeon Kim**), *Scope Conditions*, June 14, 2023"
+
+- key: public_writing
+  title: "Public writing and other public-facing work"
+  items:
+    - text: "[\"Flood of Comments on White House Grantmaking Overhaul Is Largely Negative, Analysis Shows.\"](https://www.statnews.com/2026/07/15/trump-omb-grant-funding-proposal-comments-95-percent-opposed/) (Anil Oza and J. Emory Parker), *STAT News*, July 15, 2026 (contributed to the underlying data analysis as part of the UNC-STAT collaboration)"
+    - text: "[\"The Uneven Landscape of Civic Opportunity In the United States: What We Discovered While Mapping The Modern Agora.\"](https://histphil.org/2024/01/25/the-uneven-landscape-of-civic-opportunity-in-the-united-states-what-we-discovered-while-mapping-the-modern-agora/) (**Jae Yeon Kim**), *HistPhil*, January 25, 2024"
+    - text: "[\"Behind the Paper: The Unequal Landscape of Civic Opportunity in America.\"](https://go.nature.com/45qrXpz) (**Jae Yeon Kim**), *Springer Nature: Social Sciences Community*, November 13, 2023"
+    - text: "[\"Good Troublemakers Are the Key to Fixing Democracy in South Korea.\"](https://www.nknews.org/pro/good-troublemakers-are-the-key-to-fixing-democracy-in-south-korea/?t=1660440015387) (**Jae Yeon Kim**), *Korea Pro*, May 16, 2022"
+    - text: "[\"Thanks to Trump's Rhetoric, Asian Americans Are Moving Toward the Democratic Party.\"](https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage) (Nathan Chan, **Jae Yeon Kim**, and Vivien Leung), *Washington Post's Monkey Cage*, March 30, 2021"
+    - text: "[\"The Three Tales of Chinatown: Why Racism Is Not Enough to Create a Race-based Coalition among Marginalized Groups.\"](https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups) (**Jae Yeon Kim**), *UC Berkeley Canadian Studies Program*, March 29, 2021"
+    - text: "[\"How I Accidentally became Interested in Data Science\"](https://dlab.berkeley.edu/news/how-i-accidentally-became-interested-data-science) (**Jae Yeon Kim**), *UC Berkeley D-Lab*, February 24, 2020"
+

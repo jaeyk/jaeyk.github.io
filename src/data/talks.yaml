@@ -1,0 +1,333 @@
+# Talks, panels, and events. This file drives the talks calendar and the
+# "Upcoming Talks & Events" box on the homepage; past/upcoming is worked out
+# automatically from today's date.
+#
+# Fields: start (YYYY-MM-DD), end (last day, optional), type (talk | panel |
+# discussant | participant), title, org, host, url, place. Only start, type,
+# title, and place are required. Order does not matter.
+
+- start: 2026-12-09
+  type: panel
+  title: "InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert)"
+  url: "https://innovate-us.org/"
+  place: "Virtual"
+
+- start: 2026-11-06
+  type: participant
+  title: "Annual Summit: The Need for Roots in a Digital Society hosted by Boston University"
+  url: "https://sites.bu.edu/misi/2026/07/30/misi-summit-2026-the-need-for-roots-in-a-digital-society/"
+  place: "Boston, MA, USA"
+
+- start: 2026-11-04
+  end: 2026-11-06
+  type: panel
+  title: "Association for Public Policy Analysis and Management (APPAM) Annual Meeting"
+  url: "https://www.appam.org/conference-events/2026appam/"
+  place: "Boston, MA, USA"
+
+- start: 2026-10-28
+  type: talk
+  title: "Sherman Family Emerging Scholar Award Lecture"
+  org: "The Korea Society"
+  url: "https://www.koreasociety.org/"
+  place: "New York City, NY, USA"
+
+- start: 2026-10-14
+  type: panel
+  title: "State and Local AI Policy: Actionable Solutions for Policymakers"
+  org: "Federation of American Scientists"
+  place: "Virtual"
+
+- start: 2026-10-02
+  type: talk
+  title: "Causal Inference Research Group"
+  org: "UNC-Chapel Hill"
+  host: "Daniel Westreich"
+  url: "https://causal.unc.edu/talks/"
+  place: "Chapel Hill, NC"
+
+- start: 2026-09-25
+  type: talk
+  title: "Data Science and Society Seminar Series"
+  org: "UNC-Chapel Hill"
+  host: "Tarek Zikry and Iain Carmichael"
+  place: "Chapel Hill, NC"
+
+- start: 2026-09-23
+  type: talk
+  title: "National Public Health AI Peer Learning Series"
+  host: "Health Resource in Action and Louisiana Public Health Institute"
+  place: "Virtual"
+
+- start: 2026-09-16
+  end: 2026-09-18
+  type: participant
+  title: "Better Government Lab Research Retreat"
+  org: "Michigan Ford School of Public Policy"
+  place: "Ann Arbor, MI, USA"
+
+- start: 2026-09-11
+  type: talk
+  title: "AI Skeptics Podcast"
+  host: "Cathy O'Neil and Jake Appel"
+  url: "https://www.oceannetwork.net/"
+  place: "Virtual"
+
+- start: 2026-09-03
+  end: 2026-09-06
+  type: panel
+  title: "American Political Science Association (APSA) Annual Meeting"
+  url: "https://connect.apsanet.org/apsa2026/"
+  place: "Boston, MA, USA"
+
+- start: 2026-07-02
+  type: talk
+  title: "GovAI Coalition"
+  url: "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/ai-reviews-algorithm-register/govai-coalition"
+  place: "Virtual"
+
+- start: 2026-06-16
+  end: 2026-06-18
+  type: participant
+  title: "2026 Veritas Scholars Summit"
+  url: "https://summit.veritas.org/scholars-summit"
+  place: "Park City, UT, USA"
+
+- start: 2026-06-11
+  type: panel
+  title: "Source Code AI Trust & Fairness Launch Event"
+  org: "Federation of American Scientists"
+  url: "https://fas.org/"
+  place: "Washington, DC, USA"
+
+- start: 2026-05-21
+  type: talk
+  title: "AI and Social Sciences"
+  org: "Department of Political Science and International Relations, Korea University"
+  host: "Woo Chang Kang"
+  url: "https://politics.korea.ac.kr/kupolitics_kor/community/grad_school.do?mode=view&articleNo=804673&article.offset=0&articleLimit=10&totalNoticeYn=N&totalBoardNo&fbclid=IwY2xjawRPEeRleHRuA2FlbQIxMABicmlkETFwd0pSVVhHN2xaTTd2ZEY4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsSLrFD-TJ9pjZXdolPqX79MkzjxQEvOtKUN_ddPlxued1JrXzLuFAgbdgAj_aem_fhq3jLsOEWuShEhMULwhMA"
+  place: "Virtual"
+
+- start: 2026-05-01
+  type: talk
+  title: "The Future of Quantitative Social Science in an Age of Artificial Intelligenc"
+  org: "University of Toronto"
+  host: "Rohan Alexander"
+  url: "https://rohanalexander.com/tdw.html?fbclid=IwY2xjawRPEctleHRuA2FlbQIxMABicmlkETFwd0pSVVhHN2xaTTd2ZEY4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrpKC20cB6deQ9gpFVoU0pkbwykSlhKol_1prTn6yWqn5Uj4YFUF6inmY9d3_aem_gfy7-jwggUYKf-t_TLT_Vw"
+  place: "Toronto, ON, Canada"
+
+- start: 2026-04-10
+  type: talk
+  title: "MPP Social"
+  org: "UNC Chapel Hill"
+  host: "Douglas MacKay"
+  place: "Chapel Hill, NC, USA"
+
+- start: 2026-03-25
+  type: talk
+  title: "Institute for AI and Social Innovation"
+  org: "Yonsei University"
+  host: "Wha Sun Jho"
+  place: "Virtual"
+
+- start: 2026-03-17
+  type: discussant
+  title: "Economic Democracy Initiative Workshop"
+  org: "Columbia University"
+  host: "Alexander Hertel-Fernandez and Sophie Jacobson"
+  place: "Virtual"
+
+- start: 2026-03-09
+  type: talk
+  title: "Data-Driven EnviroLab"
+  org: "UNC Chapel Hill"
+  host: "Angel Hsu"
+  url: "https://datadrivenlab.org/"
+  place: "Chapel Hill, NC, USA"
+
+- start: 2026-03-04
+  type: participant
+  title: "Source Code AI Trust & Fairness Co-Creation Forum"
+  org: "Federation of American Scientists"
+  url: "https://fas.org/"
+  place: "Washington, DC, USA"
+
+- start: 2026-02-14
+  type: talk
+  title: "Conference on Society-Centered AI"
+  org: "Duke University"
+  url: "https://sites.duke.edu/scai/"
+  place: "Durham, NC, USA"
+
+- start: 2025-11-19
+  type: talk
+  title: "Institute of Governmental Studies"
+  org: "Korea University"
+  host: "Jun Koo"
+  place: "Virtual"
+
+- start: 2025-11-18
+  type: panel
+  title: "Virtual Job Market Event"
+  host: "Dept. of Political Science & IR, University of Southern California"
+  place: "Virtual"
+
+- start: 2025-11-12
+  end: 2025-11-16
+  type: panel
+  title: "Association for Public Policy Analysis and Management (APPAM)"
+  url: "https://convention2.allacademic.com/one/appam/appam25/index.php?PHPSESSID=e5dt3n10fmreghdqs05jjdnik2&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim"
+  place: "Seattle, WA, USA"
+
+- start: 2025-11-05
+  end: 2025-11-07
+  type: participant
+  title: "The Gov AI Coalition Summit"
+  host: "GovAI Coalition and the City of San José"
+  url: "https://events.govtech.com/GovAI-Coalition-Summit"
+  place: "San José Convention Center, CA, USA"
+
+- start: 2025-10-30
+  type: talk
+  title: "New York City Mayor's Office of Economic Opportunity (NYC Opportunity)"
+  host: "Sophia Tareen"
+  place: "Virtual"
+
+- start: 2025-10-30
+  type: panel
+  title: "Virtual Job Market Event"
+  host: "Dept. of Political Science, UC Berkeley, feat. Natalia Garbiras-Díaz"
+  place: "Virtual"
+
+- start: 2025-10-22
+  type: talk
+  title: "PRIISM Seminar Series"
+  org: "NYU"
+  host: "Klint Kanopka and Ravi Shroff"
+  url: "https://steinhardt.nyu.edu/priism/events/upcoming-events"
+  place: "Virtual"
+
+- start: 2025-10-16
+  end: 2025-10-17
+  type: participant
+  title: "Better Government Lab Research Retreat"
+  org: "Georgetown McCourt School of Public Policy"
+  place: "Washington, DC, USA"
+
+- start: 2025-10-15
+  type: talk
+  title: "Tech and Innovation Speaker Series"
+  org: "Johns Hopkins SAIS"
+  url: "https://www.eventbrite.com/e/move-fast-without-breaking-things-how-smarter-ai-procurement-can-transform-tickets-1735067777429?aff=oddtdtcreator&fbclid=IwY2xjawNNAfdleHRuA2FlbQIxMQABHnsxf4GYAeRsWTlxWK-H9CRIqIByrPn9tESrSAf8cxK4URtCHR5cuYKYvC-5_aem_SHj7mHP6-Rd1QymDv3xcVA"
+  place: "Washington, DC, USA"
+
+- start: 2025-09-30
+  type: talk
+  title: "Inequality Working Group Seminar"
+  org: "EAAMO (Equity and Access in Algorithms, Mechanisms, and Optimization)"
+  url: "https://bridges.eaamo.org/working_groups/inequality/"
+  place: "Virtual"
+
+- start: 2025-09-11
+  end: 2025-09-14
+  type: panel
+  title: "American Political Science Association (APSA)"
+  url: "https://convention2.allacademic.com/one/apsa/apsa25/index.php?PHPSESSID=q29h0kdgp0ikoco6u9j6vdt6t9&cmd=Online+Program+Search&program_focus=fulltext_search&search_mode=content&offset=0&search_text=jae+yeon+kim"
+  place: "Vancouver, Canada"
+
+- start: 2025-09-10
+  type: discussant
+  title: "Narrative and Text Analysis in the Study of Migration and Citizenship hosted by the UBC's Centre for Migration Studies"
+  url: "https://migration.ubc.ca/events/event/apsa-pre-conference/"
+  place: "Vancouver, Canada"
+
+- start: 2025-08-14
+  end: 2025-08-16
+  type: participant
+  title: "New Faculty Orientation"
+  host: "UNC-CH"
+  place: "Chapel Hill, NC, USA"
+
+- start: 2025-07-29
+  type: panel
+  title: "Annual Research Conference on the American Political Economy"
+  url: "https://www.americanpoliticaleconomy.org/events/annual-conference"
+  place: "Virtual"
+
+- start: 2025-06-27
+  end: 2025-06-28
+  type: talk
+  title: "Korea Foundation for Advanced Studies"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-26
+  type: panel
+  title: "Dept. of Political Science & IR"
+  org: "Seoul National University"
+  host: "Seo-young Silvia Kim"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-26
+  type: panel
+  title: "Public Management Research Conference (PMRC)"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-25
+  type: panel
+  title: "Korea-Finland Innovation Forum"
+  host: "Yonsei University and the Embassy of Finland, Seoul"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-19
+  type: talk
+  title: "KIXLAB"
+  org: "KAIST"
+  host: "Juho Kim"
+  place: "Daejeon, South Korea"
+
+- start: 2025-06-17
+  type: talk
+  title: "Entangled with Books (independent bookstore)"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-13
+  type: talk
+  title: "Dept. of Political Science & IR"
+  org: "Yonsei University"
+  host: "Inbok Rhee"
+  place: "Seoul, South Korea"
+
+- start: 2025-06-10
+  type: talk
+  title: "Graduate School of International Studies"
+  org: "Korea University"
+  host: "Sunkyoung Park"
+  place: "Seoul, South Korea"
+
+- start: 2025-05-29
+  end: 2025-05-30
+  type: panel
+  title: "Code for America Summit"
+  url: "https://summit.codeforamerica.org/agenda/"
+  place: "Washington, DC, USA"
+
+- start: 2025-05-28
+  type: participant
+  title: "What's next for CX in Government?"
+  host: "Georgetown University's Better Government Lab"
+  place: "Washington, DC, USA"
+
+- start: 2025-05-23
+  type: participant
+  title: "Conference on Experimentation"
+  host: "Stanford Causal Science Center"
+  url: "https://datascience.stanford.edu/events/causal-science-center/stanford-causal-science-center-conference-experimentation"
+  place: "Palo Alto, CA, USA"
+
+- start: 2025-02-26
+  type: talk
+  title: "American Politics Workshop"
+  org: "Northwestern University"
+  url: "https://planitpurple.northwestern.edu/event/625048"
+  place: "Evanston, IL, USA"
+

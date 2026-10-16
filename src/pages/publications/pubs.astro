@@ -1,0 +1,10 @@
+---
+// Content lives in src/data/journal-articles.yaml and src/data/other-publications.yaml.
+import Page from '../../layouts/Page.astro';
+import PublicationsSearch from '../../components/PublicationsSearch';
+import { loadJournalArticles, loadOtherSections } from '../../lib/publications';
+---
+
+<Page title="Publications">
+  <PublicationsSearch client:load articles={loadJournalArticles()} sections={loadOtherSections()} />
+</Page>

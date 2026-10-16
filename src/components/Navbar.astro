@@ -1,0 +1,38 @@
+---
+import { NAV } from '../site';
+import ThemeToggle from './ThemeToggle';
+import SiteSearch from './SiteSearch';
+
+const path = Astro.url.pathname.replace(/\/$/, '/index.html');
+const isActive = (href: string) => path === href || (href === '/index.html' && path === '/');
+---
+
+<header class="navbar">
+  <nav class="navbar-inner" aria-label="Main">
+    <button class="navbar-toggle" type="button" aria-expanded="false" aria-controls="navbar-links" aria-label="Toggle navigation">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
+    <ul class="navbar-links" id="navbar-links">
+      {NAV.map((item) => (
+        <li>
+          <a href={item.href} class:list={['nav-link', { active: isActive(item.href) }]} aria-current={isActive(item.href) ? 'page' : undefined}>
+            {item.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="navbar-tools">
+      <SiteSearch client:idle />
+      <ThemeToggle client:load />
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.navbar-toggle');
+  const links = document.getElementById('navbar-links');
+  toggle?.addEventListener('click', () => {
+    const open = links?.classList.toggle('open') ?? false;
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+</script>
