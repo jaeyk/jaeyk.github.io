@@ -3,6 +3,10 @@ layout: ../../layouts/Page.astro
 title: "Advising"
 ---
 
+## Working with me as an undergraduate RA
+
+If you are an undergraduate student interested in working with me on a research project, I encourage you to check out my <a href="https://jaeyk.github.io/pof-lab/">lab website<a>
+
 ## Letters of recommendation
 
 First, if you are my advisee, it is my responsibility to write a letter for you. If you are my former student, please explain when you took my course, how you performed, and why you think I should write a letter for you. If I previously told you that I can write a letter, just tell me which course you took and in which semester.
