@@ -40,7 +40,7 @@ Below is a collection of essays I’ve written over the years, organized into th
 
 **Korean essays**
 
-- [*미국 정부와 정책을 알면 보이는 것들* 서브스택](https://learn2career.substack.com/)
+- [*미국 정부와 정책을 알면 보이는 것들* 서브스택](https://usgovguide.substack.com/)
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
 
 <figure style="text-align: left; margin: 1.5rem 0;">
