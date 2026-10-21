@@ -54,6 +54,11 @@ if [ ! -d node_modules ]; then
     echo "Installing dependencies..."
     npm ci
 fi
+# Talks map: look up coordinates for any new talk cities (only contacts the
+# lookup service when there is one). A failed lookup shouldn't block the update;
+# that talk just stays off the map until the next run.
+npm run --silent places || echo "Couldn't look up new talk places; they'll be retried next time."
+
 echo "Building site..."
 npm run build
 
