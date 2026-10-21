@@ -40,9 +40,8 @@ Below is a collection of essays I’ve written over the years, organized into th
 
 **Korean essays**
 
-- [*스타트업을 위한 미국 정부 가이드*](https://jaeyk.github.io/kor_startup_us_gov_guide/)
+- [*미국 정부와 정책을 알면 보이는 것들* 서브스택](https://learn2career.substack.com/)
 - [*한국인 대학원생들을 위한 미국 아카데믹 커리어 조언* 웹사이트](https://jaeyk.github.io/us_ac_career_for_korean_students/)
-- [*대학사용법 개정판* 서브스택](https://learn2career.substack.com/) [[*자매판 팟캐스트*](https://learn2career.substack.com/podcast)]
 
 <figure style="text-align: left; margin: 1.5rem 0;">
   <img src="../misc/combined_row_image.jpg" alt="Family photo (Berkeley, '21)." style="display: block; width: 80%; max-width: 500px; height: auto;" />
