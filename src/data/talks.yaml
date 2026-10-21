@@ -32,6 +32,13 @@
   url: "https://www.koreasociety.org/general/how-can-ai-serve-all-people-in-korea-and-the-us/"
   place: "New York City, NY, USA"
 
+- start: 2026-10-27
+  type: talk
+  title: "NYC Mayor's Office of Economic Opportunity (NYC Opportunity)"
+  url: "https://www.nyc.gov/site/opportunity/index.page"
+  host: "Sophia Tareen"
+  place: "New York City, NY, USA"
+
 - start: 2026-10-14
   type: panel
   title: "State and Local AI Policy: Actionable Solutions for Policymakers"
