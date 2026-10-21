@@ -1,7 +1,7 @@
 import { load as loadYaml } from 'js-yaml';
 import raw from '../data/talks.yaml?raw';
 
-export type TalkType = 'talk' | 'panel' | 'discussant' | 'participant';
+export type TalkType = 'talk' | 'panel' | 'discussant' | 'participant' | 'visiting';
 
 export interface Talk {
   start: string; // YYYY-MM-DD
@@ -19,6 +19,7 @@ export const TALK_COLORS: Record<TalkType, string> = {
   panel: '#1976d2',
   discussant: '#00796b',
   participant: '#6d4c41',
+  visiting: '#455a64',
 };
 
 export const PAST_COLOR = '#aaaaaa';

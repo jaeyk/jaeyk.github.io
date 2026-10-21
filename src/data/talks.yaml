@@ -3,7 +3,7 @@
 # automatically from today's date.
 #
 # Fields: start (YYYY-MM-DD), end (last day, optional), type (talk | panel |
-# discussant | participant), title, org, host, url, place. Only start, type,
+# discussant | participant | visiting), title, org, host, url, place. Only start, type,
 # title, and place are required. Order does not matter.
 
 - start: 2026-12-09
@@ -33,7 +33,7 @@
   place: "New York City, NY, USA"
 
 - start: 2026-10-27
-  type: talk
+  type: visiting
   title: "NYC Mayor's Office of Economic Opportunity (NYC Opportunity)"
   url: "https://www.nyc.gov/site/opportunity/index.page"
   host: "Sophia Tareen"
