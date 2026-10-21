@@ -5,7 +5,7 @@ title: "Advising"
 
 ## Working with me as an undergraduate RA
 
-If you are an undergraduate student interested in working with me on a research project, I encourage you to check out my <a href="https://jaeyk.github.io/pof-lab/">lab website<a>
+If you are an undergraduate student interested in working with me on a research project, I encourage you to check out my [lab website](https://jaeyk.github.io/pof-lab/).
 
 ## Letters of recommendation
 
