@@ -103,7 +103,7 @@ Why can we shop with one click but still struggle to access basic public service
   [*Chosun Ilbo*'s Civic Section](https://www.futurechosun.com/archives/96581?fbclid=IwY2xjawErhE9leHRuA2FlbQIxMAABHd-SqBkJfRkTibVjqv7FG5oTLHeR0ZMNh4mGqQC4ORkSWD4JQz-1MoMtew_aem_uB833DJQzDbI5078qlr8eA) *(a major conservative newspaper)* and
   [*Weekly Kyunghang*](https://weekly.khan.co.kr/khnm.html?mode=list&s_code=ne039) *(a major liberal magazine)*
 
-<img src="../misc/civic_data_book.jpg" alt="Cover of We Need Civic Data">
+<img src="../misc/civic_data_book.jpg" alt="Cover of We Need Civic Data" style="display:block; margin:0 auto;">
 
 </div>
 
