@@ -136,14 +136,18 @@ Edit [`generate_cv/cv_Kim.tex`](generate_cv/cv_Kim.tex) and run
 `./update_site.sh`. It compiles the PDF to `public/CV_Jae_Yeon_Kim.pdf` (the
 navbar's CV link). Needs a LaTeX install (`latexmk`, `pdflatex`, or `tectonic`).
 
-### Update coauthors or the community maps
+### Update coauthors or the maps
 
-- Coauthors: edit [`src/data/coauthors.csv`](src/data/coauthors.csv). The
-  coauthors page reads it directly, and `r/coauthor_map.R` draws the map from it.
-- Partner map: edit [`r/partner_map.R`](r/partner_map.R).
-- `./update_site.sh` reruns both map scripts, which write PNGs to `public/misc/`.
-  This needs R with the scripts' packages; open `jaeyk.Rproj` so `here()` finds
-  the project root.
+The community and personal page maps are drawn as SVG when the site builds, so
+editing the data is all it takes:
+
+- Coauthors: edit [`src/data/coauthors.csv`](src/data/coauthors.csv) (include
+  Latitude/Longitude for a new affiliation). The coauthors page and the
+  collaborator map both read it.
+- Partners: edit [`src/data/partners.yaml`](src/data/partners.yaml).
+- Places lived: edit [`src/data/places-lived.yaml`](src/data/places-lived.yaml).
+- Talks map: add talks to `src/data/talks.yaml` as usual; `./update_site.sh`
+  looks up coordinates for new cities (`npm run places`).
 
 ### Change the navbar, footer, colors, or fonts
 

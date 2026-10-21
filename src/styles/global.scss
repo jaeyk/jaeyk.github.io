@@ -38,6 +38,8 @@ $page-gutter: clamp(1.25rem, 5vw, 4.5rem);
   --site-program-text: #ffffff;
   --site-program-muted: #c9d6e3;
   --site-callout-header: #e8f1f9;
+  --map-land: #e3e9ef;
+  --map-border: #ffffff;
 
   /* FullCalendar (talks page) */
   --fc-border-color: var(--site-border);
@@ -72,6 +74,8 @@ $page-gutter: clamp(1.25rem, 5vw, 4.5rem);
   --site-program-text: #ffffff;
   --site-program-muted: #b9cbe0;
   --site-callout-header: #2a4a68;
+  --map-land: #2b333c;
+  --map-border: #16191d;
 }
 
 /* ===== Base ===== */
@@ -653,6 +657,59 @@ details[open] > summary { margin-bottom: 0.5em; }
 .pub-year-heading { margin: 1.25rem 0 0.5rem; }
 
 /* ===== Talks page ===== */
+// Build-time SVG maps on the community page (PartnerMap.astro, CollaboratorMap.astro).
+.svg-map {
+  margin: 1rem 0 2rem;
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: var(--site-muted);
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+// Phones scroll the map sideways rather than shrinking the labels past reading size.
+.svg-map-scroll {
+  overflow-x: auto;
+
+  svg {
+    display: block;
+    width: 100%;
+    min-width: 720px;
+    height: auto;
+    font-family: $font-sans;
+  }
+}
+
+.map-land { fill: var(--map-land); }
+.map-borders,
+.map-countries { fill-rule: evenodd; stroke: var(--map-border); stroke-width: 0.6; }
+.map-borders { fill: none; }
+
+.map-dot {
+  stroke: var(--site-bg);
+  stroke-width: 1.2;
+}
+
+.map-dot-accent { fill: var(--site-accent); fill-opacity: 0.8; }
+.map-arc { fill: none; stroke: var(--site-link); stroke-opacity: 0.35; stroke-width: 0.8; }
+.map-home { fill: #f2b705; stroke: var(--site-bg); stroke-width: 1; }
+.map-leader { stroke: var(--site-muted); stroke-width: 0.7; }
+.map-dot-lived { fill: var(--site-link-hover); }
+.legend-icon { width: 1em; height: 1em; vertical-align: -0.15em; margin-right: 0.35rem; }
+.calendar-legend .legend-dot { border-radius: 50%; background: var(--site-accent); }
+
+// Plain text labels with a halo in the page color, so they read over land and borders.
+.map-text-label {
+  fill: var(--site-text);
+  stroke: var(--site-bg);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+.map-legend { justify-content: center; margin-top: 0.75rem; }
+
 // Map of talk locations (TalksMap.tsx). The frame reserves the height before Leaflet loads.
 .talks-map-frame {
   height: 440px;

@@ -53,9 +53,6 @@ This compiles `generate_cv/cv_Kim.tex` and copies the result to `public/CV_Jae_Y
 ### 5. R figures
 
 ```bash
-Rscript r/coauthor_map.R      # reads src/data/coauthors.csv → public/misc/coauthor_map.{png,html}
-Rscript r/partner_map.R       # → public/misc/partner_map.{png,html}
-Rscript r/life_story_map.R    # → public/misc/life_story_map.png
 Rscript r/diagram.R           # → public/misc/research_agenda_slide_horizontal_wrapped.png
 ```
 

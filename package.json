@@ -14,6 +14,7 @@
     "places": "node scripts/geocode-talk-places.mjs"
   },
   "dependencies": {
+    "@astrojs/mdx": "^8.1.1",
     "@astrojs/react": "^7.1.0",
     "@astrojs/sitemap": "^3.7.4",
     "@fullcalendar/core": "^6.1.22",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^19.3.0",
     "astro": "^7.4.0",
     "clsx": "^2.1.1",
+    "d3-geo": "^3.1.1",
     "js-yaml": "^5.5.0",
     "leaflet": "^1.9.4",
     "marked": "^18.1.1",
@@ -35,11 +37,17 @@
     "react-leaflet": "^5.0.0",
     "sass": "^1.105.2",
     "tailwind-merge": "^3.7.0",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "topojson-client": "^3.1.0",
+    "us-atlas": "^3.0.1",
+    "world-atlas": "^2.0.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@types/d3-geo": "^3.1.1",
+    "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.22",
+    "@types/topojson-client": "^3.1.5",
     "typescript": "^6.0.3"
   }
 }

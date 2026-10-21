@@ -1,0 +1,121 @@
+---
+// Applied project partners on a US map, drawn as SVG at build time (no
+// JavaScript in the browser). Data: src/data/partners.yaml.
+import { geoAlbersUsa, geoPath } from 'd3-geo';
+import { feature, mesh } from 'topojson-client';
+import type { GeometryCollection, Topology } from 'topojson-specification';
+import us from 'us-atlas/states-10m.json';
+import { load as loadYaml } from 'js-yaml';
+import raw from '../data/partners.yaml?raw';
+import { LABEL_FONT_SIZE, LABEL_LINE_HEIGHT, placeLabels, wrapText } from '../lib/label-layout';
+
+interface Partner {
+  org: string;
+  category: string;
+  city: string;
+  state: string;
+  lat: number;
+  lng: number;
+  label?: string;
+  label_dx?: number;
+  label_dy?: number;
+}
+
+// Legend order and colors (ColorBrewer Dark2, as in the earlier R map).
+const CATEGORIES: Record<string, { color: string; text: string }> = {
+  'Federal government': { color: '#1b9e77', text: '#fff' },
+  'State & local government': { color: '#d95f02', text: '#fff' },
+  'Civic tech': { color: '#7570b3', text: '#fff' },
+  Nonprofits: { color: '#a6761d', text: '#fff' },
+  Philanthropy: { color: '#e7298a', text: '#fff' },
+  'Advocacy organizations': { color: '#66a61e', text: '#fff' },
+  'Think tanks': { color: '#e6ab02', text: '#000' },
+};
+
+const partners = (loadYaml(raw) ?? []) as Partner[];
+for (const p of partners) {
+  if (!(p.category in CATEGORIES)) throw new Error(`partners.yaml: "${p.org}" has unknown category "${p.category}"`);
+}
+
+// Side margins leave the ocean free for labels from the crowded coasts.
+const W = 1100;
+const H = 600;
+const topo = us as unknown as Topology<{ states: GeometryCollection; nation: GeometryCollection }>;
+const nation = feature(topo, topo.objects.nation);
+const projection = geoAlbersUsa().fitExtent([[150, 10], [W - 80, H - 10]], nation);
+const path = geoPath(projection);
+const borders = path(mesh(topo, topo.objects.states, (a, b) => a !== b)) ?? '';
+
+// Organizations in the same city sit in a small ring around it, one dot each,
+// and share one label that lists them as rows in their category colors.
+const cities = new Map<string, Partner[]>();
+for (const p of partners) cities.set(`${p.lat},${p.lng}`, [...(cities.get(`${p.lat},${p.lng}`) ?? []), p]);
+const groups = [...cities.values()].map((orgs) => {
+  const [cx, cy] = projection([orgs[0].lng, orgs[0].lat]) ?? [NaN, NaN];
+  const ring = orgs.length > 1 ? 6 : 0;
+  const dots = orgs.map((p, k) => {
+    const angle = (2 * Math.PI * k) / orgs.length - Math.PI / 2;
+    return { p, x: cx + ring * Math.cos(angle), y: cy + ring * Math.sin(angle) };
+  });
+  const rows = orgs.map((p) => ({ p, lines: wrapText(p.label ?? p.org) }));
+  const nudge = orgs.find((p) => p.label_dx !== undefined || p.label_dy !== undefined);
+  return { x: cx, y: cy, dots, rows, dx: nudge?.label_dx, dy: nudge?.label_dy };
+}).filter((g) => Number.isFinite(g.x));
+
+const allDots = groups.flatMap((g) => g.dots);
+const labels = placeLabels(
+  groups.map((g) => ({
+    x: g.x,
+    y: g.y,
+    lines: g.rows.flatMap((r) => r.lines),
+    dx: g.dx,
+    dy: g.dy,
+    extraHeight: g.rows.length > 1 ? 3 * g.rows.length - 5 : 0, // row padding beyond the single-box default
+  })),
+  allDots,
+  { w: W, h: H },
+  4.5 + 6,
+);
+---
+
+<figure class="svg-map">
+  <div class="svg-map-scroll">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="partner-map-title">
+      <title id="partner-map-title">Map of applied project partners across the United States</title>
+      <path class="map-land" d={path(nation)} />
+      <path class="map-borders" d={borders} />
+      {groups.map((g, i) => {
+        const l = labels[i];
+        let y = l.y;
+        return (
+          <g class="map-label">
+            {l.leader && <line class="map-leader" x1={g.x} y1={g.y} x2={l.leader.x} y2={l.leader.y} />}
+            {g.rows.map((r) => {
+              const c = CATEGORIES[r.p.category];
+              const h = r.lines.length * LABEL_LINE_HEIGHT + (g.rows.length === 1 ? 5 : 3);
+              const top = y;
+              y += h;
+              return (
+                <g>
+                  <rect x={l.x} y={top} width={l.w} height={h} fill={c.color} />
+                  <text x={l.x + 4} y={top + 1.5 + LABEL_FONT_SIZE} fill={c.text} font-size={LABEL_FONT_SIZE}>
+                    {r.lines.map((line, j) => <tspan x={l.x + 4} dy={j === 0 ? 0 : LABEL_LINE_HEIGHT}>{line}</tspan>)}
+                  </text>
+                </g>
+              );
+            })}
+          </g>
+        );
+      })}
+      {allDots.map((d) => (
+        <circle class="map-dot" cx={d.x} cy={d.y} r="4.5" fill={CATEGORIES[d.p.category].color}>
+          <title>{`${d.p.org} (${d.p.city}, ${d.p.state}; ${d.p.category})`}</title>
+        </circle>
+      ))}
+    </svg>
+  </div>
+  <div class="calendar-legend map-legend">
+    {Object.entries(CATEGORIES).map(([name, c]) => <span><span class="swatch" style={`background:${c.color}`} />{name}</span>)}
+  </div>
+  <figcaption><slot /></figcaption>
+</figure>

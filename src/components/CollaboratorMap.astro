@@ -1,0 +1,72 @@
+---
+// Collaborator institutions on a world map, linked to UNC Chapel Hill, drawn as
+// SVG at build time (no JavaScript in the browser). Data: src/data/coauthors.csv.
+import { geoNaturalEarth1, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import type { GeometryCollection, Topology } from 'topojson-specification';
+import world from 'world-atlas/countries-110m.json';
+import { loadCoauthors } from '../lib/coauthors';
+
+const HOME = { label: 'UNC Chapel Hill', lat: 35.9049, lng: -79.0469 };
+
+// One pin per affiliation, at the first coordinates listed for it in the CSV.
+const byAffiliation = new Map<string, { lat?: number; lng?: number; names: string[] }>();
+for (const c of loadCoauthors()) {
+  if (!c.affiliation) continue;
+  const a = byAffiliation.get(c.affiliation) ?? { names: [] };
+  a.names.push(c.name);
+  if (a.lat === undefined && c.lat !== undefined && c.lng !== undefined) Object.assign(a, { lat: c.lat, lng: c.lng });
+  byAffiliation.set(c.affiliation, a);
+}
+const missing = [...byAffiliation].filter(([, a]) => a.lat === undefined).map(([name]) => name);
+if (missing.length) console.warn(`coauthors.csv: no coordinates for ${missing.join(', ')}; left off the map.`);
+const pins = [...byAffiliation]
+  .filter(([, a]) => a.lat !== undefined)
+  .map(([name, a]) => ({ name, lat: a.lat!, lng: a.lng!, names: a.names.sort() }))
+  .sort((a, b) => b.names.length - a.names.length); // small circles drawn last, on top
+
+const W = 960;
+const H = 470;
+const topo = world as unknown as Topology<{ countries: GeometryCollection }>;
+const countries = feature(topo, topo.objects.countries);
+// Frame the inhabited latitudes, from the U.S. West Coast to Australia.
+const frame = { type: 'MultiPoint' as const, coordinates: [[-130, -45], [160, -45], [-130, 72], [160, 72], [15, 72], [15, -45]] };
+const projection = geoNaturalEarth1().fitExtent([[0, 0], [W, H]], frame);
+const path = geoPath(projection);
+const [hx, hy] = projection([HOME.lng, HOME.lat])!;
+const total = pins.reduce((n, p) => n + p.names.length, 0);
+---
+
+<figure class="svg-map">
+  <div class="svg-map-scroll">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="collab-map-title">
+      <title id="collab-map-title">{`Map of ${total} collaborators at ${pins.length} institutions, linked to UNC Chapel Hill`}</title>
+      <path class="map-land map-countries" d={path(countries)} />
+      {/* Straight lines to UNC; great-circle routes across the Pacific would wrap off the map. */}
+      {pins.map((p) => {
+        const [x, y] = projection([p.lng, p.lat])!;
+        return <line class="map-arc" x1={x} y1={y} x2={hx} y2={hy} />;
+      })}
+      {pins.map((p) => {
+        const [x, y] = projection([p.lng, p.lat])!;
+        return (
+          <circle class="map-dot map-dot-accent" cx={x} cy={y} r={3 + 2.2 * Math.sqrt(p.names.length)}>
+            <title>{`${p.name} (${p.names.length}): ${p.names.join(', ')}`}</title>
+          </circle>
+        );
+      })}
+      <path
+        class="map-home"
+        transform={`translate(${hx} ${hy})`}
+        d="M0,-9 L2.6,-3.2 9,-2.8 4.1,1.3 5.6,7.6 0,4.2 -5.6,7.6 -4.1,1.3 -9,-2.8 -2.6,-3.2Z"
+      >
+        <title>{HOME.label}</title>
+      </path>
+    </svg>
+  </div>
+  <div class="calendar-legend map-legend">
+    <span><svg class="legend-icon" viewBox="-10 -10 20 20" aria-hidden="true"><path class="map-home" d="M0,-9 L2.6,-3.2 9,-2.8 4.1,1.3 5.6,7.6 0,4.2 -5.6,7.6 -4.1,1.3 -9,-2.8 -2.6,-3.2Z" /></svg>{HOME.label}</span>
+    <span><span class="swatch legend-dot" />Collaborators' institutions (larger circle = more collaborators)</span>
+  </div>
+  <figcaption><slot /></figcaption>
+</figure>

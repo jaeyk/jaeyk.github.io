@@ -1,0 +1,50 @@
+---
+// Places I've lived, on a Pacific-centered map drawn as SVG at build time (no
+// JavaScript in the browser). Data: src/data/places-lived.yaml.
+import { geoNaturalEarth1, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import type { GeometryCollection, Topology } from 'topojson-specification';
+import world from 'world-atlas/countries-50m.json';
+import { load as loadYaml } from 'js-yaml';
+import raw from '../data/places-lived.yaml?raw';
+import { LABEL_FONT_SIZE, placeLabels } from '../lib/label-layout';
+
+interface Place { place: string; lat: number; lng: number }
+const places = (loadYaml(raw) ?? []) as Place[];
+
+const W = 960;
+const H = 440;
+const topo = world as unknown as Topology<{ countries: GeometryCollection }>;
+const countries = feature(topo, topo.objects.countries);
+// Center on the Pacific (longitude 160°W) so East Asia and North America sit
+// side by side instead of at opposite ends of the map.
+const frame = { type: 'MultiPoint' as const, coordinates: [[100, 15], [100, 55], [-60, 15], [-60, 55], [-160, 58], [-160, 12]] };
+const projection = geoNaturalEarth1().rotate([160, 0]).fitExtent([[20, 10], [W - 20, H - 10]], frame);
+const path = geoPath(projection);
+
+const dots = places.map((p) => {
+  const [x, y] = projection([p.lng, p.lat])!;
+  return { ...p, x, y };
+});
+const labels = placeLabels(dots.map((d) => ({ x: d.x, y: d.y, lines: [d.place] })), dots, { w: W, h: H });
+---
+
+<figure class="svg-map svg-map-lived">
+  <div class="svg-map-scroll">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="lived-map-title">
+      <title id="lived-map-title">{`Map of places I've lived: ${places.map((p) => p.place).join('; ')}`}</title>
+      <path class="map-land map-countries" d={path(countries)} />
+      {dots.map((d, i) => {
+        const l = labels[i];
+        return (
+          <g>
+            {l.leader && <line class="map-leader" x1={d.x} y1={d.y} x2={l.leader.x} y2={l.leader.y} />}
+            <text class="map-text-label" x={l.x + 4} y={l.y + 2.5 + LABEL_FONT_SIZE} font-size={LABEL_FONT_SIZE}>{d.place}</text>
+          </g>
+        );
+      })}
+      {dots.map((d) => <circle class="map-dot map-dot-lived" cx={d.x} cy={d.y} r="5"><title>{d.place}</title></circle>)}
+    </svg>
+  </div>
+  <figcaption>My path across North America and Asia: places I've lived</figcaption>
+</figure>

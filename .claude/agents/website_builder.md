@@ -31,7 +31,11 @@ You maintain and extend the jaeyk.github.io personal academic website. Read the 
 │   │   ├── talks.yaml               # Talks calendar + homepage "Upcoming"
 │   │   ├── journal-articles.yaml    # Peer-reviewed articles
 │   │   ├── other-publications.yaml  # Proceedings, pipeline, chapters, memos, media, public writing
-│   │   └── coauthors.csv            # Coauthors table + r/coauthor_map.R
+│   │   ├── coauthors.csv            # Coauthors table + collaborator map (CollaboratorMap.astro)
+│   │   ├── partners.yaml            # Partner map (PartnerMap.astro)
+│   │   ├── places-lived.yaml        # Personal page map (PlacesLivedMap.astro)
+│   │   ├── talk-history.yaml        # Pre-2025 CV talks for the talks map
+│   │   └── talk-places.yaml         # Talk city coordinates (npm run places)
 │   ├── layouts/            # Base.astro (html shell), Page.astro (title), Essay.astro (prose + author/date)
 │   ├── components/         # Navbar.astro, Footer.astro, React .tsx components
 │   ├── lib/                # talks.ts, publications.ts — load/validate data, shared helpers

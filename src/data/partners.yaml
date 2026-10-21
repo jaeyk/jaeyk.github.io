@@ -1,0 +1,162 @@
+# Applied project partners shown on the community page map.
+# Fields: org, category, city, state, lat, lng.
+# Optional: label (shorter text for the map label), label_dx / label_dy (move the
+# label by that many pixels if it lands somewhere awkward).
+# category must be one of the categories listed in PartnerMap.astro.
+
+- org: "Office of Evaluation Sciences"
+  category: "Federal government"
+  city: "Washington"
+  state: "DC"
+  lat: 38.9072
+  lng: -77.0369
+- org: "California Department of Social Services"
+  category: "State & local government"
+  city: "Sacramento"
+  state: "CA"
+  lat: 38.5816
+  lng: -121.4944
+- org: "City of San Jose, Communications Office"
+  category: "State & local government"
+  city: "San Jose"
+  state: "CA"
+  lat: 37.3382
+  lng: -121.8863
+- org: "Colorado Governor's Office of Information Technology"
+  category: "State & local government"
+  city: "Denver"
+  state: "CO"
+  lat: 39.7392
+  lng: -104.9903
+- org: "Colorado Department of Health Care Policy and Financing"
+  category: "State & local government"
+  city: "Denver"
+  state: "CO"
+  lat: 39.7392
+  lng: -104.9903
+- org: "Boulder County Housing and Human Services"
+  category: "State & local government"
+  city: "Boulder"
+  state: "CO"
+  lat: 40.0150
+  lng: -105.2705
+- org: "Government AI Coalition (San José)"
+  category: "State & local government"
+  city: "San Jose"
+  state: "CA"
+  lat: 37.3382
+  lng: -121.8863
+- org: "Massachusetts Department of Early Education and Care"
+  category: "State & local government"
+  city: "Boston"
+  state: "MA"
+  lat: 42.3601
+  lng: -71.0589
+- org: "New Mexico Human Services Department"
+  category: "State & local government"
+  city: "Santa Fe"
+  state: "NM"
+  lat: 35.6870
+  lng: -105.9378
+- org: "New York State Department of Health"
+  category: "State & local government"
+  city: "Albany"
+  state: "NY"
+  lat: 42.6526
+  lng: -73.7562
+- org: "New York City Mayor's Office for Economic Opportunity"
+  category: "State & local government"
+  city: "New York"
+  state: "NY"
+  lat: 40.7128
+  lng: -74.0060
+- org: "Code for America"
+  category: "Civic tech"
+  city: "San Francisco"
+  state: "CA"
+  lat: 37.7749
+  lng: -122.4194
+- org: "U.S. Digital Response"
+  category: "Civic tech"
+  city: "Oakland"
+  state: "CA"
+  lat: 37.8044
+  lng: -122.2712
+- org: "Asian Americans Advancing Justice–Atlanta"
+  category: "Advocacy organizations"
+  city: "Atlanta"
+  state: "GA"
+  lat: 33.7490
+  lng: -84.3880
+- org: "Asian American Advocacy Fund"
+  category: "Advocacy organizations"
+  city: "Atlanta"
+  state: "GA"
+  lat: 33.7490
+  lng: -84.3880
+- org: "Students Learn Students Vote Coalition"
+  category: "Advocacy organizations"
+  city: "Washington"
+  state: "DC"
+  lat: 38.9072
+  lng: -77.0369
+- org: "Kapor Foundation"
+  category: "Philanthropy"
+  city: "Oakland"
+  state: "CA"
+  lat: 37.8044
+  lng: -122.2712
+- org: "Hispanics in Philanthropy"
+  category: "Philanthropy"
+  city: "Oakland"
+  state: "CA"
+  lat: 37.8044
+  lng: -122.2712
+- org: "Hopelab"
+  category: "Philanthropy"
+  city: "San Francisco"
+  state: "CA"
+  lat: 37.7749
+  lng: -122.4194
+- org: "Federation of American Scientists"
+  category: "Think tanks"
+  city: "Washington"
+  state: "DC"
+  lat: 38.9072
+  lng: -77.0369
+- org: "Health Resources in Action"
+  category: "Nonprofits"
+  city: "Boston"
+  state: "MA"
+  lat: 42.3601
+  lng: -71.0589
+- org: "Innovate US"
+  category: "Nonprofits"
+  city: "Boston"
+  state: "MA"
+  lat: 42.3601
+  lng: -71.0589
+- org: "Louisiana Public Health Institute"
+  category: "Nonprofits"
+  city: "New Orleans"
+  state: "LA"
+  lat: 29.9511
+  lng: -90.0715
+- org: "Student Basic Needs Coalition"
+  category: "Nonprofits"
+  city: "Knoxville"
+  state: "TN"
+  lat: 35.9606
+  lng: -83.9207
+- org: "Public Benefit Innovation Fund"
+  category: "Philanthropy"
+  city: "Washington"
+  state: "DC"
+  lat: 38.9072
+  lng: -77.0369
+- org: "Digital Harbor Foundation"
+  category: "Philanthropy"
+  city: "Baltimore"
+  state: "MD"
+  lat: 39.2904
+  lng: -76.6122

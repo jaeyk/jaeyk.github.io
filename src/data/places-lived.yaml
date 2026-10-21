@@ -1,0 +1,33 @@
+# Places I've lived, shown on the map at the top of the Personal page.
+# Fields: place (the label), lat, lng.
+
+- place: "Jeonju, South Korea"
+  lat: 35.8
+  lng: 127.1
+- place: "Daejeon, South Korea"
+  lat: 36.3
+  lng: 127.3
+- place: "Seoul, South Korea"
+  lat: 37.5
+  lng: 126.9
+- place: "Kowloon Tong, Hong Kong"
+  lat: 22.3
+  lng: 114.2
+- place: "Muzha District, Taipei, Taiwan"
+  lat: 25.0
+  lng: 121.6
+- place: "Vancouver, BC"
+  lat: 49.2
+  lng: -123.1
+- place: "San Francisco Bay Area, CA"
+  lat: 37.8
+  lng: -122.4
+- place: "Ann Arbor, MI"
+  lat: 42.3
+  lng: -83.7
+- place: "Cambridge, MA"
+  lat: 42.4
+  lng: -71.1
+- place: "Research Triangle, NC"
+  lat: 35.8
+  lng: -78.8
