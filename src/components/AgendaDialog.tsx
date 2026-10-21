@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { animate, useReducedMotion } from 'motion/react';
 
 /**
  * Inline "see this diagram" link that opens the research-agenda diagram in a
@@ -9,8 +10,26 @@ export default function AgendaDialog() {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+  // Fade without scaling for visitors who ask for reduced motion.
+  const reduceMotion = useReducedMotion();
+  const closing = useRef(false);
 
-  const close = () => dialogRef.current?.close();
+  const open = () => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    dialog.showModal();
+    animate(dialog, reduceMotion ? { opacity: [0, 1] } : { opacity: [0, 1], scale: [0.96, 1] }, { duration: 0.2, ease: 'easeOut' });
+  };
+
+  // Play the exit animation, then close for real (which also returns focus to the link).
+  const close = async () => {
+    const dialog = dialogRef.current;
+    if (!dialog || closing.current) return;
+    closing.current = true;
+    await animate(dialog, reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.96 }, { duration: 0.15, ease: 'easeIn' });
+    dialog.close();
+    closing.current = false;
+  };
 
   return (
     <>
@@ -19,7 +38,7 @@ export default function AgendaDialog() {
         className="agenda-open"
         onClick={(e) => {
           e.preventDefault();
-          dialogRef.current?.showModal();
+          open();
         }}
       >
         see this diagram <i className="bi bi-diagram-3" aria-hidden="true" />
@@ -32,6 +51,11 @@ export default function AgendaDialog() {
             className="agenda-dialog"
             aria-labelledby="agenda-diagram-caption"
             onClick={(e) => e.target === dialogRef.current && close()}
+            onCancel={(e) => {
+              // Escape: animate out instead of closing instantly.
+              e.preventDefault();
+              close();
+            }}
           >
             <button type="button" className="dialog-close" aria-label="Close" onClick={close}>
               &times;

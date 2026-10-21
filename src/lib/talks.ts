@@ -1,5 +1,7 @@
 import { load as loadYaml } from 'js-yaml';
 import raw from '../data/talks.yaml?raw';
+import placesRaw from '../data/talk-places.yaml?raw';
+import historyRaw from '../data/talk-history.yaml?raw';
 
 export type TalkType = 'talk' | 'panel' | 'discussant' | 'participant' | 'visiting';
 
@@ -66,4 +68,90 @@ export function nextDay(date: string): string {
   const d = new Date(`${date}T00:00:00Z`);
   d.setUTCDate(d.getUTCDate() + 1);
   return d.toISOString().slice(0, 10);
+}
+
+/** A past event from talk-history.yaml (CV entries before talks.yaml begins). */
+interface HistoryEntry {
+  year: number;
+  title: string;
+  kind: 'talk' | 'conference' | 'summer';
+  place?: string;
+  in_person?: boolean | null;
+}
+
+/** One event listed in a map pin's popup. */
+export interface MapEvent {
+  when: string; // "Oct. 28, 2026" or just "2019"
+  sort: string; // YYYY or YYYY-MM-DD, for newest-first ordering
+  title: string;
+  url?: string;
+}
+
+/** One pin on the talks map: every in-person event held at the same spot. */
+export interface MapPlace {
+  label: string;
+  lat: number;
+  lng: number;
+  events: MapEvent[]; // newest first
+}
+
+export interface TalkMapData {
+  places: MapPlace[];
+  eventCount: number; // in-person events on the map
+  virtualCount: number;
+  sinceYear?: number; // earliest year counted
+}
+
+/**
+ * Group in-person events by location for the talks map: dated events from
+ * talks.yaml plus past ones from talk-history.yaml not marked `in_person: false`.
+ * Coordinates come from talk-places.yaml (`npm run places`); a place without
+ * coordinates is skipped with a build warning rather than failing the build.
+ */
+export function loadTalkPlaces(talks: Talk[]): TalkMapData {
+  const coords = (loadYaml(placesRaw) ?? {}) as Record<string, [number, number]>;
+  const history = (loadYaml(historyRaw) ?? []) as HistoryEntry[];
+  const byKey = new Map<string, MapPlace>();
+  let eventCount = 0;
+  let virtualCount = 0;
+  let sinceYear: number | undefined;
+  const counted = (year: number) => (sinceYear = Math.min(sinceYear ?? year, year));
+
+  const pin = (place: string, event: MapEvent) => {
+    const c = coords[place];
+    if (!c) {
+      console.warn(`talk-places.yaml has no coordinates for "${place}"; run \`npm run places\`.`);
+      return;
+    }
+    // "Chapel Hill, NC" and "Chapel Hill, NC, USA" share coordinates, so they share a pin.
+    const key = c.join(',');
+    const p = byKey.get(key) ?? { label: place, lat: c[0], lng: c[1], events: [] };
+    if (place.length > p.label.length) p.label = place;
+    p.events.push(event);
+    byKey.set(key, p);
+    eventCount++;
+    counted(Number(event.sort.slice(0, 4)));
+  };
+
+  for (const t of talks) {
+    if (t.place === 'Virtual') {
+      virtualCount++;
+      counted(Number(t.start.slice(0, 4)));
+      continue;
+    }
+    pin(t.place, { when: `${formatTalkDate(t)}, ${t.start.slice(0, 4)}`, sort: t.start, title: t.title, url: t.url });
+  }
+
+  for (const h of history) {
+    if (h.in_person === false) {
+      virtualCount++;
+      counted(h.year);
+    } else if (h.place) {
+      pin(h.place, { when: String(h.year), sort: String(h.year), title: h.title });
+    }
+  }
+
+  const places = [...byKey.values()];
+  for (const p of places) p.events.sort((a, b) => b.sort.localeCompare(a.sort));
+  return { places, eventCount, virtualCount, sinceYear };
 }

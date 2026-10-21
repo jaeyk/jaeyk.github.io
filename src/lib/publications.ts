@@ -46,7 +46,7 @@ function loadRawSections(): RawSection[] {
 
 const inline = (md: string) => marked.parseInline(md, { async: false }) as string;
 const urlsIn = (md: string) => [...md.matchAll(/\]\(([^)\s]+)\)/g)].map((m) => m[1]);
-const stripMarkdown = (md: string) =>
+export const stripMarkdown = (md: string) =>
   md
     .replace(/\\([[\]])/g, '$1')
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')

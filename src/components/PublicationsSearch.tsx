@@ -1,5 +1,6 @@
 import { useMemo, useState, type ReactNode, type SyntheticEvent } from 'react';
 import type { JournalArticle, OtherSection } from '../lib/publications';
+import { InView } from './motion/InView';
 
 interface Props {
   articles: JournalArticle[];
@@ -8,16 +9,39 @@ interface Props {
 
 const SELF = 'jae yeon kim';
 
+// Year groups fade and rise slightly as they scroll into view.
+const yearReveal = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0 },
+};
+
 function articleSearchText(p: JournalArticle) {
   return [p.title, p.authors.join(' '), p.venue, p.citation, p.year, (p.links ?? []).map((l) => `${l.label} ${l.url}`).join(' '), p.url]
     .join(' ')
     .toLowerCase();
 }
 
+/** Superscript * after a co-lead author; explained once in the legend above the list. */
+function CoLeadMark() {
+  return (
+    <>
+      <sup className="co-lead-mark" title="Co-lead author" aria-hidden="true">
+        *
+      </sup>
+      <span className="sr-only"> (co-lead author)</span>
+    </>
+  );
+}
+
 function Authors({ authors, equal = [] }: { authors: string[]; equal?: string[] }) {
   const equalSet = new Set(equal.map((n) => n.toLowerCase().trim()));
   const names = authors.map((name, i) => {
-    const label = name + (equalSet.has(name.toLowerCase().trim()) ? '+' : '');
+    const label = (
+      <>
+        {name}
+        {equalSet.has(name.toLowerCase().trim()) && <CoLeadMark />}
+      </>
+    );
     return name.toLowerCase().includes(SELF) ? <strong key={i}>{label}</strong> : <span key={i}>{label}</span>;
   });
   const out: ReactNode[] = [];
@@ -43,7 +67,6 @@ function Article({ p, value }: { p: JournalArticle; value: number }) {
     <li value={value}>
       <p>
         {p.url ? <a href={p.url}>{title}</a> : title} (<Authors authors={p.authors} equal={p.equal_coauthors} />) {venueAndCitation}
-        {(p.equal_coauthors ?? []).length > 0 && ' (+ = co-lead authors.)'}
         {(p.links ?? []).map((l) => (
           <span key={l.url}>
             {' '}[<a href={l.url}>{l.label}</a>]
@@ -116,25 +139,34 @@ export default function PublicationsSearch({ articles, sections }: Props) {
         </span>
       </div>
 
-      <details open={isOpen('journal', matchedArticles.length)} onToggle={onToggle('journal')}>
+      <details className="pub-section" open={isOpen('journal', matchedArticles.length)} onToggle={onToggle('journal')}>
         <summary>
           <strong>Peer-reviewed journal articles</strong>
         </summary>
+        {matchedArticles.some((p) => (p.equal_coauthors ?? []).length > 0) && (
+          <p className="pub-legend">* Equal contribution (co-lead authors)</p>
+        )}
         {matchedArticles.length === 0 && <p>No matching papers found.</p>}
         {years.map((year) => (
-          <div key={year}>
+          <InView
+            key={year}
+            variants={yearReveal}
+            transition={{ duration: 0.4, ease: 'easeOut' }}
+            viewOptions={{ margin: '0px 0px -60px 0px' }}
+            once
+          >
             <h4 className="pub-year-heading">{year}</h4>
             <ol>
               {byYear.get(year)!.map((p) => (
                 <Article key={p.order} p={p} value={running--} />
               ))}
             </ol>
-          </div>
+          </InView>
         ))}
       </details>
 
       {matchedSections.map((s) => (
-        <details key={s.key} open={isOpen(s.key, s.items.length)} onToggle={onToggle(s.key)}>
+        <details key={s.key} className="pub-section" open={isOpen(s.key, s.items.length)} onToggle={onToggle(s.key)}>
           <summary>
             <strong>{s.title}</strong>
           </summary>

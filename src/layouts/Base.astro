@@ -1,4 +1,5 @@
 ---
+import '../styles/tailwind.css';
 import '../styles/global.scss';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
@@ -8,10 +9,27 @@ interface Props {
   title?: string;
   description?: string;
   bodyClass?: string;
+  /** Social preview image, as a site path (e.g. /images/foo.png). */
+  image?: string;
+  /** Open Graph type: 'article' for essays, 'website' otherwise. */
+  ogType?: 'website' | 'article';
 }
 
-const { title, description = SITE_DESCRIPTION, bodyClass = '' } = Astro.props;
+const { title, description, bodyClass = '', image = '/profile_alt.png', ogType = 'website' } = Astro.props;
 const pageTitle = title ? `${title} – ${SITE_TITLE}` : SITE_TITLE;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+// Link previews (Open Graph / Twitter) describe the page being shared; pages
+// without their own title or description fall back to the homepage wording.
+const shareTitle = !title
+  ? 'Jae Yeon Kim — Policy Scholar and Public Interest Data Scientist'
+  : ogType === 'article'
+    ? title
+    : `${title} – Jae Yeon Kim`;
+const shareDescription =
+  description ??
+  'Assistant Professor at UNC-Chapel Hill. Research on policy implementation, civic data, and computational social science.';
+const shareImage = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -20,8 +38,8 @@ const pageTitle = title ? `${title} – ${SITE_TITLE}` : SITE_TITLE;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta name="description" content={description ?? SITE_DESCRIPTION} />
+    <link rel="canonical" href={canonical} />
 
     <!-- Apply the saved color scheme before first paint (dark by default). -->
     <script is:inline>
@@ -44,18 +62,16 @@ const pageTitle = title ? `${title} – ${SITE_TITLE}` : SITE_TITLE;
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
 
-    <meta property="og:title" content="Jae Yeon Kim — Political Scientist &amp; Data Scientist" />
-    <meta
-      property="og:description"
-      content="Assistant Professor at UNC-Chapel Hill. Research on policy implementation, civic data, and computational social science."
-    />
-    <meta property="og:image" content="https://jaeyk.github.io/profile_alt.png" />
-    <meta property="og:url" content="https://jaeyk.github.io/" />
-    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jae Yeon Kim" />
+    <meta property="og:title" content={shareTitle} />
+    <meta property="og:description" content={shareDescription} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={ogType} />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Jae Yeon Kim" />
-    <meta name="twitter:description" content="Assistant Professor at UNC-Chapel Hill researching policy implementation and civic data." />
-    <meta name="twitter:image" content="https://jaeyk.github.io/profile_alt.png" />
+    <meta name="twitter:title" content={shareTitle} />
+    <meta name="twitter:description" content={shareDescription} />
+    <meta name="twitter:image" content={shareImage} />
 
     <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
     <script is:inline define:vars={{ id: GOOGLE_ANALYTICS_ID }}>

@@ -3,15 +3,16 @@
 import Base from './Base.astro';
 
 interface Props {
-  frontmatter?: { title?: string; description?: string };
+  frontmatter?: { title?: string; description?: string; image?: string };
   title?: string;
   bodyClass?: string;
+  ogType?: 'website' | 'article';
 }
 
-const { frontmatter = {}, title = frontmatter.title, bodyClass } = Astro.props;
+const { frontmatter = {}, title = frontmatter.title, bodyClass, ogType } = Astro.props;
 ---
 
-<Base title={title} description={frontmatter.description} bodyClass={bodyClass}>
+<Base title={title} description={frontmatter.description} image={frontmatter.image} bodyClass={bodyClass} ogType={ogType}>
   {title && (
     <header class="title-block">
       <h1>{title}</h1>

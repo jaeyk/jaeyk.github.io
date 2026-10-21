@@ -11,7 +11,9 @@ $font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 
 // Comfortable line length for running text (~85–95 characters)
 $prose-width: 80ch;
-$page-width: 1400px;
+$page-width: 1240px;
+// Minimum space left and right of the page: about 20px on phones, up to 72px on wide screens.
+$page-gutter: clamp(1.25rem, 5vw, 4.5rem);
 
 /* ===== Color tokens (light + dark) =====
    Use these variables instead of hard-coded colors so dark mode keeps working. */
@@ -145,7 +147,7 @@ hr {
 /* ===== Layout ===== */
 main.content {
   flex: 1;
-  width: min(#{$page-width}, calc(100% - 2.5rem));
+  width: min(#{$page-width}, calc(100% - 2 * #{$page-gutter}));
   margin: 0 auto;
   padding: 1.75rem 0 3rem;
 }
@@ -311,7 +313,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: min(#{$page-width}, calc(100% - 2.5rem));
+  width: min(#{$page-width}, calc(100% - 2 * #{$page-gutter}));
   margin: 0 auto;
   min-height: 3.5rem;
 }
@@ -429,6 +431,13 @@ dialog {
   color: var(--site-text);
 
   &::backdrop { background: rgba(19, 41, 75, 0.6); }
+}
+
+// The agenda dialog's box is animated by Motion; fade its backdrop to match.
+.agenda-dialog[open]::backdrop { animation: backdrop-fade-in 0.2s ease-out; }
+
+@keyframes backdrop-fade-in {
+  from { opacity: 0; }
 }
 
 .dialog-close {
@@ -594,6 +603,22 @@ details summary {
 
 details[open] > summary { margin-bottom: 0.5em; }
 
+// Publication sections slide open and closed. Browsers without
+// ::details-content / interpolate-size simply snap, as before.
+@media (prefers-reduced-motion: no-preference) {
+  .pub-section {
+    interpolate-size: allow-keywords;
+
+    &::details-content {
+      block-size: 0;
+      overflow-y: clip;
+      transition: block-size 0.3s ease, content-visibility 0.3s allow-discrete;
+    }
+
+    &[open]::details-content { block-size: auto; }
+  }
+}
+
 /* ===== Publications page ===== */
 .pub-search-controls {
   margin: 1rem 0 1.25rem;
@@ -614,9 +639,71 @@ details[open] > summary { margin-bottom: 0.5em; }
   font-size: 0.95rem;
 }
 
+.pub-legend {
+  margin: 0 0 0.5rem;
+  color: var(--site-muted);
+  font-size: 0.95rem;
+}
+
+.co-lead-mark {
+  margin-left: 0.05em;
+  cursor: help;
+}
+
 .pub-year-heading { margin: 1.25rem 0 0.5rem; }
 
 /* ===== Talks page ===== */
+// Map of talk locations (TalksMap.tsx). The frame reserves the height before Leaflet loads.
+.talks-map-frame {
+  height: 440px;
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media (max-width: 767.98px) { height: 320px; }
+}
+
+.talks-map {
+  height: 100%;
+  background: var(--site-surface);
+  font: inherit;
+
+  a { color: var(--site-link); }
+}
+
+.talks-map-marker {
+  fill: var(--site-accent);
+  fill-opacity: 0.7;
+  stroke: var(--site-bg);
+  stroke-width: 1.5;
+}
+
+.talks-map .leaflet-popup-content-wrapper,
+.talks-map .leaflet-popup-tip {
+  background: var(--site-bg);
+  color: var(--site-text);
+}
+
+.talks-map .leaflet-popup-content {
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.talks-map-list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+
+  li { margin-bottom: 0.3rem; }
+}
+
+// OpenStreetMap has no dark tiles; invert the light ones to match dark mode.
+:root[data-theme='dark'] .talks-map .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+
 .calendar-legend {
   display: flex;
   flex-wrap: wrap;

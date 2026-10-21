@@ -1,0 +1,27 @@
+/* Tailwind utilities for React components (and Motion Primitives).
+   Preflight is left out on purpose: global.scss supplies the base styles. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* `dark:` follows the theme toggle (data-theme), not the OS setting. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Site color tokens as Tailwind colors, e.g. `text-site-heading`, `bg-site-surface`.
+   They point at the CSS variables in global.scss, so dark mode keeps working. */
+@theme inline {
+  --color-site-text: var(--site-text);
+  --color-site-link: var(--site-link);
+  --color-site-link-hover: var(--site-link-hover);
+  --color-site-accent: var(--site-accent);
+  --color-site-heading: var(--site-heading);
+  --color-site-muted: var(--site-muted);
+  --color-site-bg: var(--site-bg);
+  --color-site-surface: var(--site-surface);
+  --color-site-surface-2: var(--site-surface-2);
+  --color-site-border: var(--site-border);
+  --color-site-border-soft: var(--site-border-soft);
+  --color-site-line: var(--site-line);
+  --font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

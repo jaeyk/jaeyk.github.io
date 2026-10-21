@@ -1,0 +1,420 @@
+# Past talks and conference presentations from the CV that are not in
+# talks.yaml (which has exact dates and runs from 2025). Used only by the map
+# on the talks page.
+#
+# Fields: year, title, kind (talk | conference | summer), place, in_person.
+#   in_person: false → counted as a virtual event
+#   blank or true    → pinned on the map at `place`
+# `place` is a best guess from the host institution or that year's conference
+# city; fix any that are wrong. After adding a new place, run `npm run places`.
+
+# ===== Invited talks =====
+
+- year: 2025
+  title: "Korea University (Department of Political Science and International Relations)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2025
+  title: "Brown University (Watson Institute GPD module guest lecture)"
+  kind: talk
+  place: "Providence, RI, USA"
+  in_person: false
+- year: 2025
+  title: "APSA Civic Engagement Section (Civic Café podcast)"
+  kind: talk
+  place: "" # podcast; likely virtual
+  in_person: false
+- year: 2025
+  title: "Johns Hopkins (Natural Language Processing for Computational Social Science guest lecture)"
+  kind: talk
+  place: "Baltimore, MD, USA"
+  in_person: false
+
+- year: 2024
+  title: "Johns Hopkins (Democracy by the Numbers guest lecture)"
+  kind: talk
+  place: "Baltimore, MD, USA"
+  in_person: false
+- year: 2024
+  title: "Yale (American Politics and Public Policy Workshop)"
+  kind: talk
+  place: "New Haven, CT, USA"
+  in_person: true
+- year: 2024
+  title: "Michigan State University (American Politics Workshop)"
+  kind: talk
+  place: "East Lansing, MI, USA"
+  in_person: true
+- year: 2024
+  title: "UC Berkeley (Identity and Politics Workshop)"
+  kind: talk
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2024
+  title: "UC Berkeley (Summer Institute in Migration Research Methods)"
+  kind: talk
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2024
+  title: "CU-Boulder (Information Science Seminar)"
+  kind: talk
+  place: "Boulder, CO, USA"
+  in_person: false
+- year: 2024
+  title: "University of Toronto (Toronto Data Workshop)"
+  kind: talk
+  place: "Toronto, ON, Canada"
+  in_person: false
+- year: 2024
+  title: "Korean Summer Workshop on Causal Inference"
+  kind: talk
+  place: ""
+  in_person: false
+- year: 2024
+  title: "Johns Hopkins (SNF Agora P3 Lab)"
+  kind: talk
+  place: "Baltimore, MD, USA"
+  in_person: false
+- year: 2024
+  title: "University of Minnesota (Political Methodology Colloquium)"
+  kind: talk
+  place: "Minneapolis, MN, USA"
+  in_person: false
+- year: 2024
+  title: "UCLA (Race, Ethnicity, Politics, and Society Lab)"
+  kind: talk
+  place: "Los Angeles, CA, USA"
+  in_person: false
+- year: 2024
+  title: "University of Washington (Data Science Seminar)"
+  kind: talk
+  place: "Seattle, WA, USA"
+  in_person: false
+
+- year: 2023
+  title: "Wesleyan (Challenges to Democracy in East Asia guest lecture)"
+  kind: talk
+  place: "Middletown, CT, USA"
+  in_person: false
+- year: 2023
+  title: "Stanford (APARC and Korea Foundation for Advanced Studies joint conference)"
+  kind: talk
+  place: "Stanford, CA, USA"
+  in_person: false
+- year: 2023
+  title: "Florida Atlantic University (Summer Institute in Computational Social Science – South Florida)"
+  kind: talk
+  place: "Boca Raton, FL, USA"
+  in_person: false
+
+- year: 2022
+  title: "University of British Columbia (Scope Conditions podcast)"
+  kind: talk
+  place: "" # podcast; likely virtual
+  in_person: false
+- year: 2022
+  title: "National University of Singapore (Department of Communication and New Media)"
+  kind: talk
+  place: "Singapore"
+  in_person: false
+- year: 2022
+  title: "National University of Singapore (Digital Communications and Analytics guest lecture)"
+  kind: talk
+  place: "Singapore"
+  in_person: false
+- year: 2022
+  title: "Seoul National University (Institute of Social Science)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2022
+  title: "KAIST (Science, Technology, and Society guest lecture)"
+  kind: talk
+  place: "Daejeon, South Korea"
+  in_person: false
+- year: 2022
+  title: "Korea University (Office of Information Technology and Service)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2022
+  title: "Korea University (Introduction to Political Science guest lecture)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2022
+  title: "Sungkyunkwan University (Methods of Economic Data Analysis guest lecture)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2022
+  title: "Ewha Womans University (Graduate School of International Studies)"
+  kind: talk
+  place: "Seoul, South Korea"
+  in_person: false
+
+- year: 2021
+  title: "Stanford (New Research from the Journal of Online Trust and Safety's Inaugural Issue)"
+  kind: talk
+  place: "Stanford, CA, USA"
+  in_person: false
+- year: 2021
+  title: "University of Minnesota (American Politics Colloquium)"
+  kind: talk
+  place: "Minneapolis, MN, USA"
+  in_person: false
+- year: 2021
+  title: "Cornell (Democratic Vulnerabilities and Pathways for Reform Conference)"
+  kind: talk
+  place: "Ithaca, NY, USA"
+  in_person: false
+- year: 2021
+  title: "Johns Hopkins (SNF Agora Institute P3 Lab)"
+  kind: talk
+  place: "Baltimore, MD, USA"
+  in_person: false
+- year: 2021
+  title: "Dartmouth (Experiments in Politics guest lecture)"
+  kind: talk
+  place: "Hanover, NH, USA"
+  in_person: false
+- year: 2021
+  title: "KAIST (Data Analysis for Green Business and Policy guest lecture)"
+  kind: talk
+  place: "Daejeon, South Korea"
+  in_person: true
+
+- year: 2020
+  title: "UC Berkeley (Computational Social Science Forum)"
+  kind: talk
+  place: "Berkeley, CA, USA"
+  in_person: false
+
+# ===== Conference and workshop presentations =====
+
+- year: 2024
+  title: "Association for Public Policy Analysis and Management (APPAM)"
+  kind: conference
+  place: "National Harbor, MD, USA"
+  in_person: true
+- year: 2024
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "Philadelphia, PA, USA"
+  in_person: true
+- year: 2024
+  title: "Public Management Research Conference (PMRC)"
+  kind: conference
+  place: "Seattle, WA, USA"
+  in_person: true
+- year: 2024
+  title: "Western Political Science Association (WPSA)"
+  kind: conference
+  place: "Vancouver, Canada"
+  in_person: true
+- year: 2024
+  title: "Annual Research Conference on the American Political Economy"
+  kind: conference
+  place: "" # always virtual
+  in_person: false
+- year: 2024
+  title: "International Conference on Computational Social Science (IC2S2, tutorials)"
+  kind: conference
+  place: "Philadelphia, PA, USA"
+  in_person: true
+- year: 2024
+  title: "Stanford PhD Pathways (Data Science Across Industries Panel)"
+  kind: conference
+  place: "Stanford, CA, USA"
+  in_person: true
+- year: 2024
+  title: "Politics of Race, Immigration, and Ethnicity Consortium (Claremont Graduate University and UC Riverside)"
+  kind: conference
+  place: "Claremont, CA, USA"
+  in_person: true
+
+- year: 2023
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "Los Angeles, CA, USA"
+  in_person: true
+
+- year: 2022
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "Montreal, QC, Canada"
+  in_person: true
+- year: 2022
+  title: "Midwest Political Science Association (MPSA)"
+  kind: conference
+  place: "Chicago, IL, USA"
+  in_person: true
+- year: 2022
+  title: "International Conference on Method Triangulation (Academia Sinica and TIGCR)"
+  kind: conference
+  place: "Taipei, Taiwan"
+  in_person: false
+
+- year: 2021
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "Seattle, WA, USA" # hybrid meeting
+  in_person: true
+- year: 2021
+  title: "Asian Online Political Science Seminar Series"
+  kind: conference
+  place: "" # online series
+  in_person: false
+- year: 2021
+  title: "Junior Law and Politics Research Community"
+  kind: conference
+  place: ""
+  in_person: false
+- year: 2021
+  title: "D-Lab Data Science Fellows Talk (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: false
+
+- year: 2020
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "" # held online in 2020
+  in_person: false
+- year: 2020
+  title: "Joint Political Computational Social Science and Political Networks Conference"
+  kind: conference
+  place: "" # likely online in 2020
+  in_person: false
+- year: 2020
+  title: "ICWSM Data Challenge Workshop"
+  kind: conference
+  place: "" # held online in 2020
+  in_person: false
+- year: 2020
+  title: "Summer Institute in Computational Social Science Festival"
+  kind: conference
+  place: "" # likely online in 2020
+  in_person: false
+- year: 2020
+  title: "Data Science Showcase (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: false
+- year: 2020
+  title: "D-Lab Data Science Fellows Talk (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: false
+
+- year: 2019
+  title: "Midwest Political Science Association (MPSA)"
+  kind: conference
+  place: "Chicago, IL, USA"
+  in_person: true
+- year: 2019
+  title: "Western Political Science Association (WPSA)"
+  kind: conference
+  place: "San Diego, CA, USA"
+  in_person: true
+- year: 2019
+  title: "Research Workshop in American Politics (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2019
+  title: "Political Behavior Workshop (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2019
+  title: "Canadian Studies Colloquium (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2019
+  title: "Text Analysis Across Domains (BIDS TextXD)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2019
+  title: "Data Science Showcase (UC Berkeley)"
+  kind: conference
+  place: "Berkeley, CA, USA"
+  in_person: true
+
+- year: 2018
+  title: "American Political Science Association (APSA)"
+  kind: conference
+  place: "Boston, MA, USA"
+  in_person: true
+- year: 2018
+  title: "Midwest Political Science Association (MPSA)"
+  kind: conference
+  place: "Chicago, IL, USA"
+  in_person: true
+- year: 2018
+  title: "Western Political Science Association (WPSA)"
+  kind: conference
+  place: "San Francisco, CA, USA"
+  in_person: true
+- year: 2018
+  title: "Politics of Race, Immigration, and Ethnicity Consortium (UC San Diego)"
+  kind: conference
+  place: "San Diego, CA, USA"
+  in_person: true
+- year: 2018
+  title: "Association for Asian Studies (AAS)"
+  kind: conference
+  place: "Washington, DC, USA"
+  in_person: true
+
+- year: 2017
+  title: "Midwest Political Science Association (MPSA)"
+  kind: conference
+  place: "Chicago, IL, USA"
+  in_person: true
+- year: 2017
+  title: "California Poverty and Socioeconomic Inequality Fellows Symposium (UC Riverside)"
+  kind: conference
+  place: "Riverside, CA, USA"
+  in_person: true
+
+# ===== Summer institutes (attended, organized, or taught) =====
+
+- year: 2025
+  title: "Doing Social Science with Generative AI (summer workshop, taught), Korea University"
+  kind: summer
+  place: "Seoul, South Korea"
+  in_person: true
+- year: 2024
+  title: "Consortium on the American Political Economy (CAPE) Summer Academy, UC Berkeley"
+  kind: summer
+  place: "Berkeley, CA, USA"
+  in_person: true
+- year: 2022
+  title: "Summer Institute in Computational Social Science – Korea (organizer), KAIST and KDI School"
+  kind: summer
+  place: "Daejeon, South Korea"
+  in_person: true
+- year: 2022
+  title: "Digital Data Collection (summer workshop, taught), Korea University"
+  kind: summer
+  place: "Seoul, South Korea"
+  in_person: false
+- year: 2021
+  title: "Summer Institute in Computational Social Science (Howard R Bootcamp, taught)"
+  kind: summer
+  place: "" # likely online in 2021
+  in_person: false
+- year: 2020
+  title: "Summer Institute in Computational Social Science – San Francisco Bay Area (organizer), UC Berkeley and Stanford"
+  kind: summer
+  place: "" # held online in 2020
+  in_person: false
+- year: 2019
+  title: "Summer Institute in Computational Social Science (SICSS), Princeton University"
+  kind: summer
+  place: "Princeton, NJ, USA"
+  in_person: true

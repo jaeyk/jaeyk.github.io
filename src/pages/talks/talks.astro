@@ -2,7 +2,8 @@
 // Events live in src/data/talks.yaml.
 import Page from '../../layouts/Page.astro';
 import TalksCalendar from '../../components/TalksCalendar';
-import { PAST_COLOR, TALK_COLORS, loadTalks } from '../../lib/talks';
+import TalksMap from '../../components/TalksMap';
+import { PAST_COLOR, TALK_COLORS, loadTalkPlaces, loadTalks } from '../../lib/talks';
 
 const legend = [
   { label: 'Talk', color: TALK_COLORS.talk },
@@ -12,6 +13,9 @@ const legend = [
   { label: 'Visiting', color: TALK_COLORS.visiting },
   { label: 'Past event', color: PAST_COLOR, past: true },
 ];
+
+const talks = loadTalks();
+const { places, eventCount, virtualCount, sinceYear } = loadTalkPlaces(talks);
 ---
 
 <Page title="Travel & Talks">
@@ -28,6 +32,15 @@ const legend = [
   </div>
 
   <div class="talks-calendar">
-    <TalksCalendar client:only="react" talks={loadTalks()} />
+    <TalksCalendar client:only="react" talks={talks} />
+  </div>
+
+  <h2>Where I've Been</h2>
+  <p class="muted">
+    Since {sinceYear}, {eventCount + virtualCount} talks and events: {eventCount} in person across {places.length} places, and {virtualCount} virtual.
+    Larger circles mean more events; click one to see them.
+  </p>
+  <div class="talks-map-frame" data-pagefind-ignore>
+    <TalksMap client:only="react" places={places} />
   </div>
 </Page>

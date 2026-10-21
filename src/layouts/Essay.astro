@@ -1,18 +1,35 @@
 ---
 // Long-form essays: capped line length plus author and date under the title.
 import Page from './Page.astro';
+import { stripMarkdown } from '../lib/publications';
 
 interface Props {
-  frontmatter: { title: string; author?: string; date?: string; description?: string };
+  frontmatter: { title: string; author?: string; date?: string; description?: string; image?: string };
+  rawContent?: () => string;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, rawContent } = Astro.props;
+
+// Without a `description` in frontmatter, use the opening paragraph (skipping
+// headings and bold-only heading lines, cut at a word boundary near 160 characters) as the summary in link previews.
+function excerpt(md: string, max = 160) {
+  const para = md
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .find((p) => p && !/^(#|!\[|<|>|[-*_]{3,}$)/.test(p) && !/^\*\*[^*]+\*\*$/.test(p));
+  if (!para) return undefined;
+  const text = stripMarkdown(para).replace(/[_`]/g, '').replace(/\s+/g, ' ').trim();
+  if (text.length <= max) return text;
+  return text.slice(0, text.lastIndexOf(' ', max)).replace(/[,;:.]$/, '') + '…';
+}
+
+const description = frontmatter.description ?? (rawContent && excerpt(rawContent()));
 const date = frontmatter.date && /^\d{4}-\d{2}-\d{2}$/.test(frontmatter.date)
   ? new Date(`${frontmatter.date}T00:00:00`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
   : frontmatter.date;
 ---
 
-<Page frontmatter={frontmatter} bodyClass="prose">
+<Page frontmatter={{ ...frontmatter, description }} bodyClass="prose" ogType="article">
   <div slot="meta" class="title-meta" data-pagefind-ignore>
     {frontmatter.author && (
       <div><span class="title-meta-heading">Author</span>{frontmatter.author}</div>
