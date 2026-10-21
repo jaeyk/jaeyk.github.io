@@ -69,7 +69,7 @@
 - key: book_chapters
   title: "Edited volume book chapters"
   items:
-    - text: "[\"AI, the Public Sector, and Policymaking.\"](https://preprints.apsanet.org/engage/apsa/article-details/69fa21314770e67d929474f3) (with Baobao Zhang, Diane Coyle, Johannes Himmelreich, and Mila Gascó-Hernandez), in *Artificial Intelligence, Politics, and Political Science* edited by Nathaniel Persily and Joshua A. Tucker, forthcoming at *Cambridge University Press*"
+    - text: "[\"AI, the Public Sector, and Policymaking.\"](https://preprints.apsanet.org/engage/apsa/article-details/69fa21314770e67d929474f3) (with Baobao Zhang, Diane Coyle, Johannes Himmelreich, and Mila Gascó-Hernandez), in [\"*Artificial Intelligence, Politics, and Political Science*\"](https://www.cambridge.org/core/books/artificial-intelligence-politics-and-political-science/374EC2542DFC762DB83B1AFD781C7680#fndtn-information) edited by Nathaniel Persily and Joshua A. Tucker, forthcoming at *Cambridge University Press*"
       notes:
         - "Commissioned as part of the APSA presidential task force on AI"
     - text: "\"Failing Faster, Learning Better.\" (with Charles Crabtree and Valentina González-Rostani) in *Notes on the Future of Quantitative Social Science* edited by Rohan Alexander, forthcoming at *CRC Press*"
