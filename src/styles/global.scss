@@ -607,6 +607,12 @@ details summary {
 
 details[open] > summary { margin-bottom: 0.5em; }
 
+// Keep an item's notes close to its title and leave the gap before the next item.
+.pub-section > ol > li {
+  > p:has(+ ul) { margin-bottom: 0.25rem; }
+  > ul { margin-bottom: 1rem; }
+}
+
 // Publication sections slide open and closed. Browsers without
 // ::details-content / interpolate-size simply snap, as before.
 @media (prefers-reduced-motion: no-preference) {

@@ -216,6 +216,7 @@ Interactive parts (React, in `src/components/`):
 | Component | What it does |
 | --- | --- |
 | `PublicationsSearch.tsx` | Search box and filtering on the publications page |
+| `motion/InView.tsx` | Fades the publications page's year groups in as you scroll; content stays visible if JavaScript fails |
 | `TalksCalendar.tsx` | The talks calendar (FullCalendar) |
 | `UpcomingTalks.tsx` | The homepage's upcoming-events box |
 | `AgendaDialog.tsx` | The research-agenda diagram pop-up on the homepage |
@@ -234,6 +235,10 @@ Interactive parts (React, in `src/components/`):
   inner `"` as `\"`.
 - **Site search shows nothing in `./preview.sh`.** Expected: search only works
   on a built site. Use `./preview.sh --built`.
+- **A page in `./preview.sh` is missing its interactive parts** (for example,
+  the publications page shows only the search box and counts). The live
+  preview's cache went stale after a file change. Stop it with Ctrl+C, run
+  `./preview.sh` again, and hard-refresh the page (Cmd+Shift+R).
 - **A page changed but the live site didn't.** Check the **Actions** tab on
   GitHub; a red ✗ means the build failed, and its log shows why.
 - **Type and template errors:** `npm run check`.

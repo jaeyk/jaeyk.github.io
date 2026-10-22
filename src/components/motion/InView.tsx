@@ -1,6 +1,6 @@
 // InView from Motion Primitives (https://motion-primitives.com/docs/in-view):
 // animates its children from `hidden` to `visible` when they scroll into view.
-import { useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { motion, MotionConfig, useInView, type Transition, type UseInViewOptions, type Variant } from 'motion/react';
 
 export interface InViewProps {
@@ -30,6 +30,10 @@ export function InView({
   const ref = useRef(null);
   const isInView = useInView(ref, viewOptions);
   const [isViewed, setIsViewed] = useState(false);
+  // Render visible until hydrated, so content still shows if JavaScript fails.
+  // After that, anything below the fold hides (off screen) and fades in on scroll.
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => setHydrated(true), []);
   const MotionComponent = motion[as] as typeof motion.div;
 
   return (
@@ -38,11 +42,11 @@ export function InView({
       <MotionComponent
         ref={ref}
         className={className}
-        initial="hidden"
+        initial={false}
         onAnimationComplete={() => {
           if (once && isInView) setIsViewed(true);
         }}
-        animate={isInView || isViewed ? 'visible' : 'hidden'}
+        animate={!hydrated || isInView || isViewed ? 'visible' : 'hidden'}
         variants={variants}
         transition={transition}
       >
