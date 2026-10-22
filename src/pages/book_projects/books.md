@@ -14,15 +14,15 @@ title: "Book"
 
 Based on my [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8fr.pdf).
 
--   Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
+- Interviewed by [Scope Conditions podcast](https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM)
 
--   Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
+- Winner of the 2022 Best Dissertation Award, Urban and Local Politics, APSA
 
--   Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
+- Winner of the 2020 Best Paper Award, Asian Pacific American Politics, WPSA
 
--   Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
+- Datasets: [Asian American and Latino Advocacy and Community Service Organizations Dataset (1868-2016)](https://doi.org/10.7910/DVN/FLUPBJ)
 
--   Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
+- Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
 
 *Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America* introduces the concept of classification cost to explain how the administrative challenges of classifying marginalized communities shaped the rise of new racial group formations. Identifying diverse target populations using coarse administrative categories is difficult, but often unavoidable in policy implementation. These challenges became especially salient during the War on Poverty, when the federal government sought to expand safety net programs without revising how it categorized target populations. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state often defaulted to residual labels such as “Other.”
 
@@ -61,10 +61,11 @@ Sample chapters are available upon request. I plan to complete the first draft b
   - Chapter 1: How Someone's Burden Becomes Someone Else's Profit
   - Chapter 2: The Political Economy of Compliance
   - Chapter 3: New Technologies, Old Institutions
-- *Part II. Turning People Power Into Policy Innovations*
-  - Chapter 4: What the Public Knows, Can Know, and Should Know
-  - Chapter 5: From Resistance to Institutional Reform
-- *Procurement as a New Progressive Agenda*
+- *Part II. Turning People Power into Policy Innovations*
+  - Chapter 4: Public AI Can Be Human-Centered, Useful, and Accountable
+  - Chapter 5: What the Public Knows, Can Know, and Should Know
+  - Chapter 6: From Resistance to Institutional Reform
+- *Reform Procurement. Better Yet, Build In-House Capacity.*
 
 </div>
 
