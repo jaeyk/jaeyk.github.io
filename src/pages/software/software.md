@@ -3,13 +3,12 @@ layout: ../../layouts/Page.astro
 title: "Software"
 ---
 
-I develop open-source software to support data curation, computational social science research, and teaching. I also build lightweight tools for instructional and practical use. All packages are freely available on GitHub: [github.com/jaeyk](https://github.com/jaeyk)
-
 <div class="reversed-list">
 
 <!-- 1. [**TimeBudget**](https://jaeyk.github.io/time_budget/): Set weekly hours, split them across responsibilities, then prioritize research by impact first (Eat the Frog) -->
 
-1. [*ChangeOrder*](https://jaeyk.github.io/procurement_game/): A strategic game that helps government agencies learn how to avoid vendor lock-in, write smarter contracts, and negotiate more effectively. Developed based on actual contracts.
+1. [**ChangeOrder**](https://jaeyk.github.io/procurement_game/): A strategic game that helps government agencies learn how to avoid vendor lock-in, write smarter contracts, and negotiate more effectively. Developed based on actual contracts.
+
 1. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
 
 1. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
