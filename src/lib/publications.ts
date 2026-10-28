@@ -14,6 +14,7 @@ export interface JournalArticle {
   citation?: string;
   links?: { label: string; url: string }[];
   note?: string;
+  date?: string; // YYYY-MM-DD; overrides the date parsed from citation for the homepage list
 }
 
 /** A non-journal entry, pre-rendered for the publications page. */
@@ -108,7 +109,7 @@ export function recentPublications(limit = 5): RecentItem[] {
     const meta = citation.includes('{venue}')
       ? citation.replace('{venue}', venue)
       : [venue, citation].filter(Boolean).join(', ');
-    pool.push({ title: p.title, url: p.url ?? undefined, meta, date: dateFromText(citation, p.year), order: Number(p.order) });
+    pool.push({ title: p.title, url: p.url ?? undefined, meta, date: p.date ? String(p.date) : dateFromText(citation, p.year), order: Number(p.order) });
   }
 
   for (const section of loadRawSections().filter((s) => RECENT_SECTIONS.includes(s.key))) {

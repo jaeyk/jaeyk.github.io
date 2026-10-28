@@ -1,10 +1,12 @@
 # Peer-reviewed journal articles. Higher "order" = listed first.
 # In "citation", {venue} is replaced with the italicized venue name.
+# Optional "date" (YYYY-MM-DD) sets where the paper sorts in the homepage's recent list.
 
 - order: 18
   year: 2026
+  date: "2026-10-26"
   title: "Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion."
-  url: 
+  url: https://journal-bpa.org/index.php/jbpa/article/view/424
   authors:
     - "Jae Yeon Kim"
     - "Eric Giannella"
@@ -13,7 +15,10 @@
     - "Sebastian Jilke"
     - "Donald Moynihan"
   venue: "Journal of Behavioral Public Administration"
-  citation: "Forthcoming in the {venue}"
+  citation: "2026, 9, 1-16"
+  links:
+    - label: "replication"
+      url: "https://osf.io/rxgqm/overview"
 
 - order: 17
   year: 2025
