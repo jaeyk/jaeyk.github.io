@@ -52,20 +52,20 @@ Sample chapters are available upon request. I plan to complete the first draft b
 
 <span class="book-label">Book project 2</span>
 
-### Burdens, Profits, and People Power: Inequality and Resistance in the American AI Contracting State
+### Inefficienct and Unjust: Power, Inequality, and Resistance in the American AI Contracting State
 
 **Table of Contents**
 
-- *Procurement as Politics by Other Means*
+- *Policy Explains Technology, Not the Other Way Around*
 - *Part I. The Political Economy of the American Contracting State*
   - Chapter 1: How Someone's Burden Becomes Someone Else's Profit
-  - Chapter 2: The Political Economy of Compliance
-  - Chapter 3: New Technologies, Old Institutions
+  - Chapter 2: Fewer Reforms, More Procedures
+  - Chapter 3: Why Everybody Secretly Hates Competition
 - *Part II. Turning People Power into Policy Innovations*
   - Chapter 4: Public AI Can Be Human-Centered, Useful, and Accountable
   - Chapter 5: What the Public Knows, Can Know, and Should Know
   - Chapter 6: From Resistance to Institutional Reform
-- *Reform Procurement. Better Yet, Build In-House Capacity.*
+- *The Long Game in an Age of Rapid Technological Change*
 
 </div>
 
