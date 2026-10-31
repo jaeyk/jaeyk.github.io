@@ -132,7 +132,7 @@ The homepage "New Publications & Media" box (`recentPublications()` in `src/lib/
 
 ## Styling
 
-See the `/css` skill. In short: edit `src/styles/global.scss`, never hard-code colors (use `--site-*` variables, which have light and dark values), UNC palette `$unc-blue` / `$unc-dark-blue`, Source Serif 4 for headings and Inter for body text.
+See the `/css` skill. In short: edit `src/styles/global.scss`, never hard-code colors (use `--site-*` variables, which have light and dark values), MoMAColors OKeeffe palette, Source Serif 4 for headings and Inter for body text.
 
 Utility classes for Markdown pages: `.book-entry` + `.book-label`, `.callout` (+ `.callout-note`, `.callout-simple`, `<details class="callout">` for collapsible), `.figure-center`, `.reversed-list`, `.carolina-blue`, `.badge .badge-<type>`, `.table-wrap`.
 

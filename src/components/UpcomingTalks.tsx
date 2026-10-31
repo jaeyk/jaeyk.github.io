@@ -18,7 +18,7 @@ export default function UpcomingTalks({ talks, buildDate }: Props) {
   if (items.length === 0) return <p className="muted">No upcoming events right now.</p>;
 
   return (
-    <ol>
+    <ol className="upcoming-talks">
       {items.map((t) => {
         const detail = t.org ? `${t.title}, ${t.org}` : t.title;
         return (

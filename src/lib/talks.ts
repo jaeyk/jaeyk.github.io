@@ -17,11 +17,11 @@ export interface Talk {
 }
 
 export const TALK_COLORS: Record<TalkType, string> = {
-  talk: '#388e3c',
-  panel: '#1976d2',
-  discussant: '#00796b',
-  participant: '#6d4c41',
-  visiting: '#455a64',
+  talk: '#19798b',
+  panel: '#b80422',
+  discussant: '#5d5686',
+  participant: '#5c363a',
+  visiting: '#585b33',
 };
 
 export const PAST_COLOR = '#aaaaaa';

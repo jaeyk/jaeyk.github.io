@@ -21,15 +21,15 @@ interface Partner {
   label_dy?: number;
 }
 
-// Legend order and colors (ColorBrewer Dark2, as in the earlier R map).
+// Legend order and colors (MoMAColors: Rattner, with OKeeffe red for federal so it shows on dark land).
 const CATEGORIES: Record<string, { color: string; text: string }> = {
-  'Federal government': { color: '#1b9e77', text: '#fff' },
-  'State & local government': { color: '#d95f02', text: '#fff' },
-  'Civic tech': { color: '#7570b3', text: '#fff' },
-  Nonprofits: { color: '#a6761d', text: '#fff' },
-  Philanthropy: { color: '#e7298a', text: '#fff' },
-  'Advocacy organizations': { color: '#66a61e', text: '#fff' },
-  'Think tanks': { color: '#e6ab02', text: '#000' },
+  'Federal government': { color: '#b80422', text: '#fff' },
+  'State & local government': { color: '#de8e69', text: '#000' },
+  'Civic tech': { color: '#5d5686', text: '#fff' },
+  Nonprofits: { color: '#7a9132', text: '#000' },
+  Philanthropy: { color: '#a39fc9', text: '#000' },
+  'Advocacy organizations': { color: '#4c849a', text: '#000' },
+  'Think tanks': { color: '#c1bd38', text: '#000' },
 };
 
 const partners = (loadYaml(raw) ?? []) as Partner[];

@@ -1,10 +1,6 @@
 // Site styles. Ported from the Quarto site's styles.scss; Bootstrap is gone,
 // so this file also carries the base typography and layout it used to supply.
 
-// UNC Carolina palette
-$unc-blue: #4b9cd3;
-$unc-dark-blue: #13294b;
-
 // Web fonts
 $font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
 $font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -17,65 +13,86 @@ $page-gutter: clamp(1.25rem, 5vw, 4.5rem);
 
 /* ===== Color tokens (light + dark) =====
    Use these variables instead of hard-coded colors so dark mode keeps working. */
+// Palette: OKeeffe from MoMAColors (github.com/BlakeRMills/MoMAColors), with
+// tints and shades of its colors for page backgrounds and dark-mode text.
 :root {
   color-scheme: light;
-  --site-text: #212529;
-  --site-link: #{$unc-dark-blue};
-  --site-link-hover: #{$unc-blue};
-  --site-link-underline: rgba(19, 41, 75, 0.3);
-  --site-accent: #c43f5c;
-  --site-heading: #{$unc-dark-blue};
-  --site-muted: #4b5563;
-  --site-bg: #ffffff;
-  --site-surface: #f8fbfd;
-  --site-surface-2: #eaf4fb;
-  --site-border: #d9e2ec;
-  --site-border-soft: #e0e8f0;
-  --site-line: #9fb3c8;
-  --site-label-bg: #e8edf7;
-  --site-label-text: #{$unc-dark-blue};
-  --site-program-bg: #{$unc-dark-blue};
+  --site-text: #1f2233;
+  --site-link: #146878;
+  --site-link-hover: #b80422;
+  --site-link-underline: rgba(20, 104, 120, 0.3);
+  --site-accent: #b80422;
+  --site-name: #c25400;
+  --site-heading: #172767;
+  --site-muted: #585b6e;
+  --site-bg: #fdfaf1;
+  --site-surface: #f8f2df;
+  --site-surface-2: #f3e9c9;
+  --site-border: #e6dcc0;
+  --site-border-soft: #eee5cd;
+  --site-line: #b0a98f;
+  --site-rule: #e74b47;
+  --site-label-bg: #f8e8b0;
+  --site-label-text: #172767;
+  --site-program-bg: #172767;
   --site-program-text: #ffffff;
-  --site-program-muted: #c9d6e3;
-  --site-callout-header: #e8f1f9;
-  --map-land: #e3e9ef;
-  --map-border: #ffffff;
+  --site-program-muted: #d5daea;
+  --site-callout-header: #f8e8b0;
+  --site-table-header-bg: #172767;
+  --site-table-header-text: #ffffff;
+  --site-focus-ring: rgba(25, 121, 139, 0.25);
+  --site-hover-tint: rgba(25, 121, 139, 0.12);
+  --site-backdrop: rgba(23, 39, 103, 0.6);
+  --site-selection-bg: #172767;
+  --site-selection-text: #ffffff;
+  --map-land: #eee6d0;
+  --map-border: #fdfaf1;
 
   /* FullCalendar (talks page) */
   --fc-border-color: var(--site-border);
   --fc-page-bg-color: var(--site-bg);
   --fc-neutral-bg-color: var(--site-surface);
   --fc-list-event-hover-bg-color: var(--site-surface-2);
-  --fc-today-bg-color: rgba(75, 156, 211, 0.15);
-  --fc-button-bg-color: #{$unc-dark-blue};
-  --fc-button-border-color: #{$unc-dark-blue};
-  --fc-button-hover-bg-color: #{$unc-blue};
-  --fc-button-hover-border-color: #{$unc-blue};
+  --fc-today-bg-color: rgba(243, 213, 103, 0.25);
+  --fc-button-bg-color: #172767;
+  --fc-button-border-color: #172767;
+  --fc-button-hover-bg-color: #19798b;
+  --fc-button-hover-border-color: #19798b;
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --site-text: #d6dce3;
-  --site-link: #8ec5ec;
-  --site-link-hover: #c3e0f6;
-  --site-link-underline: rgba(142, 197, 236, 0.4);
-  --site-accent: #f08aa1;
-  --site-heading: #e6edf5;
-  --site-muted: #b9c3ce;
-  --site-bg: #16191d;
-  --site-surface: #1e2329;
-  --site-surface-2: #26303a;
-  --site-border: #343c46;
-  --site-border-soft: #2b323a;
-  --site-line: #5b6b7d;
-  --site-label-bg: #26303a;
-  --site-label-text: #c3e0f6;
-  --site-program-bg: #22406b;
+  --site-text: #e6e3d8;
+  --site-link: #6cc0d0;
+  --site-link-hover: #ee9b43;
+  --site-link-underline: rgba(108, 192, 208, 0.4);
+  --site-accent: #ee9b43;
+  --site-name: #ff8c1a;
+  --site-heading: #f3d567;
+  --site-muted: #b7b6b4;
+  --site-bg: #12141f;
+  --site-surface: #1b1e2c;
+  --site-surface-2: #262a3c;
+  --site-border: #363a50;
+  --site-border-soft: #2a2e42;
+  --site-line: #616680;
+  --site-rule: #e74b47;
+  --site-label-bg: #262a3c;
+  --site-label-text: #f3d567;
+  --site-program-bg: #172767;
   --site-program-text: #ffffff;
-  --site-program-muted: #b9cbe0;
-  --site-callout-header: #2a4a68;
-  --map-land: #2b333c;
-  --map-border: #16191d;
+  --site-program-muted: #d5daea;
+  --site-callout-header: #172767;
+  --site-table-header-bg: #172767;
+  --site-table-header-text: #ffffff;
+  --site-focus-ring: rgba(108, 192, 208, 0.3);
+  --site-hover-tint: rgba(108, 192, 208, 0.14);
+  --site-backdrop: rgba(0, 0, 0, 0.6);
+  --site-selection-bg: #f3d567;
+  --site-selection-text: #12141f;
+  --map-land: #262a3c;
+  --map-border: #12141f;
+  --fc-today-bg-color: rgba(243, 213, 103, 0.12);
 }
 
 /* ===== Base ===== */
@@ -142,8 +159,8 @@ hr {
 }
 
 ::selection {
-  background-color: $unc-blue;
-  color: white;
+  background-color: var(--site-selection-bg);
+  color: var(--site-selection-text);
 }
 
 .muted { color: var(--site-muted); }
@@ -202,11 +219,11 @@ a:focus-visible {
 }
 
 /* ===== Quotes =====
-   A blue bar; a final paragraph after the quote is treated as the attribution line. */
+   A colored bar; a final paragraph after the quote is treated as the attribution line. */
 main.content blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.4rem;
-  border-left: 4px solid $unc-blue;
+  border-left: 4px solid var(--site-rule);
   border-radius: 0 6px 6px 0;
   background: var(--site-surface-2);
   font-family: $font-serif;
@@ -255,8 +272,8 @@ table:not(.fc *) {
 }
 
 th:not(.fc *) {
-  background-color: $unc-dark-blue;
-  color: white;
+  background-color: var(--site-table-header-bg);
+  color: var(--site-table-header-text);
   font-weight: 600;
 }
 
@@ -277,8 +294,8 @@ textarea {
 
   &:focus {
     outline: none;
-    border-color: $unc-blue;
-    box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.25);
+    border-color: var(--site-link);
+    box-shadow: 0 0 0 3px var(--site-focus-ring);
   }
 
   &::placeholder {
@@ -301,7 +318,7 @@ textarea {
   font-size: 1.1rem;
   cursor: pointer;
 
-  &:hover { background: rgba(75, 156, 211, 0.12); color: var(--site-link-hover); }
+  &:hover { background: var(--site-hover-tint); color: var(--site-link-hover); }
 }
 
 /* ===== Navbar ===== */
@@ -434,7 +451,7 @@ dialog {
   border-radius: 8px;
   color: var(--site-text);
 
-  &::backdrop { background: rgba(19, 41, 75, 0.6); }
+  &::backdrop { background: var(--site-backdrop); }
 }
 
 // The agenda dialog's box is animated by Motion; fade its backdrop to match.
@@ -492,7 +509,7 @@ dialog {
   display: flow-root; // sit beside the homepage's floated sidebar, not under it
   margin: 1.25rem 0;
   border: 1px solid var(--site-border);
-  border-left: 5px solid $unc-blue;
+  border-left: 5px solid var(--site-rule);
   border-radius: 6px;
   background: var(--site-bg);
 
@@ -531,7 +548,7 @@ details.callout:not([open]) > summary { margin-bottom: 0; }
   margin: 1.25rem 0 2rem;
   padding: 1.5rem 1.75rem;
   border: 1px solid var(--site-border);
-  border-top: 4px solid $unc-blue;
+  border-top: 4px solid var(--site-rule);
   border-radius: 6px;
   background: var(--site-bg);
 
@@ -554,7 +571,7 @@ details.callout:not([open]) > summary { margin-bottom: 0; }
   text-transform: uppercase;
 }
 
-/* Event-type badges (same palette as the talks calendar) */
+/* Event-type badges (MoMAColors; the first five match the talks calendar in src/lib/talks.ts) */
 .badge {
   padding: 2px 6px;
   border-radius: 4px;
@@ -564,16 +581,16 @@ details.callout:not([open]) > summary { margin-bottom: 0; }
   display: inline-block;
 }
 
-.badge-talk        { background-color: #388e3c; }
-.badge-panel       { background-color: #1976d2; }
-.badge-discussant  { background-color: #00796b; }
-.badge-participant { background-color: #6d4c41; }
-.badge-visiting    { background-color: #455a64; }
-.badge-lecture     { background-color: #6a1b9a; }
-.badge-workshop    { background-color: #9e6a00; }
-.badge-podcast     { background-color: #ad1457; }
-.badge-moderator   { background-color: #c75000; }
-.badge-award       { background-color: #8d6e00; }
+.badge-talk        { background-color: #19798b; }
+.badge-panel       { background-color: #b80422; }
+.badge-discussant  { background-color: #5d5686; }
+.badge-participant { background-color: #5c363a; }
+.badge-visiting    { background-color: #585b33; }
+.badge-lecture     { background-color: #661f66; }
+.badge-workshop    { background-color: #8f5715; }
+.badge-podcast     { background-color: #8b174d; }
+.badge-moderator   { background-color: #c8350d; }
+.badge-award       { background-color: #916c37; }
 
 /* Reversed numbered lists (software, data pages); sized by a script in Base.astro */
 .reversed-list {
@@ -825,7 +842,7 @@ details[open] > summary { margin-bottom: 0.5em; }
   .talk-event-title { font-size: 0.92em; font-weight: 700; color: var(--site-heading); }
   .talk-event-org { font-size: 0.79em; font-weight: 700; margin-top: 2px; color: var(--site-text); text-decoration: underline; text-underline-offset: 2px; }
   .talk-event-host { font-size: 0.77em; font-weight: 600; margin-top: 1px; color: var(--site-muted); font-style: italic; }
-  .talk-event-place { background: rgba(148, 163, 184, 0.18); color: var(--site-text); }
+  .talk-event-place { background: var(--site-surface-2); color: var(--site-text); }
 }
 
 .talk-event-place {
@@ -879,7 +896,9 @@ details[open] > summary { margin-bottom: 0.5em; }
 
   h2 {
     margin: 0 0 0.25rem;
+    color: var(--site-name);
     font-size: 1.55rem;
+    font-weight: 700;
     line-height: 1.05;
   }
 }
@@ -962,6 +981,9 @@ details[open] > summary { margin-bottom: 0.5em; }
     color: var(--site-heading);
     font-weight: 700;
   }
+
+  // Events without a link match the linked ones (no underline, so they don't look clickable).
+  .upcoming-talks li { color: var(--site-link); }
 }
 
 .landing-box-link {
@@ -1077,7 +1099,7 @@ details[open] > summary { margin-bottom: 0.5em; }
   text-align: center;
 }
 
-.agenda-citizens { --agenda-accent: #{$unc-blue}; }
+.agenda-citizens { --agenda-accent: var(--site-link); }
 .agenda-business { --agenda-accent: var(--site-accent); }
 
 .agenda-relation {
