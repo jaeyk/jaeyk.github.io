@@ -1,114 +1,189 @@
 ---
-import Base from '../layouts/Base.astro';
-import UpcomingTalks from '../components/UpcomingTalks';
-import AgendaDialog from '../components/AgendaDialog';
-import { loadTalks, todayKey } from '../lib/talks';
-import { recentPublications } from '../lib/publications';
+import Base from "../layouts/Base.astro";
+import UpcomingTalks from "../components/UpcomingTalks";
+import AgendaDialog from "../components/AgendaDialog";
+import { loadTalks, todayKey } from "../lib/talks";
+import { recentPublications } from "../lib/publications";
 
 const talks = loadTalks();
 const recent = recentPublications();
 ---
 
 <Base>
-  <div class="landing-hero" role="img" aria-label="Jae Yeon Kim presenting at the civic tech preconference"></div>
+  <div
+    class="landing-hero"
+    role="img"
+    aria-label="Jae Yeon Kim presenting at the civic tech preconference"
+  >
+  </div>
 
   <aside class="landing-sidebar">
-    <img src="/bigger_than_headshot.jpg" alt="Jae Yeon Kim" class="landing-profile-image" />
+    <img
+      src="/bigger_than_headshot.jpg"
+      alt="Jae Yeon Kim"
+      class="landing-profile-image"
+    />
     <h2>Jae Yeon Kim</h2>
-    <p class="landing-title">Assistant Professor of Public Policy<br />University of North Carolina at&nbsp;Chapel&nbsp;Hill</p>
     <p class="landing-title">
-      Founder and Director, <a href="https://jaeyk.github.io/pof-lab/">People, Organizations, Futures Lab (POF&nbsp;Lab)</a>
+      Assistant Professor of Public Policy<br />University of North Carolina
+      at&nbsp;Chapel&nbsp;Hill
+    </p>
+    <p class="landing-title">
+      Founder and Director, <a href="https://jaeyk.github.io/pof-lab/"
+        >People, Organizations, Futures Lab (POF&nbsp;Lab)</a
+      >
     </p>
     <p class="landing-links">
-      <i class="bi bi-envelope"></i> <a href="mailto:jaekim@unc.edu">Email</a>
+      <i class="bi bi-envelope"></i>
+      <a href="mailto:jaekim@unc.edu">Email</a>
       <span aria-hidden="true">·</span>
-      <i class="bi bi-file-earmark-text"></i> <a href="/CV_Jae_Yeon_Kim.pdf">CV</a>
+      <i class="bi bi-file-earmark-text"></i>
+      <a href="/CV_Jae_Yeon_Kim.pdf">CV</a>
       <span aria-hidden="true">·</span>
-      <i class="bi bi-google"></i> <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en">Scholar</a>
+      <i class="bi bi-google"></i>
+      <a href="https://scholar.google.com/citations?user=v2h903EAAAAJ&hl=en"
+        >Scholar</a
+      >
     </p>
-    <p class="landing-tagline"><strong>My research aims to make policy implementation work.</strong></p>
+    <p class="landing-tagline">
+      <strong>My research aims to make policy implementation work.</strong>
+    </p>
 
     <section class="landing-box" aria-labelledby="upcoming-talks-heading">
       <h3 id="upcoming-talks-heading">Upcoming Talks &amp; Events</h3>
       <UpcomingTalks client:load talks={talks} buildDate={todayKey()} />
-      <p class="landing-box-link"><a href="/talks/talks.html">Full talks calendar</a></p>
+      <p class="landing-box-link">
+        <a href="/talks/talks.html">Full talks calendar</a>
+      </p>
     </section>
 
     <section class="landing-box" aria-labelledby="new-publications-heading">
       <h3 id="new-publications-heading">New Publications &amp; Media</h3>
       <ol>
-        {recent.map((p) => (
-          <li>
-            {p.url ? <a href={p.url}>{p.title}</a> : p.title}
-            {p.meta && <span>{p.meta}</span>}
-          </li>
-        ))}
+        {
+          recent.map((p) => (
+            <li>
+              {p.url ? <a href={p.url}>{p.title}</a> : p.title}
+              {p.meta && <span>{p.meta}</span>}
+            </li>
+          ))
+        }
       </ol>
-      <p class="landing-box-link"><a href="/publications/pubs.html">All publications</a></p>
+      <p class="landing-box-link">
+        <a href="/publications/pubs.html">All publications</a>
+      </p>
     </section>
   </aside>
 
   <p class="hello">Hello! I am Jae.</p>
 
   <p>
-    I am an Assistant Professor of Public Policy at <a href="https://publicpolicy.unc.edu/person/jae-yeon-kim/">the University of North Carolina at Chapel Hill</a>
-    and the founder and director of the <a href="https://jaeyk.github.io/pof-lab/">People, Organizations, Futures Lab (POF Lab)</a>. I am also a fellow at the
-    <a href="https://civicpowerlab.us/">Civic Power Lab</a> at the Harvard Kennedy School and a <a href="https://www.bettergovernmentlab.org/">Better Government Lab</a>
-    Fellow at the University of Michigan's Ford School of Public Policy. In Spring 2027, I will be on research leave and visiting UC Berkeley's
-    <a href="https://besi.berkeley.edu/">Berkeley Economy &amp; Society Initiative</a>.
+    I am an Assistant Professor of Public Policy at <a
+      href="https://publicpolicy.unc.edu/person/jae-yeon-kim/"
+      >the University of North Carolina at Chapel Hill</a
+    >
+    and the founder and director of the <a
+      href="https://jaeyk.github.io/pof-lab/"
+      >People, Organizations, Futures Lab (POF Lab)</a
+    >. I am also a fellow at the
+    <a href="https://civicpowerlab.us/">Civic Power Lab</a> at the Harvard Kennedy
+    School and a <a href="https://www.bettergovernmentlab.org/"
+      >Better Government Lab</a
+    >
+    Fellow at the University of Michigan's Ford School of Public Policy. In Spring
+    2027, I will be on research leave and visiting UC Berkeley's
+    <a href="https://besi.berkeley.edu/"
+      >Berkeley Economy &amp; Society Initiative</a
+    >.
   </p>
 
   <p>
-    Previously, I worked as a Senior Data Scientist at <a href="https://codeforamerica.org/">Code for America</a>, where I collaborated with the U.S. government to
-    improve access to safety net programs. I also served as an Assistant Research Scientist at the SNF Agora Institute at Johns Hopkins University, where I
-    co-developed <a href="https://snfagora.jhu.edu/our-work/research-projects/mapping-the-modern-agora/">the Mapping the Modern Agora Project.</a> I earned my Ph.D. in
-    Political Science from the University of California, Berkeley.
+    Previously, I worked as a Senior Data Scientist at <a
+      href="https://codeforamerica.org/">Code for America</a
+    >, where I collaborated with the U.S. government to improve access to safety
+    net programs. I also served as an Assistant Research Scientist at the SNF
+    Agora Institute at Johns Hopkins University, where I co-developed <a
+      href="https://snfagora.jhu.edu/our-work/research-projects/mapping-the-modern-agora/"
+      >the Mapping the Modern Agora Project.</a
+    > I earned my Ph.D. in Political Science from the University of California, Berkeley.
   </p>
 
   <p>
-    I am a policy scholar and public interest data scientist. Combining my experience as a data scientist in the U.S. public sector with my training as a social
-    scientist, I study policy implementation, government capacity, and technological change. Specifically, my research examines how government can help people
-    navigate bureaucracy, strengthen public trust, and buy and use technology, including but not limited to AI systems, effectively and responsibly. (If you want to
-    see the connection between these areas, <AgendaDialog client:visible />.)
+    I am a policy scholar and public interest data scientist. Combining my
+    experience as a data scientist in the U.S. public sector with my training as
+    a social scientist, I study policy implementation, government capacity, and
+    technological change. Specifically, my research examines how government can
+    help people navigate bureaucracy, strengthen public trust, and buy and use
+    technology, including but not limited to AI systems, effectively and
+    responsibly. (If you want to see the connection between these areas, <AgendaDialog
+      client:visible
+    />.)
   </p>
 
   <p>
-    I'm currently finishing a book manuscript (monograph) titled <a href="/book_projects/books.html"><em>Unseen and Uncounted</em></a>, which examines how the
-    administrative challenges of identifying and categorizing non-Black minority communities gave rise to new racial group formations during the War on Poverty. My
-    second book project, tentatively titled <em>Burdens, Profits, and People Power</em>, investigates how AI exacerbates existing inequalities through administrative
-    burdens, what kinds of businesses profit from these hidden practices, and how people can build power, resist, and transform this unjust system.
+    I'm currently finishing a book manuscript (monograph) titled <a
+      href="/book_projects/books.html"><em>Unseen and Uncounted</em></a
+    >, which examines how the administrative challenges of identifying and
+    categorizing non-Black minority communities gave rise to new racial group
+    formations during the War on Poverty. My second book project, tentatively
+    titled <a href="/book_projects/books.html"
+      ><em>Inefficient and Unjust</em></a
+    >, investigates how AI exacerbates existing inequalities through
+    administrative burdens, what kinds of businesses profit from these hidden
+    practices, and how people can build power, resist, and transform this unjust
+    system.
   </p>
 
   <p>
-    My research has appeared in leading journals across public policy and the social sciences. To produce research that directly informs policy and improves
-    practice, I often collaborate with <a href="/community_building/partners.html">government, philanthropic, think tank, and nonprofit partners</a>. My research and
-    expertise have helped U.S. state and local governments deliver public services, buy and use AI systems, and train government officials; foundations distribute
-    grants for public benefit innovation and civic engagement; think tanks set agendas for responsible AI governance; and nonprofits develop their evaluation
-    capacity.
+    My research has appeared in leading journals across public policy and the
+    social sciences. To produce research that directly informs policy and
+    improves practice, I often collaborate with <a
+      href="/community_building/partners.html"
+      >government, philanthropic, think tank, and nonprofit partners</a
+    >. My research and expertise have helped U.S. state and local governments
+    deliver public services, buy and use AI systems, and train government
+    officials; foundations distribute grants for public benefit innovation and
+    civic engagement; think tanks set agendas for responsible AI governance; and
+    nonprofits develop their evaluation capacity.
   </p>
 
   <p>
-    I am the recipient of the Sherman Family Emerging Scholar Award, The Korea Society (2026), the Paul Volcker Junior Scholar Research Grant Award in Public
-    Administration (2025), the Emerging Scholar Award in Civic Engagement (2024), and the Best Dissertation Award in Urban and Local Politics (2022) from the American
-    Political Science Association, as well as the Don T. Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific American Politics (2020) from the
-    Western Political Science Association.
+    I am the recipient of the Sherman Family Emerging Scholar Award, The Korea
+    Society (2026), the Paul Volcker Junior Scholar Research Grant Award in
+    Public Administration (2025), the Emerging Scholar Award in Civic Engagement
+    (2024), and the Best Dissertation Award in Urban and Local Politics (2022)
+    from the American Political Science Association, as well as the Don T.
+    Nakanishi Award for Distinguished Scholarship and Service in Asian Pacific
+    American Politics (2020) from the Western Political Science Association.
   </p>
 
   <details class="callout callout-note student-note">
     <summary>For Prospective PhD and UNC Students</summary>
     <div class="callout-body">
       <p>
-        <strong>PhD Students</strong>: I will not be taking students in the coming cycle (starting in Fall 2027). If you are interested in working with me, please
-        read my <a href="/essays/contacting_potential_advisors.html">advice for prospective PhD students</a>. If you then choose to email me, please explain (1) which
-        of my work you have read, (2) why it is connected to your research agenda, and (3) how I can help you develop it. I look forward to working with
-        self-motivated, intellectually curious students who approach their research with a healthy dose of skepticism, a big dose of imagination, and a relentless
-        attention to detail.
+        <strong>PhD Students</strong>: I will not be taking students in the
+        coming cycle (starting in Fall 2027). If you are interested in working
+        with me, please read my <a
+          href="/essays/contacting_potential_advisors.html"
+          >advice for prospective PhD students</a
+        >. If you then choose to email me, please explain (1) which of my work
+        you have read, (2) why it is connected to your research agenda, and (3)
+        how I can help you develop it. I look forward to working with
+        self-motivated, intellectually curious students who approach their
+        research with a healthy dose of skepticism, a big dose of imagination,
+        and a relentless attention to detail.
       </p>
       <p>
-        <strong>UNC graduate and undergraduate students</strong>: I cannot serve on your committee or advise on your honors thesis unless I know you well and there
-        is a strong alignment between your topic and my research expertise. If you think you could benefit from my expertise, please reach out to me by email and
-        schedule a time during <a href="/office_hour/office_hour.html">my office hours</a>. Also, if you are an undergraduate student interested in working with me on
-        a research project, I encourage you to check out my <a href="https://jaeyk.github.io/pof-lab/">lab website</a>!
+        <strong>UNC graduate and undergraduate students</strong>: I cannot serve
+        on your committee or advise on your honors thesis unless I know you well
+        and there is a strong alignment between your topic and my research
+        expertise. If you think you could benefit from my expertise, please
+        reach out to me by email and schedule a time during <a
+          href="/office_hour/office_hour.html">my office hours</a
+        >. Also, if you are an undergraduate student interested in working with
+        me on a research project, I encourage you to check out my <a
+          href="https://jaeyk.github.io/pof-lab/">lab website</a
+        >!
       </p>
     </div>
   </details>
