@@ -235,7 +235,6 @@ main.content blockquote {
   p:last-child:not(:first-child) {
     margin-top: 0.6rem;
     color: var(--site-muted);
-    font-size: 0.92rem;
     font-style: normal;
   }
 }
@@ -253,7 +252,6 @@ figure.figure-center {
 figcaption {
   margin-top: 0.5rem;
   color: var(--site-muted);
-  font-size: 0.92rem;
 }
 
 /* ===== Tables =====
@@ -684,7 +682,6 @@ details[open] > summary { margin-bottom: 0.5em; }
   figcaption {
     margin-top: 0.5rem;
     color: var(--site-muted);
-    font-size: 0.95rem;
     text-align: center;
   }
 }
