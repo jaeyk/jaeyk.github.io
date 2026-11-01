@@ -134,7 +134,7 @@ Put the file in [`public/`](public), for example `public/misc/photo.jpg` or
 
 Edit [`generate_cv/cv_Kim.tex`](generate_cv/cv_Kim.tex) and run
 `./update_site.sh`. It compiles the PDF to `public/CV_Jae_Yeon_Kim.pdf` (the
-navbar's CV link). Needs a LaTeX install (`latexmk`, `pdflatex`, or `tectonic`).
+navbar's CV link). Needs a XeTeX install (`xelatex`, `latexmk`, or `tectonic`); the fonts are in `generate_cv/fonts/`.
 
 ### Update coauthors or the maps
 

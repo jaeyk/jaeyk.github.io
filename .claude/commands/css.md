@@ -5,7 +5,7 @@ Add or modify styles for this Astro website by editing `src/styles/global.scss`.
 All site styles live in one SCSS file, `src/styles/global.scss`, imported by `src/layouts/Base.astro`. Astro compiles it at build time (the `sass` package), so there's no separate compile step. There is no Bootstrap: this file supplies the base typography, layout, navbar, footer, and every component style.
 
 **Fonts and widths** (SCSS variables at the top):
-- `$font-serif` (Source Serif 4) for headings, quotes, and diagram labels; `$font-sans` (Inter) for body text and UI
+- `$font-sans` (Libre Franklin, the same font as the CV) for all text
 - `$prose-width: 80ch` (essay line length), `$page-width: 1400px`
 
 **Colors and dark mode:** the palette is OKeeffe from MoMAColors. Never hard-code a color in a new rule. Use the CSS variables (`--site-text`, `--site-link`, `--site-link-hover`, `--site-heading`, `--site-muted`, `--site-accent`, `--site-rule`, `--site-bg`, `--site-surface`, `--site-surface-2`, `--site-border`, `--site-border-soft`, `--site-line`, `--site-label-bg`, `--site-label-text`, `--site-callout-header`, …). Each has a light value on `:root` and a dark value on `:root[data-theme='dark']`. A new variable must be added to **both** blocks. The theme is set by the `data-theme` attribute on `<html>` (dark by default; `ThemeToggle.tsx` switches it).

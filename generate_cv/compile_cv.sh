@@ -26,15 +26,17 @@ PDF_PATH="${SCRIPT_DIR}/${BASE_NAME}.pdf"
 OUTPUT_NAME="CV_Jae_Yeon_Kim.pdf"
 OUTPUT_PATH="${REPO_DIR}/public/${OUTPUT_NAME}"
 
+# The CV loads its fonts from generate_cv/fonts, which needs XeTeX and this working directory.
+cd "${SCRIPT_DIR}"
 if command -v latexmk >/dev/null 2>&1; then
-  latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir="${SCRIPT_DIR}" "${TEX_PATH}"
-elif command -v pdflatex >/dev/null 2>&1; then
-  pdflatex -interaction=nonstopmode -halt-on-error -output-directory="${SCRIPT_DIR}" "${TEX_PATH}"
-  pdflatex -interaction=nonstopmode -halt-on-error -output-directory="${SCRIPT_DIR}" "${TEX_PATH}"
+  latexmk -xelatex -interaction=nonstopmode -halt-on-error "${TEX_FILE}"
+elif command -v xelatex >/dev/null 2>&1; then
+  xelatex -interaction=nonstopmode -halt-on-error "${TEX_FILE}"
+  xelatex -interaction=nonstopmode -halt-on-error "${TEX_FILE}"
 elif command -v tectonic >/dev/null 2>&1; then
-  tectonic --outdir "${SCRIPT_DIR}" "${TEX_PATH}"
+  tectonic "${TEX_FILE}"
 else
-  echo "Error: No LaTeX engine found (latexmk, pdflatex, or tectonic)." >&2
+  echo "Error: No XeTeX engine found (latexmk with xelatex, xelatex, or tectonic)." >&2
   exit 1
 fi
 
@@ -64,6 +66,7 @@ elif git -C "${REPO_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     "generate_cv/${BASE_NAME}.pdf" \
     "generate_cv/compile_cv.sh" \
     "generate_cv/normalize_cv_quotes.py" \
+    "generate_cv/fonts" \
     "public/${OUTPUT_NAME}"
 
   if git -C "${REPO_DIR}" diff --cached --quiet; then
