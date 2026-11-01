@@ -22,6 +22,6 @@
   --color-site-border: var(--site-border);
   --color-site-border-soft: var(--site-border-soft);
   --color-site-line: var(--site-line);
-  --font-serif: 'Source Serif 4', Georgia, Times, 'Times New Roman', serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Libre Franklin', 'Franklin Gothic Book', 'Franklin Gothic Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Libre Franklin', 'Franklin Gothic Book', 'Franklin Gothic Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
