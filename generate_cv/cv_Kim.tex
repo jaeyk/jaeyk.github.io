@@ -37,36 +37,63 @@
 \usepackage{url} % URL
 \urlstyle{same}    
 
-\newcommand{\yearblock}[1]{\par\vspace{0.6\baselineskip}\textbf{#1}}
-
 \usepackage{xparse}
 
 \newcounter{talkcount}
 
-% Talk command with conditional separator
-\NewDocumentCommand{\talk}{m}{%
+% One venue's talks in a year; the optional argument is how many talks it stands for.
+\NewDocumentCommand{\talk}{O{1}m}{%
   \ifnum\value{talkcount}>0
     \unskip;\space
   \fi
-  \stepcounter{talkcount}%
-  #1%
+  \addtocounter{talkcount}{#1}%
+  #2%
 }
 
+% A year in the left column, with its entries running beside it.
+\newenvironment{yearrow}[1]{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{4.4em}%
+    \setlength{\labelwidth}{4.1em}%
+    \setlength{\labelsep}{0.3em}%
+    \setlength{\topsep}{0.3\baselineskip}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+  }%
+  \item[{\textbf{#1}\hfill}]%
+}{\end{list}}
+
+% Start a new page if less than the given height is left (keeps a heading with what follows).
+\makeatletter
+\newcommand{\needspace}[1]{%
+  \par\penalty-100\begingroup
+  \setlength{\dimen@}{#1}%
+  \dimen@ii\pagegoal \advance\dimen@ii-\pagetotal
+  \ifdim\dimen@>\dimen@ii \break\fi
+  \endgroup
+}
+\makeatother
+
+% A year heading among the journal articles, kept with the article after it.
+\newcommand{\pubyear}[1]{\needspace{6\baselineskip}\item[]\vspace{0.3\baselineskip}\textbf{#1}}
+
+% A talk year with its count in the left column.
 \NewDocumentEnvironment{talkyear}{m +b}
 {%
   % ---------- Pass 1: count ----------
   \setcounter{talkcount}{0}%
   \begingroup
-    \RenewDocumentCommand{\talk}{m}{\stepcounter{talkcount}}%
+    \RenewDocumentCommand{\talk}{O{1}m}{\addtocounter{talkcount}{##1}}%
     #2%
   \endgroup
-
-  % ---------- Print year header with count ----------
-  \yearblock{#1\ [\arabic{talkcount}]}%
+  \edef\talktotal{\arabic{talkcount}}%
 
   % ---------- Pass 2: print content ----------
   \setcounter{talkcount}{0}%
+  \begin{yearrow}{#1 [\talktotal]}
   #2%
+  \end{yearrow}%
 }
 {}
 
@@ -136,6 +163,9 @@ top=1.0in
 \space \number \year}
 
 \begin{document}
+
+% Left-aligned throughout, without hyphenating words
+\raggedright\hyphenpenalty=10000\relax
 
 \textbf{{\Large\color{cvnavy}\name}}
 
@@ -242,10 +272,10 @@ Chapel Hill, NC 27599--3435\\
 \subsection*{Journal articles}
 
 \begin{etaremune}
-\item[]\textbf{2026}
+\pubyear{2026}
 \item \href{https://journal-bpa.org/index.php/jbpa/article/view/424}{``Crossing the Finish Line: Administrative Attention Overload, Reminders, and SNAP Application Completion.'' } (\textbf{Jae Yeon Kim}, Eric Giannella, Zhaowen Guo, Pamela Herd, Sebastian Jilke, and Donald Moynihan). \textbf{\textit{Journal of Behavioral Public Administration}}. 2026, 9: 1–16 \href{https://osf.io/rxgqm/overview}{[replication]}\\ 
 
-\item[]\textbf{2025}
+\pubyear{2025}
 \item \href{https://journals.sagepub.com/doi/10.1177/13684302251346402}{``Is Unity Durable Among People of Color? Two Large Experiments Stress-Testing Solidarity Between Black and Latino Americans.''} (Kasheena Rogbeer, \textbf{Jae Yeon Kim}, and Efrén Pérez). \textbf{\textit{Group Processes and Intergroup Relations}}. Online First in July 2025 \href{https://osf.io/8v47g/wiki/home/?view_only=48bfb8aa43a2491caf9f6c310f37c009}{[replication]}
 \begin{itemize}
     \item Rogbeer received the Bertram Raven Award from UCLA's Department of Psychology, which honors an exceptionally meritorious research paper addressing a social issue or problem.
@@ -261,7 +291,7 @@ Chapel Hill, NC 27599--3435\\
     \item Research brief based on this work, authored by Eric Giannella and Donald Moynihan, was published in the \textit{\href{https://donmoynihan.substack.com/p/making-snap-interviews-more-flexible}{Can We Still Govern}} Substack on December 6, 2024.
 \end{itemize}
 
-\item[]\vspace{0.3\baselineskip}\textbf{2024}
+\pubyear{2024}
 \item \href{https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/solidarity-between-people-of-color-two-blockage-experiments-suggest-it-is-causal-and-resistant-to-a-divisive-threat/3CEAFE3E375FD48D7B5235917CB91D51}{``Solidarity Between People of Color: Two Blockage Experiments Suggest It Is Causal and Resistant to Divisive Threats.''} (\textbf{Jae Yeon Kim}, Efrén Pérez, and Kasheena Rogbeer). \textbf{\textit{Journal of Experimental Political Science}}, Online First in March 2024 \href{https://doi.org/10.7910/DVN/UWJYCB}{[replication]}
 
 \item \href{https://www.nature.com/articles/s41562-023-01743-1?utm_campaign=related_content&utm_source=SOCIAL&utm_medium=communities}{``The Unequal Landscape of Civic Opportunity in America.''} (Milan de Vries, \textbf{Jae Yeon Kim} and Hahrie Han) \textbf{\textit{Nature Human Behaviour}}, Online First in November 2023 (Published in 2024, 8, 256--263) [\href{https://github.com/snfagora/map_civic_opportunity/tree/main}{replication}] \href{https://static-content.springer.com/esm/art%3A10.1038%2Fs41562-023-01743-1/MediaObjects/41562_2023_1743_MOESM1_ESM.pdf}{[supplementary materials]}
@@ -273,7 +303,7 @@ Chapel Hill, NC 27599--3435\\
 
 \item \href{https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PSC_Sep23}{``Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers.''} (Aniket Kesari*, \textbf{Jae Yeon Kim}*, Sono Shah*, Taylor Brown*, Tiago Ventura*, and Tina Law*) \textbf{\textit{PS: Political Science \& Politics}}, Online First in September 2023 (Published in 2024, 57(1), 101--106) (* = co-lead authors.) \href{https://github.com/jaeyk/jaeyk.github.io/blob/main/slides/training_css_phd.pdf}{[slides]}
 
-\item[]\vspace{0.3\baselineskip}\textbf{2023}
+\pubyear{2023}
 \item \href{https://www.nature.com/articles/s41597-023-01947-0#Sec10}{``Validated Names for Experimental Studies on Ethnicity and Race.''} (Charles Crabtree, \textbf{Jae Yeon Kim}, S. Michael Gaddis, John B. Holbein, Cameron Guage, and William Marx) \textbf{\textit{Nature: Scientific Data}}, 2023, 10, Article number: 130 \href{https://github.com/jaeyk/validated_names}{[replication]} \href{https://github.com/jaeyk/validatednamesr}{[R package]} \href{https://jaeyk.github.io/select_validated_names/?fbclid=IwY2xjawP0TOlleHRuA2FlbQIxMABicmlkETFIdVoxek4zU0p0SFhzZXZJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHm5a4tquUfrPydahJ1v3TX_HaLK7plqgT8aORGfWqVaYnyGDFhm4VdK0zE_h_aem_KusnJygN3w44M1hksHeycw}{[dashboard]}
 \begin{itemize}
     \item Policy brief based on this research was published in the \textit{\href{https://bimi.berkeley.edu/sites/default/files/bimi_policy_brief_crabtree_validated_names.pdf}{Berkeley Interdisciplinary Migration Initiative}} on November 5, 2024.
@@ -283,7 +313,7 @@ Chapel Hill, NC 27599--3435\\
 
 \item \href{https://www.cambridge.org/core/journals/perspectives-on-politics/article/rewiring-linked-fate-bringing-back-history-agency-and-power/CF08421CA51138DF922AB05F056E80B7}{``Rewiring Linked Fate: Bringing Back History, Agency, and Power.''} (Reuel Rogers* and \textbf{Jae Yeon Kim*}) \textbf{\textit{Perspectives on Politics}}, Online First in December 2021 (Published in 2023, 21(1), 288--301) (* = co-lead authors.) \href{https://github.com/jaeyk/linked_fate_review/}{[replication]}.
 
-\item[]\vspace{0.3\baselineskip}\textbf{2022}
+\pubyear{2022}
 \item \href{https://journals.sagepub.com/doi/full/10.1177/00027162221077471}{``Civil Society, Realized: Equipping the Mass Public to Express Choice and Negotiate Power.''} (Hahrie Han* and \textbf{Jae Yeon Kim*}) \textbf{\textit{The ANNALS of the American Academy of Political and Social Science}}, Online First in March 2022 (Published in 2022, 699(1), 175--185) (* = co-lead authors.)
 
 \item \href{https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/abs/teaching-computational-social-science-for-all/66EAB886BCF21C647E2387051D6A9BEF}{``Teaching Computational Social Science for All.''} (\textbf{Jae Yeon Kim} and Margaret Ng) \textbf{\textit{PS: Political Science \& Politics}}, Online First in February 2022 (Published in 2022, 55(3), 605--609)
@@ -292,7 +322,7 @@ Chapel Hill, NC 27599--3435\\
 
 \item \href{https://journals.sagepub.com/doi/10.1177/1065912920983456}{``How Other Minorities Gained Access: The War on Poverty and Asian American and Latino Community Organizing.''} (\textbf{Jae Yeon Kim}), \textbf{\textit{Political Research Quarterly}}, Online First in December 2020 (Published in 2022, 75(1), 89--102) \href{https://github.com/jaeyk/regression-analysis-with-time-series-data}{[replication]}
 
-\item[]\vspace{0.3\baselineskip}\textbf{2021}
+\pubyear{2021}
 \item \href{https://t.co/4Axd0gEQns}{``COVID-19 and Asian Americans: How Elite Messaging and Social Exclusion Shape Partisan Attitudes.''} (Nathan Chan, \textbf{Jae Yeon Kim}, and Vivien Leung) \textbf{\textit{Perspectives on Politics}}, Online First in December 2021 \href{https://github.com/jaeyk/covid19antiasian/}{[replication]}
 \begin{itemize}
     \item Op-ed based on this research was published in \textit{\href{https://www.washingtonpost.com/politics/2021/03/30/thanks-trumps-rhetoric-asian-americans-are-moving-toward-democratic-party/?utm_campaign=wp_monkeycage&utm_medium=social&utm_source=twitter&tid=sm_tw_monkeycage}{The Washington Post's Monkey Cage}} on March 30, 2021, and was later cited in an op-ed for \textit{\href{https://fivethirtyeight.com/features/why-the-recent-violence-against-asian-americans-may-solidify-their-support-of-democrats/}{FiveThirtyEight}} on April 1, 2021.
@@ -308,7 +338,7 @@ Chapel Hill, NC 27599--3435\\
     \item Early version received \textbf{the 2020 Don T. Nakanishi Award} from the Western Political Science Association
 \end{itemize}
 
-\item[]\vspace{0.3\baselineskip}\textbf{2020}
+\pubyear{2020}
 \item \href{https://www.cambridge.org/core/journals/studies-in-american-political-development/article/racism-is-not-enough-minority-coalition-building-in-san-francisco-seattle-and-vancouver/7557642023E744D2E0FA68D800C8E08E}{``Racism Is Not Enough: Minority Coalition Building in San Francisco, Seattle, and Vancouver.''} (\textbf{Jae Yeon Kim}), \textbf{\textit{Studies in American Political Development}}, 2020, 34(2), 195--215 \href{https://github.com/jaeyk/analyzing-archival-data}{[replication]}
 \begin{itemize}
     \item Research brief based on this project was published on the \textit{\href{https://canada.berkeley.edu/three-tales-chinatown-why-racism-not-enough-create-race-based-coalition-among-marginalized-groups}{UC Berkeley Canadian Studies Program}} website, and the work was also featured in an interview on the \textit{\href{https://www.scopeconditionspodcast.com/episodes/episode-34-comparing-asian-coalitions-across-three-chinatowns-with-jae-yeon-kim?fbclid=IwAR1_zGE57lmVDhg8uQA8FfDbdzOybB704Q2m0VQkkhfWtB7Asj29I_-mxPM}{Scope Conditions}} podcast.
@@ -520,142 +550,120 @@ Paasch-Colberg, M. Emmer \& J. Trebbe (Eds.), \textit{Challenges and Perspective
 {\small Bracketed number indicates total invited talks in that year.}
 
 \begin{talkyear}{2026}
-  \talk{InnovateUS (AI and Cybersecurity in the Public Sector for the Non-Expert, scheduled)}
-  \talk{Korea University (Health Policy and Health Equity in the AI Era Seminar Series, scheduled)}
-  \talk{The Korea Society (Sherman Family Emerging Scholar Award Lecture, scheduled)}
-  \talk{Federation of American Scientists (State and Local AI Policy: Actionable Solutions for Policymakers)}
-  \talk{UNC-Chapel Hill (Causal Inference Research Group)}
-  \talk{UNC-Chapel Hill (Data Science and Society Seminar Series)}
-  \talk{National Public Health AI Peer Learning Series}
-  \talk{ORCAA Collaborative Expert Assistance Network (AI Skeptics Podcast)}
-  \talk{GovAI Coalition (Procurement Committee)}
-  \talk{Federation of American Scientists (Source Code AI Trust \& Fairness Launch Event)}
-  \talk{Korea University (Department of Political Science and International Relations)}
-  \talk{University of Toronto (The Future of Quantitative Social Science in an Age of Artificial Intelligence)}
-  \talk{Yonsei University (Institute for AI and Social Innovation)}
-  \talk{UNC-Chapel Hill (Data-Driven EnviroLab)}
-\end{talkyear}.
+  \talk{\textbf{InnovateUS} (AI and Cybersecurity in the Public Sector for the Non-Expert, scheduled)}
+  \talk[2]{\textbf{Korea University} (Health Policy and Health Equity in the AI Era Seminar Series, scheduled; Department of Political Science and International Relations)}
+  \talk{\textbf{The Korea Society} (Sherman Family Emerging Scholar Award Lecture, scheduled)}
+  \talk[2]{\textbf{Federation of American Scientists} (State and Local AI Policy: Actionable Solutions for Policymakers; Source Code AI Trust \& Fairness Launch Event)}
+  \talk[3]{\textbf{UNC-Chapel Hill} (Causal Inference Research Group; Data Science and Society Seminar Series; Data-Driven EnviroLab)}
+  \talk{\textbf{National Public Health AI Peer Learning Series}}
+  \talk{\textbf{ORCAA Collaborative Expert Assistance Network} (AI Skeptics Podcast)}
+  \talk{\textbf{GovAI Coalition} (Procurement Committee)}
+  \talk{\textbf{University of Toronto} (The Future of Quantitative Social Science in an Age of Artificial Intelligence)}
+  \talk{\textbf{Yonsei University} (Institute for AI and Social Innovation)}
+\end{talkyear}
 
 \begin{talkyear}{2025}
-  \talk{Korea University (Institute of Governmental Studies)}
-  \talk{New York City Mayor's Office of Economic Opportunity (NYC Opportunity)}
-  \talk{NYU (PRIISM Seminar)}
-  \talk{Johns Hopkins SAIS (Tech and Innovation Speaker Series)}
-  \talk{Equity and Access in Algorithms, Mechanisms, and Optimization (Inequality Working Group Seminar)}
-  \talk{Korea Foundation for Advanced Studies (AI \& Humanity: Where We Are, and Where We Are Heading)}
-  \talk{Seoul National University (Department of Political Science and International Relations)}
-  \talk{Yonsei University and the Embassy of Finland, Seoul (Korea-Finland Innovation Forum 2025)}
-  \talk{Korea University (Department of Political Science and International Relations)}
-  \talk{KAIST (KIXLAB)}
-  \talk{Yonsei University (Department of Political Science and International Relations)}
-  \talk{Korea University (Graduate School of International Studies)}
-  \talk{Brown University (Watson Institute GPD module guest lecture)}
-  \talk{APSA Civic Engagement Section (Civic Café podcast)}
-  \talk{Johns Hopkins (Natural Language Processing for Computational Social Science guest lecture)}
-  \talk{Northwestern (American Politics Workshop)}
+  \talk[3]{\textbf{Korea University} (Institute of Governmental Studies; Department of Political Science and International Relations; Graduate School of International Studies)}
+  \talk{\textbf{New York City Mayor's Office of Economic Opportunity} (NYC Opportunity)}
+  \talk{\textbf{NYU} (PRIISM Seminar)}
+  \talk{\textbf{Johns Hopkins SAIS} (Tech and Innovation Speaker Series)}
+  \talk{\textbf{Equity and Access in Algorithms, Mechanisms, and Optimization} (Inequality Working Group Seminar)}
+  \talk{\textbf{Korea Foundation for Advanced Studies} (AI \& Humanity: Where We Are, and Where We Are Heading)}
+  \talk{\textbf{Seoul National University} (Department of Political Science and International Relations)}
+  \talk{\textbf{Yonsei University and the Embassy of Finland, Seoul} (Korea-Finland Innovation Forum 2025)}
+  \talk{\textbf{KAIST} (KIXLAB)}
+  \talk{\textbf{Yonsei University} (Department of Political Science and International Relations)}
+  \talk{\textbf{Brown University} (Watson Institute GPD module guest lecture)}
+  \talk{\textbf{APSA Civic Engagement Section} (Civic Café podcast)}
+  \talk{\textbf{Johns Hopkins} (Natural Language Processing for Computational Social Science guest lecture)}
+  \talk{\textbf{Northwestern} (American Politics Workshop)}
 \end{talkyear}
 
 \begin{talkyear}{2024}
-  \talk{Johns Hopkins (Democracy by the Numbers guest lecture)}
-  \talk{Yale (American Politics and Public Policy Workshop)}
-  \talk{Michigan State University (American Politics Workshop)}
-  \talk{UC Berkeley (Identity and Politics Workshop)}
-  \talk{UC Berkeley (Summer Institute in Migration Research Methods)}
-  \talk{CU-Boulder (Information Science Seminar)}
-  \talk{University of Toronto (Toronto Data Workshop)}
-  \talk{Korean Summer Workshop on Causal Inference}
-  \talk{Johns Hopkins (SNF Agora P3 Lab)}
-  \talk{University of Minnesota (Political Methodology Colloquium)}
-  \talk{UCLA (Race, Ethnicity, Politics, and Society Lab)}
-  \talk{University of Washington (Data Science Seminar)}
+  \talk[2]{\textbf{Johns Hopkins} (Democracy by the Numbers guest lecture; SNF Agora P3 Lab)}
+  \talk{\textbf{Yale} (American Politics and Public Policy Workshop)}
+  \talk{\textbf{Michigan State University} (American Politics Workshop)}
+  \talk[2]{\textbf{UC Berkeley} (Identity and Politics Workshop; Summer Institute in Migration Research Methods)}
+  \talk{\textbf{CU-Boulder} (Information Science Seminar)}
+  \talk{\textbf{University of Toronto} (Toronto Data Workshop)}
+  \talk{\textbf{Korean Summer Workshop on Causal Inference}}
+  \talk{\textbf{University of Minnesota} (Political Methodology Colloquium)}
+  \talk{\textbf{UCLA} (Race, Ethnicity, Politics, and Society Lab)}
+  \talk{\textbf{University of Washington} (Data Science Seminar)}
 \end{talkyear}
 
 \begin{talkyear}{2023}
-  \talk{Wesleyan (Challenges to Democracy in East Asia guest lecture)}
-  \talk{Stanford (APARC and Korea Foundation for Advanced Studies joint conference)}
-  \talk{Florida Atlantic University (Summer Institute in Computational Social Science -- South Florida)}
+  \talk{\textbf{Wesleyan} (Challenges to Democracy in East Asia guest lecture)}
+  \talk{\textbf{Stanford} (APARC and Korea Foundation for Advanced Studies joint conference)}
+  \talk{\textbf{Florida Atlantic University} (Summer Institute in Computational Social Science -- South Florida)}
 \end{talkyear}
 
 \begin{talkyear}{2022}
-  \talk{University of British Columbia (Scope Conditions podcast)}
-  \talk{National University of Singapore (Department of Communication and New Media)}
-  \talk{National University of Singapore (Digital Communications and Analytics guest lecture)}
-  \talk{Seoul National University (Institute of Social Science)}
-  \talk{KAIST (Science, Technology, and Society guest lecture)}
-  \talk{Korea University (Office of Information Technology and Service)}
-  \talk{Korea University (Introduction to Political Science guest lecture)}
-  \talk{Sungkyunkwan University (Methods of Economic Data Analysis guest lecture)}
-  \talk{Ewha Womans University (Graduate School of International Studies)}
+  \talk{\textbf{University of British Columbia} (Scope Conditions podcast)}
+  \talk[2]{\textbf{National University of Singapore} (Department of Communication and New Media; Digital Communications and Analytics guest lecture)}
+  \talk{\textbf{Seoul National University} (Institute of Social Science)}
+  \talk{\textbf{KAIST} (Science, Technology, and Society guest lecture)}
+  \talk[2]{\textbf{Korea University} (Office of Information Technology and Service; Introduction to Political Science guest lecture)}
+  \talk{\textbf{Sungkyunkwan University} (Methods of Economic Data Analysis guest lecture)}
+  \talk{\textbf{Ewha Womans University} (Graduate School of International Studies)}
 \end{talkyear}
 
 \begin{talkyear}{2021}
-  \talk{Stanford (New Research from the \textit{Journal of Online Trust and Safety}'s Inaugural Issue)}
-  \talk{University of Minnesota (American Politics Colloquium)}
-  \talk{Cornell (Democratic Vulnerabilities and Pathways for Reform Conference)}
-  \talk{Johns Hopkins (SNF Agora Institute P3 Lab)}
-  \talk{Dartmouth (Experiments in Politics guest lecture)}
-  \talk{KAIST (Data Analysis for Green Business and Policy guest lecture)}
+  \talk{\textbf{Stanford} (New Research from the \textit{Journal of Online Trust and Safety}'s Inaugural Issue)}
+  \talk{\textbf{University of Minnesota} (American Politics Colloquium)}
+  \talk{\textbf{Cornell} (Democratic Vulnerabilities and Pathways for Reform Conference)}
+  \talk{\textbf{Johns Hopkins} (SNF Agora Institute P3 Lab)}
+  \talk{\textbf{Dartmouth} (Experiments in Politics guest lecture)}
+  \talk{\textbf{KAIST} (Data Analysis for Green Business and Policy guest lecture)}
 \end{talkyear}
 
 \begin{talkyear}{2020}
-  \talk{UC Berkeley (Computational Social Science Forum)}
+  \talk{\textbf{UC Berkeley} (Computational Social Science Forum)}
 \end{talkyear}
 
 \subsection*{Conference and workshop presentations}
 
-* APSA = American Political Science Association, MPSA = Midwest Political Science Association,  
-WPSA = Western Political Science Association, APPAM = Association for Public Policy Analysis and Management,  
-PMRC = Public Management Research Conference, IC2S2 = International Conference on Computational Social Science
+{\small APSA = American Political Science Association, MPSA = Midwest Political Science Association, WPSA = Western Political Science Association, APPAM = Association for Public Policy Analysis and Management, PMRC = Public Management Research Conference, IC2S2 = International Conference on Computational Social Science}
 
-\vspace{0.5em}
-
-\textbf{2026}
+\begin{yearrow}{2026}
 APPAM (scheduled), APSA, Duke Conference on Society-Centered AI
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2025}  
+\begin{yearrow}{2025}
 APPAM, APSA, PMRC, Code for America Summit, Annual Research Conference on the American Political Economy
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2024}  
+\begin{yearrow}{2024}
 APPAM, APSA, PMRC, WPSA, Annual Research Conference on the American Political Economy, IC2S2 (tutorials), Stanford PhD Pathways (Data Science Across Industries Panel), Politics of Race, Immigration, and Ethnicity Consortium (Claremont Graduate University and UC Riverside)
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2023}  
+\begin{yearrow}{2023}
 APSA
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2022}  
+\begin{yearrow}{2022}
 APSA, MPSA, International Conference on Method Triangulation (Academia Sinica and TIGCR)
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2021}  
+\begin{yearrow}{2021}
 APSA, Asian Online Political Science Seminar Series, Junior Law and Politics Research Community, D-Lab Data Science Fellows Talk (UC Berkeley)
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2020}  
+\begin{yearrow}{2020}
 APSA, Joint Political Computational Social Science and Political Networks Conference, ICWSM Data Challenge Workshop, Summer Institute in Computational Social Science Festival, Data Science Showcase (UC Berkeley), D-Lab Data Science Fellows Talk (UC Berkeley)
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2019}  
+\begin{yearrow}{2019}
 MPSA, WPSA, Research Workshop in American Politics (UC Berkeley), Political Behavior Workshop (UC Berkeley), Canadian Studies Colloquium (UC Berkeley), Text Analysis Across Domains, Data Science Showcase (UC Berkeley)
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2018}  
+\begin{yearrow}{2018}
 APSA, MPSA, WPSA, Politics of Race, Immigration, and Ethnicity Consortium, Association for Asian Studies
+\end{yearrow}
 
-\vspace{0.5em}
-
-\textbf{2017}  
+\begin{yearrow}{2017}
 MPSA, California Poverty and Socioeconomic Inequality Fellows Symposium
+\end{yearrow}
 
 \subsection*{Teaching}
 
@@ -704,7 +712,7 @@ MPSA, California Poverty and Socioeconomic Inequality Fellows Symposium
   \item \textbf{Doing Social Science with Generative AI}, Korea University --- Summer 2025
   \item \textbf{Summer Institute in Migration Research Methods}, UC Berkeley --- Summer 2024
   \item \textbf{\href{https://github.com/jaeyk/summer_digital_data_collection}{Digital Data Collection}}, Korea University --- Summer 2022
-  \item \textbf{UC Berkeley D-Lab} --- 2020--2021  
+  \item \textbf{UC Berkeley D-Lab} --- 2020--2021\\
   Topics: Fairness and Bias in Machine Learning; Machine Learning in R; SQL for R Users; R Package Development; Functional Programming in R; Advanced Data Wrangling in R; Reproducible Project Management in R; R Fundamentals
 \end{itemize}
 
@@ -801,6 +809,7 @@ Proceedings of the National Academy of Sciences, Journal of Policy Analysis and 
 
 \vspace{0.5em}
 
+\needspace{5\baselineskip}
 \textbf{Departmental Service}
 
 \begin{itemize}
@@ -838,6 +847,7 @@ Proceedings of the National Academy of Sciences, Journal of Policy Analysis and 
     \item Permanent Residency Status: U.S.
 \end{itemize}
 
+\needspace{26\baselineskip}
 \subsection*{References}
 
 \parbox[t]{0.475\textwidth}{\raggedright % First block

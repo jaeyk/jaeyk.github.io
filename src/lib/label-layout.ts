@@ -26,7 +26,7 @@ export const LABEL_FONT_SIZE = 10.5;
 export const LABEL_LINE_HEIGHT = 12.5;
 const LABEL_PAD_X = 4;
 const LABEL_PAD_Y = 2.5;
-// Average glyph width for Inter at LABEL_FONT_SIZE; generous so boxes don't clip.
+// Average glyph width for Libre Franklin at LABEL_FONT_SIZE; generous so boxes don't clip.
 const CHAR_WIDTH = LABEL_FONT_SIZE * 0.56;
 
 /** Wrap text at about `width` characters on word boundaries (like R's str_wrap). */
@@ -62,7 +62,7 @@ const crosses = (s: Segment, b: Box) => {
 };
 
 /** The leader from a point to the nearest spot on its label box. */
-const leaderTo = (x: number, y: number, b: Box): Segment => ({
+export const leaderTo = (x: number, y: number, b: Box): Segment => ({
   x1: x,
   y1: y,
   x2: Math.min(Math.max(x, b.x), b.x + b.w),

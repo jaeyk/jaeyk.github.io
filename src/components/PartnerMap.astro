@@ -7,7 +7,7 @@ import type { GeometryCollection, Topology } from 'topojson-specification';
 import us from 'us-atlas/states-10m.json';
 import { load as loadYaml } from 'js-yaml';
 import raw from '../data/partners.yaml?raw';
-import { LABEL_FONT_SIZE, LABEL_LINE_HEIGHT, placeLabels, wrapText } from '../lib/label-layout';
+import { LABEL_FONT_SIZE, LABEL_LINE_HEIGHT, leaderTo, placeLabels, wrapText } from '../lib/label-layout';
 
 interface Partner {
   org: string;
@@ -46,23 +46,43 @@ const projection = geoAlbersUsa().fitExtent([[150, 10], [W - 80, H - 10]], natio
 const path = geoPath(projection);
 const borders = path(mesh(topo, topo.objects.states, (a, b) => a !== b)) ?? '';
 
-// Organizations in the same city sit in a small ring around it, one dot each,
-// and share one label that lists them as rows in their category colors.
+// Organizations in the same city sit in a small ring around it, one dot each.
 const cities = new Map<string, Partner[]>();
 for (const p of partners) cities.set(`${p.lat},${p.lng}`, [...(cities.get(`${p.lat},${p.lng}`) ?? []), p]);
-const groups = [...cities.values()].map((orgs) => {
+const places = [...cities.values()].map((orgs) => {
   const [cx, cy] = projection([orgs[0].lng, orgs[0].lat]) ?? [NaN, NaN];
   const ring = orgs.length > 1 ? 6 : 0;
   const dots = orgs.map((p, k) => {
     const angle = (2 * Math.PI * k) / orgs.length - Math.PI / 2;
     return { p, x: cx + ring * Math.cos(angle), y: cy + ring * Math.sin(angle) };
   });
-  const rows = orgs.map((p) => ({ p, lines: wrapText(p.label ?? p.org) }));
-  const nudge = orgs.find((p) => p.label_dx !== undefined || p.label_dy !== undefined);
-  return { x: cx, y: cy, dots, rows, dx: nudge?.label_dx, dy: nudge?.label_dy };
-}).filter((g) => Number.isFinite(g.x));
+  return { x: cx, y: cy, orgs, dots };
+}).filter((c) => Number.isFinite(c.x));
 
-const allDots = groups.flatMap((g) => g.dots);
+// Cities this close (in map pixels) that share a category also share one label.
+const MERGE_DISTANCE = 50;
+type Place = (typeof places)[number];
+const linked = (a: Place, b: Place) =>
+  Math.hypot(a.x - b.x, a.y - b.y) < MERGE_DISTANCE && a.orgs.some((p) => b.orgs.some((q) => q.category === p.category));
+let clusters: Place[][] = [];
+for (const place of places) {
+  const touching = clusters.filter((c) => c.some((other) => linked(place, other)));
+  clusters = [...clusters.filter((c) => !touching.includes(c)), [...touching.flat(), place]];
+}
+
+// Each label lists its organizations as rows in their category colors, same category together.
+const categoryOrder = Object.keys(CATEGORIES);
+const groups = clusters.map((places) => {
+  const orgs = places.flatMap((c) => c.orgs);
+  const sorted = [...orgs].sort((a, b) => categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category));
+  const rows = sorted.map((p) => ({ p, lines: wrapText(p.label ?? p.org) }));
+  const nudge = orgs.find((p) => p.label_dx !== undefined || p.label_dy !== undefined);
+  const x = places.reduce((sum, c) => sum + c.x, 0) / places.length;
+  const y = places.reduce((sum, c) => sum + c.y, 0) / places.length;
+  return { x, y, places, rows, dx: nudge?.label_dx, dy: nudge?.label_dy };
+});
+
+const allDots = places.flatMap((c) => c.dots);
 const labels = placeLabels(
   groups.map((g) => ({
     x: g.x,
@@ -89,7 +109,10 @@ const labels = placeLabels(
         let y = l.y;
         return (
           <g class="map-label">
-            {l.leader && <line class="map-leader" x1={g.x} y1={g.y} x2={l.leader.x} y2={l.leader.y} />}
+            {g.places.map((c) => {
+              const end = leaderTo(c.x, c.y, l);
+              return Math.hypot(end.x2 - c.x, end.y2 - c.y) > 4.5 + 6 + 4 && <line class="map-leader" x1={c.x} y1={c.y} x2={end.x2} y2={end.y2} />;
+            })}
             {g.rows.map((r) => {
               const c = CATEGORIES[r.p.category];
               const h = r.lines.length * LABEL_LINE_HEIGHT + (g.rows.length === 1 ? 5 : 3);

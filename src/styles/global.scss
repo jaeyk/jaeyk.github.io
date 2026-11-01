@@ -662,13 +662,11 @@ details[open] > summary { margin-bottom: 0.5em; }
   display: block;
   margin-top: 0.4rem;
   color: var(--site-muted);
-  font-size: 0.95rem;
 }
 
 .pub-legend {
   margin: 0 0 0.5rem;
   color: var(--site-muted);
-  font-size: 0.95rem;
 }
 
 .co-lead-mark {
@@ -931,7 +929,7 @@ details[open] > summary { margin-bottom: 0.5em; }
 
 .landing-tagline {
   margin: 0 0 1.35rem;
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   font-style: italic;
   line-height: 1.35;
 }
@@ -972,8 +970,6 @@ details[open] > summary { margin-bottom: 0.5em; }
     display: block;
     margin-top: 0.1rem;
     color: var(--site-muted);
-    font-size: 0.82rem;
-    font-style: italic;
   }
 
   time {
@@ -1189,8 +1185,6 @@ details[open] > summary { margin-bottom: 0.5em; }
   .landing-links {
     font-size: 1rem;
   }
-
-  .landing-box li span { font-size: 0.92rem; }
 
   /* Make tables horizontally scrollable instead of overflowing */
   main.content table:not(.fc *) {
