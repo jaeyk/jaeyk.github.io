@@ -139,7 +139,7 @@ export function loadTalkPlaces(talks: Talk[]): TalkMapData {
       counted(Number(t.start.slice(0, 4)));
       continue;
     }
-    pin(t.place, { when: `${formatTalkDate(t)}, ${t.start.slice(0, 4)}`, sort: t.start, title: t.title, url: t.url });
+    pin(t.place, { when: `${formatTalkDate(t)}, ${t.start.slice(0, 4)}`, sort: t.start, title: t.org ? `${t.title}, ${t.org}` : t.title, url: t.url });
   }
 
   for (const h of history) {
