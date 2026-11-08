@@ -5,7 +5,7 @@ title: "Software"
 
 <div class="reversed-list">
 
-<!-- 1. [**TimeBudget**](https://jaeyk.github.io/time_budget/): Set weekly hours, split them across responsibilities, then prioritize research by impact first (Eat the Frog) -->
+<iframe src="https://jaeyk.github.io/procurement_game/" width="100%" height="520" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
 
 1. [**ChangeOrder**](https://jaeyk.github.io/procurement_game/): A strategic game that helps government agencies learn how to avoid vendor lock-in, write smarter contracts, and negotiate more effectively. Developed based on actual contracts.
 
