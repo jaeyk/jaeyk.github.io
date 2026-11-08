@@ -7,16 +7,22 @@ I develop and share public datasets to strengthen the empirical
 foundations of social science and expand access to knowledge for the
 public good.
 
+<iframe src="https://jaeyk.github.io/snap_interview_atlas/#explore" width="100%" height="680" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
+
 <iframe src="https://snfagora.github.io/agora_dashboard/map.html" width="100%" height="520" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
 
 <div class="reversed-list">
 
-1.  [**MapAgora, Civic Opportunity Datasets for the Study of American
+1. [**SNAP Interview Atlas**](https://jaeyk.github.io/snap_interview_atlas/)
+
+    This is an ongoing crowdsourced project to document how states and counties explain the SNAP interview requirement to applicants on their websites.
+
+1. [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
     [**\[Dashboard\]**](https://snfagora.github.io/agora_dashboard/?fbclid=IwY2xjawLaOfVleHRuA2FlbQIxMABicmlkETFjN0hpbTRmazRGM0FYVmdaAR6ipZf2atKm8y3rkaz7pwGfldXbCz7spdjecvdG2-BN0S7EApa2LNc_vJU-qQ_aem_f1h1LN8V-5OmYqn207OZsw) [**\[Website\]**](https://snfagora.github.io/modern_agora_dashboard/#about)
 
-    -   **Summary:** We introduce MapAgora, a set of five new datasets
+    - **Summary:** We introduce MapAgora, a set of five new datasets
         that provide a comprehensive view of civic opportunity across
         America. Drawing on IRS tax records and the websites of over 1.7
         million nonprofit organizations, we examine whether
@@ -32,7 +38,7 @@ public good.
         align with traditional measures of socioeconomic inequality.
         These datasets offer new tools for understanding civic
         infrastructure, local democracy, and public policy.
-    -   **Use case:** Featured in [*"MapAgora, Civic Opportunity
+    - **Use case:** Featured in [*"MapAgora, Civic Opportunity
         Datasets for the Study of American Local Politics and Public
         Policy"*](https://www.nature.com/articles/s41597-025-05353-6),
         *Nature: Scientific Data* (2025), and [*"The Unequal Landscape
@@ -40,12 +46,12 @@ public good.
         America"*](https://www.nature.com/articles/s41562-023-01743-1),
         *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie
         Han
-    -   **Collaborator:** Milan de Vries and Hahrie Han
+    - **Collaborator:** Milan de Vries and Hahrie Han
 
-1.  [**Validated Names for Experimental Studies on Ethnicity and
+1. [**Validated Names for Experimental Studies on Ethnicity and
     Race**](https://doi.org/10.7910/DVN/LP4EAR) [**\[Dashboard\]**](https://jaeyk.github.io/select_validated_names/?fbclid=IwY2xjawP0TOlleHRuA2FlbQIxMABicmlkETFIdVoxek4zU0p0SFhzZXZJc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHm5a4tquUfrPydahJ1v3TX_HaLK7plqgT8aORGfWqVaYnyGDFhm4VdK0zE_h_aem_KusnJygN3w44M1hksHeycw)
 
-    -   **Summary:** A large and fast-growing number of studies across the social sciences use names in experiments to signal race.
+    - **Summary:** A large and fast-growing number of studies across the social sciences use names in experiments to signal race.
         However, names may also convey other perceived attributes such
         as socioeconomic status and citizenship. This dataset provides
         the largest collection of validated name perceptions to date,
@@ -54,24 +60,24 @@ public good.
         income, education, and citizenship, along with respondent
         characteristics. These data are designed to help researchers
         isolate the causal effects of race in experimental research.
-    -   **Use case:** Featured in [*"Validated names for experimental
+    - **Use case:** Featured in [*"Validated names for experimental
         studies on race and
         ethnicity"*](https://www.nature.com/articles/s41597-023-01947-0),
         *Nature: Scientific Data* (2023), with Charles Crabtree, S.
         Michael Gaddis, John B. Holbein, Cameron Guage, and William
         Marx.
-    -   **Collaborator:** Charles Crabtree, S. Michael Gaddis, John B.
+    - **Collaborator:** Charles Crabtree, S. Michael Gaddis, John B.
         Holbein, Cameron Guage, and William Marx
 
-1.  [**Asian American and Latino Advocacy and Community Service
+1. [**Asian American and Latino Advocacy and Community Service
     Organizations Dataset**](https://doi.org/10.7910/DVN/FLUPBJ) [**\[Dashboard\]**](https://jaeyk.github.io/aa_latino_organizations_map/)
 
-    -   **Summary:** A historical dataset documenting over 800 nonprofit organizations serving Asian American and Latino communities in the U.S. from 1868 to 2016. It includes founding years, organizational types (advocacy, service, hybrid), and panethnic status. The dataset captures both early ethnic organizations and
+    - **Summary:** A historical dataset documenting over 800 nonprofit organizations serving Asian American and Latino communities in the U.S. from 1868 to 2016. It includes founding years, organizational types (advocacy, service, hybrid), and panethnic status. The dataset captures both early ethnic organizations and
         those that evolved into panethnic entities, such as the National
         Council of La Raza (NCLR). Validation relied on websites, news
         archives, and outreach, with founding dates confirmed for 77% of
         Asian and 71% of Latino organizations.
-    -   **Use case:** Used in [*"How Other Minorities Gained Access: The
+    - **Use case:** Used in [*"How Other Minorities Gained Access: The
         War on Poverty and Asian American and Latino Community
         Organizing"*](https://journals.sagepub.com/doi/10.1177/1065912920983456),
         *Political Research Quarterly* (2021).
