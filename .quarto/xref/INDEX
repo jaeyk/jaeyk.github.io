@@ -1,0 +1,95 @@
+{
+  "index.qmd": {
+    "index.html": "14f87f5f"
+  },
+  "essays/the_small_town.qmd": {
+    "the_small_town.html": "52606efc"
+  },
+  "essays/job_market.qmd": {
+    "job_market.html": "54447df0"
+  },
+  "essays/haruki.qmd": {
+    "haruki.html": "1fbb0b69"
+  },
+  "essays/memorial_day.qmd": {
+    "memorial_day.html": "128ccc4a"
+  },
+  "essays/the_oakland_project.qmd": {
+    "the_oakland_project.html": "74cef78c"
+  },
+  "essays/essays.qmd": {
+    "essays.html": "94584a7b"
+  },
+  "essays/networking.qmd": {
+    "networking.html": "26417d29"
+  },
+  "essays/interview_tips.qmd": {
+    "interview_tips.html": "d87c125e"
+  },
+  "essays/running.qmd": {
+    "running.html": "f2479516"
+  },
+  "essays/parenting.qmd": {
+    "parenting.html": "8ee52f96"
+  },
+  "essays/sop.qmd": {
+    "sop.html": "501c8ad9"
+  },
+  "essays/policy_science.qmd": {
+    "policy_science.html": "6ab4d6b3"
+  },
+  "essays/speaking_of_speaking_english.qmd": {
+    "speaking_of_speaking_english.html": "b94d4406"
+  },
+  "essays/return2academia.qmd": {
+    "return2academia.html": "23277e9e"
+  },
+  "essays/academic_job_talk.qmd": {
+    "academic_job_talk.html": "467bff38"
+  },
+  "publications/pubs.qmd": {
+    "pubs.html": "bb2fdc31"
+  },
+  "talks/talks.qmd": {
+    "talks.html": "6a4ff0a3"
+  },
+  "office_hour/office_hour.qmd": {
+    "office_hour.html": "efcdee86"
+  },
+  "software/software.qmd": {
+    "software.html": "81f637da"
+  },
+  "teaching/teaching.qmd": {
+    "teaching.html": "8a7744a1"
+  },
+  "teaching/advisees.md": {
+    "advisees.html": "05cd2bfb"
+  },
+  "book_projects/books.qmd": {
+    "books.html": "54a41fa7"
+  },
+  "datasets/data.qmd": {
+    "data.html": "53b86c34"
+  },
+  "contacts.md": {
+    "contacts.html": "1b94da62"
+  },
+  "awards/awards.qmd": {
+    "awards.html": "9d90017d"
+  },
+  "community_building/community.qmd": {
+    "community.html": "96294f7a"
+  },
+  "community_building/partners.md": {
+    "partners.html": "263c0a44"
+  },
+  "community_building/coauthors.qmd": {
+    "coauthors.html": "3305f02f"
+  },
+  "essays/contacting_potential_advisors.qmd": {
+    "contacting_potential_advisors.html": "db3347ba"
+  },
+  "mentoring/mentoring.qmd": {
+    "mentoring.html": "497b6356"
+  }
+}

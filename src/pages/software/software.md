@@ -9,6 +9,8 @@ title: "Software"
 
 1. [**ChangeOrder**](https://jaeyk.github.io/procurement_game/): A strategic game that helps government agencies learn how to avoid vendor lock-in, write smarter contracts, and negotiate more effectively. Developed based on actual contracts.
 
+1. [**Policy Theory Studio**](https://jaeyk.github.io/policy_theory_studio/): Build, test, and apply a policy theory, one question at a time.
+
 1. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
 
 1. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
