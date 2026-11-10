@@ -6,7 +6,7 @@ Name,Affiliation,Note,Latitude,Longitude
 "Cameron Guage","Dartmouth","Undergraduate RA",43.7044,-72.2887
 "Carlos Ortiz","UC Berkeley","Undergraduate RA",37.8719,-122.2585
 "Charles Crabtree","Monash University","",-37.9105,145.1364
-"Christian Caballero","UC Berkeley","",37.8719,-122.2585
+"Christian Caballero","UC Berkeley","Graduate student coauthor",37.8719,-122.2585
 "Daegon Cho","Yonsei University","",37.5658,126.9386
 "Diane Coyle","Cambridge","",52.2053,0.1218
 "DG Kim","Harvard","",42.3770,-71.1167
@@ -16,6 +16,7 @@ Name,Affiliation,Note,Latitude,Longitude
 "Eric Giannella","Georgetown","",38.9076,-77.0723
 "Florian Keppeler","Aarhus University","",56.1710,10.2039
 "Hahrie Han","Johns Hopkins","",39.3299,-76.6205
+"Claire Taeyoon Kim","KAIST (Korea Advanced Institute of Science and Technology)","Graduate student coauthor",36.3681,127.3636
 "Kasheena Rogbeer","UCLA","",34.0689,-118.4452
 "Kerry Rodden","Code for America","",37.7749,-122.4194
 "Jaeung Sim","University of Connecticut","",41.8084,-72.2495
@@ -37,7 +38,7 @@ Name,Affiliation,Note,Latitude,Longitude
 "Nari Yoo","Michigan","",42.2780,-83.7382
 "Nicholas Camp","Michigan","",42.2780,-83.7382
 "Pamela Herd","Michigan","",42.2780,-83.7382
-"Paris Boo","Harvard","",42.3770,-71.1167
+"Paris Boo","Harvard","Graduate student coauthor",42.3770,-71.1167
 "Reuel Rogers","Northwestern","",42.0565,-87.6753
 "Sarah Nam","UC Berkeley","Undergraduate RA",37.8719,-122.2585
 "Sanghee Park","Indiana University","",39.7740,-86.1763
