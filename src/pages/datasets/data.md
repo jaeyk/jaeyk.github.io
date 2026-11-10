@@ -11,6 +11,8 @@ public good.
 
 <iframe src="https://jaeyk.github.io/snap_interview_atlas/#explore" width="100%" height="680" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
 
+<iframe src="https://jaeyk.github.io/civic_opportunity_atlas/state.html?st=CA&level=zips" width="100%" height="680" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
+
 <div class="reversed-list">
 
 1. [**Student Basic Needs Atlas**](https://jaeyk.github.io/student_basic_needs_map/)
@@ -20,6 +22,10 @@ public good.
 1. [**SNAP Interview Atlas**](https://jaeyk.github.io/snap_interview_atlas/)
 
     This is an ongoing crowdsourced project to document how states and counties explain the SNAP interview requirement to applicants on their websites.
+
+1. [**Civic Opportunity Atlas**](https://jaeyk.github.io/civic_opportunity_atlas/)
+
+    This is an interactive app that allows you to explore and compare how civic life works where you live, and who makes it happen.
 
 1. [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
