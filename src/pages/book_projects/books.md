@@ -60,7 +60,7 @@ Sample chapters are available upon request. I plan to complete the first draft b
 - *Part I. The Political Economy of the American Contracting State*
   - Chapter 1: Why Everybody Secretly Hates Competition
   - Chapter 2: Why Vendor Lock-in Makes Human-Centered Government Difficult
-  - Chapter 3: Why There's a Gap between What Vendors Promised and What They Actually Cost and Deliver
+  - Chapter 3: Why There's a Gap between What Vendors Promise and What They Actually Cost and Deliver
 - *Part II. Turning People Power into Policy Innovations*
   - Chapter 4: Public AI Can Be Human-Centered, Useful, and Accountable
   - Chapter 5: What the Public Knows, Can Know, and Should Know
