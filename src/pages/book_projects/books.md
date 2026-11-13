@@ -65,7 +65,7 @@ Sample chapters are available upon request. I plan to complete the first draft b
   - Chapter 4: Public AI Can Be Human-Centered, Useful, and Accountable
   - Chapter 5: What the Public Knows, Can Know, and Should Know
   - Chapter 6: From Resisting Data Centers to Reforming Institutions
-- *Beyond Tech Fixes: The Long Game of Building Accountable Public AI*
+- *The Long Game of Building Effective and Responsible Public AI*
 
 </div>
 
