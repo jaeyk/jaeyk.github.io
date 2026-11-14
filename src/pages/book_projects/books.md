@@ -24,6 +24,8 @@ Based on my [dissertation](https://escholarship.org/content/qt3531f8fr/qt3531f8f
 
 - Interactive Map: [Asian American and Latino Advocacy and Community Service Organizations](https://jaeyk.github.io/aa_latino_organizations_map/)
 
+- Substack Post: [Seeing Like State”s”: Why Implementation Failure Is Not the End of the Story](https://jaeyeonkim.substack.com/p/seeing-like-states)
+
 *Unseen and Uncounted: How Bureaucracy and Community Organizing Made New Racial Groups in America* introduces the concept of classification cost to explain how the administrative challenges of classifying marginalized communities shaped the rise of new racial group formations. Identifying diverse target populations using coarse administrative categories is difficult, but often unavoidable in policy implementation. These challenges became especially salient during the War on Poverty, when the federal government sought to expand safety net programs without revising how it categorized target populations. When the cost of recognizing small, fragmented, or poorly understood immigrant populations was deemed too high, the state often defaulted to residual labels such as “Other.”
 
 Faced with exclusion from official categories, government statistics, and resource allocation decisions, ethnic elites reinvented their groups. They coined new panethnic labels, built coalitions across national origin lines, and established civic organizations that rendered their communities legible to the state. These bottom-up efforts reduced classification costs for local government agencies in implementing policies. Over time, these strategies scaled upward, influencing federal classification schemes and institutionalizing panethnic categories such as “Asian American” and “Latino.”
