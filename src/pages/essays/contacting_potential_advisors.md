@@ -13,7 +13,9 @@ Usually, no. Most social science PhD programs—except those organized around la
 
 If you decide to contact a potential advisor, make the message specific. Copying and pasting statements from a faculty bio or homepage generally does not work and can send a bad signal. An effective email should show genuine commitment and investment. Reusing a faculty member’s own description of their work does not provide that signal.
 
-Similarly, simply claiming that there is a fit does not make it so. Explain what you have read, how it connects to your developing research agenda, and how that faculty member could help you advance it. Demonstrating fit takes time and effort.
+Similarly, simply claiming that there is a fit does not make it so. Explain what you have read, how it connects to your developing research agenda, and how that faculty member could help you advance it. 
+
+Demonstrating fit takes time and effort. And actually that's the point (i.e., costly signaling).
 
 ## Focus on the project and the field
 
