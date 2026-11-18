@@ -17,17 +17,8 @@ title: "Software"
 
 1. [**Policy Theory Studio**](https://jaeyk.github.io/policy_theory_studio/): Build, test, and apply a policy theory, one question at a time.
 
-1. [**PracticeTalk**](https://huggingface.co/spaces/jaeykim/PracticeTalk): A simple, lightweight speech synthesis web app that turns your talk script into an audio file, allowing you to check its flow and narrative.
-
-1. [**ClassKit**](https://jaeyk.github.io/ClassKit/): A lightweight suite of browser-based classroom utilities. Upload a roster, choose your options, and generate reproducible student samples for cold calling, breakout groups, preference-based project teams, and peer-review matches. No installation required.
-
 1. [**MapAgora**](https://snfagora.github.io/MapAgora/)
    - **Summary:** An R package for retrieving and processing tax records (e.g., IRS Form 990), website data, and social media handles for U.S. nonprofit organizations. Built to support large-scale analysis of civic infrastructure.
-   - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han
-   - **Collaborator:** Milan de Vries
-
-1. [**autotextclassifier**](https://github.com/snfagora/autotextclassifier)
-   - **Summary:** An R package for automated text classification using the tidymodels framework. Supports supervised learning pipelines with minimal setup for civic tech and policy research applications.
    - **Use case:** Used in ["MapAgora, Civic Opportunity Datasets for the Study of American Local Politics and Public Policy"](https://www.nature.com/articles/s41597-025-05353-6), *Nature: Scientific Data* (2025), and ["The Unequal Landscape of Civic Opportunity in America"](https://www.nature.com/articles/s41562-023-01743-1), *Nature Human Behaviour* (2023), with Milan de Vries and Hahrie Han
    - **Collaborator:** Milan de Vries
 
