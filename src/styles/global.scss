@@ -990,6 +990,39 @@ details[open] > summary { margin-bottom: 0.5em; }
   color: var(--site-heading);
 }
 
+.fn-ref {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 0;
+  margin-left: 0.1em;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footnotes {
+  clear: both;
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid currentColor;
+  border-top-color: color-mix(in srgb, currentColor 20%, transparent);
+  font-size: 0.875rem;
+
+  ol {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+
+  li:target {
+    background: color-mix(in srgb, currentColor 8%, transparent);
+  }
+}
+
 @media (max-width: 900px) {
   .landing-sidebar {
     float: none;
