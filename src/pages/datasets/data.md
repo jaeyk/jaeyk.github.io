@@ -11,8 +11,6 @@ public good.
 
 <iframe src="https://jaeyk.github.io/snap_interview_atlas/#explore" width="100%" height="680" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
 
-<iframe src="https://jaeyk.github.io/civic_opportunity_atlas/state.html?st=CA&level=zips" width="100%" height="680" style="border:1px solid #e0e0e0; border-radius:6px; margin:0.5rem 0 1rem;"></iframe>
-
 <div class="reversed-list">
 
 1. [**Student Basic Needs Atlas**](https://jaeyk.github.io/student_basic_needs_map/)
