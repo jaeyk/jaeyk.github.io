@@ -23,10 +23,6 @@ public good.
 
     This is an ongoing crowdsourced project to document how states and counties explain the SNAP interview requirement to applicants on their websites.
 
-1. [**Civic Opportunity Atlas**](https://jaeyk.github.io/civic_opportunity_atlas/)
-
-    This is an interactive app that allows you to explore and compare how civic life works where you live, and who makes it happen.
-
 1. [**MapAgora, Civic Opportunity Datasets for the Study of American
     Local Politics and Public
     Policy**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IRCA7C)
